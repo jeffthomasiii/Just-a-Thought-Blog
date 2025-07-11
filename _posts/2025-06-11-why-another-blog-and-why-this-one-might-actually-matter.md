@@ -1,6 +1,6 @@
 ---
 title: "Why Another Blog? And Why This One Might Actually Matter"
-date: 2025-06-14
+date: 2025-06-11
 categories: [intro, welcome]
 tags: [faith-in-practice, biblical-marriage, thoughtful-tech, camping-life, scripture-journaling, christian-living]
 excerpt: "This blog isn't about being loud or polished, it's about honest reflection, biblical thinking, and real life. Here's what you can expect from Just A Thought."
