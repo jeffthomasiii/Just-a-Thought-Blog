@@ -2,7 +2,7 @@
 layout: post
 title: "Thinking Out Loud—Why I Blog"
 subtitle: "Reflection as a Spiritual Discipline"
-date: 2025-07-03
+date: 2025-07-14
 categories: [Faith, Personal Reflection]
 tags: [reflection, obedience, spiritual growth, journaling, writing]
 image: /assets/images/thinking-out-loud.jpg
