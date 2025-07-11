@@ -48,8 +48,8 @@ Ask the Lord to show you one area your spouse is struggling in that they may not
 > “God, show me how to speak life over them today, not my opinions, but Your truth. Help me cover their heart with Your Word and love them the way You do.”
 
 Next up:  
-👉 [Speak Life Over Her](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/09/husbands-speak-life-when-she-forgets-who-she-is.html) *(coming soon)*  
-👉 [Speak Life Over Him](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/11/wives-speak-life-when-he-feels-the-weight-of-it-all.html) *(coming soon)*
+👉 [Speak Life Over Her](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/09/husbands-speak-life-when-she-forgets-who-she-is.html) 
+👉 [Speak Life Over Him](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/11/wives-speak-life-when-he-feels-the-weight-of-it-all.html)
 
 
 …just a thought.
