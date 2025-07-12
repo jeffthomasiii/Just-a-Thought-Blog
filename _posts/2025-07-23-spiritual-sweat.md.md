@@ -102,7 +102,5 @@ Because godliness isn’t grown in comfort, it’s forged in commitment.
 
 **…just a thought.**
 
-### 💬 What about you?
-
 What’s one weight you need to lay aside to train more freely for godliness?
 
