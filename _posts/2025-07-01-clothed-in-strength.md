@@ -4,7 +4,7 @@ date: 2025-07-01
 categories: [Faith, Devotional, Scripture Study]
 tags: [Proverbs 31, godly character, biblical womanhood, faith, strength, courage, future, trust, exegesis]
 excerpt: "Proverbs 31:25 paints a powerful image of a woman clothed not in fashion, but in fortitude. Her fearless laughter at the future isn’t naivety—it’s trust. What if this was how we walked into uncertainty?"
-image: /assets/images/clothed-in-strength.jpg
+image: /img/posts/clothed-in-strength.jpg
 ---
 
 > _“Strength and dignity are her clothing, and **she laughs at the time to come.**”_  
