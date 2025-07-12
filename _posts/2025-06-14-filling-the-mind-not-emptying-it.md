@@ -5,7 +5,7 @@ date: 2025-06-14
 categories: [faith, devotional, spiritual-discipline]
 tags: [biblical meditation, spiritual formation, Scripture, transformation, peace, wisdom, Psalm 119]
 excerpt: "Biblical meditation isn't about emptying your mind—it's about filling it with God's truth. Learn how Scripture defines meditation and how it transforms the heart."
-image: /assets/images/biblical-meditation.jpg
+image: /img/biblical-meditation.jpg
 ---
 
 Have you ever caught yourself replaying a worry on loop, like a mental broken record? Or maybe a conversation from earlier in the day keeps circling your mind? Whether we realize it or not, we’re always meditating on something.
