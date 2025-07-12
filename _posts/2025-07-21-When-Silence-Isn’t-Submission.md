@@ -14,7 +14,7 @@ tags:
   - silence
   - biblical-voice
 excerpt: Christians are often told to stay out of politics, but what if our silence is part of the problem? This post challenges our assumptions about authority, obedience, and the biblical call to speak up for truth and justice.
-image: /assets/images/when-silence-isnt-submission.jpg
+image: /img/posts/when-silence-isnt-submission.jpg
 ---
 
 What if we’ve misunderstood what silence really says?
