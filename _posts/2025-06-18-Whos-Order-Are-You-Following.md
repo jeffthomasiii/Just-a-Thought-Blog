@@ -4,7 +4,7 @@ date: 2025-06-18
 categories: [Faith, Priorities, Relationships]
 tags: [Biblical Order, Marriage, Parenting, Spiritual Growth, Christian Living]
 excerpt: "When our priorities are out of order, even good things can become distractions from God’s best. What if real peace begins by realigning with God’s original design?"
-image: /assets/images/whose-order-are-you-following.jpg
+image: /img/posts/whose-order-are-you-following.jpg
 ---
 
 We live in a world where “good people” will drop everything for a friend, stay late at work without hesitation, and serve at church every Sunday, but haven’t had an uninterrupted dinner with their spouse or children in months. 
