@@ -4,7 +4,7 @@ subtitle: A Speak Life Series
 date: 2025-07-11
 tags: [marriage, wives, prayer, speaking life, biblical marriage]
 excerpt: Your husband may never ask for prayer, but that doesn’t mean he doesn’t need it. Here’s how to intercede for him and speak truth into the battles he faces in silence.
-image: /assets/images/speak-life-over-him.jpg
+image: /img/posts/speak-life-over-him.jpg
 ---
 
 > **👤 This post is written for wives.** *(Husbands, read it too, you’ll find insight here.)*
