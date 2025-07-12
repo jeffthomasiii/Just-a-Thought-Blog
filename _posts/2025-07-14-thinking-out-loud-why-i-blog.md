@@ -5,7 +5,7 @@ subtitle: "Reflection as a Spiritual Discipline"
 date: 2025-07-14
 categories: [Faith, Personal Reflection]
 tags: [reflection, obedience, spiritual growth, journaling, writing]
-image: /assets/images/thinking-out-loud.jpg
+image: /img/posts/thinking-out-loud.jpg
 excerpt: "Most of my best thoughts start messy. But somewhere in the writing, I hear God’s voice. This blog isn’t about platform—it's about obedience, clarity, and growth."
 ---
 
