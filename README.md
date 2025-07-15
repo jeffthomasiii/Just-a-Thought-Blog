@@ -48,3 +48,23 @@ This blog is powered by **Jekyll** and hosted with **GitHub Pages**, using a cus
    categories: [faith, reflection]
    background: '/img/posts/your-image.jpg' # Optional
    ---
+
+---
+
+## 🧰 Tech Stack
+- [Jekyll](https://jekyllrb.com/) – static site generator
+- GitHub Pages – hosting
+- SCSS / SASS – styling
+- Markdown – content formatting
+- Liquid – Jekyll templating engine
+
+---
+
+## 📫 Contact
+Have a question or thought? Use the [Contact Form](https://jeffthomasiii.github.io/Just-a-Thought-Blog/contact/) on the site.
+
+---
+
+## 📝 License
+Theme originally forked from [Start Bootstrap Clean Blog](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll).
+Content and customizations © Jeff Thomas III. All rights reserved.
