@@ -34,9 +34,28 @@ layout: default
 
         {{ content }}
 
-        <div style="text-align: center; margin-top: 30px;">
+<!-- Giscus comments -->
+<div id="giscus_thread" style="margin-top: 3rem;"></div>
+<script src="https://giscus.app/client.js"
+  data-repo="jeffthomasiii/Just-a-Thought-Blog"
+  data-repo-id="YOUR_REPO_ID"
+  data-category="General"
+  data-category-id="YOUR_CATEGORY_ID"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="preferred_color_scheme"
+  crossorigin="anonymous"
+  async>
+</script>
+
+<!-- Blog branding image -->
+<div style="text-align: center; margin-top: 30px;">
   <img src="{{ site.baseurl }}/img/jat-olive-branch.png" alt="Just A Thought logo" style="height: 50px; opacity: 0.85;">
 </div>
+
         
         <hr>
 
