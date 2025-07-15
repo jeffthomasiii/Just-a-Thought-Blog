@@ -1,2 +1,10 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
+
+// Custom style for post excerpts
+.post-excerpt {
+  font-style: italic;
+  color: #666;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
