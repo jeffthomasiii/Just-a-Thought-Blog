@@ -29,7 +29,7 @@ This post won’t answer that fully. But maybe that’s okay. Maybe holiness beg
 
 ### Identity Before Behavior
 
-> **“As obedient children…”** – 1 Peter 1:14
+> *“As obedient children…”* – 1 Peter 1:14
 
 There’s a story of a young boy who got into trouble during recess. He’d pushed another student in frustration, and a teacher caught the tail end of the scuffle. As the staff brought him inside, the boy’s face crumpled, not from fear of punishment, but from the weight of something deeper.
 
@@ -51,7 +51,7 @@ Holiness doesn’t begin with striving, it begins with **belonging**. God isn’
 
 ### Don’t Go Back
 
-> **“…do not be conformed to the passions of your former ignorance.”** – 1 Peter 1:14
+> *“…do not be conformed to the passions of your former ignorance.”* – 1 Peter 1:14
 
 It always starts the same way. You’re running a few minutes behind, the playlist is just getting good, and you're cruising down the freeway when, bam! Someone cuts you off with zero warning and no blinker. You slam the brakes, mutter something unholy under your breath, and that *old version of you* suddenly takes the wheel… figuratively and emotionally.
 
@@ -73,7 +73,7 @@ Holiness means recognizing when something doesn’t fit anymore, like a favorite
 
 ### Imitation
 
-> **“…be holy in all your conduct.”** – 1 Peter 1:15
+> *“…be holy in all your conduct.”* – 1 Peter 1:15
 
 He was five years old, standing barefoot in the middle of the living room, one hand on his hip and the other waving a plastic spoon like it was a microphone. He was “preaching,” sort of. Mimicking the pastor he’d seen at church. But his tiny voice didn’t boom, it squeaked. Every now and then, he’d glance at his dad for approval.
 
@@ -95,7 +95,7 @@ The more we watch Jesus, the more we start sounding like Him, even without tryin
 
 ### Tension of Being Set Apart
 
-> **“You shall be holy, for I am holy.”** – 1 Peter 1:16
+> *“You shall be holy, for I am holy.”* – 1 Peter 1:16
 
 The job offer was nearly perfect. Great pay, generous bonus structure, flexibility, and a fast track to a senior role. But something in the fine print didn't sit right.
 
@@ -130,5 +130,5 @@ But we’ll also grow. We’ll pause. We’ll forgive. We’ll reflect Him.
 
 *Just a thought.*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTY1NjM4OTddfQ==
+eyJoaXN0b3J5IjpbMTIwNzQ2OTU1OV19
 -->
