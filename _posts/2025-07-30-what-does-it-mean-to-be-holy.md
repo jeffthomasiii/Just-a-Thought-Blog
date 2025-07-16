@@ -9,8 +9,6 @@ categories: [Faith, Just a Thought]
 excerpt: "Holiness isn’t about being flawless, it’s about being set apart. This post wrestles with Peter’s call to be holy and explores what it means practically, with real-life reflections and relatable stories."
 ---
 
-# What Does It Mean to Be Holy?
-
 > “As obedient children, do not be conformed to the passions of your former ignorance, but as He who called you is holy, you also be holy in all your conduct, since it is written, ‘You shall be holy, for I am holy.’” 1 Peter 1:14–16 (ESV)
 
 
@@ -29,7 +27,7 @@ And that raises the question I’ve been quietly wrestling with:
 This post won’t answer that fully. But maybe that’s okay. Maybe holiness begins not with answers, but with better questions, and the courage to let the Spirit teach us as we walk it out.
 
 
-## Identity Before Behavior
+### Identity Before Behavior
 
 > **“As obedient children…”** – 1 Peter 1:14
 
@@ -51,7 +49,7 @@ Holiness doesn’t begin with striving, it begins with **belonging**. God isn’
 - Where might I be forgetting who I am?
 
 
-## Don’t Go Back
+### Don’t Go Back
 
 > **“…do not be conformed to the passions of your former ignorance.”** – 1 Peter 1:14
 
@@ -73,7 +71,7 @@ Holiness means recognizing when something doesn’t fit anymore, like a favorite
 - Where is God inviting me to pause and respond differently?
 
 
-## Imitation
+### Imitation
 
 > **“…be holy in all your conduct.”** – 1 Peter 1:15
 
@@ -95,7 +93,7 @@ The more we watch Jesus, the more we start sounding like Him, even without tryin
 - What would change if I simply started imitating Jesus?
 
 
-## Tension of Being Set Apart
+### Tension of Being Set Apart
 
 > **“You shall be holy, for I am holy.”** – 1 Peter 1:16
 
@@ -117,7 +115,7 @@ Holiness won’t always make you popular. It won’t always be understood. But i
 - What have I been afraid to let go of because it might set me apart?
 
 
-## Maybe the Question *Is* the Point
+### Maybe the Question *Is* the Point
 
 So... what does it *really* mean to be holy?
 
