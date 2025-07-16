@@ -9,7 +9,7 @@ categories: [Faith, Just a Thought]
 excerpt: "Holiness isn’t about being flawless, it’s about being set apart. This post wrestles with Peter’s call to be holy and explores what it means practically, with real-life reflections and relatable stories."
 ---
 
-> “As obedient children, do not be conformed to the passions of your former ignorance, but as He who called you is holy, you also be holy in all your conduct, since it is written, ‘You shall be holy, for I am holy.’” 1 Peter 1:14–16 (ESV)
+> *“As obedient children, do not be conformed to the passions of your former ignorance, but as He who called you is holy, you also be holy in all your conduct, since it is written, ‘You shall be holy, for I am holy.’”* 1 Peter 1:14–16 (ESV)
 
 
 ## Holiness and the Questions We’d Rather Avoid
@@ -129,3 +129,6 @@ But we’ll also grow. We’ll pause. We’ll forgive. We’ll reflect Him.
 > and more about living like we actually belong to Him.
 
 *Just a thought.*
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3NTY1NjM4OTddfQ==
+-->
