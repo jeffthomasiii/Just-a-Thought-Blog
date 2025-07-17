@@ -1,11 +1,14 @@
 ---
-layout: page
+layout: none
 title: Curriculum Vitae
 description: Jeff Thomas III – Career Overview and Experience
 permalink: /cv/
 background: '/img/bg-cv.jpg'
 ---
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeff Thomas III | Curriculum Vitae</title>
@@ -19,10 +22,12 @@ background: '/img/bg-cv.jpg'
       color: #2c2c2c;
       line-height: 1.6;
     }
-    .cv-wrapper {
-      width: 100%;
-      max-width: 100%;
-      padding: 40px 5vw;
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 40px;
+      width: 90vw;
+      box-sizing: border-box;
     }
     h1, h2, h4 {
       font-family: 'Lora', serif;
@@ -44,7 +49,7 @@ background: '/img/bg-cv.jpg'
       color: #6C8B60;
       text-decoration: none;
     }
-	    a:hover {
+    a:hover {
       text-decoration: underline;
     }
     .tagline {
@@ -95,22 +100,43 @@ background: '/img/bg-cv.jpg'
       height: 1px;
       background: #6C8B60;
     }
+    .motif-line img {
+      height: 40px;
+    }
     .section-emphasis {
       font-weight: bold;
       font-size: 1.05em;
       text-align: center;
     }
+    @media print {
+      body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+      }
+      a {
+        color: black;
+        text-decoration: underline;
+      }
+      .divider, .dashed-divider {
+        border: none;
+        height: 0;
+      }
+      .footer-img {
+        display: none;
+      }
+    }
   </style>
   <div class="cv-wrapper">
     <h1>Jeff Thomas III</h1>
     <div class="motif-line">
-      <img src="{{ site.baseurl }}/img/olive-motif-symmetrical.png" alt="Motif Icon" style="height: 22px;">
+      <img src="{{ site.baseurl }}/img/olive-motif-symmetrical.png" alt="Motif Icon" style="height: 40px;">
     </div>
     <p class="tagline">
       Speaker <span>|</span> Writer <span>|</span> Educator <span>|</span> Design Technology Leader <span>|</span> BIM Consultant
     </p>
     <div class="motif-line">
-      <img src="{{ site.baseurl }}/img/olive-motif-symmetrical.png" alt="Motif Icon" style="height: 22px;">
+      <img src="{{ site.baseurl }}/img/olive-motif-symmetrical.png" alt="Motif Icon" style="height: 40px;">
     </div>
 
     <div class="contact">
