@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Hearing My Words Out Loud: Exploring NotebookLM and Blog-to-Podcast AI"
