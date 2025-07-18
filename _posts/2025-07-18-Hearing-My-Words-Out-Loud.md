@@ -7,7 +7,7 @@ excerpt: "What if your blog could talk back? I used NotebookLM to turn three of 
 categories: faith tech
 tags: [notebooklm, ai, podcast, blog, reflection]
 author: Jeff Thomas III
-background: /img/bg-post.jpg
+background: /img/post/bg-hearing-my-words-out-loud.png
 ---
 
 
