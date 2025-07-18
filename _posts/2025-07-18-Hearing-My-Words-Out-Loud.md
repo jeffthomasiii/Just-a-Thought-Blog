@@ -35,7 +35,7 @@ The podcast mode features two AI hosts discussing your content, pulling out them
 
 I created three “episodes,” each based on my own blog posts:
 
-### 🎙️ Between Pines and Shorelines: Why We Camp
+#### 🎙️ Between Pines and Shorelines: Why We Camp
 
 A reflection on how camping became a way for my wife and me to reconnect, spiritually, emotionally, and relationally. More than a weekend getaway, it’s become a rhythm of retreat.
 
@@ -52,7 +52,7 @@ A reflection on how camping became a way for my wife and me to reconnect, spirit
   </audio>
 </div>
 
-### 🎙️ Thinking Out Loud: The Discipline of Reflection
+#### 🎙️ Thinking Out Loud: The Discipline of Reflection
 
 This post explains why I blog at all. For me, blogging is not about broadcasting; it’s about processing. Reflection is a spiritual discipline, and writing helps me pause and listen more clearly to what God might be showing me.
 
@@ -69,7 +69,7 @@ This post explains why I blog at all. For me, blogging is not about broadcasting
   </audio>
 </div>
 
-### 🎙️ Speak Life Over Them: Marital Prayer and Scripture Guidance
+#### 🎙️ Speak Life Over Them: Marital Prayer and Scripture Guidance
 
 This one’s a three-part series exploring the power of speaking life into your spouse through prayer and Scripture. It’s not just encouragement, it’s equipping. Each post focuses on a different voice:
 
