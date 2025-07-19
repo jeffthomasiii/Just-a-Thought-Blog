@@ -4,6 +4,35 @@
 
 <script src="{{"/assets/scripts.js" | relative_url }}"></script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const currentTheme = localStorage.getItem('theme');
+
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeIcon.textContent = '☀️';
+      } else {
+        document.body.classList.remove('dark-mode');
+        themeIcon.textContent = '🌙';
+      }
+    }
+
+    applyTheme(currentTheme || (prefersDark ? 'dark' : 'light'));
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        const newTheme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
+        localStorage.setItem('theme', newTheme);
+        applyTheme(newTheme);
+      });
+    }
+  });
+</script>
+
 {% if page.url contains 'contact' %}
   <!-- Form Validation -->
   <script src="{{"/assets/vendor/startbootstrap-clean-blog/js/jqBootstrapValidation.js" | relative_url }}"></script>
