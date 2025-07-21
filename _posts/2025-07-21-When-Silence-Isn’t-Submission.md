@@ -65,7 +65,9 @@ When God tells us to speak, remaining silent becomes an act of disobedience.
 
 Let’s bring this closer to home.
 
-The U.S. Constitution doesn’t silence its citizens, it invites their voice. It gives us the right to petition, protest, and participate. And for Christians living in this system, that means our voice isn’t just allowed, it’s expected.
+The U.S. Constitution doesn’t give us rights, it protects the ones we already have. It doesn't create our freedom; it guards it from government interference. That includes our God-given right to speak, to assemble, to petition, and to live according to conscience.
+
+And for Christians living in this system, that means our voice isn’t just permitted, it’s protected.
 
 And yet, many of us don’t use it.
 
@@ -73,7 +75,14 @@ Why?
 
 Part of the problem is language. We call politicians our “leaders.” But that’s not what they are.
 
-In America, we don’t elect leaders, we elect **representatives**. That’s not a small distinction. A leader casts vision and commands followers. A representative speaks on behalf of others, *on behalf of us*. And when they fail to do that, we don’t bow our heads and hope. We speak up, show up, or vote them out.
+In America, we don’t elect leaders, we elect **representatives**. That’s not a small distinction. A leader casts vision and invites others to follow. A representative speaks on behalf of others, *on behalf of us*. And when they fail to do that, we don’t bow our heads and hope. We speak up, show up, or vote them out.
+
+But here’s what we must not forget:  
+**We’re also commanded to pray for them.** Whether we agree with their policies or not, Scripture calls us to lift up “kings and all who are in authority” (1 Timothy 2:1–2). That doesn’t mean we endorse every decision. It means we approach every situation with humility, and our first posture is prayer, not outrage.
+
+And if we are led to speak, we speak in love.  
+We speak with clarity.  
+But we do not remain silent.
 
 If we forget that, we stop acting like a free people. And we stop living like a sent people.
 
