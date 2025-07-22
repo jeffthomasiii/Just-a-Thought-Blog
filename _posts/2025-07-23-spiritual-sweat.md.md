@@ -5,6 +5,7 @@ subtitle: "Training Naked: The Lost Discipline of Undistracted Devotion"
 date: 2025-07-23
 author: Jeff Thomas III
 tags: [faith, discipline, godliness, spiritual-growth]
+image: /img/posts/spiritual-sweat.jpg
 ---
 
 The sun hadn’t risen yet, but he was already drenched in sweat.  
@@ -28,7 +29,7 @@ how much more should we “train ourselves for godliness”?
 > ### Word Study: *γύμναζε* (gymnaze) – Strong’s 1128  
 > **“To train by physical exercise; to practice discipline in the fullest sense.”**  
 >  
-> Originally meant to train *naked*, as athletes did in ancient Greek gymnasiums—removing anything that could hinder movement. Paul uses this word in 1 Timothy 4:7 to call believers to **undistracted, exposed, consistent spiritual training.**
+> Originally meant to train *naked*, as athletes did in ancient Greek gymnasiums, removing anything that could hinder movement. Paul uses this word in 1 Timothy 4:7 to call believers to **undistracted, exposed, consistent spiritual training.**
 >
 > Not casual. Not comfortable. **Focused. Honest. All in.**
 
