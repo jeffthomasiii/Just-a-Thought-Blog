@@ -4,7 +4,7 @@ date: 2025-06-11
 categories: [intro, welcome]
 tags: [faith-in-practice, biblical-marriage, thoughtful-tech, camping-life, scripture-journaling, christian-living]
 excerpt: "This blog isn't about being loud or polished, it's about honest reflection, biblical thinking, and real life. Here's what you can expect from Just A Thought."
-image: /img/posts/intro-blog-post-candle-scene.jpg
+image: /img/posts/intro-blog-post-candle-scenedefault-og.jpg
 ---
 
 We don’t need another blog.  
@@ -53,3 +53,6 @@ Let’s think, reflect, and grow, together.
 
 **What kind of questions or topics are you wrestling with these days?**  
 Leave a comment or [send a message](#) — I’d love to hear from you.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTYxNzQ2NzM2XX0=
+-->
