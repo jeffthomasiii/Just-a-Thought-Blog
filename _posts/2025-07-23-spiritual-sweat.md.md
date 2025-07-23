@@ -26,10 +26,10 @@ how much more should we “train ourselves for godliness”?
 > *“Train yourself for godliness.”* - 1 Timothy 4:7 (ESV)
 
 
-> ### Word Study: *γύμναζε* (gymnaze) – Strong’s 1128  
+> #### Word Study: *γύμναζε* (gymnaze) – Strong’s 1128  
 > **“To train by physical exercise; to practice discipline in the fullest sense.”**  
 >  
-> Originally meant to train *naked*, as athletes did in ancient Greek gymnasiums, —removing anything that could hinder movement. Paul uses this word in 1 Timothy 4:7 to call believers to **undistracted, exposed, consistent spiritual training.**
+> Originally meant to train *naked*, as athletes did in ancient Greek gymnasiums, removing anything that could hinder movement. Paul uses this word in 1 Timothy 4:7 to call believers to **undistracted, exposed, consistent spiritual training.**
 >
 > Not casual. Not comfortable. **Focused. Honest. All in.**
 
