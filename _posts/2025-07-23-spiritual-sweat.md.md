@@ -29,7 +29,7 @@ how much more should we “train ourselves for godliness”?
 > ### Word Study: *γύμναζε* (gymnaze) – Strong’s 1128  
 > **“To train by physical exercise; to practice discipline in the fullest sense.”**  
 >  
-> Originally meant to train *naked*, as athletes did in ancient Greek gymnasiums, removing anything that could hinder movement. Paul uses this word in 1 Timothy 4:7 to call believers to **undistracted, exposed, consistent spiritual training.**
+> Originally meant to train *naked*, as athletes did in ancient Greek gymnasiums, —removing anything that could hinder movement. Paul uses this word in 1 Timothy 4:7 to call believers to **undistracted, exposed, consistent spiritual training.**
 >
 > Not casual. Not comfortable. **Focused. Honest. All in.**
 
@@ -105,3 +105,6 @@ Because godliness isn’t grown in comfort, it’s forged in commitment.
 
 What’s one weight you need to lay aside to train more freely for godliness?
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzc0MTM2OTk3XX0=
+-->
