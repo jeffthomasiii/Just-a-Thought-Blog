@@ -40,8 +40,7 @@ It’s not downloaded or gifted, it’s trained.
 
 And like the ancient athletes, if we want to grow, we have to start by **taking things off**.
 
-> *“Let us also lay aside every weight, and sin which clings so closely…”*  
-> - Hebrews 12:1 (ESV)
+> *“Let us also lay aside every weight, and sin which clings so closely…”* - Hebrews 12:1 (ESV)
 
 Sometimes what holds us back isn’t sin, but clutter:
 - too much noise  
@@ -84,8 +83,7 @@ True rest is not escape, it’s communion.
 He trained with a finish line in mind.  
 So do we.
 
-> *“I press on toward the goal for the prize of the upward call of God in Christ Jesus.”*  
-> - Philippians 3:14
+> *“I press on toward the goal for the prize of the upward call of God in Christ Jesus.”* - Philippians 3:14
 
 Our prize isn’t praise or performance.  
 It’s *Christlikeness*, becoming more like Jesus so we can reflect Him more faithfully in a weary world.
