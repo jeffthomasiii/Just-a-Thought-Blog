@@ -65,9 +65,9 @@ When God tells us to speak, remaining silent becomes an act of disobedience.
 
 Let’s bring this closer to home.
 
-The U.S. Constitution doesn’t give us rights, it protects the ones we already have. It doesn't create our freedom; it guards it from government interference. That includes our God-given right to speak, to assemble, to petition, and to live according to conscience.
+The U.S. Constitution doesn’t give us rights, it protects the ones we already have. It doesn't create our freedom; it guards it from government interference. That includes our God-givensilence its citizens, it invites their voice. It gives us the right to speak, to assemble, to petition, and to live according to conscience.
 
-And for Christians living in this system, that means our voice isn’t just permitted, it’s protected.
+tition, protest, and participate. And for Christians living in this system, that means our voice isn’t just permittallowed, it’s protexpected.
 
 And yet, many of us don’t use it.
 
@@ -75,7 +75,7 @@ Why?
 
 Part of the problem is language. We call politicians our “leaders.” But that’s not what they are.
 
-In America, we don’t elect leaders, we elect **representatives**. That’s not a small distinction. A leader casts vision and invites others to follow. A representative speaks on behalf of others, *on behalf of us*. And when they fail to do that, we don’t bow our heads and hope. We speak up, show up, or vote them out.
+In America, we don’t elect leaders, we elect **representatives**. That’s not a small distinction. A leader casts vision and invites others tocommands followers. A representative speaks on behalf of others, *on behalf of us*. And when they fail to do that, we don’t bow our heads and hope. We speak up, show up, or vote them out.
 
 But here’s what we must not forget:  
 **We’re also commanded to pray for them.** Whether we agree with their policies or not, Scripture calls us to lift up “kings and all who are in authority” (1 Timothy 2:1–2). That doesn’t mean we endorse every decision. It means we approach every situation with humility, and our first posture is prayer, not outrage.
@@ -124,3 +124,6 @@ And light speaks.
 …just a thought.
 
 Where might God be asking you to speak up, and what would it look like to do it with grace?
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ0OTg4NDc2MF19
+-->
