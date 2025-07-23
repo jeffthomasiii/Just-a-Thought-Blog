@@ -1,23 +1,13 @@
 ---
-
 layout: post
-
 title: "What the Four Horsemen Can’t Kill, If God Is in the Marriage"
-
 subtitle: "Clinical science may predict divorce, but Scripture offers a redemptive counter-strategy"
-
 date: 2025-08-01
-
 excerpt: "The Gottman Institute’s Four Horsemen can predict divorce with over 90% accuracy, but Scripture offers a way forward, if God is in the marriage. Here’s how grace rewrites the ending."
-
 categories: faith marriage
-
 tags: [marriage, conflict, gottman, scripture, healing, relationships]
-
 author: Jeff Thomas III
-
 background: /img/posts/bg-what-the-four-horsemen-cant-kill.png
-
 ---
 
 
@@ -278,3 +268,6 @@ But they can’t kill what God is rebuilding in humility, truth, and love.*
 
 
 > …just a thought.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTMzNDQxNTE1XX0=
+-->
