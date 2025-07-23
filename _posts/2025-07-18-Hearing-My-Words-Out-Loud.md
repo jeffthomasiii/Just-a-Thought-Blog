@@ -41,14 +41,13 @@ A reflection on how camping became a way for my wife and me to reconnect, spirit
 
 📖 *Scheduled to publish July 28, 2025*
 
-<h6>
+<h64>
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" style="vertical-align: middle; margin-right: 0.4em;">
     <circle cx="50" cy="50" r="48" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
     <polygon points="40,30 70,50 40,70" fill="#5E5C49"/>
     <path d="M20 80 Q35 60 30 50 Q25 40 40 20" stroke="#A6A48D" stroke-width="2" fill="none"/>
-  </svg>
- Listen to the Episode
-</h6>
+  < Listen to the Episode
+</h>
 <div style="text-align:center; margin-bottom: 2rem;">
   <audio controls>
     <source src="{{ '/assets/audio/why-we-camp.mp3' | relative_url }}" type="audio/mpeg">
@@ -62,13 +61,12 @@ This post explains why I blog at all. For me, blogging is not about broadcasting
 
 📖 [Read Thinking Out Loud, Why I Blog →](https://jeffthomasiii.github.io/Just-a-Thought-Blog/faith/personal%20reflection/2025/07/14/thinking-out-loud-why-i-blog.html)
 
-<h6>
+<h64>
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" style="vertical-align: middle; margin-right: 0.4em;">
     <circle cx="50" cy="50" r="48" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
     <polygon points="40,30 70,50 40,70" fill="#5E5C49"/>
     <path d="M20 80 Q35 60 30 50 Q25 40 40 20" stroke="#A6A48D" stroke-width="2" fill="none"/>
-  </svg>
- Listen to the Episode
+  < Listen to the Episode
 </h6>
 <div style="text-align:center; margin-bottom: 2rem;">
   <audio controls>
@@ -85,14 +83,13 @@ This one’s a three-part series exploring the power of speaking life into your 
 - 📖 [Husbands, Speak Life When She Forgets Who She Is](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/09/husbands-speak-life-when-she-forgets-who-she-is.html)  
 - 📖 [Wives, Speak Life When He Feels the Weight of It All](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/11/wives-speak-life-when-he-feels-the-weight-of-it-all.html)
 
-<h6>
+<h64>
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" style="vertical-align: middle; margin-right: 0.4em;">
     <circle cx="50" cy="50" r="48" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
     <polygon points="40,30 70,50 40,70" fill="#5E5C49"/>
     <path d="M20 80 Q35 60 30 50 Q25 40 40 20" stroke="#A6A48D" stroke-width="2" fill="none"/>
-  </svg>
- Listen to the Episode
-</h6>
+  < Listen to the Episode
+</h64>
 <div style="text-align:center; margin-bottom: 2rem;">
   <audio controls>
     <source src="{{ '/assets/audio/speak-life-series.mp3' | relative_url }}" type="audio/mpeg">
@@ -113,5 +110,5 @@ Will I create a full podcast? Maybe. Maybe not. The inspiration is there, but so
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMTI1NDUzN119
+eyJoaXN0b3J5IjpbLTE5NDU2Mjg0OCwxODIxMjU0NTM3XX0=
 -->
