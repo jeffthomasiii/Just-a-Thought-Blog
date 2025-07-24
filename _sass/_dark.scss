@@ -4,7 +4,10 @@ body.dark-mode {
 }
 
 .dark-mode a {
-  color: #90caf9;
+  color: #A2B179; // soft olive tone for better contrast in dark mode
+}
+.dark-mode a:hover {
+  color: #556B2F;
 }
 
 .dark-mode header,
