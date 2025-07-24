@@ -5,7 +5,7 @@ date: 2025-07-25
 author: Jeff Thomas III
 categories: [faith, reflection]
 tags: [Proverbs, heart, desires, self-control, spiritual-discipline]
-background: img/posts/guard-your-heart-check-your-desires.png
+background: /img/posts/guard-your-heart-check-your-desires.png
 ---
 
 > *“Above all else, **guard your heart**, for everything you do flows from it.”* - *Proverbs 4:23*
