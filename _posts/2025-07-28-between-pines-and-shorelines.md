@@ -13,7 +13,7 @@ tags:
   - faith
   - travel
   - outdoors
-image: /assets/images/between-pines-and-shorelines.jpg
+image: /img/posts/between-pines-and-shorelines.jpg
 excerpt: We didn’t grow up camping. But somewhere between tall trees and quiet lakes, we found something sacred, stillness, reflection, and each other. This is why we camp.
 ---
 
