@@ -1,6 +1,11 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
 
+.navbar a:hover,
+.navbar a:focus {
+  color: #556B2F; // Darker olive for hover
+}
+
 // Custom style for post excerpts
 .post-excerpt {
   font-style: italic;
