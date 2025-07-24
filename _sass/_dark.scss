@@ -10,6 +10,15 @@ body.dark-mode {
   color: #556B2F;
 }
 
+.dark-mode header a {
+  color: #A2B179;
+}
+
+.dark-mode header a:hover,
+.dark-mode header a:focus {
+  color: #6B8E23; // or stick with #556B2F if you prefer darker
+}
+
 .dark-mode header,
 .dark-mode footer {
   background-color: #1e1e1e;
