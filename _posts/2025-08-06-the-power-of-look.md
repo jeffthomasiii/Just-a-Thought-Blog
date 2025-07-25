@@ -26,7 +26,7 @@ scripture: "2 Samuel 11:1–4; Hebrews 12:2 ESV"
 That’s often how it goes. A glance becomes a gaze, and a gaze becomes a path.
 
 David didn’t fall because he wasn’t where he was supposed to be, though that mattered too. He fell because of where he fixed his eyes. In *Disciplines of a Godly Man*, R. Kent Hughes puts it bluntly:  
-> *“After the first glance David should have turned the other way and retired to his chamber, but he did not. His **look** became a sinful **stare** and then a burning, libidinous, sweaty **leer**.”*
+> *“After the first glance David should have turned the other way and retired to his chamber, but he did not. His **look** became a sinful **stare** and then a burning, libidinous, sweaty **leer**. In that moment David, who had been a man after God's own heart, became a dirty, leering old man”*
 
 And just like that, the man after God’s own heart became, in that moment, *“a dirty, leering old man.”*
 
@@ -103,5 +103,5 @@ That’s why Scripture doesn’t just say *don’t look*—it says *fix your eye
 What’s one thing you've been looking at lately that’s quietly shaping your direction, for better or for worse?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDkyODA5OTFdfQ==
+eyJoaXN0b3J5IjpbLTE0NDQwMTQ1ODBdfQ==
 -->
