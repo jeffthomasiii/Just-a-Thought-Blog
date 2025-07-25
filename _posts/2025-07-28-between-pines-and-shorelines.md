@@ -13,7 +13,7 @@ tags:
   - faith
   - travel
   - outdoors
-image: /img/posts/between-pines-and-shorelines.jpg
+image: /img/postassets/images/between-pines-and-shorelines.jpg
 excerpt: We didn’t grow up camping. But somewhere between tall trees and quiet lakes, we found something sacred, stillness, reflection, and each other. This is why we camp.
 ---
 
@@ -116,3 +116,6 @@ We camp because peace is easier to hear when everything else goes quiet.
 
 
 What’s your version of slowing down? Have you ever had a moment in nature that helped you remember what matters most?
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzNDQ5ODMyMzddfQ==
+-->
