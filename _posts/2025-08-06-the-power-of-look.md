@@ -56,11 +56,11 @@ Seeing isn’t sin. But staring can become it.
 
 ### The Brain Follows the Eyes
 
-Psychologically, this is also true. Research on the Reticular Activating System (RAS) shows that our brain filters and amplifies the information we focus on (Moruzzi & Magoun, 1949; later studies in attention and cognition). Likewise, the concept of neuroplasticity—our brain’s ability to rewire based on repeated focus—has been widely documented in neuroscience (see Norman Doidge’s *The Brain That Changes Itself* for an accessible overview).
+Psychologically, this is also true. Research on the Reticular Activating System (RAS) shows that our brain filters and amplifies the information we focus on (Moruzzi & Magoun, 1949; later studies in attention and cognition). Likewise, the concept of neuroplasticity, our brain’s ability to rewire based on repeated focus, has been widely documented in neuroscience (see Norman Doidge’s *The Brain That Changes Itself* for an accessible overview).
 
-Studies in neuroscience tell us that what we focus on activates something called the **Reticular Activating System (RAS)**—a filter in the brain that starts prioritizing what we dwell on. The more we look, the more we want. The more we want, the more our behavior bends toward it.
+Studies in neuroscience tell us that what we focus on activates something called the *Reticular Activating System (RAS)* a filter in the brain that starts prioritizing what we dwell on. The more we look, the more we want. The more we want, the more our behavior bends toward it.
 
-**Neuroplasticity** supports this too—your brain rewires itself around your focus. Stare long enough at something, and your desire adapts to want more of it.
+*Neuroplasticity* supports this too,your brain rewires itself around your focus. Stare long enough at something, and your desire adapts to want more of it.
 
 Even sports psychology says the same thing: *“Look where you want to go.”* Cyclists and skiers are taught that if they look at a tree, they’ll hit it. If they look at the path, they’ll follow it.
 
@@ -107,5 +107,5 @@ That’s why Scripture doesn’t just say *don’t look*—it says *fix your eye
 What’s one thing you've been looking at lately that’s quietly shaping your direction, for better or for worse?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcyMjkyMDYyXX0=
+eyJoaXN0b3J5IjpbMjIxMjQ2MTAwXX0=
 -->
