@@ -98,7 +98,7 @@ But because I finally understood—*they don’t get to decide who I become.*
 
 Jesus didn’t wait for people to behave right before He did right.  
 He *washed Judas’ feet*—knowing the betrayal coming.  
-He *forgave Peter*—knowing the denial that echoed just hours before.  
+He *forgave Peter*, knowing the denial that echoed just hours before.  
 And from the cross, He prayed for His enemies.
 
 He *did it anyway.*
@@ -109,18 +109,18 @@ Romans 12:21 reminds us:
 That doesn’t mean it’s easy.  
 It means it’s *possible.*
 
----
 
-### In Marriage—and Everywhere Else
+### In Marriage, and Everywhere Else
 
+I believe marriage teaches us how to love others.
 Imagine your spouse is off. Quiet. Distant.  
-You could mirror it—stay cold, hold back affection, keep score.  
+You could mirror it, stay cold, hold back affection, keep score.  
 Or…  
 You could cook the meal, say the kind word, offer the gentle touch.  
 You could *do it anyway.*
 
 That doesn’t make you weak.  
-That makes you *free*—free from needing their behavior to justify your own.
+That makes you *free*, free from needing their behavior to justify your own.
 
 Galatians 6:9 puts it like this:  
 > *“Let us not grow weary of doing good, for in due season we will reap, if we do not give up.”*
@@ -129,7 +129,7 @@ Even if you’re tired.
 Even if they’re difficult.  
 Even if no one claps or thanks you or changes.
 
-You keep choosing love—not because they deserve it—but because that’s who *you* are becoming in Christ.
+You keep choosing love, not because they deserve it, but because that’s who *you* are becoming in Christ.
 
 ### You Don’t Have to Change… Just Because They Did
 
@@ -149,5 +149,5 @@ Because who you’re becoming matters more than how they’re behaving.
 **…just a thought.**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5ODQ2NDcwMV19
+eyJoaXN0b3J5IjpbLTIwMTc0MTY1ODJdfQ==
 -->
