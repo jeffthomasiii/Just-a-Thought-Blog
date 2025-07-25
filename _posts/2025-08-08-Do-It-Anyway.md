@@ -77,11 +77,11 @@ She’s one of the most kindhearted, understanding, compassionate, and strong pe
 My response to her is often simple:  
 **“Because that’s who you are.”**
 
-Years ago, when I was just starting to face the weight of adult relationships—betrayals, letdowns, and miscommunication—I remember hearing my Annette tell me something that didn’t fully sink in at the time:  
+Years ago, when I was just starting to face the weight of adult relationships, betrayals, letdowns, and miscommunication, I remember hearing my aunt Annette tell me something that didn’t fully sink in at the time:  
 > *“Don’t allow other people’s behavior to change your character.”*
 
 I nodded. Agreed. Moved on.  
-But it wasn’t until years later—after applying it over and over, often the hard way—that I realized: **that’s just who I am now.**
+But it wasn’t until years later, after applying it over and over, often the hard way, that I realized: *that’s just who I am now.*
 
 Over time, it’s become one of the things I’m known for:  
 - Consistency in character.  
@@ -90,14 +90,12 @@ Over time, it’s become one of the things I’m known for:
 
 Not because I never get frustrated.  
 Not because I don’t notice how people act.  
-But because I finally understood—*they don’t get to decide who I become.*
-
----
+But because I finally understood, *they don’t get to decide who I become.*
 
 ### Jesus Loved Anyway
 
 Jesus didn’t wait for people to behave right before He did right.  
-He *washed Judas’ feet*—knowing the betrayal coming.  
+He *washed Judas’ feet*, knowing the betrayal coming.  
 He *forgave Peter*, knowing the denial that echoed just hours before.  
 And from the cross, He prayed for His enemies.
 
@@ -149,5 +147,5 @@ Because who you’re becoming matters more than how they’re behaving.
 **…just a thought.**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTc0MTY1ODJdfQ==
+eyJoaXN0b3J5IjpbNzI0NjY2MDddfQ==
 -->
