@@ -5,6 +5,7 @@ date: 2025-07-25
 author: Jeff Thomas III
 categories: [faith, reflection]
 tags: [Proverbs, heart, desires, self-control, spiritual-discipline]
+excerpt: "Desire doesn’t destroy us overnight, it quietly takes root. Guarding your heart means catching what grows there early, before it bears fruit in your life. Here’s why that matters now more than ever."
 background: /img/posts/guard-your-heart-check-your-desires.png
 ---
 
