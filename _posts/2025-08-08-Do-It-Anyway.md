@@ -55,17 +55,16 @@ One shuts down, the other walks away.
 And suddenly, both are becoming someone they don’t want to be.  
 
 But what if love didn’t echo?  
-What if it *anchored* instead—choosing to stay kind, grounded, and true even when the other person isn’t at their best?
+What if it *anchored* instead, choosing to stay kind, grounded, and true even when the other person isn’t at their best?
 
 This isn’t about pretending. It’s not about enabling harmful behavior or stuffing your feelings. It’s about refusing to let someone else’s brokenness rewrite your character.
 
-You can set boundaries *and* still show grace.  
-You can speak truth *without* losing tenderness.  
-You can confront sin *without* becoming sinful.  
+ - You DO NOT need to tolerate abuse. 
+ - You can set boundaries *and* still  show grace.  
+   You can speak truth *without* losing tenderness.   You
+   can confront sin *without* becoming sinful.
 
 That’s maturity. That’s spiritual strength.
-
----
 
 ### A Personal Reflection: Lessons That Stuck
 
@@ -75,7 +74,7 @@ She’s one of the most kindhearted, understanding, compassionate, and strong pe
 *Why keep loving when it doesn’t seem to be returned?*
 
 My response to her is often simple:  
-**“Because that’s who you are.”**
+> ***“Because that’s who you are.”***
 
 Years ago, when I was just starting to face the weight of adult relationships, betrayals, letdowns, and miscommunication, I remember hearing my aunt Annette tell me something that didn’t fully sink in at the time:  
 > *“Don’t allow other people’s behavior to change your character.”*
@@ -147,5 +146,5 @@ Because who you’re becoming matters more than how they’re behaving.
 **…just a thought.**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI0NjY2MDddfQ==
+eyJoaXN0b3J5IjpbMTk1OTU4MTkyOF19
 -->
