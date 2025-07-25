@@ -31,22 +31,18 @@ But what if you did it anyway?
 
 What if you chose to become who you’re called to be, not what they deserve in that moment?
 
----
-
-### We All Adjust—But Sometimes in the Wrong Direction
+### We All Adjust, But Sometimes in the Wrong Direction
 
 There’s a quiet battle that plays out in everyday moments:  
 Will I let their behavior change me?  
 Will I respond in kind, or will I respond in character?
 
-Whether it’s a stranger’s rudeness, a co-worker’s coldness, or a spouse’s indifference—something happens inside us when we feel disrespected or unseen. We want to pull back. Withdraw. Match the energy.
+Whether it’s a stranger’s rudeness, a co-worker’s coldness, or a spouse’s indifference, something happens inside us when we feel disrespected or unseen. We want to pull back. Withdraw. Match the energy.
 
 But here's the problem:  
 Their behavior wasn’t Christlike… and now ours isn’t either.
 
----
-
-### Love Doesn’t Echo—It Anchors
+### Love Doesn’t Echo, It Anchors
 
 In marriage, this is a familiar dance.  
 One spouse snaps, the other defends.  
@@ -59,10 +55,9 @@ What if it *anchored* instead, choosing to stay kind, grounded, and true even wh
 
 This isn’t about pretending. It’s not about enabling harmful behavior or stuffing your feelings. It’s about refusing to let someone else’s brokenness rewrite your character.
 
- - You DO NOT need to tolerate abuse. 
- - You can set boundaries *and* still  show grace.  
-   You can speak truth *without* losing tenderness.   You
-   can confront sin *without* becoming sinful.
+ - You can set boundaries *and* still show grace.  
+ - You can speak truth *without* losing tenderness.
+ - You can confront sin *without* becoming sinful.
 
 That’s maturity. That’s spiritual strength.
 
@@ -146,5 +141,5 @@ Because who you’re becoming matters more than how they’re behaving.
 **…just a thought.**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1OTU4MTkyOF19
+eyJoaXN0b3J5IjpbOTE3NDUyNjk5XX0=
 -->
