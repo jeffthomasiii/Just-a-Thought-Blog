@@ -24,7 +24,7 @@ scripture: "Romans 12:21; Galatians 6:9"
 You hold the door open. They walk through without a glance.  
 No “thank you.” No smile. Just… silence.  
 
-It’s minor—but something inside you clenches. *Seriously?*  
+It’s minor, but something inside you clenches. *Seriously?*  
 You think, *Next time, I won’t bother.*  
 
 But what if you did it anyway?
@@ -141,5 +141,5 @@ Because who you’re becoming matters more than how they’re behaving.
 **…just a thought.**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE3NDUyNjk5XX0=
+eyJoaXN0b3J5IjpbOTU3OTEwMjQzXX0=
 -->
