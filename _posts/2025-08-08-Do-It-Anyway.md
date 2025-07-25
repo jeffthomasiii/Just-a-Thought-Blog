@@ -3,7 +3,7 @@ layout: post
 title: "Do It Anyway: Becoming Who You Are, Not What They Deserve"
 subtitle: "When their behavior shifts, your character doesn’t have to."
 description: "Don't let someone else's behavior rewrite your character. This post reflects on Christlike consistency, marriage, and the quiet strength of loving anyway."
-date: 2025-07-25
+date: 2025-08-08
 author: Jeff Thomas III
 categories:
   - faith
@@ -141,5 +141,5 @@ Because who you’re becoming matters more than how they’re behaving.
 **…just a thought.**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU3OTEwMjQzXX0=
+eyJoaXN0b3J5IjpbMjA0OTM1NzgzMSw5NTc5MTAyNDNdfQ==
 -->
