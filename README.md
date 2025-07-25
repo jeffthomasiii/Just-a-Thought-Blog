@@ -2,6 +2,7 @@
 
 Welcome to *Just a Thought*, a personal blog where I reflect on faith, culture, biblical marriage, leadership, and the joys of camping. It’s a space for processing life through Scripture, story, and sincere thought. Every post ends with the same gentle invitation: *...just a thought.*
 
+---
 
 ## ✍️ Topics I Write About
 
@@ -11,6 +12,7 @@ Welcome to *Just a Thought*, a personal blog where I reflect on faith, culture, 
 - Personal growth and identity
 - RV camping & slowing down with nature
 
+---
 
 ## ⚙️ How the Blog is Set Up
 
@@ -28,6 +30,7 @@ This blog is powered by **Jekyll** and hosted with **GitHub Pages**, using a cus
 | **Images**   | `img/`, `img/posts/` | `.png`, `.jpg`, etc. | Organized into site-wide and post-specific images. |
 | **Config**   | `_config.yml`   | YAML       | Contains site metadata, blog settings, and plugin options. |
 
+---
 
 ## 📝 Creating a New Blog Post
 
@@ -46,6 +49,7 @@ This blog is powered by **Jekyll** and hosted with **GitHub Pages**, using a cus
    background: '/img/posts/your-image.jpg' # Optional
    ---
 
+---
 
 ## 🧰 Tech Stack
 - [Jekyll](https://jekyllrb.com/) – static site generator
@@ -54,11 +58,16 @@ This blog is powered by **Jekyll** and hosted with **GitHub Pages**, using a cus
 - Markdown – content formatting
 - Liquid – Jekyll templating engine
 
+---
 
 ## 📫 Contact
 Have a question or thought? Use the [Contact Form](https://jeffthomasiii.github.io/Just-a-Thought-Blog/contact/) on the site.
 
+---
 
 ## 📝 License
 Theme originally forked from [Start Bootstrap Clean Blog](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll).
 Content and customizations © Jeff Thomas III. All rights reserved.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTEzODE4NzA5XX0=
+-->
