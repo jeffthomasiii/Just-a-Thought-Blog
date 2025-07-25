@@ -94,12 +94,12 @@ But we almost always end up chasing the things we *choose* to keep staring at.
 > **What we ignore can trip us.**  
 > **What we gaze at can change us.**
 
-That’s why Scripture doesn’t just say *don’t look*—it says *fix your eyes* on Jesus. Because where your eyes go, your feet will follow.
+That’s why Scripture doesn’t just say *don’t look*, it says *fix your eyes* on Jesus. Because where your eyes go, your feet will follow.
 
 …just a thought.
 
 What’s one thing you've been looking at lately that’s quietly shaping your direction, for better or for worse?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYzMzU2OTQwXX0=
+eyJoaXN0b3J5IjpbMTc1NzAzNTgyNF19
 -->
