@@ -61,6 +61,7 @@ This post explains why I blog at all. For me, blogging is not about broadcasting
 
 📖 [Read Thinking Out Loud, Why I Blog →](https://jeffthomasiii.github.io/Just-a-Thought-Blog/faith/personal%20reflection/2025/07/14/thinking-out-loud-why-i-blog.html)
 
+
 <h64>
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" style="vertical-align: middle; margin-right: 0.4em;">
     <circle cx="50" cy="50" r="48" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
@@ -75,13 +76,17 @@ This post explains why I blog at all. For me, blogging is not about broadcasting
   </audio>
 </div>
 
+
 #### 🎙️ Speak Life Over Them: Marital Prayer and Scripture Guidance
+
 
 This one’s a three-part series exploring the power of speaking life into your spouse through prayer and Scripture. It’s not just encouragement, it’s equipping. Each post focuses on a different voice:
 
-- 📖 [Speak Life Over Them](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/02/speak-life-over-them.html)  
-- 📖 [Husbands, Speak Life When She Forgets Who She Is](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/09/husbands-speak-life-when-she-forgets-who-she-is.html)  
+
+- 📖 [Speak Life Over Them](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/02/speak-life-over-them.html)
+- 📖 [Husbands, Speak Life When She Forgets Who She Is](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/09/husbands-speak-life-when-she-forgets-who-she-is.html)
 - 📖 [Wives, Speak Life When He Feels the Weight of It All](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/11/wives-speak-life-when-he-feels-the-weight-of-it-all.html)
+
 
 <h64>
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" style="vertical-align: middle; margin-right: 0.4em;">
@@ -97,7 +102,9 @@ This one’s a three-part series exploring the power of speaking life into your 
   </audio>
 </div>
 
+
 ### What Did I Learn?
+
 
 It’s easy to think your words are clear, until you hear them interpreted back to you.
 
@@ -106,5 +113,6 @@ Some nuances were missed. Some points were flattened or reshaped. But I gained s
 It reminded me of what authors often feel when they get feedback from beta readers. You don’t write to be misunderstood, but if you are, the right response isn’t defensiveness. It’s reflection. Growth. Refinement.
 
 Will I create a full podcast? Maybe. Maybe not. The inspiration is there, but so are the practical limitations of time and margin. For now, I’ll keep experimenting. I’ll keep reflecting. And I’ll keep writing.
+
 
 …just a thought.
