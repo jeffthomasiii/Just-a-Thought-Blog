@@ -39,7 +39,7 @@ I created three “episodes,” each based on my own blog posts:
 
 A reflection on how camping became a way for my wife and me to reconnect, spiritually, emotionally, and relationally. More than a weekend getaway, it’s become a rhythm of retreat.
 
-📖 *Scheduled to publish July 28, 2025*
+📖 [Read Between Pines and Shorelines →]([https://jeffthomasiii.github.io/Just-a-Thought-Blog/camping/2025/07/28/between-pines-and-shorelines.html)
 
 <h64>
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" style="vertical-align: middle; margin-right: 0.4em;">
@@ -108,7 +108,3 @@ It reminded me of what authors often feel when they get feedback from beta reade
 Will I create a full podcast? Maybe. Maybe not. The inspiration is there, but so are the practical limitations of time and margin. For now, I’ll keep experimenting. I’ll keep reflecting. And I’ll keep writing.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDU2Mjg0OCwxODIxMjU0NTM3XX0=
--->
