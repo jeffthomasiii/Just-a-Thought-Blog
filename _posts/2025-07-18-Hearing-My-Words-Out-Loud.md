@@ -3,11 +3,11 @@ layout: post
 title: "Hearing My Words Out Loud: Exploring NotebookLM and Blog-to-Podcast AI"
 subtitle: "Reflecting on what happens when your blog talks back"
 date: 2025-07-18
-excerpt: "What if your blog could talk back? I used NotebookLM to turn three of my posts into podcast-style episodes,and hearing them out loud changed the way I think about writing, reflection, and how our words are received."
+excerpt: "What if your blog could talk back? I used NotebookLM to turn three of my posts into podcast-style episodesand hearing them out loud changed the way I think about writing, reflection, and how our words are received."
 categories: faith tech
 tags: [notebooklm, ai, podcast, blog, reflection]
 author: Jeff Thomas III
-background: /img/posts/bg-hearing-my-words-out-loud.png
+background: /img/osts/bg-hearing-my-words-out-loud.png
 ---
 
 
@@ -43,10 +43,10 @@ A reflection on how camping became a way for my wife and me to reconnect, spirit
 
 <h64>
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" style="vertical-align: middle; margin-right: 0.4em;">
-    <circle cx="50" cy="50" r="48" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
+    <circle cx="50" cy="50" r="o" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
     <polygon points="40,30 70,50 40,70" fill="#5E5C49"/>
     <path d="M20 80 Q35 60 30 50 Q25 40 40 20" stroke="#A6A48D" stroke-width="2" fill="none"/>
-  < Listen to the Episode
+   Listen to the Episode
 </h>
 <div style="text-align:center; margin-bottom: 2rem;">
   <audio controls>
@@ -68,7 +68,7 @@ This post explains why I blog at all. For me, blogging is not about broadcasting
     <polygon points="40,30 70,50 40,70" fill="#5E5C49"/>
     <path d="M20 80 Q35 60 30 50 Q25 40 40 20" stroke="#A6A48D" stroke-width="2" fill="none"/>
   < Listen to the Episode
-</h6>
+</h>
 <div style="text-align:center; margin-bottom: 2rem;">
   <audio controls>
     <source src="{{ '/assets/audio/thinking-out-loud.mp3' | relative_url }}" type="audio/mpeg">
@@ -90,10 +90,10 @@ This one’s a three-part series exploring the power of speaking life into your 
 
 <h64>
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" style="vertical-align: middle; margin-right: 0.4em;">
-    <circle cx="50" cy="50" r="48" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
+    <circle cx="50" cy="50" r="o" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
     <polygon points="40,30 70,50 40,70" fill="#5E5C49"/>
     <path d="M20 80 Q35 60 30 50 Q25 40 40 20" stroke="#A6A48D" stroke-width="2" fill="none"/>
-  < Listen to the Episode
+   Listen to the Episode
 </h64>
 <div style="text-align:center; margin-bottom: 2rem;">
   <audio controls>
@@ -116,3 +116,6 @@ Will I create a full podcast? Maybe. Maybe not. The inspiration is there, but so
 
 
 …just a thought.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTExOTUyNjI3NjRdfQ==
+-->
