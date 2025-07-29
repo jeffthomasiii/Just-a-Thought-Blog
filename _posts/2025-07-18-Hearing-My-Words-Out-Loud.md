@@ -7,7 +7,7 @@ excerpt: "What if your blog could talk back? I used NotebookLM to turn three of 
 categories: faith tech
 tags: [notebooklm, ai, podcast, blog, reflection]
 author: Jeff Thomas III
-background: /img/osts/bg-hearing-my-words-out-loud.png
+background: /img/posts/bg-hearing-my-words-out-loud.png
 ---
 
 
@@ -41,13 +41,15 @@ A reflection on how camping became a way for my wife and me to reconnect, spirit
 
 📖 [Read Between Pines and Shorelines →](https://jeffthomasiii.github.io/Just-a-Thought-Blog/camping/2025/07/28/between-pines-and-shorelines.html)
 
-<h64>
+<div style="display: flex; align-items: center; font-weight: bold; margin: 1rem 0;">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" style="vertical-align: middle; margin-right: 0.4em;">
-    <circle cx="50" cy="50" r="o" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
+    <circle cx="50" cy="50" r="48" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
     <polygon points="40,30 70,50 40,70" fill="#5E5C49"/>
     <path d="M20 80 Q35 60 30 50 Q25 40 40 20" stroke="#A6A48D" stroke-width="2" fill="none"/>
-   Listen to the Episode
-</h>
+  </svg>
+  Listen to the Episode
+</div>
+
 <div style="text-align:center; margin-bottom: 2rem;">
   <audio controls>
     <source src="{{ '/assets/audio/why-we-camp.mp3' | relative_url }}" type="audio/mpeg">
@@ -62,13 +64,15 @@ This post explains why I blog at all. For me, blogging is not about broadcasting
 📖 [Read Thinking Out Loud, Why I Blog →](https://jeffthomasiii.github.io/Just-a-Thought-Blog/faith/personal%20reflection/2025/07/14/thinking-out-loud-why-i-blog.html)
 
 
-<h64>
+<div style="display: flex; align-items: center; font-weight: bold; margin: 1rem 0;">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" style="vertical-align: middle; margin-right: 0.4em;">
     <circle cx="50" cy="50" r="48" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
     <polygon points="40,30 70,50 40,70" fill="#5E5C49"/>
     <path d="M20 80 Q35 60 30 50 Q25 40 40 20" stroke="#A6A48D" stroke-width="2" fill="none"/>
-  < Listen to the Episode
-</h>
+  </svg>
+  Listen to the Episode
+</div>
+
 <div style="text-align:center; margin-bottom: 2rem;">
   <audio controls>
     <source src="{{ '/assets/audio/thinking-out-loud.mp3' | relative_url }}" type="audio/mpeg">
@@ -88,13 +92,15 @@ This one’s a three-part series exploring the power of speaking life into your 
 - 📖 [Wives, Speak Life When He Feels the Weight of It All](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/11/wives-speak-life-when-he-feels-the-weight-of-it-all.html)
 
 
-<h64>
+<div style="display: flex; align-items: center; font-weight: bold; margin: 1rem 0;">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" style="vertical-align: middle; margin-right: 0.4em;">
-    <circle cx="50" cy="50" r="o" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
+    <circle cx="50" cy="50" r="48" stroke="#A6A48D" stroke-width="4" fill="#F5F5F0"/>
     <polygon points="40,30 70,50 40,70" fill="#5E5C49"/>
     <path d="M20 80 Q35 60 30 50 Q25 40 40 20" stroke="#A6A48D" stroke-width="2" fill="none"/>
-   Listen to the Episode
-</h64>
+  </svg>
+  Listen to the Episode
+</div>
+
 <div style="text-align:center; margin-bottom: 2rem;">
   <audio controls>
     <source src="{{ '/assets/audio/speak-life-series.mp3' | relative_url }}" type="audio/mpeg">
