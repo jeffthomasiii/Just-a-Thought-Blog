@@ -45,7 +45,7 @@ Holiness doesn’t begin with striving, it begins with **belonging**. God isn’
 
 > *“You’re mine. Live like it.”*
 
-**🪞 Reflection:**
+**Reflection:**
 - Am I living like someone who belongs to Him?
 - Where might I be forgetting who I am?
 
@@ -67,7 +67,7 @@ Holiness means recognizing when something doesn’t fit anymore, like a favorite
 
 > *“You’re not that person anymore.”*
 
-**🪞 Reflection:**
+**Reflection:**
 - What habits, reactions, or attitudes still try to pull me back?
 - Where is God inviting me to pause and respond differently?
 
@@ -89,7 +89,7 @@ Holiness isn’t just avoiding sin, it’s **imitating the character of God**.It
 
 The more we watch Jesus, the more we start sounding like Him, even without trying.
 
-**🪞 Reflection:**
+**Reflection:**
 - Who or what is shaping my conduct most right now?
 - What would change if I simply started imitating Jesus?
 
@@ -111,7 +111,7 @@ Sometimes holiness means walking away from something that looks *too good to pas
 
 Holiness won’t always make you popular. It won’t always be understood. But it will **form your character** and align your life with the God who called you to be different.
 
-**🪞 Reflection:**
+**Reflection:**
 - Where in my life is God inviting me to be courageously different?
 - What have I been afraid to let go of because it might set me apart?
 
@@ -130,6 +130,3 @@ But we’ll also grow. We’ll pause. We’ll forgive. We’ll reflect Him.
 > and more about living like we actually belong to Him.
 
 *Just a thought.*
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNzQ2OTU1OV19
--->
