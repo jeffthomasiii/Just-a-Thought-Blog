@@ -71,7 +71,7 @@ Sometimes, they enter quietly, through rolled eyes, sharp tones, sarcasm disguis
 Let’s name them honestly, not just by what they are, but by what they *say*.
 
 
-#### 🐎 Criticism: *“You’re the problem.”*
+#### Criticism: *“You’re the problem.”*
 
 
 Not to be confused with a complaint, criticism attacks character.  
@@ -83,7 +83,7 @@ It says, *“You never think about anyone but yourself.”*
 It shifts focus from the issue to the person. Over time, it rewrites the narrative from “We’re on the same team” to “You’re what’s wrong.”
 
 
-#### 🐎 Contempt: *“You’re beneath me.”*
+#### Contempt: *“You’re beneath me.”*
 
 
 The most dangerous of the four. It’s the eye roll, the scoff, the passive-aggressive joke that lands like a slap.  
@@ -91,7 +91,7 @@ The most dangerous of the four. It’s the eye roll, the scoff, the passive-aggr
 It doesn’t just express frustration, it drips with disgust.
 
 
-#### 🐎 Defensiveness: *“This isn’t my fault.”*
+#### Defensiveness: *“This isn’t my fault.”*
 
 
 It seems like self-protection, but it often becomes self-justification.  
@@ -101,7 +101,7 @@ Instead of listening, we deflect. Instead of owning, we explain.
 And slowly, “I’m sorry” becomes a rare and endangered phrase.
 
 
-#### 🐎 Stonewalling: *“You’re not worth engaging.”*
+#### Stonewalling: *“You’re not worth engaging.”*
 
 
 When overwhelm takes over, one partner shuts down. No more talking. No eye contact. No response.  
@@ -268,6 +268,3 @@ But they can’t kill what God is rebuilding in humility, truth, and love.*
 
 
 > …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMzNDQxNTE1XX0=
--->
