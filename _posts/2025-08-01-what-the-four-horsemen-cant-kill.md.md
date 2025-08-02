@@ -267,4 +267,4 @@ And that starts, not with strategy, but with **honesty and humility before God.*
 But they can’t kill what God is rebuilding in humility, truth, and love.*
 
 
-> …just a thought.
+…just a thought.
