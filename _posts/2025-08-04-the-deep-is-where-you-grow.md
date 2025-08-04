@@ -26,7 +26,7 @@ She shared with a calm, steady conviction, the kind that doesn’t need emphasis
 Just truth. Straightforward. Settling.
 
 And somewhere in the middle of her reflection, she said it:  
-> _**“On the shore, you’re comfortable. But it’s in the deep where you grow.”**_
+> _**“On the shore, you’re comfortable. But it’s in the deep where you grow.”**_ - Samatra Thomas
 
 I haven’t been able to shake it since.
 
@@ -85,7 +85,7 @@ The deep is where fear meets faith.
 Where surface talk drowns and soul conversations begin.  
 Where you're reminded that walking by faith isn’t about swimming, it's about **trusting the One who holds the water**.
 
-**…just a thought.**
+…just a thought.
 
 
 What’s the “shore” in your life right now?  
