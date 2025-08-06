@@ -125,17 +125,12 @@ Not when God is invited in.
 For every destructive pattern, Scripture offers not just an antidote, but a heart posture that heals.
 
 
-| Horseman     | Biblical Counter           | Scripture                                      |
-
-|--------------|----------------------------|------------------------------------------------|
-
-| Criticism    | Gentle correction & grace  | Proverbs 15:1, Galatians 6:1                   |
-
-| Contempt     | Honor & humility           | Romans 12:10, Philippians 2:3                  |
-
-| Defensiveness| Ownership & repentance     | Proverbs 28:13, James 5:16                     |
-
-| Stonewalling | Presence & engagement      | 1 Peter 3:7, 1 Corinthians 13:7                |
+| Horseman      | Biblical Counter          | Scripture                                     |
+|---------------|---------------------------|-----------------------------------------------|
+| Criticism     | Gentle correction & grace | Proverbs 15:1, Galatians 6:1                  |
+| Contempt      | Honor & humility          | Romans 12:10, Philippians 2:3                 |
+| Defensiveness | Ownership & repentance    | Proverbs 28:13, James 5:16                    |
+| Stonewalling  | Presence & engagement     | 1 Peter 3:7, 1 Corinthians 13:7               |
 
 
 These biblical counters aren’t quick fixes, they’re heart-level shifts.  
