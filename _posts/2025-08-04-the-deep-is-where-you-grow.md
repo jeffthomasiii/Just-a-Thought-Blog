@@ -85,8 +85,11 @@ The deep is where fear meets faith.
 Where surface talk drowns and soul conversations begin.  
 Where you're reminded that walking by faith isn’t about swimming, it's about **trusting the One who holds the water**.
 
-…just a thought.
+**…just a thought.**
 
 
 What’s the “shore” in your life right now?  
 What would it look like to step into the deep, where trust is required and growth begins?
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTExODIxMzM0OTJdfQ==
+-->
