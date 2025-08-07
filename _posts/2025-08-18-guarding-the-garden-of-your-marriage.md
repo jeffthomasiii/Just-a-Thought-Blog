@@ -4,7 +4,7 @@ layout: post
 title: "Guarding the Garden of Your Marriage"
 subtitle: "Because weeds don’t wait for permission"
 date: 2025-08-18
-excerpt: "In marriage, what you ignore grows—especially the lies and assumptions that divide. Guard the garden. Pull the weeds."
+excerpt: "In marriage, what you ignore grows, especially the lies and assumptions that divide. Guard the garden. Pull the weeds."
 categories: faith marriage
 tags: [marriage, unity, thought life, spiritual growth, forgiveness]
 author: Jeff Thomas III
@@ -37,7 +37,6 @@ Don’t be afraid to go there.  Don’t wait until it’s overgrown.  Pull the w
 *…just a thought.*
 
 What’s one “weed” you’ve identified in your thought life or relationship that needs to be pulled this week?
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk1MTYwMjAxXX0=
+eyJoaXN0b3J5IjpbLTY0NDIwNDAzN119
 -->
