@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Guarding the Garden of Your Marriage"
