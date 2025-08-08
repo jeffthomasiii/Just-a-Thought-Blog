@@ -37,6 +37,3 @@ Don’t be afraid to go there.  Don’t wait until it’s overgrown.  Pull the w
 *…just a thought.*
 
 What’s one “weed” you’ve identified in your thought life or relationship that needs to be pulled this week?
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NDIwNDAzN119
--->
