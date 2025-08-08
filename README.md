@@ -62,7 +62,7 @@ Have a question or thought? Use the [Contact Form](https://jeffthomasiii.github.
 
 ## 📝 License
 Theme originally forked from [Start Bootstrap Clean Blog](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll).
-Content and customizations © Jeff Thomas III. All rights reserved.
+Content and customizations © [Jeff Thomas III](https://jeffthomasiii.github.io/Just-a-Thought-Blog/contact/). All rights reserved.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTEzODE4NzA5XX0=
 -->
