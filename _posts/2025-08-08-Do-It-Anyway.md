@@ -14,10 +14,8 @@ tags:
   - consistency
   - love-anyway
   - relationships
-excerpt: "When someone mistreats you, it's easy to pull back or match their energy. But what if you stayed rooted in who God called you to be? Do it anyway—because that's who you are."
-image: /img/posts/do-it-anyway.jpg
+excerpt: "When someone mistreats you, it's easy to pull back or match their energy. But what if you stayed rooted in who God called you to be? Do it anyway, because that's who you are."
 background: /img/posts/bg-do-it-anyway.jpg
-header-image: /img/posts/header-do-it-anyway.jpg
 scripture: "Romans 12:21; Galatians 6:9"
 ---
 
