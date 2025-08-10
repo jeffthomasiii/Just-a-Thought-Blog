@@ -3,7 +3,7 @@ layout: post
 title: "Pursuing Peace on Purpose"
 subtitle: "Choosing calm when circumstances try to steal it"
 description: "A story about our August camping trip and how a small crisis became an opportunity to press on toward peace."
-date: 2025-08-1
+date: 2025-08-20
 author: Jeff Thomas III
 categories:  
 - faith  
@@ -32,5 +32,5 @@ The truth is, peace is something we protect by choosing it over and over again, 
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3OTQ1NTcyM119
+eyJoaXN0b3J5IjpbLTE3Mjc3MjA3NF19
 -->
