@@ -33,16 +33,17 @@ Batman channels his grief into fighting crime, refusing to let others suffer the
 
 Same backstory: pain, loss, injustice. Different responses: one becomes the hero, another the villain. Yet even the so-called heroes often teeter on the edge of bitterness or obsession.  
 
-That’s the thing—pain doesn’t automatically make us noble. It just forces a choice. And if we’re honest, our choices aren’t always heroic.  
+That’s the thing; pain doesn’t automatically make us noble. It just forces a choice. And if we’re honest, our choices aren’t always heroic.  
 
 ### Even Our “Good” Can Be Twisted  
 
 The Bible gives us a powerful example in Saul of Tarsus.  
-If you’d asked him, he was the hero of his story—defending God’s law, protecting tradition, standing against heresy. In reality, he was the villain, persecuting the very church of Christ. It took a blinding encounter with Jesus on the Damascus road to reveal the truth: his zeal was misplaced, and his so-called righteousness was rebellion.  
+
+If you’d asked him, he was the hero of his story, defending God’s law, protecting tradition, standing against heresy. In reality, he was the villain, persecuting the very church of Christ. It took a blinding encounter with Jesus on the Damascus road to reveal the truth: his zeal was misplaced, and his so-called righteousness was rebellion.  
 
 Romans 3:10–12 says, *“None is righteous, no, not one; no one understands; no one seeks for God. All have turned aside; together they have become worthless; no one does good, not even one.”*  
 
-That’s hard to swallow. Because we like to see ourselves as the hero—the one fighting for justice, choosing the higher road, doing the right thing. But apart from Christ, even our best “heroic” moments are tainted with pride, vengeance, or self-interest. Our righteousness is like filthy rags (Isaiah 64:6).  
+That’s hard to swallow. Because we like to see ourselves as the hero, the one fighting for justice, choosing the higher road, doing the right thing. But apart from Christ, even our best “heroic” moments are tainted with pride, vengeance, or self-interest. Our righteousness is like filthy rags (Isaiah 64:6).  
 
 ### Everyday Choices  
 
@@ -66,5 +67,5 @@ We all want to see ourselves as the hero. But without Jesus, we’re the villain
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzU5NDE3NDldfQ==
+eyJoaXN0b3J5IjpbLTc0Mzc4MTM4OF19
 -->
