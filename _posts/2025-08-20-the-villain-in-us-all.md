@@ -22,7 +22,7 @@ scripture: "Romans 3:10–12, 23"
 
 I came across a post on social media the other day that made me stop scrolling. It said, *“The villain and hero almost always have the same backstory. They were both hurt in some way. The villain says, ‘The world hurt me, so I’m going to hurt it back.’ The hero says, ‘The world hurt me, and I’m not going to let this happen to anyone else.’”*  
 
-That struck me. There’s a lot of truth in it. Then someone in the comments added a nuance: villains are often hurt by those who were supposed to protect them—parents, leaders, even the law. Heroes, on the other hand, are usually hurt by clear enemies: Batman lost his parents to crime, Spider-Man lost his uncle to a criminal he could have stopped. Both are fueled by pain, but villains often wrestle with betrayal while heroes wrestle with loss.  
+That struck me. There’s a lot of truth in it. Then someone in the comments added a nuance: villains are often hurt by those who were supposed to protect them; parents, leaders, even the law. Heroes, on the other hand, are usually hurt by clear enemies: Batman lost his parents to crime, Spider-Man lost his uncle to a criminal he could have stopped. Both are fueled by pain, but villains often wrestle with betrayal while heroes wrestle with loss.  
 
 It was a thoughtful point, and I nodded along. But the more I sat with it, the more I realized: both perspectives miss something deeper. Because in the end, whether we see ourselves as heroes or villains, Scripture tells us the same story; we are all villains without Christ.  
 
@@ -56,6 +56,7 @@ But even when we choose the higher road, how often do we do it with resentment s
 ### The True Hero  
 
 And that’s why Christ matters so much. He is the only true Hero.  
+
 He was hurt, but He did not retaliate. He was betrayed, but He forgave. He was crucified, but He prayed for His enemies.  
 
 Where we lash out, He loved. Where we justify ourselves, He surrendered. Where we failed, He overcame.  
@@ -67,5 +68,5 @@ We all want to see ourselves as the hero. But without Jesus, we’re the villain
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0Mzc4MTM4OF19
+eyJoaXN0b3J5IjpbLTU3NjU3Mzc3LC03NDM3ODEzODhdfQ==
 -->
