@@ -3,7 +3,7 @@ layout: post
 title: "The Villain in Us All"
 subtitle: "When hurt shapes us, but Christ redeems us"
 description: "Exploring how heroes and villains share the same backstory, yet Scripture reminds us that without Christ, we are all the villain."
-date: 2025-08-20
+date: 2025-08-22
 author: Jeff Thomas III
 categories:
   - faith
