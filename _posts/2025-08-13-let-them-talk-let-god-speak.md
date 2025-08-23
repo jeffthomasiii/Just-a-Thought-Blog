@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Let Them Talk-Let God Speak"
+title: "Let Them Talk - Let God Speak"
 subtitle: "What Psalm 119:23 teaches us about pressure, perception, and peace"
 description: "When powerful voices misrepresent you, Psalm 119:23 shows us how to respond, not with retaliation, but with rooted meditation on God’s Word."
 date: 2025-08-13
