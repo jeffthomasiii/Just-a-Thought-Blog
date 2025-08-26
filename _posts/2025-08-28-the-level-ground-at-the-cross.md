@@ -24,7 +24,7 @@ On the playground, it’s who gets picked first for the team.
 In the workplace, it’s who gets the promotion everyone else quietly questions.  
 Even in families and friendships, favoritism creeps in through small preferences and subtle signals.  
 
-We all know how it feels to be overlooked—and if we’re honest, we know how easy it is to overlook others.  
+We all know how it feels to be overlooked, and if we’re honest, we know how easy it is to overlook others.  
 
 That’s why the words of Scripture cut so clearly into this human struggle:  
 > *“For God shows no partiality.”* (Romans 2:11)  
@@ -32,7 +32,7 @@ That’s why the words of Scripture cut so clearly into this human struggle:
 
 Contextually, Paul’s words in Romans 2 remind us that God’s judgment is not swayed by whether someone is Jew or Gentile, His standard is the same for all. James, writing to scattered believers, warns against giving special treatment to the wealthy while dishonoring the poor in the assembly. Both are addressing different situations, but the principle is consistent: God does not play favorites, and His people are not to either.  
 
-What we can learn from these passages is that partiality, whether based on ethnicity, status, wealth, or appearance—is completely out of step with the character of God. At the foot of the cross, the ground is level. No one stands taller because of privilege or influence. No one sinks lower because of background or mistakes. Christ dismantles our ladders of favoritism and calls us into a unity that reflects His justice and His love.  
+What we can learn from these passages is that partiality, whether based on ethnicity, status, wealth, or appearance, is completely out of step with the character of God. At the foot of the cross, the ground is level. No one stands taller because of privilege or influence. No one sinks lower because of background or mistakes. Christ dismantles our ladders of favoritism and calls us into a unity that reflects His justice and His love.  
 
 #### Favoritism Erodes Love  
 
@@ -80,5 +80,5 @@ The cross leaves no room for favoritism. And if we’re His, neither should we.
 Where have you seen favoritism cause division, and how might impartial love bring healing instead?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NTA0NTE1NF19
+eyJoaXN0b3J5IjpbLTM0NjYxMzMwMF19
 -->
