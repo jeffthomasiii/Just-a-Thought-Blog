@@ -18,6 +18,7 @@ image: /img/posts/conspiracy-and-trust.jpg
 background: /img/posts/bg-conspiracy-and-trust.jpg
 scripture: "Isaiah 8:12 ESV"
 ---
+
 Have you noticed how easy it is to get swept up in what everyone else is talking about?  
 The breaking news headline. The latest scandal. The whispers of “what’s really going on.”  
 
@@ -57,7 +58,3 @@ Revere Him above the noise. Anchor your heart in His promises. And let trust, no
 …just a thought.  
 
 Where are you tempted to let fear or suspicion rule your thoughts? What practical step could you take this week to re-center your heart in reverence for God instead?
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg5Njg3MjI0XX0=
--->
