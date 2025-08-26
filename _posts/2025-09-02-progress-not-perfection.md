@@ -24,7 +24,7 @@ If you’ve ever tried to set a standard that everyone was supposed to follow, y
 I learned this the hard way in my work with BIM standardization.  
 
 
-#### The Story  
+#### What I Thought Would Be Simple  
 When I first set out to create a new BIM standard for our team, I thought the hardest part would be technical, nailing down the right templates, parameters, and lineweights. But it turned out the people side was just as hard.  
 
 Some users resisted. A few politely ignored the update with comments like, *“Well, we’ve always done it this way.”* Others found clever shortcuts around the new system. At first, I took it personally. I had poured hours into building something meant to save time and prevent mistakes. Why couldn’t they see the benefit?  
@@ -36,7 +36,7 @@ Between the pushback from users and the pressure of perfection, I found myself w
 But with time, my perspective shifted. Adoption was slow, but it was happening. One project at a time, one user at a time. And every revision, even the frustrating ones, made the standard stronger. What looked like failure was actually forward movement. What felt like defeat was progress in disguise.  
 
 
-#### The Reflection  
+#### What God Showed Me Through It  
 That realization hit me harder than I expected. Because isn’t that exactly how spiritual growth works?  
 
 God isn’t asking for perfection from me, He’s asking for faithfulness. Philippians 1:6 reminds us that *“He who began a good work in you will carry it on to completion until the day of Christ Jesus.”* Completion isn’t my job; it’s His. My job is to keep showing up, keep learning, keep pressing forward.  
@@ -46,7 +46,7 @@ Just like a BIM standard is never really “done,” I won’t be fully perfecte
 Grace doesn’t erase the need for growth; it fuels it. Because when perfection isn’t the bar I’m measured against, I’m freed to keep moving forward without fear of falling short.  
 
 
-#### The Takeaway  
+#### Why Progress is Enough  
 I used to think success meant flawless rollout, instant adoption, and no mistakes. Now I see it differently. Success is found in the small, steady progress that keeps pointing us forward, at work, and even more so, in faith.  
 
 Perfection is Christ’s role. Progress is ours. And grace is what bridges the space between.  
@@ -54,5 +54,5 @@ Perfection is Christ’s role. Progress is ours. And grace is what bridges the s
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDIyODcwNjddfQ==
+eyJoaXN0b3J5IjpbMTk1ODM2NjgwNiwtMTU0MjI4NzA2N119
 -->
