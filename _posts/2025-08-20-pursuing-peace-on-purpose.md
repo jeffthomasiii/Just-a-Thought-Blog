@@ -33,10 +33,13 @@ That choice wasn’t about ignoring reality. We addressed the leak carefully, bu
 
 Isaiah 26:3 says God keeps in *perfect peace* the one whose mind is stayed on Him because they trust Him. Perfect peace isn’t the absence of trouble, it’s the presence of trust. It’s not found by accident; it’s found on purpose.
 
-Pressing on toward peace means deciding where your attention will rest. We could have stared at the problem all weekend or fixed it and returned our focus to why we came, to be still, to be together, and to rest in the One who gives peace no storm can steal.
+Pressing on toward peace means deciding where your attention will rest. We could have stared at the problem all weekend or fixed it and returned our focus to why we came,: to be still, to be together, and to rest in the One who gives peace no storm can steal.
 
 That night, under a cooler sky, I thought about how often life gives us the same choice: let the interruptions win or keep our minds fixed on the One who holds us steady.
 
 The truth is, peace is something we protect by choosing it over and over again, even when the conditions aren’t perfect. Especially when they aren’t perfect.
 
 …just a thought.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTM4NzE1NTc3NF19
+-->
