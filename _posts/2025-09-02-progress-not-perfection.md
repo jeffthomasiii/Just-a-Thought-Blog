@@ -19,7 +19,7 @@ background: /img/posts/bg-progress-not-perfection.jpg
 scripture: "Philippians 1:6"
 ---
 
-If you’ve ever tried to set a standard that everyone was supposed to follow, you know the tension. You build something you believe will help, only to watch it resisted, ignored, or changed. It can feel like running on a treadmill—working hard but not getting anywhere.  
+If you’ve ever tried to set a standard that everyone was supposed to follow, you know the tension. You build something you believe will help, only to watch it resisted, ignored, or changed. It can feel like running on a treadmill, working hard but not getting anywhere.  
 
 I learned this the hard way in my work with BIM standardization.  
 
@@ -54,5 +54,5 @@ Perfection is Christ’s role. Progress is ours. And grace is what bridges the s
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ5NDc2NDYxXX0=
+eyJoaXN0b3J5IjpbLTE1NDIyODcwNjddfQ==
 -->
