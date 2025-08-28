@@ -28,6 +28,7 @@ We all know how it feels to be overlooked, and if we’re honest, we know how ea
 
 That’s why the words of Scripture cut so clearly into this human struggle:  
 > *“For God shows no partiality.”* (Romans 2:11)  
+
 > *“My brothers, show no partiality as you hold the faith in our Lord Jesus Christ, the Lord of glory.”* (James 2:1)  
 
 Contextually, Paul’s words in Romans 2 remind us that God’s judgment is not swayed by whether someone is Jew or Gentile, His standard is the same for all. James, writing to scattered believers, warns against giving special treatment to the wealthy while dishonoring the poor in the assembly. Both are addressing different situations, but the principle is consistent: God does not play favorites, and His people are not to either.  
@@ -78,7 +79,3 @@ The cross leaves no room for favoritism. And if we’re His, neither should we.
 …just a thought.  
 
 Where have you seen favoritism cause division, and how might impartial love bring healing instead?
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NjYxMzMwMF19
--->
