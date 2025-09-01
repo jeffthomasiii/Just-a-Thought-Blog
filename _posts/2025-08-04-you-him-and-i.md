@@ -25,12 +25,12 @@ series_order: 2
 
 ### Every Story Needs a Third Voice  
 Every marriage tells a story.  
-There’s the story of *you*, your hopes, your wounds, your way of seeing the world.  
-There’s the story of *him*, his dreams, his strengths, his silent battles.  
-And then there’s the story of *us*, two lives trying to weave themselves into one.  
+There’s the story of *you*; your hopes, your wounds, your way of seeing the world.  
+There’s the story of *him*; his dreams, his strengths, his silent battles.  
+And then there’s the story of *us*; two lives trying to weave themselves into one.  
 
 But here’s the tension: when only two voices are at the table, whose story wins? Which one matters more? Left to ourselves, we measure and compete. Your needs against his needs. Your perspective against hers. Even our “together” story can start to sound like a tug-of-war.  
-
+>
 That’s why every covenant needs a third voice, the voice of the One who designed it all. His word steadies what would otherwise fray. His order brings clarity when our stories collide. With Him at the center, the question shifts from *who wins* to *how do we walk together under His design?*  
 
 
@@ -85,5 +85,5 @@ Because at the heart of it, marriage isn’t just about two people learning to l
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NjE0ODgwN119
+eyJoaXN0b3J5IjpbMTY5NzgyMjA5NF19
 -->
