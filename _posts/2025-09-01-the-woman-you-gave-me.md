@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "The Woman You Gave Me: When Men Refuse Responsibility"
