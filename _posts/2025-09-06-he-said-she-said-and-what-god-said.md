@@ -5,7 +5,15 @@ subtitle: "Why we talk past each other and how Scripture helps us bridge the gap
 description: "An honest look at the way men and women communicate differently, what research shows, and how God’s Word gives us a better way forward."
 date: 2025-09-15
 author: Jeff Thomas III
-categories:  - marriage  - faithtags:  - communication  - relationships  - biblical-marriage  - science
+categories:  
+- marriage  
+- faith
+
+tags:  
+- communication  
+- relationships  
+- biblical-marriage  
+- science
 excerpt: "Men and women often talk past each other—not because we don’t care, but because we communicate differently. The good news? God’s wisdom offers us a way through."
 image: /img/posts/he-said-she-said.jpg
 background: /img/posts/bg-he-said-she-said.jpg
@@ -50,5 +58,5 @@ Men and women may use words differently, but God calls us to the same goal: love
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MzY4MjI5MV19
+eyJoaXN0b3J5IjpbLTc1MjcxNTEyM119
 -->
