@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "He Said, She Said—and What God Said"
+title: "He Said, She Said, and What God Said"
 subtitle: "Why we talk past each other and how Scripture helps us bridge the gap"
 description: "An honest look at the way men and women communicate differently, what research shows, and how God’s Word gives us a better way forward."
 date: 2025-09-15
@@ -58,5 +58,5 @@ Men and women may use words differently, but God calls us to the same goal: love
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MjcxNTEyM119
+eyJoaXN0b3J5IjpbLTExMDg1MjgzXX0=
 -->
