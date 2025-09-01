@@ -30,7 +30,8 @@ There’s the story of *him*; his dreams, his strengths, his silent battles.
 And then there’s the story of *us*; two lives trying to weave themselves into one.  
 
 But here’s the tension: when only two voices are at the table, whose story wins? Which one matters more? Left to ourselves, we measure and compete. Your needs against his needs. Your perspective against hers. Even our “together” story can start to sound like a tug-of-war.  
->
+> #### *Which one wins?*
+
 That’s why every covenant needs a third voice, the voice of the One who designed it all. His word steadies what would otherwise fray. His order brings clarity when our stories collide. With Him at the center, the question shifts from *who wins* to *how do we walk together under His design?*  
 
 
@@ -63,7 +64,7 @@ But Paul writes: *“This mystery is profound, and I am saying that it refers to
 
 Without God, the picture collapses. With Him, the mystery comes alive. Our marriages preach, whether we intend them to or not. They can preach self-interest, silence, or separation. Or, when centered on Him, they can preach the gospel of grace: Christ who loves, serves, and never forsakes His bride.  
 
-This is why I’ve said before that *marriage is ministry*, because every covenant, lived God’s way, becomes a sermon without words, pointing back to the love of Christ.  
+This is why I’ve said before that *[marriage is ministry](https://jeffthomasiii.github.io/Just-a-Thought-Blog/marriage/faith/2025/07/01/marriage-is-ministry.html)*, because every covenant, lived God’s way, becomes a sermon without words, pointing back to the love of Christ.  
 
 
 ### The Braid That Does Not Break  
@@ -80,10 +81,10 @@ Marriage was never meant to be a duet, it was always meant to be a trio. Your vo
 The tension of marriage, whose way, whose needs, whose love, is resolved only when we let the Author define the story. In His design, we find not just survival, but the flourishing He intended from the beginning.  
 
 Because at the heart of it, marriage isn’t just about two people learning to love each other. It’s about two people learning to reflect the love of Christ. And that story can only be written with Him at the center.  
-> ### *Marriage isn’t just about two people learning to love each other. It’s about two people learning to reflect the love of Christ*
+> #### *Marriage isn’t just about two people learning to love each other. It’s about two people learning to reflect the love of Christ*
 
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NzgyMjA5NF19
+eyJoaXN0b3J5IjpbLTIxMDQ5NDQ0NjRdfQ==
 -->
