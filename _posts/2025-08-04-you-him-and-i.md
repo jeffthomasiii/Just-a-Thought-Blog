@@ -80,9 +80,10 @@ Marriage was never meant to be a duet, it was always meant to be a trio. Your vo
 The tension of marriage, whose way, whose needs, whose love, is resolved only when we let the Author define the story. In His design, we find not just survival, but the flourishing He intended from the beginning.  
 
 Because at the heart of it, marriage isn’t just about two people learning to love each other. It’s about two people learning to reflect the love of Christ. And that story can only be written with Him at the center.  
+> ### *Marriage isn’t just about two people learning to love each other. It’s about two people learning to reflect the love of Christ*
 
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTYwMTgzMDldfQ==
+eyJoaXN0b3J5IjpbMTE2NjE0ODgwN119
 -->
