@@ -22,7 +22,7 @@ scripture: "Hebrews 12:2; Philippians 3:14; Ephesians 2:8"
 
 I remember standing at the trailhead of a hike, looking at the sign with a glossy photo of the summit view. Blue skies, endless valleys, and the promise of a breathtaking reward. But a couple of hours in, the only view I had was dust, sweat, and a winding path that seemed to climb forever. My legs were sore, my backpack heavy, and I caught myself thinking, *Is this even worth it?*  
 
-That moment, the long stretch between the starting point and the destination, —felt like a picture of life with God. We know what’s promised, but the “in-between” is where we actually live most of the time.  
+That moment, the long stretch between the starting point and the destination, felt like a picture of life with God. We know what’s promised, but the “in-between” is where we actually live most of the time.  
 
 The space between.  
 
@@ -46,12 +46,12 @@ When spiritual growth feels slower than it “should” be… grace.
 
 Grace is the gift that says the space between is not wasted. It’s where God meets us, sustains us, and forms us.  
 
-One day, the summit will come. The scaffolding will come down. The view will open wide. But until then, we keep walking—imperfect, but not abandoned. Pressing on, but carried by grace.  
+One day, the summit will come. The scaffolding will come down. The view will open wide. But until then, we keep walking, imperfect, but not abandoned. Pressing on but carried by grace.  
 
 The space between is not failure. It’s formation. And it’s where we learn to trust the One who already finished the climb for us.  
 
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjUxMTUzODddfQ==
+eyJoaXN0b3J5IjpbMTg4NDI2MzQ3XX0=
 -->
