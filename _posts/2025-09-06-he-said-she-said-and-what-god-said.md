@@ -14,7 +14,7 @@ tags:
 - relationships  
 - biblical-marriage  
 - science
-excerpt: "Men and women often talk past each other—not because we don’t care, but because we communicate differently. The good news? God’s wisdom offers us a way through."
+excerpt: "Men and women often talk past each other, not because we don’t care, but because we communicate differently. The good news? God’s wisdom offers us a way through."
 image: /img/posts/he-said-she-said.jpg
 background: /img/posts/bg-he-said-she-said.jpg
 scripture: "James 1:19 ESV"
@@ -58,5 +58,5 @@ Men and women may use words differently, but God calls us to the same goal: love
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDg1MjgzXX0=
+eyJoaXN0b3J5IjpbLTE1ODI5OTc3NTNdfQ==
 -->
