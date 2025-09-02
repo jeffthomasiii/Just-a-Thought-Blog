@@ -17,6 +17,7 @@ tags:
 excerpt: "We all want to see ourselves as the hero. But apart from Christ, we are the villain. Only He rewrites our story."
 image: /img/posts/villain-in-us-all.jpg
 background: /img/posts/bg-villain-in-us-all.jpg
+header-image: /img/posts/bg-villain-in-us-all.jpg
 scripture: "Romans 3:10–12, 23"
 ---
 
