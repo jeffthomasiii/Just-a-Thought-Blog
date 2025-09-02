@@ -15,7 +15,7 @@ tags:
 - love  
 - covenant
 excerpt: "If executives must listen to lead well, how much more must husbands listen to love well?"
-image: /img/posts/when-listening-matters-most.jpg
+image: /img/posts/bg-when-listening-matters-most.jpg
 background: /img/posts/bg-when-listening-matters-most.jpg
 scripture: "James 1:19"
 ---
@@ -47,5 +47,5 @@ Listening in marriage isn’t just good communication. It’s Christlike humilit
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzkzNzk5OTEsMTE0ODY3MTgxXX0=
+eyJoaXN0b3J5IjpbLTk5MDA5MjEwMywxMTQ4NjcxODFdfQ==
 -->
