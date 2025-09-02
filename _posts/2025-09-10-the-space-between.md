@@ -13,7 +13,7 @@ tags:
   - holiness  
   - progress  
   - perseverance  
-excerpt: "The space between isn’t failure—it’s formation. And it’s where grace does its best work."
+excerpt: "The space between isn’t failure, it’s formation. And it’s where grace does its best work."
 image: /img/posts/the-space-between-thumbnail.jpg
 background: /img/posts/bg-the-space-between.jpg
 header-image: /img/posts/bg-the-space-between.jpg
