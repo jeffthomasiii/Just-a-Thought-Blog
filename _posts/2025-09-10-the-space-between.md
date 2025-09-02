@@ -25,6 +25,7 @@ I remember standing at the trailhead of a hike, looking at the sign with a gloss
 That moment, the long stretch between the starting point and the destination, felt like a picture of life with God. We know what’s promised, but the “in-between” is where we actually live most of the time.  
 
 The space between.  
+> #### *Grace says the space between is not wasted...it’s where God meets us.*
 
 It’s the place where our best efforts meet our real limitations. Where good intentions collide with weakness. Where we’re not who we once were, but not yet who we long to be. And honestly, that space can feel frustrating.  
 
@@ -53,5 +54,5 @@ The space between is not failure. It’s formation. And it’s where we learn to
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NDI2MzQ3XX0=
+eyJoaXN0b3J5IjpbMTMwOTc5OTg2OSwxODg0MjYzNDddfQ==
 -->
