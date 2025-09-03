@@ -40,7 +40,7 @@ Every couple enters marriage with their own script.
 You bring your family’s traditions, your way of handling money, your picture of what a “good marriage” looks like.  
 He brings his habits, his history, his expectations.  
 
-The tension comes when those scripts don’t match. Whose way is right? Whose family did it better? Which story becomes the blueprint? Without a higher standard, the strongest personality or the deepest pattern usually sets the tone—and that can leave the other diminished or resentful.  
+The tension comes when those scripts don’t match. Whose way is right? Whose family did it better? Which story becomes the blueprint? Without a higher standard, the strongest personality or the deepest pattern usually sets the tone, and that can leave the other diminished or resentful.  
 
 But God spoke the first word about marriage. *“A man shall leave his father and mother and be joined to his wife, and the two shall become one flesh”* (Genesis 2:24). His word isn’t commentary, it’s the foundation. He is the Author, and only His design can hold the weight of two lives becoming one.  
 
@@ -53,7 +53,7 @@ The tension is this: when storms come, these versions of love often crack. They 
 
 But Scripture reminds us: *“God is love”* (1 John 4:8). He is the Source. Without Him, what we call “love” is conditional. It says, *I’ll give as long as you give. I’ll stay as long as I’m fulfilled.* That isn’t love, it’s a bargain.  
 
-True love, the kind that bears all things, believes all things, hopes all things, endures all things (1 Corinthians 13:7)—comes only from God. It’s His character shared with us. Without Him, we’re left grasping for a shadow. With Him, we find the substance that sustains a covenant through seasons of joy and seasons of trial alike.  
+True love, the kind that bears all things, believes all things, hopes all things, endures all things (1 Corinthians 13:7), comes only from God. It’s His character shared with us. Without Him, we’re left grasping for a shadow. With Him, we find the substance that sustains a covenant through seasons of joy and seasons of trial alike.  
 
 
 ### The Mystery We Carry  
