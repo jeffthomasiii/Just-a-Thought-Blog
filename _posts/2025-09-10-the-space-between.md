@@ -2,7 +2,7 @@
 layout: post
 title: "The Space Between"
 subtitle: "Perfection is Christ’s role. Progress is ours. Grace bridges the gap."
-description: "Reflecting on the frustration and beauty of living in the 'in-between'—where progress meets grace on the way to perfection in Christ."
+description: "Reflecting on the frustration and beauty of living in the 'in-between', where progress meets grace on the way to perfection in Christ."
 date: 2025-09-10
 author: Jeff Thomas III
 categories:  
