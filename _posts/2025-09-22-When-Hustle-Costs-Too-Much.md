@@ -55,12 +55,12 @@ Redefining success means recognizing that wealth without wisdom is emptiness. Tr
 ### Enough Really Can Be Enough  
 Proverbs 23:4 is not anti-work. It’s a reminder to resist anti-wisdom. Work is good, but wisdom calls us to balance. To pause. To rest. To know when enough is enough.  
 
-So maybe today, success looks less like chasing the next dollar and more like putting the phone down, sitting with family, or spending time in prayer. Maybe it’s choosing restraint — trusting that God provides more than hustle ever could.  
+So maybe today, success looks less like chasing the next dollar and more like putting the phone down, sitting with family, or spending time in prayer. Maybe it’s choosing restraint, trusting that God provides more than hustle ever could.  
 
 …just a thought.  
 
-Where in your life do you feel the pull of hustle culture most strongly — and what would wisdom and restraint look like there?  
+Where in your life do you feel the pull of hustle culture most strongly, and what would wisdom and restraint look like there?  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MDQ2ODg3M119
+eyJoaXN0b3J5IjpbLTMwMTUzNTVdfQ==
 -->
