@@ -37,7 +37,7 @@ For centuries, that’s been taken as a spiritual truth. But now, research is sh
 
 
 ### **The Science Behind the Scripture**  
-Deep within your chest is more than a muscle. The heart contains about **40,000 neurons**—forming what scientists call the **intrinsic cardiac nervous system**, sometimes nicknamed the “little brain in the heart.”  
+Deep within your chest is more than a muscle. The heart contains about **40,000 neurons**, forming what scientists call the **intrinsic cardiac nervous system**, sometimes nicknamed the “little brain in the heart.”  
 
 Here’s where it gets even more interesting: the **vagus nerve**, which connects the heart and brain, carries far more information *from* the heart *to* the brain than the other way around. In other words, your heart is not just a passive follower, it sends a steady stream of influence to your thoughts, emotions, and reactions.  
 
@@ -66,7 +66,7 @@ Science is just now describing the pathways God wired from the start. Scripture 
 
 **Physically/Emotionally:**  
 - **Practice gratitude and prayer.** These steady the heart’s rhythms and bring the body into a calmer state.  
-- **Breathe deeply and slowly.** This isn’t just stress advice—it literally influences the signals your heart sends to your brain.  
+- **Breathe deeply and slowly.** This isn’t just stress advice, it literally influences the signals your heart sends to your brain.  
 - **Limit emotional noise.** Guard what you watch, listen to, and dwell on. They feed the heart’s condition.  
 
 
@@ -80,5 +80,5 @@ Above all else, guard your heart.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NjQwNTkwNl19
+eyJoaXN0b3J5IjpbOTEyNzIwNjk4XX0=
 -->
