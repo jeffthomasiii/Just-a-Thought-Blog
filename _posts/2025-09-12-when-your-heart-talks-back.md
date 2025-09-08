@@ -60,7 +60,7 @@ Science is just now describing the pathways God wired from the start. Scripture 
 ### **Guarding Your Heart – Spiritually and Physically**  
 
 **Spiritually:**  
-- **Filter your thoughts.** Let Philippians 4:8 be your mental gatekeeper; whatever is true, noble, right, pure, lovely, admirable—think about these things.  
+- **Filter your thoughts.** Let Philippians 4:8 be your mental gatekeeper; whatever is true, noble, right, pure, lovely, admirable...think about these things.  
 - **Deal quickly with sin and bitterness.** Don’t let unforgiveness harden the heart (Ephesians 4:31–32).  
 - **Stay anchored in truth.** Let God’s Word set the rhythm of your heart before anything else does.  
 
@@ -80,5 +80,5 @@ Above all else, guard your heart.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMzI5MjYwMSw5MTI3MjA2OThdfQ==
+eyJoaXN0b3J5IjpbLTExNTUxNzc4ODksOTEyNzIwNjk4XX0=
 -->
