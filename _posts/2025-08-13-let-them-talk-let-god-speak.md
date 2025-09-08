@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Let Them TalkLet God Speak"
+title: "Let Them Talk—Let God Speak"
 subtitle: "What Psalm 119:23 teaches us about pressure, perception, and peace"
-description: "When powerful voices misrepresent you, Psalm 119:23 shows us how to respondnot with retaliation, but with rooted meditation on God’s Word."
+description: "When powerful voices misrepresent you, Psalm 119:23 shows us how to respond—not with retaliation, but with rooted meditation on God’s Word."
 date: 2025-08-13
 author: Jeff Thomas III
 categories:
@@ -14,7 +14,7 @@ tags:
   - psalm-119
   - vindication
   - identity-in-christ
-excerpt: "Psalm 119:23 shows us a better response to pressureone grounded in meditation, not manipulation. When others misrepresent us, we don’t need to react. We need to remember who we are and whose we are."
+excerpt: "Psalm 119:23 shows us a better response to pressure—one grounded in meditation, not manipulation. When others misrepresent us, we don’t need to react. We need to remember who we are and whose we are."
 image: /img/posts/bg-let-them-talk.jpg
 background: /img/posts/bg-let-them-talk.jpg
 scripture: "Psalm 119:23"
@@ -142,5 +142,5 @@ And let your soul stay anchored in the only voice that matters.
 
 When was the last time you felt the pull to defend your name? What would it look like to turn to Scripture instead?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMzY3ODMzNl19
+eyJoaXN0b3J5IjpbNTA3NjE2NzY2LDE3MzM2NzgzMzZdfQ==
 -->
