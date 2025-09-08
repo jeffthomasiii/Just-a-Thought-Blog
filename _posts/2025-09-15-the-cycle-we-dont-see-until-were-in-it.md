@@ -23,6 +23,7 @@ series_order: 1
 
 This post is part of a short series called **“Love & Respect; More Than a Cycle,”** reflecting on lessons we learned years ago in our Marrieds Small Group while going through Dr. Emerson Eggerichs’ book *Love & Respect.* These aren’t chapter summaries, but reflections on how the ideas have shaped my perspective on marriage.  
 
+---
 
 It usually starts small. A comment that didn’t land right. A tone that came out sharper than intended. A glance that seemed dismissive. Before long, what was a single moment turns into a rhythm, an unspoken pattern of reaction and response. And often, we don’t even notice it until we’re already spinning in it.  
 
@@ -37,5 +38,5 @@ Maybe the most important step is simply asking: *What cycle am I in right now? A
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkxNjU3NTldfQ==
+eyJoaXN0b3J5IjpbLTE5OTcwNjM4MjhdfQ==
 -->
