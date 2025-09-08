@@ -23,6 +23,8 @@ series_order: 2
 
 This post is part of a short series called **“Love & Respect; More Than a Cycle,”** reflecting on lessons we learned years ago in our Marrieds Small Group while going through Dr. Emerson Eggerichs’ book *Love & Respect.* These aren’t chapter summaries, but reflections on how the ideas have shaped my perspective on marriage.  
 
+---
+
 Not every marriage is in crisis. Many are steady, faithful, quietly moving through the rhythms of life. But even in a healthy marriage, love and respect can start to feel like a phone battery running low, not gone, just drained.  
 
 The main point of *Love & Respect* stuck with me: husbands and wives both need what God has designed into the relationship, love for her, respect for him. It’s not about creating something new; it’s about nurturing what’s already there.  
@@ -41,5 +43,5 @@ What I realized back then, and still need reminding of today, is that we don’t
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMzkwNjM0XX0=
+eyJoaXN0b3J5IjpbMTI1MzE0NTU0MywtNDMzOTA2MzRdfQ==
 -->
