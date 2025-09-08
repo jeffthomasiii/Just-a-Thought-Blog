@@ -3,7 +3,7 @@ layout: post
 title: "He Said, She Said, and What God Said"
 subtitle: "Why we talk past each other and how Scripture helps us bridge the gap"
 description: "An honest look at the way men and women communicate differently, what research shows, and how God’s Word gives us a better way forward."
-date: 2025-09-15
+date: 2025-09-06
 author: Jeff Thomas III
 categories:  
 - marriage  
