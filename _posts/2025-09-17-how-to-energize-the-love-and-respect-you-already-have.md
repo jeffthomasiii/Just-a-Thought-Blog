@@ -31,15 +31,15 @@ Paul says in Ephesians 5:33: *“Each one of you also must love his wife as he l
 
 So how do we recharge what’s already built in?  
 
-- **Speak gratitude out loud.** Don’t just think it—say it. A simple “thank you for working so hard” can breathe life back into the day.  
+- **Speak gratitude out loud.** Don’t just think it, say it. A simple “thank you for working so hard” can breathe life back into the day.  
 - **Listen without rushing to respond.** Sometimes respect is felt most when your spouse knows their words matter to you.  
 - **Share spiritual rhythms.** Pray together, read Scripture, worship. It connects you in ways no activity can.  
-- **Prioritize joy.** Laughter, date nights, even inside jokes—these things are fuel.  
+- **Prioritize joy.** Laughter, date nights, even inside jokes, these things are fuel.  
 
-What I realized back then—and still need reminding of today—is that we don’t need to reinvent our marriage; we just need to keep it plugged into its power source. The love and respect God already placed there can be re-energized daily with small, intentional choices.  
+What I realized back then, and still need reminding of today, is that we don’t need to reinvent our marriage; we just need to keep it plugged into its power source. The love and respect God already placed there can be re-energized daily with small, intentional choices.  
 
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NjU4MzIzMl19
+eyJoaXN0b3J5IjpbLTQzMzkwNjM0XX0=
 -->
