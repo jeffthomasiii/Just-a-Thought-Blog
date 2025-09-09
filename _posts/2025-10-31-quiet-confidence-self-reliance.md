@@ -2,7 +2,7 @@
 layout: post
 title: "The Quiet Confidence of Self-Reliance"
 subtitle: "Skill #5 – Cooking, Cleaning, Budgeting, and Repair"
-description: "Self-reliance doesn’t mean isolation—it means being prepared to serve. True confidence is found in competence that makes life lighter for others."
+description: "Self-reliance doesn’t mean isolation, it means being prepared to serve. True confidence is found in competence that makes life lighter for others."
 date: 2025-10-31
 author: Jeff Thomas III
 categories:  
@@ -13,7 +13,7 @@ tags:
 - self-reliance  
 - responsibility  
 - competence  
-excerpt: "A man who practices self-reliance doesn’t make life harder for those around him—he makes life lighter."
+excerpt: "A man who practices self-reliance doesn’t make life harder for those around him, he makes life lighter."
 image: /img/posts/quiet-confidence-self-reliance.jpg
 background: /img/posts/bg-quiet-confidence-self-reliance.jpg
 scripture: "Proverbs 27:23 NIV"
@@ -45,5 +45,5 @@ Because in the end, self-reliance isn’t about proving independence. It’s abo
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNjYxOTM3NV19
+eyJoaXN0b3J5IjpbMTkzMjgyMjMyNV19
 -->
