@@ -3,7 +3,7 @@ layout: post
 title: "Stay Teachable"
 subtitle: "Skill #1 – Willingness to Learn and Grow"
 description: "Humility, curiosity, and openness to God and others form the foundation of growth. A man doesn’t have to know everything, he just has to keep learning."
-date: 2025-10-03
+date: 2025-09-29
 author: Jeff Thomas III
 categories:  
 - manhood  
@@ -46,5 +46,5 @@ Because a man who keeps learning will never stop growing.
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDk0MDE2M119
+eyJoaXN0b3J5IjpbMTc4NTU5MjQ3N119
 -->
