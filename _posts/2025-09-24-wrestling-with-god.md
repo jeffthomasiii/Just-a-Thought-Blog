@@ -38,16 +38,17 @@ The story starts with Jacob alone. No family to shield him. No possessions to hi
 
 And I wonder if that’s often where God meets us too, not in the noise of control, but in the silence of being stripped bare.  
 
-“What is your name?” the man asked. Jacob had to answer. He had to speak the truth: deceiver. Heel-grabber. The one who had spent his life striving, taking, running.  
+*“What is your name?”* the man asked. Jacob had to answer. He had to speak the truth: deceiver. Heel-grabber. The one who had spent his life striving, taking, running.  
 
 Is that part of wrestling with God? Facing who we really are when there’s nowhere left to hide?  
 
 
 ### Broken for Blessing  
 
-Then came the touch. Just one touch—and Jacob’s hip gave way. His strength was no match.  
+Then came the touch. Just one touch, and Jacob’s hip gave way. His strength was no match.  
 
-But notice what happened next: Jacob didn’t let go. He clung tighter. “I will not let You go unless You bless me.”  
+But notice what happened next: Jacob didn’t let go. He clung tighter. 
+> *“I will not let You go unless You bless me.”*  
 
 Was that desperation? Surrender? Both?  
 
@@ -66,7 +67,7 @@ The fears that shadow tomorrow.
 
 Maybe wrestling with God today looks like naming what we’d rather avoid.  
 Maybe it’s holding on when we’ve lost all strength.  
-Maybe it’s walking forward with the limp He leaves behind—reminders of encounters too deep to explain.  
+Maybe it’s walking forward with the limp He leaves behind, reminders of encounters too deep to explain.  
 
 I wonder: what limps do we carry? Loss? Regret? Weakness we wish we could shake?  
 
@@ -88,5 +89,5 @@ And if you walk with a limp, is it a wound… or is it a blessing?
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzQ2NDA5OTldfQ==
+eyJoaXN0b3J5IjpbMTYwMDQ1ODU3OV19
 -->
