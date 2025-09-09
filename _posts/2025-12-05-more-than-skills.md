@@ -2,7 +2,7 @@
 layout: post
 title: "More Than Skills, A Way of Life"
 subtitle: "Bonus Post – Conclusion to the Series"
-description: "These ten skills were never just about competence—they were about character, legacy, and a way of life worth passing on."
+description: "These ten skills were never just about competence, they were about character, legacy, and a way of life worth passing on."
 date: 2025-12-05
 author: Jeff Thomas III
 categories:  
@@ -13,7 +13,7 @@ tags:
 - legacy  
 - character  
 - discipleship  
-excerpt: "Because in the end, being a man isn’t about arriving—it’s about walking faithfully, learning humbly, and giving generously."
+excerpt: "Because in the end, being a man isn’t about arriving, it’s about walking faithfully, learning humbly, and giving generously."
 image: /img/posts/more-than-skills.jpg
 background: /img/posts/bg-more-than-skills.jpg
 series: "10 Skills Every Man Should Have"
@@ -39,5 +39,5 @@ Because in the end, being a man isn’t about arriving, it’s about walking fai
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQ2Mzk4NzddfQ==
+eyJoaXN0b3J5IjpbLTE3MTAyNjQxODNdfQ==
 -->
