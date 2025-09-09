@@ -22,6 +22,7 @@ series_order: 10
 ---
 
 Every man stands in two roles at once: student and teacher. No one ever “arrives.” We are always learning from someone ahead of us, and we are always being watched by someone behind us.  
+> Be humble enough to stay a student, and generous enough to be a teacher.
 
 The healthiest men I’ve known never lost curiosity. They asked questions of older men, soaked up wisdom, and admitted where they didn’t know. But they also gave freely, investing in younger men who needed guidance. That balance, receiving and giving, creates a chain that stretches across generations.  
 
@@ -41,5 +42,5 @@ Because in the end, a man’s legacy isn’t measured only in what he accomplish
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MzEyOTI5NV19
+eyJoaXN0b3J5IjpbMTE2NDE0MjYwMV19
 -->
