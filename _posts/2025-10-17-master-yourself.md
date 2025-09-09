@@ -25,9 +25,9 @@ There’s a familiar scene on the freeway. A driver cuts someone off, and in sec
 
 A man who cannot master his emotions will eventually be mastered by them.  
 
-Mental and emotional discipline is not about stuffing feelings down or pretending they don’t exist. It’s about learning to manage them with wisdom, instead of letting them manage us. Proverbs 16:32 says, *“Better a patient person than a warrior, one with self-control than one who takes a city.”* (Proverbs 16:32 NIV) Scripture reminds us that true strength isn’t measured by what you can conquer out there, but by what you can steward in here.  
+Mental and emotional discipline is not about stuffing feelings down or pretending they don’t exist. It’s about learning to manage them with wisdom, instead of letting them manage us. Proverbs 16:32 NIV says, *“Better a patient person than a warrior, one with self-control than one who takes a city.”* Scripture reminds us that true strength isn’t measured by what you can conquer out there, but by what you can steward in here.  
 
-I remember a colleague who seemed unshakable. Deadlines piled up, meetings grew tense, but he never raised his voice or rushed his words. It wasn’t because he didn’t care—it was because he had learned the discipline of calm. His steadiness brought peace to the room. By contrast, another man with twice the talent lost credibility because his outbursts and defensiveness kept people on edge.  
+I remember a colleague who seemed unshakable. Deadlines piled up, meetings grew tense, but he never raised his voice or rushed his words. It wasn’t because he didn’t care, it was because he had learned the discipline of calm. His steadiness brought peace to the room. By contrast, another man with twice the talent lost credibility because his outbursts and defensiveness kept people on edge.  
 
 The difference was not capability, but control.  
 
@@ -47,5 +47,5 @@ Because a man who learns to master himself is a man others can trust to lead.
 
 …just a thought. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNzQwMzk1MV19
+eyJoaXN0b3J5IjpbLTk5ODg1Mjg1N119
 -->
