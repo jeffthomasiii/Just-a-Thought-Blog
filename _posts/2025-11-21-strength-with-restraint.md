@@ -23,7 +23,7 @@ series_order: 9
 
 Strength is a gift, but without restraint, it can quickly become a danger. The same hands that can protect can also wound. The same weapon that can guard the innocent can also destroy if wielded without wisdom. That’s why every man should pursue both competence and character when it comes to self-defense.  
 
-Unarmed skills teach confidence in the body God has given you. They remind you that courage isn’t found in intimidation but in preparation. Weapons proficiency—whether with a firearm, bow, or blade—adds another layer of responsibility. To hold a weapon well is not to dominate others, but to steward power wisely. Competence matters because in a crisis, fumbling is dangerous. But character matters even more, because the person behind the trigger or the handle shapes the outcome.  
+Unarmed skills teach confidence in the body God has given you. They remind you that courage isn’t found in intimidation but in preparation. Weapons proficiency, whether with a firearm, bow, or blade, adds another layer of responsibility. To hold a weapon well is not to dominate others, but to steward power wisely. Competence matters because in a crisis, fumbling is dangerous. But character matters even more, because the person behind the trigger or the handle shapes the outcome.  
 
 I once heard a story of a man who was trained in martial arts. One night he was confronted by an angry driver in a parking lot. He had every ability to retaliate, but instead he chose calm words and de-escalation. The confrontation ended without a fight. His training gave him the confidence to walk away, not the impulse to swing first.  
 
@@ -31,16 +31,16 @@ That’s the irony of training: it doesn’t make you more reckless; it makes yo
 
 Proverbs 25:28 says, *“Like a city whose walls are broken through is a person who lacks self-control.”* (Proverbs 25:28 NIV). The walls of discipline keep strength from spilling into destruction.  
 
-Culturally, we often confuse aggression with masculinity. Movies celebrate the man who lashes out, who proves himself with violence. But much of the misuse of strength—whether fists or firearms—comes not from true courage but from fear or pride. Fear lashes out before understanding. Pride refuses to walk away. Both twist strength into weakness.  
+Culturally, we often confuse aggression with masculinity. Movies celebrate the man who lashes out, who proves himself with violence. But much of the misuse of strength, whether fists or firearms, comes not from true courage but from fear or pride. Fear lashes out before understanding. Pride refuses to walk away. Both twist strength into weakness.  
 
-By contrast, real strength is measured in what you *don’t* do as much as in what you can do. A man who trains his body and sharpens his skills but keeps them under the harness of wisdom shows a different kind of power—the power of restraint.  
+By contrast, real strength is measured in what you *don’t* do as much as in what you can do. A man who trains his body and sharpens his skills but keeps them under the harness of wisdom shows a different kind of power, the power of restraint.  
 
-Both unarmed and armed skills carry the same principle: train so you’re capable, but live so you’re trustworthy. Your family, your community, and even strangers should feel safer because you’re there—not more afraid.  
+Both unarmed and armed skills carry the same principle: train so you’re capable, but live so you’re trustworthy. Your family, your community, and even strangers should feel safer because you’re there, not more afraid.  
 
 Because the true test of strength isn’t in how much force you can unleash, but in how much wisdom you show when you don’t.  
 
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjQ4OTA3MDYsMjMxMTAzNjY4XX0=
+eyJoaXN0b3J5IjpbLTczOTQxOTE2LDIzMTEwMzY2OF19
 -->
