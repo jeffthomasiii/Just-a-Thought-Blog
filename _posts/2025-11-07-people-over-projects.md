@@ -2,7 +2,7 @@
 layout: post
 title: "People Over Projects"
 subtitle: "Skill #6 – Building Strong Interpersonal Relationships"
-description: "Accomplishments fade, but relationships endure. Interpersonal skills, listening, empathy, encouragement—are not 'soft skills' but essential ones."
+description: "Accomplishments fade, but relationships endure. Interpersonal skills, listening, empathy, encouragement, are not 'soft skills' but essential ones."
 date: 2025-11-07
 author: Jeff Thomas III
 categories:  
@@ -46,5 +46,5 @@ Because in the end, people forget most of our projects, but they never forget ho
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NzIzNjI3OV19
+eyJoaXN0b3J5IjpbNTI5MTU3NTU5LDExNTcyMzYyNzldfQ==
 -->
