@@ -33,7 +33,7 @@ Physical strength and endurance aren’t about vanity, but about usefulness. The
 - **Strength** lets you rise to the occasion when someone needs help.  
 - **Endurance** keeps you going when the work doesn’t end in an hour.  
 
-Paul reminded Timothy that *“physical training is of some value, but godliness has value for all things, holding promise for both the present life and the life to come.”* (1 Timothy 4:8 NIV). Training the body has limits, but it does matter—especially when it equips us to serve others well.  
+Paul reminded Timothy that *“physical training is of some value, but godliness has value for all things, holding promise for both the present life and the life to come.”* (1 Timothy 4:8 NIV). Training the body has limits, but it does matter, especially when it equips us to serve others well.  
 
 The question isn’t, *How strong are you?* but rather, *Who benefits from your strength?*  
 
@@ -42,5 +42,5 @@ Because true strength is measured not by how much weight you can lift, but by ho
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYyMDk2MzgwXX0=
+eyJoaXN0b3J5IjpbLTIxNjI0ODI4Nl19
 -->
