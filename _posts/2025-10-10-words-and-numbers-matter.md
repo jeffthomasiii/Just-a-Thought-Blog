@@ -16,7 +16,7 @@ tags:
 excerpt: "Words and numbers may not feel heroic, but they quietly shape the way a man leads and provides."
 image: /img/posts/words-and-numbers-matter.jpg
 background: /img/posts/bg-words-and-numbers-matter.jpg
-scripture: "Proverbs 4:7"
+scripture: "Proverbs 4:7 NIV"
 series: "10 Skills Every Man Should Have"
 series_order: 3
 ---
@@ -36,12 +36,12 @@ Because words and numbers are everywhere.
 
 When a man avoids them, he risks handing off his responsibility to others, sometimes to people who may not have his best interest at heart.  
 
-Proverbs 4:7 says, *“The beginning of wisdom is this: Get wisdom, and whatever you get, get insight.”* That doesn’t mean mastering every subject, but it does mean valuing understanding. To be careless with words and numbers is to be careless with trust.  
+Proverbs 4:7 NIV says, *“The beginning of wisdom is this: Get wisdom, and whatever you get, get insight.”* That doesn’t mean mastering every subject, but it does mean valuing understanding. To be careless with words and numbers is to be careless with trust.  
 
 The truth is, words and numbers matter. Not because they make you impressive, but because they make you steady. And steadiness is something every man is called to embody.  
 
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMzg4MjgwOF19
+eyJoaXN0b3J5IjpbLTM2ODgzMjMzOCwxNjEzODgyODA4XX0=
 -->
