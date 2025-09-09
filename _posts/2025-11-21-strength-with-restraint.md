@@ -29,7 +29,7 @@ I once heard a story of a man who was trained in martial arts. One night he was 
 
 That’s the irony of training: it doesn’t make you more reckless; it makes you calmer. When you know what you’re capable of, you don’t feel the need to prove it. De-escalation becomes the first move, not the last resort.  
 
-Proverbs 25:28 says, *“Like a city whose walls are broken through is a person who lacks self-control.”* (Proverbs 25:28 NIV). The walls of discipline keep strength from spilling into destruction.  
+Proverbs 25:28 NIV says, *“Like a city whose walls are broken through is a person who lacks self-control.”*  The walls of discipline keep strength from spilling into destruction.  
 
 Culturally, we often confuse aggression with masculinity. Movies celebrate the man who lashes out, who proves himself with violence. But much of the misuse of strength, whether fists or firearms, comes not from true courage but from fear or pride. Fear lashes out before understanding. Pride refuses to walk away. Both twist strength into weakness.  
 
@@ -42,5 +42,6 @@ Because the true test of strength isn’t in how much force you can unleash, but
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczOTQxOTE2LDIzMTEwMzY2OF19
+eyJoaXN0b3J5IjpbLTI3OTc1NTcyOSwtNzM5NDE5MTYsMjMxMT
+AzNjY4XX0=
 -->
