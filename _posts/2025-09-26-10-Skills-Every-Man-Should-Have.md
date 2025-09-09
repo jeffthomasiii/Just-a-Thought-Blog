@@ -21,7 +21,7 @@ series: "10 Skills Every Man Should Have"
 series_order: 1
 ---
 
-Back in 2022, I posted a simple list on Instagram called *10 Skills Every Man Should Have and Continue to Develop.* It wasn’t a grand essay, just a list. But it resonated.  
+Back in 2022, I posted a simple list on Instagram and Facebook called *10 Skills Every Man Should Have and Continue to Develop.* It wasn’t a grand essay, just a list. But it resonated.  
 
 Looking back, I realize why: these aren’t flashy skills. They’re foundational. They’re about responsibility, resilience, and character. They’re also lifelong pursuits, not boxes you check off.  
 
@@ -78,5 +78,5 @@ Over the next few weeks, I’ll be unpacking each of these skills in more detail
 
 …just a thought.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzg3MTE3ODBdfQ==
+eyJoaXN0b3J5IjpbMTcwODkwNzgzMywtMTEzODcxMTc4MF19
 -->
