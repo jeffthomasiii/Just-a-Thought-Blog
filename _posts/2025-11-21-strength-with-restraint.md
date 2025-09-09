@@ -2,7 +2,7 @@
 layout: post
 title: "Strength with Restraint"
 subtitle: "Skills #8–9 – Unarmed Self-Defense & Weapons Proficiency"
-description: "True strength isn’t reckless—it’s restrained. Self-defense and weapons proficiency are about stewardship, preparation, and wisdom under control."
+description: "True strength isn’t reckless, it’s restrained. Self-defense and weapons proficiency are about stewardship, preparation, and wisdom under control."
 date: 2025-11-21
 author: Jeff Thomas III
 categories:  
@@ -42,5 +42,5 @@ Because the true test of strength isn’t in how much force you can unleash, but
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMxMTAzNjY4XX0=
+eyJoaXN0b3J5IjpbLTEzNjQ4OTA3MDYsMjMxMTAzNjY4XX0=
 -->
