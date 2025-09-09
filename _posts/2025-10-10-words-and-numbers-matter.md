@@ -2,7 +2,7 @@
 layout: post
 title: "Words and Numbers Matter"
 subtitle: "Skill #2 – Understanding Math and Literacy Concepts"
-description: "Everyday competence with words and numbers isn’t about being impressive—it’s about being steady, trustworthy, and prepared to lead well."
+description: "Everyday competence with words and numbers isn’t about being impressive, it’s about being steady, trustworthy, and prepared to lead well."
 date: 2025-10-10
 author: Jeff Thomas III
 categories:  
@@ -43,5 +43,5 @@ The truth is, words and numbers matter. Not because they make you impressive, bu
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU1MjMxODg4XX0=
+eyJoaXN0b3J5IjpbMTYxMzg4MjgwOF19
 -->
