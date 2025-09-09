@@ -16,7 +16,7 @@ tags:
 excerpt: "Teachability isn’t weakness, it’s humility. A man who keeps learning will never stop growing."
 image: /img/posts/stay-teachable.jpg
 background: /img/posts/bg-stay-teachable.jpg
-scripture: "Proverbs 1:5"
+scripture: "Proverbs 1:5 NIV"
 series: "10 Skills Every Man Should Have"
 series_order: 2
 ---
@@ -27,7 +27,7 @@ I remember watching two men approach the same problem very differently. One was 
 
 The difference wasn’t intelligence. It was posture. One had closed the door to growth. The other had left it open.  
 
-Teachability is not weakness; it’s humility. It’s the courage to admit you don’t have all the answers, and the openness to keep learning. Proverbs says, *“Let the wise hear and increase in learning, and the one who understands obtain guidance.”* (Proverbs 1:5) Wisdom is not about hoarding knowledge, it’s about staying open to correction and growth.  
+Teachability is not weakness; it’s humility. It’s the courage to admit you don’t have all the answers, and the openness to keep learning. Proverbs says, *“Let the wise hear and increase in learning, and the one who understands obtain guidance.”* (Proverbs 1:5 NIV) Wisdom is not about hoarding knowledge, it’s about staying open to correction and growth.  
 
 I’ve seen teachability in older men who still ask questions, who are curious about new tools, who invite feedback without bristling. And I’ve seen its absence in men much younger—those who shrug off advice because they think they know better. One posture leads to growth: the other leads to stagnation.  
 
@@ -46,5 +46,5 @@ Because a man who keeps learning will never stop growing.
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDk0MDE2M119
+eyJoaXN0b3J5IjpbMTExNjgwMzYxOV19
 -->
