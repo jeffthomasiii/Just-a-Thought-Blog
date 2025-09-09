@@ -41,16 +41,6 @@ Because the true test of strength isn’t in how much force you can unleash, but
 
 …just a thought.  
 
----
-
-### Image Prompts  
-
-**Cover Image (image):**  
-*A symbolic, painterly illustration of a golden sword lying sheathed on a table, with strong hands resting calmly beside it. The glow of golden light symbolizes power under restraint. Muted background, cinematic depth, contemplative mood, no text in the image.*  
-
-**Background Image (background):**  
-*A wide, cinematic illustration of a tense scene: two men in a parking lot face each other, but instead of fighting, one man stands calmly with open hands as golden light radiates subtly from him, symbolizing restraint. Painterly texture, warm earth and gold tones, symbolic and reflective, no text in the image.*  
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk5ODIxNjczXX0=
+eyJoaXN0b3J5IjpbMjMxMTAzNjY4XX0=
 -->
