@@ -30,7 +30,7 @@ Now here’s the hard question: if your wife had the freedom to “quit” follo
 
 
 ### Vision: Leading with Direction  
-*“Where there is no vision, the people perish.”* (Proverbs 29:18, KJV)  
+> *“Where there is no vision, the people perish.”* (Proverbs 29:18, KJV)  
 
 A great leader casts vision. At work, that means clarity of mission. At home, it means helping your family see where God is leading. This doesn’t mean controlling every detail, it means prayerfully discerning direction with your wife and setting the tone: 
 > *“As for me and my house, we will serve the Lord.”* (Joshua 24:15, ESV)  
@@ -73,5 +73,5 @@ If we’d hate to work for a boss with no vision, no integrity, no humility, no 
 Which leadership trait do you think matters most in marriage, and why?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNjE3Mjk4NCwtMTk1NzUzNTk2N119
+eyJoaXN0b3J5IjpbNjc5MDkzOCwtMTk1NzUzNTk2N119
 -->
