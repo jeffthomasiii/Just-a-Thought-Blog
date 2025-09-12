@@ -14,7 +14,7 @@ tags:
   - spiritual growth
   - neuroscience
   - guarding your heart
-excerpt: "Proverbs 4:23 tells us to guard our hearts because everything we do flows from them. Science now shows that the heart's influence on our lives is more than symbolic—it's built into the way God designed us."
+excerpt: "Proverbs 4:23 tells us to guard our hearts because everything we do flows from them. Science now shows that the heart's influence on our lives is more than symbolic, it's built into the way God designed us."
 image: /img/posts/when-your-heart-talks-back.jpg
 background: /img/posts/bg-when-your-heart-talks-back.jpg
 header-image: /img/posts/header-when-your-heart-talks-back.jpg
