@@ -34,11 +34,15 @@ Marriage has its own version of this. Many of us long for *oneness*, that deep c
 Every pit stop on our trip wasn’t wasted time, it was part of the journey. In the same way, small moments in marriage are not detours. They’re sacred pauses that grow intimacy: shared meals, long conversations, even the silly arguments that teach us patience and grace.  Hurrying past those moments in search of a perfect marriage robs us of the very process God uses to shape oneness. As Ecclesiastes reminds us, *“For everything there is a season, and a time for every matter under heaven”* (Ecclesiastes 3:1, ESV). 
 
 ### No Rush
-What if the point isn’t to rush toward oneness but to enjoy the journey God has us on? What if each “stop”, both the joyful and the frustrating, is forming something deeper than we realize?  On that road trip, Samatra’s simple words shifted my perspective. In marriage, too, perhaps we need to hear it again: *“I’m in no rush.”*  Because maybe the beauty isn’t just at the destination. Maybe it’s found in every mile along the way.  
+What if the point isn’t to rush toward oneness but to enjoy the journey God has us on? What if each “stop”, both the joyful and the frustrating, is forming something deeper than we realize?  
+
+On that road trip, Samatra’s simple words shifted my perspective. In marriage, too, perhaps we need to hear it again: *“I’m in no rush.”*  
+
+Because maybe the beauty isn’t just at the destination. Maybe it’s found in every mile along the way.  
 
 …just a thought.  
 
 When was the last time you slowed down enough to notice the beauty in your marriage journey, not just where you’re trying to get?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgwMTg4ODQ4XX0=
+eyJoaXN0b3J5IjpbLTEyMzM4ODE4MDhdfQ==
 -->
