@@ -29,14 +29,13 @@ At one of those food stops, I found myself watching the clock, gesturing for us 
 She was right. We had no deadline pressing us. We weren’t late. The road would be waiting. Why was I so anxious to leave when the moment right in front of us was worth savoring?  
 That thought has lingered with me.  
 
-### The Destination vs. the Journey
+### The Destination vs. The Journey
 When we drive, it’s easy to think the destination is what matters most. Yellowstone was the goal, and every mile seemed to exist only to get us there. But if we hurry too much, we miss the beauty of Zion’s cliffs, the calm rivers in Idaho, even the quiet rest stops where laughter over a meal becomes its own memory.
   
 Marriage has its own version of this. Many of us long for *oneness*, that deep connection where two truly live as one flesh. Scripture tells us, *“Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh”* (Genesis 2:24, ESV). But if we only measure success by how quickly we “arrive” at that oneness, we’ll likely grow frustrated, angry, or disappointed that we’re not where we thought we’d be.  
 
 ### The Pit Stops Matter
 Every pit stop on our trip wasn’t wasted time, it was part of the journey. In the same way, small moments in marriage are not detours. They’re sacred pauses that grow intimacy: shared meals, long conversations, even the silly arguments that teach us patience and grace.  
-
 
 Hurrying past those moments in search of a perfect marriage robs us of the very process God uses to shape oneness. As Ecclesiastes reminds us, *“For everything there is a season, and a time for every matter under heaven”* (Ecclesiastes 3:1, ESV). 
 
@@ -51,5 +50,5 @@ Because maybe the beauty isn’t just at the destination. Maybe it’s found in 
 
 When was the last time you slowed down enough to notice the beauty in your marriage journey, not just where you’re trying to get?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NTA1ODE5MF19
+eyJoaXN0b3J5IjpbMzY2NDcxMzk2XX0=
 -->
