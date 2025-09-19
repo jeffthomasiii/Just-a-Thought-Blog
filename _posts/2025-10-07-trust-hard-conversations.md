@@ -40,11 +40,13 @@ Or **dreams for the future**. It’s easy to assume we’re on the same page, on
 And then there are **past mistakes**. These conversations can feel like walking through a minefield. But handled with humility and grace, they lead to healing. *“Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you”* (Ephesians 4:32, ESV). Facing the past together opens doors for deeper trust.  
 
 ### Trust Doesn’t Grow in the Easy Places
-The truth is, trust rarely grows in the smooth, agreeable conversations. It grows in the difficult ones—the ones that stretch us to listen longer, forgive quicker, and love deeper. Each time we lean in instead of pulling away, we lay another brick in the covenant foundation of marriage.  So the next time you and your spouse bump into one of those “don’t-go-there” topics, pause. Remember: this isn’t just a fight waiting to happen. It’s a chance for trust to deepen.  
+The truth is, trust rarely grows in the smooth, agreeable conversations. It grows in the difficult ones, the ones that stretch us to listen longer, forgive quicker, and love deeper. Each time we lean in instead of pulling away, we lay another brick in the covenant foundation of marriage.  
+
+So the next time you and your spouse bump into one of those “don’t-go-there” topics, pause. Remember: this isn’t just a fight waiting to happen. It’s a chance for trust to deepen.  
 
 …just a thought.  
 
 Which of these hard conversations do you and your spouse find most challenging, and what might God be inviting you to trust Him with in that area?  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDY4Mzg0OTddfQ==
+eyJoaXN0b3J5IjpbLTEwMDg2NTQ2NjNdfQ==
 -->
