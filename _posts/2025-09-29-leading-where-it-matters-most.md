@@ -16,10 +16,12 @@ tags:
 - faith
 - servant-leadership
 - family
+
 excerpt: "If we’d never tolerate working under a bad boss, why do we sometimes expect our wives to endure that same kind of leadership at home?"
 image: /img/posts/leading-where-it-matters-most.jpg
 background: /img/posts/bg-leading-where-it-matters-most.jpg
 scripture: "1 Timothy 3:4–5 ESV"
+
 ---
 
 > if your wife had the freedom to “quit” following your leadership, would she?
