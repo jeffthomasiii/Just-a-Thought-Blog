@@ -2,7 +2,7 @@
 layout: post
 title: "10 Skills Every Man Should Have and Continue to Develop"
 subtitle: "A foundational list every man can keep pursuing"
-description: "These 10 skills, physical, emotional, relational, and spiritual—aren’t about arriving, but about continuing to grow into responsibility, resilience, and character."
+description: "These 10 skills, physical, emotional, relational, and spiritual, aren’t about arriving, but about continuing to grow into responsibility, resilience, and character."
 date: 2025-09-26
 author: Jeff Thomas III
 categories:  
