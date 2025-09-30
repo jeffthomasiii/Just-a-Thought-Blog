@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Leading Where It Matters Most"
