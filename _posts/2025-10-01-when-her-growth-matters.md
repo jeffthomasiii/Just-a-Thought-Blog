@@ -34,7 +34,3 @@ Sometimes that truth lands better when it comes through a different voice, and t
 Now, when my wife “gets it” from someone else, I thank God. Because what matters isn’t who said it first, it’s that the truth took root.
 
 …just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg0NzEzMDE1LDYzODA5OTMwNF19
--->
