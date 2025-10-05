@@ -50,6 +50,3 @@ Because maybe the beauty isn’t just at the destination. Maybe it’s found in 
 …just a thought.  
 
 When was the last time you slowed down enough to notice the beauty in your marriage journey, not just where you’re trying to get?
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY2NDcxMzk2XX0=
--->
