@@ -47,6 +47,3 @@ So the next time you and your spouse bump into one of those “don’t-go-there�
 …just a thought.  
 
 Which of these hard conversations do you and your spouse find most challenging, and what might God be inviting you to trust Him with in that area?  
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDg2NTQ2NjNdfQ==
--->
