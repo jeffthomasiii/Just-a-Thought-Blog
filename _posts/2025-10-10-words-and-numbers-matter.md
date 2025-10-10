@@ -41,7 +41,3 @@ Proverbs 4:7 NIV says, *“The beginning of wisdom is this: Get wisdom, and what
 The truth is, words and numbers matter. Not because they make you impressive, but because they make you steady. And steadiness is something every man is called to embody.  
 
 …just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2ODgzMjMzOCwxNjEzODgyODA4XX0=
--->
