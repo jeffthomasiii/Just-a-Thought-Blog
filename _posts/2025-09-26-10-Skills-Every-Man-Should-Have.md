@@ -31,7 +31,7 @@ Here’s the list again, with a little more context.
 ### Foundations  
 These are the inner qualities that hold everything else together.  
 
-1. **Willingness to Learn and Grow**  
+1. **[Willingness to Learn and Grow](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/10/03/stay-teachable.html)**  
    A teachable man doesn’t have to know everything, he just has to be humble enough to keep learning.  
 
 2. **[Understanding of Math and Literacy Concepts](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/10/10/words-and-numbers-matter.html)**  
@@ -78,6 +78,6 @@ Over the next few weeks, I’ll be unpacking each of these skills in more detail
 
 …just a thought.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1ODE3ODcwMCwxNzA4OTA3ODMzLC0xMT
-M4NzExNzgwXX0=
+eyJoaXN0b3J5IjpbLTE5NDI4ODM4NjIsMTcwODkwNzgzMywtMT
+EzODcxMTc4MF19
 -->
