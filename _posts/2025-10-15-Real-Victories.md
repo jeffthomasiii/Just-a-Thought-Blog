@@ -20,7 +20,8 @@ background: /img/posts/bg-real-victories.jpg
 scripture: "James 1:3; Philippians 4:13"
 ---
 
->“Empty victories teach entitlement, real victories teach confidence.”  
+> *“Empty victories teach entitlement; real victories teach confidence.”*
+
 I can’t tell you who said it, but I can tell you it *feels* true. Because the victories that built my confidence were never the easy ones. They were the ones that cost something. The ones that left scars and taught humility. The kind that reminds you confidence isn’t loud, it’s grounded.  
 
 We live in a world that celebrates quick wins and easy applause. But when everything feels like a win, we stop asking what it actually took to get there. We start confusing reward with growth. Entitlement sneaks in quietly, it’s that subtle belief that we *deserve* the outcome, even if we didn’t do the work or learn the lesson.  
@@ -36,5 +37,6 @@ Maybe that’s the quiet power of real victories, they don’t inflate your ego,
 When was the last time a hard-earned victory taught you more than an easy one ever could?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNjI1ODUyMCwtMTQ5MTI5MjgzMF19
+eyJoaXN0b3J5IjpbLTIwOTQ0MDUyODcsLTE0OTEyOTI4MzBdfQ
+==
 -->
