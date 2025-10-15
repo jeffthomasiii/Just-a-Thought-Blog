@@ -3,7 +3,7 @@ layout: post
 title: "Real Victories"
 subtitle: "Not every win makes you stronger."
 description: "Reflecting on why easy wins often breed entitlement while hard-fought victories build real confidence rooted in faith."
-date: 2025-10-08
+date: 2025-10-15
 author: Jeff Thomas III
 categories:
   - faith
@@ -37,6 +37,6 @@ Maybe that’s the quiet power of real victories, they don’t inflate your ego,
 When was the last time a hard-earned victory taught you more than an easy one ever could?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTQ0MDUyODcsLTE0OTEyOTI4MzBdfQ
-==
+eyJoaXN0b3J5IjpbLTYxNTAxMTY1MSwtMjA5NDQwNTI4NywtMT
+Q5MTI5MjgzMF19
 -->
