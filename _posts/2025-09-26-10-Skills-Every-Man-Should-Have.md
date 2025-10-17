@@ -37,7 +37,7 @@ These are the inner qualities that hold everything else together.
 2. **[Understanding of Math and Literacy Concepts](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/10/10/words-and-numbers-matter.html)**  
    Not about being a scholar, but being competent with numbers and words. These tools let us navigate life and lead well.  
 
-3. **Mental and Emotional Discipline**  
+3. **[Mental and Emotional Discipline](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/10/17/master-yourself.html)**  
    True strength isn’t found in control over others, but in control over yourself. Anger, fear, and pride need boundaries.  
 
 4. **Physical Strength and Endurance**  
