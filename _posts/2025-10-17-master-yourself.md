@@ -46,6 +46,3 @@ Before God entrusts us with leading others, He often asks us to lead ourselves. 
 Because a man who learns to master himself is a man others can trust to lead.  
 
 …just a thought. 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5ODg1Mjg1N119
--->
