@@ -30,13 +30,13 @@ I’ve noticed how, in those moments, people lean in. Shoulders relax. Faces bri
 
 Psychologists call it [*emotional contagion*](https://www.psychologytoday.com/us/basics/emotional-contagion), the tendency for emotions to spread from person to person, often without us realizing it. Studies from Harvard and the University of California found that happiness can ripple through social networks up to three degrees of separation, meaning your joy could affect a friend of a friend of a friend. In other words, joy doesn’t just live in you; it travels through you.
 
-> *When my wife laughs, I can’t help but join in.* 
+> ***When my wife laughs, I can’t help but join in.*** 
 
 But here’s the other side, complaining works the same way. It’s just as contagious, but in the opposite direction. One person’s grumbling can quietly shift the tone of an entire group. What starts as a shared sigh can become a chorus of discontent. And just like that, the air feels heavier.
 
 I’ve been in both rooms, one filled with laughter, and one filled with complaining. The difference isn’t subtle. Joy lifts, while complaint drains. One builds connection, the other corrodes it.
 
-The Bible puts it this way: “A cheerful heart is good medicine, but a crushed spirit dries up the bones” (Proverbs 17:22 NIV). Joy heals. It strengthens. It restores perspective. That doesn’t mean we ignore pain or pretend everything’s fine. It means we invite joy into the conversation; we let gratitude and hope interrupt the negativity.
+The Bible puts it this way: *“A cheerful heart is good medicine, but a crushed spirit dries up the bones”* (Proverbs 17:22 NIV). Joy heals. It strengthens. It restores perspective. That doesn’t mean we ignore pain or pretend everything’s fine. It means we invite joy into the conversation; we let gratitude and hope interrupt the negativity.
 
 In marriage, I’ve seen it firsthand. When my wife laughs, I can’t help but join in. It changes me. Her joy reminds me to stop taking life so seriously, to remember that God is still good even when things don’t make sense. And I’ve learned that when I choose joy, when I let gratitude outweigh complaint, our home feels different. Lighter. Warmer.
 
@@ -53,6 +53,5 @@ So if joy is contagious, maybe our job isn’t to protect it but to *pass it on.
 Who in your life spreads joy so effortlessly that it changes your day? And what would it look like if you decided to do the same?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTQ4NDIwNTUsLTE4NTY2Nzc1OTZdfQ
-==
+eyJoaXN0b3J5IjpbMTM5MjY1NjUsLTE4NTY2Nzc1OTZdfQ==
 -->
