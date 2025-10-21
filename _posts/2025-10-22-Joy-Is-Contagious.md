@@ -28,7 +28,9 @@ She laughs when she’s nervous. She laughs when she’s happy. She even laughs 
 
 I’ve noticed how, in those moments, people lean in. Shoulders relax. Faces brighten. Whatever stress or tension was in the room starts to dissolve. And it made me wonder, what is it about joy that spreads so easily?
 
-Psychologists call it *emotional contagion*, the tendency for emotions to spread from person to person, often without us realizing it. Studies from Harvard and the University of California found that happiness can ripple through social networks up to three degrees of separation, meaning your joy could affect a friend of a friend of a friend. In other words, joy doesn’t just live in you; it travels through you.
+Psychologists call it [*emotional contagion*](https://www.psychologytoday.com/us/basics/emotional-contagion), the tendency for emotions to spread from person to person, often without us realizing it. Studies from Harvard and the University of California found that happiness can ripple through social networks up to three degrees of separation, meaning your joy could affect a friend of a friend of a friend. In other words, joy doesn’t just live in you; it travels through you.
+
+> *When my wife laughs, I can’t help but join in.* 
 
 But here’s the other side, complaining works the same way. It’s just as contagious, but in the opposite direction. One person’s grumbling can quietly shift the tone of an entire group. What starts as a shared sigh can become a chorus of discontent. And just like that, the air feels heavier.
 
@@ -51,5 +53,6 @@ So if joy is contagious, maybe our job isn’t to protect it but to *pass it on.
 Who in your life spreads joy so effortlessly that it changes your day? And what would it look like if you decided to do the same?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTY2Nzc1OTZdfQ==
+eyJoaXN0b3J5IjpbLTIxMTQ4NDIwNTUsLTE4NTY2Nzc1OTZdfQ
+==
 -->
