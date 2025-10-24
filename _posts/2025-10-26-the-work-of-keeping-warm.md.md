@@ -32,18 +32,17 @@ The chase fades into chores, the dates turn into schedules, and the spark become
 We tend to think that lasting love should sustain itself, but even a well-built fire cools when left alone. Affection, connection, laughter—they’re all embers that respond to attention. Ignore them long enough, and they grow cold. Feed them with care, and they glow again.
 
 
-**Feeding the fire** looks like showing up with intention—leaving a note, planning a walk, praying together, saying thank you.  
-**Starting with kindling** looks like humility—choosing to apologize first, offering grace, or revisiting what made you fall in love in the first place.  
+**Feeding the fire** looks like showing up with intention, leaving a note, planning a walk, praying together, saying thank you.  
+**Starting with kindling** looks like humility, choosing to apologize first, offering grace, or revisiting what made you fall in love in the first place.  
 
 Paul wrote, *“Love one another with brotherly affection. Outdo one another in showing honor. Do not be slothful in zeal, be fervent in spirit, serve the Lord.”* (Romans 12:10–11)  
 
-It’s a reminder that love is both feeling and effort—devotion expressed through action. Passion cools when we grow passive, but it reignites when we love with purpose.
+It’s a reminder that love is both feeling and effort, devotion expressed through action. Passion cools when we grow passive, but it reignites when we love with purpose.
 
 And Scripture also says,  
 *“Place me like a seal over your heart… for love is as strong as death, its jealousy unyielding as the grave. It burns like blazing fire, like a mighty flame. Many waters cannot quench love; rivers cannot sweep it away.”* (Song of Solomon 8:6–7)  
 
 That kind of love doesn’t just happen; it’s cultivated. It’s protected. It’s tended through storms and strengthened through stillness. It burns because someone keeps feeding it.
-
 
 Maybe your fire is blazing. Maybe it’s just smoke.  
 Either way, it takes the same thing—attention.  
@@ -59,5 +58,5 @@ And sometimes, that steady fire is the most beautiful kind.
 What’s one small thing you could do this week to “feed the fire” in your relationship?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MjA4MjU5OSwtMTUwNjk1OTk1N119
+eyJoaXN0b3J5IjpbLTg1MTQ0Njk4NywtMTUwNjk1OTk1N119
 -->
