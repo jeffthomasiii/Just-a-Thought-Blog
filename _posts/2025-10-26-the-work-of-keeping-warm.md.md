@@ -26,7 +26,6 @@ That line stopped me in my tracks.
 
 It came from a story shared by a man who once wrote a song for a woman he loved. He played it for her at an open mic night years ago, and that was the night she fell for him. Fifteen years later, he says she still greets him with the same smile. His advice was simple, but weighty: *love doesn’t keep itself warm—you have to do the work.*
 
-
 Somewhere between *“I do”* and *“I’m exhausted,”* many couples forget that.  
 The chase fades into chores, the dates turn into schedules, and the spark becomes a memory. But passion doesn’t disappear—it’s simply waiting to be rekindled.  
 
@@ -60,5 +59,5 @@ And sometimes, that steady fire is the most beautiful kind.
 What’s one small thing you could do this week to “feed the fire” in your relationship?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDY5NTk5NTddfQ==
+eyJoaXN0b3J5IjpbLTY2MjA4MjU5OSwtMTUwNjk1OTk1N119
 -->
