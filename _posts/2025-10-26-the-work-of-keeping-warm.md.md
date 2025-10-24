@@ -20,16 +20,16 @@ background: /img/posts/bg-the-work-of-keeping-warm.jpg
 scripture: "Romans 12:10–11 ESV, Song of Solomon 8:6–7 NIV"
 ---
 
-He said, “If you want the fire to keep burning, you have to keep feeding it, and if the fire has gone out, you have to start with some kindling.”  
+> *“If you want the fire to keep burning, you have to keep feeding it, and if the fire has gone out, you have to start with some kindling.”*  
 
 That line stopped me in my tracks.  
 
 It came from a story shared by a man who once wrote a song for a woman he loved. He played it for her at an open mic night years ago, and that was the night she fell for him. Fifteen years later, he says she still greets him with the same smile. His advice was simple, but weighty: *love doesn’t keep itself warm—you have to do the work.*
 
 Somewhere between *“I do”* and *“I’m exhausted,”* many couples forget that.  
-The chase fades into chores, the dates turn into schedules, and the spark becomes a memory. But passion doesn’t disappear—it’s simply waiting to be rekindled.  
+The chase fades into chores, the dates turn into schedules, and the spark becomes a memory. But passion doesn’t disappear, it’s simply waiting to be rekindled.  
 
-We tend to think that lasting love should sustain itself, but even a well-built fire cools when left alone. Affection, connection, laughter—they’re all embers that respond to attention. Ignore them long enough, and they grow cold. Feed them with care, and they glow again.
+We tend to think that lasting love should sustain itself, but even a well-built fire cools when left alone. Affection, connection, laughter, they’re all embers that respond to attention. Ignore them long enough, and they grow cold. Feed them with care, and they glow again.
 
 
 **Feeding the fire** looks like showing up with intention, leaving a note, planning a walk, praying together, saying thank you.  
@@ -45,10 +45,10 @@ And Scripture also says,
 That kind of love doesn’t just happen; it’s cultivated. It’s protected. It’s tended through storms and strengthened through stillness. It burns because someone keeps feeding it.
 
 Maybe your fire is blazing. Maybe it’s just smoke.  
-Either way, it takes the same thing—attention.  
-Love’s warmth doesn’t come from waiting; it comes from working.  
+Either way, it takes the same thing, attention.  
+> Love’s warmth doesn’t come from waiting; it comes from working.  
 
-The warmth we long for doesn’t return through wishing—it returns through tending.  
+The warmth we long for doesn’t return through wishing, it returns through tending.  
 When we bring our humility and God brings His grace, the flame that once burned bright can burn steady again.  
 And sometimes, that steady fire is the most beautiful kind.  
 
@@ -58,5 +58,6 @@ And sometimes, that steady fire is the most beautiful kind.
 What’s one small thing you could do this week to “feed the fire” in your relationship?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTQ0Njk4NywtMTUwNjk1OTk1N119
+eyJoaXN0b3J5IjpbLTEzMjM4NzUzNzMsLTg1MTQ0Njk4NywtMT
+UwNjk1OTk1N119
 -->
