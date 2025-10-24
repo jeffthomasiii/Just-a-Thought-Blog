@@ -40,7 +40,7 @@ These are the inner qualities that hold everything else together.
 3. **[Mental and Emotional Discipline](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/10/17/master-yourself.html)**  
    True strength isn’t found in control over others, but in control over yourself. Anger, fear, and pride need boundaries.  
 
-4. **[Physical Strength and Endurance(https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/10/24/strong-enough-to-serve.html)**  
+4. **[Physical Strength and Endurance](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/10/24/strong-enough-to-serve.html)**  
    Life requires stamina. Caring for your body isn’t about vanity; it’s about stewardship and service.  
 
 
