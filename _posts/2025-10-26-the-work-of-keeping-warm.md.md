@@ -24,13 +24,12 @@ scripture: "Romans 12:10–11 ESV, Song of Solomon 8:6–7 NIV"
 
 That line stopped me in my tracks.  
 
-It came from a story shared by a man who once wrote a song for a woman he loved. He played it for her at an open mic night years ago, and that was the night she fell for him. Fifteen years later, he says she still greets him with the same smile. His advice was simple, but weighty: *love doesn’t keep itself warm—you have to do the work.*
+It came from a story shared by a man who once wrote a song for a woman he loved. He played it for her at an open mic night years ago, and that was the night she fell for him. Fifteen years later, he says she still greets him with the same smile. His advice was simple, but weighty: *love doesn’t keep itself warm, you have to do the work.*
 
 Somewhere between *“I do”* and *“I’m exhausted,”* many couples forget that.  
 The chase fades into chores, the dates turn into schedules, and the spark becomes a memory. But passion doesn’t disappear, it’s simply waiting to be rekindled.  
 
 We tend to think that lasting love should sustain itself, but even a well-built fire cools when left alone. Affection, connection, laughter, they’re all embers that respond to attention. Ignore them long enough, and they grow cold. Feed them with care, and they glow again.
-
 
 **Feeding the fire** looks like showing up with intention, leaving a note, planning a walk, praying together, saying thank you.  
 **Starting with kindling** looks like humility, choosing to apologize first, offering grace, or revisiting what made you fall in love in the first place.  
@@ -58,6 +57,6 @@ And sometimes, that steady fire is the most beautiful kind.
 What’s one small thing you could do this week to “feed the fire” in your relationship?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjM4NzUzNzMsLTg1MTQ0Njk4NywtMT
-UwNjk1OTk1N119
+eyJoaXN0b3J5IjpbOTQ0MDkyMjIxLC04NTE0NDY5ODcsLTE1MD
+Y5NTk5NTddfQ==
 -->
