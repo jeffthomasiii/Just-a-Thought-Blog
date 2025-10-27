@@ -52,11 +52,5 @@ When we bring our humility and God brings His grace, the flame that once burned 
 And sometimes, that steady fire is the most beautiful kind.  
 
 …just a thought.  
-
  
 What’s one small thing you could do this week to “feed the fire” in your relationship?
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ0MDkyMjIxLC04NTE0NDY5ODcsLTE1MD
-Y5NTk5NTddfQ==
--->
