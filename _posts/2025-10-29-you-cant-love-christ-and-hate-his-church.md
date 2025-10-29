@@ -105,7 +105,3 @@ And she’s still beautiful in His eyes.
 
 Where has frustration with the Church replaced my faithfulness to her?  
 And what would it look like for me to love Christ’s Bride the way He does, with patience, hope, and covenant love?
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTYxNzkyMzNdfQ==
--->
