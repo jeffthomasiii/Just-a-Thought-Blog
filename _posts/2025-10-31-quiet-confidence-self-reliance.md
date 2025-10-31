@@ -43,7 +43,3 @@ None of these things are glamorous, but all of them build trust. A man who pract
 Because in the end, self-reliance isn’t about proving independence. It’s about being prepared to serve.  
 
 …just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMjgyMjMyNV19
--->
