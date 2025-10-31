@@ -47,7 +47,7 @@ These are the inner qualities that hold everything else together.
 ### Skills  
 Practical abilities that make a man useful and dependable.  
 
-5. **Self-Reliance**  
+5. **[Self-Reliance](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/10/31/quiet-confidence-self-reliance.html)**  
    Cooking, cleaning, budgeting, fixing things, these aren’t chores; they’re responsibilities that bring peace to those around you.  
 
 6. **Interpersonal Skills**  
