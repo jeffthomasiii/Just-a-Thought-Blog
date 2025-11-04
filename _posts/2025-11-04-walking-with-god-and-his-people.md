@@ -22,7 +22,7 @@ scripture: "Acts 2:42–47; Proverbs 27:17; Exodus 20:1–17"
 
 Some Christians live as if faith were a solo journey. They love God, read His Word, and pray faithfully, but quietly keep their distance from others. Sometimes it’s because of past hurt, sometimes exhaustion, and sometimes it just feels easier. But Christianity was never meant to be lived in isolation.  
 
-R. Kent Hughes once wrote, *“Christianity is a relationship with God and His people.”* I remember pausing the first time I read that line, it’s simple, but it cuts deep. It’s not *either/or*; it’s *both/and.* Our walk with God naturally calls us into relationship with His family.
+[R. Kent Hughes](https://www.crossway.org/authors/r-kent-hughes/) once wrote, *“Christianity is a relationship with God and His people.”* I remember pausing the first time I read that line, it’s simple, but it cuts deep. It’s not *either/or*; it’s *both/and.* Our walk with God naturally calls us into relationship with His family.
 > God designed faith to flow both upward and outward.  
 
 Even the Ten Commandments reveal this truth. The first four speak to our **vertical** relationship with God, honoring Him, worshiping Him alone, keeping His name holy, and resting in His presence. But the last six turn **horizontal**, guiding how we live with one another, honoring parents, valuing life, keeping covenant, speaking truth, and protecting what belongs to our neighbor. From the very beginning, God designed faith to flow both upward and outward.  
@@ -42,6 +42,6 @@ Maybe the next step in deepening your relationship with God isn’t something ne
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NDYxOTExMyw1OTE2NDczNzEsMTM2Nz
-MwMzAyMV19
+eyJoaXN0b3J5IjpbLTU4MDc4NTYxMiwtMjk0NjE5MTEzLDU5MT
+Y0NzM3MSwxMzY3MzAzMDIxXX0=
 -->
