@@ -35,12 +35,12 @@ Godly friendship isn’t just companionship; it’s spiritual formation. It’s 
 
 Proverbs 27:17 says, *“As iron sharpens iron, so one man sharpens another.”* That sharpening isn’t always comfortable, but it’s essential. Without it, faith dulls. Without it, we lose perspective. Left alone too long, even the strongest believer can drift.  
 
-So if your faith feels stagnant, maybe what’s missing isn’t another devotional or sermon—it’s people. People who walk beside you, not just watch from a distance. People who see the real you and still choose to stay.  
+So, if your faith feels stagnant, maybe what’s missing isn’t another devotional or sermon, it’s people. People who walk beside you, not just watch from a distance. People who see the real you and still choose to stay.  
 
-Maybe the next step in deepening your relationship with God isn’t something new to *learn*, but someone new to *walk with.* Invite a friend over for coffee. Join a small group. Text the person who comes to mind when you pray. God often speaks through His people—it’s just that sometimes, we haven’t been listening.  
+Maybe the next step in deepening your relationship with God isn’t something new to *learn*, but someone new to *walk with.* Invite a friend over for coffee. Join a small group. Text the person who comes to mind when you pray. God often speaks through His people, it’s just that sometimes, we haven’t been listening.  
 
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNTI3NzAxMV19
+eyJoaXN0b3J5IjpbMTM2NzMwMzAyMV19
 -->
