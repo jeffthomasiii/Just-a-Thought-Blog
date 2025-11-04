@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Walking with God—and with His People"
+title: "Walking with God, and with His People"
 subtitle: "Why faith was never meant to be lived alone"
 description: "Faith was never meant to be a solo journey. Christianity is a relationship with God and His people, a call to walk both upward and outward in love."
 date: 2025-11-04
@@ -42,5 +42,6 @@ Maybe the next step in deepening your relationship with God isn’t something ne
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkxNjQ3MzcxLDEzNjczMDMwMjFdfQ==
+eyJoaXN0b3J5IjpbLTI5NDYxOTExMyw1OTE2NDczNzEsMTM2Nz
+MwMzAyMV19
 -->
