@@ -20,7 +20,7 @@ background: /img/posts/bg-fail-fast-grow-forward.jpg
 scripture: "Proverbs 24:16 (ESV) – 'For the righteous falls seven times and rises again.'"
 ---
 
-You can tell a lot about a person by how long they stare at their mistakes. Some replay them like a bad highlight reel—pausing, rewinding, analyzing every angle, while others take a breath, jot down what they learned, and move on.  
+You can tell a lot about a person by how long they stare at their mistakes. Some replay them like a bad highlight reelpausing, rewinding, analyzing every angle, while others take a breath, jot down what they learned, and move on.  
 
 Our Chief of Staff said something recently that stuck with me:  
 > “Where we fail, which is a part of the game, we fail fast and move on to the next one.”  
@@ -68,5 +68,5 @@ Get up. Learn. Try again.
 What’s one failure that taught you something essential about growth or grace?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM3NTA4NjAxXX0=
+eyJoaXN0b3J5IjpbLTMyNTAxNjg0MSw5Mzc1MDg2MDFdfQ==
 -->
