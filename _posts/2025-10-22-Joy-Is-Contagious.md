@@ -51,7 +51,3 @@ So if joy is contagious, maybe our job isn’t to protect it but to *pass it on.
 …just a thought.
 
 Who in your life spreads joy so effortlessly that it changes your day? And what would it look like if you decided to do the same?
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MjY1NjUsLTE4NTY2Nzc1OTZdfQ==
--->
