@@ -50,7 +50,7 @@ Practical abilities that make a man useful and dependable.
 5. **[Self-Reliance](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/10/31/quiet-confidence-self-reliance.html)**  
    Cooking, cleaning, budgeting, fixing things, these aren’t chores; they’re responsibilities that bring peace to those around you.  
 
-6. **Interpersonal Skills**  
+6. **[Interpersonal Skills](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/11/07/people-over-projects.html)**  
    Men who build strong relationships know how to listen, empathize, and invest in people. Life is richer with these skills.  
 
 7. **Medical, First Aid, and Communications Basics**  
