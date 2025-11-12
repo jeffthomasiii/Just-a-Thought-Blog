@@ -21,10 +21,10 @@ scripture: "Romans 12:2 (ESV)"
 There’s a line from R. Kent Hughes’ *Disciplines of a Godly Man* that refuses to leave me:  
 > *“This cosmic potential of the believer’s mind introduced the great scandal of today's church: Christianity without Christian minds, that is, Christians who do not think Christianly...”*
 
-It’s a sobering observation. Hughes is not talking about intelligence or education, but about the orientation of our minds — how we process truth, evaluate culture, and respond to life. His concern wasn’t with Christians who don’t *believe*, but with believers who no longer *think like believers.*,
+It’s a sobering observation. Hughes is not talking about intelligence or education, but about the orientation of our minds, how we process truth, evaluate culture, and respond to life. His concern wasn’t with Christians who don’t *believe*, but with believers who no longer *think like believers.*,
 
 The scandal Hughes saw was not a lack of passion, but a lack of thought.  
-In many ways, his words sound prophetic today. We have more access to biblical resources than any generation before us — podcasts, devotionals, study apps, online sermons, yet fewer believers seem to know *why* they believe what they claim to believe.  
+In many ways, his words sound prophetic today. We have more access to biblical resources than any generation before us, podcasts, devotionals, study apps, online sermons, yet fewer believers seem to know *why* they believe what they claim to believe.  
 
 Our faith has become increasingly reactive, shaped by algorithms more than Scripture. Social media gives us slogans to repost but not truths to wrestle with. We are quick to emote, slow to discern. We mistake agreement for conviction and inspiration for transformation.  
 
@@ -75,5 +75,6 @@ Because when we do, the world catches a glimpse of what a transformed mind, and 
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTIwMTg0OTcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNzcxNzM1NjEzLC0xNDEyMDE4NDk3LDczMD
+k5ODExNl19
 -->
