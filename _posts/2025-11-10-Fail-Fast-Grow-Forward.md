@@ -66,7 +66,3 @@ Get up. Learn. Try again.
 …just a thought.  
 
 What’s one failure that taught you something essential about growth or grace?
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMDQ2MzkzMyw5Mzc1MDg2MDFdfQ==
--->
