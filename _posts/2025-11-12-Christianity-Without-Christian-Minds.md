@@ -19,7 +19,7 @@ scripture: "Romans 12:2 (ESV)"
 ---
 
 There’s a line from R. Kent Hughes’ *Disciplines of a Godly Man* that refuses to leave me:  
-> “This cosmic potential of the believer’s mind introduced the great scandal of today's church: Christianity without Christian minds, that is, Christians who do not think Christianly.”
+> *“This cosmic potential of the believer’s mind introduced the great scandal of today's church: Christianity without Christian minds, that is, Christians who do not think Christianly...”*
 
 It’s a sobering observation. Hughes is not talking about intelligence or education, but about the orientation of our minds — how we process truth, evaluate culture, and respond to life. His concern wasn’t with Christians who don’t *believe*, but with believers who no longer *think like believers.*,
 
@@ -75,5 +75,5 @@ Because when we do, the world catches a glimpse of what a transformed mind, and 
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NTMxMjQ4MSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE0MTIwMTg0OTcsNzMwOTk4MTE2XX0=
 -->
