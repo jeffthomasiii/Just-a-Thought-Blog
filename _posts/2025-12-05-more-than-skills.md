@@ -24,7 +24,7 @@ We’ve walked through ten skills, some practical, some relational, some spiritu
 
 The **Foundations** reminded us that before we build, we must be teachable, thoughtful, disciplined, and strong enough to serve. The **Skills** showed us that self-reliance, relationship, preparedness, and strength with restraint are not luxuries, but essentials for a man who wants to carry weight faithfully. And the **Implementation** reminded us that we are always both students and teachers, passing on what we’ve learned to those who come after us.  
 
-But here’s the truth: none of these stand alone. They weave together into a way of life.  
+But here’s the truth: none of these stands alone. They weave together into a way of life.  
 
 The world doesn’t need men who can only lift weights, fix cars, or swing fists. It doesn’t need men who chase busyness at the cost of their relationships. It doesn’t need men who consume endlessly but never pour into others.  
 
@@ -39,5 +39,5 @@ Because in the end, being a man isn’t about arriving, it’s about walking fai
 …just a thought.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTAyNjQxODNdfQ==
+eyJoaXN0b3J5IjpbMTIzMjAzNjcwOCwtMTcxMDI2NDE4M119
 -->
