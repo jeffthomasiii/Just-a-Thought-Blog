@@ -20,12 +20,12 @@ series: "The Practice of Holy Thinking"
 series_order: 1
 ---
 
-Have you ever noticed how easy it is to read Scripture as if it were written from a quiet coffee shop instead of a prison cell? We highlight and underline Paul’s words, but sometimes we forget the chains hanging from his wrists. And here—right in the discomfort of captivity—Paul urges believers to set their minds on what is “true… honorable… just… pure… lovely… commendable.”
+Have you ever noticed how easy it is to read Scripture as if it were written from a quiet coffee shop instead of a prison cell? We highlight and underline Paul’s words, but sometimes we forget the chains hanging from his wrists. And here, right in the discomfort of captivity, Paul urges believers to set their minds on what is “true… honorable… just… pure… lovely… commendable.”
 
 When we remember where Paul was, the weight of his words changes.  
 Philippians isn’t a letter written from ease. It’s written from *Roman custody*, where Paul lived under the constant awareness that his next hearing could decide his life. Yet instead of bitterness, he writes about joy. Instead of fear, he writes about peace. Instead of demanding sympathy, he gives counsel.
 
-To the Philippian church, his “joy and crown”—Paul wasn’t offering a motivational slogan. He was calling them to a way of thinking that resisted the currents of the world around them. Because the world Paul lived in was not neutral about the mind.
+To the Philippian church, his “joy and crown”, Paul wasn’t offering a motivational slogan. He was calling them to a way of thinking that resisted the currents of the world around them. Because the world Paul lived in was not neutral about the mind.
 
 Rome prized honor, status, reputation, and raw displays of power. Virtue was about public performance. Character was measured by social approval. Noble thinking, in Roman terms, was whatever protected your standing in the empire.
 
@@ -62,5 +62,5 @@ Remembering Paul’s world shifts how we hear his words. Philippians 4:8 isn’t
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDMwMjM4ODNdfQ==
+eyJoaXN0b3J5IjpbLTIwNDkzNTE0MzVdfQ==
 -->
