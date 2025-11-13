@@ -36,7 +36,8 @@ Where I process, she discerns.
 Where I reflect, she moves with confidence.  
 And together, we somehow find balance, though getting there often involves a few spirited detours.
 
-There are moments when we’re talking through plans or processing something that happened, and I start walking through the steps out loud, analyzing, weighing options, laying out the mechanics piece by piece. Meanwhile, she’s already seeing the whole picture. She’ll pause, look at me, and say, “That doesn’t make sense to me…”
+There are moments when we’re talking through plans or processing something that happened, and I start walking through the steps out loud, analyzing, weighing options, laying out the mechanics piece by piece. Meanwhile, she’s already seeing the whole picture. She’ll pause, look at me, and say, 
+> *“That doesn’t make sense to me…”*
 
 Not because she’s confused, but because she’s evaluating meaning while I’m explaining process. She arrives at clarity quickly; I take the scenic route. And somewhere between her discernment and my analysis, we find a perspective neither of us would’ve reached alone.
 
@@ -51,10 +52,10 @@ Because sometimes, love’s refining process looks like two different minds lear
 I’ve watched how her insights change me. When I get stuck in analysis, she brings clarity. When I overthink, she cuts straight to what matters. And when I’m lingering in reflection, she reminds me that some decisions are made by conviction, not calculation. Her thought process stretches my faith in ways theology books can’t—it brings the abstract beauty of God into the living room of everyday life.
 
 But here’s the truth: her mind also challenges me. Sometimes it confuses me. And that’s okay.  
-Because part of love is being willing to sit in the mystery—acknowledging that we were never meant to fully decode another person, only to keep discovering them.
+Because part of love is being willing to sit in the mystery, acknowledging that we were never meant to fully decode another person, only to keep discovering them.
 
 It’s easy to love someone’s smile, their style, their habits.  
-It takes deeper love to appreciate the *way they think*—especially when it doesn’t mirror your own.  
+It takes deeper love to appreciate the *way they think*, especially when it doesn’t mirror your own.  
 That’s the kind of love that grows marriages.  
 That’s the kind of love that reflects the patience of Christ.  
 And that’s the kind of love I’m still learning, one conversation at a time.
@@ -62,16 +63,13 @@ And that’s the kind of love I’m still learning, one conversation at a time.
 So yes, my wife’s mind fascinates me.  
 It humbles me.  
 It makes me laugh when I least expect it and think when I least want to.  
-But more than anything—it makes me grateful.  
+But more than anything, it makes me grateful.  
 Because in her mind, I see a glimpse of God’s creativity and the divine reminder that we’re not meant to think alike, but to think *together.*
 
 …just a thought.
 
----
-
-**Reader Prompt:**  
 What’s one thing about the way your spouse thinks that both challenges and inspires you?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkyOTE3ODE2XX0=
+eyJoaXN0b3J5IjpbMjAyMTM1MTE0OF19
 -->
