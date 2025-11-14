@@ -41,6 +41,3 @@ Medical, first aid, and communications basics won’t make headlines. But they c
 Because a man who is prepared to help can turn fear into hope when it’s needed most.  
 
 …just a thought.  
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDYxNTQyXX0=
--->
