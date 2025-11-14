@@ -53,7 +53,7 @@ Practical abilities that make a man useful and dependable.
 6. **[Interpersonal Skills](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/11/07/people-over-projects.html)**  
    Men who build strong relationships know how to listen, empathize, and invest in people. Life is richer with these skills.  
 
-7. **Medical, First Aid, and Communications Basics**  
+7. **[Medical, First Aid, and Communications Basics](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/11/14/prepared-to-help.html)**  
    In a crisis, being able to help is love in action. Whether it’s knowing CPR, stopping a bleed, or handling radio communications when cell service is down, these skills can save lives.  
 
 8. **Unarmed Self-Defense**  
