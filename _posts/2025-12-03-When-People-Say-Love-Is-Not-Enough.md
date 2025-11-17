@@ -37,7 +37,7 @@ What they often mean is:
 • The relationship did not heal.  
 • The response did not match the effort.  
 • The gap between us stayed the same.  
-> Love is enough to make you faithful, obedient, and whole.
+> *"Love is enough to make you faithful, obedient, and whole."*
 
 Those are real experiences. But they are not evidence that love failed. They are evidence that someone stopped loving in the way God defines love. Or they evidence that the relationship was sustained by something less than agape.
 
@@ -74,7 +74,7 @@ Agape depends on God.
 
 And this leads to a deeper question.  
 What kind of love are we practicing?
-> Love is enough because God is enough. 
+> *"Love is enough because God is enough."* 
 
 Because if our love does not look like 1 Corinthians 13, or John 13, or Romans 5, then we are practicing something less. And if we are practicing something less, it will absolutely feel like it is not enough.
 
@@ -95,5 +95,5 @@ Maybe the issue is that we are still learning what love truly is.
 
 Just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc2MzY2MTI0XX0=
+eyJoaXN0b3J5IjpbMTg2NDAwODM4Ml19
 -->
