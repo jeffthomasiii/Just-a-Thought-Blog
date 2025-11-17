@@ -23,7 +23,7 @@ series:
 series_order:
 ---
 
-It is strange how the urgent always feels louder than the important. It rarely arrives with danger. It just shows up with a timestamp, a notification, or a sense of pressure. My wife and I were talking about that recently after she read a small book titled *Tyranny of the Urgent*. We were discussing its premise and how relevant it is to leadership, prioritization, and the way we try to manage our days. The more we talked, the more I realized how easily urgency takes over without asking.
+It is strange how the urgent always feels louder than the important. It rarely arrives with danger. It just shows up with a timestamp, a notification, or a sense of pressure. My wife and I were talking about that recently after she read a small book titled *Tyranny of the Urgent* by Charles E. Hummel. We were discussing its premise and how relevant it is to leadership, prioritization, and the way we try to manage our days. The more we talked, the more I realized how easily urgency takes over without asking.
 
 I have not read the book yet, but the idea is simple. The urgent is not always harmful. It just demands attention. And without noticing, the important things slowly move to the sidelines.
 
@@ -52,5 +52,5 @@ Maybe today is simply a reminder to slow down. Notice what actually matters. And
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDYzNTA3NDhdfQ==
+eyJoaXN0b3J5IjpbLTkyNjk1Mjc0NCwtMTk0NjM1MDc0OF19
 -->
