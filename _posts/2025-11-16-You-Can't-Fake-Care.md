@@ -60,7 +60,3 @@ You can’t fake that.
 And honestly… you shouldn’t want to.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMzU4MTU2N119
--->
