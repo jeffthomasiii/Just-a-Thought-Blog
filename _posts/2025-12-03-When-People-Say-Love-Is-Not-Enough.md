@@ -29,7 +29,7 @@ But that phrase only makes sense if we are talking about a certain kind of love.
 
 Scripture, however, speaks of something stronger. Agape. A love that flows from God. A love defined by choice, commitment, sacrifice, and truth. A love that cannot be shaken because it does not begin with us at all.
 
-When someone says “love is not enough,” they are not wrong about the pain. They are wrong about the source.
+When someone says, “love is not enough,” they are not wrong about the pain. They are wrong about the source.
 
 What they often mean is:  
 • The other person did not change.  
@@ -58,7 +58,7 @@ And that is the point.
 Love is not meant to guarantee outcomes.  
 Love is meant to shape us into Christ.
 
-So when people say “love is not enough,” what they are really describing is the gap between human love and God’s love.
+So, when people say, “love is not enough,” what they are really describing is the gap between human love and God’s love.
 
 Human love grows weary.  
 Agape endures.  
@@ -74,6 +74,7 @@ Agape depends on God.
 
 And this leads to a deeper question.  
 What kind of love are we practicing?
+> Love is enough because God is enough. 
 
 Because if our love does not look like 1 Corinthians 13, or John 13, or Romans 5, then we are practicing something less. And if we are practicing something less, it will absolutely feel like it is not enough.
 
@@ -94,5 +95,5 @@ Maybe the issue is that we are still learning what love truly is.
 
 Just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc0MzExNTg0XX0=
+eyJoaXN0b3J5IjpbODc2MzY2MTI0XX0=
 -->
