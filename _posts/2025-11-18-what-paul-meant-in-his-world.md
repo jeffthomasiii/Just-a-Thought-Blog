@@ -60,7 +60,3 @@ Remembering Paul’s world shifts how we hear his words. Philippians 4:8 isn’t
 **If Paul could think on these things in chains, what might God be inviting us to think on in ours?**
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDkzNTE0MzVdfQ==
--->
