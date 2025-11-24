@@ -60,7 +60,3 @@ Maybe it’s this:
 **What part of my inner life is Christ inviting me to surrender so He can shape my mind more deeply?**
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNjE4MjI0Ml19
--->
