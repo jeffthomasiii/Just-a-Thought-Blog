@@ -40,8 +40,3 @@ Both unarmed and armed skills carry the same principle: train so you’re capabl
 Because the true test of strength isn’t in how much force you can unleash, but in how much wisdom you show when you don’t.  
 
 …just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3OTc1NTcyOSwtNzM5NDE5MTYsMjMxMT
-AzNjY4XX0=
--->
