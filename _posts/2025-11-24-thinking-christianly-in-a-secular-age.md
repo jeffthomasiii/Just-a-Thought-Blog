@@ -70,7 +70,3 @@ So maybe the challenge for us today isn’t to escape the modern world but to re
 **What have I allowed to shape my mindset that was never meant to shape my soul?**
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjUwNjI2NDUsMTk1NjEwMTQzXX0=
--->
