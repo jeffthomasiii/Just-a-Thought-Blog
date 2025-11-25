@@ -56,10 +56,10 @@ Practical abilities that make a man useful and dependable.
 7. **[Medical, First Aid, and Communications Basics](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/11/14/prepared-to-help.html)**  
    In a crisis, being able to help is love in action. Whether it’s knowing CPR, stopping a bleed, or handling radio communications when cell service is down, these skills can save lives.  
 
-8. **Unarmed Self-Defense**  
+8. **[Unarmed Self-Defense](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/11/21/strength-with-restraint.html)**  
    Not about aggression, but protection. Sometimes standing in the gap requires physical courage.  
 
-9. **Weapons Proficiency**  
+9. **[Weapons Proficiency](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/11/21/strength-with-restraint.html)**  
    If entrusted with tools of power, a man should use them responsibly, with wisdom, training, and respect.  
 
 
