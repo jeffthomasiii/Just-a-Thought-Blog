@@ -74,7 +74,3 @@ It’s anchored in a deeper one.
 And that reality, the reality shaped by Christ, is where peace lives.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUwMDc4NTExXX0=
--->
