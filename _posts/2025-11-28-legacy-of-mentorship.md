@@ -39,8 +39,3 @@ The legacy of mentorship is this: keep learning, keep teaching. Be humble enough
 Because in the end, a man’s legacy isn’t measured only in what he accomplishes, but in who he equips for the future.  
 
 …just a thought.  
-
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDE0MjYwMV19
--->
