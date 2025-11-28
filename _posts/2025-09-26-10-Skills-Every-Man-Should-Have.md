@@ -66,7 +66,7 @@ Practical abilities that make a man useful and dependable.
 ### Implementation  
 Where everything comes together.  
 
-10. **Mentorship Mindset**  
+10. **[Mentorship Mindset](https://jeffthomasiii.github.io/Just-a-Thought-Blog/manhood/faith/growth/2025/11/28/legacy-of-mentorship.html)**  
    A man should be both student and teacher, always learning, always passing it on. This is how wisdom and skill multiply across generations.  
 
 
