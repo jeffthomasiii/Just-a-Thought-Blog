@@ -49,7 +49,7 @@ Scripture says, *“As iron sharpens iron, so one person sharpens another.”* (
 That verse sounds noble until you’re the one being sharpened.  
 Because sometimes, love’s refining process looks like two different minds learning how to trust each other’s way of seeing the world.
 
-I’ve watched how her insights change me. When I get stuck in analysis, she brings clarity. When I overthink, she cuts straight to what matters. And when I’m lingering in reflection, she reminds me that some decisions are made by conviction, not calculation. Her thought process stretches my faith in ways theology books can’t—it brings the abstract beauty of God into the living room of everyday life.
+I’ve watched how her insights change me. When I get stuck in analysis, she brings clarity. When I overthink, she cuts straight to what matters. And when I’m lingering in reflection, she reminds me that some decisions are made by conviction, not calculation. Her thought process stretches my faith in ways theology books can’t, it brings the abstract beauty of God into the living room of everyday life.
 
 But here’s the truth: her mind also challenges me. Sometimes it confuses me. And that’s okay.  
 Because part of love is being willing to sit in the mystery, acknowledging that we were never meant to fully decode another person, only to keep discovering them.
@@ -69,3 +69,6 @@ Because in her mind, I see a glimpse of God’s creativity and the divine remind
 …just a thought.
 
 What’s one thing about the way your spouse thinks that both challenges and inspires you?
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjI0OTQwMzA4XX0=
+-->
