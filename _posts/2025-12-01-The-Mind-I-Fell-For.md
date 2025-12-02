@@ -69,7 +69,3 @@ Because in her mind, I see a glimpse of God’s creativity and the divine remind
 …just a thought.
 
 What’s one thing about the way your spouse thinks that both challenges and inspires you?
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMTM1MTE0OF19
--->
