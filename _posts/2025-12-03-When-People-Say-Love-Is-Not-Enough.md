@@ -32,11 +32,13 @@ Scripture, however, speaks of something stronger. Agape. A love that flows from 
 When someone says, “love is not enough,” they are not wrong about the pain. They are wrong about the source.
 
 What they often mean is:  
-• The other person did not change.  
-• I did not get the outcome I hoped for.  
-• The relationship did not heal.  
-• The response did not match the effort.  
-• The gap between us stayed the same.  
+
+ - The other person did not change.
+ - I did not get the outcome I hoped for.
+ - The relationship did not heal.
+ - The response did not match the effort.
+ - The gap between us stayed the same.
+
 > *"Love is enough to make you faithful, obedient, and whole."*
 
 Those are real experiences. But they are not evidence that love failed. They are evidence that someone stopped loving in the way God defines love. Or they evidence that the relationship was sustained by something less than agape.
@@ -94,3 +96,6 @@ So maybe the issue is not that love fails.
 Maybe the issue is that we are still learning what love truly is.
 
 Just a thought.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzU5MDMyNzQzXX0=
+-->
