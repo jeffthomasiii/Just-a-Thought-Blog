@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "More Than Skills, A Way of Life"
-subtitle: "Bonus Post – Conclusion to the Series"
+subtitle: "Conclusion to the Series"
 description: "These ten skills were never just about competence, they were about character, legacy, and a way of life worth passing on."
 date: 2025-12-05
 author: Jeff Thomas III
