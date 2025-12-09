@@ -56,7 +56,3 @@ So before we talk about leading anyone else, let’s start with the question tha
 **Who am I becoming under God’s hand?**
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MjQ0NTQzM119
--->
