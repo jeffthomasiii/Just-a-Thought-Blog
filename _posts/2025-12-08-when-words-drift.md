@@ -50,7 +50,3 @@ Maybe Lewis is nudging us back toward something simpler and truer. Maybe the inv
 Perhaps the first step is just to let our words mean something true again.
 
 Just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1ODU5NDYzNV19
--->
