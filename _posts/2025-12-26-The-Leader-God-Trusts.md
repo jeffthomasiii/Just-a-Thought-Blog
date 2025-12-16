@@ -25,7 +25,7 @@ Most people want influence. Fewer people want the formation that makes influence
 
 We often imagine leadership trust as something God gives suddenly, in big moments, with visible platforms and clear authority. But Scripture tells a quieter story. God entrusts leadership slowly. Carefully. Purposefully. And almost always out of sight.
 
-“The one who is faithful in very little is also faithful in much.”
+> “The one who is faithful in very little is also faithful in much...” Luke 16:10
 
 God does not start by asking whether we are impressive. He asks whether we are trustworthy. He watches how we handle small responsibilities, unseen moments, quiet obedience, and inconvenient faithfulness. Long before there is a platform, there is a pattern.
 
@@ -59,5 +59,5 @@ And when God trusts a leader, He knows their influence will point back to Him.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NzIwMDEzMV19
+eyJoaXN0b3J5IjpbMTgyNDgwNTQwNiwxNzY3MjAwMTMxXX0=
 -->
