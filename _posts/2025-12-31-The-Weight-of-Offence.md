@@ -2,7 +2,7 @@
 layout: post
 title: "The Weight of Offense"
 description: "A reflection on how carrying offense weighs us down, and the quiet freedom found in choosing not to hold what God never asked us to carry."
-date: 2025-12-16
+date: 2025-12-31
 author: Jeff Thomas III
 categories:
   - faith
