@@ -25,7 +25,7 @@ There is a difference between a good idea, and a God shaped vision. Ideas come q
 
 Leaders often feel pressure to create vision. Define the plan. Chart the future. Paint the picture. And while planning has its place, Scripture never treats vision as something we invent. It treats vision as something we receive.
 
-“Where there is no revelation, people cast off restraint.”
+“Where there is no revelation, people cast off restraint...” Proverbs 29
 
 Vision is not about goals. Vision is about hearing from God. It is about seeing what He sees and aligning your life, your leadership, and your decisions with His direction. Vision does not start with strategy. It starts with surrender.
 
@@ -61,5 +61,5 @@ And when it begins with God, it can outlast you.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjMwODkxNDddfQ==
+eyJoaXN0b3J5IjpbLTE4NjEwMzAwMywtMTU2MzA4OTE0N119
 -->
