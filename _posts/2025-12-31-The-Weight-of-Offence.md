@@ -17,15 +17,13 @@ excerpt: "Offense often feels justified, but it is never neutral. What we carry 
 
 On our morning walk today, Samatra said something that stopped me mid-step.
 
-“I’m no longer going to carry the weight of being offended by other people’s behavior.”
+> *“I’m no longer going to carry the weight of being offended by other people’s behavior.”*
 
 It was simple. Calm. Settled. And it lingered with me long after we got home.
 
 Most of us don’t think of offense as something we carry. We think of it as something that happens to us. Someone says the wrong thing. Someone acts poorly. Someone crosses a line. And suddenly offense feels automatic, even responsible. As if noticing it requires us to hold onto it.
 
-But offense is not neutral.
-
-It always comes with weight.
+> But offense is not neutral. It always comes with weight.
 
 We often justify that weight by pointing to the behavior that caused it. And sometimes the behavior really is wrong. Hurt is real. Disrespect is real. But offense quietly shifts the focus. It turns from what happened into what we now carry.
 
@@ -52,5 +50,5 @@ Maybe the question is not whether we have a right to be offended. Maybe the bett
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzOTY1NTk0MV19
+eyJoaXN0b3J5IjpbNTQ0NTM0NTIxXX0=
 -->
