@@ -14,7 +14,7 @@ tags:
   - discipleship
 excerpt: "Before we talk about leading anyone else, we have to talk about who we are becoming under God’s hand."
 background: /img/posts/bg-lead-like-this-intro.jpg
-image: /img/posts/lead-like-this-01-intro.jpg
+image: /img/posts/lead-like-this-intro.jpg
 scripture: "Mark 10:42–45; Proverbs 4:23; 1 Timothy 4:12"
 contributors: []
 series: "Lead Like This"
@@ -57,5 +57,5 @@ So before we talk about leading anyone else, let’s start with the question tha
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTE1MzEyMzddfQ==
+eyJoaXN0b3J5IjpbMTE1MjY2NDMzMSwtMTk5MTUzMTIzN119
 -->
