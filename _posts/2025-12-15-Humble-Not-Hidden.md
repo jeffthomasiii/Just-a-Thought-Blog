@@ -13,8 +13,8 @@ tags:
   - leadership
   - character
 excerpt: "Humility is not hiding. It is the courage to show up with a surrendered heart and a steady posture."
-background: /img/posts/bg-humble-not-hidden.jpg
-image: /img/posts/humble-not-hidden.jpg
+background: /img/posts/bg-lead-like-this-humble-not-hidden.jpg
+image: /img/posts/lead-like-this-humble-not-hidden.jpg
 scripture: "Philippians 2:3; Micah 6:8; James 4:6"
 contributors: []
 series: "Lead Like This"
