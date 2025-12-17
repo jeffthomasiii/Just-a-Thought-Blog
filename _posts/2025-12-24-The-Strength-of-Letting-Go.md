@@ -13,8 +13,8 @@ tags:
   - delegation
   - leadership
 excerpt: "Letting go is not the absence of strength. It is strength disciplined by trust and surrender."
-background: /img/posts/bg-the-strength-of-letting-go.jpg
-image: /img/posts/the-strength-of-letting-go.jpg
+background: /img/posts/bg-lead-like-this-letting-go.jpg
+image: /img/posts/lead-like-this-letting-go.jpg
 scripture: "Psalm 46:10; Exodus 18:17–23; Matthew 25:14–30"
 contributors: []
 series: "Lead Like This"
