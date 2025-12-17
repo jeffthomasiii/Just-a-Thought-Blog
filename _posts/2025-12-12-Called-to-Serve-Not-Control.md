@@ -13,8 +13,8 @@ tags:
   - character
   - service
 excerpt: "Leadership never begins with control. It begins with a servant heart that trusts God with the outcomes."
-background: /img/posts/bg-called-to-serve.jpg
-image: /img/posts/called-to-serve.jpg
+background: /img/posts/bg-lead-like-this-serve-not-control.jpg
+image: /img/posts/lead-like-this-serve-not-control.jpg
 scripture: "Mark 10:43; Philippians 2:3–7"
 contributors: []
 series: "Lead Like This"
