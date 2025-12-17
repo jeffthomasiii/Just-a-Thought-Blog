@@ -13,8 +13,8 @@ tags:
   - formation
   - faithfulness
 excerpt: "Before God asks us to lead anyone else, He asks us to walk faithfully with Him."
-background: /img/posts/bg-lead-like-this-closing.jpg
-image: /img/posts/lead-like-this-closing.jpg
+background: /img/posts/bg-lead-like-this-closing-reflection.jpg
+image: /img/posts/lead-like-this-closing-reflection.jpg
 scripture: "Mark 10:42–45; Luke 16:10; John 15:4–5"
 contributors: []
 series: "Lead Like This"
