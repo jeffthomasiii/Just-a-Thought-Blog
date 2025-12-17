@@ -13,8 +13,8 @@ tags:
   - leadership
   - obedience
 excerpt: "Ideas rise and fall, but vision born from God endures seasons, pressure, and time."
-background: /img/posts/bg-vision-that-lasts.jpg
-image: /img/posts/vision-that-lasts.jpg
+background: /img/posts/bg-lead-like-this-vision-that-lasts.jpg
+image: /img/posts/lead-like-this-vision-that-lasts.jpg
 scripture: "Proverbs 29:18; Habakkuk 2:2–3; Acts 20:22–24"
 contributors: []
 series: "Lead Like This"
