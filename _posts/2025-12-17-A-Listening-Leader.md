@@ -13,8 +13,8 @@ tags:
   - leadership
   - character
 excerpt: "Listening is more than hearing words. It is paying attention to the heart behind them and creating space for wisdom to rise."
-background: /img/posts/bg-a-listening-leader.jpg
-image: /img/posts/a-listening-leader.jpg
+background: /img/posts/bg-lead-like-this-listening-leader.jpg
+image: /img/posts/lead-like-this-listening-leader.jpg
 scripture: "James 1:19; Proverbs 18:13; John 10:27"
 contributors: []
 series: "Lead Like This"
