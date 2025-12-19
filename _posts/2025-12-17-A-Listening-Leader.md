@@ -72,7 +72,3 @@ A listening leader is a safe leader.
 A listening leader reflects the heart of Christ.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MzM4MTYzMV19
--->
