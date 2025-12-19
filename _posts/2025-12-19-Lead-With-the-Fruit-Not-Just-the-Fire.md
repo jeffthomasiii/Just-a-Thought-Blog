@@ -53,7 +53,3 @@ The Holy Spirit produces the fruit. Our job is to remain close enough to Him tha
 Lead with the fruit, not just the fire. Both matter, but one lasts longer.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTIxNzI4OTNdfQ==
--->
