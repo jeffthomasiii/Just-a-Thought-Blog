@@ -22,7 +22,7 @@ scripture: "Proverbs 16:9 ESV"
 
 There are few things more disorienting than wanting something deeply, praying for it earnestly, and watching it fall apart anyway. We call that failure. We replay it. We wonder what we did wrong. And in a culture that celebrates winning, hustle, and “making it,” failure can start to feel like a verdict on our effort, our faith, or our worth.
 
-I recently heard **:contentReference[oaicite:0]{index=0}** say something that stopped me in my tracks: *“Sometimes failure isn’t the worst outcome. It could be success at the wrong thing.”*
+I recently heard **[Ruslan KD](https://www.youtube.com/channel/UCj2yZE96gWsFyeVYnY9zXeg)** say something that stopped me in my tracks: *“Sometimes failure isn’t the worst outcome. It could be success at the wrong thing.”*
 
 That line reframes the conversation.
 
@@ -53,5 +53,5 @@ Failure may bruise the ego, but misaligned success can distort the soul. Learnin
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0ODEwNjkxN119
+eyJoaXN0b3J5IjpbODQzOTQ4Mzg3XX0=
 -->
