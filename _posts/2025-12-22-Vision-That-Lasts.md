@@ -59,7 +59,3 @@ It begins with God.
 And when it begins with God, it can outlast you.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxODY5NjI3MiwtMTU2MzA4OTE0N119
--->
