@@ -51,7 +51,3 @@ True strength in leadership is not found in holding everything together.
 It is found in trusting God enough to let some things go.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTg5MDYxNDldfQ==
--->
