@@ -57,7 +57,3 @@ It is to be trusted.
 And when God trusts a leader, He knows their influence will point back to Him.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNDgwNTQwNiwxNzY3MjAwMTMxXX0=
--->
