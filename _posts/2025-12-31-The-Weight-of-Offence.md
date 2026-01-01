@@ -13,6 +13,8 @@ tags:
   - spiritual growth
   - emotional health
 excerpt: "Offense often feels justified, but it is never neutral. What we carry shapes how heavy life becomes."
+image: /img/posts/the-weight-of-offense.jpg
+background: /img/posts/bg-the-weight-of-offense.jpg
 ---
 
 On our morning walk today, Samatra said something that stopped me mid-step.
