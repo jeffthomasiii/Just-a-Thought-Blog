@@ -48,7 +48,3 @@ That is not avoidance. That is freedom.
 Maybe the question is not whether we have a right to be offended. Maybe the better question is whether this weight is worth carrying at all.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ0NTM0NTIxXX0=
--->
