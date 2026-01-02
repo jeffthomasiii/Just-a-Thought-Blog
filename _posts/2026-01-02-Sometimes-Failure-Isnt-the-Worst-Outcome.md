@@ -3,7 +3,7 @@ layout: post
 title: "Sometimes Failure Isn’t the Worst Outcome"
 subtitle: "On closed doors, discernment, and quiet trust"
 description: "A reflective meditation on failure, success, discernment, and trusting God when doors close."
-date: 2025-1-02
+date: 2026-1-02
 author: Jeff Thomas III
 categories:
   - faith
