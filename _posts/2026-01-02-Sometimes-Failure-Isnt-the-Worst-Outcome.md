@@ -51,7 +51,3 @@ We do not encounter failure because God has abandoned us. Sometimes what we labe
 Failure may bruise the ego, but misaligned success can distort the soul. Learning to trust a closed door is not about giving up. It is about believing that God’s no can be just as intentional as His yes.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzOTQ4Mzg3XX0=
--->
