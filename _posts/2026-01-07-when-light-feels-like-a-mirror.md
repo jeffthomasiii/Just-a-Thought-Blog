@@ -19,17 +19,17 @@ scripture: "Matthew 5:14 ESV, John 4:29 ESV"
 ---
 
 I used to think being the light of the world meant bringing warmth, clarity, and hope wherever I went. Like a sunrise. A lantern. Something people would naturally be drawn to.  
-But lately, it feels more like I’m walking around with a mirror. And people don’t always like what they see.
+But lately, sometimes it feels more like I’m walking around with a mirror. And people don’t always like what they see.
 
 Jesus said, *“You are the light of the world. A city set on a hill cannot be hidden”* (Matthew 5:14, ESV). It’s a beautiful, purpose-filled calling. But light does more than illuminate a path. It reveals what’s already there. Dust in the air. Cracks in the wall. Tension in the room.  
 
-And when the light of Christ shines through us—when we’re carrying His Spirit, walking in His truth, trying to live set apart—it sometimes acts like a mirror for others. We’re not trying to expose anyone. We’re just trying to walk with God. But something about His presence makes people notice themselves. And not everyone is ready for that.
+And when the light of Christ shines through us, when we’re carrying His Spirit, walking in His truth, trying to live set apart, it sometimes acts like a mirror for others. We’re not trying to expose anyone. We’re just trying to walk with God. But something about His presence makes people notice themselves. And not everyone is ready for that.
 
 That mirror effect can take many forms.
 
 Sometimes it brings comfort. Sometimes it brings conviction. And sometimes, it brings both. There are moments when people feel seen and loved and simultaneously become aware of the very things in them that are not aligned with who God is. It's grace and truth arriving together, and that tension can be uncomfortable even when it's redemptive.
 
-It can draw people closer, like it did with the woman at the well who said, “Come, see a man who told me all that I ever did” (John 4:29, ESV). Or it can push them away, like the rich young ruler who walked off sad. Or the Pharisees who plotted in secret because the light made them feel exposed.
+It can draw people closer, like it did with the woman at the well who said, *“Come, see a man who told me all that I ever did”* (John 4:29, ESV). Or it can push them away, like the rich young ruler who walked off sad. Or the Pharisees who plotted in secret because the light made them feel exposed.
 
 That’s why walking in the Spirit often feels like holding up a mirror without meaning to. You’re not judging anyone. You’re just reflecting the One who is holy, and people instinctively measure themselves against Him.
 
@@ -41,7 +41,7 @@ And maybe most importantly, it means I need to keep cleaning the mirror. Because
 Even mirrors need sanctification.
 
 Some people will love the light, and others will avoid it. Not because of me, but because of what they see in themselves when the light is near.  
-And that’s okay.  
+And maybe that’s okay.  
 Our job was never to make people feel good. Our job was to reflect Christ. In love. With patience. With grace.  
 Not to be the answer, but to help people see Him more clearly.
 
@@ -51,5 +51,5 @@ Let Him do the rest.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNzc5MDU3MF19
+eyJoaXN0b3J5IjpbLTgwMTA1NDAyXX0=
 -->
