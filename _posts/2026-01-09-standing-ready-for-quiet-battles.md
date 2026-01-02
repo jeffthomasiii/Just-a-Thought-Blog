@@ -28,7 +28,7 @@ In another version of the same moment, everything on the outside looks almost id
 
 Later, when things are quiet again, the reflection comes. You replay the exchange. You pray. You feel the gap between who you want to be and how you responded. Not because you don’t love her, but because you weren’t prepared for a battle that didn’t announce itself.
 
-I’ve noticed this pattern not just in theory, but in my own life. In moments with my wife. With my daughter. With other family members or friends. When I’ve been faithful with my own spiritual maintenance, even in small, ordinary ways, wisdom tends to show up when it’s needed. Patience follows. Words come with restraint and life. And when I haven’t been, they don’t. I find myself short, distracted, or internally overwhelmed, and later bringing that back to God in prayer, wishing I had been more present, more grounded, more steady.
+I’ve noticed this pattern not just in theory, but in my own life. In moments with my wife. With my daughter. With other family members or friends. When I’ve been faithful with my own spiritual maintenance, even in small, ordinary ways, wisdom tends to show up when it’s needed. Patience follows. Words come with restraint and life. And when I haven’t been, they don’t. I find myself short, distracted, or internally overwhelmed, and later bringing that back to God in prayer, wishing I had been more present, more grounded, steadier.
 
 Scripture speaks about standing firm when the day of difficulty comes, not scrambling to prepare once it’s already here (Ephesians 6:13, ESV). That idea has stayed with me. Not as pressure, but as clarity. These moments don’t wait for us to feel ready.
 
@@ -41,5 +41,5 @@ Love prepares. Not because we expect something to go wrong, but because the peop
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzEwMDMxNzldfQ==
+eyJoaXN0b3J5IjpbLTI2Mzg3MDUyNV19
 -->
