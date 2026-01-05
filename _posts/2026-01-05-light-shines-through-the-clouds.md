@@ -46,7 +46,3 @@ The world doesn’t need us to mirror its behavior. It needs us to remain anchor
 The clouds may remain. The atmosphere may stay heavy. But light still shines through.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxODUxNTY3NF19
--->
