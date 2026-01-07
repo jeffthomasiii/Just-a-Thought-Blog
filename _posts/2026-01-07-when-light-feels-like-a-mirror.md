@@ -12,7 +12,7 @@ tags:
   - light of the world
   - spiritual growth
   - holiness
-excerpt: "Being the light of the world isn’t about shining on people—it’s about reflecting Christ. And sometimes that reflection reveals more than we expect."
+excerpt: "Being the light of the world isn’t about shining on people, it’s about reflecting Christ. And sometimes that reflection reveals more than we expect."
 image: /img/posts/light-mirror-preview.jpg
 background: /img/posts/bg-light-mirror.jpg
 scripture: "Matthew 5:14 ESV, John 4:29 ESV"
