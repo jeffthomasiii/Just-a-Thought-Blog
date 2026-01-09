@@ -26,9 +26,9 @@ I first came across the phrase in *Disciplines of a Godly Man*, where it is fram
 
 In practice, truthing in love is difficult because it refuses to let us hide behind extremes. It does not allow us to excuse harshness by calling it honesty. It does not allow us to excuse silence by calling it kindness. It presses us into moments where speaking feels risky and restraint feels costly. Integrity, in this sense, is not only about what we believe privately, but about how faithfully we live those beliefs when relationships, comfort, or reputation are at stake.
 
-We see this tension most clearly in our closest spaces. In relationships, truth is often delayed until it hardens into frustration. In marriage, love can become a reason to avoid hard conversations, while honesty can be delivered without tenderness. In the church, we sometimes protect peace at the expense of integrity, or defend truth in ways that leave little room for grace. In each setting, truthing in love asks the same uncomfortable question: am I being faithful to both, or choosing the one that costs me less?
+We see this tension most clearly in our closest spaces. In relationships, truth is often delayed until it hardens into frustration. In marriage, love can become a reason to avoid hard conversations, while honesty can be delivered without tenderness. In the church, we sometimes protect peace at the expense of integrity or defend truth in ways that leave little room for grace. In each setting, truthing in love asks the same uncomfortable question: am I being faithful to both, or choosing the one that costs me less?
 
-This is why truthing in love is not optional for the body of Christ. Integrity is not merely personal. It is communal. What we tolerate, avoid, or mishandle shapes the spiritual climate around us. When truth is consistently withheld, trust erodes. When love is absent from truth, wounds multiply. The call to speak the truth in love is not about maintaining appearances or winning arguments, but about guarding the health of the body itself.
+This is why truthing in love is not optional for the body of Christ. Integrity is not merely personal. It is communal. What we tolerate, avoid, or mishandle shapes the spiritual climate around us. When truth is consistently withheld, trust erodes. When love is absent from truth, wounds multiply. The call to speak the truth in love is not about maintaining appearances or winning arguments but about guarding the health of the body itself.
 
 The longer I sit with this phrase, the more I realize how much it costs. Truthing in love asks for discernment instead of impulse, courage instead of comfort, humility instead of certainty. It forces me to slow down and examine not only what I am saying, but why I am saying it. And more often than I would like to admit, I discover that my reluctance has less to do with love and more to do with fear.
 
@@ -37,5 +37,5 @@ When I look to Jesus, I do not see truth separated from love, or love diluted by
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NzI0MDAxN119
+eyJoaXN0b3J5IjpbNDgyMTIxNzldfQ==
 -->
