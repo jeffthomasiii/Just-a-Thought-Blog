@@ -30,7 +30,7 @@ Complaining spreads easily. One comment invites another. Agreement feels like co
 
 What makes it difficult to catch is that complaining often masquerades as clarity. It feels like seeing things “as they really are.” But slowly, it narrows our vision. We get better at spotting flaws than possibilities. Obstacles feel larger. Solutions feel smaller. Even when options appear, they seem insufficient or unrealistic. The problem begins to feel permanent.
 
-That pattern shows up clearly in **Numbers 13–14**. Israel stood at the edge of the land God had promised. The facts didn’t change, but the conversation did. As fear was rehearsed, perception shifted. What was possible began to feel unreachable—not because God had changed, but because their vision had.
+That pattern shows up clearly in **[Numbers 13–14](https://www.esv.org/verses/Numbers+13%E2%80%9314/)**. Israel stood at the edge of the land God had promised. The facts didn’t change, but the conversation did. As fear was rehearsed, perception shifted. What was possible began to feel unreachable—not because God had changed, but because their vision had.
 
 Complaining doesn’t just describe reality. It trains us to expect a certain version of it.
 
@@ -49,5 +49,5 @@ Not every frustration needs rehearsal. Not every observation needs repetition. S
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzgxMDkzMTNdfQ==
+eyJoaXN0b3J5IjpbMTk5NzQ5NDI4M119
 -->
