@@ -20,7 +20,6 @@ background: /img/posts/truthing-in-love-bg.jpg
 scripture: "Ephesians 4:15 (ESV)"
 ---
 
-
 There is a kind of honesty that feels faithful yet leaves people wounded. There is also a kind of love that feels gentle but quietly avoids what needs to be said. We agree, at least in theory, that truth matters. We also agree that love matters. But when the two collide, we tend to favor one and sacrifice the other. Only later do we discover the harder call Scripture makes, the discipline that refuses to separate them. It is often described as truthing in love.
 
 I first came across the phrase in *Disciplines of a Godly Man*, where it is framed as a discipline of integrity. What stayed with me was not the definition, but the implication. Truthing suggests movement. It assumes responsibility, not just belief. And when paired with love, it quietly exposes how often I justify either silence or sharpness, rather than doing the harder work of holding both together.
@@ -33,8 +32,10 @@ This is why truthing in love is not optional for the body of Christ. Integrity i
 
 The longer I sit with this phrase, the more I realize how much it costs. Truthing in love asks for discernment instead of impulse, courage instead of comfort, humility instead of certainty. It forces me to slow down and examine not only what I am saying, but why I am saying it. And more often than I would like to admit, I discover that my reluctance has less to do with love and more to do with fear.
 
-When I look to Jesus, I do not see truth separated from love, or love diluted by truth. I see both held together with perfect faithfulness. He spoke what was true even when it cost Him, and He loved without compromise even when truth offended. That standard does not leave me discouraged, but it does leave me honest. Truthing in love is not something I expect to master. It feels more like a discipline I will spend a lifetime practicing, repenting through, and returning to again and again… just a thought.
+When I look to Jesus, I do not see truth separated from love, or love diluted by truth. I see both held together with perfect faithfulness. He spoke what was true even when it cost Him, and He loved without compromise even when truth offended. That standard does not leave me discouraged, but it does leave me honest. Truthing in love is not something I expect to master. It feels more like a discipline I will spend a lifetime practicing, repenting through, and returning to again and again.
+
+…just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTY2MDc0NTFdfQ==
+eyJoaXN0b3J5IjpbMjA5NzI0MDAxN119
 -->
