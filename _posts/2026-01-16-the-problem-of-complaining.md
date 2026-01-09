@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "The Problem of Complaining"
-description: "A reflective look at how complaining quietly shapes perception, erodes trust, and blinds us to the solutions in front of us."
+subtitle: "When familiar words quietly reshape perception"
+description: "A reflective look at how complaining quietly shapes perception, spreads easily, and erodes trust in work, marriage, and leadership."
 date: 2026-01-16
 author: Jeff Thomas III
 categories:
@@ -12,8 +13,12 @@ tags:
   - speech
   - wisdom
   - integrity
-  - complaining
-excerpt: "Complaining often feels harmless, even honest—but over time it reshapes how we see reality, people, and responsibility."
+  - character
+  - formation
+excerpt: "Complaining often feels harmless—even honest—but over time it reshapes how we see reality, people, and responsibility."
+image: /img/posts/the-problem-of-complaining-og.jpg
+background: /img/posts/the-problem-of-complaining-bg.jpg
+scripture: "Numbers 13–14"
 ---
 
 Complaining rarely announces itself. It usually slips into conversation quietly, wrapped in honesty, fatigue, or shared frustration. By the time we notice it, it already feels normal.
@@ -49,5 +54,5 @@ Not every frustration needs rehearsal. Not every observation needs repetition. S
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NzQ5NDI4M119
+eyJoaXN0b3J5IjpbMTQ3ODU5Mzc4NCwxOTk3NDk0MjgzXX0=
 -->
