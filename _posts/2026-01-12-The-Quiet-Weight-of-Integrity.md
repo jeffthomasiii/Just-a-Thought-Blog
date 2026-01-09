@@ -33,7 +33,7 @@ This is where integrity becomes difficult to sustain. Not because the standard i
 
 Proverbs captures the long-term effect plainly: *“The integrity of the upright guides them, but the crookedness of the treacherous destroys them”* (Proverbs 11:3, ESV). Integrity guides. It clarifies. It narrows options in ways that feel restrictive at first, but ultimately become freeing. Without it, decisions multiply, rationalizations expand, and inner clarity erodes. What integrity restricts in the short term, it stabilizes in the long term.
 
-Integrity is also often misunderstood. It is not a posture of superiority, nor a badge earned by moral consistency. Integrity isn’t about standing above others, but about standing honestly before God. Without that posture, integrity can harden into judgment or drift into self-righteousness. With it, integrity remains grounded, sober, and humble—aware of weakness, yet committed to truth.
+Integrity is also often misunderstood. It is not a posture of superiority, nor a badge earned by moral consistency. Integrity isn’t about standing above others but about standing honestly before God. Without that posture, integrity can harden into judgment or drift into self-righteousness. With it, integrity remains grounded, sober, and humble, aware of weakness yet committed to truth.
 
 The quiet weight of integrity is that it must be carried continually. It does not announce itself. It does not demand recognition. It simply asks to be practiced again tomorrow. In a world increasingly shaped by self-interest and self-definition, that kind of steady faithfulness can feel out of place. But it is also deeply necessary.
 
@@ -42,5 +42,5 @@ Integrity may not make life easier. It may not make one admired by everyone. But
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNTI2MzMzOV19
+eyJoaXN0b3J5IjpbLTYyNTk0NDQ2M119
 -->
