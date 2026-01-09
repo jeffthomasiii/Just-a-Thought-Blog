@@ -39,7 +39,3 @@ Spiritual battles don’t schedule themselves. They don’t pause while we gathe
 Love prepares. Not because we expect something to go wrong, but because the people entrusted to us deserve someone who can stand firm when quiet battles show up at the door.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2Mzg3MDUyNV19
--->
