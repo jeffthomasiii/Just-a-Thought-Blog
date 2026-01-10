@@ -29,12 +29,11 @@ Not even to hurt someone else.
 
 And yet, emotionally and spiritually, we do something just as irrational all the time.
 
-My wife was listening to a sermon by ****Vladimir Savchuk***, and he said something that landed with uncomfortable clarity:  
-*Holding on to bitterness and offense is like drinking rat poison and hoping the other person dies.*
+My wife was listening to a sermon by **[Pastor Vladimir Savchuk](https://pastorvlad.org/)**, and he said something that landed with uncomfortable clarity:  
+> *Holding on to bitterness and offense is like drinking rat poison and hoping the other person dies.*
 
 It’s an absurd image.  
 And it’s painfully accurate.
-
 
 ### Why We Keep the Cup in Our Hands
 
@@ -54,7 +53,6 @@ Wait for the other person to feel what we felt.
 But the poison doesn’t travel outward.  
 It works inward.
 
-
 ### The Quiet Damage of Bitterness
 
 Poison rarely kills instantly.  
@@ -71,7 +69,6 @@ You don’t wake up one morning bitter.
 You become bitter by refusing, little by little, to release what you keep consuming.
 
 And the person you’re hoping will be affected often has no idea you’re even hurting.
-
 
 ### From Weight to Toxin
 
@@ -91,7 +88,6 @@ The longer offense is held, the more it reshapes us.
 Not them.  
 Us.
 
-
 ### Forgiveness Isn’t Approval
 
 This is where forgiveness is often misunderstood.
@@ -106,7 +102,6 @@ It’s deciding to stop drinking it.
 Scripture warns about bitterness taking root not because God is protecting the offender, but because He’s protecting the one carrying it. Roots grow unseen, but they always bear fruit. And not all fruit leads to life.
 
 Letting go is less about releasing someone else and more about reclaiming your own spiritual health.
-
 
 ### Putting the Cup Down
 
@@ -128,5 +123,5 @@ It’s choosing not to ingest it anymore.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzAyMTEwODhdfQ==
+eyJoaXN0b3J5IjpbMTYxNDA4NjM0XX0=
 -->
