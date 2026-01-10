@@ -72,7 +72,7 @@ And the person you’re hoping will be affected often has no idea you’re even 
 
 ### From Weight to Toxin
 
-In a previous reflection, I wrote about the weight of offense.  
+In a previous reflection, I wrote about [The Weight of Offense](https://jeffthomasiii.github.io/Just-a-Thought-Blog/faith/leadership/2025/12/31/The-Weight-of-Offence.html).  
 How carrying it exhausts us.  
 Distracts us.  
 Pulls our attention away from what God is actually doing in front of us.
@@ -123,5 +123,5 @@ It’s choosing not to ingest it anymore.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNDA4NjM0XX0=
+eyJoaXN0b3J5IjpbLTEwMTM2NjA0OTRdfQ==
 -->
