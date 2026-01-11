@@ -40,7 +40,3 @@ The quiet weight of integrity is that it must be carried continually. It does no
 Integrity may not make life easier. It may not make one admired by everyone. But it does something far more enduring. It produces a life that can bear its own weight.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNTk0NDQ2M119
--->
