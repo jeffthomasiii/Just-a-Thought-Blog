@@ -14,7 +14,7 @@ tags:
   - love
   - discipleship
   - spiritual formation
-excerpt: "Truth without love wounds. Love without truth deceives. Somewhere between the two is a harder discipline—truthing in love."
+excerpt: "Truth without love wounds. Love without truth deceives. Somewhere between the two is a harder discipline; truthing in love."
 image: /img/posts/truthing-in-love-post.jpg
 background: /img/posts/truthing-in-love-bg.jpg
 scripture: "Ephesians 4:15 (ESV)"
