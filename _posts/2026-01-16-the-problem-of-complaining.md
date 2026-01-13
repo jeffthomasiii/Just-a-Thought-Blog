@@ -15,7 +15,7 @@ tags:
   - integrity
   - character
   - formation
-excerpt: "Complaining often feels harmless—even honest—but over time it reshapes how we see reality, people, and responsibility."
+excerpt: "Complaining often feels harmless, even honest, but over time it reshapes how we see reality, people, and responsibility."
 image: /img/posts/the-problem-of-complaining-og.jpg
 background: /img/posts/the-problem-of-complaining-bg.jpg
 scripture: "Numbers 13–14"
