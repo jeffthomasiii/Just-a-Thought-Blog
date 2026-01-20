@@ -23,7 +23,9 @@ Most of us assume we’re good at loving people until we’re required to do it 
 
 It’s often easier to be gracious with strangers than with the person we come home to. We extend patience at work, kindness in public, and understanding to friends, while reserving our sharpest edges for our spouse. Not because we care less, but because marriage removes the distance that allows us to perform love instead of practice it.
 
-Living closely with another person exposes how selective our love can be. We love generously when it costs little, when it’s noticed, when it’s returned quickly. Marriage interrupts that pattern. Love becomes inconvenient. Repetitive. Unseen. And in that repetition, we begin to see the limits of our patience, empathy, and grace.
+> Living closely with another person exposes how selective our love can be. 
+
+We love generously when it costs little, when it’s noticed, when it’s returned quickly. Marriage interrupts that pattern. Love becomes inconvenient. Repetitive. Unseen. And in that repetition, we begin to see the limits of our patience, empathy, and grace.
 
 Over time, marriage teaches us that behavior usually has a backstory. Patterns don’t appear out of nowhere. Words spoken sharply often come from places of fear, fatigue, or old wounds. Learning this about your spouse reshapes how you see people beyond your home. You become slower to judge. Quicker to listen. More willing to ask what might be going on beneath the surface.
 
@@ -37,11 +39,12 @@ This kind of love isn’t natural. It has to be practiced. Repeated. Chosen. Mar
 
 In learning to love one person faithfully, imperfectly, and persistently, we are quietly being taught how to love others with greater humility and grace. Not perfectly. Not effortlessly. But more honestly than before.
 
-Love learned privately doesn’t stay private forever.  
+> Love learned privately doesn’t stay private forever.  
+
 It spills outward, shaping how we show up in the world.
 
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzY0NzkwMDhdfQ==
+eyJoaXN0b3J5IjpbLTMwODM0MDEzNCwtMTk3NjQ3OTAwOF19
 -->
