@@ -2,7 +2,7 @@
 layout: post
 title: "What Marriage Is For"
 subtitle: ""
-description: "A reflective look at marriage not as a promise of comfort, but as a place of formation—where God patiently shapes us through ordinary faithfulness."
+description: "A reflective look at marriage not as a promise of comfort, but as a place of formation, where God patiently shapes us through ordinary faithfulness."
 date: 2026-01-21
 author: Jeff Thomas III
 categories:
@@ -13,7 +13,9 @@ tags:
   - sanctification
   - formation
   - faithfulness
-excerpt: "Marriage often exposes more than it resolves. What if that tension isn’t failure, but formation—God’s quiet work shaping us over time?"
+excerpt: "Marriage often exposes more than it resolves. What if that tension isn’t failure, but formation, God’s quiet work shaping us over time?"
+image: /img/posts/marriage-what-its-for.jpg
+background: /img/posts/bg-marriage-what-its-for.jpg
 scripture: "James 1:2–4"
 ---
 
@@ -50,5 +52,5 @@ Marriage may not always make us happy. But it can make us holy, as we learn to r
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1Mjk3NDA3MV19
+eyJoaXN0b3J5IjpbLTExMDE1OTM2NjIsMTk1Mjk3NDA3MV19
 -->
