@@ -14,7 +14,7 @@ tags:
   - love
   - discipleship
   - spiritual formation
-excerpt: "Truth without love wounds. Love without truth deceives. Somewhere between the two is a harder discipline; truthing in love."
+excerpt: "Truth without love wounds. Love without truth deceives. Somewhere between the two is a harder disciplinetruthing in love."
 image: /img/posts/truthing-in-love-post.jpg
 background: /img/posts/truthing-in-love-bg.jpg
 scripture: "Ephesians 4:15 (ESV)"
@@ -35,3 +35,6 @@ The longer I sit with this phrase, the more I realize how much it costs. Truthin
 When I look to Jesus, I do not see truth separated from love, or love diluted by truth. I see both held together with perfect faithfulness. He spoke what was true even when it cost Him, and He loved without compromise even when truth offended. That standard does not leave me discouraged, but it does leave me honest. Truthing in love is not something I expect to master. It feels more like a discipline I will spend a lifetime practicing, repenting through, and returning to again and again.
 
 …just a thought.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc1OTcyMTc3OV19
+-->
