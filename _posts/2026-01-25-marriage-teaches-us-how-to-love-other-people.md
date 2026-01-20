@@ -14,12 +14,17 @@ tags:
   - formation
   - relationships
 excerpt: "Marriage doesn’t just shape how we love one person, it quietly trains us in how we love everyone else."
+image: /img/posts/marriage-teaches-love-outward.jpg
+background: /img/posts/bg-marriage-teaches-love-outward.jpg
+scripture: ""
 ---
 
 Marriage teaches us quickly that love is harder than we thought.  
 Not in grand gestures or dramatic sacrifices, but in the small, repeated moments where patience wears thin and understanding feels costly.
 
-Most of us assume we’re good at loving people until we’re required to do it daily, closely, and without an exit. Marriage has a way of bringing things to the surface, sometimes not just about us, but about how we love everyone else.
+> Most of us assume we’re good at loving people until we’re required to do it daily, closely, and without an exit. 
+
+Marriage has a way of bringing things to the surface, sometimes not just about us, but about how we love everyone else.
 
 It’s often easier to be gracious with strangers than with the person we come home to. We extend patience at work, kindness in public, and understanding to friends, while reserving our sharpest edges for our spouse. Not because we care less, but because marriage removes the distance that allows us to perform love instead of practice it.
 
@@ -46,5 +51,6 @@ It spills outward, shaping how we show up in the world.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwODM0MDEzNCwtMTk3NjQ3OTAwOF19
+eyJoaXN0b3J5IjpbLTE3MDUzMjE3OTQsLTE5NzY0NzkwMDhdfQ
+==
 -->
