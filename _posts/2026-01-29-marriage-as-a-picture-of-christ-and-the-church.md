@@ -59,7 +59,7 @@ Marriage reflecting Christ and the church does not mean your marriage never stru
 
 Sometimes the most Christlike moment in a marriage isn’t a grand spiritual milestone. It’s a quiet apology. A soft answer. A decision to stay engaged. A willingness to pray when you don’t feel like praying. A choice to seek peace without pretending everything is fine.
 
-If marriage is a picture, then the question becomes less *How do I get the marriage I want?* and more *What do we want our marriage to point to?*
+> If marriage is a picture, then the question becomes less *How do I get the marriage I want?* and more *What do we want our marriage to point to?*
 
 Not perfectly.  
 Not performatively.  
@@ -67,5 +67,6 @@ But truly.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjUyODUzNzldfQ==
+eyJoaXN0b3J5IjpbLTIxMDMzNzAyNzcsLTIwNjUyODUzNzldfQ
+==
 -->
