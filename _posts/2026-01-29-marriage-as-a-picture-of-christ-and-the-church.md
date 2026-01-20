@@ -14,7 +14,7 @@ tags:
   - gospel
   - covenant
   - ephesians
-excerpt: "Marriage is invited to be more than a relationship to maintain—it can become a quiet witness to the self-giving love of Christ."
+excerpt: "Marriage is invited to be more than a relationship to maintain, it can become a quiet witness to the self-giving love of Christ."
 image: /img/posts/marriage-christ-church.jpg
 background: /img/posts/bg-marriage-christ-church.jpg
 scripture: "Ephesians 5:25–27 ESV"
@@ -55,7 +55,7 @@ Even then, we do it imperfectly. We repent often. We restart often. We learn slo
 
 That, too, is part of the beauty.
 
-Marriage reflecting Christ and the church does not mean your marriage never struggles. It means your marriage is invited to keep turning toward the pattern of Christ—His humility, His patience, His purity, His faithfulness, His love that moves first.
+Marriage reflecting Christ and the church does not mean your marriage never struggles. It means your marriage is invited to keep turning toward the pattern of Christ, His humility, His patience, His purity, His faithfulness, His love that moves first.
 
 Sometimes the most Christlike moment in a marriage isn’t a grand spiritual milestone. It’s a quiet apology. A soft answer. A decision to stay engaged. A willingness to pray when you don’t feel like praying. A choice to seek peace without pretending everything is fine.
 
@@ -66,9 +66,6 @@ Not performatively.
 But truly.
 
 …just a thought.
-
-*Optional reflection:* If your marriage is “saying something” to the people around you, what do you hope it’s saying about Jesus?
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzk1MjAxNjddfQ==
+eyJoaXN0b3J5IjpbLTIwNjUyODUzNzldfQ==
 -->
