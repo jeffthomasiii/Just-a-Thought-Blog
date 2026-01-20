@@ -23,11 +23,13 @@ That being chosen will somehow steady us.
 
 And when marriage doesn’t deliver on that expectation, we assume something has gone wrong. Something must be broken. But what if nothing has gone wrong at all? What if marriage is doing what it was meant to do?
 
-Marriage has a way of disappointing us, not because it’s flawed, but because our expectations often are. We expect it to bring peace, affirmation, and stability. Instead, it brings exposure. Old patterns surface. Weaknesses we didn’t know we had suddenly have names. Marriage doesn’t hide who we are. It reveals it.
+Marriage has a way of disappointing us, not because it’s flawed, but because our expectations often are. We expect it to bring peace, affirmation, and stability. Instead, it brings exposure. Old patterns surface. Weaknesses we didn’t know we had suddenly have names. 
+> Marriage doesn’t hide who we are. It reveals it.
 
 That isn’t failure. That’s formation.
 
-We don’t talk about this enough, not honestly, not clearly. And not because marriage is something to fear, but because people deserve to be prepared. Samatra once said she wishes couples would be more honest with people who are planning to get married, not to scare them away, but to prepare them. Too many couples step into marriage built almost entirely on feelings, unaware of how quickly feelings can shift once real life settles in. When conflict arrives, they feel blindsided. They start wondering if they married the wrong person, when they may have simply reached the point where marriage begins its deeper work.
+We don’t talk about this enough, not honestly, not clearly. And not because marriage is something to fear, but because people deserve to be prepared. Samatra once said she wishes couples would be more honest with people who are planning to get married, not to scare them away, but to prepare them. Too many couples step into marriage built almost entirely on feelings, unaware of how quickly feelings can shift once real life settles in. When conflict arrives, they feel blindsided. 
+> They start wondering if they married the wrong person, when they may have simply reached the point where marriage begins its deeper work.
 
 Marriage removes the space we use to manage impressions. Proximity strips away our ability to curate ourselves. You can only hold up a version of yourself for so long before the real one shows up, control, pride, fear, withdrawal, insecurity. Not because marriage created those things, but because marriage brought them into the light.
 
@@ -48,5 +50,5 @@ Marriage may not always make us happy. But it can make us holy, as we learn to r
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzA3NTk0NTddfQ==
+eyJoaXN0b3J5IjpbMTk1Mjk3NDA3MV19
 -->
