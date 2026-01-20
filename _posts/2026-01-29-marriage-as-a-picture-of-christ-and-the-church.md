@@ -29,7 +29,7 @@ Because the longer you’re married, the more you realize marriage is not just a
 
 And then Scripture adds a layer that is both comforting and weighty.
 
-Paul doesn’t describe marriage as merely practical. He describes it as meaningful. In **Ephesians 5:25–27 (ESV)**, he speaks of Christ’s love for the church in terms that feel almost too holy to sit next to everyday arguments and tired evenings. Christ loved. Christ gave Himself. Christ cleanses. Christ presents His people to Himself.
+Paul doesn’t describe marriage as merely practical. He describes it as meaningful. In **[Ephesians 5:25–27 (ESV)](https://www.bible.com/bible/59/EPH.5.25-27.esv)**, he speaks of Christ’s love for the church in terms that feel almost too holy to sit next to everyday arguments and tired evenings. Christ loved. Christ gave Himself. Christ cleanses. Christ presents His people to Himself.
 
 That isn’t language meant to elevate marriage.  
 It’s language meant to magnify Jesus.
@@ -67,6 +67,6 @@ But truly.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDMzNzAyNzcsLTIwNjUyODUzNzldfQ
+eyJoaXN0b3J5IjpbLTE2OTA2OTMzMjMsLTIwNjUyODUzNzldfQ
 ==
 -->
