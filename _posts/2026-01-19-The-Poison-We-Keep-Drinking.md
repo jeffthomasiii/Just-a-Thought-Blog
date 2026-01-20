@@ -121,7 +121,3 @@ Forgiveness isn’t pretending the poison wasn’t real.
 It’s choosing not to ingest it anymore.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTM2NjA0OTRdfQ==
--->
