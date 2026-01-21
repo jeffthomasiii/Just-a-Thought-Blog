@@ -50,7 +50,3 @@ Marriage may not always make us happy. But it can make us holy, as we learn to r
 …and that might be the deeper gift we weren’t prepared for.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDE1OTM2NjIsMTk1Mjk3NDA3MV19
--->
