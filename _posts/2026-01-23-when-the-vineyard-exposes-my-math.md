@@ -47,7 +47,7 @@ This is Jesus unpacking what He means when He says the last will be first, and t
 And the uncomfortable part is this.  
 I don’t see myself in just one character.
 
-I see myself in all of them.
+> I see myself in all of them.
 
 Some days, I’m drawn to the landowner. I admire the generosity. I want to believe I’d rejoice when mercy is given freely, without hesitation or conditions. I like the picture of grace flowing outward, wide and unrestrained.
 
@@ -109,5 +109,5 @@ Still learning how to rejoice when mercy flows freely, even when it disrupts my 
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMDg3MDAyMF19
+eyJoaXN0b3J5IjpbLTI0NDc1MzI0Ml19
 -->
