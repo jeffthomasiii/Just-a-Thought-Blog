@@ -96,7 +96,7 @@ To stop policing grace.
 To celebrate mercy wherever it lands.
 
 Jesus ends the story the same way He begins it:  
-*The last shall be first, and the first shall be last.*
+> *The last shall be first, and the first shall be last.*
 
 Not as a threat.  
 Not as a rebuke.  
@@ -109,5 +109,5 @@ Still learning how to rejoice when mercy flows freely, even when it disrupts my 
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NDc1MzI0Ml19
+eyJoaXN0b3J5IjpbNzMzNTMwOTYsLTI0NDc1MzI0Ml19
 -->
