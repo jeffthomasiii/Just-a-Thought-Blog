@@ -32,7 +32,7 @@ He was explaining it.
 
 And He did it with a vineyard.
 
-In Matthew 20:1–16, Jesus tells the story of a landowner who hires workers throughout the day. Some arrive early in the morning. Others show up late, with almost no daylight left. When evening comes, every worker, early and late, receives the same wage.
+In [Matthew 20:1–16](https://www.bible.com/bible/59/MAT.20.1-16), Jesus tells the story of a landowner who hires workers throughout the day. Some arrive early in the morning. Others show up late, with almost no daylight left. When evening comes, every worker, early and late, receives the same wage.
 
 That’s when the tension surfaces.
 
@@ -109,5 +109,5 @@ Still learning how to rejoice when mercy flows freely, even when it disrupts my 
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYwMDI5MzEwXX0=
+eyJoaXN0b3J5IjpbMjAzMDg3MDAyMF19
 -->
