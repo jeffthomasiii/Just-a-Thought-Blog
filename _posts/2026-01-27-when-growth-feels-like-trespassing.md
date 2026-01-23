@@ -26,7 +26,7 @@ Imposter syndrome is usually described as a fear of being exposed. As if at any 
 
 But what if that interpretation is off?
 
-What if the feeling we translate as *“I can’t do this”* is actually closer to *“I haven’t done this before”*?
+> What if the feeling we translate as *“I can’t do this”* is actually closer to *“I haven’t done this before”*?
 
 Psychology and neuroscience offer an interesting lens here. When we step into unfamiliar territory, the brain doesn’t calmly evaluate our competence. It reacts to novelty. New environments, new expectations, new relational dynamics all register as uncertainty. And uncertainty triggers the same internal alarms as threat. The brain’s fear response doesn’t distinguish well between incapability and inexperience. They produce the same signal. The same tension. The same instinct to withdraw.
 
@@ -40,7 +40,7 @@ Leadership has a way of exposing this quickly. The shift from observing to ownin
 
 Over time, something shifts. Repetition softens the fear. Experience replaces novelty. What once felt like disqualification slowly becomes fluency. The room doesn’t change, but we do. The tension fades not because we were exposed as frauds, but because we were never frauds to begin with. We were learners standing on unfamiliar ground.
 
-So maybe imposter syndrome isn’t always a warning sign.  
+> So maybe imposter syndrome isn’t always a warning sign.  
 Maybe it’s a signal.
 
 Not to retreat, but to pay attention. To recognize that growth often feels like trespassing until it becomes inhabiting.
@@ -51,5 +51,5 @@ But, *“What is this place forming in me?”*
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMzM4OTc2MV19
+eyJoaXN0b3J5IjpbNzg1NzQ4Njc3XX0=
 -->
