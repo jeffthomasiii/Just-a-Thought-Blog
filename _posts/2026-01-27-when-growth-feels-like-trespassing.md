@@ -40,8 +40,7 @@ Leadership has a way of exposing this quickly. The shift from observing to ownin
 
 Over time, something shifts. Repetition softens the fear. Experience replaces novelty. What once felt like disqualification slowly becomes fluency. The room doesn’t change, but we do. The tension fades not because we were exposed as frauds, but because we were never frauds to begin with. We were learners standing on unfamiliar ground.
 
-> So maybe imposter syndrome isn’t always a warning sign.  
-Maybe it’s a signal.
+> So maybe imposter syndrome isn’t always a warning sign. Maybe it’s a signal.
 
 Not to retreat, but to pay attention. To recognize that growth often feels like trespassing until it becomes inhabiting.
 
@@ -51,5 +50,5 @@ But, *“What is this place forming in me?”*
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg1NzQ4Njc3XX0=
+eyJoaXN0b3J5IjpbLTYwMjA0OTY0N119
 -->
