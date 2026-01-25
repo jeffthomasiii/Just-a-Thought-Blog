@@ -49,8 +49,3 @@ In learning to love one person faithfully, imperfectly, and persistently, we are
 It spills outward, shaping how we show up in the world.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDUzMjE3OTQsLTE5NzY0NzkwMDhdfQ
-==
--->
