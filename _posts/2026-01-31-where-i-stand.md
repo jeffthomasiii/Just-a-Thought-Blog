@@ -25,7 +25,7 @@ It simply names something that has already been decided.
 
 Those kinds of words tend to surface quietly, usually in the middle of ordinary conversations, when no one is trying to sound profound.
 
-On my birthday, my mother called to wish me well. Like most of our conversations, it wandered. We talked about life, about stress, about the weight people carry that isn’t always visible. Eventually, the conversation drifted toward anxiety and the familiar Scriptures we return to when our hearts feel unsettled.  
+On my birthday, my mother called to wish me well. Like most of our conversations, it wandered. We talked about life, about stress, about the weight people carry that isn’t always visible. Eventually, the conversation drifted toward anxiety, spiritual warfare, and the familiar Scriptures we return to when our hearts feel unsettled.  
 > *Cast your cares upon Him.*  
 *Let not your heart be troubled.*  
 <sub>(phrases drawn from 1 Peter 5:7 and John 14:1, ESV)</sub>
@@ -60,5 +60,6 @@ We just need to know where we stand.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTEzODMyODZdfQ==
+eyJoaXN0b3J5IjpbLTE3NzEzNjcxODUsLTE3MTEzODMyODZdfQ
+==
 -->
