@@ -48,7 +48,3 @@ Perhaps the better question isn’t, *“Do I belong here?”*
 But, *“What is this place forming in me?”*
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMjA0OTY0N119
--->
