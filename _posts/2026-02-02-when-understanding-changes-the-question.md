@@ -40,7 +40,7 @@ At some point, trust replaces comprehension.
 
 Lately, that dynamic has cracked open for me.
 
-I’ve been spending time with AI tools that are remarkably good at research, parsing massive documents, summarizing, and—more importantly—*contextualizing* information. Not just telling me what something says, but helping me see how it fits together. Where it contradicts itself. Where it quietly assumes things I may not actually agree with.
+I’ve been spending time with AI tools that are remarkably good at research, parsing massive documents, summarizing, and, more importantly, *contextualizing* information. Not just telling me what something says but helping me see how it fits together. Where it contradicts itself. Where it quietly assumes things I may not actually agree with.
 
 It’s made me wonder how many decisions in modern life are built on borrowed confidence.
 
@@ -75,7 +75,7 @@ Always revealing something about how ideas land once they leave my head.
 
 I’ve even used AI to generate infographics using nothing but a single blog post as the source. No added ideas. No external framing. Just structure pulled from what was already there.
 
-I don’t love everything about the result. Some choices feel off. Some emphasis isn’t how I would have framed it. But seeing my own words reorganized visually—without outside input—was still impressive.
+I don’t love everything about the result. Some choices feel off. Some emphasis isn’t how I would have framed it. But seeing my own words reorganized visually, without outside input, was still impressive.
 
 Not because it was perfect, but because it revealed shape.
 
@@ -133,5 +133,5 @@ When understanding changes, the questions we ask change too.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxODE3Nzg5OF19
+eyJoaXN0b3J5IjpbLTExMjU2NzAxNjhdfQ==
 -->
