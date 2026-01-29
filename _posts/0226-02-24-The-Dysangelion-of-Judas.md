@@ -24,7 +24,7 @@ It announces rescue, forgiveness, life, and restoration in Jesus Christ.
 
 Scripture also gives us stories that warn in the opposite direction. Not as rival truths, but as sober reminders. They do not contradict the gospel. They reveal what happens when its call is resisted.
 
-While the Bible never gives a formal antonym for “gospel,” the made-up construction *dysangelion*—bad news—can serve as a rhetorical lens for a life lived near Christ that ends in tragedy. Not because Christ failed, but because a man would not yield.
+While the Bible never gives a formal antonym for “gospel,” the made-up construction *dysangelion*(bad news) can serve as a rhetorical lens for a life lived near Christ that ends in tragedy. Not because Christ failed, but because a man would not yield.
 
 The life of Judas Iscariot reads like that kind of announcement.
 
@@ -138,5 +138,5 @@ The gospel remains good news precisely because it invites confession before corr
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjE4ODA4OTFdfQ==
+eyJoaXN0b3J5IjpbLTExMzY2MTc1MDhdfQ==
 -->
