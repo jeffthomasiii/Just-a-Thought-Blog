@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Marriage as a Picture of Christ and the Church"
