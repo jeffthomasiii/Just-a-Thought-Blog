@@ -13,7 +13,7 @@ tags:
   - discipleship
   - integrity
   - worship
-excerpt: "Judas’s story is not about ignorance or impulse, but about proximity without surrender—and what happens when faith is quietly measured instead of lived."
+excerpt: "Judas’s story is not about ignorance or impulse, but about proximity without surrender, and what happens when faith is quietly measured instead of lived."
 image: /img/posts/dysangelion-of-judas.jpg
 background: /img/posts/bg-dysangelion-of-judas.jpg
 scripture: "Matthew 26–27; John 12:1–8"
@@ -138,5 +138,5 @@ The gospel remains good news precisely because it invites confession before corr
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMyNTYwMDBdfQ==
+eyJoaXN0b3J5IjpbMTk1OTIwNjY0XX0=
 -->
