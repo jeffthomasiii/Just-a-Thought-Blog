@@ -127,15 +127,17 @@
       li.style.margin = "0.75rem 0";
 
       li.innerHTML = `
-        <a href="${doc.url}" style="font-weight: 600; text-decoration: underline;">
-          ${escapeHtml(doc.title)}
-        </a>
-        ${
-          doc.excerpt
-            ? `<div style="margin-top: .25rem; opacity: .85;">${escapeHtml(doc.excerpt)}</div>`
-            : ""
-        }
-      `;
+  <div style="padding: 14px 0; border-bottom: 1px solid rgba(0,0,0,.08);">
+    <a href="${doc.url}" style="font-weight: 700; text-decoration: none;">
+      ${escapeHtml(doc.title)}
+    </a>
+    ${
+      doc.excerpt
+        ? `<div style="margin-top: .35rem; opacity: .85; line-height: 1.5;">${escapeHtml(doc.excerpt)}</div>`
+        : ""
+    }
+  </div>
+`;
 
       resultsEl.appendChild(li);
     });
