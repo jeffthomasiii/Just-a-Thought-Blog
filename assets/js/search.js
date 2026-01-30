@@ -8,18 +8,26 @@
   const tagFilter = document.getElementById("tag-filter");
   const clearBtn = document.getElementById("clear-filters");
 
-  if (!input || !resultsEl) return;
+  if (!input || !resultsEl || !metaEl) return;
 
-  const baseurl =
-    document.querySelector('meta[name="baseurl"]')?.content || "";
+  // Base URL (important for GitHub Pages project sites)
+  const baseurl = document.querySelector('meta[name="baseurl"]')?.content || "";
 
-  const indexUrl = `${window.location.origin}${baseurl}/search.json`.replace(
-    /\/{2,}/g,
-    "/"
-  );
+  // SAFER: build a relative path, not a full URL, and only normalize the path
+  const indexPath = `${baseurl}/search.json`.replace(/\/{2,}/g, "/");
 
-  const res = await fetch(indexUrl);
-  const data = await res.json();
+  let data = [];
+  try {
+    const res = await fetch(indexPath, { cache: "no-store" });
+    if (!res.ok) throw new Error(`Index fetch failed: ${res.status} ${res.statusText}`);
+    data = await res.json();
+  } catch (err) {
+    metaEl.textContent = "Search index failed to load.";
+    resultsEl.innerHTML = "";
+    // Helpful breadcrumb for you while testing:
+    console.error("Search index error:", err, "Tried:", indexPath);
+    return;
+  }
 
   // Build Lunr index
   const idx = lunr(function () {
@@ -54,8 +62,8 @@
   }
 
   function uniqSorted(arr) {
-    return [...new Set(arr.filter(Boolean).map((v) => v.toString()))].sort(
-      (a, b) => a.localeCompare(b)
+    return [...new Set(arr.filter(Boolean).map((v) => v.toString()))].sort((a, b) =>
+      a.localeCompare(b)
     );
   }
 
@@ -100,22 +108,16 @@
 
     if (!list.length) {
       metaEl.textContent =
-        activeCat || activeTag
-          ? "No results for the current filters."
-          : "No results.";
+        activeCat || activeTag ? "No results for the current filters." : "No results.";
       return;
     }
 
     const filterNote =
       activeCat || activeTag
-        ? ` (filtered${activeCat ? ` • ${activeCat}` : ""}${
-            activeTag ? ` • ${activeTag}` : ""
-          })`
+        ? ` (filtered${activeCat ? ` • ${activeCat}` : ""}${activeTag ? ` • ${activeTag}` : ""})`
         : "";
 
-    metaEl.textContent = `${list.length} result${
-      list.length === 1 ? "" : "s"
-    }.${filterNote}`;
+    metaEl.textContent = `${list.length} result${list.length === 1 ? "" : "s"}.${filterNote}`;
 
     list.slice(0, 20).forEach((item) => {
       const doc = data.find((d) => d.id.toString() === item.ref.toString());
@@ -130,9 +132,7 @@
         </a>
         ${
           doc.excerpt
-            ? `<div style="margin-top: .25rem; opacity: .85;">${escapeHtml(
-                doc.excerpt
-              )}</div>`
+            ? `<div style="margin-top: .25rem; opacity: .85;">${escapeHtml(doc.excerpt)}</div>`
             : ""
         }
       `;
@@ -144,11 +144,8 @@
   function runSearch(q) {
     const query = (q || "").trim();
 
-    // If they haven't typed much, we can still show a gentle message,
-    // but we should respect filters if selected.
     const hasFilters =
-      (categoryFilter?.value?.trim() || "") ||
-      (tagFilter?.value?.trim() || "");
+      (categoryFilter?.value?.trim() || "") || (tagFilter?.value?.trim() || "");
 
     if (query.length < 2) {
       resultsEl.innerHTML = "";
@@ -166,12 +163,8 @@
       return;
     }
 
-    // Pre-filter allowed docs (category/tag)
-    const allowedIds = new Set(
-      data.filter(matchesFilters).map((d) => d.id.toString())
-    );
+    const allowedIds = new Set(data.filter(matchesFilters).map((d) => d.id.toString()));
 
-    // Boost title matches
     const results = idx
       .query(function (builder) {
         safe.split(/\s+/).forEach((term) => {
@@ -186,4 +179,19 @@
     renderResults(results);
   }
 
-  input.addEventListener("input", (e) => runSe
+  // Event listeners (this is the part that looked cut off in your paste)
+  input.addEventListener("input", (e) => runSearch(e.target.value));
+  categoryFilter?.addEventListener("change", () => runSearch(input.value));
+  tagFilter?.addEventListener("change", () => runSearch(input.value));
+
+  clearBtn?.addEventListener("click", () => {
+    input.value = "";
+    if (categoryFilter) categoryFilter.value = "";
+    if (tagFilter) tagFilter.value = "";
+    resultsEl.innerHTML = "";
+    metaEl.textContent = "Type at least 2 characters.";
+    input.focus();
+  });
+
+  metaEl.textContent = "Type at least 2 characters.";
+})();
