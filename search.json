@@ -2,16 +2,17 @@
 layout: null
 ---
 [
-  {% assign posts = site.posts | where_exp: "p", "p.published != false" %}
+  {% assign posts = site.posts | where_exp: "p", "p.published != false" | sort: "date" | reverse %}
   {% for post in posts %}
   {
     "id": {{ forloop.index0 }},
     "title": {{ post.title | strip_html | jsonify }},
     "subtitle": {{ post.subtitle | default: "" | strip_html | jsonify }},
-    "excerpt": {{ post.excerpt | strip_html | jsonify }},
-    "content": {{ post.content | strip_html | replace: "\n", " " | replace: "\r", " " | replace: "\t", " " | jsonify }},
+    "excerpt": {{ post.excerpt | strip_html | replace: "\n", " " | replace: "\r", " " | replace: "\t", " " | jsonify }},
+    "content": {{ post.content | strip_html | replace: "\n", " " | replace: "\r", " " | replace: "\t", " " | truncate: 1200 | jsonify }},
     "url": {{ post.url | relative_url | jsonify }},
     "date": {{ post.date | date_to_xmlschema | jsonify }},
+    "date_display": {{ post.date | date: "%b %-d, %Y" | jsonify }},
     "categories": {{ post.categories | jsonify }},
     "tags": {{ post.tags | jsonify }}
   }{% unless forloop.last %},{% endunless %}
