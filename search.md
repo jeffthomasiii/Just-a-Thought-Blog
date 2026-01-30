@@ -4,25 +4,72 @@ title: Search
 permalink: /search/
 ---
 
-<div class="search-wrap">
-  <div class="form-group">
-    <input id="search-input" class="form-control" type="search" placeholder="Search posts..." autocomplete="off" />
+<div class="search-wrap" style="max-width: 760px; margin: 0 auto;">
+  <div style="margin-bottom: 1rem;">
+    <input
+      id="search-input"
+      type="search"
+      placeholder="Search posts..."
+      autocomplete="off"
+      style="
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 16px;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: 6px;
+        background: transparent;
+      "
+    />
   </div>
 
-  <div class="form-group" style="display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.75rem;">
-    <select id="category-filter" class="form-control" style="max-width: 240px;">
+  <div
+    class="search-filters"
+    style="display:flex; gap:.75rem; flex-wrap:wrap; align-items:center; margin-bottom: 1rem;"
+  >
+    <select
+      id="category-filter"
+      style="
+        padding: 10px 12px;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: 6px;
+        background: transparent;
+        min-width: 180px;
+      "
+    >
       <option value="">All categories</option>
     </select>
 
-    <select id="tag-filter" class="form-control" style="max-width: 240px;">
+    <select
+      id="tag-filter"
+      style="
+        padding: 10px 12px;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: 6px;
+        background: transparent;
+        min-width: 180px;
+      "
+    >
       <option value="">All tags</option>
     </select>
 
-    <button id="clear-filters" type="button" class="btn btn-outline-secondary">Clear</button>
+    <button
+      id="clear-filters"
+      type="button"
+      style="
+        padding: 10px 14px;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 6px;
+        background: transparent;
+        cursor: pointer;
+      "
+    >
+      Clear
+    </button>
   </div>
 
-  <p id="search-meta" class="text-muted" style="margin-top: .75rem;"></p>
-  <ul id="search-results"></ul>
+  <p id="search-meta" style="margin: .5rem 0 1.25rem; opacity: .75;"></p>
+
+  <ul id="search-results" style="list-style: none; padding-left: 0; margin: 0;"></ul>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
