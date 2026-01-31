@@ -13,3 +13,94 @@
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
+/* =========================
+   Search Page (Clean Blog)
+   ========================= */
+
+.search-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Ensure form controls inherit Clean Blog typography */
+.search-wrap input,
+.search-wrap select,
+.search-wrap button {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: inherit;
+}
+
+/* Search input + dropdowns */
+.search-wrap input[type="search"],
+.search-wrap select {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background-color: transparent;
+}
+
+/* Focus state matches your olive brand */
+.search-wrap input[type="search"]:focus,
+.search-wrap select:focus {
+  outline: none;
+  border-color: rgba(85, 107, 47, 0.55); // #556B2F
+  box-shadow: 0 0 0 0.2rem rgba(85, 107, 47, 0.18);
+}
+
+/* Filter row layout */
+.search-filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+
+  select {
+    width: auto;
+    min-width: 220px;
+  }
+}
+
+/* Clear button (subtle utility style) */
+#clear-filters {
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* Meta text */
+#search-meta {
+  margin: 0.5rem 0 1.25rem;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* Results list */
+#search-results {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  a {
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
