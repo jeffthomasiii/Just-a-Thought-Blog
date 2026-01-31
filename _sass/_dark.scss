@@ -37,3 +37,42 @@ body {
   color: inherit;
   margin-left: auto;
 }
+/* =========================
+   Search Page (Dark Mode)
+   ========================= */
+
+body.dark-mode .search-wrap input[type="search"],
+body.dark-mode .search-wrap select {
+  border-color: rgba(255, 255, 255, 0.22);
+  background-color: rgba(255, 255, 255, 0.03);
+  color: inherit;
+}
+
+body.dark-mode .search-wrap input[type="search"]::placeholder {
+  color: rgba(245, 245, 245, 0.65);
+}
+
+body.dark-mode .search-wrap input[type="search"]:focus,
+body.dark-mode .search-wrap select:focus {
+  outline: none;
+  border-color: rgba(162, 177, 121, 0.75); /* your soft olive */
+  box-shadow: 0 0 0 0.2rem rgba(162, 177, 121, 0.18);
+}
+
+body.dark-mode #clear-filters {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: transparent;
+  color: inherit;
+}
+
+body.dark-mode #clear-filters:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+body.dark-mode #search-results li {
+  border-bottom-color: rgba(255, 255, 255, 0.10);
+}
+
+body.dark-mode #search-meta {
+  color: rgba(245, 245, 245, 0.75);
+}
