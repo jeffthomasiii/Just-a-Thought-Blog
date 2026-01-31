@@ -2,6 +2,7 @@
 layout: page
 title: Search
 permalink: /search/
+background: /img/posts/bg-search.jpg
 ---
 
 <div class="search-wrap" style="max-width: 760px; margin: 0 auto;">
