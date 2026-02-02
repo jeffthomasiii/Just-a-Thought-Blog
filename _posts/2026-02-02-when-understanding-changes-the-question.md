@@ -83,7 +83,7 @@ Not because it was perfect, but because it revealed shape.
   <img 
     src="https://jeffthomasiii.github.io/Just-a-Thought-Blog/img/posts/ai-infographic-single-source.jpg"
     alt="AI-generated infographic created using my Spiritual Sweat post"
-    style="width:95%;"
+    style="width:100%;"
   />
   <figcaption style="font-style:italic; font-size:0.9em; margin-top:0.5rem;">
     An AI-generated infographic created using only my Spiritual Sweat post, imperfect, but revealing how structure emerges when ideas are reorganized.
@@ -139,7 +139,7 @@ When understanding changes, the questions we ask change too.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NTc3OTE5LC0xOTcyMTc2NTc3LDE5Nz
-gyNTgxMTMsMTc1MTM1MjA3OSw1MzIyNTM4MjksMTEwOTI0NTE2
-Niw0MjAwMDEzNTAsLTExMjU2NzAxNjhdfQ==
+eyJoaXN0b3J5IjpbNjExODY1NTU2LC04OTU3NzkxOSwtMTk3Mj
+E3NjU3NywxOTc4MjU4MTEzLDE3NTEzNTIwNzksNTMyMjUzODI5
+LDExMDkyNDUxNjYsNDIwMDAxMzUwLC0xMTI1NjcwMTY4XX0=
 -->
