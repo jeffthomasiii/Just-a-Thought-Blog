@@ -82,7 +82,7 @@ Not because it was perfect, but because it revealed shape.
 <figure style="text-align:center; margin:2rem 0;">
   <img 
     src="https://jeffthomasiii.github.io/Just-a-Thought-Blog/img/posts/ai-infographic-single-source.jpg"
-    alt="AI-generated infographic derived from a single source document"
+    alt="AI-generated infographic created using my Spiritual Sweat post"
     style="width:50%;"
   />
   <figcaption style="font-style:italic; font-size:0.9em; margin-top:0.5rem;">
@@ -90,11 +90,6 @@ Not because it was perfect, but because it revealed shape.
   </figcaption>
 </figure>
 
-<!-- 📌 IMAGE INSERT POINT: Place infographic directly below this line -->
-
-![AI-generated infographic derived from my blog post](https://jeffthomasiii.github.io/Just-a-Thought-Blog/img/posts/ai-infographic-single-source.jpg
-)
-*Caption: An AI-generated infographic created using only my [Spiritual Sweat](https://jeffthomasiii.github.io/Just-a-Thought-Blog/2025/07/23/spiritual-sweat.html) post, imperfect, but revealing how structure emerges when ideas are reorganized.*
 
 At the same time, I’m watching people use these tools in increasingly creative, and sometimes obvious, ways. LinkedIn articles generated for reach. Content pipelines optimized for traffic.
 
@@ -144,7 +139,7 @@ When understanding changes, the questions we ask change too.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NTA0MTg0OCwxNzUxMzUyMDc5LDUzMj
+eyJoaXN0b3J5IjpbMTk3ODI1ODExMywxNzUxMzUyMDc5LDUzMj
 I1MzgyOSwxMTA5MjQ1MTY2LDQyMDAwMTM1MCwtMTEyNTY3MDE2
 OF19
 -->
