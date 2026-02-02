@@ -81,7 +81,8 @@ Not because it was perfect, but because it revealed shape.
 
 <!-- 📌 IMAGE INSERT POINT: Place infographic directly below this line -->
 
-![AI-generated infographic derived from a single source document]({{ site.baseurl }}/img/posts/ai-infographic-single-source.jpg)
+![AI-generated infographic derived from a single source document](https://jeffthomasiii.github.io/Just-a-Thought-Blog/img/posts/ai-infographic-single-source.jpg
+)
 *Caption: An AI-generated infographic created using only one source document, imperfect, but revealing how structure emerges when ideas are reorganized.*
 
 At the same time, I’m watching people use these tools in increasingly creative, and sometimes obvious, ways. LinkedIn articles generated for reach. Content pipelines optimized for traffic.
@@ -132,6 +133,6 @@ When understanding changes, the questions we ask change too.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMyMjUzODI5LDExMDkyNDUxNjYsNDIwMD
-AxMzUwLC0xMTI1NjcwMTY4XX0=
+eyJoaXN0b3J5IjpbODk2MDYyODUyLDUzMjI1MzgyOSwxMTA5Mj
+Q1MTY2LDQyMDAwMTM1MCwtMTEyNTY3MDE2OF19
 -->
