@@ -14,7 +14,7 @@ tags:
   - understanding
   - NotebookLM
   - wisdom
-excerpt: "AI hasn’t made me smarter—it’s made me more aware of what I don’t understand, and how often I’ve been willing to move forward anyway."
+excerpt: "AI hasn’t made me smarter, it’s made me more aware of what I don’t understand, and how often I’ve been willing to move forward anyway."
 image: /img/posts/when-understanding-changes-the-question.jpg
 background: /img/posts/bg-when-understanding-changes-the-question.jpg
 ---
