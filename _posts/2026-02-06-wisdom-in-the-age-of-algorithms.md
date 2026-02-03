@@ -22,7 +22,7 @@ series: "Faith, Wisdom, and the Machine"
 series_order: 1
 ---
 
-**“Study to show yourself approved, because AI won’t stand before God in your place.”**
+> **“Study to show yourself approved, because AI won’t stand before God in your place.”**
 
 There’s something sobering about typing a prompt into a chatbot and getting a clean sermon outline in seconds. Relevant scriptures. Catchy alliteration. Even a closing prayer. It’s fast. It’s polished. But is it wise?
 
@@ -65,5 +65,5 @@ Because when you stand to teach, lead, write, or preach, AI won’t be the one a
 Just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDc4NDU2OTZdfQ==
+eyJoaXN0b3J5IjpbLTM3MjYwMjU4XX0=
 -->
