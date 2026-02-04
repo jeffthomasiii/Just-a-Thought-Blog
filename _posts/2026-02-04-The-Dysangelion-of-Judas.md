@@ -136,7 +136,3 @@ The warning in Judas’s life is not meant to terrify us. It is meant to sober u
 The gospel remains good news precisely because it invites confession before corrosion finishes its work. The Christ Judas betrayed is the Christ who restored Peter, and He still meets repentant sinners with mercy.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1OTIwNjY0XX0=
--->
