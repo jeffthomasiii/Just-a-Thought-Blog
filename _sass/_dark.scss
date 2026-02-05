@@ -76,3 +76,34 @@ body.dark-mode #search-results li {
 body.dark-mode #search-meta {
   color: rgba(245, 245, 245, 0.75);
 }
+
+/* =========================
+   Search dropdown menu (Dark Mode)
+   Fixes the option list readability
+   ========================= */
+
+body.dark-mode .search-wrap select {
+  background-color: #1e1e1e; /* matches header/footer dark */
+  color: #f5f5f5;
+}
+
+/* Styles the dropdown option list in most browsers (Chrome/Edge) */
+body.dark-mode .search-wrap select option {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+/* Highlighting when navigating options */
+body.dark-mode .search-wrap select option:checked,
+body.dark-mode .search-wrap select option:hover {
+  background-color: #2a2a2a;
+  color: #f5f5f5;
+}
+
+/* Olive-branded focus for the open dropdown */
+body.dark-mode .search-wrap select:focus {
+  outline: none;
+  border-color: rgba(162, 177, 121, 0.75);
+  box-shadow: 0 0 0 0.2rem rgba(162, 177, 121, 0.18);
+}
+
