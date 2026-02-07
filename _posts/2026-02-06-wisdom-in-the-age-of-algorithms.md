@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Wisdom in the Age of Algorithms"
-subtitle: "Why discernment—not just data—must guide our use of AI in ministry"
+subtitle: "Why discernment, not just data, must guide our use of AI in ministry"
 description: "Exploring the need for Spirit-led wisdom when using AI in ministry, and why no tool can replace the responsibility of biblical discernment."
 date: 2026-02-06
 author: Jeff Thomas III
