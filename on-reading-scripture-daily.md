@@ -31,8 +31,8 @@ I don’t follow a formal reading plan, though I do see the value in them, espec
 
 If you’re looking for something like that, you can find those plans here:
 
-**Daily Bible Reading Plans (Legacy Standard Bible)**  
-https://lsbible.org/lsb-reading-plans/
+**Daily Bible Reading Plans (Legacy Standard Bible)** 
+[https://lsbible.org/lsb-reading-plans/](https://lsbible.org/lsb-reading-plans)
 
 This isn’t a formula, and it isn’t a benchmark. We’re all works in progress. What matters most isn’t keeping pace, it’s staying attentive, open, and willing to be shaped.
 
