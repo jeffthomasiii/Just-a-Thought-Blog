@@ -69,7 +69,7 @@ It is just enough light for the next step. Just enough clarity to keep moving. J
 Anxiety demands certainty.  
 Faith settles for obedience.
 
-When I was driving through that fog, I did not need to see the destination. I only needed to see the next few feet. And as long as I kept moving at a steady, cautious pace, the fog kept giving way, slowly and quietly.
+When I was driving through that fog, I did not need to see the destination. I only needed to see the next few yards. And as long as I kept moving at a steady, cautious pace, the fog kept giving way, slowly and quietly.
 
 Stress works the same way.
 
@@ -91,9 +91,7 @@ The stress feels heavy.
 The future feels unclear.  
 The weight feels thick.
 
-But what if you do not need the entire road today?
-
-What if you just need the next step?
+> But what if you do not need the entire road today? What if you just need the next step?
 
 Keep driving.
 
@@ -114,5 +112,5 @@ You moved through it.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyMTQ2MzY4XX0=
+eyJoaXN0b3J5IjpbLTE4MzE3OTUyOTNdfQ==
 -->
