@@ -28,7 +28,7 @@ The one who just discovered something in Scripture that felt unmistakably clear 
 
 And the one who quietly thought, “I am not there yet.”
 
-That sentence carries more humility than we realize.
+I think that sentence carries more humility than we realize.
 
 Because most of us are somewhere on a road. And not all of us are at the same mile marker.
 
@@ -142,5 +142,5 @@ And because even now, we are still walking the road ourselves.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMjgwNDQ3MF19
+eyJoaXN0b3J5IjpbLTcxNTY2OTM4MV19
 -->
