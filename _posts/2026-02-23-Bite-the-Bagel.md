@@ -63,7 +63,7 @@ The issue is not that we feel those emotions. The issue is when we let them driv
 Scripture gives surprisingly practical wisdom here.
 
 *“Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger.”*  
-James 1:19
+-James 1:19
 
 Slow to speak.  
 Slow to anger.
@@ -83,7 +83,7 @@ And we react.
 
 But what if we widened that gap?
 
-What if instead of responding immediately, we bit the bagel?
+> What if instead of responding immediately, we bit the bagel?
 
 Take a breath.  
 Count to ten.  
@@ -163,5 +163,5 @@ Bite the bagel.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDIwNDQ3NjhdfQ==
+eyJoaXN0b3J5IjpbLTE4ODAwNTM5NjNdfQ==
 -->
