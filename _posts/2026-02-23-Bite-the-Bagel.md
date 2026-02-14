@@ -99,7 +99,7 @@ It allows professionalism to override pride.
 
 It keeps us from saying things we later have to apologize for.
 
-Part of growing up, spiritually and emotionally, is knowing your own tendencies.
+> Part of growing up, spiritually and emotionally, is knowing your own tendencies.
 
 If you know you respond defensively when criticized, bite the bagel.  
 If you know uncertainty makes you anxious, bite the bagel.  
@@ -109,8 +109,8 @@ This is not weakness.
 
 It is strength under control.
 
-“Whoever is slow to anger is better than the mighty, and he who rules his spirit than he who takes a city.”  
-Proverbs 16:32
+*“Whoever is slow to anger is better than the mighty, and he who rules his spirit than he who takes a city.”*  
+-Proverbs 16:32
 
 Ruling your spirit is harder than ruling a boardroom.  
 Harder than winning an argument.  
@@ -163,5 +163,5 @@ Bite the bagel.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODAwNTM5NjNdfQ==
+eyJoaXN0b3J5IjpbLTM5NDE1NDQ0NF19
 -->
