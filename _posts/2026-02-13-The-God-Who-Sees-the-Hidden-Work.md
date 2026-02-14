@@ -29,7 +29,7 @@ It’s hard to admit how often we crave results that people can see. Sermon clic
 But what if the things God sees as most faithful aren’t the ones producing charts?
 
 > "…and your Father who sees in secret will reward you."  
-> —Matthew 6:4 ESV
+> -Matthew 6:4 ESV
 
 Faithfulness often looks like quiet obedience: praying when no one shows up, preparing when no one affirms it, pouring out when no one says thank you. But in an AI-powered world driven by performance indicators, that kind of faithfulness can feel invisible.
 
@@ -37,7 +37,7 @@ That’s because AI can recognize patterns. But it can’t perceive purpose. It 
 
 We risk unknowingly reshaping ministry in the image of metrics. Faster response times. More polished delivery. Targeted engagement. These may serve efficiency, but they don’t necessarily shape a heart after Christ.
 
-Jesus praised the widow who gave two coins, not because it was a strong financial decision, but because it revealed a faithful heart. He told stories of seeds growing in soil, hidden, slow, unseen by most—but deeply known by God.
+Jesus praised the widow who gave two coins, not because it was a strong financial decision, but because it revealed a faithful heart. He told stories of seeds growing in soil, hidden, slow, unseen by most, but deeply known by God.
 
 Our generation needs that reminder.
 
