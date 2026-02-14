@@ -20,7 +20,6 @@ background: /img/posts/bg-the-road-between-confusion-and-clarity.jpg
 scripture: "Mark 8:29; Luke 24:45 ESV"
 ---
 
-## The Road Between Confusion and Clarity
 
 I have been on both sides of the conversation.
 
@@ -142,5 +141,5 @@ And because even now, we are still walking the road ourselves.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNTY2OTM4MV19
+eyJoaXN0b3J5IjpbLTg4NTcwNzAzMSwtNzE1NjY5MzgxXX0=
 -->
