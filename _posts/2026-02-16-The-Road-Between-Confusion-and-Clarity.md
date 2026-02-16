@@ -139,7 +139,3 @@ Because someone once extended it to us.
 And because even now, we are still walking the road ourselves.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NTcwNzAzMSwtNzE1NjY5MzgxXX0=
--->
