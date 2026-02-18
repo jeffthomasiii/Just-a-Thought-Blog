@@ -110,7 +110,3 @@ You did not conquer the fog by staring at it.
 You moved through it.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzE3OTUyOTNdfQ==
--->
