@@ -13,7 +13,7 @@ tags:
   - obedience
   - leadership
   - formation
-excerpt: "We’re called to tend sheep, not systems. The danger isn’t using tools—it’s when the tools start using us."
+excerpt: "We’re called to tend sheep, not systems. The danger isn’t using tools, it’s when the tools start using us."
 image: /img/posts/the-quiet-replacement.jpg
 background: /img/posts/bg-the-quiet-replacement.jpg
 header-image: /img/posts/header-the-quiet-replacement.jpg
@@ -29,7 +29,7 @@ That’s how ministry can quietly become management.
 AI is an incredible tool. It can organize workflows, manage volunteers, optimize emails, and even schedule your next sermon series based on trending search terms. But if we’re not watchful, the pursuit of effectiveness can become the new obedience.
 
 > "Feed my sheep."  
-> —John 21:17 ESV
+> -John 21:17 ESV
 
 That’s what Jesus said to Peter. Not “grow your following.” Not “improve engagement.” Not “streamline your systems.”
 
