@@ -28,6 +28,3 @@ background: /img/posts/bg-search.jpg
 
 <script src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
 <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2Nzg2MTIyMCwxMTcxNjU5MTY3XX0=
--->
