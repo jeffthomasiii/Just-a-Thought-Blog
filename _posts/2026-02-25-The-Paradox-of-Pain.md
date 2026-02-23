@@ -107,7 +107,7 @@ Seems painful.
 
 The Bible does not sanitize it. It names what we feel.
 
-“…but later it yields the peaceful fruit of righteousness to those who have been trained by it.”
+*“…but later it yields the peaceful fruit of righteousness to those who have been trained by it.”*
 
 Not to everyone who experiences pain.
 
@@ -215,5 +215,5 @@ Perhaps it is evidence that He is shaping you.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQxNDMxOTUwXX0=
+eyJoaXN0b3J5IjpbLTk1MDEwMjcwXX0=
 -->
