@@ -7,7 +7,15 @@ background: /img/posts/bg-search.jpg
 
 <div class="search-wrap">
   <div class="search-input">
-    <input id="search-input" type="search" placeholder="Search posts..." autocomplete="off" />
+    <input
+     ---
+
+<div class="search-wrap">
+  <input id="search-input"
+      type="search"
+      placeholder="Search posts..."
+      autocomplete="off" /
+    />
   </div>
 
   <div class="search-filters">
@@ -22,9 +30,12 @@ background: /img/posts/bg-search.jpg
     <button id="clear-filters" type="button">Clear</button>
   </div>
 
-  <p id="search-meta" style="margin-top: .75rem;"></p>
+  <p id="search-metap id="search-meta" style="margin-top: .75rem;"></p>
   <ul id="search-results"></ul>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
 <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTE3MTY1OTE2N119
+-->
