@@ -214,6 +214,3 @@ Perhaps what you are feeling right now is not evidence that God has stepped back
 Perhaps it is evidence that He is shaping you.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MDEwMjcwXX0=
--->
