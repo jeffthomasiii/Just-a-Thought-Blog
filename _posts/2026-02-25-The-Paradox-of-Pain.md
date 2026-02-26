@@ -100,14 +100,14 @@ He was building him.
 
 Scripture says something almost unsettlingly similar.
 
-*“For the moment all discipline seems painful rather than pleasant…”*
+*“For the moment all discipline seems painful rather than pleasant…”* Hebrews 12:11a ESV
 
 Not might seem.  
 Seems painful.
 
 The Bible does not sanitize it. It names what we feel.
 
-*“…but later it yields the peaceful fruit of righteousness to those who have been trained by it.”*
+*“…but later it yields the peaceful fruit of righteousness to those who have been trained by it.”* Hebrews 12:11b ESV
 
 Not to everyone who experiences pain.
 
