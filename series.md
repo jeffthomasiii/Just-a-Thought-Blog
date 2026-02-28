@@ -7,7 +7,7 @@ permalink: /series/
 {% assign grouped = site.posts | group_by: "series" %}
 
 {% for group in grouped %}
-  {% if group.name %}
+  {% if group.name and group.name != "" %}
     <h2 id="{{ group.name | slugify }}">{{ group.name }}</h2>
     <ul>
       {% assign sorted = group.items | sort: "series_order" %}
