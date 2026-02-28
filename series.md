@@ -1,0 +1,22 @@
+---
+layout: page
+title: Series
+permalink: /series/
+---
+
+{% assign grouped = site.posts | group_by: "series" %}
+
+{% for group in grouped %}
+  {% if group.name %}
+    <h2 id="{{ group.name | slugify }}">{{ group.name }}</h2>
+    <ul>
+      {% assign sorted = group.items | sort: "series_order" %}
+      {% for post in sorted %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% if post.series_order %} (Part {{ post.series_order }}){% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}
