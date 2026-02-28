@@ -2,7 +2,7 @@
 layout: post
 title: "The Servant, Not the Shepherd"
 subtitle: "Why AI should help carry the load, not define the direction"
-description: "Reflecting on the role of technology as a ministry helper—not a leader—and how we guard against misplacing trust."
+description: "Reflecting on the role of technology as a ministry helper, not a leader, and how we guard against misplacing trust."
 date: 2026-02-27
 author: Jeff Thomas III
 categories:
@@ -26,8 +26,7 @@ There’s a quiet danger in convenience. The more a tool helps us, the easier it
 
 It can summarize commentary, suggest applications, polish language, even simulate tone. But it can’t discern the heart of God for the people He’s entrusted to us.
 
-> “The Lord is my shepherd; I shall not want.”  
-> —Psalm 23:1 ESV
+> “The Lord is my shepherd; I shall not want.” - Psalm 23:1 ESV
 
 Not, “The software is my shepherd.”
 
