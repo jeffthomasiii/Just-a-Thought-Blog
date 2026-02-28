@@ -7,26 +7,6 @@ permalink: /series/
 
 {% assign grouped = site.posts | group_by: "series" %}
 
-<h2>Series Builder</h2>
-<ul>
-{% for group in grouped %}
-  {% if group.name and group.name != "" %}
-    {% assign slug = group.name | slugify %}
-    <li>
-      <strong>{{ group.name }}</strong>
-      <br />
-      slug: <code>{{ slug }}</code>
-      <br />
-      page: <code>series/{{ slug }}.md</code>
-      <br />
-      permalink: <code>/series/{{ slug }}/</code>
-    </li>
-  {% endif %}
-{% endfor %}
-</ul>
-
-{% assign grouped = site.posts | group_by: "series" %}
-
 {% for group in grouped %}
   {% if group.name and group.name != "" %}
     <h2 id="{{ group.name | slugify }}">{{ group.name }}</h2>
