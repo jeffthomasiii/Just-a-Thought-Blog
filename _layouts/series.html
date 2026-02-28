@@ -1,0 +1,15 @@
+---
+layout: page
+---
+{% assign series_posts = site.posts | where: "series", page.series | sort: "series_order" %}
+
+<h1>{{ page.title }}</h1>
+
+<ul>
+  {% for post in series_posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.series_order %} (Part {{ post.series_order }}){% endif %}
+    </li>
+  {% endfor %}
+</ul>
