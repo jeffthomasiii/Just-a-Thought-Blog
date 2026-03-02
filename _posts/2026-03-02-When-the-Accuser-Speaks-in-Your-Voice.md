@@ -27,7 +27,7 @@ Not even the one you use with strangers.
 
 The one you use with yourself.
 
-I watched a clip from :contentReference[oaicite:0]{index=0} where a guest shared something his wife once said:
+I watched a clip from The Deep End with Lecrae podcast where a guest shared something his wife once said:
 
 > “I choose not to speak to myself the way Satan does.”
 
