@@ -3,7 +3,7 @@ layout: post
 title: "Quiet Strength in a Loud World"
 subtitle: "On blending in, protecting well, and resisting the urge to perform"
 description: "A reflection on the military concept of the ‘gray man,’ cultural performative strength, and what quiet, steady protection really looks like."
-date: 2026-02-26
+date: 2026-03-04
 author: Jeff Thomas III
 categories:
   - culture
@@ -18,15 +18,13 @@ image: /img/posts/quiet-strength.jpg
 background: /img/posts/bg-quiet-strength.jpg
 ---
 
-## Quiet Strength in a Loud World
-
 I once heard the phrase “gray man” used in a military context.
 
 It refers to someone who blends into their environment.  
 Not flashy. Not loud. Not memorable.  
 Observant. Aware. Calm.
 
-The goal isn’t invisibility. It’s discretion.
+> The goal isn’t invisibility. It’s discretion.
 
 The gray man doesn’t signal capability. He carries it quietly.
 
@@ -117,5 +115,5 @@ And if you’re paying attention, that silence speaks volumes.
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgyNzI3OTg5XX0=
+eyJoaXN0b3J5IjpbLTE3ODIyOTEzMzNdfQ==
 -->
