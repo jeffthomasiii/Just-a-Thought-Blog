@@ -87,7 +87,7 @@ A quick moment to say I haven’t forgotten about the writing. If anything, the 
 
 I’ll be finishing and publishing those drafts as soon as I can come up for air.
 
-And maybe this season is a reminder—for me and anyone else feeling it—that fullness isn’t the problem.
+And maybe this season is a reminder, for me and anyone else feeling it, that fullness isn’t the problem.
 
 Lack of margin is.
 
@@ -95,9 +95,6 @@ Learning how to build structure, choose wisely, stay disciplined, endure faithfu
 
 …just a thought.
 
----
-
-**What’s been taking up most of your time lately—and is it aligned with what matters most?**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNDgwNzI0OV19
+eyJoaXN0b3J5IjpbLTI0MzgxMTc4XX0=
 -->
