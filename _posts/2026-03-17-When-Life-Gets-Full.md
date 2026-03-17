@@ -25,8 +25,6 @@ One commitment turned into two. Then three. Then a full calendar that I don’t 
 
 And somewhere in the middle of it all, I realized I hadn’t had the space to sit, think, and write the way I normally do.
 
----
-
 The past few weeks have been full in every direction.
 
 Family needs attention.  
@@ -41,9 +39,7 @@ I’ve got about four blog posts sitting in different stages right now. Some are
 
 They’ve been on my mind… I just haven’t had the margin to finish them.
 
----
-
-The other day, I saw an IG reel from the *Daily Scripture with Tim Wildsmith* podcast. His wife, Becca, said something simple that stuck with me:
+The other day, I saw an IG reel from the [*Daily Scripture with Tim Wildsmith*](https://daily-scripture.captivate.fm/listen) podcast. His wife, Becca, said something simple that stuck with me:
 
 > **“Rest is a command.”**
 
@@ -52,8 +48,6 @@ Not a suggestion. Not a luxury. Not something we get to when everything else is 
 A command.
 
 And it hit me because that’s usually the first thing I sacrifice when life gets full.
-
----
 
 Scripture actually makes this pattern really clear.
 
@@ -65,8 +59,6 @@ But even in the middle of ministry, Jesus told His disciples in *Mark 6:31*,
 Not after everything was done. Not when it was convenient.
 
 Right in the middle of the work.
-
----
 
 This season has been a reminder that when life moves from *full* to *crowded*, a few things matter more than ever:
 
@@ -86,8 +78,6 @@ And right in the middle of all of it…
 Not as an afterthought. Not as a reward. But as something built into the rhythm of life.
 
 Because without it, even the things we love start to feel heavy.
-
----
 
 So this isn’t a “real post” in the traditional sense.
 
@@ -109,5 +99,5 @@ Learning how to build structure, choose wisely, stay disciplined, endure faithfu
 
 **What’s been taking up most of your time lately—and is it aligned with what matters most?**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQyOTI0ODk1XX0=
+eyJoaXN0b3J5IjpbLTYxNDgwNzI0OV19
 -->
