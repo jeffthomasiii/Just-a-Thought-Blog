@@ -51,7 +51,7 @@ I’ve got about four blog posts sitting in different stages right now. Some are
 
 They’ve been on my mind… I just haven’t had the margin to finish them.
 
-The other day, I saw an IG reel from the *Daily Scripture with Tim Wildsmith* podcast. His wife, Becca, said something simple that stuck with me:
+The other day, I saw an IG reel from the [*Daily Scripture with Tim Wildsmith*](https://daily-scripture.captivate.fm/listen) podcast. His wife, Becca, said something simple that stuck with me:
 
 > **“Rest is a command.”**
 
@@ -111,5 +111,5 @@ Learning how to build structure, choose wisely, stay disciplined, endure faithfu
 …just a thought.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MjQ2ODc3NV19
+eyJoaXN0b3J5IjpbMTcxMTYxNTk0NiwtMjYyNDY4Nzc1XX0=
 -->
