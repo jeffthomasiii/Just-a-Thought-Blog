@@ -64,12 +64,12 @@ And it hit me because that’s usually the first thing I sacrifice when life get
 Scripture actually makes this pattern really clear.
 
 In *Ecclesiastes 3:1 (ESV)*, it says,  
-> *“For everything there is a season, and a time for every matter under heaven.”*
+> *“For everything there is a season, and a time for every matter under heaven:”*
 
 Seasons are part of how God designed life. Some seasons are fast, full, and demanding.
 
-But even in the middle of ministry, Jesus told His disciples in *Mark 6:31 (ESV)*,  
-> *“Come away by yourselves to a desolate place and rest a while.”*
+But even in the middle of ministry, Jesus told His disciples in *Mark 6:31a (ESV)*,  
+> *“...Come away by yourselves to a desolate place and rest a while.”*
 
 Not after everything was done. Not when it was convenient.
 
