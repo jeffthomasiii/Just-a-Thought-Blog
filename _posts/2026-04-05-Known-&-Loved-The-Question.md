@@ -17,6 +17,8 @@ excerpt: "Can you truly love someone if you don’t really know them—and can y
 image: /img/posts/can-you-love-without-knowing.jpg
 background: /img/posts/bg-can-you-love-without-knowing.jpg
 scripture: "Psalm 139:1–4"
+series: "10 Skills Every Man Should Have"
+series_order: 1
 ---
 
 Can you really love someone… if you don’t actually know them?
@@ -113,5 +115,5 @@ but whether we’re willing to be seen.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjM1Nzg1NDhdfQ==
+eyJoaXN0b3J5IjpbNzAwMDkwNDk3LC0xMjYzNTc4NTQ4XX0=
 -->
