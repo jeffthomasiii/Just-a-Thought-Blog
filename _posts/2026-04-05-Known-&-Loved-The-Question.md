@@ -23,7 +23,7 @@ Can you really love someone… if you don’t actually know them?
 
 And maybe the harder question…
 
-Can you truly be loved… if parts of you remain unseen?
+> Can you truly be loved… if parts of you remain unseen?
 
 I was listening to a podcast recently, and something a guest said caught my attention. It wasn’t loud or overly dramatic, just simple and honest. He said, in his own way, that you can’t really love without vulnerability. You can feel attraction. You can feel desire. But to actually be loved… requires being known.
 
@@ -91,11 +91,7 @@ It’s not always dramatic. Sometimes it’s just subtle distance. A quiet gap t
 
 And yet, at the same time, there’s something in us that longs for the opposite.
 
-To be fully seen.
-
-Fully understood.
-
-And still chosen.
+> To be fully seen. Fully understood. And still chosen.
 
 Not because we performed well. Not because we presented the right version of ourselves. But because we were known… and loved anyway.
 
@@ -117,5 +113,5 @@ but whether we’re willing to be seen.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDgyNDY5NThdfQ==
+eyJoaXN0b3J5IjpbLTEyNjM1Nzg1NDhdfQ==
 -->
