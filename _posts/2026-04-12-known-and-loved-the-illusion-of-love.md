@@ -19,12 +19,7 @@ series: "Known & Loved"
 series_order: 2
 ---
 
-We say we love people.
-
-And most of the time, we mean it.
-
-But sometimes I wonder…
-
+We say we love people. And most of the time, we mean it. But sometimes I wonder…
 Do we actually love them?
 
 Or do we love what we see?
@@ -149,5 +144,5 @@ or as we’ve imagined them to be?
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njk0MTY4OTZdfQ==
+eyJoaXN0b3J5IjpbMTkwNTgzNDI5NiwtMTQ2OTQxNjg5Nl19
 -->
