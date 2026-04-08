@@ -136,12 +136,11 @@ That requires something more.
 
 And maybe that’s where the question turns back on us.
 
-Are we loving people as they are…
+> Are we loving people as they are…
 
 or as we’ve imagined them to be?
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTgyMzE1MTgsLTE0Njk0MTY4OTZdfQ
-==
+eyJoaXN0b3J5IjpbLTYzNzEzOTY0NCwtMTQ2OTQxNjg5Nl19
 -->
