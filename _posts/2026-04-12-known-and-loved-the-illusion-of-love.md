@@ -84,7 +84,7 @@ Tension that didn’t exist before.
 
 Because now you’re faced with a choice.
 
-Do I adjust my understanding of this person… or do I hold onto the version I was more comfortable with?
+> Do I adjust my understanding of this person… or do I hold onto the version I was more comfortable with?
 
 That’s where a lot of relationships stall.
 
@@ -142,5 +142,6 @@ or as we’ve imagined them to be?
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNzEzOTY0NCwtMTQ2OTQxNjg5Nl19
+eyJoaXN0b3J5IjpbLTE4MjU1MTk1MTgsLTE0Njk0MTY4OTZdfQ
+==
 -->
