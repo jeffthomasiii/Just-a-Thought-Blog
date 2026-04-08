@@ -20,9 +20,7 @@ series_order: 2
 ---
 
 We say we love people. And most of the time, we mean it. But sometimes I wonder…
-Do we actually love them?
-
-Or do we love what we see?
+Do we actually love them? Or do we love what we see?
 
 There’s a difference.
 
@@ -144,5 +142,6 @@ or as we’ve imagined them to be?
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNTgzNDI5NiwtMTQ2OTQxNjg5Nl19
+eyJoaXN0b3J5IjpbLTE3OTgyMzE1MTgsLTE0Njk0MTY4OTZdfQ
+==
 -->
