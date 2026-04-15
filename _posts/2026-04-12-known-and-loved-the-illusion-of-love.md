@@ -141,7 +141,4 @@ And maybe that’s where the question turns back on us.
 or as we’ve imagined them to be?
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjU1MTk1MTgsLTE0Njk0MTY4OTZdfQ
-==
 -->
