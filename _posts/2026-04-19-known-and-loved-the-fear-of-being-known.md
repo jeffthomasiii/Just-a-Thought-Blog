@@ -19,25 +19,10 @@ series: "Known & Loved"
 series_order: 3
 ---
 
-Most people want to be loved.
+Most people want to be loved. Not casually. Not temporarily. Deeply. The kind of love that feels steady. Safe. Unshaken. But being loved like that comes with something we don’t always talk about. Being known. And that’s where things get complicated.
+> Because as much as we want to be loved, there’s a part of us that hesitates to be fully seen.
 
-Not casually. Not temporarily.
-
-Deeply.
-
-The kind of love that feels steady. Safe. Unshaken.
-
-But being loved like that comes with something we don’t always talk about.
-
-Being known.
-
-And that’s where things get complicated.
-
-Because as much as we want to be loved, there’s a part of us that hesitates to be fully seen.
-
-Not because we’re trying to deceive anyone.
-
-But because we’re aware of what’s there.
+Not because we’re trying to deceive anyone. But because we’re aware of what’s there.
 
 The thoughts we don’t always say out loud.
 
@@ -117,5 +102,5 @@ Maybe it’s learning how to be known… without retreating.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mzc1MjA0XX0=
+eyJoaXN0b3J5IjpbLTEzNzM5NDU0NTYsLTE1Mzc1MjA0XX0=
 -->
