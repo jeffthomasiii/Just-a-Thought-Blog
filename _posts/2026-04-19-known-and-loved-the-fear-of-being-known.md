@@ -22,46 +22,13 @@ series_order: 3
 Most people want to be loved. Not casually. Not temporarily. Deeply. The kind of love that feels steady. Safe. Unshaken. But being loved like that comes with something we don’t always talk about. Being known. And that’s where things get complicated.
 > Because as much as we want to be loved, there’s a part of us that hesitates to be fully seen.
 
-Not because we’re trying to deceive anyone. But because we’re aware of what’s there.
+Not because we’re trying to deceive anyone. But because we’re aware of what’s there. The thoughts we don’t always say out loud. The insecurities we try to manage quietly. The parts of our story we’re not sure how others will respond to. And somewhere along the way, we learn how to navigate that. We learn what to share. What to hold back. What to refine before it’s ever spoken.
+>We learn how to be present… without being fully exposed.
 
-The thoughts we don’t always say out loud.
+And it works. At least on the surface. We build relationships. We connect with people. We create environments where things feel comfortable. But underneath that comfort, there’s often a quiet tension. Because there’s a difference between being accepted for what’s visible…
 
-The insecurities we try to manage quietly.
-
-The parts of our story we’re not sure how others will respond to.
-
-And somewhere along the way, we learn how to navigate that.
-
-We learn what to share.
-
-What to hold back.
-
-What to refine before it’s ever spoken.
-
-We learn how to be present… without being fully exposed.
-
-And it works.
-
-At least on the surface.
-
-We build relationships.
-
-We connect with people.
-
-We create environments where things feel comfortable.
-
-But underneath that comfort, there’s often a quiet tension.
-
-Because there’s a difference between being accepted for what’s visible…
-
-and being known in what’s hidden.
-
-And most of us are aware of that difference, even if we don’t always acknowledge it.
-
-It shows up in hesitation.
-
-In the moments where honesty feels risky.
-
+and being known in what’s hidden. And most of us are aware of that difference, even if we don’t always acknowledge it. 
+It shows up in hesitation. In the moments where honesty feels risky. 
 In the instinct to adjust how we say something so it lands better.
 
 In the decision to keep certain things to ourselves, not because they’re unimportant…
@@ -102,5 +69,5 @@ Maybe it’s learning how to be known… without retreating.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzM5NDU0NTYsLTE1Mzc1MjA0XX0=
+eyJoaXN0b3J5IjpbMjA5NjgwOTkzNiwtMTUzNzUyMDRdfQ==
 -->
