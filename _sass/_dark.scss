@@ -106,4 +106,20 @@ body.dark-mode .search-wrap select:focus {
   border-color: rgba(162, 177, 121, 0.75);
   box-shadow: 0 0 0 0.2rem rgba(162, 177, 121, 0.18);
 }
+/* =========================
+   Blockquotes (Dark Mode)
+   ========================= */
 
+body.dark-mode blockquote {
+  color: #e6e6e6;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-left: 2px solid rgba(162, 177, 121, 0.4);
+}
+
+body.dark-mode blockquote::before {
+  color: rgba(162, 177, 121, 0.8);
+}
+
+body.dark-mode blockquote p {
+  margin: 0 0 0 1rem;
+}
