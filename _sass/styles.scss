@@ -104,3 +104,31 @@
     }
   }
 }
+/* =========================
+   Blockquotes
+   Soft + Signature Feel
+   ========================= */
+
+blockquote {
+  margin: 2rem 0;
+  padding: 0.75rem 1.25rem;
+  position: relative;
+  color: #4a4a4a;
+  font-style: italic;
+  background-color: rgba(232, 225, 217, 0.25);
+  border-radius: 4px;
+  border-left: 2px solid rgba(122, 138, 107, 0.3);
+}
+
+blockquote::before {
+  content: "|";
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  color: rgba(122, 138, 107, 0.7);
+  font-weight: 600;
+}
+
+blockquote p {
+  margin: 0 0 0 1rem;
+}
