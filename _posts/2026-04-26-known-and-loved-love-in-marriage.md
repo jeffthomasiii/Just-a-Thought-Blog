@@ -19,45 +19,14 @@ series: "Known & Loved"
 series_order: 4
 ---
 
-Marriage creates closeness. Shared space. Shared responsibilities. Shared routines. Over time, it can feel like two lives have fully merged into one. And in many ways, they have. But there’s a difference between sharing a life and sharing yourself. Because it’s possible to be physically close, emotionally steady, and practically aligned while still holding parts of yourself at a distance. Not out of rebellion.
+Marriage creates closeness. Shared space. Shared responsibilities. Shared routines. Over time, it can feel like two lives have fully merged into one. And in many ways, they have. But there’s a difference between sharing a life and sharing yourself. Because it’s possible to be physically close, emotionally steady, and practically aligned while still holding parts of yourself at a distance. 
 
-Not out of disconnect.
+Not out of rebellion. Not out of disconnect. Just out of habit. Or caution. Or maybe even peacekeeping. You learn what works. What keeps things smooth. What avoids unnecessary tension.
+> And slowly, without realizing it, certain conversations don’t happen anymore.
 
-Just out of habit.
+Certain thoughts stay unspoken. Certain feelings are processed privately instead of shared openly. And nothing feels broken. But something feels quieter. Less known. Less connected.
 
-Or caution.
-
-Or maybe even peacekeeping.
-
-You learn what works.
-
-What keeps things smooth.
-
-What avoids unnecessary tension.
-
-And slowly, without realizing it, certain conversations don’t happen anymore.
-
-Certain thoughts stay unspoken.
-
-Certain feelings are processed privately instead of shared openly.
-
-And nothing feels broken.
-
-But something feels… quieter.
-
-Less known.
-
-Less connected.
-
-It’s not always obvious.
-
-There’s no major conflict.
-
-No clear divide.
-
-Just a subtle distance that shows up in small ways.
-
-In conversations that stay surface-level.
+It’s not always obvious. There’s no major conflict. No clear divide. Just a subtle distance that shows up in small ways. In conversations that stay surface-level.
 
 In moments where honesty is softened or redirected.
 
@@ -109,5 +78,5 @@ or just shared existence.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE1NzI5NTYyXX0=
+eyJoaXN0b3J5IjpbLTEzODE4MjAyNzRdfQ==
 -->
