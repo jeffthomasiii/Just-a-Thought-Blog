@@ -19,27 +19,7 @@ series: "Known & Loved"
 series_order: 4
 ---
 
-Marriage creates closeness.
-
-Shared space.
-
-Shared responsibilities.
-
-Shared routines.
-
-Over time, it can feel like two lives have fully merged into one.
-
-And in many ways, they have.
-
-But there’s a difference between sharing a life…
-
-and sharing yourself.
-
-Because it’s possible to be physically close, emotionally steady, and practically aligned…
-
-while still holding parts of yourself at a distance.
-
-Not out of rebellion.
+Marriage creates closeness. Shared space. Shared responsibilities. Shared routines. Over time, it can feel like two lives have fully merged into one. And in many ways, they have. But there’s a difference between sharing a life and sharing yourself. Because it’s possible to be physically close, emotionally steady, and practically aligned while still holding parts of yourself at a distance. Not out of rebellion.
 
 Not out of disconnect.
 
@@ -129,5 +109,5 @@ or just shared existence.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMTY5NDY3Ml19
+eyJoaXN0b3J5IjpbNTE1NzI5NTYyXX0=
 -->
