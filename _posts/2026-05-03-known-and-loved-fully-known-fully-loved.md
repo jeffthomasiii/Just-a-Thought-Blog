@@ -19,25 +19,10 @@ series: "Known & Loved"
 series_order: 5
 ---
 
-There’s something we all seem to be looking for.
+There’s something we all seem to be looking for. Even if we don’t always say it out loud.
+> To be fully known and still fully loved.
 
-Even if we don’t always say it out loud.
-
-To be fully known.
-
-And still fully loved.
-
-Not partially known.
-
-Not selectively understood.
-
-But completely seen.
-
-Nothing hidden.
-
-Nothing managed.
-
-Nothing filtered.
+Not partially known. Not selectively understood. But completely seen. Nothing hidden. Nothing managed. Nothing filtered.
 
 And still… accepted.
 
@@ -119,5 +104,5 @@ It’s built on who He is.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzE1NTgzMDBdfQ==
+eyJoaXN0b3J5IjpbLTY2ODM1OTQxNCwtMTQ3MTU1ODMwMF19
 -->
