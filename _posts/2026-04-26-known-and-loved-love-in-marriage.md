@@ -26,51 +26,15 @@ Not out of rebellion. Not out of disconnect. Just out of habit. Or caution. Or m
 
 Certain thoughts stay unspoken. Certain feelings are processed privately instead of shared openly. And nothing feels broken. But something feels quieter. Less known. Less connected.
 
-It’s not always obvious. There’s no major conflict. No clear divide. Just a subtle distance that shows up in small ways. In conversations that stay surface-level.
+It’s not always obvious. There’s no major conflict. No clear divide. Just a subtle distance that shows up in small ways. In conversations that stay surface-level. In moments where honesty is softened or redirected. In the quiet realization that some parts of you haven’t been fully shared in a long time.
 
-In moments where honesty is softened or redirected.
+And over time, that distance can become normal. Expected, even. Because everything else still works. The structure is there. The commitment is there. The life you’ve built together is still intact. But the question underneath it all remains.
+> Are we actually known by each other?
 
-In the quiet realization that some parts of you haven’t been fully shared in a long time.
+Or just understood in the roles we’ve learned to play? Because marriage isn’t just about proximity. It’s about intimacy. And intimacy requires more than time spent together. It requires presence. Honesty. A willingness to let the other person see you not just live alongside you. And that kind of openness doesn’t happen automatically.
+> It has to be chosen. Again and again.
 
-And over time, that distance can become normal.
-
-Expected, even.
-
-Because everything else still works.
-
-The structure is there.
-
-The commitment is there.
-
-The life you’ve built together is still intact.
-
-But the question underneath it all remains.
-
-Are we actually known by each other?
-
-Or just understood in the roles we’ve learned to play?
-
-Because marriage isn’t just about proximity.
-
-It’s about intimacy.
-
-And intimacy requires more than time spent together.
-
-It requires presence.
-
-Honesty.
-
-A willingness to let the other person see you… not just live alongside you.
-
-And that kind of openness doesn’t happen automatically.
-
-It has to be chosen.
-
-Again and again.
-
-Not just in the big moments.
-
-But in the small, everyday ones where it would be easier to stay quiet.
+Not just in the big moments. But in the small, everyday ones where it would be easier to stay quiet.
 
 Because over time, those small moments are what determine whether a marriage becomes a place of true connection…
 
@@ -78,5 +42,5 @@ or just shared existence.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODE4MjAyNzRdfQ==
+eyJoaXN0b3J5IjpbMTUxOTAzMjY3Ml19
 -->
