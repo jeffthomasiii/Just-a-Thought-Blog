@@ -23,32 +23,10 @@ There’s something we all seem to be looking for. Even if we don’t always say
 > To be fully known and still fully loved.
 
 Not partially known. Not selectively understood. But completely seen. Nothing hidden. Nothing managed. Nothing filtered, and still… accepted. That’s the kind of love people spend a lifetime trying to find, In relationships, In friendships, In marriage. And while we can experience pieces of that with others there’s always a limit.
+> Because people, no matter how well-intentioned, can only know what’s been revealed.
 
-Because people, no matter how well-intentioned, can only know what’s been revealed.
-
-And even then, understanding isn’t always perfect.
-
-But there is one place where this kind of love already exists.
-
-Where nothing is hidden.
-
-Nothing is misunderstood.
-
-Nothing is unknown.
-
-And yet, nothing changes the posture of love.
-
-God doesn’t love a version of us.
-
-He doesn’t love what we present.
-
-He doesn’t respond to a filtered version of who we are.
-
-He sees all of it.
-
-Fully.
-
-Clearly.
+And even then, understanding isn’t always perfect. But there is one place where this kind of love already exists. One where nothing is hidden, misunderstood or unknown. And yet, nothing changes the posture of love. God doesn’t love a version of us. He doesn’t love what we present. He doesn’t respond to a filtered version of who we are.
+> He sees all of it. Fully. Clearly.
 
 Completely.
 
@@ -90,6 +68,6 @@ It’s built on who He is.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIzMzA0MjU0LC02NjgzNTk0MTQsLTE0Nz
-E1NTgzMDBdfQ==
+eyJoaXN0b3J5IjpbMTQ3ODI0OTMyMywtNjY4MzU5NDE0LC0xND
+cxNTU4MzAwXX0=
 -->
