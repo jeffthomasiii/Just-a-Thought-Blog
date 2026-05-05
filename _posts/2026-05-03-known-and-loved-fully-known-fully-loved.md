@@ -22,21 +22,7 @@ series_order: 5
 There’s something we all seem to be looking for. Even if we don’t always say it out loud.
 > To be fully known and still fully loved.
 
-Not partially known. Not selectively understood. But completely seen. Nothing hidden. Nothing managed. Nothing filtered.
-
-And still… accepted.
-
-That’s the kind of love people spend a lifetime trying to find.
-
-In relationships.
-
-In friendships.
-
-In marriage.
-
-And while we can experience pieces of that with others…
-
-there’s always a limit.
+Not partially known. Not selectively understood. But completely seen. Nothing hidden. Nothing managed. Nothing filtered, and still… accepted. That’s the kind of love people spend a lifetime trying to find, In relationships, In friendships, In marriage. And while we can experience pieces of that with others there’s always a limit.
 
 Because people, no matter how well-intentioned, can only know what’s been revealed.
 
@@ -104,5 +90,6 @@ It’s built on who He is.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2ODM1OTQxNCwtMTQ3MTU1ODMwMF19
+eyJoaXN0b3J5IjpbMjIzMzA0MjU0LC02NjgzNTk0MTQsLTE0Nz
+E1NTgzMDBdfQ==
 -->
