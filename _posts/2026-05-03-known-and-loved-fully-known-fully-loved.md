@@ -26,22 +26,15 @@ Not partially known. Not selectively understood. But completely seen. Nothing hi
 > Because people, no matter how well-intentioned, can only know what’s been revealed.
 
 And even then, understanding isn’t always perfect. But there is one place where this kind of love already exists. One where nothing is hidden, misunderstood or unknown. And yet, nothing changes the posture of love. God doesn’t love a version of us. He doesn’t love what we present. He doesn’t respond to a filtered version of who we are.
-> He sees all of it. Fully. Clearly. Completely.
+> He sees all of it, fully, clearly, completely.
 
 And still chooses love. Not because everything is right. But because His love isn’t dependent on discovery. And It’s not fragile. It doesn’t adjust based on new information. It doesn’t pull back when something unexpected is revealed. It remains. And maybe that changes how we think about everything else. Because if the kind of love we’re looking for already exists then the question isn’t whether it can be found.
 
-It’s whether we’re willing to receive it. To stop managing. To stop filtering. To stop holding parts back.
-
-And to stand fully known…
-
-without fear.
-
-Because the foundation of that kind of love isn’t built on what we reveal.
-
-It’s built on who He is.
+It’s whether we’re willing to receive it. To stop managing. To stop filtering. To stop holding parts back. And to stand fully known without fear. Because the foundation of that kind of love isn’t built on what we reveal.
+> It’s built on who **He** is.
 
 …just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzY2NDMwNDQsLTY2ODM1OTQxNCwtMT
-Q3MTU1ODMwMF19
+eyJoaXN0b3J5IjpbOTIxOTYzNjU0LC02NjgzNTk0MTQsLTE0Nz
+E1NTgzMDBdfQ==
 -->
