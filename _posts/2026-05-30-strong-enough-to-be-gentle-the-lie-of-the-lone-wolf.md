@@ -28,23 +28,23 @@ Now, before anyone writes me a lengthy email about wolf biology, I realize analo
 
 The lone wolf is independent. He doesn't need anyone. He trusts no one. He stands alone and answers to no one. In many circles, that image has become a symbol of strength.
 
-The more I thought about it, though, the more I wondered if we have confused isolation with strength.
+> The more I thought about it, though, the more I wondered if we have confused isolation with strength.
 
 Many men today are trying to figure out what it means to be masculine. Some have watched passivity produce weak leadership, broken families, and men who refuse to take responsibility. Others have reacted by embracing a version of masculinity that seems defined almost entirely by dominance, aggression, and emotional detachment.
 
-Neither extreme looks much like the men we find in Scripture.
+> Neither extreme looks much like the men we find in Scripture.
 
 When I read about biblical manhood, I don't see weak men, but I also don't see hard-hearted men. I see men who are called to courage, conviction, responsibility, and leadership. At the same time, they are called to humility, self-control, compassion, and love. The tension between those qualities is where I think many men struggle.
 
 It is easy to mistake hardness for strength. A man can become emotionally distant and call it discipline. He can become controlling and call it leadership. He can refuse to be vulnerable and call it toughness. But none of those things necessarily indicate strength. Sometimes they simply reveal fear hidden behind a different name.
 
-That is one reason I appreciate the idea of the warrior poet.
+> That is one reason I appreciate the idea of the warrior poet.
 
 The warrior poet is strong, but his strength is not his entire identity. He knows how to fight when necessary, but he also knows what is worth protecting. He possesses conviction without becoming harsh and courage without becoming arrogant. He understands that strength exists for a purpose beyond itself.
 
 In many ways, King David embodies this tension. David was a warrior who faced giants, led armies, and defended his people. Yet he was also a poet who poured out his fears, failures, hopes, and praises before God. The same man who stood before Goliath also wrote some of the most vulnerable words in Scripture.
 
-That combination is striking because our culture often tells men they must choose between strength and tenderness. David demonstrates that mature masculinity requires both.
+> That combination is striking because our culture often tells men they must choose between strength and tenderness. David demonstrates that mature masculinity requires both.
 
 The same principle applies to marriage. Scripture teaches that husbands have a responsibility to lead their families, but biblical leadership has never been about domination. Ephesians 5 does not point husbands toward self-serving authority; it points them toward Christ. Husbands are called to love their wives as Christ loved the church and gave Himself up for her.
 
@@ -54,7 +54,7 @@ When I think about the men I have respected most throughout my life, very few fi
 
 Perhaps that is because genuine strength is not measured by how many people you can control. It is measured by how well you can control yourself.
 
-Ultimately, every discussion about masculinity eventually leads me back to Jesus.
+> Ultimately, every discussion about masculinity eventually leads me back to Jesus.
 
 Christ was not passive. He confronted corruption, spoke truth boldly, endured suffering willingly, and remained faithful all the way to the cross. Yet He was also compassionate toward the broken, patient with the struggling, and gentle with those who came to Him in humility.
 
@@ -72,5 +72,5 @@ But a masculinity that reflects Christ. A masculinity that is courageous enough 
 
 I'll leave you with this question to consider, *When the people closest to you experience your strength, do they also experience your gentleness?*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMzOTI1ODcwXX0=
+eyJoaXN0b3J5IjpbMTYwNjQwMTE2OF19
 -->
