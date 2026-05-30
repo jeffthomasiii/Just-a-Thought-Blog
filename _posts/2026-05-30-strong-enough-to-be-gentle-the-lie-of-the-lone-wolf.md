@@ -70,9 +70,7 @@ But a masculinity that reflects Christ. A masculinity that is courageous enough 
 
 ...just a thought.
 
-I'll leave you with thisA Question to Consider
-
-When the people closest to you experience your strength, do they also experience your gentleness?
+I'll leave you with this question to consider, *When the people closest to you experience your strength, do they also experience your gentleness?*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMzcyNzUzNV19
+eyJoaXN0b3J5IjpbNzMzOTI1ODcwXX0=
 -->
