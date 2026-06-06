@@ -2,66 +2,93 @@
 layout: default
 ---
 
-<!-- Page Header -->
-{% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-  {% else %}
-  <header class="masthead">
-    {% endif %}
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <h1>{{ site.title }}</h1>
-            {% if site.description %}
-            <span class="subheading">{{ site.description }}</span>
-            {% endif %}
-          </div>
+{% assign latest_post = site.posts | first %}
+
+<header class="jat-home-hero">
+  <div class="container jat-wide-container">
+    <div class="jat-hero-grid">
+      <div class="jat-hero-copy">
+        <p class="jat-eyebrow">Reflective Christian Writing</p>
+        <h1>The Thoughts<br>That Shape Us</h1>
+        <div class="jat-hero-divider" aria-hidden="true">
+          <span></span>
+          <img src="{{ site.baseurl }}/img/jat-olive-branch.png" alt="">
+          <span></span>
+        </div>
+        <p class="jat-hero-description">
+          Reflecting on faith, marriage, leadership, culture, technology, camping, and the ordinary moments where God teaches extraordinary things.
+        </p>
+        <div class="jat-hero-buttons">
+          <a class="btn jat-btn jat-btn-primary" href="{{ "/posts" | relative_url }}">Read the Blog</a>
+          <a class="btn jat-btn jat-btn-secondary" href="{{ "/search/?q=Podcast" | relative_url }}">Listen to the Podcast</a>
         </div>
       </div>
-    </div>
-  </header>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-
-        {{ content }}
-
-        <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
-
-        <article class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-  <h2 class="post-title">{{ post.title }}</h2>
-  {% if post.subtitle %}
-    <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-  {% endif %}
-</a>
-{% if post.excerpt %}
-  <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-{% endif %}
-          <p class="post-meta">Posted by
-            {% if post.author %}
-            {{ post.author }}
-            {% else %}
-            {{ site.author }}
-            {% endif %}
-            on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
-          </p>
-        </article>
-
-        <hr>
-
-        {% endfor %}
-
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
-        </div>
-
+      <div class="jat-hero-image-wrap">
+        <div class="jat-hero-image" style="background-image: url('{{ page.background | default: '/img/bg-index.jpg' | prepend: site.baseurl | replace: '//', '/' }}');"></div>
       </div>
     </div>
   </div>
+</header>
+
+<main class="jat-home-main">
+  <div class="container jat-wide-container">
+    {{ content }}
+
+    {% if latest_post %}
+    <section class="jat-featured-reflection jat-section-divider" aria-labelledby="latest-reflection-heading">
+      <div class="jat-section-label">Latest Reflection</div>
+      <div class="jat-featured-grid">
+        <div class="jat-featured-image" {% if latest_post.image %}style="background-image: url('{{ latest_post.image | prepend: site.baseurl | replace: '//', '/' }}');"{% elsif latest_post.background %}style="background-image: url('{{ latest_post.background | prepend: site.baseurl | replace: '//', '/' }}');"{% else %}style="background-image: url('{{ site.baseurl }}/img/bg-post.jpg');"{% endif %}></div>
+        <article class="jat-featured-copy">
+          <p class="jat-eyebrow">Latest Reflection</p>
+          <h2 id="latest-reflection-heading">
+            <a href="{{ latest_post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ latest_post.title }}</a>
+          </h2>
+          {% if latest_post.subtitle %}
+            <p class="jat-featured-subtitle">{{ latest_post.subtitle }}</p>
+          {% endif %}
+          {% if latest_post.excerpt %}
+            <p>{{ latest_post.excerpt | strip_html | truncatewords: 32 }}</p>
+          {% endif %}
+          <a class="jat-text-link" href="{{ latest_post.url | prepend: site.baseurl | replace: '//', '/' }}">Read the Reflection →</a>
+        </article>
+      </div>
+    </section>
+    {% endif %}
+
+    <section class="jat-latest-list jat-section-divider" aria-labelledby="recent-reflections-heading">
+      <div class="jat-section-label">Recent Reflections</div>
+      <h2 id="recent-reflections-heading" class="jat-section-title">More Thoughts to Sit With</h2>
+
+      <div class="jat-post-list">
+        {% for post in site.posts offset:1 limit:4 %}
+        <article class="post-preview jat-post-preview">
+          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+            <h3 class="post-title">{{ post.title }}</h3>
+            {% if post.subtitle %}
+              <p class="post-subtitle">{{ post.subtitle }}</p>
+            {% endif %}
+          </a>
+          {% if post.excerpt %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
+          {% endif %}
+          <p class="post-meta">
+            Posted by
+            {% if post.author %}
+              {{ post.author }}
+            {% else %}
+              {{ site.author }}
+            {% endif %}
+            on {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
+          </p>
+        </article>
+        {% endfor %}
+      </div>
+
+      <div class="clearfix jat-home-more">
+        <a class="btn jat-btn jat-btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts →</a>
+      </div>
+    </section>
+  </div>
+</main>
