@@ -1,6 +1,6 @@
-title:              Just a Thought Blog
+title:              Just A Thought Blog
 email:              jeff.thomas.iii@gmail.com
-description:        A blog of reflection on faith, marriage, culture, technology, and camping.
+description:        Reflecting on faith, life, and the thoughts that shape us.
 author:             Jeff Thomas III
 baseurl:            "/Just-a-Thought-Blog"
 url:                "https://jeffthomasiii.github.io"
@@ -22,4 +22,4 @@ paginate_path:      "/posts/page:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+  - jekyll-sitemap
