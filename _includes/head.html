@@ -11,8 +11,9 @@
 
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 
@@ -21,25 +22,24 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
   <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/img/favicon-lightbulb-dove.png">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/img/favicon-lightbulb-dove.png">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/img/favicon-lightbulb-dove.png">
-<meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/img/favicon-lightbulb-dove.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/img/favicon-lightbulb-dove.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/img/favicon-lightbulb-dove.png">
+  <meta name="theme-color" content="#F6F1E7">
 
   <!-- Social and Mobile Branding -->
-<meta name="apple-mobile-web-app-title" content="Just A Thought">
-<meta name="application-name" content="Just A Thought">
-<meta property="og:image" content="{{ site.baseurl }}/img/jat-olive-branch.png">
+  <meta name="apple-mobile-web-app-title" content="Just A Thought">
+  <meta name="application-name" content="Just A Thought">
+  <meta property="og:image" content="{{ site.baseurl }}/img/jat-olive-branch.png">
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RC46R5NC79"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RC46R5NC79"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-RC46R5NC79');
-</script>
+    gtag('config', 'G-RC46R5NC79');
+  </script>
 
-  
 </head>
