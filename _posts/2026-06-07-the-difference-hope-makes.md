@@ -49,23 +49,17 @@ In Scripture, when Paul writes in Romans 5 that suffering produces endurance, en
 
 None of us plans for suffering. None of us volunteers for grief. None of us wakes up hoping for a difficult diagnosis, a season of uncertainty, or a painful loss. Yet these realities eventually find all of us. The question is not whether we will face hardship but what will sustain us when we do.
 
-As I thought more about hope, I realized that not all hopes carry the same weight.
+> As I thought more about hope, I realized that not all hopes carry the same weight.
 
-Some hopes are tied to outcomes. We hope the treatment works. We hope the relationship heals. We hope the financial pressure eases. We hope our children make wise decisions. We hope the diagnosis is wrong. We hope the phone call comes. We hope the door opens.
-
-There is nothing wrong with any of those hopes. In fact, it would be difficult to live without them.
-
-The challenge is that all of them depend upon circumstances that remain outside our control.
+Some hopes are tied to outcomes. We hope the treatment works. We hope the relationship heals. We hope the financial pressure eases. We hope our children make wise decisions. We hope the diagnosis is wrong. We hope the phone call comes. We hope the door opens. There is nothing wrong with any of those hopes. In fact, it would be difficult to live without them. The challenge is that all of them depend upon circumstances that remain outside our control.
 
 Anyone who has lived long enough knows that some prayers are answered exactly as we hoped, while others are answered very differently than we expected. Some relationships are restored. Some are not. Some illnesses are healed. Others are carried until the end of life. Some dreams become reality. Others remain unfinished.
 
-If our hope rests entirely upon a specific outcome, then our hope becomes vulnerable to whatever happens next.
+> If our hope rests entirely upon a specific outcome, then our hope becomes vulnerable to whatever happens next.
 
 That may be one reason Scripture consistently directs our attention beyond present circumstances. The Bible never tells us to pretend suffering isn't real, nor does it encourage us to deny grief, disappointment, or loss. Instead, it anchors hope in something larger than any single chapter of our lives.
 
-The Christian hope is not ultimately that life will go according to plan.
-
-The Christian hope is that God remains faithful even when life does not.
+The Christian hope is not ultimately that life will go according to plan. The Christian hope is that God remains faithful even when life does not.
 
 It is the conviction that Christ has defeated death, that His promises remain true, and that no suffering we experience today will have the final word. It is the confidence that history is moving toward a conclusion secured not by human effort but by the work of Christ Himself.
 
@@ -95,5 +89,5 @@ And when hope is anchored there, it becomes strong enough to endure almost anyth
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODA4MTk5ODddfQ==
+eyJoaXN0b3J5IjpbLTMyNjk3MzMxXX0=
 -->
