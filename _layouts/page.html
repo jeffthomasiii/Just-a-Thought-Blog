@@ -2,33 +2,35 @@
 layout: default
 ---
 
-<!-- Page Header -->
-{% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-  {% else %}
-  <header class="masthead">
-    {% endif %}
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <h1>{{ page.title }}</h1>
-            {% if page.description %}
-            <span class="subheading">{{ page.description }}</span>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+<style>
+  .jat-page-hero.masthead{margin-bottom:0;min-height:360px;background-position:center;background-size:cover;position:relative}.jat-page-hero .overlay{background:rgba(37,40,34,.22)}.jat-page-intro{background:#F6F1E7;border-bottom:1px solid rgba(79,93,58,.18);padding:2.75rem 0 2.25rem}.jat-page-intro h1{margin:0;color:#252822;font-family:'Playfair Display','Lora',serif;font-size:clamp(3rem,6vw,5rem);font-weight:600;line-height:1}.jat-page-intro .subheading{display:block;margin-top:.75rem;color:#4F5D3A;font-family:'Source Sans 3','Open Sans',sans-serif;font-size:1.35rem;font-weight:400;line-height:1.4}.jat-page-content{padding-top:3rem}@media(max-width:575.98px){.jat-page-hero.masthead{min-height:260px}.jat-page-intro{padding:2rem 0 1.75rem}.jat-page-intro h1{font-size:2.75rem}.jat-page-intro .subheading{font-size:1.1rem}}
+</style>
 
+{% if page.background %}
+<header class="masthead jat-page-hero" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+{% else %}
+<header class="masthead jat-page-hero">
+{% endif %}
+  <div class="overlay"></div>
+</header>
+
+<section class="jat-page-intro">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-
-        {{ content }}
-
+        <h1>{{ page.title }}</h1>
+        {% if page.description %}
+        <span class="subheading">{{ page.description }}</span>
+        {% endif %}
       </div>
     </div>
   </div>
+</section>
+
+<div class="container jat-page-content">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      {{ content }}
+    </div>
+  </div>
+</div>
