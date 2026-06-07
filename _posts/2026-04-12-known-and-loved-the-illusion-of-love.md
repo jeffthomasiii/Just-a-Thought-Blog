@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Known & Loved: The Illusion of Love"
+title: "The Illusion of Love"
 subtitle: "When what we love isn’t the full picture"
 description: "A reflection on how we often love versions of people rather than who they truly are."
 date: 2026-04-12
