@@ -6,6 +6,8 @@ layout: default
 {% assign recent_posts = site.posts | slice: 1, 4 %}
 {% assign series_groups = site.posts | where_exp: "post", "post.series" | group_by: "series" %}
 
+<style>.jat-card-image-missing{display:grid;place-items:center;background:linear-gradient(135deg,#EFE4D3,#F6F1E7);color:#4F5D3A;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.75rem}.jat-topic-coming-soon{cursor:default}.jat-topic-faith{background:linear-gradient(135deg,rgba(79,93,58,.25),rgba(246,241,231,.7)),url('{{ site.baseurl }}/img/bg-post.jpg');background-size:cover;background-position:center}.jat-topic-marriage{background:linear-gradient(135deg,rgba(79,93,58,.25),rgba(246,241,231,.7)),url('{{ site.baseurl }}/img/bg-index.jpg');background-size:cover;background-position:center}.jat-topic-leadership{background:linear-gradient(135deg,rgba(79,93,58,.25),rgba(246,241,231,.7)),url('{{ site.baseurl }}/img/bg-about.jpg');background-size:cover;background-position:center}.jat-topic-technology{background:linear-gradient(135deg,rgba(79,93,58,.25),rgba(246,241,231,.7)),url('{{ site.baseurl }}/img/bg-contact.jpg');background-size:cover;background-position:center}.jat-topic-camping{background:linear-gradient(135deg,rgba(79,93,58,.25),rgba(246,241,231,.7)),url('{{ site.baseurl }}/img/bg-post.jpg');background-size:cover;background-position:center}.jat-topic-culture{background:linear-gradient(135deg,rgba(79,93,58,.25),rgba(246,241,231,.7)),url('{{ site.baseurl }}/img/bg-index.jpg');background-size:cover;background-position:center}.jat-series-card .jat-series-item{display:grid;grid-template-columns:82px 1fr auto;gap:.75rem;align-items:center}.jat-series-thumb{display:block;width:82px;height:58px;background-size:cover;background-position:center;border-radius:2px}.jat-series-thumb-missing{display:grid;place-items:center;background:#EFE4D3;color:#4F5D3A;font-size:.65rem;font-weight:800;text-transform:uppercase}.jat-series-copy{display:flex!important;flex-direction:column;gap:.15rem;color:#252822!important;letter-spacing:0!important;text-transform:none!important}.jat-series-copy em{font-style:normal;color:#7A7468;font-size:.8rem}.jat-series-link{white-space:nowrap}.jat-series-empty{padding:1rem;background:rgba(255,255,255,.45);color:#7A7468}.jat-podcast-logo-img{width:100%;min-height:180px;object-fit:cover;border:1px solid rgba(79,93,58,.18);background:#F6F1E7}</style>
+
 <header class="jat-board-hero">
   <div class="container jat-board-container">
     <div class="jat-board-hero-grid">
@@ -52,10 +54,7 @@ layout: default
       <aside class="jat-scripture-card">
         <p class="jat-kicker">Scripture To Sit With</p>
         <div class="jat-quote-mark">“</div>
-        <blockquote>
-          <p>Be transformed by<br>the renewing of<br>your mind.</p>
-          <cite>Romans 12:2</cite>
-        </blockquote>
+        <blockquote><p>Be transformed by<br>the renewing of<br>your mind.</p><cite>Romans 12:2</cite></blockquote>
       </aside>
     </section>
 
@@ -85,50 +84,16 @@ layout: default
               <span class="jat-series-link">View Series →</span>
             </a>
           {% endfor %}
-        {% else %}
-          <div class="jat-series-empty">Series coming soon.</div>
-        {% endif %}
+        {% else %}<div class="jat-series-empty">Series coming soon.</div>{% endif %}
       </aside>
     </section>
 
     <section class="jat-engagement-row">
-      <aside class="jat-memory-card">
-        <p class="jat-kicker">Thought Worth Remembering</p>
-        <p>“Sometimes strength isn't standing over someone. Sometimes it's walking faithfully beside them.”</p>
-        <div class="jat-signature">...just a thought.</div>
-      </aside>
-
-      <aside class="jat-podcast-card">
-        <p class="jat-kicker">Podcast Spotlight</p>
-        <div class="jat-podcast-grid">
-          <img class="jat-podcast-logo-img" src="{{ site.baseurl }}/img/just-a-thought-podcast-logo.svg" alt="Just A Thought Podcast logo">
-          <div>
-            <h3>Just A Thought Podcast</h3>
-            <p>Coming soon.</p>
-            <a class="btn jat-btn jat-btn-primary" href="{{ '/search/?q=Podcast' | relative_url }}">Podcast Updates</a>
-          </div>
-        </div>
-      </aside>
-
-      <aside class="jat-newsletter-card">
-        <p class="jat-kicker">Thought Letter</p>
-        <h3>Coming Soon</h3>
-        <p>Reflections delivered to your inbox when the newsletter is ready.</p>
-      </aside>
+      <aside class="jat-memory-card"><p class="jat-kicker">Thought Worth Remembering</p><p>“Sometimes strength isn't standing over someone. Sometimes it's walking faithfully beside them.”</p><div class="jat-signature">...just a thought.</div></aside>
+      <aside class="jat-podcast-card"><p class="jat-kicker">Podcast Spotlight</p><div class="jat-podcast-grid"><img class="jat-podcast-logo-img" src="{{ site.baseurl }}/img/just-a-thought-podcast-logo.svg" alt="Just A Thought Podcast logo"><div><h3>Just A Thought Podcast</h3><p>Coming soon.</p><a class="btn jat-btn jat-btn-primary" href="{{ '/search/?q=Podcast' | relative_url }}">Podcast Updates</a></div></div></aside>
+      <aside class="jat-newsletter-card"><p class="jat-kicker">Thought Letter</p><h3>Coming Soon</h3><p>Reflections delivered to your inbox when the newsletter is ready.</p></aside>
     </section>
 
-    <section class="jat-recent-section">
-      <p class="jat-kicker">Recent Reflections</p>
-      <div class="jat-recent-grid">
-        {% for post in recent_posts %}
-        <article class="jat-recent-card">
-          <h3><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h3>
-          {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>{% endif %}
-          <a class="jat-text-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">Read More →</a>
-        </article>
-        {% endfor %}
-      </div>
-      <div class="jat-view-all"><a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">View All Posts →</a></div>
-    </section>
+    <section class="jat-recent-section"><p class="jat-kicker">Recent Reflections</p><div class="jat-recent-grid">{% for post in recent_posts %}<article class="jat-recent-card"><h3><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h3>{% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>{% endif %}<a class="jat-text-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">Read More →</a></article>{% endfor %}</div><div class="jat-view-all"><a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">View All Posts →</a></div></section>
   </div>
 </main>
