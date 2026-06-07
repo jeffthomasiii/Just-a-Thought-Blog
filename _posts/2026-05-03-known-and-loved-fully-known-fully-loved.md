@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Known & Loved: Fully Known, Fully Loved"
+title: "Fully Known, Fully Loved"
 subtitle: "The kind of love we’re all searching for"
 description: "A reflection on how God models the only perfect union of being fully known and fully loved."
 date: 2026-05-03
