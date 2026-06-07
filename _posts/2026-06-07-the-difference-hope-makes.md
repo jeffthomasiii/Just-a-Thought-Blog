@@ -31,19 +31,11 @@ Historians have written extensively about Shackleton's leadership, but one detai
 
 The ice remained dangerous. The cold remained relentless. The uncertainty never completely disappeared. What changed was their ability to endure it.
 
-That story has been sitting with me lately because it raises an interesting question: How much of human endurance is actually connected to hope?
+That story has been sitting with me lately because it raises an interesting question: *How much of human endurance is actually connected to hope?*
 
-The longer I live, the more convinced I become that hope may be one of the most powerful forces in human life. We often think of hope as something soft or sentimental, but in reality it may be one of the strongest motivators we possess.
+The longer I live, the more convinced I become that hope may be one of the most powerful forces in human life. We often think of hope as something soft or sentimental, but in reality it may be one of the strongest motivators we possess. People will endure astonishing hardship when they believe there is something waiting on the other side of it.
 
-People will endure astonishing hardship when they believe there is something waiting on the other side of it.
-
-A patient may agree to difficult treatments because there is hope that the treatment will work.
-
-A student may spend years studying because there is hope that the sacrifice will eventually open new opportunities.
-
-A husband and wife may continue working through painful conversations because there is hope that healing and understanding are still possible.
-
-Parents willingly endure sleepless nights, financial pressures, and countless sacrifices because they hope for the future of their children.
+A patient may agree to difficult treatments because there is hope that the treatment will work. A student may spend years studying because there is hope that the sacrifice will eventually open new opportunities. A husband and wife may continue working through painful conversations because there is hope that healing and understanding are still possible. Parents willingly endure sleepless nights, financial pressures, and countless sacrifices because they hope for the future of their children.
 
 In each of these examples, the hardship is real. Hope does not remove the struggle, but it gives the struggle meaning. It provides a reason to continue moving forward when stopping would be easier.
 
@@ -109,5 +101,5 @@ And when hope is anchored there, it becomes strong enough to endure almost anyth
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2ODY0Nzc5XX0=
+eyJoaXN0b3J5IjpbLTgxMDM0ODE3N119
 -->
