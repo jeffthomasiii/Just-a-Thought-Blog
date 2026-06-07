@@ -1,41 +1,33 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand" href="{{"/" | relative_url }}">{{ site.title | escape }}</a>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top jat-site-nav" id="mainNav">
+  <div class="container jat-nav-inner">
+    <a class="navbar-brand jat-nav-brand" href="{{"/" | relative_url }}" aria-label="Just A Thought Blog Home">
+      <img src="{{ site.baseurl }}/img/favicon-lightbulb-dove.png" alt="" class="jat-nav-logo">
+      <span class="jat-nav-wordmark">
+        <span>Just A Thought</span>
+        <small>Blog</small>
+      </span>
+    </a>
+
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       Menu
       <i class="fa fa-bars"></i>
     </button>
-<!-- Theme Toggle Button -->
-<button id="theme-toggle" aria-label="Toggle Dark Mode" class="theme-toggle">
-  <span id="theme-icon">🌙</span>
-</button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="{{"/" | relative_url }}">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{{"/about" | relative_url }}">About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{{"/cv" | relative_url }}">CV</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{{ "/posts" | relative_url }}">Posts</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="{{"/contact" | relative_url }}">Contact</a>
-  </li>
-  
-  <!-- Search -->
-  <li class="nav-item">
-  <a class="nav-link" href="{{ '/search/' | relative_url }}" aria-label="Search">
-    <i class="fas fa-search" style="font-size: 0.9em; opacity: 0.85;"></i>
-  </a>
-</li>
 
-</ul>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="{{"/" | relative_url }}">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ "/search/?q=Faith" | relative_url }}">Faith</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ "/search/?q=Marriage" | relative_url }}">Marriage</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ "/search/?q=Leadership" | relative_url }}">Leadership</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ "/search/?q=Technology" | relative_url }}">Technology</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ "/search/?q=Camping" | relative_url }}">Camping</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ "/search/?q=Podcast" | relative_url }}">Podcast</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ "/search/?q=Resources" | relative_url }}">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{"/about" | relative_url }}">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ '/search/' | relative_url }}" aria-label="Search"><i class="fas fa-search" style="font-size: 0.9em; opacity: 0.85;"></i></a></li>
+        <li class="nav-item jat-latest-nav-item"><a class="btn jat-btn jat-btn-primary jat-nav-button" href="{{ '/posts' | relative_url }}">Read the Latest Reflection</a></li>
+      </ul>
     </div>
   </div>
 </nav>
