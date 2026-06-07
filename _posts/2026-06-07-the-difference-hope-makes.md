@@ -39,19 +39,13 @@ A patient may agree to difficult treatments because there is hope that the treat
 
 In each of these examples, the hardship is real. Hope does not remove the struggle, but it gives the struggle meaning. It provides a reason to continue moving forward when stopping would be easier.
 
-The opposite is true as well.
-
-When people lose hope, even manageable difficulties can begin to feel unbearable. Problems that once seemed temporary start to feel permanent. Obstacles that could have been overcome suddenly appear impossible. The circumstances may not have changed much at all, but the absence of hope changes how those circumstances are experienced.
-
-That observation extends far beyond individual stories.
+The opposite is true as well. When people lose hope, even manageable difficulties can begin to feel unbearable. Problems that once seemed temporary start to feel permanent. Obstacles that could have been overcome suddenly appear impossible. The circumstances may not have changed much at all, but the absence of hope changes how those circumstances are experienced. That observation extends far beyond individual stories.
 
 History is filled with examples of people enduring imprisonment, persecution, disease, poverty, war, and tragedy because they believed something better remained ahead. Sometimes that hope was tied to freedom. Sometimes it was tied to family. Sometimes it was tied to a cause they believed was worth suffering for.
 
 Whatever form it took, hope gave them the strength to endure what might otherwise have crushed them.
 
-Scripture recognizes this reality as well.
-
-When Paul writes in Romans 5 that suffering produces endurance, endurance produces character, and character produces hope, he is describing something profoundly human. Trials reveal what we are trusting in. They expose the limits of our own strength and remind us how little control we actually have over many of the things we value most.
+In Scripture, when Paul writes in Romans 5 that suffering produces endurance, endurance produces character, and character produces hope, he is describing something profoundly human. Trials reveal what we are trusting in. They expose the limits of our own strength and remind us how little control we actually have over many of the things we value most.
 
 None of us plans for suffering. None of us volunteers for grief. None of us wakes up hoping for a difficult diagnosis, a season of uncertainty, or a painful loss. Yet these realities eventually find all of us. The question is not whether we will face hardship but what will sustain us when we do.
 
@@ -101,5 +95,5 @@ And when hope is anchored there, it becomes strong enough to endure almost anyth
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMDM0ODE3N119
+eyJoaXN0b3J5IjpbLTE0ODA4MTk5ODddfQ==
 -->
