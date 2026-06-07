@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Just A Thought Podcast Logo</title>
+  <desc id="desc">A warm editorial podcast logo for Just A Thought.</desc>
+  <rect width="1200" height="800" fill="#F6F1E7"/>
+  <circle cx="600" cy="315" r="122" fill="none" stroke="#4F5D3A" stroke-width="18"/>
+  <path d="M478 303c0-90 244-90 244 0" fill="none" stroke="#4F5D3A" stroke-width="18" stroke-linecap="round"/>
+  <rect x="430" y="294" width="70" height="168" rx="34" fill="#4F5D3A"/>
+  <rect x="700" y="294" width="70" height="168" rx="34" fill="#4F5D3A"/>
+  <rect x="565" y="270" width="70" height="170" rx="35" fill="#4F5D3A"/>
+  <path d="M600 440v58" stroke="#4F5D3A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M545 500h110" stroke="#4F5D3A" stroke-width="18" stroke-linecap="round"/>
+  <text x="600" y="610" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700" fill="#252822">Just A Thought</text>
+  <text x="600" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="10" fill="#4F5D3A">PODCAST</text>
+</svg>
