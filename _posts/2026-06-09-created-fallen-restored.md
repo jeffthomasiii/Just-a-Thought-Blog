@@ -3,7 +3,7 @@ layout: post
 title: "Created, Fallen, Restored"
 subtitle: "Understanding the Tension of Being Human"
 description: "A reflective exploration of why humanity is capable of both remarkable good and profound brokenness, and how Scripture explains the tension through creation, the fall, and redemption."
-date: 2026-06-07
+date: 2026-06-09
 author: Jeff Thomas III
 categories:
   - faith
@@ -66,5 +66,5 @@ The entire story of humanity can be understood through those three realities, an
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzE4Mjc5NTZdfQ==
+eyJoaXN0b3J5IjpbLTgwNjI2NjgwNiwtMjAzMTgyNzk1Nl19
 -->
