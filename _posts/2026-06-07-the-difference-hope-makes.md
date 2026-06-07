@@ -29,9 +29,7 @@ What followed was a remarkable story of survival. The men camped on drifting ice
 
 Historians have written extensively about Shackleton's leadership, but one detail has always stood out to me. He seemed to understand that preserving hope was every bit as important as preserving food, shelter, or equipment. He maintained routines. He gave his men meaningful work. He projected confidence when circumstances offered very little reason for it. He consistently directed their attention toward rescue rather than despair.
 
-The ice remained dangerous. The cold remained relentless. The uncertainty never completely disappeared. What changed was their ability to endure it.
-
-That story has been sitting with me lately because it raises an interesting question: *How much of human endurance is actually connected to hope?*
+The ice remained dangerous. The cold remained relentless. The uncertainty never completely disappeared. What changed was their ability to endure it. That story has been sitting with me lately because it raises an interesting question: *How much of human endurance is actually connected to hope?*
 
 The longer I live, the more convinced I become that hope may be one of the most powerful forces in human life. We often think of hope as something soft or sentimental, but in reality it may be one of the strongest motivators we possess. People will endure astonishing hardship when they believe there is something waiting on the other side of it.
 
@@ -73,13 +71,11 @@ When I think about Shackleton's crew stranded in the Antarctic, I am reminded th
 
 As Christians, we are also people waiting for rescue, although ours is far greater. We wait for the return of Christ. We wait for the redemption of creation. We wait for the day when suffering, sin, and death finally lose their grip on the world.
 
-Until then, hope carries us.
-
-Not because we know exactly what tomorrow holds, but because we know who holds tomorrow.
+> Until then, hope carries us. Not because we know exactly what tomorrow holds, but because we know who holds tomorrow.
 
 And when hope is anchored there, it becomes strong enough to endure almost anything.
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDMwNDc2NzZdfQ==
+eyJoaXN0b3J5IjpbLTk2MTY3NzgyXX0=
 -->
