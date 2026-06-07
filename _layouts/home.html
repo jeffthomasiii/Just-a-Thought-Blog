@@ -32,7 +32,7 @@ layout: default
       <article class="jat-latest-card">
         <p class="jat-kicker">Latest Reflection</p>
         <div class="jat-latest-grid">
-          <a class="jat-card-image" href="{{ latest_post.url | prepend: site.baseurl | replace: '//', '/' }}" {% if latest_post.image %}style="background-image: url('{{ latest_post.image | prepend: site.baseurl | replace: '//', '/' }}');"{% elsif latest_post.background %}style="background-image: url('{{ latest_post.background | prepend: site.baseurl | replace: '//', '/' }}');"{% else %}style="background-image: url('{{ site.baseurl }}/img/bg-post.jpg');"{% endif %}></a>
+          <a class="jat-card-image" href="{{ latest_post.url | prepend: site.baseurl | replace: '//', '/' }}" style="background-image: url('{{ site.baseurl }}/img/bg-post.jpg');"></a>
           <div class="jat-card-copy">
             <p class="jat-kicker">Latest Reflection</p>
             <h2><a href="{{ latest_post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ latest_post.title }}</a></h2>
@@ -53,19 +53,29 @@ layout: default
       </aside>
     </section>
 
-    <section class="jat-topic-section">
-      <p class="jat-kicker">Explore By Topic</p>
-      <div class="jat-topic-grid">
-        <a class="jat-topic-card" href="{{ '/search/?q=Faith' | relative_url }}"><div class="jat-topic-image" style="background-image: url('{{ site.baseurl }}/img/bg-post.jpg');"></div><span class="jat-topic-icon"><i class="fas fa-cross"></i></span><h3>Faith</h3><p>Scripture, discipleship, prayer, and the daily walk with God.</p><span>Explore →</span></a>
-        <a class="jat-topic-card" href="{{ '/search/?q=Marriage' | relative_url }}"><div class="jat-topic-image" style="background-image: url('{{ site.baseurl }}/img/bg-index.jpg');"></div><span class="jat-topic-icon"><i class="fas fa-ring"></i></span><h3>Marriage</h3><p>Covenant, communication, unity, and building a God-centered marriage.</p><span>Explore →</span></a>
-        <a class="jat-topic-card" href="{{ '/search/?q=Leadership' | relative_url }}"><div class="jat-topic-image" style="background-image: url('{{ site.baseurl }}/img/bg-about.jpg');"></div><span class="jat-topic-icon"><i class="far fa-compass"></i></span><h3>Leadership</h3><p>Character before competence, leading with humility and strength.</p><span>Explore →</span></a>
-        <a class="jat-topic-card" href="{{ '/search/?q=Technology' | relative_url }}"><div class="jat-topic-image" style="background-image: url('{{ site.baseurl }}/img/bg-contact.jpg');"></div><span class="jat-topic-icon"><i class="fas fa-microchip"></i></span><h3>Technology</h3><p>AI, ethics, innovation, and navigating a changing world.</p><span>Explore →</span></a>
-        <a class="jat-topic-card" href="{{ '/search/?q=Camping' | relative_url }}"><div class="jat-topic-image" style="background-image: url('{{ site.baseurl }}/img/bg-post.jpg');"></div><span class="jat-topic-icon"><i class="fas fa-tree"></i></span><h3>Camping</h3><p>Creation, rest, adventure, and the thoughts that come when we slow down.</p><span>Explore →</span></a>
-        <a class="jat-topic-card" href="{{ '/search/?q=Culture' | relative_url }}"><div class="jat-topic-image" style="background-image: url('{{ site.baseurl }}/img/bg-index.jpg');"></div><span class="jat-topic-icon"><i class="fas fa-users"></i></span><h3>Culture</h3><p>Truth, wisdom, and discernment in the world around us.</p><span>Explore →</span></a>
+    <section class="jat-discovery-row">
+      <div class="jat-topic-section">
+        <p class="jat-kicker">Explore By Topic</p>
+        <div class="jat-topic-grid">
+          <a class="jat-topic-card" href="{{ '/search/?q=Faith' | relative_url }}"><div class="jat-topic-image" style="background-image: url('{{ site.baseurl }}/img/bg-post.jpg');"></div><span class="jat-topic-icon"><i class="fas fa-cross"></i></span><h3>Faith</h3><p>Scripture, discipleship, prayer, and the daily walk with God.</p><span>Explore →</span></a>
+          <a class="jat-topic-card" href="{{ '/search/?q=Marriage' | relative_url }}"><div class="jat-topic-image" style="background-image: url('{{ site.baseurl }}/img/bg-index.jpg');"></div><span class="jat-topic-icon"><i class="fas fa-ring"></i></span><h3>Marriage</h3><p>Covenant, communication, unity, and building a God-centered marriage.</p><span>Explore →</span></a>
+          <a class="jat-topic-card" href="{{ '/search/?q=Leadership' | relative_url }}"><div class="jat-topic-image" style="background-image: url('{{ site.baseurl }}/img/bg-about.jpg');"></div><span class="jat-topic-icon"><i class="far fa-compass"></i></span><h3>Leadership</h3><p>Character before competence, leading with humility and strength.</p><span>Explore →</span></a>
+          <a class="jat-topic-card" href="{{ '/search/?q=Technology' | relative_url }}"><div class="jat-topic-image" style="background-image: url('{{ site.baseurl }}/img/bg-contact.jpg');"></div><span class="jat-topic-icon"><i class="fas fa-microchip"></i></span><h3>Technology</h3><p>AI, ethics, innovation, and navigating a changing world.</p><span>Explore →</span></a>
+          <a class="jat-topic-card" href="{{ '/search/?q=Camping' | relative_url }}"><div class="jat-topic-image" style="background-image: url('{{ site.baseurl }}/img/bg-post.jpg');"></div><span class="jat-topic-icon"><i class="fas fa-tree"></i></span><h3>Camping</h3><p>Creation, rest, adventure, and the thoughts that come when we slow down.</p><span>Explore →</span></a>
+          <a class="jat-topic-card" href="{{ '/search/?q=Culture' | relative_url }}"><div class="jat-topic-image" style="background-image: url('{{ site.baseurl }}/img/bg-index.jpg');"></div><span class="jat-topic-icon"><i class="fas fa-users"></i></span><h3>Culture</h3><p>Truth, wisdom, and discernment in the world around us.</p><span>Explore →</span></a>
+        </div>
       </div>
+
+      <aside class="jat-series-card">
+        <p class="jat-kicker">Featured Series</p>
+        <a href="{{ '/series/' | relative_url }}"><strong>Faith in the Age of AI</strong><span>Coming Soon</span></a>
+        <a href="{{ '/series/' | relative_url }}"><strong>Love What God Loves</strong><span>View Series →</span></a>
+        <a href="{{ '/series/' | relative_url }}"><strong>Leadership Reflections</strong><span>View Series →</span></a>
+        <a href="{{ '/series/' | relative_url }}"><strong>From Aleph to Tav</strong><span>View Series →</span></a>
+      </aside>
     </section>
 
-    <section class="jat-lower-board-grid">
+    <section class="jat-engagement-row">
       <aside class="jat-memory-card">
         <p class="jat-kicker">Thought Worth Remembering</p>
         <p>“Sometimes strength isn't standing over someone. Sometimes it's walking faithfully beside them.”</p>
@@ -78,18 +88,16 @@ layout: default
           <div class="jat-card-image" style="background-image: url('{{ site.baseurl }}/img/bg-post.jpg');"></div>
           <div>
             <h3>Just A Thought Podcast</h3>
-            <p>Where written reflections become conversations.</p>
-            <a class="btn jat-btn jat-btn-primary" href="{{ '/search/?q=Podcast' | relative_url }}">Listen Now</a>
+            <p>Coming soon.</p>
+            <a class="btn jat-btn jat-btn-primary" href="{{ '/search/?q=Podcast' | relative_url }}">Podcast Updates</a>
           </div>
         </div>
       </aside>
 
-      <aside class="jat-series-card">
-        <p class="jat-kicker">Featured Series</p>
-        <a href="{{ '/series/' | relative_url }}"><strong>Faith in the Age of AI</strong><span>View Series →</span></a>
-        <a href="{{ '/series/' | relative_url }}"><strong>Love What God Loves</strong><span>View Series →</span></a>
-        <a href="{{ '/series/' | relative_url }}"><strong>Leadership Reflections</strong><span>View Series →</span></a>
-        <a href="{{ '/series/' | relative_url }}"><strong>From Aleph to Tav</strong><span>View Series →</span></a>
+      <aside class="jat-newsletter-card">
+        <p class="jat-kicker">Thought Letter</p>
+        <h3>Coming Soon</h3>
+        <p>Reflections delivered to your inbox when the newsletter is ready.</p>
       </aside>
     </section>
 
