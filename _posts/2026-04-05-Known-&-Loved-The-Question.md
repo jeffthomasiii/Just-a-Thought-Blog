@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Known & Loved: Can You Love Without Knowing?"
+title: "Can You Love Without Knowing?"
 subtitle: "On being known, being loved, and the space in between"
 description: "A reflective look at whether real love can exist without vulnerability, and what it means to be truly known."
 date: 2026-04-05
