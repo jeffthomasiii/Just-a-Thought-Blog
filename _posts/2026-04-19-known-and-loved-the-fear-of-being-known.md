@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Known & Loved: The Fear of Being Known"
+title: "The Fear of Being Known"
 subtitle: "Why we hide what we most want seen"
 description: "A reflection on the tension between our desire to be loved and our fear of being fully known."
 date: 2026-04-19
