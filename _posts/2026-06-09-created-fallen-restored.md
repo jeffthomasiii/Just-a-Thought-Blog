@@ -38,7 +38,7 @@ Neither explanation seems to tell the whole story.
 
 If people are only good, it becomes difficult to explain the darkness that continues to surface throughout history and within our own hearts. If people are only bad, it becomes equally difficult to explain acts of courage, sacrifice, creativity, love, and compassion that emerge even in the harshest circumstances.
 
-Scripture offers a different perspective, one that is both more honest and more hopeful.
+> Scripture offers a different perspective, one that is both more honest and more hopeful.
 
 The Bible begins by telling us that humanity was created in the image of God. From the very beginning, men and women were designed to reflect something of their Creator's character. Our desire for beauty, justice, creativity, relationship, purpose, and love is not accidental. These qualities point back to the One in whose image we were made.
 
@@ -74,5 +74,5 @@ The entire story of humanity can be understood through those three realities, an
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNjc0OTIyMl19
+eyJoaXN0b3J5IjpbMjk4NTgxODI4XX0=
 -->
