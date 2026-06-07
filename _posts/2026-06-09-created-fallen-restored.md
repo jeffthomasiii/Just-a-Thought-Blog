@@ -28,13 +28,13 @@ People can be remarkably compassionate. They sacrifice for their families, serve
 
 At the same time, people can be selfish, prideful, cruel, and destructive. We live in a world marked by conflict, betrayal, violence, and injustice. Even the most admirable people have moments they wish they could take back, and even the most disciplined among us know what it feels like to fall short of our own standards.
 
-What makes this reality so difficult to explain is that both observations are true.
+> What makes this reality so difficult to explain is that both observations are true.
 
 Humanity is capable of extraordinary good, yet it is equally capable of extraordinary evil. The contradiction is not merely something we observe in society or read about in history books. It is something we experience personally. Most of us have felt the tension of wanting to do what is right while simultaneously battling desires, attitudes, or impulses that pull us in another direction.
 
 For generations, people have tried to make sense of this tension. Some argue that humanity is fundamentally good and that our failures are primarily the result of environment, upbringing, or circumstance. Others insist that people are fundamentally corrupt and that any appearance of goodness is merely self-interest in a more socially acceptable form.
 
-Neither explanation seems to tell the whole story.
+> Neither explanation seems to tell the whole story.
 
 If people are only good, it becomes difficult to explain the darkness that continues to surface throughout history and within our own hearts. If people are only bad, it becomes equally difficult to explain acts of courage, sacrifice, creativity, love, and compassion that emerge even in the harshest circumstances.
 
@@ -44,7 +44,7 @@ The Bible begins by telling us that humanity was created in the image of God. Fr
 
 This truth explains much of what is admirable about humanity. It explains why people long for meaning, why they recognize injustice when they see it, and why they continue searching for something greater than themselves. Even in a broken world, traces of God's design remain visible.
 
-Yet the biblical story does not end in Genesis 1.
+> Yet the biblical story does not end in Genesis 1.
 
 Genesis 3 introduces another reality that is just as necessary for understanding the human condition. Sin enters the world, and with it comes corruption, separation, and disorder. The image of God in humanity is not erased, but it is distorted. The goodness that remains is now entangled with selfishness, pride, fear, and rebellion.
 
@@ -56,19 +56,15 @@ The gospel does not flatter us by pretending we are better than we are. At the s
 
 Through Christ, God does more than simply forgive sin. He begins the work of restoration. The New Testament repeatedly describes the Christian life as a process of transformation in which believers are being conformed to the image of Christ. What was distorted by sin is being renewed by grace.
 
-This process is rarely immediate and never effortless. It involves repentance, surrender, growth, correction, and perseverance. There are days when progress feels obvious and days when it feels painfully slow. Yet the promise of Scripture is that God has not abandoned His work. He is shaping His people into what they were always intended to become.
+This process is rarely immediate and never effortless. It involves repentance, surrender, growth, correction, and perseverance. There are days when progress feels obvious and days when it feels painfully slow. Yet one of the promises of Scripture is that God has not abandoned His work. He is shaping His people into what they were always intended to become.
 
 Perhaps this is why the Christian understanding of humanity feels so complete. It accounts for the beauty we see in people without ignoring the brokenness. It acknowledges our failures without surrendering to despair. It explains why we long for something greater while also explaining why we struggle to attain it on our own.
 
-We are created in God's image.
-
-We are fallen through sin.
-
-And through Christ, we are being restored.
+> We are created in God's image. We are fallen through sin. And through Christ, we are being restored.
 
 The entire story of humanity can be understood through those three realities, and perhaps many of the contradictions we wrestle with begin to make sense when we view ourselves through that lens.
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDMyNTMyNDhdfQ==
+eyJoaXN0b3J5IjpbLTIwMzE4Mjc5NTZdfQ==
 -->
