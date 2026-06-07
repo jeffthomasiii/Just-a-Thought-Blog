@@ -2,74 +2,68 @@
 layout: default
 ---
 
-<!-- Page Header -->
-{% assign hero = page.header-image | default: page.background | default: page.image %}
-<header class="masthead"{% if hero %} style="background-image: url('{{ hero | relative_url }}')" {% endif %}>
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-heading">
-            <h1>{{ page.title }}</h1>
-            {% if page.subtitle %}
-            <h2 class="subheading">{{ page.subtitle }}</h2>
-            {% endif %}
-            <span class="meta">Posted by
-              <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
-              on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html
-              content=page.content %}
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+<style>
+  .jat-post-hero.masthead{position:relative;background-position:center;background-size:cover}.jat-post-hero .overlay{background:linear-gradient(180deg,rgba(20,24,20,.68),rgba(20,24,20,.48))}.jat-post-hero .post-heading{position:relative;z-index:2;padding:9rem 0 7rem}.jat-post-hero .post-heading h1{color:#F6F1E7!important;text-shadow:0 3px 18px rgba(0,0,0,.55);font-family:'Playfair Display','Lora',serif;font-weight:600;line-height:1.05}.jat-post-hero .post-heading .subheading{color:#F6F1E7!important;text-shadow:0 2px 12px rgba(0,0,0,.5);font-family:'Source Sans 3','Open Sans',sans-serif;font-weight:500;line-height:1.35}.jat-post-hero .post-heading .meta,.jat-post-hero .post-heading .meta a{color:#F6F1E7!important;text-shadow:0 2px 10px rgba(0,0,0,.55)}@media(max-width:575.98px){.jat-post-hero .post-heading{padding:7rem 0 4.5rem}.jat-post-hero .post-heading h1{font-size:2.6rem}}
+</style>
 
+{% assign hero = page.header-image | default: page.background | default: page.image %}
+<header class="masthead jat-post-hero"{% if hero %} style="background-image: url('{{ hero | relative_url }}')" {% endif %}>
+  <div class="overlay"></div>
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-
-        {{ content }}
-
-<!-- Giscus comments -->
-<div id="giscus_thread" style="margin-top: 3rem;"></div>
-<script src="https://giscus.app/client.js"
-        data-repo="jeffthomasiii/Just-a-Thought-Blog"
-        data-repo-id="R_kgDOPIutlg"
-        data-category="Blog Comments"
-        data-category-id="DIC_kwDOPIutls4Cs_ws"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="bottom"
-        data-theme="noborder_light"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
-
-<!-- Blog branding image -->
-<div style="text-align: center; margin-top: 30px;">
-  <img src="{{ site.baseurl }}/img/jat-olive-branch.png" alt="Just A Thought logo" style="height: 50px; opacity: 0.85;">
-</div>
-
-        
-        <hr>
-
-        <div class="clearfix">
-
-          {% if page.previous.url %}
-          <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
-              Post</span></a>
+        <div class="post-heading">
+          <h1>{{ page.title }}</h1>
+          {% if page.subtitle %}
+          <h2 class="subheading">{{ page.subtitle }}</h2>
           {% endif %}
-          {% if page.next.url %}
-          <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
-              Post</span> &rarr;</a>
-          {% endif %}
-
+          <span class="meta">Posted by
+            <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
+            on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html
+            content=page.content %}
+          </span>
         </div>
-
       </div>
     </div>
   </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      {{ content }}
+
+      <div id="giscus_thread" style="margin-top: 3rem;"></div>
+      <script src="https://giscus.app/client.js"
+              data-repo="jeffthomasiii/Just-a-Thought-Blog"
+              data-repo-id="R_kgDOPIutlg"
+              data-category="Blog Comments"
+              data-category-id="DIC_kwDOPIutls4Cs_ws"
+              data-mapping="pathname"
+              data-strict="0"
+              data-reactions-enabled="1"
+              data-emit-metadata="1"
+              data-input-position="bottom"
+              data-theme="noborder_light"
+              data-lang="en"
+              crossorigin="anonymous"
+              async>
+      </script>
+
+      <div style="text-align: center; margin-top: 30px;">
+        <img src="{{ site.baseurl }}/img/jat-olive-branch.png" alt="Just A Thought logo" style="height: 50px; opacity: 0.85;">
+      </div>
+
+      <hr>
+
+      <div class="clearfix">
+        {% if page.previous.url %}
+        <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline"> Post</span></a>
+        {% endif %}
+        {% if page.next.url %}
+        <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline"> Post</span> &rarr;</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
