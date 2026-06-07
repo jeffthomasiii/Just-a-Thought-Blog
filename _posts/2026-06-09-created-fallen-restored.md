@@ -50,13 +50,9 @@ Genesis 3 introduces another reality that is just as necessary for understanding
 
 This helps explain why human beings often feel divided within themselves. We can desire what is good while simultaneously resisting it. We can genuinely love others while still acting out of selfish motives. We can recognize truth while choosing convenience. The tension exists because we were created for one thing and have become something else.
 
-In many ways, every person lives in the space between those two realities. We bear the dignity of being created in God's image while also carrying the consequences of a fallen nature.
+In many ways, every person lives in the space between those two realities. We bear the dignity of being created in God's image while also carrying the consequences of a fallen nature. The remarkable thing about Christianity is that it refuses to ignore either side of that equation.
 
-The remarkable thing about Christianity is that it refuses to ignore either side of that equation.
-
-The gospel does not flatter us by pretending we are better than we are. At the same time, it does not reduce us to our failures and shortcomings. Instead, it tells the truth about both our dignity and our brokenness. We were created by God, we have fallen into sin, and we are unable to restore ourselves.
-
-That is where the story of redemption begins.
+The gospel does not flatter us by pretending we are better than we are. At the same time, it does not reduce us to our failures and shortcomings. Instead, it tells the truth about both our dignity and our brokenness. We were created by God, we have fallen into sin, and we are unable to restore ourselves. That is where the story of redemption begins.
 
 Through Christ, God does more than simply forgive sin. He begins the work of restoration. The New Testament repeatedly describes the Christian life as a process of transformation in which believers are being conformed to the image of Christ. What was distorted by sin is being renewed by grace.
 
@@ -74,5 +70,5 @@ The entire story of humanity can be understood through those three realities, an
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4NTgxODI4XX0=
+eyJoaXN0b3J5IjpbLTEwMDMyNTMyNDhdfQ==
 -->
