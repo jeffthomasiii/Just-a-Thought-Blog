@@ -1,79 +1,53 @@
-<!-- Footer -->
-
-<hr>
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <ul class="list-inline text-center">
-          {% if site.email %}
-          <li class="list-inline-item">
-            <a href="mailto:{{ site.email | encode_email }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.twitter_username %}
-          <li class="list-inline-item">
-            <a href="https://twitter.com/{{ site.twitter_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.facebook_username %}
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/{{ site.facebook_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.linkedin_username %}
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.github_username %}
-          <li class="list-inline-item">
-            <a href="https://github.com/{{ site.github_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-          {% if site.instagram_username %}
-          <li class="list-inline-item">
-            <a href="https://instagram.com/{{ site.instagram_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
+<footer class="jat-footer">
+  <div class="container jat-footer-container">
+    <div class="jat-footer-grid">
+      <div class="jat-footer-brand">
+        <a class="jat-footer-logo" href="{{ '/' | relative_url }}">
+          <img src="{{ site.baseurl }}/img/favicon-lightbulb-dove.png" alt="" class="jat-footer-mark">
+          <span><strong>Just A Thought</strong><small>Blog</small></span>
+        </a>
+        <p>A reflective Christian blog exploring faith, marriage, leadership, culture, technology, camping, and everyday life through thoughtful reflection.</p>
+        <ul class="jat-footer-socials">
+          {% if site.email %}<li><a href="mailto:{{ site.email | encode_email }}"><i class="far fa-envelope"></i></a></li>{% endif %}
+          {% if site.twitter_username %}<li><a href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter"></i></a></li>{% endif %}
+          {% if site.linkedin_username %}<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="fab fa-linkedin-in"></i></a></li>{% endif %}
+          {% if site.github_username %}<li><a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i></a></li>{% endif %}
+          {% if site.instagram_username %}<li><a href="https://instagram.com/{{ site.instagram_username }}"><i class="fab fa-instagram"></i></a></li>{% endif %}
         </ul>
-        <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
+      </div>
+      <div class="jat-footer-column">
+        <h4>Explore</h4>
+        <a href="{{ '/posts' | relative_url }}">Posts</a>
+        <a href="{{ '/series/' | relative_url }}">Series</a>
+        <a href="{{ '/search/' | relative_url }}">Search</a>
+        <a href="{{ '/search/?q=Faith' | relative_url }}">Faith</a>
+        <a href="{{ '/search/?q=Marriage' | relative_url }}">Marriage</a>
+      </div>
+      <div class="jat-footer-column">
+        <h4>Resources</h4>
+        <a href="{{ '/search/?q=Podcast' | relative_url }}">Podcast</a>
+        <a href="{{ '/posts' | relative_url }}">Blog</a>
+        <a href="{{ '/search/?q=Devotional' | relative_url }}">Devotionals</a>
+        <a href="{{ '/search/?q=Resources' | relative_url }}">Recommended Tools</a>
+        <a href="{{ '/posts' | relative_url }}">Start Here</a>
+      </div>
+      <div class="jat-footer-column">
+        <h4>About</h4>
+        <a href="{{ '/about' | relative_url }}">Our Story</a>
+        <a href="{{ '/about' | relative_url }}">What We Believe</a>
+        <a href="{{ '/contact' | relative_url }}">Contact</a>
+        <a href="{{ '/cv' | relative_url }}">CV</a>
+      </div>
+      <div class="jat-footer-letter">
+        <h4>Join the Thought Letter</h4>
+        <p>Reflections delivered to your inbox. Coming soon.</p>
+        <div class="jat-footer-form-placeholder"><span>Email Address</span><button type="button" disabled>Subscribe</button></div>
       </div>
     </div>
-      <div style="text-align: center; margin-top: 20px;">
-    <img src="{{ site.baseurl }}/img/jat-olive-branch.png" alt="Just A Thought logo" style="height: 40px; opacity: 0.75;">
+    <div class="jat-footer-bottom">
+      <p>Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
+      <p class="jat-footer-signature">...just a thought.</p>
+    </div>
   </div>
-    
-  </div>
+  <div class="jat-footer-olive-strip" aria-hidden="true"></div>
 </footer>
