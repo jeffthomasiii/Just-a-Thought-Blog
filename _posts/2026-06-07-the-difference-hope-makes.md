@@ -59,21 +59,13 @@ Anyone who has lived long enough knows that some prayers are answered exactly as
 
 That may be one reason Scripture consistently directs our attention beyond present circumstances. The Bible never tells us to pretend suffering isn't real, nor does it encourage us to deny grief, disappointment, or loss. Instead, it anchors hope in something larger than any single chapter of our lives.
 
-The Christian hope is not ultimately that life will go according to plan. The Christian hope is that God remains faithful even when life does not.
+The Christian hope is not ultimately that life will go according to plan. It is that God remains faithful even when life does not. It is the conviction that Christ has defeated death, that His promises remain true, and that no suffering we experience today will have the final word. It is the confidence that history is moving toward a conclusion secured not by human effort but by the work of Christ Himself.
 
-It is the conviction that Christ has defeated death, that His promises remain true, and that no suffering we experience today will have the final word. It is the confidence that history is moving toward a conclusion secured not by human effort but by the work of Christ Himself.
+> That perspective does not eliminate pain, but it changes how we carry it.
 
-That perspective does not eliminate pain, but it changes how we carry it.
+A believer facing a difficult diagnosis may still pray fervently for healing while recognizing that his ultimate hope rests somewhere deeper than the outcome of a medical test. A husband and wife struggling through a painful season may still hope for reconciliation while recognizing that their confidence is not ultimately rooted in their ability to fix everything perfectly. A family standing beside a grave may grieve deeply while also believing that death is not the end of the story.
 
-A believer facing a difficult diagnosis may still pray fervently for healing while recognizing that his ultimate hope rests somewhere deeper than the outcome of a medical test.
-
-A husband and wife struggling through a painful season may still hope for reconciliation while recognizing that their confidence is not ultimately rooted in their ability to fix everything perfectly.
-
-A family standing beside a grave may grieve deeply while also believing that death is not the end of the story.
-
-Christian hope is not optimism. Optimism says things will probably work out. Hope says that even if life unfolds differently than I wanted, God is still trustworthy.
-
-That distinction matters because optimism survives only as long as circumstances cooperate. Hope can endure even when circumstances collapse.
+Christian hope is not optimism. Optimism says things will probably work out. Hope says that even if life unfolds differently than I wanted, God is still trustworthy. That distinction matters because optimism survives only as long as circumstances cooperate. Hope can endure even when circumstances collapse.
 
 Perhaps that is why hope has sustained people through persecution, imprisonment, disease, tragedy, and loss throughout history. It allows them to look honestly at present reality without surrendering to despair. It acknowledges the darkness without concluding that darkness wins.
 
@@ -89,5 +81,5 @@ And when hope is anchored there, it becomes strong enough to endure almost anyth
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNjk3MzMxXX0=
+eyJoaXN0b3J5IjpbLTE2NDMwNDc2NzZdfQ==
 -->
