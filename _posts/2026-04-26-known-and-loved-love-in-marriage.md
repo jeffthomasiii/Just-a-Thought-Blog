@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Known & Loved: Love in Marriage"
+title: "Love in Marriage"
 subtitle: "When closeness isn’t the same as connection"
 description: "A reflection on how couples can share life together while still remaining partially unknown."
 date: 2026-04-26
