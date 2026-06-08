@@ -3,7 +3,7 @@ layout: default
 ---
 
 <style>
-  .jat-page-hero.masthead{margin-bottom:0;min-height:360px;background-position:center;background-size:cover;position:relative}.jat-page-hero .overlay{background:rgba(37,40,34,.22)}.jat-page-intro{background:#F6F1E7;border-bottom:1px solid rgba(79,93,58,.18);padding:2.75rem 0 2.25rem}.jat-page-intro h1{margin:0;color:#252822;font-family:'Playfair Display','Lora',serif;font-size:clamp(3rem,6vw,5rem);font-weight:600;line-height:1}.jat-page-intro .subheading{display:block;margin-top:.75rem;color:#4F5D3A;font-family:'Source Sans 3','Open Sans',sans-serif;font-size:1.35rem;font-weight:400;line-height:1.4}.jat-page-content{padding-top:3rem}@media(max-width:575.98px){.jat-page-hero.masthead{min-height:260px}.jat-page-intro{padding:2rem 0 1.75rem}.jat-page-intro h1{font-size:2.75rem}.jat-page-intro .subheading{font-size:1.1rem}}
+  .jat-page-hero.masthead{margin-bottom:0!important;min-height:360px;background-position:center;background-size:cover;position:relative}.jat-page-hero .overlay{background:rgba(37,40,34,.28)}.jat-page-hero .page-heading,.jat-page-hero .site-heading{display:none!important}.jat-page-intro{background:#F6F1E7;border-bottom:1px solid rgba(79,93,58,.18);padding:2.75rem 0 2.25rem}.jat-page-intro h1{margin:0;color:#252822!important;font-family:'Playfair Display','Lora',serif;font-size:clamp(3rem,6vw,5rem);font-weight:600;line-height:1}.jat-page-intro .subheading{display:block;margin-top:.75rem;color:#4F5D3A!important;font-family:'Source Sans 3','Open Sans',sans-serif;font-size:1.35rem;font-weight:400;line-height:1.4}.jat-page-content{padding-top:3rem}@media(max-width:575.98px){.jat-page-hero.masthead{min-height:260px}.jat-page-intro{padding:2rem 0 1.75rem}.jat-page-intro h1{font-size:2.75rem}.jat-page-intro .subheading{font-size:1.1rem}}
 </style>
 
 {% if page.background %}
@@ -21,6 +21,8 @@ layout: default
         <h1>{{ page.title }}</h1>
         {% if page.description %}
         <span class="subheading">{{ page.description }}</span>
+        {% elsif page.subtitle %}
+        <span class="subheading">{{ page.subtitle }}</span>
         {% endif %}
       </div>
     </div>
