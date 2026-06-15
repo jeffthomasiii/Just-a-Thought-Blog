@@ -19,7 +19,7 @@ tags:
 excerpt: "Humanity is capable of extraordinary beauty and extraordinary brokenness. Scripture explains why, and offers hope for something greater."
 image: /img/posts/created-fallen-restored.jpg
 background: /img/posts/bg-created-fallen-restored.jpg
-scripture: "Genesis 1:27; Romans 3:23; Romans 8:29 ESV"
+scripture: "Genesis 1:27; Romans 3:23; Romans 8:29"
 ---
 
 Every now and then, I encounter something that reminds me how difficult it is to explain humanity.
