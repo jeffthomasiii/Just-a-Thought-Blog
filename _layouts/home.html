@@ -4,8 +4,7 @@ layout: default
 
 {% assign latest_post = site.posts | first %}
 {% assign recent_posts = site.posts | slice: 1, 4 %}
-{% assign series_posts_named = site.posts | where_exp: "post", "post.series and post.series != ''" %}
-{% assign series_groups = series_posts_named | group_by: "series" %}
+{% assign series_groups = site.posts | group_by: "series" %}
 
 <style>.jat-card-image-missing{display:grid;place-items:center;background:linear-gradient(135deg,#EFE4D3,#F6F1E7);color:#4F5D3A;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.75rem}.jat-topic-coming-soon{cursor:default}.jat-topic-card .jat-topic-image{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}.jat-series-card .jat-series-item{display:grid;grid-template-columns:96px minmax(0,1fr);gap:.85rem;align-items:center}.jat-series-thumb{display:block;width:96px;height:68px;background-size:cover;background-position:center;border-radius:2px}.jat-series-thumb-missing{display:grid;place-items:center;background:#EFE4D3;color:#4F5D3A;font-size:.65rem;font-weight:800;text-transform:uppercase}.jat-series-copy{display:flex!important;flex-direction:column;gap:.18rem;color:#252822!important;letter-spacing:0!important;text-transform:none!important}.jat-series-copy em{font-style:normal;color:#7A7468;font-size:.8rem;font-weight:700}.jat-series-link{margin-top:.15rem;color:#4F5D3A!important;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}.jat-series-empty{padding:1rem;background:rgba(255,255,255,.45);color:#7A7468}.jat-podcast-logo-img{width:100%;min-height:180px;object-fit:cover;border:1px solid rgba(79,93,58,.18);background:#F6F1E7}</style>
 
@@ -74,8 +73,10 @@ layout: default
 
       <aside class="jat-series-card">
         <p class="jat-kicker">Featured Series</p>
-        {% if series_groups.size > 0 %}
-          {% for series_group in series_groups limit: 4 %}
+        {% assign shown_series_count = 0 %}
+        {% for series_group in series_groups %}
+          {% if series_group.name and series_group.name != "" and shown_series_count < 4 %}
+            {% assign shown_series_count = shown_series_count | plus: 1 %}
             {% assign series_posts = series_group.items | sort: 'date' %}
             {% assign first_post = series_posts | first %}
             {% assign series_image = nil %}
@@ -86,8 +87,9 @@ layout: default
               {% if series_image %}<span class="jat-series-thumb" style="background-image: url('{{ series_image | prepend: site.baseurl | replace: '//', '/' }}');"></span>{% else %}<span class="jat-series-thumb jat-series-thumb-missing">Soon</span>{% endif %}
               <span class="jat-series-copy"><strong>{{ series_group.name }}</strong><em>{{ series_group.items | size }} reflection{% if series_group.items.size != 1 %}s{% endif %}</em><span class="jat-series-link">View Series →</span></span>
             </a>
-          {% endfor %}
-        {% else %}<div class="jat-series-empty">Series coming soon.</div>{% endif %}
+          {% endif %}
+        {% endfor %}
+        {% if shown_series_count == 0 %}<div class="jat-series-empty">Series coming soon.</div>{% endif %}
       </aside>
     </section>
 
