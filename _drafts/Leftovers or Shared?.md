@@ -1,4 +1,26 @@
-# Leftovers or Shared?
+---  
+layout: post  
+title: "Leftovers or Shared?"  
+subtitle: "The stories we tell ourselves about the people we love"  
+description: "A simple lunchtime conversation about a piece of cake became a reminder of how often our relationships are shaped by the stories we tell ourselves, not just the facts in front of us."  
+date: 2026-06-24  
+author: Jeff Thomas III  
+categories:  
+- marriage  
+- reflections  
+tags:  
+- marriage  
+- communication  
+- perspective  
+- relationships  
+- grace  
+- husband-and-wife  
+excerpt: "What looked like leftovers to one person looked like something shared to another, and that difference revealed something important about relationships."  
+image: /img/posts/leftovers-or-shared.jpg  
+background: /img/posts/bg-leftovers-or-shared.jpg  
+scripture: "1 Corinthians 13:7 ESV"  
+contributors: [Samatra Thomas]  
+---
 
 The other day I stepped out of my office for lunch while my wife was working in the next room. Like many couples today, we're both hybrid workers. Some days we're in the office, some days we're working from home, and on this particular day we were both home. When I walked into the room, she told me she had bought me a hamburger for lunch. Then she mentioned there was half a piece of cake if I wanted dessert. 
 
@@ -34,5 +56,5 @@ The stories we tell ourselves matter. Sometimes those stories bring us closer to
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxMTAzNzE5XX0=
+eyJoaXN0b3J5IjpbLTEzMDEwNDgyNDddfQ==
 -->
