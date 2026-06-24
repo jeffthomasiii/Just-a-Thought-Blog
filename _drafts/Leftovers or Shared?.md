@@ -30,11 +30,9 @@ I think that's part of what Paul is getting at when he writes that love *"bears 
 
 > The longer I've been married, the more convinced I've become that many conflicts are not rooted in what happened as much as they are rooted in the meaning we've assigned to what happened.
 
-The stories we tell ourselves matter. Sometimes those stories bring us closer together. Sometimes they quietly build walls.
-
-And sometimes all it takes to change the story is a simple reminder that what looked like leftovers to one person looked like something shared to another.
+The stories we tell ourselves matter. Sometimes those stories bring us closer together. Sometimes they quietly build walls. And sometimes all it takes to change the story is a simple reminder that what looked like leftovers to one person looked like something shared to another.
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTMxNDcwMV19
+eyJoaXN0b3J5IjpbODcxMTAzNzE5XX0=
 -->
