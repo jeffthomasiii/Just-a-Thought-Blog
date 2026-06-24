@@ -1,6 +1,6 @@
 ---  
 layout: post  
-title: "Leftovers or Shared?"  
+title: "The Stories We Tell Ourselves"  
 subtitle: "The stories we tell ourselves about the people we love"  
 description: "A simple lunchtime conversation about a piece of cake became a reminder of how often our relationships are shaped by the stories we tell ourselves, not just the facts in front of us."  
 date: 2026-06-24  
@@ -16,8 +16,8 @@ tags:
 - grace  
 - husband-and-wife  
 excerpt: "What looked like leftovers to one person looked like something shared to another, and that difference revealed something important about relationships."  
-image: /img/posts/leftovers-or-shared.jpg  
-background: /img/posts/bg-leftovers-or-shared.jpg  
+image: /img/posts/the-stories-we-tell-ourselves.jpg  
+background: /img/posts/bg-the-stories-we-tell-ourselves.jpg  
 scripture: "1 Corinthians 13:7 ESV"  
 contributors: [Samatra Thomas]  
 ---
@@ -56,5 +56,5 @@ The stories we tell ourselves matter. Sometimes those stories bring us closer to
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDEwNDgyNDddfQ==
+eyJoaXN0b3J5IjpbLTEzMTgxNzUyNzddfQ==
 -->
