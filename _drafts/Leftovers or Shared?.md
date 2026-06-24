@@ -1,24 +1,10 @@
 # Leftovers or Shared?
 
-The other day I stepped out of my office for lunch while my wife was working in the next room.
+The other day I stepped out of my office for lunch while my wife was working in the next room. Like many couples today, we're both hybrid workers. Some days we're in the office, some days we're working from home, and on this particular day we were both home. When I walked into the room, she told me she had bought me a hamburger for lunch. Then she mentioned there was half a piece of cake if I wanted dessert. 
 
-Like many couples today, we're both hybrid workers. Some days we're in the office, some days we're working from home, and on this particular day we were both home.
+Without thinking much about it, and mostly trying to be funny, I replied, *"So you're giving me your leftovers?"* She smiled and said, *"It's shared."* We both laughed and moved on with our day, but for some reason that short exchange stayed with me.
 
-When I walked into the kitchen, she told me she had bought me a hamburger for lunch. Then she mentioned there was half a piece of cake if I wanted dessert.
-
-Without thinking much about it, and mostly trying to be funny, I replied, "So you're giving me your leftovers?"
-
-She smiled and said, "It's shared."
-
-We both laughed and moved on with our day, but for some reason that short exchange stayed with me.
-
-The more I thought about it, the more I realized that neither of us was wrong.
-
-There really was half a piece of cake sitting on the counter. Part of it had already been eaten. From my perspective, calling it leftovers wasn't inaccurate.
-
-But my wife wasn't looking at it from that perspective. She wasn't thinking about what had already been eaten. She was thinking about what had been intentionally saved. In her mind, the cake wasn't an afterthought. It was something she was sharing with me.
-
-The facts were exactly the same, but our focus was different.
+The more I thought about it, the more I realized that neither of us was wrong. There really was half a piece of cake sitting on the counter. Part of it had already been eaten. From my perspective, calling it leftovers wasn't inaccurate. But my wife wasn't looking at it from that perspective. She wasn't thinking about what had already been eaten. She was thinking about what had been intentionally saved. In her mind, the cake wasn't an afterthought. It was something she was sharing with me. The facts were exactly the same, but our focus was different.
 
 > I was focused on what was gone and had already been consumed. She was focused on what remained and what was being offered.
 
@@ -50,5 +36,5 @@ And sometimes all it takes to change the story is a simple reminder that what lo
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5OTk1NTY4XX0=
+eyJoaXN0b3J5IjpbLTU3MTMxNDcwMV19
 -->
