@@ -20,9 +20,7 @@ But my wife wasn't looking at it from that perspective. She wasn't thinking abou
 
 The facts were exactly the same, but our focus was different.
 
-I was focused on what was gone and had already been consumed.
-
-She was focused on what remained and what was being offered.
+> I was focused on what was gone and had already been consumed. She was focused on what remained and what was being offered.
 
 As I reflected on that conversation, I started noticing how often this happens in relationships. We experience something, observe something, or hear something said, and almost immediately our minds begin constructing a story around it.
 
@@ -50,15 +48,13 @@ Over time, those interpretations can shape a relationship just as much as the ac
 
 What struck me about my wife's response was how naturally she viewed the situation through a lens of generosity. She wasn't arguing with my description. She simply saw something different in the same set of facts.
 
-The cake had been saved.
-
-It was meant to be shared.
+> The cake had been saved. It was meant to be shared.
 
 That small moment reminded me that our perspective often determines what we see. We can focus on what was taken, what was lost, what was consumed, and what was missing. Or we can focus on what was given, what was preserved, what remains, and what is being offered.
 
-Both perspectives may contain elements of truth, but they don't lead us to the same place.
+> Both perspectives may contain elements of truth, but they don't lead us to the same place.
 
-I think that's part of what Paul is getting at when he writes that love "bears all things, believes all things, hopes all things, endures all things" (1 Corinthians 13:7 ESV). Love is not blind, and it isn't naive. But love does resist the urge to immediately assume the worst possible explanation. It leaves room for grace. It leaves room for good intentions. It leaves room for the possibility that there may be more to the story than our first interpretation suggests.
+I think that's part of what Paul is getting at when he writes that love *"bears all things, believes all things, hopes all things, endures all things"* (1 Corinthians 13:7 ESV). Love is not blind, and it isn't naive. But love does resist the urge to immediately assume the worst possible explanation. It leaves room for grace. It leaves room for good intentions. It leaves room for the possibility that there may be more to the story than our first interpretation suggests.
 
 The longer I've been married, the more convinced I've become that many conflicts are not rooted in what happened as much as they are rooted in the meaning we've assigned to what happened.
 
@@ -72,5 +68,5 @@ And sometimes all it takes to change the story is a simple reminder that what lo
 
 ...just a thought.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg0MDk1ODgwXX0=
+eyJoaXN0b3J5IjpbLTExNDQzNDM5OTBdfQ==
 -->
