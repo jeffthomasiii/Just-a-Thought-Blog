@@ -1,11 +1,34 @@
 ---
 layout: default
 title: "Series"
-description: "Explore curated Just A Thought Blog series on Scripture, marriage, leadership, culture, technology, camping, and ordinary life with God."
+description: "Explore Just A Thought Blog series on Scripture, marriage, leadership, culture, technology, camping, and ordinary life with God."
 permalink: /series/
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/jat-pages.css' | relative_url }}">
+
+{% assign series_groups = site.posts | group_by: "series" %}
+{% assign visible_series_count = 0 %}
+{% assign featured_group_name = nil %}
+{% assign featured_posts = nil %}
+
+{% for group in series_groups %}
+  {% if group.name and group.name != "" %}
+    {% assign visible_series_count = visible_series_count | plus: 1 %}
+    {% if group.name == "Created, Fallen, Restored" %}
+      {% assign featured_group_name = group.name %}
+      {% assign featured_posts = group.items | sort: "series_order" %}
+    {% endif %}
+    {% unless featured_posts %}
+      {% assign featured_group_name = group.name %}
+      {% assign featured_posts = group.items | sort: "series_order" %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+{% assign featured_first_post = featured_posts | first %}
+{% assign featured_image = featured_first_post.image | default: featured_first_post.background %}
+{% assign featured_description = featured_first_post.series_description | default: featured_first_post.description | default: featured_first_post.excerpt %}
 
 <main class="jat-page jat-series-page">
   <section class="jat-hero jat-series-hero">
@@ -15,14 +38,24 @@ permalink: /series/
       <p class="jat-lede">These collections gather related reflections around Scripture, marriage, leadership, culture, technology, camping, and ordinary life with God.</p>
 
       <div class="jat-feature jat-series-feature">
-        <div class="jat-feature-image jat-placeholder-image" data-image-note="Featured series image"></div>
+        {% if featured_image %}
+          <div class="jat-feature-image" style="background-image: url('{{ featured_image | relative_url }}'); background-size: cover; background-position: center;"></div>
+        {% else %}
+          <div class="jat-feature-image jat-placeholder-image" data-image-note="Featured series image"></div>
+        {% endif %}
         <div class="jat-feature-body">
           <span class="jat-mini-label">Featured Series</span>
-          <h2>Created, Fallen, Restored</h2>
-          <p>A reflective series on the contradiction and beauty of being human: created in God’s image, fallen through sin, and invited into restoration through Christ.</p>
-          <p>This is a good starting place for readers who want to think about identity, brokenness, grace, and the hope of redemption.</p>
+          <h2>{{ featured_group_name | default: "Series Coming Soon" }}</h2>
+          {% if featured_description %}
+            <p>{{ featured_description | strip_html }}</p>
+          {% else %}
+            <p>As posts are added with series front matter, this section will automatically feature one of those collections.</p>
+          {% endif %}
+          {% if featured_posts %}
+            <p>{{ featured_posts | size }} reflection{% if featured_posts.size != 1 %}s{% endif %} in this series.</p>
+          {% endif %}
           <div class="jat-button-row">
-            <a class="jat-button" href="#all-series">Start the Series</a>
+            {% if featured_group_name %}<a class="jat-button" href="#{{ featured_group_name | slugify }}">Start the Series</a>{% endif %}
             <a class="jat-button jat-button-secondary" href="{{ '/posts/' | relative_url }}">Latest Reflections</a>
           </div>
         </div>
@@ -35,94 +68,99 @@ permalink: /series/
       <div class="jat-section-heading">
         <span class="jat-eyebrow">All Series</span>
         <h2 class="jat-section-title">Browse reflections by theme.</h2>
-        <p class="jat-section-copy">Series pages should feel curated rather than mechanical. Each card gives readers a clear doorway into a larger conversation.</p>
+        <p class="jat-section-copy">Each card below is generated from posts that include a <code>series:</code> value in their front matter.</p>
       </div>
 
-      <div class="jat-series-grid">
-        <article class="jat-series-card">
-          <div class="jat-series-card-image jat-placeholder-image" data-image-note="Created Fallen Restored"></div>
-          <div class="jat-series-card-body">
-            <span class="jat-mini-label">Faith</span>
-            <h3 class="jat-card-title">Created, Fallen, Restored</h3>
-            <p>Reflections on humanity, contradiction, grace, redemption, and what God is restoring in us.</p>
-            <div class="jat-series-meta"><span class="jat-pill">Identity</span><span class="jat-pill">Grace</span><span class="jat-pill">Restoration</span></div>
-          </div>
-        </article>
+      {% if visible_series_count > 0 %}
+        <div class="jat-series-grid">
+          {% for group in series_groups %}
+            {% if group.name and group.name != "" %}
+              {% assign series_posts = group.items | sort: "series_order" %}
+              {% assign first_post = series_posts | first %}
+              {% assign series_image = first_post.image | default: first_post.background %}
+              {% assign series_description = first_post.series_description | default: first_post.description | default: first_post.excerpt %}
+              {% assign primary_category = first_post.categories | first | default: "Reflection" %}
 
-        <article class="jat-series-card">
-          <div class="jat-series-card-image jat-placeholder-image" data-image-note="Biblical Marriage"></div>
-          <div class="jat-series-card-body">
-            <span class="jat-mini-label">Marriage</span>
-            <h3 class="jat-card-title">Biblical Marriage</h3>
-            <p>Reflections on covenant, unity, communication, sacrifice, spiritual warfare, and faithful love.</p>
-            <div class="jat-series-meta"><span class="jat-pill">Covenant</span><span class="jat-pill">Unity</span><span class="jat-pill">Love</span></div>
-          </div>
-        </article>
-
-        <article class="jat-series-card">
-          <div class="jat-series-card-image jat-placeholder-image" data-image-note="Hope in Hard Places"></div>
-          <div class="jat-series-card-body">
-            <span class="jat-mini-label">Faith</span>
-            <h3 class="jat-card-title">Hope in Hard Places</h3>
-            <p>Reflections on suffering, endurance, waiting, resurrection hope, and the strength to keep going.</p>
-            <div class="jat-series-meta"><span class="jat-pill">Hope</span><span class="jat-pill">Endurance</span><span class="jat-pill">Suffering</span></div>
-          </div>
-        </article>
-
-        <article class="jat-series-card">
-          <div class="jat-series-card-image jat-placeholder-image" data-image-note="Faith and Technology"></div>
-          <div class="jat-series-card-body">
-            <span class="jat-mini-label">Technology</span>
-            <h3 class="jat-card-title">Faith and Technology</h3>
-            <p>Thoughtful reflections on AI, digital life, work, ethics, and what technology reveals about human identity.</p>
-            <div class="jat-series-meta"><span class="jat-pill">AI</span><span class="jat-pill">Ethics</span><span class="jat-pill">Work</span></div>
-          </div>
-        </article>
-
-        <article class="jat-series-card">
-          <div class="jat-series-card-image jat-placeholder-image" data-image-note="Camping and Creation"></div>
-          <div class="jat-series-card-body">
-            <span class="jat-mini-label">Camping</span>
-            <h3 class="jat-card-title">Camping and Creation</h3>
-            <p>Outdoor reflections on rest, marriage, quiet, perspective, and noticing God through creation.</p>
-            <div class="jat-series-meta"><span class="jat-pill">Creation</span><span class="jat-pill">Rest</span><span class="jat-pill">Outdoors</span></div>
-          </div>
-        </article>
-
-        <article class="jat-series-card">
-          <div class="jat-series-card-image jat-placeholder-image" data-image-note="Leadership and Character"></div>
-          <div class="jat-series-card-body">
-            <span class="jat-mini-label">Leadership</span>
-            <h3 class="jat-card-title">Leadership and Character</h3>
-            <p>Reflections on humility, responsibility, influence, wisdom, strength, and servant-hearted leadership.</p>
-            <div class="jat-series-meta"><span class="jat-pill">Character</span><span class="jat-pill">Wisdom</span><span class="jat-pill">Influence</span></div>
-          </div>
-        </article>
-      </div>
+              <article class="jat-series-card" id="card-{{ group.name | slugify }}">
+                <a href="#{{ group.name | slugify }}">
+                  {% if series_image %}
+                    <div class="jat-series-card-image" style="background-image: url('{{ series_image | relative_url }}'); background-size: cover; background-position: center;"></div>
+                  {% else %}
+                    <div class="jat-series-card-image jat-placeholder-image" data-image-note="{{ group.name }}"></div>
+                  {% endif %}
+                  <div class="jat-series-card-body">
+                    <span class="jat-mini-label">{{ primary_category }}</span>
+                    <h3 class="jat-card-title">{{ group.name }}</h3>
+                    {% if series_description %}<p>{{ series_description | strip_html | truncatewords: 26 }}</p>{% endif %}
+                    <div class="jat-series-meta">
+                      <span class="jat-pill">{{ series_posts | size }} reflection{% if series_posts.size != 1 %}s{% endif %}</span>
+                      {% for tag in first_post.tags limit:2 %}<span class="jat-pill">{{ tag | replace: '-', ' ' }}</span>{% endfor %}
+                    </div>
+                  </div>
+                </a>
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% else %}
+        <div class="jat-empty-state">
+          <h3>No series have been published yet.</h3>
+          <p>To make a post appear here, add <code>series: "Series Title"</code> and optional <code>series_order: 1</code> to the post front matter.</p>
+        </div>
+      {% endif %}
     </div>
   </section>
 
-  <section class="jat-section jat-section-alt">
+  {% if visible_series_count > 0 %}
+  <section class="jat-section jat-section-alt" id="series-details">
+    <div class="jat-container">
+      <div class="jat-section-heading">
+        <span class="jat-eyebrow">Series Details</span>
+        <h2 class="jat-section-title">Read each collection in order.</h2>
+        <p class="jat-section-copy">Posts are sorted by <code>series_order</code> when that value exists.</p>
+      </div>
+
+      <div class="jat-series-detail-list">
+        {% for group in series_groups %}
+          {% if group.name and group.name != "" %}
+            {% assign series_posts = group.items | sort: "series_order" %}
+            {% assign first_post = series_posts | first %}
+            {% assign series_description = first_post.series_description | default: first_post.description | default: first_post.excerpt %}
+
+            <article class="jat-series-detail" id="{{ group.name | slugify }}">
+              <div class="jat-series-detail-heading">
+                <span class="jat-mini-label">{{ series_posts | size }} reflection{% if series_posts.size != 1 %}s{% endif %}</span>
+                <h3>{{ group.name }}</h3>
+                {% if series_description %}<p>{{ series_description | strip_html }}</p>{% endif %}
+              </div>
+              <div class="jat-series-post-list">
+                {% for post in series_posts %}
+                  <a class="jat-series-post" href="{{ post.url | relative_url }}">
+                    <span class="jat-series-post-meta">{% if post.series_order %}Part {{ post.series_order }} · {% endif %}{{ post.date | date: "%B %-d, %Y" }}</span>
+                    <strong>{{ post.title }}</strong>
+                    {% if post.excerpt %}<span>{{ post.excerpt | strip_html | truncatewords: 24 }}</span>{% endif %}
+                  </a>
+                {% endfor %}
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="jat-section">
     <div class="jat-container">
       <div class="jat-section-heading">
         <span class="jat-eyebrow">Reading Pathways</span>
         <h2 class="jat-section-title">Not sure where to start?</h2>
         <p class="jat-section-copy">These pathways help readers choose based on what they are processing right now.</p>
       </div>
-
       <div class="jat-pathways">
-        <article class="jat-pathway">
-          <h3>For Faith and Discipleship</h3>
-          <p>Start with Created, Fallen, Restored or Hope in Hard Places if you are thinking through identity, obedience, suffering, or spiritual growth.</p>
-        </article>
-        <article class="jat-pathway">
-          <h3>For Marriage and Relationships</h3>
-          <p>Start with Biblical Marriage if you are processing covenant, communication, unity, love, respect, or the stories spouses tell themselves.</p>
-        </article>
-        <article class="jat-pathway">
-          <h3>For Leadership and Culture</h3>
-          <p>Start with Leadership and Character or Faith and Technology if you are thinking through influence, work, ethics, and discernment.</p>
-        </article>
+        <article class="jat-pathway"><h3>For Faith and Discipleship</h3><p>Start with a faith-centered series if you are thinking through identity, obedience, suffering, hope, or spiritual growth.</p></article>
+        <article class="jat-pathway"><h3>For Marriage and Relationships</h3><p>Look for marriage-centered collections if you are processing covenant, communication, unity, love, respect, or the stories spouses tell themselves.</p></article>
+        <article class="jat-pathway"><h3>For Leadership and Culture</h3><p>Start with leadership, culture, or technology reflections if you are thinking through influence, work, ethics, and discernment.</p></article>
       </div>
     </div>
   </section>
