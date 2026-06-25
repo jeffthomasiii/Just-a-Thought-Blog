@@ -56,7 +56,7 @@ permalink: /series/
             <p>{{ featured_posts | size }} reflection{% if featured_posts.size != 1 %}s{% endif %} in this series.</p>
           {% endif %}
           <div class="jat-button-row">
-            {% if featured_group_name %}<a class="jat-button" href="#{{ featured_group_name | slugify }}">Start the Series</a>{% endif %}
+            {% if featured_group_name %}<a class="jat-button" href="#{{ featured_group_name | slugify }}">View Reading List</a>{% endif %}
             <a class="jat-button jat-button-secondary" href="{{ '/posts/' | relative_url }}">Latest Reflections</a>
           </div>
         </div>
@@ -92,7 +92,7 @@ permalink: /series/
                   <div class="jat-series-card-body">
                     <span class="jat-mini-label">{{ primary_category }}</span>
                     <h3 class="jat-card-title">{{ group.name }}</h3>
-                    {% if series_description %}<p>{{ series_description | strip_html | truncatewords: 26 }}</p>{% endif %}
+                    {% if series_description %}<p>{{ series_description | strip_html | truncatewords: 22 }}</p>{% endif %}
                     <div class="jat-series-meta">
                       <span class="jat-pill">{{ series_posts | size }} reflection{% if series_posts.size != 1 %}s{% endif %}</span>
                       {% for tag in first_post.tags limit:2 %}<span class="jat-pill">{{ tag | replace: '-', ' ' }}</span>{% endfor %}
@@ -116,9 +116,9 @@ permalink: /series/
   <section class="jat-section jat-section-alt" id="series-details">
     <div class="jat-container">
       <div class="jat-section-heading">
-        <span class="jat-eyebrow">Series Details</span>
-        <h2 class="jat-section-title">Read each collection in order.</h2>
-        <p class="jat-section-copy">Posts are sorted by <code>series_order</code> when that value exists.</p>
+        <span class="jat-eyebrow">Reading Lists</span>
+        <h2 class="jat-section-title">Open a series when you are ready to read.</h2>
+        <p class="jat-section-copy">Posts are sorted by <code>series_order</code> when that value exists. The lists stay collapsed so this page remains a landing page rather than a long archive.</p>
       </div>
 
       <div class="jat-series-detail-list">
@@ -128,22 +128,23 @@ permalink: /series/
             {% assign first_post = series_posts | first %}
             {% assign series_description = first_post.series_description | default: first_post.description | default: first_post.excerpt %}
 
-            <article class="jat-series-detail" id="{{ group.name | slugify }}">
-              <div class="jat-series-detail-heading">
-                <span class="jat-mini-label">{{ series_posts | size }} reflection{% if series_posts.size != 1 %}s{% endif %}</span>
-                <h3>{{ group.name }}</h3>
-                {% if series_description %}<p>{{ series_description | strip_html }}</p>{% endif %}
-              </div>
+            <details class="jat-series-detail" id="{{ group.name | slugify }}">
+              <summary>
+                <div class="jat-series-detail-heading">
+                  <span class="jat-mini-label">{{ series_posts | size }} reflection{% if series_posts.size != 1 %}s{% endif %}</span>
+                  <h3>{{ group.name }}</h3>
+                  {% if series_description %}<p>{{ series_description | strip_html | truncatewords: 28 }}</p>{% endif %}
+                </div>
+              </summary>
               <div class="jat-series-post-list">
                 {% for post in series_posts %}
                   <a class="jat-series-post" href="{{ post.url | relative_url }}">
-                    <span class="jat-series-post-meta">{% if post.series_order %}Part {{ post.series_order }} · {% endif %}{{ post.date | date: "%B %-d, %Y" }}</span>
+                    <span class="jat-series-post-meta">{% if post.series_order %}Part {{ post.series_order }}{% else %}{{ post.date | date: "%b %-d, %Y" }}{% endif %}</span>
                     <strong>{{ post.title }}</strong>
-                    {% if post.excerpt %}<span>{{ post.excerpt | strip_html | truncatewords: 24 }}</span>{% endif %}
                   </a>
                 {% endfor %}
               </div>
-            </article>
+            </details>
           {% endif %}
         {% endfor %}
       </div>
