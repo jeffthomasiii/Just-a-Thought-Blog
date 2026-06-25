@@ -1,23 +1,129 @@
 ---
-layout: page
-title: Series
-background: /img/posts/bg-series.jpg
+layout: default
+title: "Series"
+description: "Explore curated Just A Thought Blog series on Scripture, marriage, leadership, culture, technology, camping, and ordinary life with God."
 permalink: /series/
 ---
 
-{% assign grouped = site.posts | group_by: "series" %}
+<link rel="stylesheet" href="{{ '/assets/css/jat-pages.css' | relative_url }}">
 
-{% for group in grouped %}
-  {% if group.name and group.name != "" %}
-    <h2 id="{{ group.name | slugify }}">{{ group.name }}</h2>
-    <ul>
-      {% assign sorted = group.items | sort: "series_order" %}
-      {% for post in sorted %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          {% if post.series_order %} (Part {{ post.series_order }}){% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-{% endfor %}
+<main class="jat-page jat-series-page">
+  <section class="jat-hero jat-series-hero">
+    <div class="jat-container">
+      <span class="jat-eyebrow">Explore by Series</span>
+      <h1 class="jat-title">Some thoughts are better explored over time.</h1>
+      <p class="jat-lede">These collections gather related reflections around Scripture, marriage, leadership, culture, technology, camping, and ordinary life with God.</p>
+
+      <div class="jat-feature jat-series-feature">
+        <div class="jat-feature-image jat-placeholder-image" data-image-note="Featured series image"></div>
+        <div class="jat-feature-body">
+          <span class="jat-mini-label">Featured Series</span>
+          <h2>Created, Fallen, Restored</h2>
+          <p>A reflective series on the contradiction and beauty of being human: created in God’s image, fallen through sin, and invited into restoration through Christ.</p>
+          <p>This is a good starting place for readers who want to think about identity, brokenness, grace, and the hope of redemption.</p>
+          <div class="jat-button-row">
+            <a class="jat-button" href="#all-series">Start the Series</a>
+            <a class="jat-button jat-button-secondary" href="{{ '/posts/' | relative_url }}">Latest Reflections</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="jat-section" id="all-series">
+    <div class="jat-container">
+      <div class="jat-section-heading">
+        <span class="jat-eyebrow">All Series</span>
+        <h2 class="jat-section-title">Browse reflections by theme.</h2>
+        <p class="jat-section-copy">Series pages should feel curated rather than mechanical. Each card gives readers a clear doorway into a larger conversation.</p>
+      </div>
+
+      <div class="jat-series-grid">
+        <article class="jat-series-card">
+          <div class="jat-series-card-image jat-placeholder-image" data-image-note="Created Fallen Restored"></div>
+          <div class="jat-series-card-body">
+            <span class="jat-mini-label">Faith</span>
+            <h3 class="jat-card-title">Created, Fallen, Restored</h3>
+            <p>Reflections on humanity, contradiction, grace, redemption, and what God is restoring in us.</p>
+            <div class="jat-series-meta"><span class="jat-pill">Identity</span><span class="jat-pill">Grace</span><span class="jat-pill">Restoration</span></div>
+          </div>
+        </article>
+
+        <article class="jat-series-card">
+          <div class="jat-series-card-image jat-placeholder-image" data-image-note="Biblical Marriage"></div>
+          <div class="jat-series-card-body">
+            <span class="jat-mini-label">Marriage</span>
+            <h3 class="jat-card-title">Biblical Marriage</h3>
+            <p>Reflections on covenant, unity, communication, sacrifice, spiritual warfare, and faithful love.</p>
+            <div class="jat-series-meta"><span class="jat-pill">Covenant</span><span class="jat-pill">Unity</span><span class="jat-pill">Love</span></div>
+          </div>
+        </article>
+
+        <article class="jat-series-card">
+          <div class="jat-series-card-image jat-placeholder-image" data-image-note="Hope in Hard Places"></div>
+          <div class="jat-series-card-body">
+            <span class="jat-mini-label">Faith</span>
+            <h3 class="jat-card-title">Hope in Hard Places</h3>
+            <p>Reflections on suffering, endurance, waiting, resurrection hope, and the strength to keep going.</p>
+            <div class="jat-series-meta"><span class="jat-pill">Hope</span><span class="jat-pill">Endurance</span><span class="jat-pill">Suffering</span></div>
+          </div>
+        </article>
+
+        <article class="jat-series-card">
+          <div class="jat-series-card-image jat-placeholder-image" data-image-note="Faith and Technology"></div>
+          <div class="jat-series-card-body">
+            <span class="jat-mini-label">Technology</span>
+            <h3 class="jat-card-title">Faith and Technology</h3>
+            <p>Thoughtful reflections on AI, digital life, work, ethics, and what technology reveals about human identity.</p>
+            <div class="jat-series-meta"><span class="jat-pill">AI</span><span class="jat-pill">Ethics</span><span class="jat-pill">Work</span></div>
+          </div>
+        </article>
+
+        <article class="jat-series-card">
+          <div class="jat-series-card-image jat-placeholder-image" data-image-note="Camping and Creation"></div>
+          <div class="jat-series-card-body">
+            <span class="jat-mini-label">Camping</span>
+            <h3 class="jat-card-title">Camping and Creation</h3>
+            <p>Outdoor reflections on rest, marriage, quiet, perspective, and noticing God through creation.</p>
+            <div class="jat-series-meta"><span class="jat-pill">Creation</span><span class="jat-pill">Rest</span><span class="jat-pill">Outdoors</span></div>
+          </div>
+        </article>
+
+        <article class="jat-series-card">
+          <div class="jat-series-card-image jat-placeholder-image" data-image-note="Leadership and Character"></div>
+          <div class="jat-series-card-body">
+            <span class="jat-mini-label">Leadership</span>
+            <h3 class="jat-card-title">Leadership and Character</h3>
+            <p>Reflections on humility, responsibility, influence, wisdom, strength, and servant-hearted leadership.</p>
+            <div class="jat-series-meta"><span class="jat-pill">Character</span><span class="jat-pill">Wisdom</span><span class="jat-pill">Influence</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="jat-section jat-section-alt">
+    <div class="jat-container">
+      <div class="jat-section-heading">
+        <span class="jat-eyebrow">Reading Pathways</span>
+        <h2 class="jat-section-title">Not sure where to start?</h2>
+        <p class="jat-section-copy">These pathways help readers choose based on what they are processing right now.</p>
+      </div>
+
+      <div class="jat-pathways">
+        <article class="jat-pathway">
+          <h3>For Faith and Discipleship</h3>
+          <p>Start with Created, Fallen, Restored or Hope in Hard Places if you are thinking through identity, obedience, suffering, or spiritual growth.</p>
+        </article>
+        <article class="jat-pathway">
+          <h3>For Marriage and Relationships</h3>
+          <p>Start with Biblical Marriage if you are processing covenant, communication, unity, love, respect, or the stories spouses tell themselves.</p>
+        </article>
+        <article class="jat-pathway">
+          <h3>For Leadership and Culture</h3>
+          <p>Start with Leadership and Character or Faith and Technology if you are thinking through influence, work, ethics, and discernment.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
