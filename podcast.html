@@ -21,8 +21,8 @@ permalink: /podcast/
         </div>
       </div>
 
-      <div class="jat-hero-media jat-placeholder-image" data-image-note="Podcast hero image">
-        <!-- Replace with: <img src="{{ '/img/pages/bg-podcast-coming-soon.jpg' | relative_url }}" alt="A quiet desk with a microphone, journal, Bible, and coffee in warm morning light."> -->
+      <div class="jat-hero-media">
+        <img src="{{ '/img/pages/bg-podcast-coming-soon.jpg' | relative_url }}" alt="A quiet podcast desk with a microphone, open Bible, leather journal, pen, and coffee in warm morning light.">
         <div class="jat-media-caption">
           <strong>Thoughtful reflections for everyday faith.</strong>
           <span>Warm, calm, conversational, and rooted in the same reflective spirit as the blog.</span>
@@ -67,7 +67,9 @@ permalink: /podcast/
   <section class="jat-section jat-section-alt">
     <div class="jat-container">
       <div class="jat-feature">
-        <div class="jat-feature-image jat-placeholder-image" data-image-note="Episode preview image"></div>
+        <div class="jat-feature-image">
+          <img src="{{ '/img/pages/podcast-episode-preview.jpg' | relative_url }}" alt="A close podcast recording setup with microphone, headphones, open journal, handwritten notes, coffee, and Bible.">
+        </div>
         <div class="jat-feature-body">
           <span class="jat-mini-label">Sample Episode Direction</span>
           <h2>One post, one thought, a little more room to breathe.</h2>
@@ -81,21 +83,24 @@ permalink: /podcast/
 
   <section class="jat-section" id="notify">
     <div class="jat-container">
-      <div class="jat-signup">
-        <div>
+      <div class="jat-signup jat-podcast-signup-card">
+        <div class="jat-podcast-signup-image">
+          <img src="{{ '/img/pages/podcast-coming-soon-card.jpg' | relative_url }}" alt="A podcast microphone beside an open Bible, journal, and cup of coffee in soft morning light.">
+        </div>
+        <div class="jat-podcast-signup-copy">
           <span class="jat-eyebrow">Launch Updates</span>
           <h2>Be the first to know when the podcast launches.</h2>
           <p>Join the email list for launch updates, new reflections, and occasional resources connected to the blog.</p>
+          <form class="jat-form" action="#" method="post">
+            <input type="email" name="email" placeholder="Enter your email address" aria-label="Email address">
+            <button class="jat-button" type="submit">Notify Me</button>
+          </form>
         </div>
-        <form class="jat-form" action="#" method="post">
-          <input type="email" name="email" placeholder="Enter your email address" aria-label="Email address">
-          <button class="jat-button" type="submit">Notify Me</button>
-        </form>
       </div>
     </div>
   </section>
 
-  <section class="jat-section jat-section-alt">
+  <section class="jat-section jat-section-alt jat-podcast-texture-section">
     <div class="jat-container">
       <div class="jat-quote-band">
         <p class="jat-quote">“Sometimes the smallest thought opens the door to deeper reflection.”</p>
