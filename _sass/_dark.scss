@@ -1,125 +1,437 @@
-body.dark-mode {
-  background-color: #121212;
-  color: #f5f5f5;
-}
-
-.dark-mode a {
-  color: #A2B179; // soft olive tone for better contrast in dark mode
-}
-.dark-mode a:hover {
-  color: #556B2F;
-}
-
-.dark-mode header a {
-  color: #A2B179;
-}
-
-.dark-mode header a:hover,
-.dark-mode header a:focus {
-  color: #6B8E23; // or stick with #556B2F if you prefer darker
-}
-
-.dark-mode header,
-.dark-mode footer {
-  background-color: #1e1e1e;
-  color: #f5f5f5;
-}
+/* =========================================================
+   Just A Thought Blog — Dark Mode Theme
+   ========================================================= */
 
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: inherit;
-  margin-left: auto;
+body.dark-mode {
+  color-scheme: dark;
+  --jat-deep-olive: #A8B68A;
+  --jat-muted-olive: #B8C995;
+  --jat-soft-sage: #879567;
+  --jat-warm-cream: #181914;
+  --jat-soft-parchment: #22251D;
+  --jat-charcoal: #F6F1E7;
+  --jat-warm-gray: #C9C1B0;
+  --jat-muted-gold: #D6B36B;
+  --jat-border: rgba(214, 179, 107, 0.18);
+  background: #181914;
+  color: #F6F1E7;
 }
-/* =========================
-   Search Page (Dark Mode)
-   ========================= */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode .post-title,
+body.dark-mode .page-heading h1,
+body.dark-mode .site-heading h1 {
+  color: #F6F1E7;
+}
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode .post-preview,
+body.dark-mode .post-subtitle,
+body.dark-mode .post-excerpt {
+  color: #C9C1B0;
+}
+
+body.dark-mode a {
+  color: #B8C995;
+}
+
+body.dark-mode a:hover,
+body.dark-mode a:focus {
+  color: #D6B36B;
+}
+
+body.dark-mode hr {
+  border-color: rgba(214, 179, 107, 0.16);
+}
+
+/* ---------------------------------------------------------
+   Navigation
+   --------------------------------------------------------- */
+
+body.dark-mode #mainNav,
+body.dark-mode #mainNav.jat-nav,
+body.dark-mode .jat-site-nav {
+  background: rgba(24, 25, 20, 0.97) !important;
+  border-bottom-color: rgba(214, 179, 107, 0.18) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+body.dark-mode .jat-nav-brand,
+body.dark-mode .jat-nav-brand:hover,
+body.dark-mode .jat-nav-brand:focus,
+body.dark-mode .jat-brand,
+body.dark-mode .navbar-brand {
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-site-nav .nav-link,
+body.dark-mode #mainNav .navbar-nav > li.nav-item > a.nav-link {
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-site-nav .nav-link:hover,
+body.dark-mode .jat-site-nav .nav-link:focus,
+body.dark-mode #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+body.dark-mode #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  color: #D6B36B !important;
+}
+
+body.dark-mode #mainNav .navbar-nav > li.nav-item > a.nav-link::after {
+  background: #D6B36B;
+}
+
+body.dark-mode .navbar-toggler {
+  border-color: rgba(214, 179, 107, 0.28) !important;
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-site-nav .navbar-collapse,
+body.dark-mode #mainNav .navbar-collapse {
+  border-top-color: rgba(214, 179, 107, 0.18) !important;
+  background: rgba(24, 25, 20, 0.98) !important;
+}
+
+.theme-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid var(--jat-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  color: inherit;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  border-color: var(--jat-muted-gold);
+  outline: none;
+}
+
+body.dark-mode .theme-toggle {
+  border-color: rgba(214, 179, 107, 0.28);
+  background: rgba(255, 255, 255, 0.06);
+  color: #F6F1E7;
+}
+
+body.dark-mode .theme-toggle:hover,
+body.dark-mode .theme-toggle:focus {
+  border-color: #D6B36B;
+  box-shadow: 0 0 0 0.2rem rgba(214, 179, 107, 0.15);
+}
+
+/* ---------------------------------------------------------
+   Buttons and Links
+   --------------------------------------------------------- */
+
+body.dark-mode .btn-primary,
+body.dark-mode .jat-btn-primary,
+body.dark-mode .jat-nav-button,
+body.dark-mode .jat-footer-form-placeholder button {
+  border-color: #A8B68A !important;
+  background: #A8B68A !important;
+  color: #181914 !important;
+}
+
+body.dark-mode .btn-primary:hover,
+body.dark-mode .btn-primary:focus,
+body.dark-mode .jat-btn-primary:hover,
+body.dark-mode .jat-btn-primary:focus,
+body.dark-mode .jat-nav-button:hover,
+body.dark-mode .jat-nav-button:focus,
+body.dark-mode .jat-footer-form-placeholder button:hover,
+body.dark-mode .jat-footer-form-placeholder button:focus {
+  border-color: #D6B36B !important;
+  background: #D6B36B !important;
+  color: #181914 !important;
+}
+
+body.dark-mode .jat-btn-secondary {
+  border-color: #A8B68A !important;
+  background: transparent !important;
+  color: #DDE8BC !important;
+}
+
+body.dark-mode .jat-btn-secondary:hover,
+body.dark-mode .jat-btn-secondary:focus {
+  border-color: #D6B36B !important;
+  background: rgba(214, 179, 107, 0.12) !important;
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-text-link,
+body.dark-mode .jat-topic-card span:last-child,
+body.dark-mode .jat-series-card span,
+body.dark-mode .jat-signature,
+body.dark-mode .jat-footer-signature {
+  color: #B8C995;
+}
+
+body.dark-mode .jat-text-link:hover,
+body.dark-mode .jat-text-link:focus {
+  color: #D6B36B;
+}
+
+/* ---------------------------------------------------------
+   Homepage and Editorial Cards
+   --------------------------------------------------------- */
+
+body.dark-mode .jat-home-hero,
+body.dark-mode .jat-home-main,
+body.dark-mode .jat-board-hero,
+body.dark-mode .jat-board-main,
+body.dark-mode .jat-footer {
+  background: #181914;
+}
+
+body.dark-mode .jat-hero-grid,
+body.dark-mode .jat-featured-grid,
+body.dark-mode .jat-board-hero-grid,
+body.dark-mode .jat-latest-card,
+body.dark-mode .jat-scripture-card,
+body.dark-mode .jat-topic-section,
+body.dark-mode .jat-memory-card,
+body.dark-mode .jat-podcast-card,
+body.dark-mode .jat-series-card,
+body.dark-mode .jat-newsletter-card,
+body.dark-mode .jat-recent-section,
+body.dark-mode .jat-post-preview,
+body.dark-mode .jat-recent-card {
+  border-color: rgba(214, 179, 107, 0.18);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+body.dark-mode .jat-board-hero-grid {
+  background: linear-gradient(
+    90deg,
+    rgba(34, 37, 29, 0.98) 0%,
+    rgba(34, 37, 29, 0.94) 37%,
+    rgba(34, 37, 29, 0.78) 48%,
+    rgba(34, 37, 29, 0.1) 64%
+  );
+}
+
+body.dark-mode .jat-hero-image::before {
+  background: linear-gradient(90deg, rgba(24, 25, 20, 0.62), rgba(24, 25, 20, 0.12) 45%, rgba(0, 0, 0, 0.22));
+}
+
+body.dark-mode .jat-board-hero-image::before {
+  background: linear-gradient(
+    90deg,
+    rgba(34, 37, 29, 0.98) 0%,
+    rgba(34, 37, 29, 0.82) 12%,
+    rgba(34, 37, 29, 0.48) 28%,
+    rgba(34, 37, 29, 0.12) 48%,
+    rgba(34, 37, 29, 0) 64%
+  );
+}
+
+body.dark-mode .jat-section-divider,
+body.dark-mode .jat-footer,
+body.dark-mode .jat-footer-bottom,
+body.dark-mode .jat-series-card a,
+body.dark-mode .jat-recent-card {
+  border-color: rgba(214, 179, 107, 0.18);
+}
+
+body.dark-mode .jat-eyebrow,
+body.dark-mode .jat-section-label,
+body.dark-mode .jat-kicker,
+body.dark-mode .jat-footer-column h4,
+body.dark-mode .jat-footer-letter h4 {
+  color: #D6B36B;
+}
+
+body.dark-mode .jat-hero-description,
+body.dark-mode .jat-board-hero-copy p:not(.jat-kicker),
+body.dark-mode .jat-featured-subtitle,
+body.dark-mode .post-meta,
+body.dark-mode .jat-footer-brand p,
+body.dark-mode .jat-footer-letter p,
+body.dark-mode .jat-footer-bottom {
+  color: #C9C1B0 !important;
+}
+
+body.dark-mode .jat-featured-copy h2 a,
+body.dark-mode .jat-card-copy h2 a,
+body.dark-mode .jat-topic-card,
+body.dark-mode .jat-topic-card:hover,
+body.dark-mode .jat-topic-card p,
+body.dark-mode .jat-series-card a,
+body.dark-mode .jat-recent-card h3 a,
+body.dark-mode .jat-footer-logo,
+body.dark-mode .jat-footer-column a {
+  color: #F6F1E7;
+}
+
+body.dark-mode .jat-featured-copy h2 a:hover,
+body.dark-mode .jat-card-copy h2 a:hover,
+body.dark-mode .jat-series-card a:hover,
+body.dark-mode .jat-recent-card h3 a:hover,
+body.dark-mode .jat-footer-logo:hover,
+body.dark-mode .jat-footer-column a:hover {
+  color: #D6B36B;
+}
+
+body.dark-mode .jat-topic-icon,
+body.dark-mode .jat-footer-socials a,
+body.dark-mode .jat-footer-olive-strip {
+  background: #A8B68A;
+  color: #181914;
+}
+
+body.dark-mode .jat-topic-icon {
+  border-color: #181914;
+}
+
+body.dark-mode .jat-footer-socials a:hover {
+  background: #D6B36B;
+  color: #181914;
+}
+
+body.dark-mode .jat-footer-form-placeholder span {
+  border-color: rgba(214, 179, 107, 0.24);
+  background: rgba(255, 255, 255, 0.06);
+  color: #C9C1B0;
+}
+
+/* ---------------------------------------------------------
+   Posts, Pages, and Clean Blog Defaults
+   --------------------------------------------------------- */
+
+body.dark-mode .post-preview > a,
+body.dark-mode .post-preview > a > .post-title,
+body.dark-mode .post-preview > a > .post-subtitle {
+  color: #F6F1E7;
+}
+
+body.dark-mode .post-preview > a:hover,
+body.dark-mode .post-preview > a:focus,
+body.dark-mode .post-preview > a:hover > .post-title,
+body.dark-mode .post-preview > a:focus > .post-title {
+  color: #D6B36B;
+}
+
+body.dark-mode .post-meta,
+body.dark-mode .post-meta a {
+  color: #C9C1B0 !important;
+}
+
+body.dark-mode .post-meta a:hover,
+body.dark-mode .post-meta a:focus {
+  color: #D6B36B !important;
+}
+
+body.dark-mode .caption,
+body.dark-mode figcaption,
+body.dark-mode small,
+body.dark-mode .text-muted {
+  color: #AFA68F !important;
+}
+
+/* ---------------------------------------------------------
+   Search Page
+   --------------------------------------------------------- */
 
 body.dark-mode .search-wrap input[type="search"],
 body.dark-mode .search-wrap select {
-  border-color: rgba(255, 255, 255, 0.22);
-  background-color: rgba(255, 255, 255, 0.03);
-  color: inherit;
+  border-color: rgba(214, 179, 107, 0.24);
+  background-color: rgba(255, 255, 255, 0.04);
+  color: #F6F1E7;
 }
 
 body.dark-mode .search-wrap input[type="search"]::placeholder {
-  color: rgba(245, 245, 245, 0.65);
+  color: rgba(246, 241, 231, 0.58);
 }
 
 body.dark-mode .search-wrap input[type="search"]:focus,
 body.dark-mode .search-wrap select:focus {
   outline: none;
-  border-color: rgba(162, 177, 121, 0.75); /* your soft olive */
-  box-shadow: 0 0 0 0.2rem rgba(162, 177, 121, 0.18);
+  border-color: rgba(214, 179, 107, 0.72);
+  box-shadow: 0 0 0 0.2rem rgba(214, 179, 107, 0.16);
+}
+
+body.dark-mode .search-wrap select option {
+  background-color: #22251D;
+  color: #F6F1E7;
+}
+
+body.dark-mode .search-wrap select option:checked,
+body.dark-mode .search-wrap select option:hover {
+  background-color: #2C3025;
+  color: #F6F1E7;
 }
 
 body.dark-mode #clear-filters {
-  border-color: rgba(255, 255, 255, 0.22);
+  border-color: rgba(214, 179, 107, 0.24);
   background: transparent;
-  color: inherit;
+  color: #F6F1E7;
 }
 
 body.dark-mode #clear-filters:hover {
-  border-color: rgba(255, 255, 255, 0.35);
+  border-color: rgba(214, 179, 107, 0.4);
 }
 
 body.dark-mode #search-results li {
-  border-bottom-color: rgba(255, 255, 255, 0.10);
+  border-bottom-color: rgba(214, 179, 107, 0.12);
 }
 
 body.dark-mode #search-meta {
-  color: rgba(245, 245, 245, 0.75);
+  color: #C9C1B0;
 }
 
-/* =========================
-   Search dropdown menu (Dark Mode)
-   Fixes the option list readability
-   ========================= */
-
-body.dark-mode .search-wrap select {
-  background-color: #1e1e1e; /* matches header/footer dark */
-  color: #f5f5f5;
-}
-
-/* Styles the dropdown option list in most browsers (Chrome/Edge) */
-body.dark-mode .search-wrap select option {
-  background-color: #1e1e1e;
-  color: #f5f5f5;
-}
-
-/* Highlighting when navigating options */
-body.dark-mode .search-wrap select option:checked,
-body.dark-mode .search-wrap select option:hover {
-  background-color: #2a2a2a;
-  color: #f5f5f5;
-}
-
-/* Olive-branded focus for the open dropdown */
-body.dark-mode .search-wrap select:focus {
-  outline: none;
-  border-color: rgba(162, 177, 121, 0.75);
-  box-shadow: 0 0 0 0.2rem rgba(162, 177, 121, 0.18);
-}
-/* =========================
-   Blockquotes (Dark Mode)
-   ========================= */
+/* ---------------------------------------------------------
+   Blockquotes
+   --------------------------------------------------------- */
 
 body.dark-mode blockquote {
-  color: #e6e6e6;
-  background-color: rgba(255, 255, 255, 0.04);
-  border-left: 2px solid rgba(162, 177, 121, 0.4);
+  color: #E7DFC9;
+  background-color: rgba(255, 255, 255, 0.045);
+  border-left: 2px solid rgba(214, 179, 107, 0.42);
 }
 
 body.dark-mode blockquote::before {
-  color: rgba(162, 177, 121, 0.8);
+  color: rgba(214, 179, 107, 0.85);
 }
 
 body.dark-mode blockquote p {
   margin: 0 0 0 1rem;
+}
+
+body.dark-mode .jat-scripture-card blockquote {
+  background: transparent;
+  color: #F6F1E7;
+}
+
+body.dark-mode .jat-scripture-card cite,
+body.dark-mode .jat-scripture-card .jat-quote-mark {
+  color: #D6B36B;
+}
+
+@media (max-width: 991.98px) {
+  body.dark-mode .jat-board-hero-grid {
+    background: #22251D;
+  }
+
+  body.dark-mode .jat-board-hero-image::before {
+    background: linear-gradient(
+      0deg,
+      rgba(34, 37, 29, 0.98) 0%,
+      rgba(34, 37, 29, 0.74) 24%,
+      rgba(34, 37, 29, 0) 58%
+    );
+  }
 }
