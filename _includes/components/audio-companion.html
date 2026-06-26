@@ -1,0 +1,17 @@
+{% unless page.audio_enabled == false %}
+<section class="jat-audio-companion" aria-label="Listen to this reflection">
+  <div class="jat-audio-companion__inner">
+    <p class="jat-audio-companion__eyebrow">Audio Companion</p>
+    <h2 class="jat-audio-companion__title">Listen to this reflection</h2>
+    <p class="jat-audio-companion__description">
+      Use the controls below to have your browser read this post aloud.
+    </p>
+
+    <div class="jat-audio-companion__controls">
+      <button type="button" id="jat-audio-play">Play</button>
+      <button type="button" id="jat-audio-pause">Pause</button>
+      <button type="button" id="jat-audio-stop">Stop</button>
+    </div>
+  </div>
+</section>
+{% endunless %}

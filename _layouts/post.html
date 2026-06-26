@@ -4,6 +4,15 @@ layout: default
 
 <style>
   .jat-post-hero.masthead{position:relative;min-height:430px;margin-bottom:0;background-position:center;background-size:cover}.jat-post-hero .overlay{background:rgba(37,40,34,.28)}.jat-post-intro{background:#F6F1E7;border-bottom:1px solid rgba(79,93,58,.18);padding:2.75rem 0 2.25rem}.jat-post-intro h1{margin:0;color:#252822!important;font-family:'Playfair Display','Lora',serif;font-size:clamp(3rem,6vw,5rem);font-weight:600;line-height:1.02}.jat-post-intro .subheading{display:block;margin-top:.85rem;color:#4F5D3A!important;font-family:'Source Sans 3','Open Sans',sans-serif;font-size:1.35rem;font-weight:500;line-height:1.4}.jat-post-intro .meta,.jat-post-intro .meta a{display:block;margin-top:1rem;color:#7A7468!important;font-family:'Source Sans 3','Open Sans',sans-serif;font-size:1rem;font-style:italic}.jat-post-content{padding-top:3rem}@media(max-width:575.98px){.jat-post-hero.masthead{min-height:280px}.jat-post-intro{padding:2rem 0 1.75rem}.jat-post-intro h1{font-size:2.75rem}.jat-post-intro .subheading{font-size:1.1rem}}
+
+  .jat-audio-companion{margin:0 0 2rem;padding:1rem 1.15rem;background:rgba(239,228,211,.45);border:1px solid rgba(79,93,58,.16);border-radius:6px}
+  .jat-audio-companion__eyebrow{display:none}
+  .jat-audio-companion__title{margin:0 0 .25rem;color:#252822;font-family:'Source Sans 3','Open Sans',sans-serif;font-size:.95rem;font-weight:700;line-height:1.2;text-transform:uppercase;letter-spacing:.04em}
+  .jat-audio-companion__description{margin:0 0 .65rem;color:#7A7468;font-size:.85rem;line-height:1.4}
+  .jat-audio-companion__controls{display:flex;flex-wrap:wrap;gap:.35rem}
+  .jat-audio-companion button{border:1px solid rgba(79,93,58,.45);border-radius:4px;padding:.28rem .6rem;background:transparent;color:#4F5D3A;font-family:'Source Sans 3','Open Sans',sans-serif;font-size:.72rem;font-weight:700;line-height:1.1;cursor:pointer;text-transform:uppercase;letter-spacing:.03em}
+  .jat-audio-companion button:first-child{background:#4F5D3A;color:#F6F1E7;border-color:#4F5D3A}
+  .jat-audio-companion button:hover{background:#252822;border-color:#252822;color:#F6F1E7}
 </style>
 
 {% assign hero = page.header-image | default: page.background | default: page.image %}
@@ -31,7 +40,11 @@ layout: default
 <div class="container jat-post-content">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
-      {{ content }}
+      {% include components/audio-companion.html %}
+
+<article id="jat-post-body" class="jat-post-body">
+  {{ content }}
+</article>
 
       <div id="giscus_thread" style="margin-top: 3rem;"></div>
       <script src="https://giscus.app/client.js"
@@ -67,3 +80,4 @@ layout: default
     </div>
   </div>
 </div>
+<script src="{{ '/assets/js/audio-companion.js' | relative_url }}"></script>
