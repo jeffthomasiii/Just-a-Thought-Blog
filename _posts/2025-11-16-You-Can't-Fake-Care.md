@@ -17,7 +17,7 @@ image: /img/posts/you-cant-fake-care.jpg
 background: /img/posts/bg-you-cant-fake-care.jpg
 scripture: "Romans 12:9 — Let love be genuine."
 contributors: []
-series: "Leadership Reflections"
+series: "Character Before Competence"
 series_order: 1
 ---
 
