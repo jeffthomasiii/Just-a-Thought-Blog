@@ -24,14 +24,13 @@ background: /img/posts/bg-the-honored-vessel.jpg
 scripture: "1 Peter 3:7 ESV"
 ---
 
-There are some Bible phrases that make people tense up before the conversation even begins. “Weaker vessel” is one of them. For some, it sounds like Scripture is calling women inferior, and for others, it has been used to justify the very kind of harshness Peter seems to be warning husbands against.
+There are some Bible phrases that make people tense up before the conversation even begins. *“Weaker vessel”* is one of them. For some, it sounds like Scripture is calling women inferior, and for others, it has been used to justify the very kind of harshness Peter seems to be warning husbands against.
 
 I understand why the phrase can be difficult. I have heard people talk about it in ways that felt dismissive, careless, or incomplete, and in my normal overthinking, deep-thinking way, I eventually had to slow down and read the verse again for myself. Not just repeat what I had heard. Not just react to the phrase. I needed to sit with the actual words of Scripture and ask what Peter was really saying.
 
-Years ago, as I was meditating on this passage, the image of a vessel started to stand out to me. A vessel can be more delicate without being less valuable. In fact, many delicate vessels are handled with greater care precisely because they are precious. That thought has stayed with me for years, and I have used it in small group and ministry conversations when discussing this passage, especially when trying to explain that “weaker” does not mean lesser, inferior, or spiritually beneath.
+Years ago, as I was meditating on this passage, the image of a vessel started to stand out to me. A vessel can be more delicate without being less valuable. In fact, many delicate vessels are handled with greater care precisely because they are precious. That thought has stayed with me for years, and I have used it in small group and ministry conversations when discussing this passage, especially when trying to explain that *“weaker”* does not mean lesser, inferior, or spiritually beneath.
 
-The verse says, “Likewise, husbands, live with your wives in an understanding way, showing honor to the woman as the weaker vessel, since they are heirs with you of the grace of life, so that your prayers may not be hindered.” That sentence does not stand over wives to reduce them. It stands before husbands to sober them. Peter does not use “weaker vessel” to lower a wife’s worth; he uses it to raise a husband’s responsibility.
-
+The verse says, *“Likewise, husbands, live with your wives in an understanding way, showing honor to the woman as the weaker vessel, since they are heirs with you of the grace of life, so that your prayers may not be hindered.”* That sentence does not stand over wives to reduce them. It stands before husbands to sober them. Peter does not use “weaker vessel” to lower a wife’s worth; he uses it to raise a husband’s responsibility.
 
 <figure style="margin: 2rem 0; text-align: center;">
   <a href="/img/posts/the-honored-vessel-infographic.png" target="_blank" rel="noopener">
@@ -42,7 +41,7 @@ The verse says, “Likewise, husbands, live with your wives in an understanding 
     />
   </a>
   <figcaption style="margin-top: 0.75rem; font-style: italic;">
-    The Honored Vessel: a visual reflection on 1 Peter 3:7. Click the image to view full size.
+    The Honored Vessel: a visual reflection on 1 Peter 3:7. *Click the image to view full size.*
   </figcaption>
 </figure>
 
@@ -90,5 +89,5 @@ And in a world that often confuses strength with power, maybe Christian marriage
 
 “…just a thought.”
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTk3NDA4NzNdfQ==
+eyJoaXN0b3J5IjpbLTE5MTUxNTM3MTldfQ==
 -->
