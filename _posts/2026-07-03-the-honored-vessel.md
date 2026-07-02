@@ -66,13 +66,13 @@ Then Peter says to show honor. That word should slow us down. Honor is not the s
 This is where the passage becomes deeply practical. A husband cannot claim to honor his wife while consistently belittling her, ignoring her, intimidating her, embarrassing her, or treating her concerns as annoyances. He cannot use Scripture to demand respect while refusing the part of Scripture that commands him to give honor. 
 > Biblical headship, however one works through the larger conversation, can never be separated from Christlike sacrifice.
 
-Ephesians 5 gives us that larger picture. Husbands are called to love their wives as Christ loved the church and gave Himself up for her. That kind of love does not use authority to take. It uses strength to give. It does not crush what is vulnerable. It moves toward what is vulnerable with patience, protection, tenderness, and care.
+Ephesians 5 gives us that larger picture. Husbands are called to *love their wives as Christ loved the church and gave Himself up for her.* That kind of love does not use authority to take. It uses strength to give. It does not crush what is vulnerable. It moves toward what is vulnerable with patience, protection, tenderness, and care.
 
 This is also why we have to be careful with the idea of protection. Protection is not domination. A shield protects by absorbing harm, not by suffocating what it protects. A husband is not his wife’s savior, and he is not called to replace God in her life. Christ is her Lord, her Redeemer, her refuge, and her ultimate covering.
 
 A husband’s role is humbler than that, but still serious. He is called to be a faithful servant within the covenant, using whatever strength, influence, presence, and leadership he has for her good. If he bears the marks of sacrifice, those marks should not become trophies for his ego. They should simply be evidence that he chose love over self-protection.
 
-That may be one of the hardest parts for husbands to receive. Peter does not end the verse by saying, “Do this so your marriage will look respectable.” He says to do this “so that your prayers may not be hindered.” In other words, how a husband treats his wife matters before God. The private tone, the careless words, the harsh reactions, the indifference, the selfishness, and the unwillingness to understand are not hidden from the Lord.
+That may be one of the hardest parts for husbands to receive. Peter does not end the verse by saying, *“Do this so your marriage will look respectable.”* He says to do this *“so that your prayers may not be hindered.”* In other words, how a husband treats his wife matters before God. The private tone, the careless words, the harsh reactions, the indifference, the selfishness, and the unwillingness to understand are not hidden from the Lord.
 
 That should sober every husband, because God does not seem impressed by public spirituality that is contradicted by private harshness. A man may pray eloquently, serve visibly, lead confidently, and speak biblically, but if he dishonors his wife, Peter says something is wrong. 
 > His marriage is not separate from his walk with God. It is one of the places where his walk with God is revealed.
@@ -83,15 +83,16 @@ That is why I keep coming back to the honored vessel. The wife is not honored be
 
 The metaphor is not perfect because no metaphor is. A wife is not merely porcelain, and a husband is not merely tin. Women are not helpless, and men are not automatically strong in all the ways that matter. Many wives carry incredible spiritual, emotional, intellectual, and relational strength, and many husbands have to learn that true strength is not proven by control but by humility.
 
-Still, the picture helps me see the passage more clearly. The issue is not whether one vessel can withstand more force than another. The issue is whether the more durable vessel understands why durability was given. If strength does not lead to honor, it has already been misused. If leadership does not look like sacrificial love, it has drifted away from Christ.
+Still, the picture helps me see the passage more clearly. The issue is not whether one vessel can withstand more force than another. The issue is whether the more durable vessel understands why durability was given. If strength does not lead to honor, it has already been misused. 
+> If leadership does not look like sacrificial love, it has drifted away from Christ.
 
 Maybe that is the invitation in 1 Peter 3:7. Not for wives to see themselves as lesser, and not for husbands to see themselves as greater, but for both to remember what God says is true. She is to be honored. He is accountable for how he handles her. They are heirs together of the grace of life.
 
 And in a world that often confuses strength with power, maybe Christian marriage is meant to show something better. Strength can be gentle. Honor can be practical. Protection can serve without controlling. Love can absorb the cost without making itself the center.
 
-“Weaker vessel” was never meant to mean lesser value. It was meant to call forth greater care.
+> *“Weaker vessel”* was never meant to mean lesser value. It was meant to call forth greater care.
 
 “…just a thought.”
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTA5NTczNDZdfQ==
+eyJoaXN0b3J5IjpbLTE0NzQ1NDQzMTBdfQ==
 -->
