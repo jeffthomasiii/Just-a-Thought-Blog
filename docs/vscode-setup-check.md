@@ -2,7 +2,12 @@
 
 This file was created on the `setup/vscode-test` branch to confirm that VS Code, Git, GitHub CLI, Ruby, Bundler, Jekyll, Node.js, and npm are working.
 
-Local preview command:
+## Local preview
 
-```powershell
-bundle exec jekyll serve --force_polling --baseurl ""
+Run:
+
+bundle exec jekyll serve --force_polling
+
+Then open:
+
+http://localhost:4000/Just-a-Thought-Blog/
