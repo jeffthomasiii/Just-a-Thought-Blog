@@ -30,7 +30,7 @@ I understand why the phrase can be difficult. I have heard people talk about it 
 
 Years ago, as I was meditating on this passage, the image of a vessel started to stand out to me. A vessel can be more delicate without being less valuable. In fact, many delicate vessels are handled with greater care precisely because they are precious. That thought has stayed with me for years, and I have used it in small group and ministry conversations when discussing this passage, especially when trying to explain that *“weaker”* does not mean lesser, inferior, or spiritually beneath.
 
-The verse says, *“Likewise, husbands, live with your wives in an understanding way, showing honor to the woman as the weaker vessel, since they are heirs with you of the grace of life, so that your prayers may not be hindered.”* That sentence does not stand over wives to reduce them. It stands before husbands to sober them. Peter does not use “weaker vessel” to lower a wife’s worth; he uses it to raise a husband’s responsibility.
+1 Peter 3:7 ESV says, *“Likewise, husbands, live with your wives in an understanding way, showing honor to the woman as the weaker vessel, since they are heirs with you of the grace of life, so that your prayers may not be hindered.”* That sentence does not stand over wives to reduce them. It stands before husbands to sober them. Peter does not use *“weaker vessel”* to lower a wife’s worth; he uses it to raise a husband’s responsibility.
 
 <figure style="margin: 2rem 0; text-align: center;">
   <a href="/img/posts/the-honored-vessel-infographic.png" target="_blank" rel="noopener">
@@ -45,9 +45,10 @@ The verse says, *“Likewise, husbands, live with your wives in an understanding
   </figcaption>
 </figure>
 
-That distinction matters because the phrase “weaker vessel” can easily be isolated from the rest of the verse. When that happens, it can begin to sound like a statement of hierarchy, value, or capability. But Peter immediately surrounds the phrase with understanding, honor, shared inheritance, grace, and spiritual accountability. Whatever else we wrestle through in the passage, the verse itself refuses to let a husband treat his wife as less.
+That distinction matters because the phrase *“weaker vessel”* can easily be isolated from the rest of the verse. When that happens, it can begin to sound like a statement of hierarchy, value, or capability. But Peter immediately surrounds the phrase with understanding, honor, shared inheritance, grace, and spiritual accountability. 
+>Whatever else we wrestle through in the passage, the verse itself refuses to let a husband treat his wife as less.
 
-A wife may be the “weaker vessel” in the ordinary sense of comparative physical vulnerability, but Peter does not connect that vulnerability to inferiority. He connects it to honor. That is a very different kind of instruction. He is not saying, “She is weaker, so rule over her.” He is saying, “She is to be honored, understood, and treated with care because she is precious and because she stands with you as an heir of grace.”
+A wife may be the *“weaker vessel”* in the ordinary sense of comparative physical vulnerability, but Peter does not connect that vulnerability to inferiority. He connects it to honor. That is a very different kind of instruction. He is not saying, *“She is weaker, so rule over her.”* He is saying, *“She is to be honored, understood, and treated with care because she is precious and because she stands with you as an heir of grace.”*
 
 That is where the vessel image helps me. If I place a porcelain vase beside a tin container, the porcelain is more vulnerable to direct force. If a baseball hits the vase, it may crack or shatter. If the same baseball hits the tin container, the tin may dent, but it can remain standing. That difference is real, but no one would honestly argue that the tin is more valuable because it is harder to break.
 
@@ -89,5 +90,5 @@ And in a world that often confuses strength with power, maybe Christian marriage
 
 “…just a thought.”
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTUxNTM3MTldfQ==
+eyJoaXN0b3J5IjpbLTYyNjAwMjI2Ml19
 -->
