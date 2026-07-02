@@ -1,0 +1,315 @@
+/* =========================================================
+   Just A Thought Blog — Late Dark Mode Page Overrides
+   Loads after page-specific styles so dark mode stays readable.
+   ========================================================= */
+
+body.dark-mode {
+  background: #181914 !important;
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode main,
+body.dark-mode .jat-page,
+body.dark-mode .jat-home-main,
+body.dark-mode .jat-board-main,
+body.dark-mode .jat-page-content {
+  background: #181914 !important;
+  color: #F6F1E7 !important;
+}
+
+/* ---------------------------------------------------------
+   Clean Blog page layout: Posts, About, Search, and similar pages
+   --------------------------------------------------------- */
+
+body.dark-mode .jat-page-intro {
+  background: #181914 !important;
+  border-bottom-color: rgba(214, 179, 107, 0.18) !important;
+}
+
+body.dark-mode .jat-page-intro h1,
+body.dark-mode .jat-page-intro .subheading {
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-page-intro .subheading {
+  color: #C9C1B0 !important;
+}
+
+body.dark-mode .jat-page-hero .overlay,
+body.dark-mode .masthead .overlay {
+  background: rgba(24, 25, 20, 0.58) !important;
+}
+
+body.dark-mode .post-preview,
+body.dark-mode article.post-preview {
+  color: #C9C1B0 !important;
+}
+
+body.dark-mode .post-preview > a,
+body.dark-mode .post-preview > a > .post-title {
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .post-preview > a > .post-subtitle,
+body.dark-mode .post-preview .post-excerpt,
+body.dark-mode .post-preview .post-excerpt p,
+body.dark-mode .post-preview p {
+  color: #C9C1B0 !important;
+}
+
+body.dark-mode .post-preview > a:hover,
+body.dark-mode .post-preview > a:focus,
+body.dark-mode .post-preview > a:hover > .post-title,
+body.dark-mode .post-preview > a:focus > .post-title {
+  color: #D6B36B !important;
+}
+
+body.dark-mode .post-meta,
+body.dark-mode .post-meta a {
+  color: #BDB49E !important;
+}
+
+body.dark-mode .post-meta a:hover,
+body.dark-mode .post-meta a:focus {
+  color: #D6B36B !important;
+}
+
+body.dark-mode .jat-page-content hr,
+body.dark-mode article.post-preview + hr {
+  border-color: rgba(214, 179, 107, 0.16) !important;
+}
+
+/* ---------------------------------------------------------
+   Page system: Series, Podcast, Resources
+   --------------------------------------------------------- */
+
+body.dark-mode .jat-page {
+  background: #181914 !important;
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-page .jat-hero {
+  background:
+    radial-gradient(circle at top left, rgba(214, 179, 107, 0.10), transparent 34rem),
+    linear-gradient(180deg, #181914, #20231B 86%) !important;
+}
+
+body.dark-mode .jat-page .jat-section {
+  background: #181914 !important;
+}
+
+body.dark-mode .jat-page .jat-section-alt,
+body.dark-mode .jat-podcast-page .jat-podcast-texture-section {
+  background: #22251D !important;
+  background-image: none !important;
+}
+
+body.dark-mode .jat-page .jat-title,
+body.dark-mode .jat-page .jat-section-title,
+body.dark-mode .jat-page .jat-card-title,
+body.dark-mode .jat-page .jat-feature-body h2,
+body.dark-mode .jat-page .jat-signup h2,
+body.dark-mode .jat-page .jat-series-detail-heading h3,
+body.dark-mode .jat-page .jat-series-post strong,
+body.dark-mode .jat-page .jat-quote {
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-page .jat-lede,
+body.dark-mode .jat-page .jat-section-copy,
+body.dark-mode .jat-page .jat-card p,
+body.dark-mode .jat-page .jat-feature-body p,
+body.dark-mode .jat-page .jat-signup p,
+body.dark-mode .jat-page .jat-series-card-body p,
+body.dark-mode .jat-page .jat-series-detail-heading p,
+body.dark-mode .jat-page .jat-pathway p,
+body.dark-mode .jat-page .jat-launch-note,
+body.dark-mode .jat-page .jat-quote-credit {
+  color: #C9C1B0 !important;
+}
+
+body.dark-mode .jat-page .jat-eyebrow,
+body.dark-mode .jat-page .jat-mini-label,
+body.dark-mode .jat-page .jat-series-post-meta {
+  color: #D6B36B !important;
+}
+
+body.dark-mode .jat-page .jat-eyebrow::before {
+  background: #D6B36B !important;
+}
+
+body.dark-mode .jat-page .jat-card,
+body.dark-mode .jat-page .jat-feature,
+body.dark-mode .jat-page .jat-signup,
+body.dark-mode .jat-page .jat-quote-band,
+body.dark-mode .jat-page .jat-series-card,
+body.dark-mode .jat-page .jat-pathway,
+body.dark-mode .jat-page .jat-empty-state,
+body.dark-mode .jat-page .jat-series-detail,
+body.dark-mode .jat-page .jat-series-detail summary {
+  border-color: rgba(214, 179, 107, 0.20) !important;
+  background: rgba(255, 255, 255, 0.045) !important;
+  box-shadow: none !important;
+}
+
+body.dark-mode .jat-page .jat-hero-media,
+body.dark-mode .jat-page .jat-feature-image,
+body.dark-mode .jat-page .jat-series-card-image,
+body.dark-mode .jat-page .jat-podcast-signup-image {
+  border-color: rgba(214, 179, 107, 0.20) !important;
+  background: #22251D !important;
+}
+
+body.dark-mode .jat-page .jat-hero-media::after {
+  background:
+    linear-gradient(180deg, transparent 32%, rgba(0, 0, 0, 0.68)),
+    radial-gradient(circle at top right, rgba(214, 179, 107, 0.10), transparent 22rem) !important;
+}
+
+body.dark-mode .jat-page .jat-media-caption {
+  border-color: rgba(246, 241, 231, 0.20) !important;
+  background: rgba(24, 25, 20, 0.70) !important;
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-page .jat-media-caption strong,
+body.dark-mode .jat-page .jat-media-caption span {
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-page .jat-card-icon,
+body.dark-mode .jat-page .jat-pill {
+  border-color: rgba(214, 179, 107, 0.22) !important;
+  background: rgba(168, 182, 138, 0.12) !important;
+  color: #DDE8BC !important;
+}
+
+body.dark-mode .jat-page .jat-button {
+  border-color: #A8B68A !important;
+  background: #A8B68A !important;
+  color: #181914 !important;
+}
+
+body.dark-mode .jat-page .jat-button:hover,
+body.dark-mode .jat-page .jat-button:focus {
+  border-color: #D6B36B !important;
+  background: #D6B36B !important;
+  color: #181914 !important;
+  box-shadow: none !important;
+}
+
+body.dark-mode .jat-page .jat-button-secondary {
+  border-color: rgba(168, 182, 138, 0.70) !important;
+  background: transparent !important;
+  color: #DDE8BC !important;
+}
+
+body.dark-mode .jat-page .jat-button-secondary:hover,
+body.dark-mode .jat-page .jat-button-secondary:focus {
+  border-color: #D6B36B !important;
+  background: rgba(214, 179, 107, 0.12) !important;
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-page .jat-form input,
+body.dark-mode .jat-footer-form-placeholder span,
+body.dark-mode .jat-footer input,
+body.dark-mode input[type="email"],
+body.dark-mode input[type="search"],
+body.dark-mode textarea,
+body.dark-mode select {
+  border-color: rgba(214, 179, 107, 0.24) !important;
+  background: rgba(255, 255, 255, 0.055) !important;
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-page .jat-form input::placeholder,
+body.dark-mode .jat-footer input::placeholder,
+body.dark-mode input[type="email"]::placeholder,
+body.dark-mode input[type="search"]::placeholder,
+body.dark-mode textarea::placeholder {
+  color: rgba(246, 241, 231, 0.58) !important;
+}
+
+body.dark-mode .jat-page code {
+  color: #D6B36B !important;
+  background: rgba(214, 179, 107, 0.10) !important;
+}
+
+body.dark-mode .jat-page .jat-series-card a,
+body.dark-mode .jat-page .jat-series-post {
+  color: #F6F1E7 !important;
+  text-decoration: none !important;
+}
+
+body.dark-mode .jat-page .jat-series-card a:hover,
+body.dark-mode .jat-page .jat-series-post:hover {
+  color: #D6B36B !important;
+}
+
+body.dark-mode .jat-page .jat-series-detail summary::after {
+  border-color: #A8B68A !important;
+  color: #DDE8BC !important;
+}
+
+body.dark-mode .jat-page .jat-series-post-list,
+body.dark-mode .jat-page .jat-series-post,
+body.dark-mode .jat-page .jat-podcast-signup-image {
+  border-color: rgba(214, 179, 107, 0.16) !important;
+}
+
+body.dark-mode .jat-page .jat-placeholder-image::before {
+  background:
+    linear-gradient(135deg, rgba(168, 182, 138, 0.50), rgba(24, 25, 20, 0.72)),
+    radial-gradient(circle at top left, rgba(214, 179, 107, 0.30), transparent 24rem),
+    #22251D !important;
+}
+
+body.dark-mode .jat-page .jat-placeholder-image::after {
+  color: rgba(246, 241, 231, 0.82) !important;
+}
+
+/* ---------------------------------------------------------
+   Footer reinforcement
+   --------------------------------------------------------- */
+
+body.dark-mode .jat-footer,
+body.dark-mode footer {
+  background: #12140F !important;
+  border-color: rgba(214, 179, 107, 0.18) !important;
+  color: #C9C1B0 !important;
+}
+
+body.dark-mode .jat-footer h4,
+body.dark-mode .jat-footer-column h4,
+body.dark-mode .jat-footer-letter h4 {
+  color: #D6B36B !important;
+}
+
+body.dark-mode .jat-footer p,
+body.dark-mode .jat-footer a,
+body.dark-mode .jat-footer-bottom {
+  color: #C9C1B0 !important;
+}
+
+body.dark-mode .jat-footer a:hover,
+body.dark-mode .jat-footer a:focus {
+  color: #D6B36B !important;
+}
+
+body.dark-mode .jat-footer-logo,
+body.dark-mode .jat-footer-logo strong,
+body.dark-mode .jat-footer-logo small {
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-footer-socials a {
+  background: #A8B68A !important;
+  color: #181914 !important;
+}
+
+body.dark-mode .jat-footer-socials a:hover,
+body.dark-mode .jat-footer-socials a:focus {
+  background: #D6B36B !important;
+  color: #181914 !important;
+}
