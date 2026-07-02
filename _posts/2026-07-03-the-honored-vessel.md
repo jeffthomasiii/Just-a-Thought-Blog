@@ -32,9 +32,19 @@ Years ago, as I was meditating on this passage, the image of a vessel started to
 
 The verse says, “Likewise, husbands, live with your wives in an understanding way, showing honor to the woman as the weaker vessel, since they are heirs with you of the grace of life, so that your prayers may not be hindered.” That sentence does not stand over wives to reduce them. It stands before husbands to sober them. Peter does not use “weaker vessel” to lower a wife’s worth; he uses it to raise a husband’s responsibility.
 
-![The Honored Vessel infographic explaining that weaker vessel does not mean lesser value in 1 Peter 3:7](/img/posts/the-honored-vessel-infographic.png)
 
-*The Honored Vessel: a visual reflection on 1 Peter 3:7.*
+<figure style="margin: 2rem 0; text-align: center;">
+  <a href="/img/posts/the-honored-vessel-infographic.png" target="_blank" rel="noopener">
+    <img
+      src="/img/posts/the-honored-vessel-infographic.png"
+      alt="The Honored Vessel infographic explaining that weaker vessel does not mean lesser value in 1 Peter 3:7"
+      style="max-width: 100%; height: auto; display: block; margin: 0 auto;"
+    />
+  </a>
+  <figcaption style="margin-top: 0.75rem; font-style: italic;">
+    The Honored Vessel: a visual reflection on 1 Peter 3:7. Click the image to view full size.
+  </figcaption>
+</figure>
 
 That distinction matters because the phrase “weaker vessel” can easily be isolated from the rest of the verse. When that happens, it can begin to sound like a statement of hierarchy, value, or capability. But Peter immediately surrounds the phrase with understanding, honor, shared inheritance, grace, and spiritual accountability. Whatever else we wrestle through in the passage, the verse itself refuses to let a husband treat his wife as less.
 
@@ -80,5 +90,5 @@ And in a world that often confuses strength with power, maybe Christian marriage
 
 “…just a thought.”
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNDU0NjE0NV19
+eyJoaXN0b3J5IjpbLTIwMTk3NDA4NzNdfQ==
 -->
