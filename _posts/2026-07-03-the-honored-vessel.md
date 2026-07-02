@@ -54,7 +54,8 @@ That is where the vessel image helps me. If I place a porcelain vase beside a ti
 
 In many cases, the opposite is true. The more delicate vessel is often the one we treat with greater care. We do not protect it because it is worthless. We protect it because it matters. Its vulnerability does not diminish its beauty, purpose, or value. It simply changes how it should be handled.
 
-That is the part I think we sometimes miss in this passage. Peter is not giving husbands permission to be proud of their strength. He is calling them to be careful with it. Strength in Scripture is never meant to become an excuse for control, intimidation, harshness, or self-importance. In the hands of a sinful man, strength can become dangerous. In the hands of a Christ-shaped man, strength becomes service.
+That is the part I think we sometimes miss in this passage. Peter is not giving husbands permission to be proud of their strength. He is calling them to be careful with it. Strength in Scripture is never meant to become an excuse for control, intimidation, harshness, or self-importance. 
+> In the hands of a sinful man, strength can become dangerous. In the hands of a Christ-shaped man, strength becomes service.
 
 This is why Peter’s command begins with understanding. A husband is not called to live with his wife according to assumption, frustration, stereotype, or convenience. He is called to know her. He is called to pay attention. He is called to consider her heart, her burdens, her fears, her joys, her story, her body, her limits, her strengths, and the ways she experiences life differently than he does.
 
@@ -62,7 +63,8 @@ Understanding does not mean a husband will always immediately comprehend everyth
 
 Then Peter says to show honor. That word should slow us down. Honor is not the same as merely avoiding harm. A husband can avoid obvious cruelty and still fail to honor his wife. Honor means he treats her as weighty, valuable, dignified, and worthy of care. It means his words, decisions, tone, habits, and private attitudes should reflect that she is precious before God.
 
-This is where the passage becomes deeply practical. A husband cannot claim to honor his wife while consistently belittling her, ignoring her, intimidating her, embarrassing her, or treating her concerns as annoyances. He cannot use Scripture to demand respect while refusing the part of Scripture that commands him to give honor. Biblical headship, however one works through the larger conversation, can never be separated from Christlike sacrifice.
+This is where the passage becomes deeply practical. A husband cannot claim to honor his wife while consistently belittling her, ignoring her, intimidating her, embarrassing her, or treating her concerns as annoyances. He cannot use Scripture to demand respect while refusing the part of Scripture that commands him to give honor. 
+> Biblical headship, however one works through the larger conversation, can never be separated from Christlike sacrifice.
 
 Ephesians 5 gives us that larger picture. Husbands are called to love their wives as Christ loved the church and gave Himself up for her. That kind of love does not use authority to take. It uses strength to give. It does not crush what is vulnerable. It moves toward what is vulnerable with patience, protection, tenderness, and care.
 
@@ -72,7 +74,8 @@ A husband’s role is humbler than that, but still serious. He is called to be a
 
 That may be one of the hardest parts for husbands to receive. Peter does not end the verse by saying, “Do this so your marriage will look respectable.” He says to do this “so that your prayers may not be hindered.” In other words, how a husband treats his wife matters before God. The private tone, the careless words, the harsh reactions, the indifference, the selfishness, and the unwillingness to understand are not hidden from the Lord.
 
-That should sober every husband, because God does not seem impressed by public spirituality that is contradicted by private harshness. A man may pray eloquently, serve visibly, lead confidently, and speak biblically, but if he dishonors his wife, Peter says something is wrong. His marriage is not separate from his walk with God. It is one of the places where his walk with God is revealed.
+That should sober every husband, because God does not seem impressed by public spirituality that is contradicted by private harshness. A man may pray eloquently, serve visibly, lead confidently, and speak biblically, but if he dishonors his wife, Peter says something is wrong. 
+> His marriage is not separate from his walk with God. It is one of the places where his walk with God is revealed.
 
 At the same time, this passage should not be turned into a weapon against husbands who are sincerely trying to grow. There is a difference between a man who struggles imperfectly toward Christlike love and a man who uses strength to excuse selfishness. Most husbands will have moments where they look back and realize they could have listened better, spoken softer, cared more patiently, or paid closer attention. The point is not perfection. The point is repentance, humility, and growth.
 
@@ -90,5 +93,5 @@ And in a world that often confuses strength with power, maybe Christian marriage
 
 “…just a thought.”
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjAwMjI2Ml19
+eyJoaXN0b3J5IjpbLTEwOTA5NTczNDZdfQ==
 -->
