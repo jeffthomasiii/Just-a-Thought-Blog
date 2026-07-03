@@ -33,15 +33,15 @@ Years ago, as I was meditating on this passage, the image of a vessel started to
 1 Peter 3:7 ESV says, *“Likewise, husbands, live with your wives in an understanding way, showing honor to the woman as the weaker vessel, since they are heirs with you of the grace of life, so that your prayers may not be hindered.”* That sentence does not stand over wives to reduce them. It stands before husbands to sober them. Peter does not use *“weaker vessel”* to lower a wife’s worth; he uses it to raise a husband’s responsibility.
 
 <figure style="margin: 2rem 0; text-align: center;">
-  <a href="/img/posts/the-honored-vessel-infographic.png" target="_blank" rel="noopener">
+  <a href="{{ '/img/posts/the-honored-vessel-infographic.png' | relative_url }}" target="_blank" rel="noopener">
     <img
-      src="/img/posts/the-honored-vessel-infographic.png"
+      src="{{ '/img/posts/the-honored-vessel-infographic.png' | relative_url }}"
       alt="The Honored Vessel infographic explaining that weaker vessel does not mean lesser value in 1 Peter 3:7"
       style="max-width: 100%; height: auto; display: block; margin: 0 auto;"
     />
   </a>
   <figcaption style="margin-top: 0.75rem; font-style: italic;">
-    The Honored Vessel: a visual reflection on 1 Peter 3:7. *Click the image to view full size.*
+    The Honored Vessel: a visual reflection on 1 Peter 3:7. <em>Click the image to view full size.</em>
   </figcaption>
 </figure>
 
