@@ -34,8 +34,27 @@ document.addEventListener("DOMContentLoaded", function () {
     window.speechSynthesis.cancel();
 
     utterance = new SpeechSynthesisUtterance(getPostText());
-    utterance.rate = 0.95;
-    utterance.pitch = 1;
+
+    const voices = window.speechSynthesis.getVoices();
+
+    const preferredVoice =
+       voices.find(voice => voice.name === "Microsoft Roger Online (Natural) - English (United States)") ||
+       voices.find(voice => voice.name === "Microsoft Christopher Online (Natural) - English (United States)") ||
+       voices.find(voice => voice.name === "Microsoft Brian Online (Natural) - English (United States)") ||
+       voices.find(voice => voice.name.includes("Roger Online") && voice.lang === "en-US") ||
+       voices.find(voice => voice.name.includes("Christopher Online") && voice.lang === "en-US") ||
+       voices.find(voice => voice.name.includes("Brian Online") && voice.lang === "en-US") ||
+       voices.find(voice => voice.name.includes("Online") && voice.lang === "en-US") ||
+       voices.find(voice => voice.lang === "en-US") ||
+       voices[0];
+
+    if (preferredVoice) {
+      utterance.voice = preferredVoice;
+    }
+    console.log("Audio Companion voice:", preferredVoice ? preferredVoice.name : "No voice selected");
+
+    utterance.rate = 0.98;
+    utterance.pitch = 0.9;
     utterance.volume = 1;
 
     window.speechSynthesis.speak(utterance);
