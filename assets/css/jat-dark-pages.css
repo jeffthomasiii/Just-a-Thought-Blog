@@ -157,7 +157,7 @@ body.dark-mode .jat-page .jat-feature-image,
 body.dark-mode .jat-page .jat-series-card-image,
 body.dark-mode .jat-page .jat-podcast-signup-image {
   border-color: rgba(214, 179, 107, 0.20) !important;
-  background: #22251D !important;
+  background-color: #22251D !important;
 }
 
 body.dark-mode .jat-page .jat-hero-media::after {
@@ -312,4 +312,132 @@ body.dark-mode .jat-footer-socials a:hover,
 body.dark-mode .jat-footer-socials a:focus {
   background: #D6B36B !important;
   color: #181914 !important;
+}
+
+/* ---------------------------------------------------------
+   Dark mode polish: navigation, series cards, and utility panels
+   --------------------------------------------------------- */
+
+.theme-toggle {
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 50% !important;
+  background: rgba(79, 93, 58, 0.06) !important;
+  border-color: rgba(79, 93, 58, 0.22) !important;
+  color: #6F7B52 !important;
+  font-size: 1rem !important;
+  line-height: 1 !important;
+  box-shadow: none !important;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  background: rgba(79, 93, 58, 0.10) !important;
+  border-color: rgba(79, 93, 58, 0.35) !important;
+  color: #4F5D3A !important;
+  box-shadow: none !important;
+}
+
+body.dark-mode .theme-toggle {
+  background: rgba(246, 241, 231, 0.04) !important;
+  border-color: rgba(214, 179, 107, 0.18) !important;
+  color: #C9C1B0 !important;
+}
+
+body.dark-mode .theme-toggle:hover,
+body.dark-mode .theme-toggle:focus {
+  background: rgba(214, 179, 107, 0.08) !important;
+  border-color: rgba(214, 179, 107, 0.35) !important;
+  color: #D6B36B !important;
+  box-shadow: none !important;
+}
+
+body.dark-mode .jat-series-card .jat-series-copy,
+body.dark-mode .jat-series-card .jat-series-copy strong {
+  color: #F6F1E7 !important;
+}
+
+body.dark-mode .jat-series-card .jat-series-copy em {
+  color: #C9C1B0 !important;
+}
+
+body.dark-mode .jat-series-card .jat-series-link {
+  color: #A8B68A !important;
+}
+
+body.dark-mode .jat-series-card .jat-series-link:hover,
+body.dark-mode .jat-series-card .jat-series-item:hover .jat-series-link {
+  color: #D6B36B !important;
+}
+
+body.dark-mode .jat-series-card .jat-series-thumb,
+body.dark-mode .jat-page .jat-series-card-image,
+body.dark-mode .jat-page .jat-feature-image {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+body.dark-mode .jat-coming-soon-note {
+  border-color: rgba(214, 179, 107, 0.20) !important;
+  background: rgba(246, 241, 231, 0.06) !important;
+}
+
+body.dark-mode .jat-coming-soon-note p {
+  color: #E7DFC9 !important;
+}
+
+body.dark-mode .jat-podcast-page .jat-podcast-signup-card,
+body.dark-mode .jat-resources-page .jat-signup {
+  background: rgba(255, 255, 255, 0.045) !important;
+}
+
+/* Remove visible circle around dark mode toggle */
+
+.theme-toggle {
+  width: 32px !important;
+  height: 32px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #6F7B52 !important;
+  font-size: 1rem !important;
+  line-height: 1 !important;
+  box-shadow: none !important;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  border: 0 !important;
+  background: transparent !important;
+  color: #4F5D3A !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.theme-toggle:focus-visible {
+  outline: 1px solid rgba(79, 93, 58, 0.45) !important;
+  outline-offset: 4px !important;
+}
+
+body.dark-mode .theme-toggle {
+  border: 0 !important;
+  background: transparent !important;
+  color: #C9C1B0 !important;
+  box-shadow: none !important;
+}
+
+body.dark-mode .theme-toggle:hover,
+body.dark-mode .theme-toggle:focus {
+  border: 0 !important;
+  background: transparent !important;
+  color: #D6B36B !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+body.dark-mode .theme-toggle:focus-visible {
+  outline: 1px solid rgba(214, 179, 107, 0.45) !important;
+  outline-offset: 4px !important;
 }

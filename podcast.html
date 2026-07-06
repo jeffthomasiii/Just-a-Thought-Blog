@@ -7,6 +7,7 @@ permalink: /podcast/
 
 <link rel="stylesheet" href="{{ '/assets/css/jat-pages.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/jat-podcast-polish.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/jat-coming-soon-polish.css' | relative_url }}">
 
 <main class="jat-page jat-podcast-page">
   <section class="jat-hero">
@@ -91,10 +92,13 @@ permalink: /podcast/
           <span class="jat-eyebrow">Launch Updates</span>
           <h2>Be the first to know when the podcast launches.</h2>
           <p>Join the email list for launch updates, new reflections, and occasional resources connected to the blog.</p>
-          <form class="jat-form" action="#" method="post">
-            <input type="email" name="email" placeholder="Enter your email address" aria-label="Email address">
-            <button class="jat-button" type="submit">Notify Me</button>
-          </form>
+          <div class="jat-coming-soon-note">
+            <p>The podcast is still being shaped. For now, new reflections will continue to be published on the blog, and this page will be updated when audio episodes are ready.</p>
+          </div>
+          <div class="jat-coming-soon-actions">
+            <a class="jat-button" href="{{ '/posts/' | relative_url }}">Read the Blog</a>
+            <a class="jat-button jat-button-secondary" href="{{ '/series/' | relative_url }}">Browse Series</a>
+          </div>
         </div>
       </div>
     </div>
