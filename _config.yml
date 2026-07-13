@@ -2,6 +2,7 @@ title:              Just A Thought Blog
 email:              jeff.thomas.iii@gmail.com
 description:        Reflecting on faith, life, and the thoughts that shape us.
 author:             Jeff Thomas III
+timezone:           America/Los_Angeles
 baseurl:            "/Just-a-Thought-Blog"
 url:                "https://jeffthomasiii.github.io"
 
