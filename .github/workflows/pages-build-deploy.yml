@@ -6,8 +6,9 @@ on:
       - master
   workflow_dispatch:
   schedule:
-    # Rebuild once daily so future-dated posts and generated pages can publish automatically.
-    - cron: "17 12 * * *"
+    # Rebuild shortly after midnight Pacific time so future-dated posts publish automatically.
+    - cron: "17 0 * * *"
+      timezone: "America/Los_Angeles"
 
 permissions:
   contents: read
