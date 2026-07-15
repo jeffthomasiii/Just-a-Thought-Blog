@@ -219,3 +219,43 @@ The documentation remains reviewable, version-controlled, and directly connected
 ### Follow-up
 
 - Reconsider issue-based tracking if Issues are enabled in the future.
+
+---
+
+## D-006 — Introduce the shared design system through an additive migration
+
+**Date:** 2026-07-15  
+**Status:** Accepted  
+**Related work item:** DS-01
+
+### Context
+
+Home, Resources, Series, Podcast, Posts, Search, About, and CV currently depend on overlapping style files created during different design phases. Removing or rewriting those styles in one change would create a high risk of regressions across pages that have not yet been redesigned.
+
+### Decision
+
+Introduce `_sass/design-system.scss` and `_sass/page-archetypes.scss` as the canonical shared layer, load them after the existing global and Home styles, and temporarily retain compatibility aliases and legacy page styles until each dependent page migrates.
+
+### Rationale
+
+An additive migration establishes one preferred source for new work while protecting current pages. It also allows Home and Resources to adopt shared semantic classes immediately without forcing Series, Podcast, Posts, Search, About, and CV into premature redesigns.
+
+### Alternatives considered
+
+- Remove all duplicate variables and styles in DS-01.
+- Rewrite every public page in one pull request.
+- Leave the current systems unchanged until every page can be redesigned simultaneously.
+
+### Consequences
+
+- The repository temporarily contains both canonical and legacy rules.
+- New shared work must use canonical tokens and classes.
+- Compatibility aliases cannot be removed until every dependent page has migrated.
+- Import order is part of the migration contract and must be preserved.
+- Final legacy cleanup occurs during the related page work and DS-10 validation.
+
+### Follow-up
+
+- Validate Home and Resources before completing DS-01.
+- Migrate the remaining page archetypes through DS-04 to DS-09.
+- Remove proven-unused legacy rules during DS-10.
