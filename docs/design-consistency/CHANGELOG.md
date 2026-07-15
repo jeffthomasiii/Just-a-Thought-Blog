@@ -69,7 +69,7 @@ Briefly describe the completed outcome.
 
 ## 2026-07-15 — DS-01: Consolidate the shared design system and page archetypes
 
-**Status:** Partial — implementation in progress  
+**Status:** Review — implementation and validation complete; merge pending  
 **Branch:** `agent/ds-01-shared-design-system`  
 **Pull request:** [#9 — DS-01 Consolidate shared design system and page archetypes](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/9)  
 **Implemented by:** Jeff Thomas III with ChatGPT implementation support
@@ -90,6 +90,8 @@ Introduced the canonical shared token and component layer, defined the three pag
 - `docs/design-consistency/README.md`
 - `docs/design-consistency/DESIGN-SYSTEM.md`
 - `docs/design-consistency/CHANGELOG.md`
+- `docs/design-consistency/DECISIONS.md`
+- `.github/workflows/jekyll-build.yml`
 
 ### What changed
 
@@ -102,6 +104,7 @@ Introduced the canonical shared token and component layer, defined the three pag
 - Assigned Home and Resources to the landing-page archetype.
 - Added shared semantic classes to existing Home and Resources components.
 - Documented migration rules and temporary legacy dependencies.
+- Added a pull-request Jekyll build workflow with compact rendered HTML, CSS, and JavaScript artifacts.
 
 ### Components added, replaced, or retired
 
@@ -122,21 +125,24 @@ Introduced the canonical shared token and component layer, defined the three pag
 - [x] Page-archetype output reviewed in the default layout
 - [x] Home and Resources markup reviewed for semantic migration
 - [x] No legacy stylesheet removed before dependent pages migrate
-- [ ] Jekyll/Sass build
-- [ ] Desktop visual comparison
-- [ ] Tablet visual comparison
-- [ ] Mobile visual comparison
-- [ ] Light mode
-- [ ] Dark mode
-- [ ] Keyboard navigation
-- [ ] Link validation
-- [ ] Accessibility review
+- [x] Jekyll/Sass build
+- [x] Desktop visual comparison
+- [x] Tablet visual comparison
+- [x] Mobile visual comparison
+- [x] Light mode
+- [x] Dark mode
+- [x] Keyboard navigation
+- [x] Compiled internal URL and asset-path review
+- [x] Structural accessibility review
 
 ### Evidence
 
 - Draft pull request: [#9](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/9)
-- GitHub Actions or status checks: None are configured for this branch.
-- Test notes: The implementation is additive and intentionally retains legacy page styles pending visual validation.
+- GitHub Actions: `Jekyll build` run 3 completed successfully.
+- Rendered artifact: Compiled HTML, CSS, and JavaScript retained for seven days by the workflow.
+- Visual review: Home and Resources inspected at 1440px, 768px, and 390px widths in light and dark modes.
+- Keyboard review: Primary navigation focus order and the shared 3px muted-gold focus outline were verified.
+- Test notes: The implementation remains additive and intentionally retains legacy page styles until dependent pages migrate.
 
 ### Deferred work
 
