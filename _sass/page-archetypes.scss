@@ -1,0 +1,135 @@
+/* =========================================================
+   Just A Thought Blog — Page Archetypes
+
+   Pages opt into an archetype with front matter:
+
+   page_archetype: landing
+   page_archetype: collection
+   page_archetype: profile
+
+   The default layout exposes the value as a body class. These
+   foundations intentionally define rhythm and shared behavior,
+   not identical page compositions.
+   ========================================================= */
+
+body[class*='jat-archetype-'] {
+  background: var(--jat-surface-page);
+  color: var(--jat-text-primary);
+}
+
+.jat-page-shell {
+  background: var(--jat-surface-page);
+  color: var(--jat-text-primary);
+}
+
+.jat-page-frame {
+  width: min(var(--jat-width-board), calc(100% - var(--jat-page-gutter)));
+  margin-inline: auto;
+}
+
+.jat-page-section {
+  padding-block: var(--jat-section-space);
+}
+
+.jat-page-section + .jat-page-section {
+  border-top: 1px solid var(--jat-border-subtle);
+}
+
+/* Editorial landing pages: Home, Resources, Series, Podcast */
+body.jat-archetype-landing {
+  --jat-archetype-hero-space-top: 6.4rem;
+  --jat-archetype-hero-space-bottom: 0.85rem;
+}
+
+body.jat-archetype-landing .jat-board-hero {
+  background: var(--jat-surface-page);
+}
+
+body.jat-archetype-landing .jat-board-main {
+  background: var(--jat-surface-page);
+}
+
+/* Collection and utility pages: Posts, Search */
+body.jat-archetype-collection {
+  --jat-archetype-hero-min-height: 260px;
+  --jat-archetype-content-width: var(--jat-width-content);
+}
+
+.jat-collection-hero {
+  padding: 7rem 0 2.75rem;
+  border-bottom: 1px solid var(--jat-border-subtle);
+  background: var(--jat-surface-page);
+}
+
+.jat-collection-hero h1 {
+  margin: 0;
+  font-size: clamp(2.75rem, 6vw, 4.75rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.jat-collection-hero p {
+  max-width: 700px;
+  margin: 1rem 0 0;
+  color: var(--jat-text-secondary);
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.jat-collection-main {
+  width: min(var(--jat-width-content), calc(100% - var(--jat-page-gutter)));
+  margin-inline: auto;
+  padding-block: var(--jat-section-space);
+}
+
+/* Narrative and profile pages: About, Professional Background */
+body.jat-archetype-profile {
+  --jat-archetype-reading-width: var(--jat-width-reading);
+}
+
+.jat-profile-hero {
+  padding: 7rem 0 1rem;
+  background: var(--jat-surface-page);
+}
+
+.jat-profile-main {
+  background: var(--jat-surface-page);
+}
+
+.jat-profile-reading {
+  width: min(var(--jat-width-reading), calc(100% - var(--jat-page-gutter)));
+  margin-inline: auto;
+}
+
+.jat-profile-reading p {
+  color: var(--jat-text-primary);
+  line-height: 1.75;
+}
+
+/* Shared responsive rhythm */
+@media (max-width: 991.98px) {
+  body.jat-archetype-landing {
+    --jat-archetype-hero-space-top: 5.5rem;
+  }
+
+  .jat-collection-hero,
+  .jat-profile-hero {
+    padding-top: 6rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body.jat-archetype-landing {
+    --jat-archetype-hero-space-top: 5rem;
+  }
+
+  .jat-collection-hero,
+  .jat-profile-hero {
+    padding-top: 5.25rem;
+  }
+
+  .jat-collection-hero h1 {
+    font-size: 2.75rem;
+  }
+}
