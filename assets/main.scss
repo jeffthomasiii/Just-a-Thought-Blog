@@ -3,4 +3,12 @@
 
 @import "styles";
 @import "visual-board-home";
+
+/*
+ * Canonical shared tokens and components load after the existing
+ * styles so current pages remain stable during incremental migration.
+ */
+@import "design-system";
+@import "page-archetypes";
+
 @import "dark";
