@@ -221,6 +221,10 @@ h6 {
   border: 1px solid var(--jat-border-subtle);
   border-radius: var(--jat-radius-subtle);
   background: var(--jat-surface-card);
+  box-shadow: none;
+}
+
+.jat-card-surface--elevated {
   box-shadow: var(--jat-shadow-low);
 }
 
