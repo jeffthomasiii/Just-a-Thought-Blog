@@ -6,22 +6,20 @@ layout: default
 {% assign recent_posts = site.posts | slice: 1, 4 %}
 {% assign series_groups = site.posts | group_by: "series" %}
 
-<style>.jat-card-image-missing{display:grid;place-items:center;background:linear-gradient(135deg,#EFE4D3,#F6F1E7);color:#4F5D3A;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.75rem}.jat-topic-coming-soon{cursor:default}.jat-topic-card .jat-topic-image{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}.jat-series-card .jat-series-item{display:grid;grid-template-columns:96px minmax(0,1fr);gap:.85rem;align-items:center}.jat-series-thumb{display:block;width:96px;height:68px;background-size:cover;background-position:center;border-radius:2px}.jat-series-thumb-missing{display:grid;place-items:center;background:#EFE4D3;color:#4F5D3A;font-size:.65rem;font-weight:800;text-transform:uppercase}.jat-series-copy{display:flex!important;flex-direction:column;gap:.18rem;color:#252822!important;letter-spacing:0!important;text-transform:none!important}.jat-series-copy em{font-style:normal;color:#7A7468;font-size:.8rem;font-weight:700}.jat-series-link{margin-top:.15rem;color:#4F5D3A!important;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}.jat-series-empty{padding:1rem;background:rgba(255,255,255,.45);color:#7A7468}.jat-podcast-logo-img{width:100%;min-height:180px;object-fit:cover;border:1px solid rgba(79,93,58,.18);background:#F6F1E7}</style>
-
 <header class="jat-board-hero jat-page-shell">
   <div class="container jat-board-container">
     <div class="jat-board-hero-grid">
       <div class="jat-board-hero-copy">
-        <p class="jat-kicker">Homepage Hero</p>
+        <p class="jat-kicker">A Reflective Christian Journal</p>
         <h1>The Thoughts<br>That Shape Us</h1>
         <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
         <p>Reflecting on faith, marriage, leadership, culture, technology, camping, and the ordinary moments where God teaches extraordinary things.</p>
         <div class="jat-button-row">
           <a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">Read the Blog</a>
-          <a class="btn jat-btn jat-btn-secondary" href="{{ '/podcast/' | relative_url }}">Listen to the Podcast</a>
+          <a class="btn jat-btn jat-btn-secondary" href="{{ '/podcast/' | relative_url }}">Explore the Podcast</a>
         </div>
       </div>
-      <div class="jat-board-hero-image" style="background-image: url('{{ page.background | default: '/img/bg-index.jpg' | prepend: site.baseurl | replace: '//', '/' }}');"></div>
+      <div class="jat-board-hero-image" style="background-image: url('{{ page.background | default: '/img/bg-index.jpg' | prepend: site.baseurl | replace: '//', '/' }}');" aria-hidden="true"></div>
     </div>
   </div>
 </header>
@@ -37,12 +35,11 @@ layout: default
         <div class="jat-latest-grid">
           {% assign latest_image = latest_post.image | default: latest_post.background %}
           {% if latest_image %}
-          <a class="jat-card-image" href="{{ latest_post.url | prepend: site.baseurl | replace: '//', '/' }}" style="background-image: url('{{ latest_image | prepend: site.baseurl | replace: '//', '/' }}');"></a>
+          <a class="jat-card-image" href="{{ latest_post.url | prepend: site.baseurl | replace: '//', '/' }}" style="background-image: url('{{ latest_image | prepend: site.baseurl | replace: '//', '/' }}');" aria-label="Read {{ latest_post.title | escape }}"></a>
           {% else %}
-          <a class="jat-card-image jat-card-image-missing" href="{{ latest_post.url | prepend: site.baseurl | replace: '//', '/' }}"><span>Image coming soon</span></a>
+          <a class="jat-card-image jat-card-image-missing" href="{{ latest_post.url | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Read {{ latest_post.title | escape }}"><span>Preview unavailable</span></a>
           {% endif %}
           <div class="jat-card-copy">
-            <p class="jat-kicker">Latest Reflection</p>
             <h2><a href="{{ latest_post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ latest_post.title }}</a></h2>
             {% if latest_post.excerpt %}<p>{{ latest_post.excerpt | strip_html | truncatewords: 28 }}</p>{% endif %}
             <a class="jat-text-link" href="{{ latest_post.url | prepend: site.baseurl | replace: '//', '/' }}">Read the Reflection →</a>
@@ -53,22 +50,26 @@ layout: default
 
       <aside class="jat-scripture-card jat-panel">
         <p class="jat-kicker">Scripture To Sit With</p>
-        <div class="jat-quote-mark">“</div>
+        <div class="jat-quote-mark" aria-hidden="true">“</div>
         <blockquote><p>Be transformed by<br>the renewing of<br>your mind.</p><cite>Romans 12:2</cite></blockquote>
       </aside>
     </section>
 
     <section class="jat-discovery-row">
       <div class="jat-topic-section jat-panel">
-        <p class="jat-kicker">Explore By Topic</p>
-        <div class="jat-topic-grid">
-          <a class="jat-topic-card jat-topic-coming-soon" href="#"><div class="jat-topic-image" style="background-image:url('{{ site.baseurl }}/img/Faith-topic-card.jpg') !important;"></div><span class="jat-topic-icon"><i class="fas fa-cross"></i></span><h3>Faith</h3><p>Scripture, discipleship, prayer, and the daily walk with God.</p><span>Coming Soon →</span></a>
-          <a class="jat-topic-card jat-topic-coming-soon" href="#"><div class="jat-topic-image" style="background-image:url('{{ site.baseurl }}/img/Marriage-topic-card.jpg') !important;"></div><span class="jat-topic-icon"><i class="fas fa-ring"></i></span><h3>Marriage</h3><p>Covenant, communication, unity, and building a God-centered marriage.</p><span>Coming Soon →</span></a>
-          <a class="jat-topic-card jat-topic-coming-soon" href="#"><div class="jat-topic-image" style="background-image:url('{{ site.baseurl }}/img/Leadership-topic-card.jpg') !important;"></div><span class="jat-topic-icon"><i class="far fa-compass"></i></span><h3>Leadership</h3><p>Character before competence, leading with humility and strength.</p><span>Coming Soon →</span></a>
-          <a class="jat-topic-card jat-topic-coming-soon" href="#"><div class="jat-topic-image" style="background-image:url('{{ site.baseurl }}/img/Technology-topic-card.jpg') !important;"></div><span class="jat-topic-icon"><i class="fas fa-microchip"></i></span><h3>Technology</h3><p>AI, ethics, innovation, and navigating a changing world.</p><span>Coming Soon →</span></a>
-          <a class="jat-topic-card jat-topic-coming-soon" href="#"><div class="jat-topic-image" style="background-image:url('{{ site.baseurl }}/img/Camping-topic-card.jpg') !important;"></div><span class="jat-topic-icon"><i class="fas fa-tree"></i></span><h3>Camping</h3><p>Creation, rest, adventure, and the thoughts that come when we slow down.</p><span>Coming Soon →</span></a>
-          <a class="jat-topic-card jat-topic-coming-soon" href="#"><div class="jat-topic-image" style="background-image:url('{{ site.baseurl }}/img/Culture-topic-card.jpg') !important;"></div><span class="jat-topic-icon"><i class="fas fa-users"></i></span><h3>Culture</h3><p>Truth, wisdom, and discernment in the world around us.</p><span>Coming Soon →</span></a>
+        <div class="jat-topic-heading">
+          <p class="jat-kicker">Explore By Topic</p>
+          <p class="jat-topic-note">Topic collections are being organized. Every reflection remains available in the complete archive while those collections grow.</p>
         </div>
+        <div class="jat-topic-grid">
+          <article class="jat-topic-card"><div class="jat-topic-image jat-topic-image--faith" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true"><i class="fas fa-cross"></i></span><h3>Faith</h3><p>Scripture, discipleship, prayer, and the daily walk with God.</p></article>
+          <article class="jat-topic-card"><div class="jat-topic-image jat-topic-image--marriage" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true"><i class="fas fa-ring"></i></span><h3>Marriage</h3><p>Covenant, communication, unity, and building a God-centered marriage.</p></article>
+          <article class="jat-topic-card"><div class="jat-topic-image jat-topic-image--leadership" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true"><i class="far fa-compass"></i></span><h3>Leadership</h3><p>Character before competence, leading with humility and strength.</p></article>
+          <article class="jat-topic-card"><div class="jat-topic-image jat-topic-image--technology" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true"><i class="fas fa-microchip"></i></span><h3>Technology</h3><p>AI, ethics, innovation, and navigating a changing world.</p></article>
+          <article class="jat-topic-card"><div class="jat-topic-image jat-topic-image--camping" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true"><i class="fas fa-tree"></i></span><h3>Camping</h3><p>Creation, rest, adventure, and the thoughts that come when we slow down.</p></article>
+          <article class="jat-topic-card"><div class="jat-topic-image jat-topic-image--culture" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true"><i class="fas fa-users"></i></span><h3>Culture</h3><p>Truth, wisdom, and discernment in the world around us.</p></article>
+        </div>
+        <div class="jat-topic-actions"><a class="jat-text-link" href="{{ '/posts' | relative_url }}">Browse All Reflections →</a></div>
       </div>
 
       <aside class="jat-series-card jat-panel">
@@ -84,21 +85,51 @@ layout: default
               {% unless series_image %}{% assign series_image = series_post.image | default: series_post.background %}{% endunless %}
             {% endfor %}
             <a class="jat-series-item" href="{{ '/series/' | relative_url }}#{{ series_group.name | slugify }}">
-              {% if series_image %}<span class="jat-series-thumb" style="background-image: url('{{ series_image | prepend: site.baseurl | replace: '//', '/' }}');"></span>{% else %}<span class="jat-series-thumb jat-series-thumb-missing">Soon</span>{% endif %}
+              {% if series_image %}<span class="jat-series-thumb" style="background-image: url('{{ series_image | prepend: site.baseurl | replace: '//', '/' }}');" aria-hidden="true"></span>{% else %}<span class="jat-series-thumb jat-series-thumb-missing" aria-hidden="true">Series</span>{% endif %}
               <span class="jat-series-copy"><strong>{{ series_group.name }}</strong><em>{{ series_group.items | size }} reflection{% if series_group.items.size != 1 %}s{% endif %}</em><span class="jat-series-link">View Series →</span></span>
             </a>
           {% endif %}
         {% endfor %}
-        {% if shown_series_count == 0 %}<div class="jat-series-empty">Series coming soon.</div>{% endif %}
+        {% if shown_series_count == 0 %}<div class="jat-series-empty">Series collections will appear here as they grow.</div>{% endif %}
       </aside>
     </section>
 
     <section class="jat-engagement-row">
-      <aside class="jat-memory-card jat-panel"><p class="jat-kicker">Thought Worth Remembering</p><p>“Sometimes strength isn't standing over someone. Sometimes it's walking faithfully beside them.”</p><div class="jat-signature">...just a thought.</div></aside>
-      <aside class="jat-podcast-card jat-panel"><p class="jat-kicker">Podcast Spotlight</p><div class="jat-podcast-grid"><img class="jat-podcast-logo-img" src="{{ site.baseurl }}/img/just-a-thought-podcast-logo.svg" alt="Just A Thought Podcast logo"><div><h3>Just A Thought Podcast</h3><p>Coming soon.</p><a class="btn jat-btn jat-btn-primary" href="{{ '/podcast/' | relative_url }}">Podcast Updates</a></div></div></aside>
-      <aside class="jat-newsletter-card jat-panel"><p class="jat-kicker">Thought Letter</p><h3>Coming Soon</h3><p>Reflections delivered to your inbox when the newsletter is ready.</p></aside>
+      <aside class="jat-memory-card jat-panel">
+        <p class="jat-kicker">Thought Worth Remembering</p>
+        <p>“Sometimes strength isn't standing over someone. Sometimes it's walking faithfully beside them.”</p>
+        <div class="jat-signature">...just a thought.</div>
+      </aside>
+      <aside class="jat-podcast-card jat-panel">
+        <p class="jat-kicker">Podcast Spotlight</p>
+        <div class="jat-podcast-grid">
+          <img class="jat-podcast-logo-img" src="{{ site.baseurl }}/img/just-a-thought-podcast-logo.svg" alt="Just A Thought — The Podcast logo">
+          <div>
+            <h3>Just A Thought — The Podcast</h3>
+            <p>Thoughtful conversations are being prepared. Visit the podcast page for the vision behind the show and future updates.</p>
+            <a class="btn jat-btn jat-btn-primary" href="{{ '/podcast/' | relative_url }}">Explore the Podcast</a>
+          </div>
+        </div>
+      </aside>
+      <aside class="jat-newsletter-card jat-panel">
+        <p class="jat-kicker">Thought Letter</p>
+        <h3>A Future Email Edition</h3>
+        <p>The Thought Letter is planned as an occasional reflection delivered by email. No signup is open yet.</p>
+      </aside>
     </section>
 
-    <section class="jat-recent-section jat-panel"><p class="jat-kicker">Recent Reflections</p><div class="jat-recent-grid">{% for post in recent_posts %}<article class="jat-recent-card jat-card-surface"><h3><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h3>{% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>{% endif %}<a class="jat-text-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">Read More →</a></article>{% endfor %}</div><div class="jat-view-all"><a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">View All Posts →</a></div></section>
+    <section class="jat-recent-section jat-panel">
+      <p class="jat-kicker">Recent Reflections</p>
+      <div class="jat-recent-grid">
+        {% for post in recent_posts %}
+        <article class="jat-recent-card jat-card-surface">
+          <h3><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h3>
+          {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>{% endif %}
+          <a class="jat-text-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">Read More →</a>
+        </article>
+        {% endfor %}
+      </div>
+      <div class="jat-view-all"><a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">View All Posts →</a></div>
+    </section>
   </div>
 </main>

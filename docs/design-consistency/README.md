@@ -81,8 +81,8 @@ Shared characteristics:
 
 | ID | Work item | Phase | Status |
 |---|---|---:|---|
-| DS-01 | Consolidate shared design system and page archetypes | 0 | Review |
-| DS-02 | Refine Home page baseline | 0 | Not started |
+| DS-01 | Consolidate shared design system and page archetypes | 0 | Complete |
+| DS-02 | Refine Home page baseline | 0 | Review |
 | DS-03 | Correct global navigation and footer consistency | 0 | Not started |
 | DS-04 | Redesign Posts archive | 1 | Not started |
 | DS-05 | Redesign Search experience | 1 | Not started |
