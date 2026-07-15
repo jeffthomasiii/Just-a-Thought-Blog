@@ -23,13 +23,10 @@ Briefly describe the completed outcome.
 ### Files changed
 
 - `path/to/file`
-- `path/to/file`
 
 ### What changed
 
 - Change one
-- Change two
-- Change three
 
 ### Components added, replaced, or retired
 
@@ -67,16 +64,98 @@ Briefly describe the completed outcome.
 
 ---
 
-## 2026-07-15 — DS-02: Refine the Home page baseline
+## 2026-07-15 — DS-03: Correct global navigation and footer consistency
 
 **Status:** Review — implementation and validation complete; merge pending  
+**Branch:** `agent/ds-03-navigation-footer`  
+**Pull request:** [#11 — DS-03 Correct navigation and footer consistency](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/11)  
+**Implemented by:** Jeff Thomas III with ChatGPT implementation support
+
+### Summary
+
+Corrected global navigation and footer behavior so readers reach direct destinations, see a reliable current-page state, receive accurate mobile-menu and theme-control labels, and no longer encounter search-query substitutes or a disabled newsletter-form imitation.
+
+### Files changed
+
+- `_includes/navbar.html`
+- `_includes/footer.html`
+- `_includes/scripts.html`
+- `_sass/navigation-footer-refinements.scss`
+- `assets/main.scss`
+- `docs/design-consistency/README.md`
+- `docs/design-consistency/DS-03-NOTES.md`
+- `docs/design-consistency/CHANGELOG.md`
+
+### What changed
+
+- Added active navigation states and `aria-current="page"` output.
+- Made individual articles activate Posts.
+- Pointed `Latest Reflection` to the actual newest post with an archive fallback.
+- Added Search screen-reader text and an explicit primary-navigation label.
+- Updated the collapsed-menu label between Open and Close states.
+- Replaced indirect footer search links with direct Podcast and Resource Library destinations.
+- Removed duplicate About destinations.
+- Replaced the disabled email-field imitation with a truthful planned Thought Letter status.
+- Added accessible labels to footer social and email links.
+- Removed the footer’s embedded reusable style block.
+- Added shared active-state, footer, and responsive refinements.
+
+### Components added, replaced, or retired
+
+- Added: `_sass/navigation-footer-refinements.scss`.
+- Added: Current-page underline treatment and responsive active-state behavior.
+- Replaced: Query-substitute footer links, duplicated About links, and inactive signup controls.
+- Retired: The embedded footer `<style>` block.
+- Temporarily retained: Proven-unused legacy footer-form selectors pending DS-10 cleanup.
+
+### Content changes
+
+- Standardized the footer Podcast name as `Just A Thought — The Podcast`.
+- Replaced speculative newsletter-signup language with an explicit planned-status statement.
+- Changed footer About wording to `About the Blog`.
+
+### Validation completed
+
+- [x] Jekyll/Sass production build
+- [x] Desktop footer smoke render
+- [x] Tablet responsive-rule review
+- [x] Mobile responsive-rule review
+- [x] Light mode
+- [x] Dark mode
+- [x] Keyboard and focus structure
+- [x] Direct-link validation
+- [x] Current-page state validation
+- [x] Structural accessibility review
+
+### Evidence
+
+- Draft pull request: [#11](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/11)
+- GitHub Actions: `Jekyll build` run 11 completed successfully.
+- Rendered artifact: Compiled HTML, CSS, and JavaScript retained for seven days.
+- Active-state review: Home, Posts, an article, Series, Podcast, Resources, About, and Search each expose one correct `aria-current="page"` value.
+- Destination review: Every internal navigation and footer link resolves within the compiled artifact.
+- Latest-post review: The action resolved to `The Honored Vessel`, the newest reflection at build time.
+- Footer review: No query-substitute links, disabled inputs, or disabled buttons remain.
+- Accessibility review: Primary navigation, Search, social links, and mobile-menu state labels expose meaningful accessible names.
+- Visual smoke review: Desktop light and dark footer compositions retained the intended hierarchy, contrast, columns, status label, and signature.
+
+### Deferred work
+
+- Add `Professional Background` to the footer after DS-06.
+- Remove obsolete footer-form selectors during DS-10 after final dependency review.
+
+---
+
+## 2026-07-15 — DS-02: Refine the Home page baseline
+
+**Status:** Complete  
 **Branch:** `agent/ds-02-home-baseline`  
 **Pull request:** [#10 — DS-02 Refine Home page baseline](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/10)  
 **Implemented by:** Jeff Thomas III with ChatGPT implementation support
 
 ### Summary
 
-Refined the Home page so it functions as a reader-facing editorial baseline rather than a design-development mockup. Removed misleading interactions, standardized podcast language, consolidated future-feature messaging, and relocated reusable inline styling into a dedicated Home refinement partial.
+Refined Home into a reader-facing editorial baseline by removing development labels and misleading interactions, standardizing podcast language, consolidating future-feature messaging, and relocating reusable inline styling.
 
 ### Files changed
 
@@ -89,29 +168,25 @@ Refined the Home page so it functions as a reader-facing editorial baseline rath
 
 ### What changed
 
-- Replaced the internal `Homepage Hero` label with `A Reflective Christian Journal`.
-- Removed the duplicated `Latest Reflection` label.
-- Standardized the podcast name as `Just A Thought — The Podcast`.
-- Replaced the unavailable `Listen to the Podcast` action with `Explore the Podcast`.
-- Converted dead topic links into non-interactive editorial cards.
-- Consolidated topic availability messaging into one explanatory note and archive link.
-- Reduced repeated `Coming Soon` language across the topic, podcast, newsletter, and series sections.
-- Added accessible labeling to the latest-post image link and marked decorative images appropriately.
-- Moved reusable Home-only inline CSS into `_sass/home-refinements.scss`.
-- Added responsive refinements for topic messaging and featured-series rows.
+- Replaced `Homepage Hero` with `A Reflective Christian Journal`.
+- Removed the duplicate `Latest Reflection` label.
+- Standardized `Just A Thought — The Podcast`.
+- Converted dead topic links into static editorial cards.
+- Consolidated topic, podcast, newsletter, and series availability messaging.
+- Added accessible latest-post image labeling.
+- Moved reusable Home styles into `_sass/home-refinements.scss`.
 
 ### Components added, replaced, or retired
 
-- Added: `_sass/home-refinements.scss`.
-- Added: Static topic-card treatment, topic availability note, and archive action.
-- Replaced: Dead topic-card links and repetitive placeholder labels.
-- Retired: The embedded reusable `<style>` block in `_layouts/home.html`.
-- Temporarily retained: Dynamic inline background-image values for the hero, latest post, and series thumbnails.
+- Added: Home refinement partial and static topic-card treatment.
+- Replaced: Dead topic links and repetitive placeholder labels.
+- Retired: Embedded reusable Home `<style>` block.
+- Temporarily retained: Dynamic background-image values for content-driven imagery.
 
 ### Content changes
 
-- Updated the hero kicker, podcast naming, podcast action language, topic availability explanation, newsletter explanation, and empty-series wording.
-- No post titles, excerpts, or article content changed.
+- Updated Home hero, podcast, topic, newsletter, and empty-series wording.
+- No article content changed.
 
 ### Validation completed
 
@@ -128,21 +203,17 @@ Refined the Home page so it functions as a reader-facing editorial baseline rath
 
 ### Evidence
 
-- Draft pull request: [#10](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/10)
-- GitHub Actions: `Jekyll build` run 7 completed successfully.
-- Rendered artifact: Compiled HTML, CSS, and JavaScript retained for seven days by the workflow.
-- Visual review: Home inspected at 1440px, 768px, and 390px widths in light and dark modes.
-- Keyboard review: Focus order, visible focus styling, topic-card exclusion from the tab order, and the latest-image accessible name were verified.
-- Link review: All compiled Home destinations resolved, and no `href="#"` links remain.
-- Image review: Hero, latest-post, topic, series, and podcast imagery loaded with acceptable crops at the tested widths.
-- Test notes: No unintended regression was observed against the DS-01 Home baseline.
+- Merged pull request: [#10](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/10)
+- Merge commit: `2ff95aa82f923c8b103893282098a5b2c0a42d21`
+- GitHub Actions: Final protected `Jekyll build` completed successfully.
+- Home was reviewed at 1440px, 768px, and 390px in light and dark modes.
+- All compiled Home destinations resolved, and no `href="#"` links remained.
 
 ### Deferred work
 
 - Topic archive pages remain out of scope.
 - Podcast launch and newsletter signup remain out of scope.
-- The remaining footer `Coming soon` language and placeholder form treatment are assigned to DS-03.
-- Navigation and footer cleanup remains part of DS-03.
+- Global navigation and footer cleanup moved to DS-03.
 
 ---
 
@@ -155,7 +226,7 @@ Refined the Home page so it functions as a reader-facing editorial baseline rath
 
 ### Summary
 
-Introduced the canonical shared token and component layer, defined the three page archetypes in code, and migrated Home and Resources to the editorial landing-page foundation without intentionally changing their reader-facing content or page composition.
+Introduced the canonical shared token and component layer, defined three page archetypes, and migrated Home and Resources to the editorial landing-page foundation without intentionally changing their content or composition.
 
 ### Files changed
 
@@ -166,32 +237,25 @@ Introduced the canonical shared token and component layer, defined the three pag
 - `_layouts/home.html`
 - `index.html`
 - `resources.html`
-- `docs/design-consistency/README.md`
 - `docs/design-consistency/DESIGN-SYSTEM.md`
-- `docs/design-consistency/CHANGELOG.md`
-- `docs/design-consistency/DECISIONS.md`
 - `.github/workflows/jekyll-build.yml`
 
 ### What changed
 
-- Created one canonical set of brand and semantic design tokens.
-- Added compatibility aliases for existing token names.
-- Added shared containers, editorial labels, dividers, buttons, links, panels, cards, status labels, and focus styles.
-- Added semantic dark-mode variables.
-- Added landing, collection, and profile page archetype foundations.
-- Exposed page archetypes as body classes through the default layout.
-- Assigned Home and Resources to the landing-page archetype.
-- Added shared semantic classes to existing Home and Resources components.
-- Documented migration rules and temporary legacy dependencies.
-- Added a pull-request Jekyll build workflow with compact rendered HTML, CSS, and JavaScript artifacts.
+- Created canonical brand, semantic, spacing, typography, shape, border, and shadow tokens.
+- Added shared containers, kickers, dividers, actions, panels, cards, labels, and focus states.
+- Added semantic dark-mode values and landing, collection, and profile archetypes.
+- Exposed archetypes through the default layout.
+- Assigned Home and Resources to the landing archetype.
+- Added the protected pull-request Jekyll build workflow.
 
 ### Components added, replaced, or retired
 
-- Added: Canonical token layer and page-archetype foundations.
-- Added: Shared `jat-panel`, `jat-card-surface`, `jat-status-label`, container, button, divider, text-link, and focus components.
-- Replaced: No legacy component was deleted during this non-breaking phase.
-- Retired: Nothing during this non-breaking phase.
-- Temporarily retained: Existing variables and rules in `_sass/styles.scss`, `_sass/visual-board-home.scss`, `assets/css/jat-pages.css`, `assets/css/jat-dark-pages.css`, and page-specific polish files.
+- Added: Canonical token and page-archetype layers.
+- Added: Shared `jat-panel`, `jat-card-surface`, `jat-status-label`, container, action, divider, text-link, and focus components.
+- Replaced: No legacy component during the additive migration.
+- Retired: Nothing during the additive migration.
+- Temporarily retained: Legacy page systems required by unmigrated pages.
 
 ### Content changes
 
@@ -199,38 +263,27 @@ Introduced the canonical shared token and component layer, defined the three pag
 
 ### Validation completed
 
-- [x] Branch and pull request created
-- [x] Shared import order reviewed
-- [x] Page-archetype output reviewed in the default layout
-- [x] Home and Resources markup reviewed for semantic migration
-- [x] No legacy stylesheet removed before dependent pages migrate
 - [x] Jekyll/Sass build
-- [x] Desktop visual comparison
-- [x] Tablet visual comparison
-- [x] Mobile visual comparison
+- [x] Desktop
+- [x] Tablet
+- [x] Mobile
 - [x] Light mode
 - [x] Dark mode
 - [x] Keyboard navigation
-- [x] Compiled internal URL and asset-path review
+- [x] URL and asset-path review
 - [x] Structural accessibility review
 
 ### Evidence
 
 - Merged pull request: [#9](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/9)
 - Merge commit: `1d1ab5f299533e3a38fbc165e829c2bf11a5d3af`
-- GitHub Actions: Final `Jekyll build` validation completed successfully.
-- Rendered artifact: Compiled HTML, CSS, and JavaScript retained for seven days by the workflow.
-- Visual review: Home and Resources inspected at 1440px, 768px, and 390px widths in light and dark modes.
-- Keyboard review: Primary navigation focus order and the shared 3px muted-gold focus outline were verified.
-- Test notes: The implementation remains additive and intentionally retains legacy page styles until dependent pages migrate.
+- Final GitHub Actions build passed.
+- Home and Resources were inspected at desktop, tablet, and mobile widths in light and dark modes.
 
 ### Deferred work
 
-- Home page reader-facing cleanup moved to DS-02.
-- Posts and Search migrate to the collection archetype in DS-04 and DS-05.
-- About and Professional Background migrate to the profile archetype in DS-07 and DS-06.
-- Podcast and Series migrate to the landing archetype in DS-08 and DS-09.
-- Compatibility aliases and legacy rules remain until all dependent migrations are complete.
+- Remaining page migrations continue through DS-04 to DS-09.
+- Compatibility aliases and legacy rules remain until final cleanup.
 
 ---
 
@@ -243,7 +296,7 @@ Introduced the canonical shared token and component layer, defined the three pag
 
 ### Summary
 
-Created a repository-native planning system for the sitewide design and brand consistency initiative because GitHub Issues are currently disabled for this repository.
+Created a repository-native planning system for the sitewide design and brand consistency initiative because GitHub Issues are disabled.
 
 ### Files changed
 
@@ -254,12 +307,9 @@ Created a repository-native planning system for the sitewide design and brand co
 
 ### What changed
 
-- Established the Home page and Resources page as the visual baseline.
-- Defined three page archetypes.
-- Created ten numbered implementation work items.
-- Established phased sequencing and dependencies.
-- Added a standard implementation and validation record.
-- Added a design decision log.
+- Established Home and Resources as the visual baseline.
+- Defined three page archetypes and ten implementation work items.
+- Established sequencing, implementation, validation, changelog, and decision-record practices.
 
 ### Components added, replaced, or retired
 
@@ -270,20 +320,19 @@ Created a repository-native planning system for the sitewide design and brand co
 
 ### Content changes
 
-- No reader-facing site content changed.
+- No reader-facing content changed.
 
 ### Validation completed
 
-- [x] Documentation structure reviewed
-- [x] Work items linked to the roadmap
-- [x] Implementation record template added
-- [x] Decision record template added
+- [x] Documentation structure
+- [x] Work-item links
+- [x] Changelog template
+- [x] Decision template
 
 ### Evidence
 
-- Planning branch: `agent/design-consistency-roadmap`
 - Merged pull request: [#8](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/8)
 
 ### Deferred work
 
-- DS-01 through DS-10 remain to be implemented individually.
+- DS-01 through DS-10 are implemented individually.

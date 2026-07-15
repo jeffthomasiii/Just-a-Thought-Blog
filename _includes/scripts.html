@@ -8,6 +8,8 @@
   document.addEventListener('DOMContentLoaded', function () {
     const toggleBtn = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
+    const navToggle = document.querySelector('[data-target="#navbarResponsive"]');
+    const navMenu = document.getElementById('navbarResponsive');
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     const currentTheme = localStorage.getItem('theme');
 
@@ -27,6 +29,12 @@
       }
     }
 
+    function setNavigationToggleLabel(isOpen) {
+      if (navToggle) {
+        navToggle.setAttribute('aria-label', isOpen ? 'Close primary navigation' : 'Open primary navigation');
+      }
+    }
+
     applyTheme(currentTheme || (prefersDark ? 'dark' : 'light'));
 
     if (toggleBtn) {
@@ -35,6 +43,16 @@
         localStorage.setItem('theme', newTheme);
         applyTheme(newTheme);
       });
+    }
+
+    if (navMenu && window.jQuery) {
+      window.jQuery(navMenu)
+        .on('show.bs.collapse', function () {
+          setNavigationToggleLabel(true);
+        })
+        .on('hide.bs.collapse', function () {
+          setNavigationToggleLabel(false);
+        });
     }
   });
 </script>
@@ -90,8 +108,6 @@
               $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
               $('#success > .alert-danger').append($('<strong>').text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
               $('#success > .alert-danger').append('</div>');
-              //clear all fields
-              $('#contactForm').trigger("reset");
             },
             complete: function () {
               setTimeout(function () {

@@ -1,7 +1,25 @@
+{% assign current_url = page.url | default: '/' %}
+{% assign latest_post = site.posts | first %}
+{% assign home_active = false %}
+{% assign posts_active = false %}
+{% assign series_active = false %}
+{% assign podcast_active = false %}
+{% assign resources_active = false %}
+{% assign about_active = false %}
+{% assign search_active = false %}
+
+{% if current_url == '/' %}{% assign home_active = true %}{% endif %}
+{% if page.layout == 'post' or current_url contains '/posts' %}{% assign posts_active = true %}{% endif %}
+{% if current_url contains '/series' %}{% assign series_active = true %}{% endif %}
+{% if current_url contains '/podcast' %}{% assign podcast_active = true %}{% endif %}
+{% if current_url contains '/resources' %}{% assign resources_active = true %}{% endif %}
+{% if current_url contains '/about' %}{% assign about_active = true %}{% endif %}
+{% if current_url contains '/search' %}{% assign search_active = true %}{% endif %}
+
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top jat-site-nav" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top jat-site-nav" id="mainNav" aria-label="Primary navigation">
   <div class="container jat-nav-inner">
-    <a class="navbar-brand jat-nav-brand" href="{{"/" | relative_url }}" aria-label="Just A Thought Blog Home">
+    <a class="navbar-brand jat-nav-brand" href="{{ '/' | relative_url }}" aria-label="Just A Thought Blog home">
       <img src="{{ site.baseurl }}/img/favicon-lightbulb-dove.png" alt="" class="jat-nav-logo">
       <span class="jat-nav-wordmark">
         <span>Just A Thought</span>
@@ -9,26 +27,37 @@
       </span>
     </a>
 
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      Menu
-      <i class="fa fa-bars"></i>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Open primary navigation">
+      <span class="jat-menu-label">Menu</span>
+      <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="{{"/" | relative_url }}">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ '/posts' | relative_url }}">Posts</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ '/series/' | relative_url }}">Series</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ '/podcast/' | relative_url }}">Podcast</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ '/resources/' | relative_url }}">Resources</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{"/about" | relative_url }}">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ '/search/' | relative_url }}" aria-label="Search"><i class="fas fa-search" style="font-size: 0.9em; opacity: 0.85;"></i></a></li>
+        <li class="nav-item"><a class="nav-link{% if home_active %} active{% endif %}" href="{{ '/' | relative_url }}"{% if home_active %} aria-current="page"{% endif %}>Home</a></li>
+        <li class="nav-item"><a class="nav-link{% if posts_active %} active{% endif %}" href="{{ '/posts' | relative_url }}"{% if posts_active %} aria-current="page"{% endif %}>Posts</a></li>
+        <li class="nav-item"><a class="nav-link{% if series_active %} active{% endif %}" href="{{ '/series/' | relative_url }}"{% if series_active %} aria-current="page"{% endif %}>Series</a></li>
+        <li class="nav-item"><a class="nav-link{% if podcast_active %} active{% endif %}" href="{{ '/podcast/' | relative_url }}"{% if podcast_active %} aria-current="page"{% endif %}>Podcast</a></li>
+        <li class="nav-item"><a class="nav-link{% if resources_active %} active{% endif %}" href="{{ '/resources/' | relative_url }}"{% if resources_active %} aria-current="page"{% endif %}>Resources</a></li>
+        <li class="nav-item"><a class="nav-link{% if about_active %} active{% endif %}" href="{{ '/about' | relative_url }}"{% if about_active %} aria-current="page"{% endif %}>About</a></li>
+        <li class="nav-item">
+          <a class="nav-link jat-nav-search{% if search_active %} active{% endif %}" href="{{ '/search/' | relative_url }}"{% if search_active %} aria-current="page"{% endif %}>
+            <i class="fas fa-search jat-nav-search-icon" aria-hidden="true"></i>
+            <span class="sr-only">Search</span>
+          </a>
+        </li>
         <li class="nav-item jat-theme-nav-item">
           <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
             <span id="theme-icon" aria-hidden="true">☾</span>
           </button>
         </li>
-        <li class="nav-item jat-latest-nav-item"><a class="btn jat-btn jat-btn-primary jat-nav-button" href="{{ '/posts' | relative_url }}">Latest Reflection</a></li>
+        <li class="nav-item jat-latest-nav-item">
+          {% if latest_post %}
+          <a class="btn jat-btn jat-btn-primary jat-nav-button" href="{{ latest_post.url | relative_url }}" aria-label="Read the latest reflection: {{ latest_post.title | escape }}">Latest Reflection</a>
+          {% else %}
+          <a class="btn jat-btn jat-btn-primary jat-nav-button" href="{{ '/posts' | relative_url }}">Latest Reflection</a>
+          {% endif %}
+        </li>
       </ul>
     </div>
   </div>
