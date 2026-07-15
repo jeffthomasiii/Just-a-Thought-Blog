@@ -1,0 +1,126 @@
+/* =========================================================
+   DS-03 — Navigation and Footer Refinements
+   ========================================================= */
+
+.jat-site-nav .nav-link {
+  position: relative;
+}
+
+.jat-site-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.3rem;
+  left: 0.5rem;
+  height: 2px;
+  background: var(--jat-action-primary);
+  opacity: 0;
+  transform: scaleX(0.5);
+  transform-origin: center;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.jat-site-nav .nav-link.active,
+.jat-site-nav .nav-link[aria-current='page'] {
+  color: var(--jat-action-primary) !important;
+}
+
+.jat-site-nav .nav-link.active::after,
+.jat-site-nav .nav-link[aria-current='page']::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.jat-nav-search {
+  display: inline-flex;
+  min-width: 2.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.jat-nav-search-icon {
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
+.navbar-toggler {
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.jat-menu-label {
+  line-height: 1;
+}
+
+.jat-footer-container {
+  max-width: var(--jat-width-board);
+}
+
+.jat-footer-column,
+.jat-footer-letter {
+  min-width: 0;
+}
+
+.jat-footer-column a {
+  width: fit-content;
+}
+
+.jat-footer-letter .jat-status-label {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 0.15rem;
+}
+
+.jat-footer-socials a {
+  text-decoration: none;
+}
+
+.jat-footer-socials i {
+  pointer-events: none;
+}
+
+body.dark-mode .jat-site-nav .nav-link.active,
+body.dark-mode .jat-site-nav .nav-link[aria-current='page'] {
+  color: #D6B36B !important;
+}
+
+body.dark-mode .jat-site-nav .nav-link.active::after,
+body.dark-mode .jat-site-nav .nav-link[aria-current='page']::after {
+  background: #D6B36B;
+}
+
+@media (max-width: 991.98px) {
+  .jat-site-nav .nav-link {
+    width: fit-content;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .jat-site-nav .nav-link::after {
+    right: auto;
+    bottom: 0.15rem;
+    left: 0.75rem;
+    width: 2rem;
+    transform-origin: left;
+  }
+
+  .jat-nav-search {
+    justify-content: flex-start;
+  }
+
+  .jat-theme-nav-item,
+  .jat-latest-nav-item {
+    margin-top: 0.4rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-footer-letter {
+    text-align: center;
+  }
+
+  .jat-footer-letter .jat-status-label {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
