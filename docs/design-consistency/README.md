@@ -1,6 +1,6 @@
 # Just A Thought Blog — Design Consistency Roadmap
 
-**Status:** Planning  
+**Status:** Implementation in progress  
 **Owner:** Jeff Thomas III  
 **Repository:** `jeffthomasiii/Just-a-Thought-Blog`  
 **Baseline:** Home page and Resources page editorial-board design system  
@@ -29,6 +29,7 @@ The documentation is designed to record:
 ## Tracking files
 
 - [Detailed Work Items](WORK-ITEMS.md)
+- [Shared Design System](DESIGN-SYSTEM.md)
 - [Implementation Changelog](CHANGELOG.md)
 - [Design Decision Log](DECISIONS.md)
 
@@ -80,7 +81,7 @@ Shared characteristics:
 
 | ID | Work item | Phase | Status |
 |---|---|---:|---|
-| DS-01 | Consolidate shared design system and page archetypes | 0 | Not started |
+| DS-01 | Consolidate shared design system and page archetypes | 0 | In progress |
 | DS-02 | Refine Home page baseline | 0 | Not started |
 | DS-03 | Correct global navigation and footer consistency | 0 | Not started |
 | DS-04 | Redesign Posts archive | 1 | Not started |
@@ -142,9 +143,9 @@ Examples:
 
 Examples:
 
-- `feature/ds-01-design-system`
-- `feature/ds-04-posts-archive`
-- `feature/ds-06-professional-background`
+- `agent/ds-01-shared-design-system`
+- `agent/ds-04-posts-archive`
+- `agent/ds-06-professional-background`
 
 ## Completion evidence
 
