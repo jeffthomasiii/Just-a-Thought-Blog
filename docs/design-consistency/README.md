@@ -1,6 +1,6 @@
 # Just A Thought Blog — Design Consistency Roadmap
 
-**Status:** Implementation in review  
+**Status:** Implementation in progress  
 **Owner:** Jeff Thomas III  
 **Repository:** `jeffthomasiii/Just-a-Thought-Blog`  
 **Baseline:** Home page and Resources page editorial-board design system  
@@ -82,8 +82,8 @@ Shared characteristics:
 | ID | Work item | Phase | Status |
 |---|---|---:|---|
 | DS-01 | Consolidate shared design system and page archetypes | 0 | Complete |
-| DS-02 | Refine Home page baseline | 0 | Review |
-| DS-03 | Correct global navigation and footer consistency | 0 | Not started |
+| DS-02 | Refine Home page baseline | 0 | Complete |
+| DS-03 | Correct global navigation and footer consistency | 0 | In progress |
 | DS-04 | Redesign Posts archive | 1 | Not started |
 | DS-05 | Redesign Search experience | 1 | Not started |
 | DS-06 | Rebuild CV as Professional Background | 1 | Not started |
