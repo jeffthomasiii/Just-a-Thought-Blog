@@ -29,10 +29,13 @@ jobs:
           JEKYLL_ENV: production
         run: bundle exec jekyll build --trace
 
-      - name: Upload rendered site
+      - name: Upload rendered site files
         uses: actions/upload-artifact@v4
         with:
           name: rendered-site
-          path: _site
+          path: |
+            _site/**/*.html
+            _site/assets/**/*.css
+            _site/assets/**/*.js
           if-no-files-found: error
           retention-days: 7
