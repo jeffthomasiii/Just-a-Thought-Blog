@@ -1,0 +1,307 @@
+/* =========================================================
+   Just A Thought Blog — Canonical Design System
+
+   This partial is the single source of truth for shared design
+   tokens and reusable components. It is imported after legacy
+   page styles so the shared system can stabilize existing pages
+   while those pages are migrated incrementally.
+   ========================================================= */
+
+:root {
+  /* Brand colors */
+  --jat-color-olive-deep: #4F5D3A;
+  --jat-color-olive-muted: #6F7B52;
+  --jat-color-sage: #A8B68A;
+  --jat-color-cream: #F6F1E7;
+  --jat-color-parchment: #EFE4D3;
+  --jat-color-ink: #252822;
+  --jat-color-gray: #7A7468;
+  --jat-color-gold: #C6A15B;
+  --jat-color-paper: #FFFDF8;
+
+  /* Semantic surfaces and text */
+  --jat-surface-page: var(--jat-color-cream);
+  --jat-surface-panel: rgba(255, 255, 255, 0.38);
+  --jat-surface-card: var(--jat-color-paper);
+  --jat-surface-emphasis: var(--jat-color-parchment);
+  --jat-text-primary: var(--jat-color-ink);
+  --jat-text-secondary: #5F6259;
+  --jat-text-muted: var(--jat-color-gray);
+  --jat-action-primary: var(--jat-color-olive-deep);
+  --jat-action-hover: var(--jat-color-olive-muted);
+  --jat-accent-highlight: var(--jat-color-gold);
+
+  /* Borders and elevation */
+  --jat-border-subtle: rgba(79, 93, 58, 0.18);
+  --jat-border-strong: rgba(79, 93, 58, 0.28);
+  --jat-shadow-low: 0 8px 20px rgba(37, 40, 34, 0.04);
+  --jat-shadow-medium: 0 18px 45px rgba(37, 40, 34, 0.08);
+
+  /* Shape */
+  --jat-radius-none: 0;
+  --jat-radius-subtle: 2px;
+  --jat-radius-control: 4px;
+  --jat-radius-round: 999px;
+
+  /* Layout */
+  --jat-width-board: 1280px;
+  --jat-width-content: 1120px;
+  --jat-width-reading: 760px;
+  --jat-page-gutter: 32px;
+  --jat-panel-gap: 0.85rem;
+  --jat-section-space: clamp(3.25rem, 6vw, 5rem);
+  --jat-panel-padding: clamp(1.5rem, 3.5vw, 3rem);
+
+  /* Typography */
+  --jat-font-display: 'Playfair Display', 'Lora', Georgia, serif;
+  --jat-font-body: 'Source Sans 3', 'Open Sans', 'Inter', system-ui, sans-serif;
+  --jat-font-reflective: 'Cormorant Garamond', 'Lora', Georgia, serif;
+
+  /* Compatibility aliases — remove only after all legacy CSS migrates. */
+  --jat-deep-olive: var(--jat-color-olive-deep);
+  --jat-olive-deep: var(--jat-color-olive-deep);
+  --jat-muted-olive: var(--jat-color-olive-muted);
+  --jat-olive-muted: var(--jat-color-olive-muted);
+  --jat-soft-sage: var(--jat-color-sage);
+  --jat-sage: var(--jat-color-sage);
+  --jat-warm-cream: var(--jat-color-cream);
+  --jat-cream: var(--jat-color-cream);
+  --jat-soft-parchment: var(--jat-color-parchment);
+  --jat-parchment: var(--jat-color-parchment);
+  --jat-charcoal: var(--jat-color-ink);
+  --jat-ink: var(--jat-color-ink);
+  --jat-warm-gray: var(--jat-color-gray);
+  --jat-gray: var(--jat-color-gray);
+  --jat-muted-gold: var(--jat-color-gold);
+  --jat-gold: var(--jat-color-gold);
+  --jat-white: var(--jat-color-paper);
+  --jat-border: var(--jat-border-subtle);
+  --jat-shadow: var(--jat-shadow-medium);
+}
+
+body {
+  background: var(--jat-surface-page);
+  color: var(--jat-text-primary);
+  font-family: var(--jat-font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--jat-text-primary);
+  font-family: var(--jat-font-display);
+}
+
+/* Shared layout widths */
+.jat-board-container,
+.jat-container-board {
+  width: 100%;
+  max-width: var(--jat-width-board);
+}
+
+.jat-container-content {
+  width: min(var(--jat-width-content), calc(100% - var(--jat-page-gutter)));
+  margin-inline: auto;
+}
+
+.jat-container-reading {
+  width: min(var(--jat-width-reading), calc(100% - var(--jat-page-gutter)));
+  margin-inline: auto;
+}
+
+/* Shared editorial label */
+.jat-kicker {
+  margin: 0 0 0.75rem;
+  color: var(--jat-text-primary);
+  font-family: var(--jat-font-body);
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+/* Shared olive-and-gold divider */
+.jat-simple-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: min(280px, 100%);
+  margin: 1.45rem 0 1.25rem;
+}
+
+.jat-simple-divider span:not(.jat-leaf) {
+  flex: 1;
+  height: 1px;
+  background: var(--jat-accent-highlight);
+}
+
+.jat-simple-divider .jat-leaf {
+  color: var(--jat-action-primary);
+  font-size: 1.1rem;
+}
+
+/* Shared action system */
+.jat-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn.jat-btn,
+.jat-btn {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.78rem 1.55rem;
+  border-radius: var(--jat-radius-control);
+  font-family: var(--jat-font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  line-height: 1.2;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.btn.jat-btn-primary,
+.jat-btn-primary {
+  border: 1px solid var(--jat-action-primary) !important;
+  background: var(--jat-action-primary) !important;
+  color: #fff !important;
+}
+
+.btn.jat-btn-primary:hover,
+.btn.jat-btn-primary:focus,
+.jat-btn-primary:hover,
+.jat-btn-primary:focus {
+  border-color: var(--jat-action-hover) !important;
+  background: var(--jat-action-hover) !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+.btn.jat-btn-secondary,
+.jat-btn-secondary {
+  border: 1px solid var(--jat-action-primary) !important;
+  background: transparent !important;
+  color: var(--jat-action-primary) !important;
+}
+
+.btn.jat-btn-secondary:hover,
+.btn.jat-btn-secondary:focus,
+.jat-btn-secondary:hover,
+.jat-btn-secondary:focus {
+  border-color: var(--jat-accent-highlight) !important;
+  background: rgba(198, 161, 91, 0.10) !important;
+  color: var(--jat-text-primary) !important;
+  transform: translateY(-1px);
+}
+
+/* Shared panel and card surfaces */
+.jat-panel {
+  border: 1px solid var(--jat-border-subtle);
+  background: var(--jat-surface-panel);
+}
+
+.jat-panel--padded {
+  padding: var(--jat-panel-padding);
+}
+
+.jat-panel--parchment {
+  background: var(--jat-surface-emphasis);
+}
+
+.jat-card-surface {
+  border: 1px solid var(--jat-border-subtle);
+  border-radius: var(--jat-radius-subtle);
+  background: var(--jat-surface-card);
+  box-shadow: var(--jat-shadow-low);
+}
+
+.jat-status-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--jat-border-strong);
+  border-radius: var(--jat-radius-subtle);
+  background: var(--jat-action-primary);
+  color: #fff;
+  font-family: var(--jat-font-body);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+.jat-text-link {
+  display: inline-block;
+  color: var(--jat-action-primary);
+  font-family: var(--jat-font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.jat-text-link:hover,
+.jat-text-link:focus {
+  color: var(--jat-accent-highlight);
+  text-decoration: none;
+}
+
+/* Shared focus treatment */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 3px solid rgba(198, 161, 91, 0.55);
+  outline-offset: 3px;
+}
+
+/* Dark-mode semantic token overrides. Page-specific rules can build on these. */
+body.dark-mode {
+  --jat-surface-page: #181914;
+  --jat-surface-panel: rgba(255, 255, 255, 0.045);
+  --jat-surface-card: #22251D;
+  --jat-surface-emphasis: #22251D;
+  --jat-text-primary: #F6F1E7;
+  --jat-text-secondary: #C9C1B0;
+  --jat-text-muted: #B2AA9B;
+  --jat-action-primary: #A8B68A;
+  --jat-action-hover: #C2CEAA;
+  --jat-accent-highlight: #D6B36B;
+  --jat-border-subtle: rgba(214, 179, 107, 0.20);
+  --jat-border-strong: rgba(214, 179, 107, 0.32);
+  --jat-shadow-low: 0 8px 20px rgba(0, 0, 0, 0.18);
+  --jat-shadow-medium: 0 18px 45px rgba(0, 0, 0, 0.28);
+}
+
+body.dark-mode .jat-panel,
+body.dark-mode .jat-card-surface {
+  color: var(--jat-text-primary);
+}
+
+@media (max-width: 575.98px) {
+  :root {
+    --jat-page-gutter: 24px;
+    --jat-panel-padding: 1.35rem;
+  }
+
+  .jat-button-row {
+    gap: 0.75rem;
+  }
+
+  .jat-button-row .jat-btn {
+    width: 100%;
+  }
+}
