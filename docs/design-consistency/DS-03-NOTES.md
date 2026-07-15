@@ -1,7 +1,8 @@
 # DS-03 — Navigation and Footer Consistency Notes
 
-**Status:** In progress  
-**Branch:** `agent/ds-03-navigation-footer`
+**Status:** Review  
+**Branch:** `agent/ds-03-navigation-footer`  
+**Pull request:** [#11 — DS-03 Correct navigation and footer consistency](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/11)
 
 ## Implemented
 
@@ -18,16 +19,18 @@
 - Added accessible names to email and social-profile icons.
 - Added `_sass/navigation-footer-refinements.scss` for active states and responsive behavior.
 
-## Validation pending
+## Validation completed
 
-- Jekyll and Sass production build.
-- Direct destination validation.
-- Active-state validation on Home, Posts, a post, Series, Podcast, Resources, About, and Search.
-- Desktop and collapsed-mobile navigation review.
-- Keyboard and focus review.
-- Mobile menu open/close label review.
-- Light- and dark-mode contrast review.
-- Footer layout review at desktop, tablet, and mobile widths.
+- Jekyll and Sass production build passed in GitHub Actions run 11.
+- Compiled Home, Posts, article, Series, Podcast, Resources, About, and Search pages each expose exactly one correct `aria-current="page"` state.
+- The newest-post action compiles to `The Honored Vessel`, the current latest reflection at build time.
+- Every internal navigation and footer destination resolves within the rendered artifact.
+- No footer query-substitute links remain.
+- No disabled footer input or button remains.
+- Search has screen-reader text, social links have accessible names, and the primary navigation has an explicit label.
+- Desktop light- and dark-mode footer smoke renders preserve the intended columns, contrast, status label, and signature treatment.
+- Tablet and mobile CSS breakpoint rules were reviewed for collapsed navigation, footer stacking, and centered Thought Letter status.
+- The mobile menu script updates the toggle label between `Open primary navigation` and `Close primary navigation` through Bootstrap collapse events.
 
 ## Deferred
 
