@@ -1,0 +1,177 @@
+/* =========================================================
+   Just A Thought Blog — Home Page Refinements
+
+   Reader-facing Home cleanup introduced during DS-02. These rules
+   replace the reusable inline styles previously embedded in the
+   Home layout and refine the baseline without changing its archetype.
+   ========================================================= */
+
+.jat-card-image-missing {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--jat-color-parchment), var(--jat-color-cream));
+  color: var(--jat-action-primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.jat-topic-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.jat-topic-heading .jat-kicker {
+  flex: 0 0 auto;
+}
+
+.jat-topic-note {
+  max-width: 560px;
+  margin: 0;
+  color: var(--jat-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  text-align: right;
+}
+
+.jat-topic-card {
+  cursor: default;
+}
+
+.jat-topic-card .jat-topic-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jat-topic-image--faith {
+  background-image: url('../img/Faith-topic-card.jpg');
+}
+
+.jat-topic-image--marriage {
+  background-image: url('../img/Marriage-topic-card.jpg');
+}
+
+.jat-topic-image--leadership {
+  background-image: url('../img/Leadership-topic-card.jpg');
+}
+
+.jat-topic-image--technology {
+  background-image: url('../img/Technology-topic-card.jpg');
+}
+
+.jat-topic-image--camping {
+  background-image: url('../img/Camping-topic-card.jpg');
+}
+
+.jat-topic-image--culture {
+  background-image: url('../img/Culture-topic-card.jpg');
+}
+
+.jat-topic-actions {
+  margin-top: 1.25rem;
+  text-align: right;
+}
+
+.jat-series-card .jat-series-item {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.jat-series-thumb {
+  display: block;
+  width: 96px;
+  height: 68px;
+  border-radius: var(--jat-radius-subtle);
+  background-position: center;
+  background-size: cover;
+}
+
+.jat-series-thumb-missing {
+  display: grid;
+  place-items: center;
+  background: var(--jat-surface-emphasis);
+  color: var(--jat-action-primary);
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.jat-series-copy {
+  display: flex !important;
+  flex-direction: column;
+  gap: 0.18rem;
+  color: var(--jat-text-primary) !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.jat-series-copy em {
+  color: var(--jat-text-muted);
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.jat-series-link {
+  margin-top: 0.15rem;
+  color: var(--jat-action-primary) !important;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.jat-series-empty {
+  padding: 1rem;
+  background: var(--jat-surface-panel);
+  color: var(--jat-text-muted);
+}
+
+.jat-podcast-logo-img {
+  width: 100%;
+  min-height: 180px;
+  border: 1px solid var(--jat-border-subtle);
+  background: var(--jat-surface-page);
+  object-fit: cover;
+}
+
+body.dark-mode .jat-card-image-missing,
+body.dark-mode .jat-series-thumb-missing {
+  background: var(--jat-surface-emphasis);
+  color: var(--jat-action-primary);
+}
+
+@media (max-width: 767.98px) {
+  .jat-topic-heading {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .jat-topic-note {
+    max-width: none;
+    text-align: left;
+  }
+
+  .jat-topic-actions {
+    text-align: left;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-series-card .jat-series-item {
+    grid-template-columns: 76px minmax(0, 1fr);
+  }
+
+  .jat-series-thumb {
+    width: 76px;
+    height: 58px;
+  }
+}
