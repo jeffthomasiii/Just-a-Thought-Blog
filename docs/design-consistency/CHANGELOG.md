@@ -69,7 +69,7 @@ Briefly describe the completed outcome.
 
 ## 2026-07-15 — DS-02: Refine the Home page baseline
 
-**Status:** Partial — implementation complete; validation in progress  
+**Status:** Review — implementation and validation complete; merge pending  
 **Branch:** `agent/ds-02-home-baseline`  
 **Pull request:** [#10 — DS-02 Refine Home page baseline](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/10)  
 **Implemented by:** Jeff Thomas III with ChatGPT implementation support
@@ -115,26 +115,33 @@ Refined the Home page so it functions as a reader-facing editorial baseline rath
 
 ### Validation completed
 
-- [ ] Jekyll/Sass build
-- [ ] Desktop
-- [ ] Tablet
-- [ ] Mobile
-- [ ] Light mode
-- [ ] Dark mode
-- [ ] Keyboard navigation
-- [ ] Link validation
-- [ ] Accessibility review
-- [ ] Image crop review
+- [x] Jekyll/Sass build
+- [x] Desktop
+- [x] Tablet
+- [x] Mobile
+- [x] Light mode
+- [x] Dark mode
+- [x] Keyboard navigation
+- [x] Link validation
+- [x] Accessibility review
+- [x] Image crop review
 
 ### Evidence
 
 - Draft pull request: [#10](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/10)
-- Test notes: Validation is running through the protected-branch Jekyll workflow and rendered-site artifact.
+- GitHub Actions: `Jekyll build` run 7 completed successfully.
+- Rendered artifact: Compiled HTML, CSS, and JavaScript retained for seven days by the workflow.
+- Visual review: Home inspected at 1440px, 768px, and 390px widths in light and dark modes.
+- Keyboard review: Focus order, visible focus styling, topic-card exclusion from the tab order, and the latest-image accessible name were verified.
+- Link review: All compiled Home destinations resolved, and no `href="#"` links remain.
+- Image review: Hero, latest-post, topic, series, and podcast imagery loaded with acceptable crops at the tested widths.
+- Test notes: No unintended regression was observed against the DS-01 Home baseline.
 
 ### Deferred work
 
 - Topic archive pages remain out of scope.
 - Podcast launch and newsletter signup remain out of scope.
+- The remaining footer `Coming soon` language and placeholder form treatment are assigned to DS-03.
 - Navigation and footer cleanup remains part of DS-03.
 
 ---
