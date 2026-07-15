@@ -71,7 +71,7 @@ Briefly describe the completed outcome.
 
 **Status:** Complete  
 **Branch:** `agent/design-consistency-roadmap`  
-**Pull request:** Pending  
+**Pull request:** [#8 — Document sitewide design consistency roadmap](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/8)  
 **Implemented by:** Jeff Thomas III with ChatGPT planning support
 
 ### Summary
@@ -115,7 +115,7 @@ Created a repository-native planning system for the sitewide design and brand co
 ### Evidence
 
 - Planning branch: `agent/design-consistency-roadmap`
-- Draft pull request: Pending
+- Draft pull request: [#8](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/8)
 
 ### Deferred work
 
