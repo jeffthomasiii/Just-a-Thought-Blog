@@ -34,11 +34,90 @@ Briefly describe the outcome.
 
 ---
 
-## 2026-07-16 — DS-09: Align the Series page
+## 2026-07-16 — DS-10: Validate Resources and complete cross-site QA
 
 **Status:** Review — implementation and validation complete; merge pending  
+**Branch:** `agent/ds-10-final-qa`  
+**Pull request:** [#18 — DS-10 Validate Resources and complete cross-site QA](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/18)  
+**Implemented by:** Jeff Thomas III with ChatGPT implementation support
+
+### Summary
+
+Completed the final design-consistency phase by migrating Resources into the shared Sass system, correcting its responsive media behavior and planned-resource messaging, and validating Home, Posts, Series, Podcast, Resources, About, Search, and Professional Background as one coordinated site.
+
+### Files changed
+
+- `resources.html`
+- `_sass/resources-page.scss`
+- `_sass/resources-page-validation.scss`
+- `assets/main.scss`
+- `assets/css/jat-resources.css` — removed
+- `.github/workflows/jekyll-build.yml`
+- `docs/design-consistency/README.md`
+- `docs/design-consistency/DS-09-NOTES.md`
+- `docs/design-consistency/DS-10-NOTES.md`
+- `docs/design-consistency/DECISIONS.md`
+- `docs/design-consistency/CHANGELOG.md`
+
+### What changed
+
+- Removed the standalone Resources CSS file and page-specific stylesheet loading.
+- Moved Resources into the shared Sass import order with page-scoped selectors and semantic tokens.
+- Replaced inline background-image blocks with proportional decorative images.
+- Added explicit desktop, tablet, and mobile aspect ratios.
+- Consolidated repeated `Coming Soon` language into one `In Development` section with `Planned` preview labels.
+- Clarified that planned resource cards are not active downloads.
+- Added section heading relationships.
+- Corrected a desktop design-principle grid constraint discovered during visual QA.
+- Added the four Resources images to the repeatable rendered-site artifact.
+- Documented evidence-based legacy cleanup and intentionally retained inherited dependencies.
+
+### Validation completed
+
+- [x] Protected Jekyll and Sass production builds
+- [x] Eight primary pages assigned to the three page archetypes
+- [x] One `h1` and one `main` per primary page
+- [x] Unique IDs, image alternatives, navigation states, and footer destinations
+- [x] Forty-eight responsive/theme cases across 1440px, 768px, and 390px
+- [x] No horizontal overflow
+- [x] Light and dark modes
+- [x] Real keyboard Tab order and visible focus across all eight pages
+- [x] No empty or broken primary-page destinations
+- [x] Search URL state, filters, short-query, empty, and reset behavior
+- [x] Posts pagination
+- [x] Series anchors, native expandable lists, and ordered links
+- [x] Three-page Professional Background Letter print output
+- [x] Resources media proportions and zero desktop media/copy overlap
+- [x] CSS import order, selector scope, and retained-dependency review
+
+### Evidence
+
+- GitHub Actions: protected Jekyll build 57 passed on commit `20c2f2666afe46b17fb9758e51c4f3f4c4f30212`.
+- Corrected rendered artifact: `8380634623`.
+- Responsive matrix: 48 cases with zero overflow failures.
+- Keyboard counts with zero visible-focus failures: Home 44, Posts 42, Series 50, Podcast 28, Resources 28, About 50, Search 29, Professional Background 30.
+- Structural scan found no duplicate IDs, empty links, broken primary destinations, or missing image alternatives.
+- Search index contained 120 published reflections.
+- Series retained eight collections and 40 ordered direct links.
+- Print review produced three clean Letter pages.
+
+### Deferred work
+
+- Newsletter implementation
+- Podcast launch and episode publishing
+- Category and topic archives
+- Large-scale post-content editing
+- Individual series landing pages
+- A separate inherited-template and legacy-CSS reduction project
+
+---
+
+## 2026-07-16 — DS-09: Align the Series page
+
+**Status:** Complete  
 **Branch:** `agent/ds-09-series-alignment`  
 **Pull request:** [#17 — DS-09 Align Series page](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/17)  
+**Merge commit:** `6fa255bf06dbe6e0f485815ac09ab67edc6c7853`  
 **Implemented by:** Jeff Thomas III with ChatGPT implementation support
 
 ### Summary
@@ -60,44 +139,29 @@ Aligned `/series/` with the shared editorial landing-page system while preservin
 
 - Replaced the older hero and nested featured block with a framed split editorial hero.
 - Preserved automatic grouping by `series`, exclusion of blank values, and existing `series_order` sorting.
-- Redesigned all dynamically generated collection cards with proportional imagery, counts, categories, tags, descriptions, and branded fallbacks.
+- Redesigned collection cards with proportional imagery, counts, categories, tags, descriptions, and fallbacks.
 - Redesigned native `<details>` reading lists without replacing browser-expanded behavior.
-- Added hash-aware expansion, summary focus, and same-hash reopening for manually closed reading lists.
+- Added hash-aware expansion, summary focus, and same-hash reopening.
 - Added ordered post rows with part numbers or dates, subtitles where available, and direct destinations.
-- Removed reader-facing references to front matter and generation mechanics.
-- Consolidated Reading Pathways into one intentional closing panel.
-- Added responsive, dark-mode, reduced-motion, long-title, and keyboard-focus treatments.
+- Removed reader-facing implementation mechanics.
+- Consolidated Reading Pathways into one closing panel.
 
 ### Validation completed
 
-- [x] Protected Jekyll and Sass production build
-- [x] Eight published series retained
-- [x] All 40 series post links retained in the exact prior order
-- [x] Featured-series selection and current fallback behavior
-- [x] All card hashes resolve to matching native `<details>` IDs
-- [x] Hash changes open and focus the matching reading list
-- [x] Same-hash links reopen manually closed lists
-- [x] Native Enter-key summary toggling
-- [x] Desktop at 1440px, tablet at 768px, and mobile at 390px
-- [x] Light and dark modes
-- [x] No horizontal overflow
-- [x] Long titles and one-, two-, and eleven-post collection states
-- [x] All rendered series images and internal destinations
-- [x] Keyboard tab order and visible focus
-- [x] Heading hierarchy, landmarks, IDs, active navigation, and empty-link checks
-- [x] Home, Resources, Podcast, About, Professional Background, navigation, and footer regressions
+- [x] Protected build
+- [x] Eight series and 40 ordered links retained
+- [x] Hash activation, summary focus, same-hash reopening, and Enter-key toggling
+- [x] Desktop, tablet, mobile, light, dark, overflow, long-title, image, keyboard, structure, link, and regression checks
 
 ### Evidence
 
-- Draft pull request: [#17](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/17)
-- GitHub Actions: protected `Jekyll build` run 51 passed on the repeated-hash-corrected implementation.
-- Baseline comparison confirmed identical series keys and identical ordered post-title arrays.
-- Compiled structure contains eight cards, eight native `<details>` elements, and 40 direct post links.
-- All 60 compiled internal destinations checked from the Series page resolved.
+- Merged pull request: [#17](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/17)
+- Merge commit: `6fa255bf06dbe6e0f485815ac09ab67edc6c7853`
+- Baseline comparison confirmed identical series keys and ordered post-title arrays.
 
 ### Deferred work
 
-- Individual per-series landing pages
+- Individual series landing pages
 - Changes to series membership or post front matter
 - Search or filtering within Series
 - Category archive pages
@@ -139,7 +203,7 @@ Aligned `Just A Thought — The Podcast` with the editorial landing-page family 
 
 - Merged pull request: [#16](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/16)
 - Merge commit: `c5c33115d5b54589bd8b3b5a2a1aaf761fdca235`
-- Protected Jekyll build run 49 passed on the exact review commit.
+- Protected Jekyll build 49 passed on the exact review commit.
 
 ### Deferred work
 
@@ -167,7 +231,7 @@ Rebuilt About as a narrative author-and-mission experience using the shared prof
 - Added a split narrative hero, publication mission, distinct author section, framed writing section, topic grid, belief statement, and reflective closing.
 - Added Professional Background and Contact actions without turning About into a résumé.
 - Added scoped responsive, dark-mode, reduced-motion, and keyboard-focus treatments.
-- The later DS-08 follow-up corrected intrinsic scaling for the hero and olive-branch images.
+- The DS-08 follow-up corrected intrinsic scaling for the hero and olive-branch images.
 
 ### Validation completed
 
@@ -265,7 +329,7 @@ Corrected direct destinations, current-page states, accessible labels, Latest Re
 
 ### Deferred work
 
-- Obsolete footer-form selector cleanup during DS-10
+- Broad inherited footer compatibility selectors remain under D-007.
 
 ---
 
@@ -295,7 +359,7 @@ Introduced canonical design tokens, shared components, three page archetypes, Ho
 
 ### Deferred work
 
-- Compatibility aliases and legacy rules until DS-10 cleanup
+- Broad inherited compatibility rules remain under D-007.
 
 ---
 
