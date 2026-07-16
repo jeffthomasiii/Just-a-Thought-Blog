@@ -151,10 +151,12 @@
     const footer = document.createElement("div");
     footer.className = "jat-search-result-footer";
 
-    const date = document.createElement("time");
-    date.dateTime = doc.date || "";
-    date.textContent = doc.date_display || "";
-    footer.appendChild(date);
+    if (doc.date_display) {
+      const date = document.createElement("time");
+      date.dateTime = doc.date || "";
+      date.textContent = doc.date_display;
+      footer.appendChild(date);
+    }
 
     const action = document.createElement("span");
     action.className = "jat-text-link";
@@ -214,28 +216,65 @@
       .filter(Boolean);
   }
 
+  function processTerms(terms) {
+    if (!index?.pipeline) return terms;
+
+    return terms.flatMap((term) => index.pipeline.runString(term)).filter(Boolean);
+  }
+
+  function queryIndex(terms, mode) {
+    if (!terms.length || !index) return [];
+
+    return index.query((builder) => {
+      terms.forEach((term) => {
+        const titleOptions = { boost: 12, fields: ["title"], usePipeline: false };
+        const supportingOptions = { boost: 6, fields: ["subtitle", "tags", "categories", "series"], usePipeline: false };
+        const excerptOptions = { boost: 3, fields: ["excerpt"], usePipeline: false };
+        const contentOptions = { boost: 1, fields: ["content"], usePipeline: false };
+
+        if (mode === "prefix") {
+          titleOptions.wildcard = lunr.Query.wildcard.TRAILING;
+          supportingOptions.wildcard = lunr.Query.wildcard.TRAILING;
+          excerptOptions.wildcard = lunr.Query.wildcard.TRAILING;
+          contentOptions.wildcard = lunr.Query.wildcard.TRAILING;
+        } else {
+          titleOptions.editDistance = 1;
+          supportingOptions.editDistance = 1;
+          excerptOptions.editDistance = 1;
+          contentOptions.editDistance = 1;
+        }
+
+        builder.term(term, titleOptions);
+        builder.term(term, supportingOptions);
+        builder.term(term, excerptOptions);
+        builder.term(term, contentOptions);
+      });
+    });
+  }
+
   function searchDocuments(query) {
     const allowedIds = new Set(data.filter(matchesFilters).map((doc) => String(doc.id)));
 
     if (!query) return data.filter((doc) => allowedIds.has(String(doc.id)));
 
-    const terms = safeTerms(query);
-    if (!terms.length || !index) return [];
+    const processedTerms = processTerms(safeTerms(query));
+    if (!processedTerms.length || !index) return [];
 
-    const matches = index
-      .query((builder) => {
-        terms.forEach((term) => {
-          const editDistance = term.length >= 5 ? 1 : 0;
-          builder.term(term, { boost: 12, fields: ["title"], wildcard: lunr.Query.wildcard.TRAILING, editDistance });
-          builder.term(term, { boost: 6, fields: ["subtitle", "tags", "categories", "series"], wildcard: lunr.Query.wildcard.TRAILING, editDistance });
-          builder.term(term, { boost: 3, fields: ["excerpt"], wildcard: lunr.Query.wildcard.TRAILING, editDistance });
-          builder.term(term, { boost: 1, fields: ["content"], wildcard: lunr.Query.wildcard.TRAILING, editDistance });
-        });
-      })
-      .filter((result) => allowedIds.has(String(result.ref)));
+    const prefixMatches = queryIndex(processedTerms, "prefix");
+    const fuzzyTerms = processedTerms.filter((term) => term.length >= 5);
+    const fuzzyMatches = queryIndex(fuzzyTerms, "fuzzy");
+    const combinedMatches = [];
+    const seenRefs = new Set();
+
+    [...prefixMatches, ...fuzzyMatches].forEach((match) => {
+      const ref = String(match.ref);
+      if (!allowedIds.has(ref) || seenRefs.has(ref)) return;
+      seenRefs.add(ref);
+      combinedMatches.push(match);
+    });
 
     const documentsById = new Map(data.map((doc) => [String(doc.id), doc]));
-    return matches.map((match) => documentsById.get(String(match.ref))).filter(Boolean);
+    return combinedMatches.map((match) => documentsById.get(String(match.ref))).filter(Boolean);
   }
 
   function runSearch(options = {}) {
