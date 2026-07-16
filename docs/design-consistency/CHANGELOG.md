@@ -1,72 +1,131 @@
 # Design Consistency Implementation Changelog
 
-Use this file to record what was actually changed for each Design Consistency work item.
-
-Do not use this file as a task list. Planned work belongs in `WORK-ITEMS.md`. Significant design choices and their reasoning belong in `DECISIONS.md`.
+Use this file to record what was actually changed for each Design Consistency work item. Planned work belongs in `WORK-ITEMS.md`; significant design choices belong in `DECISIONS.md`.
 
 ## Entry template
-
-Copy this template beneath the newest entry.
 
 ```markdown
 ## YYYY-MM-DD — DS-XX: Work item title
 
-**Status:** Complete | Partial | Deferred  
+**Status:** Complete | Review | Partial | Deferred  
 **Branch:** `branch/name`  
 **Pull request:** #000 or URL  
 **Implemented by:** Name
 
 ### Summary
-
-Briefly describe the completed outcome.
+Briefly describe the outcome.
 
 ### Files changed
-
 - `path/to/file`
 
 ### What changed
-
 - Change one
 
-### Components added, replaced, or retired
-
-- Added:
-- Replaced:
-- Retired:
-- Temporarily retained:
-
-### Content changes
-
-- None, or describe reader-facing copy changes.
-
 ### Validation completed
-
+- [ ] Build
 - [ ] Desktop
 - [ ] Tablet
 - [ ] Mobile
 - [ ] Light mode
 - [ ] Dark mode
-- [ ] Keyboard navigation
-- [ ] Link validation
-- [ ] Accessibility review
-- [ ] Print validation, when applicable
+- [ ] Keyboard and accessibility
+- [ ] Links and runtime behavior
 
 ### Evidence
-
-- Before screenshots:
-- After screenshots:
-- Test notes:
+- Pull request, workflow run, artifact, screenshots, and test notes.
 
 ### Deferred work
-
-- None, or list deferred items and the related work item.
+- None, or list deferred items.
 ```
 
 ---
 
-## 2026-07-15 — DS-04: Redesign Posts archive
+## 2026-07-15 — DS-05: Redesign the Search experience
 
 **Status:** Review — implementation and validation complete; merge pending  
+**Branch:** `agent/ds-05-search-redesign`  
+**Pull request:** [#13 — DS-05 Redesign Search experience](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/13)  
+**Implemented by:** Jeff Thomas III with ChatGPT implementation support
+
+### Summary
+
+Rebuilt Search as the utility-page counterpart to the redesigned Posts archive while retaining a local Lunr index. The interface now supports shareable URL state, filter-only browsing, structured result cards, and clear guidance, empty, and error states.
+
+### Files changed
+
+- `search.md`
+- `search.html` — retired duplicate source
+- `search.json`
+- `assets/js/search.js`
+- `_sass/search-interface.scss`
+- `assets/main.scss`
+- `.github/workflows/jekyll-build.yml`
+- `docs/design-consistency/README.md`
+- `docs/design-consistency/DS-05-NOTES.md`
+- `docs/design-consistency/CHANGELOG.md`
+
+### What changed
+
+- Assigned Search to the collection-page archetype.
+- Added an editorial hero, direct Posts action, bordered search-tools panel, and visible control labels.
+- Added `q`, `category`, and `tag` URL restoration and synchronization.
+- Added filter-only browsing and combined query/filter searches.
+- Replaced inline generated presentation with semantic result-card markup.
+- Added dates, categories, tags, series labels, subtitles, and excerpts where available.
+- Added loading, guidance, short-query, no-results, and index-error states.
+- Expanded the Search JSON index with display dates, series metadata, and more searchable article content.
+- Separated Lunr prefix and fuzzy matching into compatible strategies, then merged duplicate-free ranked results.
+- Consolidated duplicate `/search/` sources into the canonical `search.md` page.
+- Added `search.json` to the compact rendered-site validation artifact.
+
+### Components added, replaced, or retired
+
+- Added: `_sass/search-interface.scss`, structured result cards, state panel, URL-aware controls, and enriched Search index fields.
+- Replaced: Generic page layout, inline generated result styles, and query-only behavior.
+- Retired: Duplicate `search.html` source.
+- Retained: Lunr as the local search provider.
+
+### Content changes
+
+- Added reader-facing Search instructions, result-state language, and a direct path to the Posts archive.
+- No article content or post URLs changed.
+
+### Validation completed
+
+- [x] Protected Jekyll/Sass production build
+- [x] JavaScript syntax validation
+- [x] Generated JSON validity
+- [x] Canonical `/search/` output
+- [x] Default and short-query guidance
+- [x] URL-loaded query, category, and tag states
+- [x] Filter-only and combined query/filter behavior
+- [x] No-results and index-error states
+- [x] Clear/reset and URL synchronization
+- [x] Result links and metadata
+- [x] Desktop, tablet, and mobile behavior
+- [x] Light and dark modes
+- [x] Keyboard targets, visible focus, landmarks, labels, and live status text
+- [x] Official Lunr query-path compatibility review
+
+### Evidence
+
+- GitHub Actions: final protected `Jekyll build` run 25 passed on the review commit.
+- Generated index: 120 published reflections parsed successfully.
+- Runtime suite: all default, query, filter, combined, short-query, empty, clear, error, mobile, and dark-mode cases passed without page errors.
+- Visual review: desktop and mobile Search states were inspected in light and dark modes.
+- Official Lunr 2.3.9 source was reviewed to confirm prefix wildcard and fuzzy edit-distance matching should be expressed separately.
+
+### Deferred work
+
+- Hosted search provider and Search analytics remain out of scope.
+- Category archive pages remain out of scope.
+- Search-result images and reading-time calculations remain deferred pending a later usability need.
+
+---
+
+## 2026-07-15 — DS-04: Redesign the Posts archive
+
+**Status:** Complete  
 **Branch:** `agent/ds-04-posts-archive`  
 **Pull request:** [#12 — DS-04 Redesign Posts archive](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/12)  
 **Implemented by:** Jeff Thomas III with ChatGPT implementation support
@@ -86,57 +145,28 @@ Rebuilt the Posts archive as the first complete collection-page implementation, 
 
 ### What changed
 
-- Assigned Posts to the collection-page archetype and removed its dependency on the generic page layout.
-- Added a compact editorial archive hero and direct Search action.
-- Featured the newest post on page one and displayed the remaining four posts in a two-column grid.
-- Displayed five standard cards on later pagination pages without a false newest-post treatment.
-- Added category, series, date, excerpt, and estimated reading-time metadata.
+- Assigned Posts to the collection-page archetype.
+- Featured the newest post on page one and displayed remaining posts in a responsive grid.
+- Added category, series, date, excerpt, and reading-time metadata.
 - Added image selection and branded fallback logic.
-- Added shared Newer and Older pagination controls with page count.
-- Added desktop, tablet, mobile, light-mode, and dark-mode treatments.
-
-### Components added, replaced, or retired
-
-- Added: `_sass/posts-archive.scss`.
-- Added: Featured archive card, standard post card, metadata labels, image fallback, archive hero, and pagination layout.
-- Replaced: Inherited `post-preview` list, dividers, and generic Bootstrap pager.
-- Retired: Posts-page use of the generic `page` layout.
-- Temporarily retained: Existing Jekyll pagination settings and post front matter.
-
-### Content changes
-
-- Added a reader-facing archive description and Search action.
-- No post titles, excerpts, URLs, or article content were rewritten.
+- Added Newer and Older pagination controls with page count.
 
 ### Validation completed
 
 - [x] Jekyll/Sass production build
-- [x] Desktop
-- [x] Tablet
-- [x] Mobile
-- [x] Light mode
-- [x] Dark mode
-- [x] Keyboard targets and visible focus
-- [x] Link and pagination validation
-- [x] Heading, landmark, and accessible-name review
-- [x] Image reference and fallback-logic review
+- [x] All 24 generated archive pages
+- [x] Desktop, tablet, mobile, light, and dark modes
+- [x] Pagination, article links, Search link, images, metadata, headings, landmarks, and focus states
 
 ### Evidence
 
-- Draft pull request: [#12](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/12)
-- GitHub Actions: `Jekyll build` run 15 completed successfully.
-- Rendered artifact: All 24 archive pages compiled successfully.
-- Page one: one featured post plus four cards.
-- Pages two through twenty-four: five cards per page.
-- All archive, Search, pagination, and post destinations resolved.
-- Visual review: page one inspected at 1440px, 768px, and 390px in light mode; 1440px and 390px in dark mode; page two inspected at 1440px.
+- Merged pull request: [#12](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/12)
+- Merge commit: `899c0939c450b153e4cd85fa2ad55e2a1bb9f86d`
+- Page one rendered one featured post and four cards; later pages rendered five cards.
 
 ### Deferred work
 
-- Category archive pages remain out of scope.
-- Bulk excerpt rewriting remains out of scope.
-- Search interface redesign remains DS-05.
-- Individual post layouts and post URLs remain unchanged.
+- Category archives, bulk excerpt rewriting, and individual post-layout changes remain out of scope.
 
 ---
 
@@ -149,7 +179,7 @@ Rebuilt the Posts archive as the first complete collection-page implementation, 
 
 ### Summary
 
-Corrected global navigation and footer behavior so readers reach direct destinations, see a reliable current-page state, receive accurate mobile-menu and theme-control labels, and no longer encounter search-query substitutes or a disabled newsletter-form imitation.
+Corrected global navigation and footer behavior so readers reach direct destinations, see reliable current-page states, and no longer encounter substitute links or an inactive newsletter-form imitation.
 
 ### Files changed
 
@@ -158,67 +188,28 @@ Corrected global navigation and footer behavior so readers reach direct destinat
 - `_includes/scripts.html`
 - `_sass/navigation-footer-refinements.scss`
 - `assets/main.scss`
-- `docs/design-consistency/README.md`
-- `docs/design-consistency/DS-03-NOTES.md`
-- `docs/design-consistency/CHANGELOG.md`
 
 ### What changed
 
-- Added active navigation states and `aria-current="page"` output.
-- Made individual articles activate Posts.
-- Pointed `Latest Reflection` to the actual newest post with an archive fallback.
-- Added Search screen-reader text and an explicit primary-navigation label.
-- Updated the collapsed-menu label between Open and Close states.
-- Replaced indirect footer search links with direct Podcast and Resource Library destinations.
-- Removed duplicate About destinations.
-- Replaced the disabled email-field imitation with a truthful planned Thought Letter status.
-- Added accessible labels to footer social and email links.
-- Removed the footer’s embedded reusable style block.
-- Added shared active-state, footer, and responsive refinements.
-
-### Components added, replaced, or retired
-
-- Added: `_sass/navigation-footer-refinements.scss`.
-- Added: Current-page underline treatment and responsive active-state behavior.
-- Replaced: Query-substitute footer links, duplicated About links, and inactive signup controls.
-- Retired: The embedded footer `<style>` block.
-- Temporarily retained: Proven-unused legacy footer-form selectors pending DS-10 cleanup.
-
-### Content changes
-
-- Standardized the footer Podcast name as `Just A Thought — The Podcast`.
-- Replaced speculative newsletter-signup language with an explicit planned-status statement.
-- Changed footer About wording to `About the Blog`.
+- Added active navigation states and `aria-current="page"`.
+- Pointed Latest Reflection to the newest post.
+- Added accessible Search, social-link, theme, and mobile-menu labels.
+- Replaced indirect footer links and duplicate About destinations.
+- Replaced inactive signup controls with a truthful planned Thought Letter status.
 
 ### Validation completed
 
-- [x] Jekyll/Sass production build
-- [x] Desktop footer smoke render
-- [x] Tablet responsive-rule review
-- [x] Mobile responsive-rule review
-- [x] Light mode
-- [x] Dark mode
-- [x] Keyboard and focus structure
-- [x] Direct-link validation
-- [x] Current-page state validation
-- [x] Structural accessibility review
+- [x] Build, direct destinations, current-page states, responsive layout, light/dark modes, keyboard, and accessibility
 
 ### Evidence
 
 - Merged pull request: [#11](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/11)
 - Merge commit: `70a230b8cdb53af23a84a22b29b67ee2051c7791`
-- GitHub Actions: Final protected `Jekyll build` run 14 completed successfully.
-- Active-state review: Home, Posts, an article, Series, Podcast, Resources, About, and Search each expose one correct `aria-current="page"` value.
-- Destination review: Every internal navigation and footer link resolves within the compiled artifact.
-- Latest-post review: The action resolved to `The Honored Vessel`, the newest reflection at build time.
-- Footer review: No query-substitute links, disabled inputs, or disabled buttons remain.
-- Accessibility review: Primary navigation, Search, social links, and mobile-menu state labels expose meaningful accessible names.
-- Visual smoke review: Desktop light and dark footer compositions retained the intended hierarchy, contrast, columns, status label, and signature.
 
 ### Deferred work
 
-- Add `Professional Background` to the footer after DS-06.
-- Remove obsolete footer-form selectors during DS-10 after final dependency review.
+- Add Professional Background to the footer after DS-06.
+- Remove obsolete footer-form selectors during DS-10.
 
 ---
 
@@ -231,65 +222,27 @@ Corrected global navigation and footer behavior so readers reach direct destinat
 
 ### Summary
 
-Refined Home into a reader-facing editorial baseline by removing development labels and misleading interactions, standardizing podcast language, consolidating future-feature messaging, and relocating reusable inline styling.
-
-### Files changed
-
-- `_layouts/home.html`
-- `_sass/home-refinements.scss`
-- `assets/main.scss`
-- `docs/design-consistency/README.md`
-- `docs/design-consistency/DS-02-NOTES.md`
-- `docs/design-consistency/CHANGELOG.md`
+Refined Home into a reader-facing editorial baseline by removing development labels and misleading interactions, standardizing podcast language, and consolidating future-feature messaging.
 
 ### What changed
 
-- Replaced `Homepage Hero` with `A Reflective Christian Journal`.
-- Removed the duplicate `Latest Reflection` label.
-- Standardized `Just A Thought — The Podcast`.
+- Replaced the internal hero label and duplicate Latest Reflection label.
+- Standardized the podcast name.
 - Converted dead topic links into static editorial cards.
-- Consolidated topic, podcast, newsletter, and series availability messaging.
-- Added accessible latest-post image labeling.
 - Moved reusable Home styles into `_sass/home-refinements.scss`.
-
-### Components added, replaced, or retired
-
-- Added: Home refinement partial and static topic-card treatment.
-- Replaced: Dead topic links and repetitive placeholder labels.
-- Retired: Embedded reusable Home `<style>` block.
-- Temporarily retained: Dynamic background-image values for content-driven imagery.
-
-### Content changes
-
-- Updated Home hero, podcast, topic, newsletter, and empty-series wording.
-- No article content changed.
 
 ### Validation completed
 
-- [x] Jekyll/Sass build
-- [x] Desktop
-- [x] Tablet
-- [x] Mobile
-- [x] Light mode
-- [x] Dark mode
-- [x] Keyboard navigation
-- [x] Link validation
-- [x] Accessibility review
-- [x] Image crop review
+- [x] Build, desktop, tablet, mobile, light/dark modes, keyboard, links, accessibility, and image crops
 
 ### Evidence
 
 - Merged pull request: [#10](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/10)
 - Merge commit: `2ff95aa82f923c8b103893282098a5b2c0a42d21`
-- GitHub Actions: Final protected `Jekyll build` completed successfully.
-- Home was reviewed at 1440px, 768px, and 390px in light and dark modes.
-- All compiled Home destinations resolved, and no `href="#"` links remained.
 
 ### Deferred work
 
-- Topic archive pages remain out of scope.
-- Podcast launch and newsletter signup remain out of scope.
-- Global navigation and footer cleanup moved to DS-03.
+- Topic archives, podcast launch, and newsletter signup remain out of scope.
 
 ---
 
@@ -302,64 +255,27 @@ Refined Home into a reader-facing editorial baseline by removing development lab
 
 ### Summary
 
-Introduced the canonical shared token and component layer, defined three page archetypes, and migrated Home and Resources to the editorial landing-page foundation without intentionally changing their content or composition.
-
-### Files changed
-
-- `_sass/design-system.scss`
-- `_sass/page-archetypes.scss`
-- `assets/main.scss`
-- `_layouts/default.html`
-- `_layouts/home.html`
-- `index.html`
-- `resources.html`
-- `docs/design-consistency/DESIGN-SYSTEM.md`
-- `.github/workflows/jekyll-build.yml`
+Introduced the canonical token and component layer, defined the three page archetypes, and migrated Home and Resources to the editorial landing-page foundation.
 
 ### What changed
 
-- Created canonical brand, semantic, spacing, typography, shape, border, and shadow tokens.
+- Created canonical brand, semantic, typography, spacing, shape, border, and shadow tokens.
 - Added shared containers, kickers, dividers, actions, panels, cards, labels, and focus states.
 - Added semantic dark-mode values and landing, collection, and profile archetypes.
-- Exposed archetypes through the default layout.
-- Assigned Home and Resources to the landing archetype.
 - Added the protected pull-request Jekyll build workflow.
-
-### Components added, replaced, or retired
-
-- Added: Canonical token and page-archetype layers.
-- Added: Shared `jat-panel`, `jat-card-surface`, `jat-status-label`, container, action, divider, text-link, and focus components.
-- Replaced: No legacy component during the additive migration.
-- Retired: Nothing during the additive migration.
-- Temporarily retained: Legacy page systems required by unmigrated pages.
-
-### Content changes
-
-- No intentional reader-facing content changes.
 
 ### Validation completed
 
-- [x] Jekyll/Sass build
-- [x] Desktop
-- [x] Tablet
-- [x] Mobile
-- [x] Light mode
-- [x] Dark mode
-- [x] Keyboard navigation
-- [x] URL and asset-path review
-- [x] Structural accessibility review
+- [x] Build, desktop, tablet, mobile, light/dark modes, keyboard, URLs, assets, and structural accessibility
 
 ### Evidence
 
 - Merged pull request: [#9](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/9)
 - Merge commit: `1d1ab5f299533e3a38fbc165e829c2bf11a5d3af`
-- Final GitHub Actions build passed.
-- Home and Resources were inspected at desktop, tablet, and mobile widths in light and dark modes.
 
 ### Deferred work
 
-- Remaining page migrations continue through DS-04 to DS-09.
-- Compatibility aliases and legacy rules remain until final cleanup.
+- Compatibility aliases and legacy rules remain until dependent pages are migrated and DS-10 cleanup is complete.
 
 ---
 
@@ -372,43 +288,12 @@ Introduced the canonical shared token and component layer, defined three page ar
 
 ### Summary
 
-Created a repository-native planning system for the sitewide design and brand consistency initiative because GitHub Issues are disabled.
-
-### Files changed
-
-- `docs/design-consistency/README.md`
-- `docs/design-consistency/WORK-ITEMS.md`
-- `docs/design-consistency/CHANGELOG.md`
-- `docs/design-consistency/DECISIONS.md`
-
-### What changed
-
-- Established Home and Resources as the visual baseline.
-- Defined three page archetypes and ten implementation work items.
-- Established sequencing, implementation, validation, changelog, and decision-record practices.
-
-### Components added, replaced, or retired
-
-- Added: Repository design-consistency documentation system.
-- Replaced: No site components.
-- Retired: Nothing.
-- Temporarily retained: All existing site code and styles.
-
-### Content changes
-
-- No reader-facing content changed.
+Created the repository-native roadmap, ten numbered work items, implementation changelog, and design-decision record because GitHub Issues are disabled.
 
 ### Validation completed
 
-- [x] Documentation structure
-- [x] Work-item links
-- [x] Changelog template
-- [x] Decision template
+- [x] Documentation structure, work-item links, templates, sequencing, and dependencies
 
 ### Evidence
 
 - Merged pull request: [#8](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/8)
-
-### Deferred work
-
-- DS-01 through DS-10 are implemented individually.
