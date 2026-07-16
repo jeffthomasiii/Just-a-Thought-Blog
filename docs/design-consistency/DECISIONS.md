@@ -94,7 +94,7 @@ Use Resources as the preferred example for adapting the Home editorial-board sys
 
 ### Rationale
 
-Resources already uses the Home board hero, 1280px container, shared buttons, kickers, thin borders, rectangular cards, split-image sections, and dedicated dark-mode treatment.
+Resources uses the Home board hero, 1280px container, shared buttons, kickers, thin borders, rectangular cards, split-image sections, and dedicated dark-mode treatment.
 
 ### Alternatives considered
 
@@ -104,12 +104,12 @@ Resources already uses the Home board hero, 1280px container, shared buttons, ki
 
 ### Consequences
 
-- Podcast and Series will migrate toward the Resources structure while retaining unique content and functionality.
-- Resources must be revalidated after shared CSS consolidation.
+- Podcast and Series migrated toward the Resources structure while retaining unique content and functionality.
+- Resources was revalidated after shared CSS consolidation.
 
 ### Follow-up
 
-- Complete DS-08, DS-09, and DS-10.
+- Maintain Resources through the shared Sass stack and recheck it whenever core landing-page components change.
 
 ---
 
@@ -182,7 +182,7 @@ This keeps the main navigation focused on the publication while making Jeff Thom
 
 ### Follow-up
 
-- Complete DS-06 before adding the final links in DS-03 and DS-07.
+- Maintain the About and footer links as professional facts change.
 
 ---
 
@@ -230,32 +230,73 @@ The documentation remains reviewable, version-controlled, and directly connected
 
 ### Context
 
-Home, Resources, Series, Podcast, Posts, Search, About, and CV currently depend on overlapping style files created during different design phases. Removing or rewriting those styles in one change would create a high risk of regressions across pages that have not yet been redesigned.
+Home, Resources, Series, Podcast, Posts, Search, About, and CV depended on overlapping style files created during different design phases. Removing or rewriting those styles in one change would have created a high risk of regressions across pages that had not yet been redesigned.
 
 ### Decision
 
-Introduce `_sass/design-system.scss` and `_sass/page-archetypes.scss` as the canonical shared layer, load them after the existing global and Home styles, and temporarily retain compatibility aliases and legacy page styles until each dependent page migrates.
+Introduce `_sass/design-system.scss` and `_sass/page-archetypes.scss` as the canonical shared layer, load them after the existing global and Home styles, and retain compatibility aliases and legacy page styles until each dependent page migrates.
 
 ### Rationale
 
-An additive migration establishes one preferred source for new work while protecting current pages. It also allows Home and Resources to adopt shared semantic classes immediately without forcing Series, Podcast, Posts, Search, About, and CV into premature redesigns.
+An additive migration established one preferred source for new work while protecting current pages. It allowed each page archetype to migrate and be validated independently.
 
 ### Alternatives considered
 
 - Remove all duplicate variables and styles in DS-01.
 - Rewrite every public page in one pull request.
-- Leave the current systems unchanged until every page can be redesigned simultaneously.
+- Leave the current systems unchanged until every page could be redesigned simultaneously.
 
 ### Consequences
 
-- The repository temporarily contains both canonical and legacy rules.
-- New shared work must use canonical tokens and classes.
-- Compatibility aliases cannot be removed until every dependent page has migrated.
-- Import order is part of the migration contract and must be preserved.
-- Final legacy cleanup occurs during the related page work and DS-10 validation.
+- The repository temporarily contains canonical and legacy rules.
+- New shared work uses canonical tokens and classes.
+- Import order remains part of the compatibility contract.
+- Proven page-specific legacy layers can be removed as dependent pages migrate.
 
 ### Follow-up
 
-- Validate Home and Resources before completing DS-01.
-- Migrate the remaining page archetypes through DS-04 to DS-09.
-- Remove proven-unused legacy rules during DS-10.
+- Use D-007 to govern the remaining inherited-template cleanup after DS-10.
+
+---
+
+## D-007 — Prefer evidence-based legacy cleanup over broad deletion
+
+**Date:** 2026-07-16  
+**Status:** Accepted  
+**Related work item:** DS-10
+
+### Context
+
+After all eight roadmap pages migrated, the repository still contained a standalone Resources stylesheet and broad inherited files used by Clean Blog, posts, contact, and utility templates. Some selectors in the broad files are no longer used by the eight primary pages, but those files also support pages outside the final QA matrix.
+
+### Decision
+
+Remove superseded page-specific layers when their replacement and dependency boundaries are proven. Retain broad foundational files until a dedicated inherited-template cleanup can test every dependent route.
+
+During DS-10:
+
+- Remove `assets/css/jat-resources.css` and its page-level loading.
+- Move Resources into the shared Sass stack.
+- Remove Resources inline presentation rules and height-based media behavior.
+- Retain the Clean Blog vendor layer, `_sass/styles.scss`, and `_sass/_dark.scss`.
+- Retain data-driven Home image values selected by Liquid.
+
+### Rationale
+
+The Resources layer had a clear replacement and a narrow dependency boundary. The broad legacy files do not. Deleting isolated selectors from foundational files would produce little reader-facing benefit while increasing regression risk for inherited templates outside the eight-page roadmap.
+
+### Alternatives considered
+
+- Remove every selector not used by the eight primary pages.
+- Leave the superseded Resources stylesheet in place.
+- Rewrite post, contact, and utility templates during DS-10.
+
+### Consequences
+
+- The final design-consistency roadmap removes a confirmed redundant stylesheet without overextending its scope.
+- A small amount of compatibility CSS remains intentionally.
+- Future cleanup must include post, contact, and utility templates in its test matrix.
+
+### Follow-up
+
+- Create a separate legacy-CSS reduction project only when inherited templates can be migrated and tested together.
