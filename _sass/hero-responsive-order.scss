@@ -1,0 +1,16 @@
+/* Brand-refresh follow-up — copy precedes media in stacked hero layouts. */
+
+@media (max-width: 991.98px) {
+  body.jat-archetype-landing .jat-board-hero-copy,
+  .jat-series-page .jat-series-hero-copy,
+  .jat-about-page .jat-about-hero-copy {
+    order: 0;
+  }
+
+  body.jat-archetype-landing .jat-board-hero-image,
+  .jat-resources-document .jat-resources-hero-media,
+  .jat-series-page .jat-series-hero-media,
+  .jat-about-page .jat-about-hero-image {
+    order: 1;
+  }
+}
