@@ -1,0 +1,6 @@
+/* DS-07 — Bootstrap's .btn:focus selector is more specific than the shared focus rule. */
+
+.jat-about-page .jat-btn:focus-visible {
+  outline: 3px solid rgba(198, 161, 91, 0.55) !important;
+  outline-offset: 3px;
+}
