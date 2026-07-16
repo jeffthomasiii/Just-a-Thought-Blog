@@ -215,17 +215,15 @@ permalink: /series/
 
 <script>
   (function () {
-    function openSeriesFromHash(options) {
-      if (!window.location.hash) return;
-
-      var id;
+    function decodeHash(hash) {
       try {
-        id = decodeURIComponent(window.location.hash.slice(1));
+        return decodeURIComponent(hash.replace(/^#/, ''));
       } catch (error) {
-        id = window.location.hash.slice(1);
+        return hash.replace(/^#/, '');
       }
+    }
 
-      var detail = document.getElementById(id);
+    function openSeriesDetail(detail, options) {
       if (!detail || detail.tagName.toLowerCase() !== 'details') return;
 
       detail.open = true;
@@ -242,6 +240,27 @@ permalink: /series/
         });
       });
     }
+
+    function openSeriesFromHash(options) {
+      if (!window.location.hash) return;
+      openSeriesDetail(document.getElementById(decodeHash(window.location.hash)), options);
+    }
+
+    document.addEventListener('click', function (event) {
+      var link = event.target.closest('a[href^="#"]');
+      if (!link) return;
+
+      var hash = link.getAttribute('href');
+      if (!hash || hash === '#') return;
+
+      var detail = document.getElementById(decodeHash(hash));
+      if (!detail || detail.tagName.toLowerCase() !== 'details') return;
+
+      if (window.location.hash === hash) {
+        event.preventDefault();
+        openSeriesDetail(detail, { focusSummary: true });
+      }
+    });
 
     window.addEventListener('hashchange', function () {
       openSeriesFromHash({ focusSummary: true });
