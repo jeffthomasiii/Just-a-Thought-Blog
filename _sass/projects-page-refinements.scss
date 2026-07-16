@@ -5,23 +5,16 @@
    BlueGreen Guide while improving contrast for the two-tone logo.
    ========================================================= */
 
-/* The PawPath wordmark contains both dark and light lettering.
-   A light-to-dark field gives each half of the wordmark contrast. */
+/* A warm sand field gives both halves of the PawPath wordmark
+   enough contrast without introducing a visible split background. */
 .jat-project-visual--pawpath {
   background:
-    radial-gradient(circle at 68% 24%, rgba(255, 255, 255, 0.20), transparent 24%),
-    linear-gradient(
-      90deg,
-      #e5eadf 0%,
-      #d7e0cf 50%,
-      #a9bbae 59%,
-      #4d766b 71%,
-      #173f35 100%
-    );
+    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.30), transparent 46%),
+    linear-gradient(145deg, #f1e4d1 0%, #eadbc4 58%, #e5d4ba 100%);
 }
 
 .jat-project-visual--pawpath img {
-  filter: drop-shadow(0 8px 18px rgba(16, 47, 41, 0.16));
+  filter: drop-shadow(0 8px 18px rgba(90, 68, 40, 0.14));
 }
 
 /* Reversing the card should reverse placement, not proportions.
@@ -31,17 +24,12 @@
   grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.82fr);
 }
 
+/* Keep the warm sand brand field in dark mode so the logo remains
+   clear and the project retains the same identity in both themes. */
 body.dark-mode .jat-project-visual--pawpath {
   background:
-    radial-gradient(circle at 68% 24%, rgba(255, 255, 255, 0.16), transparent 24%),
-    linear-gradient(
-      90deg,
-      #cfd9c8 0%,
-      #bdcbb6 50%,
-      #8fa69a 59%,
-      #385f55 71%,
-      #102f29 100%
-    );
+    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.24), transparent 46%),
+    linear-gradient(145deg, #e5d6bf 0%, #dcc9aa 58%, #d2bc98 100%);
 }
 
 @media (max-width: 1099.98px) {
