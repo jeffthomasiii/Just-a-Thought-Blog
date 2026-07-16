@@ -1,6 +1,6 @@
 # Just A Thought Blog — Design Consistency Roadmap
 
-**Status:** Implementation in review  
+**Status:** Final cross-site validation underway  
 **Owner:** Jeff Thomas III  
 **Repository:** `jeffthomasiii/Just-a-Thought-Blog`  
 **Baseline:** Home page and Resources page editorial-board design system  
@@ -89,8 +89,8 @@ Shared characteristics:
 | DS-06 | Rebuild CV as Professional Background | 1 | Complete |
 | DS-07 | Redesign About page | 2 | Complete |
 | DS-08 | Align Podcast page | 2 | Complete |
-| DS-09 | Align Series page | 2 | Review |
-| DS-10 | Validate Resources and complete cross-site QA | 3 | Not started |
+| DS-09 | Align Series page | 2 | Complete |
+| DS-10 | Validate Resources and complete cross-site QA | 3 | In progress |
 
 ## Recommended implementation order
 
