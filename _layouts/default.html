@@ -5,9 +5,6 @@
 {% include head.html %}
 
 {% assign page_body_class = page.body_class %}
-{% if page.permalink == '/cv/' %}
-  {% assign page_body_class = 'jat-professional-page' %}
-{% endif %}
 <body{% if page.page_archetype or page_body_class %} class="{% if page.page_archetype %}jat-archetype-{{ page.page_archetype | escape }}{% endif %}{% if page_body_class %} {{ page_body_class | escape }}{% endif %}"{% endif %}{% if page.page_archetype %} data-page-archetype="{{ page.page_archetype | escape }}"{% endif %}>
 
   {% include navbar.html %}
