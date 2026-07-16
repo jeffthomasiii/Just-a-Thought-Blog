@@ -1,8 +1,10 @@
 # DS-09 — Series Page Alignment Notes
 
-**Status:** Review  
+**Status:** Complete  
 **Branch:** `agent/ds-09-series-alignment`  
-**Pull request:** [#17 — DS-09 Align Series page](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/17)
+**Pull request:** [#17 — DS-09 Align Series page](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/17)  
+**Merged:** 2026-07-16  
+**Merge commit:** `6fa255bf06dbe6e0f485815ac09ab67edc6c7853`
 
 ## Existing behavior preserved
 
@@ -57,7 +59,9 @@
 
 ## Evidence
 
-- GitHub Actions: protected `Jekyll build` run 51 passed on the repeated-hash-corrected implementation.
+- Merged pull request: [#17](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/17)
+- Merge commit: `6fa255bf06dbe6e0f485815ac09ab67edc6c7853`
+- GitHub Actions: protected `Jekyll build` run 54 passed on the exact final review commit.
 - Baseline comparison: the previous and redesigned pages contain identical series keys and identical ordered post-title arrays.
 - Compiled structure: eight cards, eight native `<details>` elements, and 40 direct post links.
 - Responsive metrics: document width matched viewport width at 1440px, 768px, and 390px.
