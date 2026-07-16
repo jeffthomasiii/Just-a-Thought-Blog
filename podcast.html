@@ -1,115 +1,122 @@
 ---
 layout: default
-title: "Podcast"
-description: "Just A Thought — The Podcast is a reflective audio companion to the blog, where written posts are read aloud and occasionally expanded with Scripture reflection and behind-the-scenes context."
+page_archetype: landing
+body_class: jat-podcast-page
+title: "Just A Thought — The Podcast"
+description: "Just A Thought — The Podcast is a reflective audio companion to the blog, where written posts may be read aloud and occasionally expanded with Scripture reflection and behind-the-thought context."
 permalink: /podcast/
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/jat-pages.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/jat-podcast-polish.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/jat-coming-soon-polish.css' | relative_url }}">
-
-<main class="jat-page jat-podcast-page">
-  <section class="jat-hero">
-    <div class="jat-container jat-hero-grid">
-      <div>
-        <span class="jat-eyebrow">Coming Soon</span>
-        <h1 class="jat-title">Just A Thought — The Podcast</h1>
-        <p class="jat-lede">A reflective audio companion to the blog, where written posts are read aloud and occasionally expanded with Scripture reflection, personal context, and quiet conversation.</p>
+<header class="jat-board-hero jat-podcast-hero">
+  <div class="container jat-board-container">
+    <div class="jat-board-hero-grid jat-podcast-hero-grid">
+      <div class="jat-board-hero-copy jat-podcast-hero-copy">
+        <p class="jat-kicker">Audio Reflections · In Development</p>
+        <h1>Just A Thought — The Podcast</h1>
+        <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
+        <p>A calm audio companion to the blog, created for written reflections that may be read aloud and occasionally given a little more room through Scripture, personal context, and quiet conversation.</p>
+        <div class="jat-podcast-launch-state" aria-label="Podcast launch status">
+          <span class="jat-status-label">In Development</span>
+          <span>No episodes or signup are available yet. This page will become the podcast home when the first reflections are ready to hear.</span>
+        </div>
         <div class="jat-button-row">
-          <a class="jat-button" href="#notify">Get Notified</a>
-          <a class="jat-button jat-button-secondary" href="{{ '/posts/' | relative_url }}">Read the Blog</a>
+          <a class="btn jat-btn jat-btn-primary" href="{{ '/posts/' | relative_url }}">Read Current Reflections</a>
+          <a class="btn jat-btn jat-btn-secondary" href="{{ '/series/' | relative_url }}">Browse Series</a>
         </div>
       </div>
 
-      <div class="jat-hero-media">
-        <img src="{{ '/img/pages/bg-podcast-coming-soon.jpg' | relative_url }}" alt="A quiet podcast desk with a microphone, open Bible, leather journal, pen, and coffee in warm morning light.">
-        <div class="jat-media-caption">
-          <strong>Thoughtful reflections for everyday faith.</strong>
-          <span>Warm, calm, conversational, and rooted in the same reflective spirit as the blog.</span>
-        </div>
+      <div
+        class="jat-board-hero-image jat-podcast-hero-image"
+        role="img"
+        aria-label="A quiet podcast desk with a microphone, open Bible, leather journal, pen, and coffee in warm morning light."
+        style="background-image: linear-gradient(90deg, rgba(255,253,248,.34), rgba(255,253,248,.03)), url('{{ '/img/pages/bg-podcast-coming-soon.jpg' | relative_url }}');">
       </div>
     </div>
-  </section>
+  </div>
+</header>
 
-  <section class="jat-section">
-    <div class="jat-container">
-      <div class="jat-section-heading">
-        <span class="jat-eyebrow">What to Expect</span>
-        <h2 class="jat-section-title">A quiet place to listen, reflect, and keep thinking.</h2>
-        <p class="jat-section-copy">The podcast will begin as an audio extension of the written reflections, with room for occasional personal context, Scripture reflection, and the kind of thoughtful processing that does not always fit neatly into a post.</p>
+<main class="jat-page jat-board-main jat-podcast-main jat-page-shell">
+  <div class="container jat-board-container">
+    <section class="jat-podcast-panel jat-podcast-expectations jat-panel" aria-labelledby="podcast-expectations-heading">
+      <div class="jat-podcast-section-heading">
+        <p class="jat-kicker">What to Expect</p>
+        <h2 id="podcast-expectations-heading">A quiet place to listen, reflect, and keep thinking.</h2>
+        <p>The show is being shaped as a lightly produced extension of the written reflections rather than a separate performance. Episodes will remain thoughtful, conversational, and rooted in the same faith-informed spirit as the blog.</p>
       </div>
 
-      <div class="jat-card-grid jat-card-grid-four">
-        <article class="jat-card">
-          <div class="jat-card-icon">✦</div>
-          <h3 class="jat-card-title">Posts Read Aloud</h3>
-          <p>Selected blog posts adapted for a calm listening experience without turning the reflection into a performance.</p>
+      <div class="jat-podcast-expectation-grid">
+        <article class="jat-card-surface jat-podcast-expectation-card">
+          <span aria-hidden="true">01</span>
+          <h3>Posts Read Aloud</h3>
+          <p>Selected reflections adapted for calm listening while preserving the pace and meaning of the original writing.</p>
         </article>
-        <article class="jat-card">
-          <div class="jat-card-icon">☙</div>
-          <h3 class="jat-card-title">Scripture Reflection</h3>
-          <p>Thoughtful engagement with Scripture that shapes the conversation rather than simply decorating it.</p>
+        <article class="jat-card-surface jat-podcast-expectation-card">
+          <span aria-hidden="true">02</span>
+          <h3>Scripture Reflection</h3>
+          <p>Thoughtful engagement with biblical passages that shape the conversation rather than merely decorating it.</p>
         </article>
-        <article class="jat-card">
-          <div class="jat-card-icon">◌</div>
-          <h3 class="jat-card-title">Behind the Thought</h3>
-          <p>Occasional context about what prompted a post, what tension was being processed, and what remained unresolved.</p>
+        <article class="jat-card-surface jat-podcast-expectation-card">
+          <span aria-hidden="true">03</span>
+          <h3>Behind the Thought</h3>
+          <p>Occasional context about what prompted a reflection, what tension was being processed, and what remained unresolved.</p>
         </article>
-        <article class="jat-card">
-          <div class="jat-card-icon">⌁</div>
-          <h3 class="jat-card-title">Everyday Faith</h3>
-          <p>Faith, marriage, leadership, culture, technology, camping, and ordinary moments considered through a biblical lens.</p>
+        <article class="jat-card-surface jat-podcast-expectation-card">
+          <span aria-hidden="true">04</span>
+          <h3>Everyday Faith</h3>
+          <p>Faith, marriage, leadership, culture, technology, camping, and ordinary life considered through a biblical lens.</p>
         </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="jat-section jat-section-alt">
-    <div class="jat-container">
-      <div class="jat-feature">
-        <div class="jat-feature-image">
-          <img src="{{ '/img/pages/podcast-episode-preview.jpg' | relative_url }}" alt="A close podcast recording setup with microphone, headphones, open journal, handwritten notes, coffee, and Bible.">
+    <section class="jat-podcast-panel jat-podcast-format jat-panel" aria-labelledby="podcast-format-heading">
+      <div
+        class="jat-podcast-format-image"
+        role="img"
+        aria-label="A close podcast recording setup with a microphone, headphones, an open journal, handwritten notes, coffee, and a Bible."
+        style="background-image: linear-gradient(90deg, rgba(37,40,34,.02), rgba(37,40,34,.18)), url('{{ '/img/pages/podcast-episode-preview.jpg' | relative_url }}');">
+      </div>
+
+      <div class="jat-podcast-format-copy">
+        <p class="jat-kicker">Episode Format</p>
+        <h2 id="podcast-format-heading">One post, one thought, a little more room to breathe.</h2>
+        <p>Some episodes may simply read a reflection aloud. Others may slow down around a passage of Scripture, a phrase that needed more space, or a behind-the-scenes moment that shaped the original post.</p>
+        <ol class="jat-podcast-format-steps">
+          <li><strong>Begin with the reflection.</strong><span>Keep the written thought recognizable and central.</span></li>
+          <li><strong>Open the context carefully.</strong><span>Add only what helps the listener understand the tension, Scripture, or experience behind it.</span></li>
+          <li><strong>Leave room to keep thinking.</strong><span>Close reflectively rather than forcing every question into a neat conclusion.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="jat-podcast-panel jat-podcast-library jat-panel" id="episodes" aria-labelledby="podcast-library-heading">
+      <div class="jat-podcast-section-heading jat-podcast-library-heading">
+        <div>
+          <p class="jat-kicker">Episode Library</p>
+          <h2 id="podcast-library-heading">Future episodes will live here.</h2>
         </div>
-        <div class="jat-feature-body">
-          <span class="jat-mini-label">Sample Episode Direction</span>
-          <h2>One post, one thought, a little more room to breathe.</h2>
-          <p>Some episodes may simply read a reflection aloud. Others may slow down around a passage of Scripture, a phrase that needed more space, or a behind-the-scenes moment that shaped the original post.</p>
-          <p>The goal is not to create a heavily produced show. The goal is to preserve the thoughtful, honest, conversational tone of the blog in a format people can listen to while driving, walking, working, or sitting quietly with a cup of coffee.</p>
-          <div class="jat-launch-note">Potential first episodes: “Strong Enough to Be Gentle,” “Why Hope Matters More Than We Realize,” and “Created, Fallen, Restored.”</div>
+        <p>The structure is ready for episode artwork, titles, descriptions, listening links, dates, and related written reflections once publishing begins.</p>
+      </div>
+
+      <div class="jat-podcast-empty-state" role="status">
+        <div class="jat-podcast-empty-mark" aria-hidden="true">◌</div>
+        <div>
+          <span class="jat-status-label">No Episodes Published</span>
+          <h3>The podcast is still being shaped.</h3>
+          <p>Until the first episode is available, the current reflections and series remain the best place to read, consider, and continue the conversation.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="jat-section" id="notify">
-    <div class="jat-container">
-      <div class="jat-signup jat-podcast-signup-card">
-        <div class="jat-podcast-signup-image">
-          <img src="{{ '/img/pages/podcast-coming-soon-card.jpg' | relative_url }}" alt="A podcast microphone beside an open Bible, journal, and cup of coffee in soft morning light.">
-        </div>
-        <div class="jat-podcast-signup-copy">
-          <span class="jat-eyebrow">Launch Updates</span>
-          <h2>Be the first to know when the podcast launches.</h2>
-          <p>Join the email list for launch updates, new reflections, and occasional resources connected to the blog.</p>
-          <div class="jat-coming-soon-note">
-            <p>The podcast is still being shaped. For now, new reflections will continue to be published on the blog, and this page will be updated when audio episodes are ready.</p>
-          </div>
-          <div class="jat-coming-soon-actions">
-            <a class="jat-button" href="{{ '/posts/' | relative_url }}">Read the Blog</a>
-            <a class="jat-button jat-button-secondary" href="{{ '/series/' | relative_url }}">Browse Series</a>
-          </div>
-        </div>
+    <section class="jat-podcast-panel jat-podcast-cta jat-panel jat-panel--parchment" aria-labelledby="podcast-cta-heading">
+      <div>
+        <p class="jat-kicker">While the Show Develops</p>
+        <h2 id="podcast-cta-heading">The thoughts are already here in written form.</h2>
+        <p>Browse the latest reflections or follow a full series now. When audio episodes begin, this page will be updated with real listening destinations rather than placeholder promises.</p>
       </div>
-    </div>
-  </section>
-
-  <section class="jat-section jat-section-alt jat-podcast-texture-section">
-    <div class="jat-container">
-      <div class="jat-quote-band">
-        <p class="jat-quote">“Sometimes the smallest thought opens the door to deeper reflection.”</p>
-        <div class="jat-quote-credit">Just A Thought Blog</div>
+      <div class="jat-button-row">
+        <a class="btn jat-btn jat-btn-primary" href="{{ '/posts/' | relative_url }}">Browse Reflections</a>
+        <a class="btn jat-btn jat-btn-secondary" href="{{ '/series/' | relative_url }}">View Series</a>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </main>
