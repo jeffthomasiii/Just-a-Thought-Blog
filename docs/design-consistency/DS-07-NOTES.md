@@ -1,8 +1,9 @@
 # DS-07 — About Page Redesign Notes
 
-**Status:** Review  
+**Status:** Complete  
 **Branch:** `agent/ds-07-about-redesign`  
-**Pull request:** [#15 — DS-07 Redesign About page](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/15)
+**Pull request:** [#15 — DS-07 Redesign About page](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/15)  
+**Merge commit:** `3aa761146c7e0b8bee8ca35f42b770ae083fe093`
 
 ## Implemented
 
@@ -38,7 +39,9 @@
 
 ## Evidence
 
-- GitHub Actions: protected `Jekyll build` run 41 passed.
+- Merged pull request: [#15](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/15)
+- Merge commit: `3aa761146c7e0b8bee8ca35f42b770ae083fe093`
+- GitHub Actions: final protected `Jekyll build` passed before merge.
 - Rendered image assets: `bg-about.jpg` is 1900 × 1501; `jat-olive-branch.png` is 1024 × 1024 with transparency.
 - Responsive metrics: document width remained within the viewport at 1440px, 768px, and 390px.
 - Keyboard test: all six About-page actions received the expected three-pixel visible focus outline after the scoped Bootstrap override.
