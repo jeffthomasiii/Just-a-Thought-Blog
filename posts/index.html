@@ -1,49 +1,128 @@
 ---
-layout: page
+layout: default
 title: Posts
-background: '/img/bg-post.jpg'
+description: Thoughtful reflections on faith, marriage, leadership, culture, technology, camping, and the ordinary moments that shape us.
+page_archetype: collection
 ---
 
-{% for post in paginator.posts %}
+{% assign archive_posts = paginator.posts | default: site.posts %}
+{% assign archive_page = paginator.page | default: 1 %}
+{% assign featured_post = archive_posts | first %}
 
-<article class="post-preview">
-  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-    <h2 class="post-title">{{ post.title }}</h2>
+<header class="jat-collection-hero jat-posts-hero jat-page-shell">
+  <div class="jat-page-frame jat-posts-hero-inner">
+    <div class="jat-posts-hero-copy">
+      <p class="jat-kicker">Reflection Archive</p>
+      <h1>{{ page.title }}</h1>
+      <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
+      <p>{{ page.description }}</p>
+      {% if archive_page > 1 %}<p class="jat-posts-page-label">Archive page {{ archive_page }} of {{ paginator.total_pages }}</p>{% endif %}
+    </div>
+    <div class="jat-posts-hero-actions">
+      <a class="btn jat-btn jat-btn-secondary" href="{{ '/search/' | relative_url }}">Search Reflections</a>
+    </div>
+  </div>
+</header>
 
-    {% if post.subtitle %}
-      <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-    {% endif %}
-
-    {% if post.excerpt %}
-      <p class="post-excerpt">{{ post.excerpt | markdownify }}</p>
-    {% endif %}
-  </a>
-
-  <p class="post-meta">
-    Posted by
-    {% if post.author %}
-      {{ post.author }}
+<main class="jat-collection-main jat-posts-main">
+  {% if featured_post %}
+    {% if archive_page == 1 %}
+      {% assign featured_image = featured_post.image | default: featured_post.background %}
+      {% assign featured_category = featured_post.categories | first %}
+      <section class="jat-posts-featured-section" aria-labelledby="featured-reflection-title">
+        <p class="jat-kicker">Newest Reflection</p>
+        <article class="jat-posts-featured jat-card-surface">
+          <a class="jat-posts-featured-media" href="{{ featured_post.url | relative_url }}" aria-label="Read {{ featured_post.title | escape }}">
+            {% if featured_image %}
+              <img src="{{ featured_image | relative_url }}" alt="" loading="eager">
+            {% else %}
+              <span class="jat-posts-image-fallback" aria-hidden="true"><span>Just A Thought</span></span>
+            {% endif %}
+          </a>
+          <div class="jat-posts-featured-copy">
+            <div class="jat-posts-labels">
+              {% if featured_category %}<span>{{ featured_category }}</span>{% else %}<span>Reflection</span>{% endif %}
+              {% if featured_post.series %}<span>{{ featured_post.series }}</span>{% endif %}
+            </div>
+            <h2 id="featured-reflection-title"><a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a></h2>
+            {% if featured_post.subtitle %}<p class="jat-posts-subtitle">{{ featured_post.subtitle }}</p>{% endif %}
+            {% if featured_post.excerpt %}<p>{{ featured_post.excerpt | strip_html | strip_newlines | truncatewords: 38 }}</p>{% endif %}
+            <div class="jat-posts-meta">
+              <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: '%B %-d, %Y' }}</time>
+              <span aria-hidden="true">•</span>
+              {% include read_time.html content=featured_post.content %}
+            </div>
+            <a class="jat-text-link" href="{{ featured_post.url | relative_url }}">Read the Reflection →</a>
+          </div>
+        </article>
+      </section>
+      {% assign grid_posts = archive_posts | slice: 1, 4 %}
     {% else %}
-      {{ site.author }}
+      {% assign grid_posts = archive_posts %}
     {% endif %}
-    on {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
-  </p>
-</article>
 
-<hr>
+    {% if grid_posts.size > 0 %}
+      <section class="jat-posts-grid-section" aria-labelledby="archive-grid-title">
+        <div class="jat-posts-section-heading">
+          <div>
+            <p class="jat-kicker">{% if archive_page == 1 %}Continue Reading{% else %}Reflection Archive{% endif %}</p>
+            <h2 id="archive-grid-title">{% if archive_page == 1 %}More Recent Reflections{% else %}Posts on Page {{ archive_page }}{% endif %}</h2>
+          </div>
+          <a class="jat-text-link" href="{{ '/search/' | relative_url }}">Find a Specific Topic →</a>
+        </div>
 
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<div class="clearfix">
-  {% if paginator.previous_page %}
-    <a class="btn btn-primary float-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
-      Newer<span class="d-none d-md-inline"> Posts</span></a>
+        <div class="jat-posts-grid">
+          {% for post in grid_posts %}
+            {% assign post_image = post.image | default: post.background %}
+            {% assign post_category = post.categories | first %}
+            <article class="jat-post-card jat-card-surface">
+              <a class="jat-post-card-media" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">
+                {% if post_image %}
+                  <img src="{{ post_image | relative_url }}" alt="" loading="lazy">
+                {% else %}
+                  <span class="jat-posts-image-fallback" aria-hidden="true"><span>Just A Thought</span></span>
+                {% endif %}
+              </a>
+              <div class="jat-post-card-body">
+                <div class="jat-posts-labels">
+                  {% if post_category %}<span>{{ post_category }}</span>{% else %}<span>Reflection</span>{% endif %}
+                  {% if post.series %}<span>{{ post.series }}</span>{% endif %}
+                </div>
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                {% if post.excerpt %}<p>{{ post.excerpt | strip_html | strip_newlines | truncatewords: 28 }}</p>{% endif %}
+                <div class="jat-posts-meta">
+                  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+                  <span aria-hidden="true">•</span>
+                  {% include read_time.html content=post.content %}
+                </div>
+                <a class="jat-text-link" href="{{ post.url | relative_url }}">Read More →</a>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  {% else %}
+    <section class="jat-posts-empty jat-panel jat-panel--padded">
+      <p class="jat-kicker">Reflection Archive</p>
+      <h2>New reflections are being prepared.</h2>
+      <p>The archive will appear here as posts are published.</p>
+    </section>
   {% endif %}
 
-  {% if paginator.next_page %}
-    <a class="btn btn-primary float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older<span class="d-none d-md-inline"> Posts</span> &rarr;</a>
+  {% if paginator.total_pages > 1 %}
+    <nav class="jat-posts-pagination" aria-label="Posts archive pagination">
+      <div class="jat-posts-pagination-side">
+        {% if paginator.previous_page %}
+          <a class="btn jat-btn jat-btn-secondary" rel="prev" href="{{ paginator.previous_page_path | relative_url }}">← Newer Posts</a>
+        {% endif %}
+      </div>
+      <p>Page {{ paginator.page }} of {{ paginator.total_pages }}</p>
+      <div class="jat-posts-pagination-side jat-posts-pagination-side--next">
+        {% if paginator.next_page %}
+          <a class="btn jat-btn jat-btn-secondary" rel="next" href="{{ paginator.next_page_path | relative_url }}">Older Posts →</a>
+        {% endif %}
+      </div>
+    </nav>
   {% endif %}
-</div>
-{% endif %}
+</main>
