@@ -1,43 +1,39 @@
 ---
 layout: default
 page_archetype: landing
+body_class: jat-resources-document
 title: "Resources"
 description: "Thoughtful, Scripture-centered resources from Just A Thought Blog for personal study, reflection, marriage conversations, and small groups."
 permalink: /resources/
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/jat-resources.css' | relative_url }}">
-
 <header class="jat-board-hero jat-resources-hero">
   <div class="container jat-board-container">
-    <div class="jat-board-hero-grid">
+    <div class="jat-board-hero-grid jat-resources-hero-grid">
       <div class="jat-board-hero-copy">
         <p class="jat-kicker">Just A Thought Resources</p>
         <h1>Tools for deeper reflection and faithful practice.</h1>
         <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
         <p>Thoughtful, Scripture-centered guides designed to help you slow down, study carefully, reflect honestly, and carry what you are learning into everyday life.</p>
         <div class="jat-button-row">
-          <a class="btn jat-btn jat-btn-primary" href="#coming-soon">Preview What’s Coming</a>
+          <a class="btn jat-btn jat-btn-primary" href="#planned-resources">Preview Planned Resources</a>
           <a class="btn jat-btn jat-btn-secondary" href="{{ '/posts/' | relative_url }}">Browse Reflections</a>
         </div>
       </div>
 
-      <div
-        class="jat-board-hero-image jat-resources-hero-image"
-        role="img"
-        aria-label="An open Bible, journal, and reflection materials arranged on a warm wooden desk."
-        style="background-image: linear-gradient(90deg, rgba(255,253,248,.52), rgba(255,253,248,.04)), url('{{ '/img/pages/resources-hero.jpg' | relative_url }}');">
+      <div class="jat-resources-hero-media">
+        <img src="{{ '/img/pages/resources-hero.jpg' | relative_url }}" alt="" fetchpriority="high">
       </div>
     </div>
   </div>
 </header>
 
-<main class="jat-page jat-board-main jat-resources-page jat-page-shell">
+<main class="jat-board-main jat-resources-page jat-page-shell">
   <div class="container jat-board-container">
-    <section class="jat-resources-panel jat-resources-intro jat-panel">
+    <section class="jat-resources-panel jat-resources-intro jat-panel" aria-labelledby="resource-library-heading">
       <div class="jat-resources-heading">
         <p class="jat-kicker">Resource Library</p>
-        <h2>Designed to help reflection become practice.</h2>
+        <h2 id="resource-library-heading">Designed to help reflection become practice.</h2>
         <p>The resources here will extend the heart of the blog without turning it into a curriculum store. Each guide will create space to sit with Scripture, ask better questions, and respond thoughtfully in personal study, marriage, discipleship, or small-group conversation.</p>
       </div>
 
@@ -68,23 +64,20 @@ permalink: /resources/
       </div>
     </section>
 
-    <section class="jat-resources-panel jat-coming-section jat-panel" id="coming-soon">
+    <section class="jat-resources-panel jat-planned-section jat-panel" id="planned-resources" aria-labelledby="planned-resources-heading">
       <div class="jat-resources-heading jat-resources-heading-row">
         <div>
-          <p class="jat-kicker">Coming Soon</p>
-          <h2>The first resources are already taking shape.</h2>
+          <p class="jat-kicker">In Development</p>
+          <h2 id="planned-resources-heading">Two foundational resources are taking shape.</h2>
         </div>
-        <p>These projects reflect two complementary ways of engaging Scripture: a reusable framework for ongoing study and a focused contemplative journey through one of the Bible’s most remarkable chapters.</p>
+        <p>One offers a reusable framework for ongoing Bible study. The other is a focused contemplative journey through Psalm 119. Both are presented here as previews, not active downloads.</p>
       </div>
 
       <div class="jat-resource-feature-grid">
         <article class="jat-resource-feature-card jat-card-surface">
-          <div
-            class="jat-resource-card-image"
-            role="img"
-            aria-label="An open Bible beside an organized journal and study notes."
-            style="background-image: linear-gradient(180deg, rgba(37,40,34,.02), rgba(37,40,34,.22)), url('{{ '/img/pages/resources-bible-study-framework.jpg' | relative_url }}');">
-            <span class="jat-resource-status jat-status-label">Coming Soon</span>
+          <div class="jat-resource-card-media">
+            <img src="{{ '/img/pages/resources-bible-study-framework.jpg' | relative_url }}" alt="" loading="lazy">
+            <span class="jat-resource-status jat-status-label">Planned</span>
           </div>
           <div class="jat-resource-feature-copy">
             <p class="jat-kicker">Bible Study</p>
@@ -95,12 +88,9 @@ permalink: /resources/
         </article>
 
         <article class="jat-resource-feature-card jat-card-surface">
-          <div
-            class="jat-resource-card-image"
-            role="img"
-            aria-label="An open Bible with a journal and a sequence of small parchment markers suggesting a contemplative journey through Psalm 119."
-            style="background-image: linear-gradient(180deg, rgba(37,40,34,.02), rgba(37,40,34,.22)), url('{{ '/img/pages/resources-from-aleph-to-tav.jpg' | relative_url }}');">
-            <span class="jat-resource-status jat-status-label">Coming Soon</span>
+          <div class="jat-resource-card-media">
+            <img src="{{ '/img/pages/resources-from-aleph-to-tav.jpg' | relative_url }}" alt="" loading="lazy">
+            <span class="jat-resource-status jat-status-label">Planned</span>
           </div>
           <div class="jat-resource-feature-copy">
             <p class="jat-kicker">Devotional Journey</p>
@@ -112,27 +102,24 @@ permalink: /resources/
       </div>
     </section>
 
-    <section class="jat-resources-panel jat-design-principle jat-panel">
-      <div
-        class="jat-design-principle-image"
-        role="img"
-        aria-label="An open Bible remains the focal point while a simple study guide and pencil rest nearby."
-        style="background-image: linear-gradient(90deg, rgba(37,40,34,.02), rgba(37,40,34,.18)), url('{{ '/img/pages/resources-design-principle.jpg' | relative_url }}');">
+    <section class="jat-resources-panel jat-design-principle jat-panel" aria-labelledby="resource-principle-heading">
+      <div class="jat-design-principle-media">
+        <img src="{{ '/img/pages/resources-design-principle.jpg' | relative_url }}" alt="" loading="lazy">
       </div>
 
       <div class="jat-design-principle-copy">
         <p class="jat-kicker">Design Principle</p>
-        <h2>Resources should serve the reflection, not replace it.</h2>
+        <h2 id="resource-principle-heading">Resources should serve the reflection, not replace it.</h2>
         <p>A useful resource does not crowd the reader with unnecessary activity or rush toward a predetermined answer. It directs attention back to Scripture, creates room for honest thought, and supports prayerful response.</p>
         <p>The visual language should follow the same principle: warm and uncluttered, with quiet imagery, olive accents, generous spacing, and enough room for people to think.</p>
         <blockquote>Good resources do not do the thinking for us. They help us slow down long enough to think faithfully.</blockquote>
       </div>
     </section>
 
-    <section class="jat-resources-panel jat-resources-cta jat-panel jat-panel--parchment">
+    <section class="jat-resources-panel jat-resources-cta jat-panel jat-panel--parchment" aria-labelledby="resources-cta-heading">
       <div>
-        <p class="jat-kicker">While You Wait</p>
-        <h2>Begin with the reflections and series already available.</h2>
+        <p class="jat-kicker">Available Now</p>
+        <h2 id="resources-cta-heading">Begin with the reflections and series already available.</h2>
         <p>The resource library is still being developed, but the current blog posts and series already offer Scripture-centered thoughts worth sitting with, discussing, and returning to.</p>
       </div>
       <div class="jat-button-row">
