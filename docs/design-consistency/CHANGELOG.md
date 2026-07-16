@@ -40,9 +40,93 @@ Briefly describe the outcome.
 
 ---
 
-## 2026-07-15 — DS-05: Redesign the Search experience
+## 2026-07-15 — DS-06: Rebuild Professional Background page
 
 **Status:** Review — implementation and validation complete; merge pending  
+**Branch:** `agent/ds-06-professional-background`  
+**Pull request:** [#14 — DS-06 Rebuild Professional Background page](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/14)  
+**Implemented by:** Jeff Thomas III with ChatGPT implementation support
+
+### Summary
+
+Rebuilt `/cv/` as a valid, branded Professional Background page using the shared profile archetype. The page now presents current professional information through an editorial web layout that also produces a clean three-page Letter print output.
+
+### Files changed
+
+- `cv.html`
+- `_sass/professional-background.scss`
+- `_sass/professional-background-print.scss`
+- `assets/main.scss`
+- `_layouts/default.html`
+- `about.html`
+- `_includes/footer.html`
+- `docs/design-consistency/README.md`
+- `docs/design-consistency/DS-06-NOTES.md`
+- `docs/design-consistency/CHANGELOG.md`
+
+### What changed
+
+- Removed the nested `DOCTYPE`, `html`, `head`, embedded fonts, and global page styles from `cv.html`.
+- Retained `/cv/` while changing the reader-facing title to `Professional Background`.
+- Added the shared profile archetype and a front-matter body class for page-specific print behavior.
+- Added a profile hero, professional facts, current-role panels, career timeline, leadership and speaking sections, education and certification cards, technical-expertise cards, and a closing connection to Just A Thought.
+- Updated the page to 29 years of AECO experience, Technology Consultant at ARKANCE, Southern California, and a Bachelor of Science in Industrial Design from ITT Technical Institute in 1997.
+- Clearly identified Autodesk Revit Professional, AutoCAD Professional, and Autodesk Certified Instructor credentials as former or expired.
+- Updated Autodesk and collaboration terminology, including Autodesk Forma, Forma Design Collaboration, Autodesk Construction Cloud, BIM Collaborate Pro, and the Autodesk AEC Collection.
+- Added print/save-PDF behavior and print-specific pagination rules.
+- Added Professional Background links from About and the footer while leaving the primary navigation unchanged.
+- Added generic optional `body_class` support to the default layout.
+
+### Components added, replaced, or retired
+
+- Added: `_sass/professional-background.scss`, `_sass/professional-background-print.scss`, profile facts, professional timeline, credential cards, expertise cards, and print action.
+- Replaced: The standalone résumé-like document embedded inside the generic page layout.
+- Retired: Global CV selectors, nested document markup, outdated professional facts, and ambiguous certification status.
+- Retained: The `/cv/` URL and the shared site navigation and footer.
+
+### Content changes
+
+- Refreshed current role, employer, years of experience, education, affiliations, speaking work, technical expertise, and Autodesk terminology.
+- Reframed the page as a professional profile rather than a literal curriculum vitae.
+- No blog post content changed.
+
+### Validation completed
+
+- [x] Protected Jekyll and Sass production build
+- [x] Valid single-document HTML output
+- [x] Desktop at 1440px
+- [x] Tablet at 768px
+- [x] Mobile at 390px
+- [x] Light and dark modes
+- [x] No horizontal overflow
+- [x] Three-page Letter print output and page breaks
+- [x] Keyboard targets and visible focus
+- [x] Heading hierarchy, landmarks, lists, labels, and external-link messaging
+- [x] Contact, LinkedIn, About, blog, and footer destinations
+- [x] About and footer regression review
+- [x] Selector-scope review
+
+### Evidence
+
+- Draft pull request: [#14](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/14)
+- GitHub Actions: protected `Jekyll build` run 33 passed on the cleaned implementation commit.
+- Rendered structure: one `DOCTYPE`, one `html`, one `head`, one `body`, one `h1`, and one `main`.
+- Responsive review: compiled document width matched viewport width at 1440px, 768px, and 390px.
+- Print review: three clean Letter pages with Career Experience and Technical Expertise beginning on intentional page boundaries and no orphaned section labels.
+- Internal-link review: all compiled Professional Background, About, Contact, blog, and footer destinations resolved.
+
+### Deferred work
+
+- The full About page redesign remains DS-07.
+- A separately maintained downloadable résumé file remains out of scope.
+- Professional Background remains outside the primary navigation.
+- Future employment, credential, speaking, and affiliation changes remain normal content maintenance.
+
+---
+
+## 2026-07-15 — DS-05: Redesign the Search experience
+
+**Status:** Complete  
 **Branch:** `agent/ds-05-search-redesign`  
 **Pull request:** [#13 — DS-05 Redesign Search experience](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/13)  
 **Implemented by:** Jeff Thomas III with ChatGPT implementation support
@@ -109,7 +193,9 @@ Rebuilt Search as the utility-page counterpart to the redesigned Posts archive w
 
 ### Evidence
 
-- GitHub Actions: final protected `Jekyll build` run 25 passed on the review commit.
+- Merged pull request: [#13](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/13)
+- Merge commit: `65265bd88f47868f27fea9421088294a2ec8bc63`
+- GitHub Actions: final protected `Jekyll build` passed on the review commit.
 - Generated index: 120 published reflections parsed successfully.
 - Runtime suite: all default, query, filter, combined, short-query, empty, clear, error, mobile, and dark-mode cases passed without page errors.
 - Visual review: desktop and mobile Search states were inspected in light and dark modes.
@@ -208,7 +294,6 @@ Corrected global navigation and footer behavior so readers reach direct destinat
 
 ### Deferred work
 
-- Add Professional Background to the footer after DS-06.
 - Remove obsolete footer-form selectors during DS-10.
 
 ---

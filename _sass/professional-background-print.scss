@@ -1,0 +1,21 @@
+/* DS-06 — print pagination refinements load after legacy dark styles. */
+
+@media print {
+  html,
+  body.jat-professional-page {
+    background: #fff !important;
+  }
+
+  body.jat-professional-page .jat-professional-section-heading {
+    break-inside: avoid;
+    break-after: avoid;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+
+  body.jat-professional-page .jat-professional-history,
+  body.jat-professional-page .jat-professional-expertise {
+    break-before: page;
+    page-break-before: always;
+  }
+}

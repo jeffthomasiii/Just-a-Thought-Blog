@@ -1,220 +1,213 @@
 ---
-layout: page
-title: Curriculum Vitae
-description: Jeff Thomas III – Career Overview and Experience
+layout: default
+title: Professional Background
+description: Jeff Thomas III is a Technology Consultant with 29 years of AECO experience spanning architectural production, CAD and BIM leadership, design technology strategy, training, and AI enablement.
 permalink: /cv/
-background: '/img/bg-cv.jpg'
+page_archetype: profile
+body_class: jat-professional-page
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeff Thomas III | Curriculum Vitae</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fdfdfb;
-      color: #2c2c2c;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 40px;
-      width: 90vw;
-      box-sizing: border-box;
-    }
-    h1, h2, h4 {
-      font-family: 'Lora', serif;
-      color: #333;
-      margin-bottom: 0.5em;
-    }
-    h1 {
-      font-size: 2.2em;
-    }
-    h2 {
-      border-left: 5px solid #6C8B60;
-      padding-left: 10px;
-      margin-top: 2em;
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-    a {
-      color: #6C8B60;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .tagline {
-      font-size: 1.1em;
-      font-weight: 600;
-      margin: 1em 0;
-      text-align: center;
-      color: #2c2c2c;
-    }
-    .tagline span,
-    .section-emphasis span,
-    .contact span {
-      color: #6C8B60;
-      font-weight: bold;
-    }
-    .contact {
-      margin-bottom: 2em;
-      text-align: center;
-    }
-    .divider, .dashed-divider {
-      height: 1px;
-      background: #ccc;
-      margin: 2em 0;
-    }
-    .dashed-divider {
-      border-top: 1px dashed #aaa;
-      background: none;
-    }
-    .footer-img {
-      text-align: center;
-      margin-top: 3em;
-    }
-    .footer-img img {
-      height: 60px;
-      opacity: 0.85;
-    }
-    .motif-line {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1em;
-      margin: 1em 0;
-    }
-    .motif-line::before,
-    .motif-line::after {
-      content: "";
-      flex: 1;
-      height: 1px;
-      background: #6C8B60;
-    }
-    .motif-line img {
-      height: 40px;
-    }
-    .section-emphasis {
-      font-weight: bold;
-      font-size: 1.05em;
-      text-align: center;
-    }
-    @media print {
-      body {
-        background: white;
-        color: black;
-        font-size: 12pt;
-      }
-      a {
-        color: black;
-        text-decoration: underline;
-      }
-      .divider, .dashed-divider {
-        border: none;
-        height: 0;
-      }
-      .footer-img {
-        display: none;
-      }
-    }
-  </style>
-  <div class="cv-wrapper">
-    <h1>Jeff Thomas III</h1>
-    <div class="motif-line">
-      <img src="{{ site.baseurl }}/img/olive-motif-symmetrical.png" alt="Motif Icon" style="height: 80px;">
-    </div>
-    <p class="tagline">
-      Speaker <span>|</span> Writer <span>|</span> Design Technology Leader <span>|</span> BIM Consultant
-    </p>
-    <div class="motif-line">
-      <img src="{{ site.baseurl }}/img/olive-motif-symmetrical.png" alt="Motif Icon" style="height: 80px;">
+<header class="jat-profile-hero jat-professional-hero jat-page-shell">
+  <div class="jat-page-frame jat-professional-hero-grid">
+    <div class="jat-professional-hero-copy">
+      <p class="jat-kicker">Professional Background</p>
+      <h1>Jeff Thomas III</h1>
+      <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
+      <p class="jat-professional-role">Technology Consultant · Design Technology and BIM Strategy</p>
+      <p class="jat-professional-intro">I help architecture, engineering, and construction teams improve the way they work by connecting technology decisions to practical standards, reliable workflows, thoughtful implementation, and the people responsible for carrying change forward.</p>
+      <div class="jat-button-row jat-professional-actions">
+        <a class="btn jat-btn jat-btn-primary" href="{{ '/contact' | relative_url }}">Contact Me</a>
+        <a class="btn jat-btn jat-btn-secondary" href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="sr-only">(opens in a new tab)</span></a>
+        <button class="btn jat-btn jat-btn-secondary jat-print-action" id="print-professional-background" type="button">Print / Save PDF</button>
+      </div>
     </div>
 
-    <div class="contact">
-      <p>
-        📍 Southern California <span>|</span> ✉️ <a href="/contact">Contact Me</a> <span>|</span> 🔗 <a href="https://www.linkedin.com/in/jeffthomasiii/" target="_blank">LinkedIn</a> <span>|</span> 🌐 <a href="/">My Blog</a>
-      </p>
-    </div>
-
-    <div class="divider"></div>
-
-    <h2>Professional Summary</h2>
-    <p>With over <strong>28 years</strong> in the AECO industry, I’ve built a career at the intersection of architecture, technology, and leadership. My core strength lies in leading design technology transformations, mentoring high-performance BIM teams, and fostering innovation across organizations. I currently serve as a <strong>Technology Consultant</strong> at <a href="https://arkance.us/" target="_blank">Arkance.us</a>. I'm an <strong>Autodesk Certified Instructor</strong> and an <strong>AUGI Advisory Board Member</strong>, committed to equipping professionals with vision, strategy, and practical tools for impact.</p>
-
-    <h2>Current Role</h2>
-    <h4>Technology Consultant – Arkance.us <em>(Feb 2022 – Present)</em></h4>
-    <ul>
-      <li>Lead strategic consulting in BIM Management and Design Technology leadership</li>
-      <li>Develop Packaged Service Offerings (PSOs) for standards, AI, training, and support</li>
-      <li>Implement Revit template systems across diverse client environments</li>
-      <li>Serve as internal AI enablement lead and educator</li>
-      <li>Coach BIM Managers and Design Tech leaders through structured mentorship</li>
-    </ul>
-
-    <div class="dashed-divider"></div>
-
-    <h2>Previous Experience</h2>
-    <ul>
-      <li>Design/Workflow Tech Lead – AO (2019–2022)</li>
-      <li>CAD Manager / Digital Practice Coord – KTGY (2014–2019)</li>
-      <li>CADD Support Coord – LPA, Inc. (2010–2014)</li>
-      <li>Adjunct Instructor – ITT Tech (2009–2010)</li>
-      <li>Project Coord – Jacobs Carter & Burgess (2007–2008)</li>
-      <li>CAD Prod Mgr – Nadel Retail Architects (2006–2007)</li>
-      <li>Job Captain – RHL Design Group (2005–2006)</li>
-      <li>Sr. Project Designer – Modtech Holdings (2003–2005)</li>
-      <li>Asst. Project Design Mgr – DGE (2001–2003)</li>
-      <li>CAD Manager – ACS (1999–2001)</li>
-    </ul>
-
-    <div class="dashed-divider"></div>
-
-    <h2>Education & Certifications</h2>
-    <ul>
-      <li>Bachelor of Applied Science – Industrial Design, ITT Tech (1997)</li>
-      <li>Autodesk Certified Instructor</li>
-      <li>ADDA Certification</li>
-    </ul>
-
-    <h2>Awards & Recognition</h2>
-    <ul>
-      <li><strong>Advisory Board Member – AUGI</strong> (2025–Present)</li>
-      <li>Project of the Quarter – "Everyday Sport" Wheelchair (1997)</li>
-      <li>Highest GPA Honors – Sept, Nov, Mar, May 1996</li>
-    </ul>
-
-    <div class="dashed-divider"></div>
-
-    <h2>Technical Proficiencies</h2>
-    <p><strong>Core Tools:</strong> Revit, AutoCAD, AutoCAD Architecture, BIM Collaborate Pro, Dynamo, Bluebeam, ACC, Newforma, SketchUp, Adobe CC, Office 365, Google Workspace, GitHub, Obsidian</p>
-    <p><strong>Systems:</strong> Windows, Linux, iOS, BSD</p>
-    <p><strong>Specializations:</strong> Standards Development, AI Enablement, Template Systems, Design Tech Implementation, Leadership Coaching</p>
-
-    <h2>Speaking & Writing </h2>
-    <p class="section-emphasis">
-	<ul>
-      <li>Two-Time Autodesk University Speaker</li>
-      <li>AUGI CON 25 Speaker</li>
-	  <li>AIA Kansas City Speaker</li>
-	  <li>AIA San Francisco Speaker</li>
-      <li>Author of <a href="/">Just A Thought</a> blog</li>
-	  <li>Christian fiction writer on marriage and spiritual warfare</li>
-	</ul>
-    </p>
-
-    <div class="divider"></div>
-    <p style="text-align: center; font-style: italic;">“Designed with reflection in mind – Just A Thought.”</p>
-    <div class="footer-img">
-      <img src="{{ site.baseurl }}/img/jat-olive-branch.png" alt="Just A Thought logo">
-    </div>
+    <aside class="jat-professional-facts jat-panel jat-panel--padded jat-panel--parchment" aria-label="Professional overview">
+      <div class="jat-professional-fact">
+        <strong>29 years</strong>
+        <span>AECO experience</span>
+      </div>
+      <div class="jat-professional-fact">
+        <strong>ARKANCE</strong>
+        <span>Technology Consultant</span>
+      </div>
+      <div class="jat-professional-fact">
+        <strong>Southern California</strong>
+        <span>Based in the United States</span>
+      </div>
+      <div class="jat-professional-fact">
+        <strong>Strategy to adoption</strong>
+        <span>Standards, implementation, training, and enablement</span>
+      </div>
+    </aside>
   </div>
-</html>
+</header>
+
+<main class="jat-profile-main jat-professional-main">
+  <div class="jat-page-frame">
+    <section class="jat-professional-summary jat-page-section" aria-labelledby="professional-summary-heading">
+      <div class="jat-professional-section-heading">
+        <p class="jat-kicker">Professional Summary</p>
+        <h2 id="professional-summary-heading">Architecture experience shaped by technology leadership</h2>
+      </div>
+      <div class="jat-professional-summary-copy">
+        <p>My career spans architectural design and production, CAD and BIM management, design technology leadership, consulting, training, and AI enablement. That range gives me a practical view of technology: tools matter, but lasting improvement depends on standards, governance, communication, implementation planning, and the confidence of the people expected to use them.</p>
+        <p>As a Technology Consultant at ARKANCE, I work with AECO clients to evaluate workflows, develop BIM and CAD standards, improve Revit and cloud-collaboration practices, plan technology implementations, and build training and support strategies. I also help organizations think responsibly about AI-assisted workflows and the leadership required to introduce change without losing sight of people, purpose, or quality.</p>
+      </div>
+    </section>
+
+    <section class="jat-professional-current jat-page-section" aria-labelledby="current-role-heading">
+      <div class="jat-professional-section-heading">
+        <p class="jat-kicker">Current Role</p>
+        <h2 id="current-role-heading">Technology Consultant, ARKANCE</h2>
+        <p class="jat-professional-period">February 2022–Present</p>
+      </div>
+      <div class="jat-professional-current-grid">
+        <article class="jat-card-surface jat-professional-card">
+          <h3>Consulting and implementation</h3>
+          <ul>
+            <li>Lead discovery sessions, workflow assessments, implementation planning, and advisory engagements for architecture, engineering, and construction clients.</li>
+            <li>Develop and improve BIM and CAD standards, Revit templates, model-management practices, and design technology workflows.</li>
+            <li>Support Autodesk design and collaboration platforms, including Revit, AutoCAD, Autodesk Forma, Autodesk Construction Cloud, and Forma Design Collaboration.</li>
+          </ul>
+        </article>
+        <article class="jat-card-surface jat-professional-card">
+          <h3>Enablement and leadership</h3>
+          <ul>
+            <li>Create packaged consulting services, training programs, standards guidance, and practical adoption resources.</li>
+            <li>Coach BIM managers, design technology leaders, and project teams through organizational and workflow change.</li>
+            <li>Support AI enablement and responsible exploration of AI-assisted workflows for AECO practice.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="jat-professional-history jat-page-section" aria-labelledby="career-history-heading">
+      <div class="jat-professional-section-heading">
+        <p class="jat-kicker">Career Experience</p>
+        <h2 id="career-history-heading">From architectural production to design technology strategy</h2>
+      </div>
+      <ol class="jat-professional-timeline">
+        <li>
+          <div class="jat-professional-timeline-date">2019–2022</div>
+          <div><h3>Design / Workflow Technology Lead</h3><p>AO</p></div>
+        </li>
+        <li>
+          <div class="jat-professional-timeline-date">2014–2019</div>
+          <div><h3>CAD Manager / Digital Practice Coordinator</h3><p>KTGY</p></div>
+        </li>
+        <li>
+          <div class="jat-professional-timeline-date">2010–2014</div>
+          <div><h3>CADD Support Coordinator</h3><p>LPA, Inc.</p></div>
+        </li>
+        <li>
+          <div class="jat-professional-timeline-date">2009–2010</div>
+          <div><h3>Adjunct Instructor</h3><p>ITT Technical Institute</p></div>
+        </li>
+        <li>
+          <div class="jat-professional-timeline-date">1999–2008</div>
+          <div>
+            <h3>Architectural design, production, coordination, and CAD leadership</h3>
+            <p>Roles with Jacobs Carter &amp; Burgess, Nadel Retail Architects, RHL Design Group, Modtech Holdings, DGE, and ACS.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="jat-professional-two-column jat-page-section" aria-label="Leadership, speaking, and writing">
+      <article class="jat-card-surface jat-professional-card">
+        <p class="jat-kicker">Leadership and Affiliations</p>
+        <h2>Serving the professional community</h2>
+        <ul>
+          <li>AUGI Advisory Board Member</li>
+          <li>AIA San Francisco Technology in Architectural Practice Committee</li>
+          <li>Mentor and coach for BIM managers and design technology leaders</li>
+          <li>Contributor to professional conversations around BIM, AI, connected practice, leadership, and workforce development</li>
+        </ul>
+      </article>
+
+      <article class="jat-card-surface jat-professional-card">
+        <p class="jat-kicker">Speaking and Writing</p>
+        <h2>Teaching through practice and reflection</h2>
+        <ul>
+          <li>Two-time Autodesk University speaker</li>
+          <li>Speaker for AUGICON, AIA Kansas City, AIA San Francisco, and AIA26</li>
+          <li>Presenter on design technology, AI, leadership, staffing, and connected practice</li>
+          <li>Author of <a href="{{ '/' | relative_url }}">Just A Thought</a>, a reflective Christian blog on faith, marriage, leadership, culture, technology, and everyday life</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="jat-professional-credentials jat-page-section" aria-labelledby="education-heading">
+      <div class="jat-professional-section-heading">
+        <p class="jat-kicker">Education and Credentials</p>
+        <h2 id="education-heading">Formal study and certification history</h2>
+      </div>
+      <div class="jat-professional-credentials-grid">
+        <article class="jat-card-surface jat-professional-card">
+          <span class="jat-status-label">Education</span>
+          <h3>Bachelor of Science in Industrial Design</h3>
+          <p>ITT Technical Institute, 1997</p>
+        </article>
+        <article class="jat-card-surface jat-professional-card">
+          <span class="jat-status-label jat-professional-status-former">Former / Expired</span>
+          <h3>Autodesk certification history</h3>
+          <ul>
+            <li>Autodesk Certified Professional — Revit</li>
+            <li>Autodesk Certified Professional — AutoCAD</li>
+            <li>Autodesk Certified Instructor</li>
+          </ul>
+          <p class="jat-professional-note">These credentials are part of my professional history and are not represented as current certifications.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="jat-professional-expertise jat-page-section" aria-labelledby="expertise-heading">
+      <div class="jat-professional-section-heading">
+        <p class="jat-kicker">Technical Expertise</p>
+        <h2 id="expertise-heading">Tools are strongest when they support a clear way of working</h2>
+      </div>
+      <div class="jat-professional-expertise-grid">
+        <div class="jat-card-surface jat-professional-expertise-group">
+          <h3>Strategy and standards</h3>
+          <p>Design technology strategy, BIM and CAD governance, workflow assessment, standards development, Revit templates, implementation planning, and training.</p>
+        </div>
+        <div class="jat-card-surface jat-professional-expertise-group">
+          <h3>Autodesk platforms</h3>
+          <p>Revit, AutoCAD, Autodesk Forma, Forma Design Collaboration, Autodesk Construction Cloud, BIM Collaborate Pro, Navisworks, Dynamo, and the Autodesk AEC Collection.</p>
+        </div>
+        <div class="jat-card-surface jat-professional-expertise-group">
+          <h3>Connected practice</h3>
+          <p>Bluebeam, Newforma, AVAIL, model coordination, information management, cloud collaboration, client enablement, and cross-team adoption.</p>
+        </div>
+        <div class="jat-card-surface jat-professional-expertise-group">
+          <h3>AI enablement</h3>
+          <p>Responsible AI adoption, AI-assisted workflow exploration, practical use-case development, internal education, and leadership guidance for changing tools and expectations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="jat-professional-closing jat-page-section jat-panel jat-panel--padded jat-panel--parchment" aria-labelledby="professional-closing-heading">
+      <div>
+        <p class="jat-kicker">A Broader View</p>
+        <h2 id="professional-closing-heading">Technology is part of the work, not the whole of it</h2>
+        <p>My professional work and personal writing meet around the same conviction: tools, systems, leadership, and decisions should serve people with clarity, responsibility, and purpose. The technical questions matter, but so do the human questions underneath them.</p>
+      </div>
+      <div class="jat-button-row">
+        <a class="btn jat-btn jat-btn-primary" href="{{ '/contact' | relative_url }}">Start a Conversation</a>
+        <a class="btn jat-btn jat-btn-secondary" href="{{ '/about' | relative_url }}">About Just A Thought</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script>
+  (function () {
+    var printButton = document.getElementById('print-professional-background');
+    if (printButton) {
+      printButton.addEventListener('click', function () {
+        window.print();
+      });
+    }
+  })();
+</script>

@@ -1,0 +1,543 @@
+/* =========================================================
+   DS-06 — Professional Background
+   Scoped profile-page implementation for /cv/.
+   ========================================================= */
+
+.jat-professional-hero {
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+  border-bottom: 1px solid var(--jat-border-subtle);
+}
+
+.jat-professional-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: end;
+}
+
+.jat-professional-hero-copy {
+  max-width: 790px;
+}
+
+.jat-professional-hero h1 {
+  margin: 0;
+  font-size: clamp(3.25rem, 8vw, 6.5rem);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 0.94;
+}
+
+.jat-professional-role {
+  margin: 0 0 1rem;
+  color: var(--jat-action-primary);
+  font-family: var(--jat-font-reflective);
+  font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.jat-professional-intro {
+  max-width: 760px;
+  margin: 0;
+  color: var(--jat-text-secondary);
+  font-size: clamp(1.05rem, 1.7vw, 1.2rem);
+  line-height: 1.75;
+}
+
+.jat-professional-actions {
+  margin-top: 2rem;
+}
+
+.jat-professional-actions button {
+  cursor: pointer;
+}
+
+.jat-professional-facts {
+  display: grid;
+  gap: 0;
+}
+
+.jat-professional-fact {
+  display: grid;
+  gap: 0.2rem;
+  padding-block: 1.1rem;
+  border-bottom: 1px solid var(--jat-border-subtle);
+}
+
+.jat-professional-fact:first-child {
+  padding-top: 0;
+}
+
+.jat-professional-fact:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.jat-professional-fact strong {
+  color: var(--jat-text-primary);
+  font-family: var(--jat-font-display);
+  font-size: 1.45rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.jat-professional-fact span {
+  color: var(--jat-text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.jat-professional-main {
+  padding-bottom: var(--jat-section-space);
+}
+
+.jat-professional-main .jat-page-section {
+  padding-inline: clamp(0rem, 2vw, 1.5rem);
+}
+
+.jat-professional-section-heading {
+  max-width: 760px;
+  margin-bottom: clamp(1.5rem, 3vw, 2.35rem);
+}
+
+.jat-professional-section-heading h2,
+.jat-professional-card h2,
+.jat-professional-closing h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4.2vw, 3.45rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.jat-professional-section-heading > p:not(.jat-kicker) {
+  margin: 0.75rem 0 0;
+  color: var(--jat-text-secondary);
+  line-height: 1.65;
+}
+
+.jat-professional-period {
+  color: var(--jat-action-primary) !important;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.jat-professional-summary {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.jat-professional-summary .jat-professional-section-heading {
+  margin-bottom: 0;
+}
+
+.jat-professional-summary-copy {
+  max-width: 760px;
+}
+
+.jat-professional-summary-copy p {
+  margin: 0 0 1.2rem;
+  color: var(--jat-text-primary);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.jat-professional-summary-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.jat-professional-current-grid,
+.jat-professional-two-column,
+.jat-professional-credentials-grid,
+.jat-professional-expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.jat-professional-card {
+  min-width: 0;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.jat-professional-card h2 {
+  margin-bottom: 1.2rem;
+  font-size: clamp(1.85rem, 3vw, 2.55rem);
+}
+
+.jat-professional-card h3,
+.jat-professional-expertise-group h3 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+  line-height: 1.2;
+}
+
+.jat-professional-card p,
+.jat-professional-card li,
+.jat-professional-expertise-group p {
+  color: var(--jat-text-secondary);
+  line-height: 1.65;
+}
+
+.jat-professional-card ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.jat-professional-card li + li {
+  margin-top: 0.7rem;
+}
+
+.jat-professional-card a {
+  color: var(--jat-action-primary);
+}
+
+.jat-professional-timeline {
+  position: relative;
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jat-professional-timeline::before {
+  position: absolute;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  left: 139px;
+  width: 1px;
+  background: var(--jat-border-strong);
+  content: '';
+}
+
+.jat-professional-timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 2.4rem;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--jat-border-subtle);
+}
+
+.jat-professional-timeline li:last-child {
+  border-bottom: 0;
+}
+
+.jat-professional-timeline li::before {
+  position: absolute;
+  top: 1.72rem;
+  left: 134px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--jat-surface-page);
+  border-radius: var(--jat-radius-round);
+  background: var(--jat-action-primary);
+  box-shadow: 0 0 0 1px var(--jat-border-strong);
+  content: '';
+}
+
+.jat-professional-timeline-date {
+  padding-top: 0.12rem;
+  color: var(--jat-action-primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.jat-professional-timeline h3 {
+  margin: 0 0 0.2rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+  line-height: 1.25;
+}
+
+.jat-professional-timeline p {
+  margin: 0;
+  color: var(--jat-text-secondary);
+  line-height: 1.55;
+}
+
+.jat-professional-credentials-grid .jat-professional-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.jat-professional-credentials-grid .jat-status-label {
+  margin-bottom: 1.1rem;
+}
+
+.jat-professional-status-former {
+  border-color: var(--jat-border-strong);
+  background: transparent;
+  color: var(--jat-action-primary);
+}
+
+.jat-professional-note {
+  margin: auto 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--jat-border-subtle);
+  color: var(--jat-text-muted) !important;
+  font-size: 0.86rem;
+}
+
+.jat-professional-expertise-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.jat-professional-expertise-group {
+  padding: clamp(1.35rem, 2.5vw, 1.85rem);
+}
+
+.jat-professional-expertise-group h3 {
+  font-size: 1.45rem;
+}
+
+.jat-professional-expertise-group p {
+  margin: 0;
+  font-size: 0.96rem;
+}
+
+.jat-professional-closing {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: end;
+  margin-top: var(--jat-section-space);
+}
+
+.jat-professional-closing > div:first-child {
+  max-width: 780px;
+}
+
+.jat-professional-closing h2 {
+  margin-bottom: 1rem;
+}
+
+.jat-professional-closing p:not(.jat-kicker) {
+  margin: 0;
+  color: var(--jat-text-secondary);
+  line-height: 1.7;
+}
+
+body.dark-mode .jat-professional-status-former {
+  color: var(--jat-accent-highlight);
+}
+
+body.dark-mode .jat-professional-timeline li::before {
+  border-color: var(--jat-surface-page);
+}
+
+@media (max-width: 1099.98px) {
+  .jat-professional-expertise-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991.98px) {
+  .jat-professional-hero-grid,
+  .jat-professional-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-professional-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.5rem;
+  }
+
+  .jat-professional-fact:nth-child(2) {
+    padding-top: 0;
+  }
+
+  .jat-professional-fact:nth-last-child(-n + 2) {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .jat-professional-summary .jat-professional-section-heading {
+    margin-bottom: 0;
+  }
+
+  .jat-professional-closing {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .jat-professional-current-grid,
+  .jat-professional-two-column,
+  .jat-professional-credentials-grid,
+  .jat-professional-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-professional-timeline::before {
+    left: 8px;
+  }
+
+  .jat-professional-timeline li {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    padding-left: 2rem;
+  }
+
+  .jat-professional-timeline li::before {
+    left: 3px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-professional-hero h1 {
+    font-size: clamp(3rem, 16vw, 4.25rem);
+  }
+
+  .jat-professional-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-professional-fact:nth-child(2) {
+    padding-top: 1.1rem;
+  }
+
+  .jat-professional-fact:nth-last-child(2) {
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid var(--jat-border-subtle);
+  }
+
+  .jat-professional-fact:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.55in;
+    size: letter;
+  }
+
+  body.jat-professional-page {
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 10.5pt;
+  }
+
+  body.jat-professional-page .navbar,
+  body.jat-professional-page .jat-footer,
+  body.jat-professional-page .jat-print-action,
+  body.jat-professional-page .jat-professional-closing,
+  body.jat-professional-page .jat-button-row {
+    display: none !important;
+  }
+
+  body.jat-professional-page .jat-profile-hero,
+  body.jat-professional-page .jat-professional-main,
+  body.jat-professional-page .jat-page-shell,
+  body.jat-professional-page .jat-panel,
+  body.jat-professional-page .jat-card-surface {
+    background: #fff !important;
+    color: #111 !important;
+    box-shadow: none !important;
+  }
+
+  body.jat-professional-page .jat-professional-hero {
+    padding: 0 0 0.25in;
+    border-bottom: 1px solid #777;
+  }
+
+  body.jat-professional-page .jat-page-frame {
+    width: 100%;
+    max-width: none;
+  }
+
+  body.jat-professional-page .jat-professional-hero-grid {
+    grid-template-columns: 1fr 0.52fr;
+    gap: 0.35in;
+  }
+
+  body.jat-professional-page .jat-professional-hero h1 {
+    font-size: 32pt;
+  }
+
+  body.jat-professional-page .jat-professional-role {
+    color: #333 !important;
+    font-size: 14pt;
+  }
+
+  body.jat-professional-page .jat-professional-intro,
+  body.jat-professional-page .jat-professional-fact span,
+  body.jat-professional-page .jat-professional-summary-copy p,
+  body.jat-professional-page .jat-professional-card p,
+  body.jat-professional-page .jat-professional-card li,
+  body.jat-professional-page .jat-professional-timeline p,
+  body.jat-professional-page .jat-professional-expertise-group p {
+    color: #222 !important;
+  }
+
+  body.jat-professional-page .jat-professional-facts,
+  body.jat-professional-page .jat-professional-card,
+  body.jat-professional-page .jat-professional-expertise-group {
+    border-color: #999 !important;
+  }
+
+  body.jat-professional-page .jat-page-section {
+    padding: 0.22in 0;
+  }
+
+  body.jat-professional-page .jat-professional-section-heading {
+    margin-bottom: 0.12in;
+  }
+
+  body.jat-professional-page .jat-professional-section-heading h2,
+  body.jat-professional-page .jat-professional-card h2 {
+    font-size: 18pt;
+  }
+
+  body.jat-professional-page .jat-professional-summary,
+  body.jat-professional-page .jat-professional-current-grid,
+  body.jat-professional-page .jat-professional-two-column,
+  body.jat-professional-page .jat-professional-credentials-grid,
+  body.jat-professional-page .jat-professional-expertise-grid {
+    gap: 0.16in;
+  }
+
+  body.jat-professional-page .jat-professional-expertise-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.jat-professional-page .jat-professional-card,
+  body.jat-professional-page .jat-professional-expertise-group {
+    padding: 0.16in;
+    break-inside: avoid;
+  }
+
+  body.jat-professional-page .jat-professional-current,
+  body.jat-professional-page .jat-professional-history,
+  body.jat-professional-page .jat-professional-two-column,
+  body.jat-professional-page .jat-professional-credentials,
+  body.jat-professional-page .jat-professional-expertise {
+    break-before: auto;
+  }
+
+  body.jat-professional-page .jat-professional-timeline li {
+    padding-block: 0.09in;
+    break-inside: avoid;
+  }
+
+  body.jat-professional-page a {
+    color: #111 !important;
+    text-decoration: none !important;
+  }
+
+  body.jat-professional-page .jat-kicker,
+  body.jat-professional-page .jat-professional-period,
+  body.jat-professional-page .jat-professional-timeline-date {
+    color: #333 !important;
+  }
+}
