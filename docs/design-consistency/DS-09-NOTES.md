@@ -1,46 +1,72 @@
 # DS-09 — Series Page Alignment Notes
 
-**Status:** In progress  
-**Branch:** `agent/ds-09-series-alignment`
+**Status:** Review  
+**Branch:** `agent/ds-09-series-alignment`  
+**Pull request:** [#17 — DS-09 Align Series page](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/17)
 
-## Existing behavior to preserve
+## Existing behavior preserved
 
-- Series are discovered dynamically by grouping published posts on the `series` front-matter value.
-- Blank or missing series values are excluded from the page.
-- Posts within each series are sorted by `series_order` when present.
-- `Created, Fallen, Restored` is preferred as the featured series when it exists; otherwise the first available series is used.
-- Series cards link to native expandable `<details>` reading lists.
-- Each reading-list item links directly to its published post.
+- Series remain dynamically grouped from published posts using the `series` front-matter value.
+- Blank or missing series values remain excluded.
+- Posts within each series retain the existing `series_order` sequence.
+- `Created, Fallen, Restored` remains the preferred featured series when available; otherwise the first available group is used.
+- Series cards still lead to native expandable `<details>` reading lists.
+- Every reading-list entry still links directly to its published post.
 
-## Implementation direction
+## Implemented
 
-- Assign Series to the shared editorial landing-page archetype.
-- Replace the older hero and nested featured block with one framed split hero using the featured series image and metadata.
-- Preserve the 1280px editorial-board container and shared kicker, divider, button, panel, card, and status components.
-- Redesign the All Series area as an intentional editorial card grid without changing its dynamic Liquid data source.
-- Redesign the reading lists while preserving native `<details>` behavior, series anchors, post order, and direct links.
-- Remove reader-facing explanations about front matter, `series:`, and `series_order`.
-- Improve fallback language and visual treatment when descriptions or images are missing.
-- Consolidate Reading Pathways into one cohesive closing panel.
-- Add explicit responsive image ratios and dark-mode treatments.
+- Assigned Series to the shared editorial landing-page archetype.
+- Replaced the older hero and nested feature with one framed split hero using the featured series image, description, and reflection count.
+- Preserved the 1280px editorial-board container and shared kicker, divider, button, panel, card, and status components.
+- Redesigned the All Series area as an editorial card grid without changing its dynamic Liquid source.
+- Added reader-facing fallbacks for missing descriptions and images.
+- Redesigned native `<details>` reading lists while preserving anchors, ordering, direct links, and browser-expanded states.
+- Added hash-aware expansion and focus behavior.
+- Added repeated-hash handling so a card can reopen a list that was manually closed while its hash remains active.
+- Added post subtitles when present and retained part numbers or dates for sequence context.
+- Removed reader-facing references to front matter, `series:`, and `series_order`.
+- Consolidated Reading Pathways into one cohesive closing panel.
+- Added scoped responsive, dark-mode, reduced-motion, long-title, and keyboard-focus styling.
+- Added the eight current series images to the rendered validation artifact.
 
-## Validation pending
+## Validation completed
 
-- Protected Jekyll and Sass production build.
-- Confirmation that every published series and every series post remains present.
-- Confirmation that post order remains consistent with `series_order`.
-- Featured-series selection and fallback behavior.
-- Series card anchors and expandable reading lists.
-- Desktop, tablet, and mobile visual review.
-- Light- and dark-mode review.
-- Long title, missing image, missing description, and varying post-count review.
-- Keyboard operation and visible focus for links and `<summary>` controls.
-- Heading hierarchy, landmarks, labels, and accessible expanded-state behavior.
-- Regression review for Home, Resources, Podcast, About, and global navigation/footer.
+- [x] Protected Jekyll and Sass production builds.
+- [x] Eight published series remain present.
+- [x] All 40 series post links remain present.
+- [x] Every series retains the exact prior post-title order.
+- [x] Featured-series selection remains `Known & Loved` under the current published content because the preferred future series is not yet present.
+- [x] All eight card hashes resolve to matching `<details>` IDs.
+- [x] Hash changes open and focus the matching summary.
+- [x] Repeated same-hash card clicks reopen manually closed lists.
+- [x] Native Enter-key summary toggling works.
+- [x] Desktop visual review at 1440px.
+- [x] Tablet visual review at 768px.
+- [x] Mobile visual review at 390px.
+- [x] Light- and dark-mode review.
+- [x] No horizontal overflow at the tested widths.
+- [x] Three-column, two-column, and one-column card-grid behavior.
+- [x] Two-column and one-column reading-list behavior.
+- [x] Long titles, one-post series, two-post series, and eleven-post series.
+- [x] All nine rendered series image references exist and retain intrinsic proportions through `object-fit: cover`.
+- [x] Keyboard tab order and visible three-pixel focus outlines for hero buttons, cards, summaries, open-list post links, and Search.
+- [x] One `h1`, one `main`, one active Series navigation state, unique IDs, and no empty links.
+- [x] No reader-facing implementation language remains.
+- [x] All 60 compiled internal destinations checked from the Series page resolve in the artifact.
+- [x] Home, Resources, Podcast, About, Professional Background, navigation, and footer regression review.
+
+## Evidence
+
+- GitHub Actions: protected `Jekyll build` run 51 passed on the repeated-hash-corrected implementation.
+- Baseline comparison: the previous and redesigned pages contain identical series keys and identical ordered post-title arrays.
+- Compiled structure: eight cards, eight native `<details>` elements, and 40 direct post links.
+- Responsive metrics: document width matched viewport width at 1440px, 768px, and 390px.
+- Runtime behavior: hash activation focused the summary approximately 96px below the viewport top; same-hash reopening remained on the Series document.
+- Keyboard test: every page-specific control exposed the expected three-pixel gold focus outline.
 
 ## Deferred
 
 - Individual per-series landing pages remain out of scope.
-- Changes to post front matter or series membership remain out of scope unless validation reveals a content defect.
+- Changes to post front matter or series membership remain out of scope.
 - Search or filtering within Series remains out of scope.
 - Category archive pages remain out of scope.
