@@ -1,0 +1,405 @@
+/* =========================================================
+   Just A Thought Blog — Projects Page and Homepage Projects
+   ========================================================= */
+
+.jat-projects-hero {
+  padding: 7rem 0 0.85rem;
+  background: var(--jat-surface-page);
+}
+
+.jat-projects-hero-inner {
+  padding: clamp(2.5rem, 6vw, 5.25rem);
+  background:
+    linear-gradient(120deg, rgba(255, 253, 248, 0.96), rgba(239, 228, 211, 0.72)),
+    var(--jat-surface-card);
+}
+
+.jat-projects-hero-inner h1 {
+  max-width: 960px;
+  margin: 0;
+  font-size: clamp(3rem, 6vw, 5.3rem);
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.jat-projects-hero-inner p {
+  max-width: 820px;
+  color: var(--jat-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.72;
+}
+
+.jat-projects-hero-inner .jat-projects-hero-lead {
+  color: var(--jat-text-primary);
+  font-size: clamp(1.08rem, 2vw, 1.25rem);
+}
+
+.jat-projects-hero-inner .jat-button-row {
+  margin-top: 1.65rem;
+}
+
+.jat-projects-main {
+  background: var(--jat-surface-page);
+}
+
+.jat-projects-section-heading {
+  max-width: 780px;
+  margin-bottom: 2rem;
+}
+
+.jat-projects-section-heading h2,
+.jat-projects-reflection h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.15rem, 4vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+.jat-projects-section-heading > p:not(.jat-kicker),
+.jat-projects-reflection p {
+  color: var(--jat-text-secondary);
+  font-size: 1.02rem;
+  line-height: 1.72;
+}
+
+.jat-project-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.jat-project-card {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.82fr) minmax(0, 1.18fr);
+  min-height: 520px;
+  overflow: hidden;
+}
+
+.jat-project-card--reverse .jat-project-visual {
+  grid-column: 2;
+  grid-row: 1;
+  border-right: 0;
+  border-left: 1px solid var(--jat-border-subtle);
+}
+
+.jat-project-card--reverse .jat-project-copy {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.jat-project-visual {
+  display: grid;
+  min-height: 100%;
+  place-items: center;
+  padding: clamp(2rem, 5vw, 4rem);
+  border-right: 1px solid var(--jat-border-subtle);
+}
+
+.jat-project-visual--bluegreen {
+  background:
+    radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.7), transparent 34%),
+    linear-gradient(145deg, #dcebdc 0%, #b9d5d1 47%, #9fc8dc 100%);
+}
+
+.jat-project-visual--pawpath {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.16), transparent 30%),
+    linear-gradient(145deg, #244d42 0%, #173f35 58%, #102f29 100%);
+}
+
+.jat-project-visual img {
+  width: min(100%, 390px);
+  max-height: 235px;
+  object-fit: contain;
+}
+
+.jat-project-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 4.5rem);
+}
+
+.jat-project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  color: var(--jat-text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.jat-project-copy h2 {
+  margin: 0;
+  font-size: clamp(2.45rem, 4vw, 4rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.jat-project-tagline {
+  margin: 0.75rem 0 1.25rem;
+  color: var(--jat-action-primary) !important;
+  font-family: var(--jat-font-reflective);
+  font-size: 1.55rem !important;
+  font-style: italic;
+  line-height: 1.25 !important;
+}
+
+.jat-project-copy > p:not(.jat-project-tagline) {
+  margin: 0 0 1rem;
+  color: var(--jat-text-secondary);
+  font-size: 1rem;
+  line-height: 1.68;
+}
+
+.jat-project-highlights {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.4rem 0 1.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.jat-project-highlights li {
+  position: relative;
+  padding-left: 1.35rem;
+  color: var(--jat-text-primary);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.jat-project-highlights li::before {
+  content: '•';
+  position: absolute;
+  left: 0.15rem;
+  color: var(--jat-accent-highlight);
+}
+
+.jat-project-actions {
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.jat-projects-reflection-inner {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+/* Homepage project section */
+.jat-home-projects {
+  margin-top: 0.85rem;
+  padding: clamp(1.35rem, 3vw, 2rem);
+}
+
+.jat-home-projects-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(320px, 1.2fr);
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 1.5rem;
+}
+
+.jat-home-projects-heading h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.jat-home-projects-heading > p {
+  margin: 0;
+  color: var(--jat-text-secondary);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.jat-home-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.jat-home-project-card {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.72fr) minmax(0, 1.28fr);
+  min-height: 310px;
+  overflow: hidden;
+}
+
+.jat-home-project-visual {
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  border-right: 1px solid var(--jat-border-subtle);
+}
+
+.jat-home-project-visual img {
+  width: min(100%, 220px);
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.jat-home-project-copy {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+}
+
+.jat-home-project-copy .jat-status-label {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+
+.jat-home-project-copy h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.75rem;
+  line-height: 1.05;
+}
+
+.jat-home-project-copy p {
+  margin: 0 0 1.2rem;
+  color: var(--jat-text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.jat-home-project-copy .jat-text-link {
+  margin-top: auto;
+}
+
+.jat-home-projects-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.35rem;
+}
+
+body.dark-mode .jat-projects-hero-inner {
+  background:
+    linear-gradient(120deg, rgba(34, 37, 29, 0.96), rgba(79, 93, 58, 0.28)),
+    var(--jat-surface-card);
+}
+
+body.dark-mode .jat-project-visual--bluegreen {
+  background: linear-gradient(145deg, #2f4c43, #274354 100%);
+}
+
+body.dark-mode .jat-project-visual--pawpath {
+  background: linear-gradient(145deg, #173f35, #0c2621 100%);
+}
+
+@media (max-width: 1099.98px) {
+  .jat-project-card,
+  .jat-project-card--reverse {
+    grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.22fr);
+  }
+
+  .jat-home-project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-home-project-visual {
+    min-height: 185px;
+    border-right: 0;
+    border-bottom: 1px solid var(--jat-border-subtle);
+  }
+}
+
+@media (max-width: 899.98px) {
+  .jat-projects-hero {
+    padding-top: 6rem;
+  }
+
+  .jat-project-card,
+  .jat-project-card--reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-project-card--reverse .jat-project-visual,
+  .jat-project-card--reverse .jat-project-copy,
+  .jat-project-visual,
+  .jat-project-copy {
+    grid-column: 1;
+  }
+
+  .jat-project-card--reverse .jat-project-visual,
+  .jat-project-visual {
+    grid-row: 1;
+    min-height: 300px;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid var(--jat-border-subtle);
+  }
+
+  .jat-project-card--reverse .jat-project-copy,
+  .jat-project-copy {
+    grid-row: 2;
+  }
+
+  .jat-home-projects-heading {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .jat-home-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-home-project-card {
+    grid-template-columns: minmax(210px, 0.72fr) minmax(0, 1.28fr);
+  }
+
+  .jat-home-project-visual {
+    min-height: 100%;
+    border-right: 1px solid var(--jat-border-subtle);
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-projects-hero {
+    padding-top: 5.25rem;
+  }
+
+  .jat-projects-hero-inner {
+    padding: 1.6rem;
+  }
+
+  .jat-projects-hero-inner h1 {
+    font-size: 2.75rem;
+  }
+
+  .jat-project-visual,
+  .jat-project-card--reverse .jat-project-visual {
+    min-height: 230px;
+    padding: 2rem;
+  }
+
+  .jat-project-copy {
+    padding: 1.6rem;
+  }
+
+  .jat-project-meta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .jat-home-project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-home-project-visual {
+    min-height: 180px;
+    border-right: 0;
+    border-bottom: 1px solid var(--jat-border-subtle);
+  }
+
+  .jat-home-projects-footer .jat-btn {
+    width: 100%;
+  }
+}
