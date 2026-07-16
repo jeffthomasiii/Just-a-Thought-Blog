@@ -1,7 +1,8 @@
 # DS-07 — About Page Redesign Notes
 
-**Status:** In progress  
-**Branch:** `agent/ds-07-about-redesign`
+**Status:** Review  
+**Branch:** `agent/ds-07-about-redesign`  
+**Pull request:** [#15 — DS-07 Redesign About page](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/15)
 
 ## Implemented
 
@@ -14,19 +15,34 @@
 - Presented `What You’ll Find Here` as a restrained six-topic grid.
 - Presented `What I Believe About This Space` as a full-width parchment statement.
 - Retained the closing `…just a thought.` and added direct paths to Posts and Resources.
-- Added a fully scoped About stylesheet with responsive, reduced-motion, and dark-mode treatments.
+- Added fully scoped About styles with responsive, reduced-motion, dark-mode, and keyboard-focus treatments.
 - Removed the old inline olive-branch presentation from the page.
+- Added the two About image assets to the compact rendered-site artifact for future visual review.
 
-## Validation pending
+## Validation completed
 
-- Protected Jekyll and Sass production build.
-- Desktop, tablet, and mobile visual review.
-- Light- and dark-mode review.
-- Image crop and caption review.
-- Keyboard and visible-focus review.
-- Heading hierarchy, landmarks, lists, blockquote, decorative-image, and button-label review.
-- Internal link validation for Posts, Search, Professional Background, Contact, and Resources.
-- Confirmation that About styles do not affect Professional Background or other pages.
+- [x] Protected Jekyll and Sass production build.
+- [x] Desktop visual review at 1440px.
+- [x] Tablet visual review at 768px.
+- [x] Mobile visual review at 390px.
+- [x] Light- and dark-mode review.
+- [x] No horizontal overflow at the tested widths.
+- [x] Actual `bg-about.jpg` crop and caption review at all three widths.
+- [x] Actual author-mark asset review.
+- [x] Keyboard tab order and visible three-pixel focus rings for every About action.
+- [x] One `h1`, one `main`, unique IDs, current-page navigation state, headings, landmarks, lists, blockquote, and decorative-image semantics.
+- [x] Posts, Search, Professional Background, Contact, and Resources destinations resolved in the rendered artifact.
+- [x] Topic cards remain intentionally non-interactive.
+- [x] All 79 About presentation selectors are scoped beneath `.jat-about-page`.
+- [x] Professional Background and shared navigation/footer regression review.
+
+## Evidence
+
+- GitHub Actions: protected `Jekyll build` run 41 passed.
+- Rendered image assets: `bg-about.jpg` is 1900 × 1501; `jat-olive-branch.png` is 1024 × 1024 with transparency.
+- Responsive metrics: document width remained within the viewport at 1440px, 768px, and 390px.
+- Keyboard test: all six About-page actions received the expected three-pixel visible focus outline after the scoped Bootstrap override.
+- Structure test: one `h1`, one `main`, seven `h2` elements, no duplicate IDs, no empty links, and `aria-current="page"` on About.
 
 ## Deferred
 
