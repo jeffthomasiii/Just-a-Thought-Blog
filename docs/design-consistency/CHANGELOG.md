@@ -40,16 +40,93 @@ Briefly describe the outcome.
 
 ---
 
-## 2026-07-15 — DS-06: Rebuild Professional Background page
+## 2026-07-15 — DS-07: Redesign the About page
 
 **Status:** Review — implementation and validation complete; merge pending  
+**Branch:** `agent/ds-07-about-redesign`  
+**Pull request:** [#15 — DS-07 Redesign About page](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/15)  
+**Implemented by:** Jeff Thomas III with ChatGPT implementation support
+
+### Summary
+
+Rebuilt About as a narrative author-and-mission experience using the shared profile-page archetype. The page preserves the strongest existing writing while introducing clearer hierarchy, visual rhythm, personal context, and direct paths into the rest of the site.
+
+### Files changed
+
+- `about.html`
+- `_sass/about-page.scss`
+- `_sass/about-page-accessibility.scss`
+- `assets/main.scss`
+- `.github/workflows/jekyll-build.yml`
+- `docs/design-consistency/README.md`
+- `docs/design-consistency/DS-07-NOTES.md`
+- `docs/design-consistency/CHANGELOG.md`
+
+### What changed
+
+- Replaced the generic long-form page layout with a split narrative hero and structured editorial sections.
+- Introduced both Just A Thought and Jeff Thomas III without duplicating the Home hero or turning About into a résumé.
+- Reused the existing About image as a decorative reflective hero panel with a readable caption.
+- Added a publication-mission section and highlighted humility statement.
+- Added a distinct `Hi, I’m Jeff` author section with personal context, author facts, Professional Background, and Contact actions.
+- Presented `Why I Write` as a framed editorial section.
+- Presented the site’s six recurring subject areas as restrained, informational topic cards.
+- Presented `What I Believe About This Space` as a full-width parchment statement.
+- Retained the closing `…just a thought.` and added direct paths to Posts and Resources.
+- Added scoped responsive, dark-mode, reduced-motion, and keyboard-focus treatments.
+- Added the two About image assets to the compact rendered-site artifact for repeatable visual review.
+
+### Components added, replaced, or retired
+
+- Added: narrative profile hero, mission statement, author facts panel, framed writing section, topic grid, parchment belief statement, closing action area, and About-specific focus override.
+- Replaced: the inherited generic text column and inline olive-branch presentation.
+- Retired: reusable inline About styling and a page structure that did not visually distinguish publication mission from author biography.
+- Retained: core About writing, `/about` destination, global navigation, and the secondary `/cv/` relationship.
+
+### Validation completed
+
+- [x] Protected Jekyll and Sass production build
+- [x] Desktop at 1440px
+- [x] Tablet at 768px
+- [x] Mobile at 390px
+- [x] Light and dark modes
+- [x] No horizontal overflow
+- [x] Actual hero-image crop and caption review
+- [x] Actual author-mark asset review
+- [x] Keyboard tab order and visible focus for every About action
+- [x] Heading hierarchy, landmarks, lists, blockquote, decorative-image semantics, and accessible labels
+- [x] Posts, Search, Professional Background, Contact, and Resources destinations
+- [x] Professional Background, navigation, and footer regression review
+- [x] Selector-scope review
+
+### Evidence
+
+- Draft pull request: [#15](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/15)
+- GitHub Actions: protected `Jekyll build` run 41 passed with the actual About image assets included in the artifact.
+- Rendered structure: one `h1`, one `main`, seven `h2` elements, no duplicate IDs, no empty links, and `aria-current="page"` on About.
+- Responsive review: document width remained within the viewport at 1440px, 768px, and 390px.
+- Keyboard review: all six About-page actions display the intended three-pixel focus outline.
+- Scope review: all 79 About presentation selectors remain beneath `.jat-about-page`.
+
+### Deferred work
+
+- No new portrait is introduced; the existing reflective About image remains the visual asset.
+- A complete personal biography timeline remains out of scope.
+- Professional portfolio content remains on Professional Background.
+- Topic archive pages remain out of scope, so topic cards remain informational rather than interactive.
+
+---
+
+## 2026-07-15 — DS-06: Rebuild Professional Background page
+
+**Status:** Complete  
 **Branch:** `agent/ds-06-professional-background`  
 **Pull request:** [#14 — DS-06 Rebuild Professional Background page](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/14)  
 **Implemented by:** Jeff Thomas III with ChatGPT implementation support
 
 ### Summary
 
-Rebuilt `/cv/` as a valid, branded Professional Background page using the shared profile archetype. The page now presents current professional information through an editorial web layout that also produces a clean three-page Letter print output.
+Rebuilt `/cv/` as a valid, branded Professional Background page using the shared profile archetype. The page presents current professional information through an editorial web layout and a clean three-page Letter print output.
 
 ### Files changed
 
@@ -66,61 +143,35 @@ Rebuilt `/cv/` as a valid, branded Professional Background page using the shared
 
 ### What changed
 
-- Removed the nested `DOCTYPE`, `html`, `head`, embedded fonts, and global page styles from `cv.html`.
-- Retained `/cv/` while changing the reader-facing title to `Professional Background`.
-- Added the shared profile archetype and a front-matter body class for page-specific print behavior.
-- Added a profile hero, professional facts, current-role panels, career timeline, leadership and speaking sections, education and certification cards, technical-expertise cards, and a closing connection to Just A Thought.
+- Removed nested document markup, embedded fonts, and global CV selectors.
+- Retained `/cv/` while changing the reader-facing title to Professional Background.
+- Added current role, professional facts, career timeline, leadership, speaking, education, credential history, technical expertise, and print/save-PDF behavior.
 - Updated the page to 29 years of AECO experience, Technology Consultant at ARKANCE, Southern California, and a Bachelor of Science in Industrial Design from ITT Technical Institute in 1997.
-- Clearly identified Autodesk Revit Professional, AutoCAD Professional, and Autodesk Certified Instructor credentials as former or expired.
-- Updated Autodesk and collaboration terminology, including Autodesk Forma, Forma Design Collaboration, Autodesk Construction Cloud, BIM Collaborate Pro, and the Autodesk AEC Collection.
-- Added print/save-PDF behavior and print-specific pagination rules.
+- Clearly identified former or expired Autodesk credentials.
+- Updated Autodesk and collaboration terminology.
 - Added Professional Background links from About and the footer while leaving the primary navigation unchanged.
-- Added generic optional `body_class` support to the default layout.
-
-### Components added, replaced, or retired
-
-- Added: `_sass/professional-background.scss`, `_sass/professional-background-print.scss`, profile facts, professional timeline, credential cards, expertise cards, and print action.
-- Replaced: The standalone résumé-like document embedded inside the generic page layout.
-- Retired: Global CV selectors, nested document markup, outdated professional facts, and ambiguous certification status.
-- Retained: The `/cv/` URL and the shared site navigation and footer.
-
-### Content changes
-
-- Refreshed current role, employer, years of experience, education, affiliations, speaking work, technical expertise, and Autodesk terminology.
-- Reframed the page as a professional profile rather than a literal curriculum vitae.
-- No blog post content changed.
 
 ### Validation completed
 
 - [x] Protected Jekyll and Sass production build
 - [x] Valid single-document HTML output
-- [x] Desktop at 1440px
-- [x] Tablet at 768px
-- [x] Mobile at 390px
-- [x] Light and dark modes
+- [x] Desktop, tablet, mobile, light, and dark modes
 - [x] No horizontal overflow
 - [x] Three-page Letter print output and page breaks
-- [x] Keyboard targets and visible focus
-- [x] Heading hierarchy, landmarks, lists, labels, and external-link messaging
-- [x] Contact, LinkedIn, About, blog, and footer destinations
-- [x] About and footer regression review
-- [x] Selector-scope review
+- [x] Keyboard, headings, landmarks, links, and selector scope
 
 ### Evidence
 
-- Draft pull request: [#14](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/14)
-- GitHub Actions: protected `Jekyll build` run 33 passed on the cleaned implementation commit.
-- Rendered structure: one `DOCTYPE`, one `html`, one `head`, one `body`, one `h1`, and one `main`.
-- Responsive review: compiled document width matched viewport width at 1440px, 768px, and 390px.
-- Print review: three clean Letter pages with Career Experience and Technical Expertise beginning on intentional page boundaries and no orphaned section labels.
-- Internal-link review: all compiled Professional Background, About, Contact, blog, and footer destinations resolved.
+- Merged pull request: [#14](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/14)
+- Merge commit: `8faabce6946e8fb4953bca7bb7629cfebca00211`
+- Rendered structure contained one document, one `h1`, and one `main`.
+- Print output produced three clean Letter pages without orphaned section labels.
 
 ### Deferred work
 
-- The full About page redesign remains DS-07.
-- A separately maintained downloadable résumé file remains out of scope.
+- A separately maintained downloadable résumé remains out of scope.
 - Professional Background remains outside the primary navigation.
-- Future employment, credential, speaking, and affiliation changes remain normal content maintenance.
+- Future professional fact changes remain normal content maintenance.
 
 ---
 
@@ -133,79 +184,28 @@ Rebuilt `/cv/` as a valid, branded Professional Background page using the shared
 
 ### Summary
 
-Rebuilt Search as the utility-page counterpart to the redesigned Posts archive while retaining a local Lunr index. The interface now supports shareable URL state, filter-only browsing, structured result cards, and clear guidance, empty, and error states.
-
-### Files changed
-
-- `search.md`
-- `search.html` — retired duplicate source
-- `search.json`
-- `assets/js/search.js`
-- `_sass/search-interface.scss`
-- `assets/main.scss`
-- `.github/workflows/jekyll-build.yml`
-- `docs/design-consistency/README.md`
-- `docs/design-consistency/DS-05-NOTES.md`
-- `docs/design-consistency/CHANGELOG.md`
+Rebuilt Search as the utility-page counterpart to Posts while retaining a local Lunr index. Search supports shareable URL state, filter-only browsing, structured result cards, and clear guidance, empty, and error states.
 
 ### What changed
 
-- Assigned Search to the collection-page archetype.
-- Added an editorial hero, direct Posts action, bordered search-tools panel, and visible control labels.
-- Added `q`, `category`, and `tag` URL restoration and synchronization.
-- Added filter-only browsing and combined query/filter searches.
-- Replaced inline generated presentation with semantic result-card markup.
-- Added dates, categories, tags, series labels, subtitles, and excerpts where available.
-- Added loading, guidance, short-query, no-results, and index-error states.
-- Expanded the Search JSON index with display dates, series metadata, and more searchable article content.
-- Separated Lunr prefix and fuzzy matching into compatible strategies, then merged duplicate-free ranked results.
-- Consolidated duplicate `/search/` sources into the canonical `search.md` page.
-- Added `search.json` to the compact rendered-site validation artifact.
-
-### Components added, replaced, or retired
-
-- Added: `_sass/search-interface.scss`, structured result cards, state panel, URL-aware controls, and enriched Search index fields.
-- Replaced: Generic page layout, inline generated result styles, and query-only behavior.
-- Retired: Duplicate `search.html` source.
-- Retained: Lunr as the local search provider.
-
-### Content changes
-
-- Added reader-facing Search instructions, result-state language, and a direct path to the Posts archive.
-- No article content or post URLs changed.
+- Assigned Search to the collection archetype and consolidated duplicate `/search/` sources.
+- Added URL-aware query, category, and tag state.
+- Added semantic result cards, enriched metadata, and explicit interface states.
+- Separated Lunr prefix and fuzzy strategies and merged ranked results safely.
 
 ### Validation completed
 
-- [x] Protected Jekyll/Sass production build
-- [x] JavaScript syntax validation
-- [x] Generated JSON validity
-- [x] Canonical `/search/` output
-- [x] Default and short-query guidance
-- [x] URL-loaded query, category, and tag states
-- [x] Filter-only and combined query/filter behavior
-- [x] No-results and index-error states
-- [x] Clear/reset and URL synchronization
-- [x] Result links and metadata
-- [x] Desktop, tablet, and mobile behavior
-- [x] Light and dark modes
-- [x] Keyboard targets, visible focus, landmarks, labels, and live status text
-- [x] Official Lunr query-path compatibility review
+- [x] Build, JavaScript syntax, JSON validity, URL state, filters, empty/error states, responsive behavior, light/dark modes, keyboard, and official Lunr compatibility review
 
 ### Evidence
 
 - Merged pull request: [#13](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/13)
 - Merge commit: `65265bd88f47868f27fea9421088294a2ec8bc63`
-- GitHub Actions: final protected `Jekyll build` passed on the review commit.
-- Generated index: 120 published reflections parsed successfully.
-- Runtime suite: all default, query, filter, combined, short-query, empty, clear, error, mobile, and dark-mode cases passed without page errors.
-- Visual review: desktop and mobile Search states were inspected in light and dark modes.
-- Official Lunr 2.3.9 source was reviewed to confirm prefix wildcard and fuzzy edit-distance matching should be expressed separately.
+- Generated index contained 120 published reflections.
 
 ### Deferred work
 
-- Hosted search provider and Search analytics remain out of scope.
-- Category archive pages remain out of scope.
-- Search-result images and reading-time calculations remain deferred pending a later usability need.
+- Hosted search, analytics, category archives, result images, and reading-time calculations remain out of scope.
 
 ---
 
@@ -218,37 +218,16 @@ Rebuilt Search as the utility-page counterpart to the redesigned Posts archive w
 
 ### Summary
 
-Rebuilt the Posts archive as the first complete collection-page implementation, replacing the inherited linear list with an editorial hero, a featured newest reflection, consistent archive cards, and branded pagination.
-
-### Files changed
-
-- `posts/index.html`
-- `_sass/posts-archive.scss`
-- `assets/main.scss`
-- `docs/design-consistency/README.md`
-- `docs/design-consistency/DS-04-NOTES.md`
-- `docs/design-consistency/CHANGELOG.md`
-
-### What changed
-
-- Assigned Posts to the collection-page archetype.
-- Featured the newest post on page one and displayed remaining posts in a responsive grid.
-- Added category, series, date, excerpt, and reading-time metadata.
-- Added image selection and branded fallback logic.
-- Added Newer and Older pagination controls with page count.
+Rebuilt Posts as a branded editorial archive with a featured newest reflection, responsive cards, consistent metadata, image fallbacks, and branded pagination.
 
 ### Validation completed
 
-- [x] Jekyll/Sass production build
-- [x] All 24 generated archive pages
-- [x] Desktop, tablet, mobile, light, and dark modes
-- [x] Pagination, article links, Search link, images, metadata, headings, landmarks, and focus states
+- [x] Jekyll/Sass build, all 24 generated archive pages, responsive layouts, light/dark modes, pagination, article links, metadata, images, headings, landmarks, and focus states
 
 ### Evidence
 
 - Merged pull request: [#12](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/12)
 - Merge commit: `899c0939c450b153e4cd85fa2ad55e2a1bb9f86d`
-- Page one rendered one featured post and four cards; later pages rendered five cards.
 
 ### Deferred work
 
@@ -267,22 +246,6 @@ Rebuilt the Posts archive as the first complete collection-page implementation, 
 
 Corrected global navigation and footer behavior so readers reach direct destinations, see reliable current-page states, and no longer encounter substitute links or an inactive newsletter-form imitation.
 
-### Files changed
-
-- `_includes/navbar.html`
-- `_includes/footer.html`
-- `_includes/scripts.html`
-- `_sass/navigation-footer-refinements.scss`
-- `assets/main.scss`
-
-### What changed
-
-- Added active navigation states and `aria-current="page"`.
-- Pointed Latest Reflection to the newest post.
-- Added accessible Search, social-link, theme, and mobile-menu labels.
-- Replaced indirect footer links and duplicate About destinations.
-- Replaced inactive signup controls with a truthful planned Thought Letter status.
-
 ### Validation completed
 
 - [x] Build, direct destinations, current-page states, responsive layout, light/dark modes, keyboard, and accessibility
@@ -294,7 +257,7 @@ Corrected global navigation and footer behavior so readers reach direct destinat
 
 ### Deferred work
 
-- Remove obsolete footer-form selectors during DS-10.
+- Obsolete footer-form selectors remain for DS-10 cleanup.
 
 ---
 
@@ -308,13 +271,6 @@ Corrected global navigation and footer behavior so readers reach direct destinat
 ### Summary
 
 Refined Home into a reader-facing editorial baseline by removing development labels and misleading interactions, standardizing podcast language, and consolidating future-feature messaging.
-
-### What changed
-
-- Replaced the internal hero label and duplicate Latest Reflection label.
-- Standardized the podcast name.
-- Converted dead topic links into static editorial cards.
-- Moved reusable Home styles into `_sass/home-refinements.scss`.
 
 ### Validation completed
 
@@ -340,14 +296,7 @@ Refined Home into a reader-facing editorial baseline by removing development lab
 
 ### Summary
 
-Introduced the canonical token and component layer, defined the three page archetypes, and migrated Home and Resources to the editorial landing-page foundation.
-
-### What changed
-
-- Created canonical brand, semantic, typography, spacing, shape, border, and shadow tokens.
-- Added shared containers, kickers, dividers, actions, panels, cards, labels, and focus states.
-- Added semantic dark-mode values and landing, collection, and profile archetypes.
-- Added the protected pull-request Jekyll build workflow.
+Introduced canonical design tokens and shared components, defined the three page archetypes, migrated Home and Resources to the landing foundation, and added the protected pull-request Jekyll build.
 
 ### Validation completed
 
@@ -360,7 +309,7 @@ Introduced the canonical token and component layer, defined the three page arche
 
 ### Deferred work
 
-- Compatibility aliases and legacy rules remain until dependent pages are migrated and DS-10 cleanup is complete.
+- Compatibility aliases and legacy rules remain until dependent pages migrate and DS-10 cleanup is complete.
 
 ---
 
