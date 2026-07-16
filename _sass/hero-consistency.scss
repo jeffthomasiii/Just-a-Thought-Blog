@@ -1,0 +1,445 @@
+/* =========================================================
+   Brand-refresh follow-up — Primary hero consistency
+
+   Establishes three intentional hero families:
+   1. Image-led landing pages: Home, Series, Podcast, Resources
+   2. Compact utility pages: Posts and Search
+   3. Framed profile page: About
+   ========================================================= */
+
+body.jat-archetype-landing,
+body.jat-archetype-collection,
+body.jat-archetype-profile {
+  --jat-primary-hero-height: 610px;
+  --jat-primary-hero-copy-padding: clamp(2.4rem, 5vw, 4.25rem);
+  --jat-primary-hero-kicker-size: 0.73rem;
+  --jat-primary-hero-button-width: 178px;
+}
+
+/* Shared hero typography */
+.jat-board-hero .jat-kicker,
+.jat-collection-hero .jat-kicker,
+.jat-profile-hero .jat-kicker {
+  margin: 0 0 0.75rem;
+  color: var(--jat-text-primary);
+  font-size: var(--jat-primary-hero-kicker-size);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.jat-board-hero .jat-simple-divider,
+.jat-collection-hero .jat-simple-divider,
+.jat-profile-hero .jat-simple-divider {
+  width: min(280px, 100%);
+  margin: 1.45rem 0 1.25rem;
+}
+
+.jat-board-hero .jat-button-row .jat-btn,
+.jat-collection-hero .jat-button-row .jat-btn,
+.jat-profile-hero .jat-button-row .jat-btn,
+.jat-posts-hero-actions .jat-btn,
+.jat-search-hero-actions .jat-btn {
+  display: inline-flex;
+  min-width: var(--jat-primary-hero-button-width);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ---------------------------------------------------------
+   Image-led landing heroes
+   --------------------------------------------------------- */
+
+body.jat-archetype-landing .jat-board-hero {
+  padding: var(--jat-archetype-hero-space-top) 0 var(--jat-archetype-hero-space-bottom);
+  border-bottom: 0;
+}
+
+body.jat-archetype-landing .jat-board-hero-grid,
+.jat-series-page .jat-series-hero-grid {
+  min-height: var(--jat-primary-hero-height);
+  overflow: hidden;
+  border: 1px solid var(--jat-border-strong);
+  background-color: var(--jat-surface-card);
+  box-shadow: var(--jat-shadow-panel);
+}
+
+body.jat-archetype-landing .jat-board-hero-copy,
+.jat-series-page .jat-series-hero-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--jat-primary-hero-copy-padding);
+}
+
+body.jat-archetype-landing .jat-board-hero-copy h1,
+.jat-series-page .jat-series-hero h1 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+}
+
+body.jat-archetype-landing .jat-board-hero-copy h1 {
+  font-size: clamp(3.15rem, 5vw, 5rem);
+}
+
+body.jat-archetype-landing:not(.jat-podcast-page):not(.jat-resources-document) .jat-board-hero-copy > p:not(.jat-kicker),
+.jat-resources-document .jat-board-hero-copy > p:not(.jat-kicker),
+.jat-podcast-page .jat-podcast-hero-copy > p:not(.jat-kicker),
+.jat-series-page .jat-series-hero-lede {
+  max-width: 680px;
+  margin: 0;
+  color: var(--jat-text-secondary);
+  font-size: 1.08rem;
+  line-height: 1.62;
+}
+
+body.jat-archetype-landing .jat-board-hero-copy > .jat-button-row,
+.jat-series-page .jat-series-hero-copy > .jat-button-row {
+  margin-top: 1.75rem;
+}
+
+/* Home keeps the largest title because its wording is intentionally brief. */
+body.jat-archetype-landing:not(.jat-podcast-page):not(.jat-resources-document):not(.jat-series-page) .jat-board-hero-copy h1 {
+  font-size: clamp(3.35rem, 5.6vw, 5.35rem);
+  letter-spacing: -0.035em;
+  line-height: 0.96;
+}
+
+/* Long landing-page titles use the same typography at a length-aware scale. */
+.jat-podcast-page .jat-podcast-hero-copy h1,
+.jat-resources-document .jat-board-hero-copy h1,
+.jat-series-page .jat-series-hero h1 {
+  max-width: 760px;
+  font-size: clamp(3.05rem, 4.8vw, 4.85rem);
+}
+
+/* Bring every landing image into the same framed 610px system. */
+body.jat-archetype-landing .jat-board-hero-image,
+.jat-resources-document .jat-resources-hero-media,
+.jat-series-page .jat-series-hero-media {
+  align-self: stretch;
+  min-height: var(--jat-primary-hero-height);
+  aspect-ratio: auto;
+}
+
+.jat-podcast-page .jat-podcast-hero-image {
+  height: 100%;
+  min-height: var(--jat-primary-hero-height);
+  aspect-ratio: auto;
+}
+
+.jat-resources-document .jat-resources-hero-media img,
+.jat-series-page .jat-series-hero-media > img,
+.jat-series-page .jat-series-hero-media > .jat-series-image-fallback {
+  width: 100%;
+  height: 100%;
+  min-height: var(--jat-primary-hero-height);
+  object-fit: cover;
+}
+
+/* Continue the Home-page blend at the copy/image boundary. */
+.jat-resources-document .jat-resources-hero-media::before,
+.jat-series-page .jat-series-hero-media::before {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 253, 248, 0.92) 0%,
+    rgba(255, 253, 248, 0.48) 13%,
+    rgba(255, 253, 248, 0.08) 29%,
+    rgba(255, 253, 248, 0) 45%
+  );
+  content: '';
+  pointer-events: none;
+}
+
+.jat-series-page .jat-series-hero-caption {
+  z-index: 2;
+}
+
+/* Compact the featured-series summary so Series no longer drives hero height. */
+.jat-series-page .jat-series-featured-copy {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.55rem 0.9rem;
+  align-items: center;
+  max-width: 720px;
+  margin-top: 1.35rem;
+  padding-top: 1.1rem;
+}
+
+.jat-series-page .jat-series-featured-copy h2 {
+  margin: 0;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.jat-series-page .jat-series-featured-copy > p:not(.jat-series-count) {
+  display: none;
+}
+
+.jat-series-page .jat-series-count {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.jat-series-page .jat-series-hero-copy .jat-button-row {
+  margin-top: 1.45rem;
+}
+
+/* ---------------------------------------------------------
+   Collection / utility heroes: Posts and Search
+   --------------------------------------------------------- */
+
+.jat-collection-hero .jat-kicker {
+  /* Prevent the general collection paragraph rule from enlarging the kicker. */
+  margin-top: 0;
+  font-size: var(--jat-primary-hero-kicker-size);
+  line-height: 1.4;
+}
+
+.jat-collection-hero p:not(.jat-kicker):not(.jat-posts-page-label) {
+  margin: 1rem 0 0;
+  color: var(--jat-text-secondary);
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.jat-posts-hero-inner,
+.jat-search-hero-inner {
+  min-height: 245px;
+  align-items: center;
+}
+
+.jat-posts-hero-actions,
+.jat-search-hero-actions {
+  padding-bottom: 0;
+}
+
+/* ---------------------------------------------------------
+   About: framed profile hero
+   --------------------------------------------------------- */
+
+.jat-about-page .jat-about-hero {
+  padding: 7rem 0 var(--jat-archetype-hero-space-bottom, 0.85rem);
+  border-bottom: 0;
+}
+
+.jat-about-page .jat-about-hero-grid {
+  display: grid;
+  min-height: var(--jat-primary-hero-height);
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+  gap: 0;
+  align-items: stretch;
+  overflow: hidden;
+  border: 1px solid var(--jat-border-strong);
+  background: var(--jat-surface-card);
+  box-shadow: var(--jat-shadow-panel);
+}
+
+.jat-about-page .jat-about-hero-copy {
+  display: flex;
+  align-self: stretch;
+  max-width: none;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--jat-primary-hero-copy-padding);
+}
+
+.jat-about-page .jat-about-hero h1 {
+  max-width: 760px;
+  font-size: clamp(3.05rem, 4.8vw, 4.85rem);
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+}
+
+.jat-about-page .jat-about-hero-copy > p:not(.jat-kicker),
+.jat-about-page .jat-about-hero-copy .jat-about-hero-lead {
+  max-width: 680px;
+  margin: 0 0 0.9rem;
+  color: var(--jat-text-secondary);
+  font-family: var(--jat-font-body);
+  font-size: 1.08rem;
+  line-height: 1.62;
+}
+
+.jat-about-page .jat-about-hero-actions {
+  margin-top: 0.85rem;
+}
+
+.jat-about-page .jat-about-hero-image {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  min-height: var(--jat-primary-hero-height);
+  aspect-ratio: auto;
+  border: 0;
+}
+
+.jat-about-page .jat-about-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.jat-about-page .jat-about-hero-image::before {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 253, 248, 0.92) 0%,
+    rgba(255, 253, 248, 0.46) 13%,
+    rgba(255, 253, 248, 0.06) 29%,
+    rgba(255, 253, 248, 0) 45%
+  );
+  content: '';
+  pointer-events: none;
+}
+
+.jat-about-page .jat-about-image-caption {
+  z-index: 2;
+}
+
+/* Dark-mode boundary blends */
+body.dark-mode .jat-resources-hero-media::before,
+body.dark-mode .jat-series-hero-media::before,
+body.dark-mode .jat-about-hero-image::before {
+  background: linear-gradient(
+    90deg,
+    rgba(34, 37, 29, 0.96) 0%,
+    rgba(34, 37, 29, 0.58) 13%,
+    rgba(34, 37, 29, 0.12) 29%,
+    rgba(34, 37, 29, 0) 45%
+  );
+}
+
+@media (max-width: 991.98px) {
+  body.jat-archetype-landing .jat-board-hero-grid,
+  .jat-series-page .jat-series-hero-grid,
+  .jat-about-page .jat-about-hero-grid {
+    min-height: 0;
+    grid-template-columns: 1fr;
+  }
+
+  body.jat-archetype-landing .jat-board-hero-copy,
+  .jat-series-page .jat-series-hero-copy,
+  .jat-about-page .jat-about-hero-copy {
+    padding: clamp(2.25rem, 6vw, 3.5rem);
+  }
+
+  body.jat-archetype-landing .jat-board-hero-image,
+  .jat-resources-document .jat-resources-hero-media,
+  .jat-series-page .jat-series-hero-media,
+  .jat-about-page .jat-about-hero-image {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .jat-podcast-page .jat-podcast-hero-image {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .jat-resources-document .jat-resources-hero-media img,
+  .jat-series-page .jat-series-hero-media > img,
+  .jat-series-page .jat-series-hero-media > .jat-series-image-fallback,
+  .jat-about-page .jat-about-hero-image img {
+    height: 100%;
+    min-height: 0;
+  }
+
+  .jat-resources-document .jat-resources-hero-media::before,
+  .jat-series-page .jat-series-hero-media::before,
+  .jat-about-page .jat-about-hero-image::before {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 253, 248, 0.9) 0%,
+      rgba(255, 253, 248, 0.34) 13%,
+      rgba(255, 253, 248, 0) 33%
+    );
+  }
+
+  body.dark-mode .jat-resources-hero-media::before,
+  body.dark-mode .jat-series-hero-media::before,
+  body.dark-mode .jat-about-hero-image::before {
+    background: linear-gradient(
+      180deg,
+      rgba(34, 37, 29, 0.94) 0%,
+      rgba(34, 37, 29, 0.42) 13%,
+      rgba(34, 37, 29, 0) 33%
+    );
+  }
+
+  .jat-series-page .jat-series-featured-copy {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .jat-series-page .jat-series-count {
+    grid-column: 2;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .jat-posts-hero-inner,
+  .jat-search-hero-inner {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .jat-posts-hero-actions,
+  .jat-search-hero-actions {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body.jat-archetype-landing .jat-board-hero-copy h1,
+  .jat-series-page .jat-series-hero h1,
+  .jat-about-page .jat-about-hero h1 {
+    font-size: clamp(2.75rem, 13vw, 3.35rem);
+  }
+
+  body.jat-archetype-landing .jat-board-hero-image,
+  .jat-resources-document .jat-resources-hero-media,
+  .jat-series-page .jat-series-hero-media,
+  .jat-about-page .jat-about-hero-image,
+  .jat-podcast-page .jat-podcast-hero-image {
+    aspect-ratio: 4 / 3;
+  }
+
+  .jat-board-hero .jat-button-row,
+  .jat-profile-hero .jat-button-row {
+    flex-direction: column;
+  }
+
+  .jat-board-hero .jat-button-row .jat-btn,
+  .jat-profile-hero .jat-button-row .jat-btn,
+  .jat-posts-hero-actions .jat-btn,
+  .jat-search-hero-actions .jat-btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .jat-series-page .jat-series-featured-copy {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .jat-series-page .jat-series-count {
+    grid-column: 1;
+  }
+}

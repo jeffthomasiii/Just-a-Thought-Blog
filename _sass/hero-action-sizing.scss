@@ -1,0 +1,24 @@
+/* Brand-refresh follow-up — consistent primary hero action sizing. */
+
+.jat-board-hero .jat-button-row .jat-btn,
+.jat-profile-hero .jat-button-row .jat-btn,
+.jat-posts-hero-actions .jat-btn,
+.jat-search-hero-actions .jat-btn {
+  width: 200px;
+  min-width: 200px;
+  padding-right: 0.65rem;
+  padding-left: 0.65rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.075em;
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .jat-board-hero .jat-button-row .jat-btn,
+  .jat-profile-hero .jat-button-row .jat-btn,
+  .jat-posts-hero-actions .jat-btn,
+  .jat-search-hero-actions .jat-btn {
+    width: 100%;
+    min-width: 0;
+  }
+}
