@@ -1,6 +1,6 @@
 # Just A Thought Blog — Design Consistency Roadmap
 
-**Status:** Implementation in review  
+**Status:** Final implementation in review  
 **Owner:** Jeff Thomas III  
 **Repository:** `jeffthomasiii/Just-a-Thought-Blog`  
 **Baseline:** Home page and Resources page editorial-board design system  
@@ -32,10 +32,11 @@ The documentation is designed to record:
 - [Shared Design System](DESIGN-SYSTEM.md)
 - [Implementation Changelog](CHANGELOG.md)
 - [Design Decision Log](DECISIONS.md)
+- [Final QA Notes](DS-10-NOTES.md)
 
 ## Page archetypes
 
-The site will use three related page families.
+The site uses three related page families.
 
 ### 1. Editorial landing pages
 
@@ -89,8 +90,8 @@ Shared characteristics:
 | DS-06 | Rebuild CV as Professional Background | 1 | Complete |
 | DS-07 | Redesign About page | 2 | Complete |
 | DS-08 | Align Podcast page | 2 | Complete |
-| DS-09 | Align Series page | 2 | Review |
-| DS-10 | Validate Resources and complete cross-site QA | 3 | Not started |
+| DS-09 | Align Series page | 2 | Complete |
+| DS-10 | Validate Resources and complete cross-site QA | 3 | Review |
 
 ## Recommended implementation order
 
@@ -180,8 +181,8 @@ Every completed work item should record:
 - Shared components should support page purpose rather than erase it.
 - The Home page is the visual baseline, not a template to duplicate literally.
 - Resources is the preferred example for adapting the Home system to an interior landing page.
-- Posts, Search, and CV represent the largest remaining design gaps.
-- Series and Podcast should retain their useful page-specific functionality.
-- About should remain personal and reflective rather than becoming a résumé.
+- Series and Podcast retain useful page-specific functionality.
+- About remains personal and reflective rather than becoming a résumé.
 - The site should feel warm, editorial, peaceful, mature, and uncluttered.
 - Typography, spacing, navigation, buttons, colors, borders, and responsive behavior should be predictable across the site.
+- Legacy cleanup must be evidence-based and must not trade small file-size gains for avoidable regressions.
