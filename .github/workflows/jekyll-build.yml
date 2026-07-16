@@ -42,5 +42,13 @@ jobs:
             _site/img/jat-olive-branch.png
             _site/img/pages/bg-podcast-coming-soon.jpg
             _site/img/pages/podcast-episode-preview.jpg
+            _site/img/posts/can-you-love-without-knowing.jpg
+            _site/img/posts/wisdom-in-the-age-of-algorithms.jpg
+            _site/img/posts/lead-like-this-intro.jpg
+            _site/img/posts/10-skills-every-man.jpg
+            _site/img/posts/paul-context.jpg
+            _site/img/posts/you-cant-fake-care.jpg
+            _site/img/posts/the-cycle-we-dont-see.jpg
+            _site/img/posts/you-him-and-i.jpg
           if-no-files-found: error
           retention-days: 7

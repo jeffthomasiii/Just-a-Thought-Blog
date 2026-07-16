@@ -4,7 +4,7 @@
 **Owner:** Jeff Thomas III  
 **Repository:** `jeffthomasiii/Just-a-Thought-Blog`  
 **Baseline:** Home page and Resources page editorial-board design system  
-**Last updated:** 2026-07-15
+**Last updated:** 2026-07-16
 
 ## Purpose
 
@@ -88,8 +88,8 @@ Shared characteristics:
 | DS-05 | Redesign Search experience | 1 | Complete |
 | DS-06 | Rebuild CV as Professional Background | 1 | Complete |
 | DS-07 | Redesign About page | 2 | Complete |
-| DS-08 | Align Podcast page | 2 | Review |
-| DS-09 | Align Series page | 2 | Not started |
+| DS-08 | Align Podcast page | 2 | Complete |
+| DS-09 | Align Series page | 2 | Review |
 | DS-10 | Validate Resources and complete cross-site QA | 3 | Not started |
 
 ## Recommended implementation order

@@ -1,8 +1,10 @@
 # DS-08 — Podcast Page Alignment Notes
 
-**Status:** Review  
+**Status:** Complete  
 **Branch:** `agent/ds-08-podcast-alignment`  
-**Pull request:** [#16 — DS-08 Align Podcast page and correct About image scaling](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/16)
+**Pull request:** [#16 — DS-08 Align Podcast page and correct About image scaling](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/16)  
+**Merged:** 2026-07-16  
+**Merge commit:** `c5c33115d5b54589bd8b3b5a2a1aaf761fdca235`
 
 ## DS-07 corrective follow-up
 
@@ -44,7 +46,9 @@
 
 ## Evidence
 
-- GitHub Actions: protected `Jekyll build` run 47 passed on the accessibility-corrected implementation.
+- Merged pull request: [#16](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/16)
+- Merge commit: `c5c33115d5b54589bd8b3b5a2a1aaf761fdca235`
+- GitHub Actions: protected `Jekyll build` run 49 passed on the exact review commit.
 - About hero metrics: approximately 1.265 width-to-height ratio at 1440px, 768px, and 390px, matching the source image ratio.
 - About source images: `bg-about.jpg` is 1900 × 1501; `jat-olive-branch.png` is 1024 × 1024 with a smaller transparent-bounded design area.
 - Podcast image ratios: hero 4:5 desktop, 16:10 tablet, and 4:3 mobile; format image 5:4 desktop, 16:9 tablet, and 4:3 mobile.
