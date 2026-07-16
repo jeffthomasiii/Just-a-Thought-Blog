@@ -1,57 +1,65 @@
 # DS-10 — Resources Validation and Cross-Site QA Notes
 
-**Status:** In progress  
-**Branch:** `agent/ds-10-final-qa`
+**Status:** Review  
+**Branch:** `agent/ds-10-final-qa`  
+**Pull request:** [#18 — DS-10 Validate Resources and complete cross-site QA](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/18)
 
-## Resources corrections implemented
+## Resources corrections
 
-- Retained Resources as the preferred example of an interior editorial landing page.
-- Moved Resources presentation from `assets/css/jat-resources.css` into the shared Sass compilation order.
-- Removed the page-specific stylesheet link and deleted the superseded standalone CSS file.
-- Added a page body class so every Resources presentation selector is scoped.
-- Replaced inline background-image blocks with proportional `<img>` elements.
-- Added explicit desktop, tablet, and mobile aspect ratios for hero, planned-resource, and design-principle imagery.
-- Replaced repeated `Coming Soon` language with one `In Development` section and `Planned` card labels.
-- Clarified that planned cards are previews rather than active downloads.
-- Added section heading IDs and `aria-labelledby` relationships.
-- Retained the current resource concepts, descriptions, formats, and available-now actions.
-- Added all four Resources images to the rendered validation artifact.
+- Migrated Resources from `assets/css/jat-resources.css` into the shared Sass import order.
+- Removed the standalone stylesheet, page-level stylesheet link, and inline background-image presentation.
+- Added `jat-resources-document` so Resources selectors remain scoped.
+- Replaced background blocks with decorative `<img>` elements and explicit responsive aspect ratios.
+- Consolidated repeated `Coming Soon` wording into one `In Development` section with `Planned` preview labels.
+- Clarified that the two planned cards are previews rather than active downloads.
+- Added section heading relationships and retained existing concepts, descriptions, formats, and current actions.
+- Corrected a desktop grid constraint found during visual QA so the design-principle media and copy columns no longer overlap.
 
-## Cross-site validation in progress
+## Cross-site QA completed
 
-Primary pages:
+Pages reviewed: Home, Posts, Series, Podcast, Resources, About, Search, and Professional Background.
 
-- Home
-- Posts
-- Series
-- Podcast
-- Resources
-- About
-- Search
-- Professional Background
+- [x] Every page has one `h1`, one `main`, unique IDs, and a declared page archetype.
+- [x] No empty links, broken primary-page destinations, or missing image alternatives were found.
+- [x] Navigation states are correct; Professional Background remains intentionally outside primary navigation.
+- [x] Forty-eight responsive/theme cases passed: eight pages × 1440px, 768px, and 390px × light and dark modes.
+- [x] No horizontal overflow was found.
+- [x] Real keyboard Tab testing passed on all eight pages with visible focus on tested controls.
+- [x] Footer destinations, image treatment, headings, landmarks, labels, buttons, and text links passed review.
+- [x] Search restored query state and passed query, filter-only, combined, short-query, no-result, and clear/reset states.
+- [x] Posts pagination destinations and later-page card counts passed.
+- [x] Series retained eight collections and 40 ordered links; hash opening, focus, and same-hash reopening passed.
+- [x] Professional Background produced a clean three-page Letter print layout.
 
-Checks:
+## Evidence
 
-- Archetype and body-class assignment
-- Heading and landmark structure
-- Navigation active states
-- Footer destinations
-- Empty, placeholder, and broken internal links
-- Desktop, tablet, and mobile overflow
-- Light- and dark-mode presentation
-- Image sizing, crops, and alternative-text treatment
-- Keyboard order and visible focus
-- Search URL state and result behavior
-- Posts pagination
-- Series anchors and expandable reading lists
-- Professional Background print output
-- CSS import order and selector scope
-- Safe legacy cleanup and documented retained dependencies
+- Protected Jekyll build 57 passed on commit `20c2f2666afe46b17fb9758e51c4f3f4c4f30212`.
+- Corrected artifact ID: `8380634623`.
+- Responsive matrix: 48 cases, zero overflow failures.
+- Keyboard counts with zero visible-focus failures: Home 44, Posts 42, Series 50, Podcast 28, Resources 28, About 50, Search 29, Professional Background 30.
+- Search index: 120 published reflections.
+- Resources desktop media/copy overlap measurement: zero.
+- Print output: three Letter pages; the final page contains the complete Technical Expertise grid without clipping.
 
-## Deferred by scope
+## Legacy cleanup
+
+Removed safely:
+
+- Standalone Resources CSS.
+- Resources stylesheet loading and inline background-image declarations.
+- Superseded height-based Resources media rules.
+
+Retained intentionally:
+
+- The Clean Blog vendor layer, `_sass/styles.scss`, and `_sass/_dark.scss` remain because inherited post, contact, and utility templates still depend on portions of them.
+- A few unused Search and former footer-form compatibility selectors remain inside those broad foundational files. Removing isolated blocks provides little reader benefit and creates unnecessary regression risk outside the eight-page scope.
+- Data-driven Home background images remain because Liquid selects current post and series artwork dynamically.
+
+## Deferred
 
 - Newsletter implementation
-- Podcast launch, feeds, and episode publishing
-- New category or topic archive pages
-- Large-scale editing of existing post content
-- Individual per-series landing pages
+- Podcast launch and episode publishing
+- Category and topic archives
+- Large-scale post-content editing
+- Individual series landing pages
+- A later legacy-CSS reduction project covering inherited templates
