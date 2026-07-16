@@ -37,5 +37,6 @@ jobs:
             _site/**/*.html
             _site/assets/**/*.css
             _site/assets/**/*.js
+            _site/search.json
           if-no-files-found: error
           retention-days: 7
