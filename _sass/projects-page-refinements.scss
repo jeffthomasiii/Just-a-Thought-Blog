@@ -1,0 +1,57 @@
+/* =========================================================
+   PawPath project-card refinements
+
+   Keeps the PawPath visual and copy proportions aligned with
+   BlueGreen Guide while improving contrast for the two-tone logo.
+   ========================================================= */
+
+/* The PawPath wordmark contains both dark and light lettering.
+   A light-to-dark field gives each half of the wordmark contrast. */
+.jat-project-visual--pawpath {
+  background:
+    radial-gradient(circle at 68% 24%, rgba(255, 255, 255, 0.20), transparent 24%),
+    linear-gradient(
+      90deg,
+      #e5eadf 0%,
+      #d7e0cf 50%,
+      #a9bbae 59%,
+      #4d766b 71%,
+      #173f35 100%
+    );
+}
+
+.jat-project-visual--pawpath img {
+  filter: drop-shadow(0 8px 18px rgba(16, 47, 41, 0.16));
+}
+
+/* Reversing the card should reverse placement, not proportions.
+   The text column now matches BlueGreen Guide's wider text column,
+   and the PawPath image field matches its narrower visual column. */
+.jat-project-card--reverse {
+  grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.82fr);
+}
+
+body.dark-mode .jat-project-visual--pawpath {
+  background:
+    radial-gradient(circle at 68% 24%, rgba(255, 255, 255, 0.16), transparent 24%),
+    linear-gradient(
+      90deg,
+      #cfd9c8 0%,
+      #bdcbb6 50%,
+      #8fa69a 59%,
+      #385f55 71%,
+      #102f29 100%
+    );
+}
+
+@media (max-width: 1099.98px) {
+  .jat-project-card--reverse {
+    grid-template-columns: minmax(0, 1.22fr) minmax(260px, 0.78fr);
+  }
+}
+
+@media (max-width: 899.98px) {
+  .jat-project-card--reverse {
+    grid-template-columns: 1fr;
+  }
+}
