@@ -64,9 +64,85 @@ Briefly describe the completed outcome.
 
 ---
 
-## 2026-07-15 — DS-03: Correct global navigation and footer consistency
+## 2026-07-15 — DS-04: Redesign Posts archive
 
 **Status:** Review — implementation and validation complete; merge pending  
+**Branch:** `agent/ds-04-posts-archive`  
+**Pull request:** [#12 — DS-04 Redesign Posts archive](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/12)  
+**Implemented by:** Jeff Thomas III with ChatGPT implementation support
+
+### Summary
+
+Rebuilt the Posts archive as the first complete collection-page implementation, replacing the inherited linear list with an editorial hero, a featured newest reflection, consistent archive cards, and branded pagination.
+
+### Files changed
+
+- `posts/index.html`
+- `_sass/posts-archive.scss`
+- `assets/main.scss`
+- `docs/design-consistency/README.md`
+- `docs/design-consistency/DS-04-NOTES.md`
+- `docs/design-consistency/CHANGELOG.md`
+
+### What changed
+
+- Assigned Posts to the collection-page archetype and removed its dependency on the generic page layout.
+- Added a compact editorial archive hero and direct Search action.
+- Featured the newest post on page one and displayed the remaining four posts in a two-column grid.
+- Displayed five standard cards on later pagination pages without a false newest-post treatment.
+- Added category, series, date, excerpt, and estimated reading-time metadata.
+- Added image selection and branded fallback logic.
+- Added shared Newer and Older pagination controls with page count.
+- Added desktop, tablet, mobile, light-mode, and dark-mode treatments.
+
+### Components added, replaced, or retired
+
+- Added: `_sass/posts-archive.scss`.
+- Added: Featured archive card, standard post card, metadata labels, image fallback, archive hero, and pagination layout.
+- Replaced: Inherited `post-preview` list, dividers, and generic Bootstrap pager.
+- Retired: Posts-page use of the generic `page` layout.
+- Temporarily retained: Existing Jekyll pagination settings and post front matter.
+
+### Content changes
+
+- Added a reader-facing archive description and Search action.
+- No post titles, excerpts, URLs, or article content were rewritten.
+
+### Validation completed
+
+- [x] Jekyll/Sass production build
+- [x] Desktop
+- [x] Tablet
+- [x] Mobile
+- [x] Light mode
+- [x] Dark mode
+- [x] Keyboard targets and visible focus
+- [x] Link and pagination validation
+- [x] Heading, landmark, and accessible-name review
+- [x] Image reference and fallback-logic review
+
+### Evidence
+
+- Draft pull request: [#12](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/12)
+- GitHub Actions: `Jekyll build` run 15 completed successfully.
+- Rendered artifact: All 24 archive pages compiled successfully.
+- Page one: one featured post plus four cards.
+- Pages two through twenty-four: five cards per page.
+- All archive, Search, pagination, and post destinations resolved.
+- Visual review: page one inspected at 1440px, 768px, and 390px in light mode; 1440px and 390px in dark mode; page two inspected at 1440px.
+
+### Deferred work
+
+- Category archive pages remain out of scope.
+- Bulk excerpt rewriting remains out of scope.
+- Search interface redesign remains DS-05.
+- Individual post layouts and post URLs remain unchanged.
+
+---
+
+## 2026-07-15 — DS-03: Correct global navigation and footer consistency
+
+**Status:** Complete  
 **Branch:** `agent/ds-03-navigation-footer`  
 **Pull request:** [#11 — DS-03 Correct navigation and footer consistency](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/11)  
 **Implemented by:** Jeff Thomas III with ChatGPT implementation support
@@ -129,9 +205,9 @@ Corrected global navigation and footer behavior so readers reach direct destinat
 
 ### Evidence
 
-- Draft pull request: [#11](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/11)
-- GitHub Actions: `Jekyll build` run 11 completed successfully.
-- Rendered artifact: Compiled HTML, CSS, and JavaScript retained for seven days.
+- Merged pull request: [#11](https://github.com/jeffthomasiii/Just-a-Thought-Blog/pull/11)
+- Merge commit: `70a230b8cdb53af23a84a22b29b67ee2051c7791`
+- GitHub Actions: Final protected `Jekyll build` run 14 completed successfully.
 - Active-state review: Home, Posts, an article, Series, Podcast, Resources, About, and Search each expose one correct `aria-current="page"` value.
 - Destination review: Every internal navigation and footer link resolves within the compiled artifact.
 - Latest-post review: The action resolved to `The Honored Vessel`, the newest reflection at build time.
