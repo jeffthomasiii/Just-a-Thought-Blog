@@ -4,7 +4,7 @@
 
 {% include head.html %}
 
-<body{% if page.page_archetype %} class="jat-archetype-{{ page.page_archetype | escape }}" data-page-archetype="{{ page.page_archetype | escape }}"{% endif %}>
+<body{% if page.page_archetype or page.body_class %} class="{% if page.page_archetype %}jat-archetype-{{ page.page_archetype | escape }}{% endif %}{% if page.page_archetype and page.body_class %} {% endif %}{% if page.body_class %}{{ page.body_class | escape }}{% endif %}"{% endif %}{% if page.page_archetype %} data-page-archetype="{{ page.page_archetype | escape }}"{% endif %}>
 
   {% include navbar.html %}
 
