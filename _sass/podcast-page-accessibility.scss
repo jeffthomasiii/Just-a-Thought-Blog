@@ -1,0 +1,7 @@
+/* DS-08 — Bootstrap's .btn focus rules require a scoped explicit override. */
+
+.jat-podcast-page .jat-btn:focus-visible {
+  outline: 3px solid rgba(198, 161, 91, 0.55) !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 1px var(--jat-surface-page) !important;
+}
