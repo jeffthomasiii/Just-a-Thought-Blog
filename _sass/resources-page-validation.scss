@@ -1,0 +1,16 @@
+/* DS-10 desktop validation correction for proportional Resources media. */
+
+@media (min-width: 992px) {
+  .jat-resources-document .jat-design-principle {
+    align-items: center;
+  }
+
+  .jat-resources-document .jat-design-principle-media,
+  .jat-resources-document .jat-design-principle-copy {
+    min-width: 0;
+  }
+
+  .jat-resources-document .jat-design-principle-media {
+    width: 100%;
+  }
+}
