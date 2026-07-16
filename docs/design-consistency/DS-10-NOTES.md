@@ -3,47 +3,55 @@
 **Status:** In progress  
 **Branch:** `agent/ds-10-final-qa`
 
-## Resources review
+## Resources corrections implemented
 
-- Confirm Resources remains the preferred interior landing-page example.
-- Verify the hero, panels, cards, status labels, images, and actions against the shared component system.
-- Review repeated `Coming Soon` language and consolidate it where useful.
-- Confirm planned resource cards are clearly non-interactive.
-- Review hero and section image proportions at desktop, tablet, and mobile widths.
-- Confirm light- and dark-mode behavior after all shared-style migrations.
-- Review the separate `jat-resources.css` layer and inline background-image declarations for maintainability.
+- Retained Resources as the preferred example of an interior editorial landing page.
+- Moved Resources presentation from `assets/css/jat-resources.css` into the shared Sass compilation order.
+- Removed the page-specific stylesheet link and deleted the superseded standalone CSS file.
+- Added a page body class so every Resources presentation selector is scoped.
+- Replaced inline background-image blocks with proportional `<img>` elements.
+- Added explicit desktop, tablet, and mobile aspect ratios for hero, planned-resource, and design-principle imagery.
+- Replaced repeated `Coming Soon` language with one `In Development` section and `Planned` card labels.
+- Clarified that planned cards are previews rather than active downloads.
+- Added section heading IDs and `aria-labelledby` relationships.
+- Retained the current resource concepts, descriptions, formats, and available-now actions.
+- Added all four Resources images to the rendered validation artifact.
 
-## Cross-site QA matrix
+## Cross-site validation in progress
 
-Review Home, Posts, Series, Podcast, Resources, About, Search, and Professional Background for:
+Primary pages:
 
-- Typography hierarchy and reading rhythm.
-- Semantic color and contrast.
-- Container widths, hero spacing, panels, cards, borders, shadows, and buttons.
-- Navigation active states and footer destinations.
-- Image proportions, crops, and alternative-text treatment.
-- Heading hierarchy, landmarks, unique IDs, and accessible labels.
-- Keyboard order and visible focus.
-- Desktop, tablet, and mobile layouts.
-- Light and dark modes.
-- Broken, empty, placeholder, or misleading links.
-- Search URL restoration and filtering.
-- Posts archive pagination.
-- Professional Background print output.
+- Home
+- Posts
+- Series
+- Podcast
+- Resources
+- About
+- Search
+- Professional Background
 
-## Legacy cleanup review
+Checks:
 
-- Identify obsolete selectors only after confirming no compiled page depends on them.
-- Remove superseded page-specific polish rules where safe.
-- Remove redundant inline styles where they no longer provide data-driven values.
-- Confirm the final Sass import order.
-- Confirm referenced images exist and document intentionally retained legacy dependencies.
+- Archetype and body-class assignment
+- Heading and landmark structure
+- Navigation active states
+- Footer destinations
+- Empty, placeholder, and broken internal links
+- Desktop, tablet, and mobile overflow
+- Light- and dark-mode presentation
+- Image sizing, crops, and alternative-text treatment
+- Keyboard order and visible focus
+- Search URL state and result behavior
+- Posts pagination
+- Series anchors and expandable reading lists
+- Professional Background print output
+- CSS import order and selector scope
+- Safe legacy cleanup and documented retained dependencies
 
-## Completion requirements
+## Deferred by scope
 
-- Resources remains a strong branded landing page after any targeted corrections.
-- Every public page clearly belongs to one of the three page archetypes.
-- Shared components behave consistently across all eight primary public pages.
-- No known broken or misleading navigation remains.
-- Light mode, dark mode, responsive behavior, and accessibility checks are documented.
-- The roadmap, changelog, decision log, and deferred-work record are current.
+- Newsletter implementation
+- Podcast launch, feeds, and episode publishing
+- New category or topic archive pages
+- Large-scale editing of existing post content
+- Individual per-series landing pages
