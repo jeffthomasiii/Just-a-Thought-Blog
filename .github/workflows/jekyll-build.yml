@@ -38,5 +38,7 @@ jobs:
             _site/assets/**/*.css
             _site/assets/**/*.js
             _site/search.json
+            _site/img/bg-about.jpg
+            _site/img/jat-olive-branch.png
           if-no-files-found: error
           retention-days: 7

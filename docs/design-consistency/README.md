@@ -86,8 +86,8 @@ Shared characteristics:
 | DS-03 | Correct global navigation and footer consistency | 0 | Complete |
 | DS-04 | Redesign Posts archive | 1 | Complete |
 | DS-05 | Redesign Search experience | 1 | Complete |
-| DS-06 | Rebuild CV as Professional Background | 1 | Review |
-| DS-07 | Redesign About page | 2 | Not started |
+| DS-06 | Rebuild CV as Professional Background | 1 | Complete |
+| DS-07 | Redesign About page | 2 | Review |
 | DS-08 | Align Podcast page | 2 | Not started |
 | DS-09 | Align Series page | 2 | Not started |
 | DS-10 | Validate Resources and complete cross-site QA | 3 | Not started |
