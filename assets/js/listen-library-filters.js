@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("jat-listen-search");
   const topicSelect = document.getElementById("jat-listen-topic");
+  const formatSelect = document.getElementById("jat-listen-format");
   const sortSelect = document.getElementById("jat-listen-sort");
   const resetButton = document.getElementById("jat-listen-filter-reset");
   const countMessage = document.getElementById("jat-listen-filter-count");
@@ -8,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const grid = document.getElementById("jat-listen-grid");
   const cards = Array.from(document.querySelectorAll("[data-listen-card]"));
 
-  if (!searchInput || !topicSelect || !sortSelect || !resetButton || !grid || cards.length === 0) return;
+  if (!searchInput || !topicSelect || !formatSelect || !sortSelect || !resetButton || !grid || cards.length === 0) return;
 
   function normalize(value) {
     return (value || "").toLowerCase().trim();
@@ -52,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateLibrary() {
     const query = normalize(searchInput.value);
     const topic = normalize(topicSelect.value);
+    const format = normalize(formatSelect.value);
     let visibleCount = 0;
 
     sortCards();
@@ -59,9 +61,11 @@ document.addEventListener("DOMContentLoaded", function () {
     cards.forEach(function (card) {
       const searchText = normalize(card.dataset.search);
       const categories = normalize(card.dataset.categories).split("|").filter(Boolean);
+      const cardFormat = normalize(card.dataset.format);
       const matchesQuery = !query || searchText.includes(query);
       const matchesTopic = !topic || categories.includes(topic);
-      const isVisible = matchesQuery && matchesTopic;
+      const matchesFormat = !format || cardFormat === format;
+      const isVisible = matchesQuery && matchesTopic && matchesFormat;
 
       card.hidden = !isVisible;
       if (isVisible) visibleCount += 1;
@@ -72,15 +76,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (emptyState) emptyState.hidden = visibleCount !== 0;
-    resetButton.disabled = !query && !topic && sortSelect.value === "newest";
+    resetButton.disabled = !query && !topic && !format && sortSelect.value === "newest";
   }
 
   searchInput.addEventListener("input", updateLibrary);
   topicSelect.addEventListener("change", updateLibrary);
+  formatSelect.addEventListener("change", updateLibrary);
   sortSelect.addEventListener("change", updateLibrary);
   resetButton.addEventListener("click", function () {
     searchInput.value = "";
     topicSelect.value = "";
+    formatSelect.value = "";
     sortSelect.value = "newest";
     updateLibrary();
     searchInput.focus();
