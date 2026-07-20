@@ -31,3 +31,69 @@
 @import "hero-action-sizing";
 @import "hero-responsive-order";
 @import "professional-background-print";
+
+/* =========================================================
+   Shared editorial blockquotes
+   Uses the About page's reflective quote treatment everywhere.
+   ========================================================= */
+main blockquote {
+  position: relative;
+  margin: clamp(1.75rem, 4vw, 2.75rem) 0;
+  padding: clamp(2.15rem, 4vw, 3rem) clamp(1.5rem, 4vw, 2.8rem);
+  border: 0;
+  border-left: 3px solid var(--jat-accent-highlight);
+  border-radius: 0 var(--jat-radius-sm, 0.25rem) var(--jat-radius-sm, 0.25rem) 0;
+  background: var(--jat-surface-panel);
+  color: var(--jat-text-primary);
+}
+
+main blockquote::before {
+  position: absolute;
+  top: -0.35rem;
+  left: clamp(1rem, 3vw, 1.5rem);
+  color: var(--jat-accent-highlight);
+  font-family: var(--jat-font-display);
+  font-size: clamp(3.5rem, 8vw, 4.5rem);
+  line-height: 1;
+  content: '“';
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+main blockquote p {
+  margin: 0;
+  color: inherit;
+  font-family: var(--jat-font-reflective);
+  font-size: clamp(1.25rem, 2.6vw, 1.85rem);
+  font-style: italic;
+  line-height: 1.55;
+}
+
+main blockquote p + p {
+  margin-top: 1rem;
+}
+
+main blockquote cite,
+main blockquote footer {
+  display: block;
+  margin-top: 1rem;
+  color: var(--jat-text-secondary);
+  font-family: var(--jat-font-body);
+  font-size: 0.9rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+main blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+  main blockquote {
+    padding: 2rem 1.25rem 1.5rem;
+  }
+
+  main blockquote::before {
+    left: 0.85rem;
+  }
+}
