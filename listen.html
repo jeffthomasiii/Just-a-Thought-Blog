@@ -75,11 +75,35 @@ permalink: /listen/
         <p>Select <strong>Listen</strong> to begin here, or open the original post if you would rather read along.</p>
       </div>
 
-      <div class="jat-listen-grid">
-        {% assign audio_posts = site.posts | where_exp: "post", "post.audio_enabled != false" %}
+      {% assign audio_posts = site.posts | where_exp: "post", "post.audio_enabled != false" %}
+      <div class="jat-listen-filters jat-panel" aria-label="Filter the reflection library">
+        <div class="jat-listen-filter-field jat-listen-filter-field--search">
+          <label for="jat-listen-search">Search reflections</label>
+          <input type="search" id="jat-listen-search" placeholder="Search by title, topic, or phrase" autocomplete="off">
+        </div>
+        <div class="jat-listen-filter-field">
+          <label for="jat-listen-topic">Topic</label>
+          <select id="jat-listen-topic">
+            <option value="">All topics</option>
+            {% assign sorted_categories = site.categories | sort %}
+            {% for category in sorted_categories %}
+              <option value="{{ category[0] | downcase | escape }}">{{ category[0] }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <button type="button" class="jat-listen-filter-reset" id="jat-listen-filter-reset">Clear filters</button>
+        <p class="jat-listen-filter-count" id="jat-listen-filter-count" aria-live="polite">Showing {{ audio_posts | size }} reflections.</p>
+      </div>
+
+      <div class="jat-listen-grid" id="jat-listen-grid">
         {% for post in audio_posts %}
         {% assign card_image = post.image | default: post.background | default: post.header-image %}
-        <article class="jat-listen-card jat-card-surface">
+        {% capture search_text %}{{ post.title }} {{ post.subtitle }} {{ post.excerpt | strip_html }} {{ post.categories | join: ' ' }} {{ post.tags | join: ' ' }}{% endcapture %}
+        <article
+          class="jat-listen-card jat-card-surface"
+          data-listen-card
+          data-search="{{ search_text | downcase | strip | escape }}"
+          data-categories="{{ post.categories | join: '|' | downcase | escape }}">
           {% if card_image %}
           <a class="jat-listen-card__image" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">
             <img src="{{ card_image | relative_url }}" alt="" loading="lazy">
@@ -107,6 +131,12 @@ permalink: /listen/
         </article>
         {% endfor %}
       </div>
+
+      <div class="jat-listen-empty jat-panel" id="jat-listen-empty" hidden>
+        <p class="jat-kicker">No Matches</p>
+        <h3>No reflections match those filters.</h3>
+        <p>Try a broader search, choose another topic, or clear the filters to see the full library.</p>
+      </div>
     </section>
 
     <section class="jat-listen-podcast-link jat-panel jat-panel--parchment" aria-labelledby="listen-podcast-heading">
@@ -121,3 +151,4 @@ permalink: /listen/
 </main>
 
 <script src="{{ '/assets/js/audio-companion.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/listen-library-filters.js' | relative_url }}"></script>
