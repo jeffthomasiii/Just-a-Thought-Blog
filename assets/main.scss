@@ -36,7 +36,7 @@
    Shared editorial blockquotes
    Uses the About page's reflective quote treatment everywhere.
    ========================================================= */
-main blockquote {
+body blockquote {
   position: relative;
   margin: clamp(1.75rem, 4vw, 2.75rem) 0;
   padding: clamp(2.15rem, 4vw, 3rem) clamp(1.5rem, 4vw, 2.8rem);
@@ -47,7 +47,7 @@ main blockquote {
   color: var(--jat-text-primary);
 }
 
-main blockquote::before {
+body blockquote::before {
   position: absolute;
   top: -0.35rem;
   left: clamp(1rem, 3vw, 1.5rem);
@@ -60,7 +60,7 @@ main blockquote::before {
   pointer-events: none;
 }
 
-main blockquote p {
+body blockquote p {
   margin: 0;
   color: inherit;
   font-family: var(--jat-font-reflective);
@@ -69,12 +69,12 @@ main blockquote p {
   line-height: 1.55;
 }
 
-main blockquote p + p {
+body blockquote p + p {
   margin-top: 1rem;
 }
 
-main blockquote cite,
-main blockquote footer {
+body blockquote cite,
+body blockquote footer {
   display: block;
   margin-top: 1rem;
   color: var(--jat-text-secondary);
@@ -84,16 +84,16 @@ main blockquote footer {
   line-height: 1.5;
 }
 
-main blockquote > :last-child {
+body blockquote > :last-child {
   margin-bottom: 0;
 }
 
 @media (max-width: 575.98px) {
-  main blockquote {
+  body blockquote {
     padding: 2rem 1.25rem 1.5rem;
   }
 
-  main blockquote::before {
+  body blockquote::before {
     left: 0.85rem;
   }
 }
