@@ -99,7 +99,11 @@ permalink: /listen/
       <div class="jat-listen-grid" id="jat-listen-grid">
         {% for post in audio_posts %}
         {% assign card_image = post.image | default: post.background | default: post.header-image %}
-        {% capture search_text %}{{ post.title }} {{ post.subtitle }} {{ post.excerpt | strip_html }} {{ post.categories | join: ' ' }} {{ post.tags | join: ' ' }} {% if post.audio_file %}recorded audio{% else %}browser narration{% endif %}{% endcapture %}
+        {% assign narration_words = post.content | strip_html | number_of_words %}
+        {% assign narration_minutes = narration_words | plus: 179 | divided_by: 180 %}
+        {% if narration_minutes < 1 %}{% assign narration_minutes = 1 %}{% endif %}
+        {% capture listening_duration %}{% if post.audio_file and post.audio_duration %}{{ post.audio_duration }}{% elsif post.audio_file %}Recorded audio{% else %}Approx. {{ narration_minutes }} min{% endif %}{% endcapture %}
+        {% capture search_text %}{{ post.title }} {{ post.subtitle }} {{ post.excerpt | strip_html }} {{ post.categories | join: ' ' }} {{ post.tags | join: ' ' }} {% if post.audio_file %}recorded audio{% else %}browser narration approximately {{ narration_minutes }} minutes{% endif %}{% endcapture %}
         <article
           class="jat-listen-card jat-card-surface"
           data-listen-card
@@ -115,7 +119,7 @@ permalink: /listen/
             <p class="jat-listen-card__meta">{{ post.date | date: '%B %d, %Y' }}{% if post.categories and post.categories.size > 0 %} · {{ post.categories | first }}{% endif %}</p>
             <div class="jat-listen-card__audio-meta">
               <span class="jat-listen-card__audio-badge">{% if post.audio_file %}Recorded{% else %}Browser narration{% endif %}</span>
-              {% if post.audio_duration %}<span>{{ post.audio_duration }}</span>{% endif %}
+              <span>{{ listening_duration | strip }}</span>
             </div>
             <h3>{{ post.title }}</h3>
             {% if post.subtitle %}<p class="jat-listen-card__subtitle">{{ post.subtitle }}</p>{% endif %}
@@ -127,6 +131,7 @@ permalink: /listen/
                 class="btn jat-btn jat-btn-primary jat-listen-card__play"
                 data-audio-url="{{ post.url | relative_url }}"
                 data-audio-title="{{ post.title | escape }}"
+                data-audio-duration="{{ listening_duration | strip | escape }}"
                 {% if post.subtitle %}data-audio-subtitle="{{ post.subtitle | escape }}"{% endif %}
                 {% if post.audio_file %}data-audio-file="{{ post.audio_file | relative_url }}"{% endif %}>
                 Listen
