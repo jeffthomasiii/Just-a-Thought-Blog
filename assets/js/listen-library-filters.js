@@ -8,11 +8,65 @@ document.addEventListener("DOMContentLoaded", function () {
   const emptyState = document.getElementById("jat-listen-empty");
   const grid = document.getElementById("jat-listen-grid");
   const cards = Array.from(document.querySelectorAll("[data-listen-card]"));
+  const preferenceStorageKey = "jat-listen-library-preferences";
 
   if (!searchInput || !topicSelect || !formatSelect || !sortSelect || !resetButton || !grid || cards.length === 0) return;
 
   function normalize(value) {
     return (value || "").toLowerCase().trim();
+  }
+
+  function hasOption(select, value) {
+    return Array.from(select.options).some(function (option) {
+      return option.value === value;
+    });
+  }
+
+  function restorePreferences() {
+    try {
+      const saved = window.localStorage.getItem(preferenceStorageKey);
+      if (!saved) return;
+
+      const preferences = JSON.parse(saved);
+      if (!preferences || typeof preferences !== "object") return;
+
+      if (typeof preferences.query === "string") searchInput.value = preferences.query;
+      if (typeof preferences.topic === "string" && hasOption(topicSelect, preferences.topic)) {
+        topicSelect.value = preferences.topic;
+      }
+      if (typeof preferences.format === "string" && hasOption(formatSelect, preferences.format)) {
+        formatSelect.value = preferences.format;
+      }
+      if (typeof preferences.sort === "string" && hasOption(sortSelect, preferences.sort)) {
+        sortSelect.value = preferences.sort;
+      }
+    } catch (error) {
+      // The library remains fully usable when storage is blocked or malformed.
+    }
+  }
+
+  function savePreferences() {
+    try {
+      window.localStorage.setItem(
+        preferenceStorageKey,
+        JSON.stringify({
+          query: searchInput.value,
+          topic: topicSelect.value,
+          format: formatSelect.value,
+          sort: sortSelect.value
+        })
+      );
+    } catch (error) {
+      // Current-page filtering still works when storage is unavailable.
+    }
+  }
+
+  function clearSavedPreferences() {
+    try {
+      window.localStorage.removeItem(preferenceStorageKey);
+    } catch (error) {
+      // Nothing else is required when storage is unavailable.
+    }
   }
 
   function getDateValue(card) {
@@ -50,7 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  function updateLibrary() {
+  function updateLibrary(options) {
+    const shouldSave = !options || options.save !== false;
     const query = normalize(searchInput.value);
     const topic = normalize(topicSelect.value);
     const format = normalize(formatSelect.value);
@@ -77,6 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (emptyState) emptyState.hidden = visibleCount !== 0;
     resetButton.disabled = !query && !topic && !format && sortSelect.value === "newest";
+
+    if (shouldSave) savePreferences();
   }
 
   searchInput.addEventListener("input", updateLibrary);
@@ -88,9 +145,11 @@ document.addEventListener("DOMContentLoaded", function () {
     topicSelect.value = "";
     formatSelect.value = "";
     sortSelect.value = "newest";
-    updateLibrary();
+    clearSavedPreferences();
+    updateLibrary({ save: false });
     searchInput.focus();
   });
 
-  updateLibrary();
+  restorePreferences();
+  updateLibrary({ save: false });
 });
