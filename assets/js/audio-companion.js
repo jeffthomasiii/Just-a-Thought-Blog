@@ -3,16 +3,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const playButton = document.getElementById("jat-audio-play");
   const pauseButton = document.getElementById("jat-audio-pause");
   const stopButton = document.getElementById("jat-audio-stop");
+  const rateControl = document.getElementById("jat-audio-rate");
   const libraryButtons = Array.from(document.querySelectorAll(".jat-listen-card__play"));
   const nowListeningTitle = document.getElementById("jat-listen-now-title");
   const statusMessage = document.getElementById("jat-listen-status");
+  const rateStorageKey = "jat-audio-rate";
 
   if (!playButton || !pauseButton || !stopButton) return;
+
+  function updateStatus(message) {
+    if (statusMessage) statusMessage.textContent = message;
+  }
 
   if (!("speechSynthesis" in window)) {
     playButton.disabled = true;
     pauseButton.disabled = true;
     stopButton.disabled = true;
+    if (rateControl) rateControl.disabled = true;
     libraryButtons.forEach(function (button) {
       button.disabled = true;
     });
@@ -25,8 +32,24 @@ document.addEventListener("DOMContentLoaded", function () {
   let selectedTitle = "";
   let selectedButton = null;
 
-  function updateStatus(message) {
-    if (statusMessage) statusMessage.textContent = message;
+  function getPlaybackRate() {
+    const selectedRate = rateControl ? Number.parseFloat(rateControl.value) : 1;
+    return Number.isFinite(selectedRate) ? selectedRate : 1;
+  }
+
+  function restorePlaybackRate() {
+    if (!rateControl) return;
+
+    try {
+      const savedRate = window.localStorage.getItem(rateStorageKey);
+      const validOption = Array.from(rateControl.options).some(function (option) {
+        return option.value === savedRate;
+      });
+
+      if (savedRate && validOption) rateControl.value = savedRate;
+    } catch (error) {
+      // Playback still works when storage is unavailable.
+    }
   }
 
   function setSelectedButton(button) {
@@ -115,12 +138,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (preferredVoice) utterance.voice = preferredVoice;
 
-    utterance.rate = 0.98;
+    utterance.rate = getPlaybackRate();
     utterance.pitch = 0.9;
     utterance.volume = 1;
 
     utterance.onstart = function () {
-      updateStatus(selectedTitle ? `Playing “${selectedTitle}.”` : "Playing reflection.");
+      updateStatus(selectedTitle ? `Playing “${selectedTitle}” at ${getPlaybackRate()}×.` : `Playing reflection at ${getPlaybackRate()}×.`);
     };
 
     utterance.onend = function () {
@@ -180,6 +203,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  restorePlaybackRate();
+
   playButton.addEventListener("click", function () {
     if (window.speechSynthesis.paused) {
       window.speechSynthesis.resume();
@@ -208,6 +233,22 @@ document.addEventListener("DOMContentLoaded", function () {
     pauseButton.textContent = "Pause";
     updateStatus(selectedTitle ? `Stopped “${selectedTitle}.”` : "Playback stopped.");
   });
+
+  if (rateControl) {
+    rateControl.addEventListener("change", function () {
+      try {
+        window.localStorage.setItem(rateStorageKey, rateControl.value);
+      } catch (error) {
+        // The selected speed still applies for the current page.
+      }
+
+      if (window.speechSynthesis.speaking || window.speechSynthesis.paused) {
+        speakSelectedText();
+      } else {
+        updateStatus(`Narration speed set to ${getPlaybackRate()}×.`);
+      }
+    });
+  }
 
   libraryButtons.forEach(function (button) {
     button.setAttribute("aria-pressed", "false");
