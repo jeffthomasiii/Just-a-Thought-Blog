@@ -4,8 +4,18 @@
     <p class="jat-audio-companion__eyebrow">Audio Companion</p>
     <h2 class="jat-audio-companion__title">Listen to this reflection</h2>
     <p class="jat-audio-companion__description">
-      Use the controls below to have your browser read this post aloud.
+      {% if page.audio_file %}
+        Listen to the recorded audio companion{% if page.audio_duration %} · {{ page.audio_duration }}{% endif %}.
+      {% else %}
+        Use the controls below to have your browser read this post aloud.
+      {% endif %}
     </p>
+
+    <audio
+      id="jat-recorded-audio"
+      preload="metadata"
+      {% if page.audio_file %}data-default-audio="{{ page.audio_file | relative_url }}"{% endif %}>
+    </audio>
 
     <div class="jat-audio-companion__controls">
       <button type="button" id="jat-audio-play">Play</button>
@@ -13,7 +23,7 @@
       <button type="button" id="jat-audio-stop">Stop</button>
       <label class="jat-audio-companion__speed" for="jat-audio-rate">
         <span>Speed</span>
-        <select id="jat-audio-rate" aria-label="Narration speed">
+        <select id="jat-audio-rate" aria-label="Playback speed">
           <option value="0.85">0.85×</option>
           <option value="1" selected>1×</option>
           <option value="1.15">1.15×</option>
