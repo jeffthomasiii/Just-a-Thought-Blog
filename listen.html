@@ -77,7 +77,7 @@ permalink: /listen/
       </div>
 
       {% assign audio_posts = site.posts | where_exp: "post", "post.audio_enabled != false" %}
-      <div class="jat-listen-filters jat-panel" aria-label="Filter the reflection library">
+      <div class="jat-listen-filters jat-panel" aria-label="Filter and sort the reflection library">
         <div class="jat-listen-filter-field jat-listen-filter-field--search">
           <label for="jat-listen-search">Search reflections</label>
           <input type="search" id="jat-listen-search" placeholder="Search by title, topic, or phrase" autocomplete="off">
@@ -92,6 +92,15 @@ permalink: /listen/
             {% endfor %}
           </select>
         </div>
+        <div class="jat-listen-filter-field">
+          <label for="jat-listen-sort">Sort by</label>
+          <select id="jat-listen-sort">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="shortest">Shortest first</option>
+            <option value="longest">Longest first</option>
+          </select>
+        </div>
         <button type="button" class="jat-listen-filter-reset" id="jat-listen-filter-reset">Clear filters</button>
         <p class="jat-listen-filter-count" id="jat-listen-filter-count" aria-live="polite">Showing {{ audio_posts | size }} reflections.</p>
       </div>
@@ -102,13 +111,26 @@ permalink: /listen/
         {% assign narration_words = post.content | strip_html | number_of_words %}
         {% assign narration_minutes = narration_words | plus: 179 | divided_by: 180 %}
         {% if narration_minutes < 1 %}{% assign narration_minutes = 1 %}{% endif %}
+        {% if post.audio_file and post.audio_duration %}
+          {% assign duration_sort_value = post.audio_duration | split: ' ' | first | plus: 0 %}
+          {% assign duration_known = true %}
+        {% elsif post.audio_file %}
+          {% assign duration_sort_value = 0 %}
+          {% assign duration_known = false %}
+        {% else %}
+          {% assign duration_sort_value = narration_minutes %}
+          {% assign duration_known = true %}
+        {% endif %}
         {% capture listening_duration %}{% if post.audio_file and post.audio_duration %}{{ post.audio_duration }}{% elsif post.audio_file %}Recorded audio{% else %}Approx. {{ narration_minutes }} min{% endif %}{% endcapture %}
         {% capture search_text %}{{ post.title }} {{ post.subtitle }} {{ post.excerpt | strip_html }} {{ post.categories | join: ' ' }} {{ post.tags | join: ' ' }} {% if post.audio_file %}recorded audio{% else %}browser narration approximately {{ narration_minutes }} minutes{% endif %}{% endcapture %}
         <article
           class="jat-listen-card jat-card-surface"
           data-listen-card
           data-search="{{ search_text | downcase | strip | escape }}"
-          data-categories="{{ post.categories | join: '|' | downcase | escape }}">
+          data-categories="{{ post.categories | join: '|' | downcase | escape }}"
+          data-date="{{ post.date | date_to_xmlschema }}"
+          data-duration="{{ duration_sort_value }}"
+          data-duration-known="{{ duration_known }}">
           {% if card_image %}
           <a class="jat-listen-card__image" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">
             <img src="{{ card_image | relative_url }}" alt="" loading="lazy">
