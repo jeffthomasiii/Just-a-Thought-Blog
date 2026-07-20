@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const grid = document.getElementById("jat-listen-grid");
   const cards = Array.from(document.querySelectorAll("[data-listen-card]"));
   const preferenceStorageKey = "jat-listen-library-preferences";
+  const urlParameterNames = ["q", "topic", "format", "sort"];
 
   if (!searchInput || !topicSelect || !formatSelect || !sortSelect || !resetButton || !grid || cards.length === 0) return;
 
@@ -20,6 +21,47 @@ document.addEventListener("DOMContentLoaded", function () {
     return Array.from(select.options).some(function (option) {
       return option.value === value;
     });
+  }
+
+  function hasLibraryUrlState() {
+    const parameters = new URLSearchParams(window.location.search);
+    return urlParameterNames.some(function (name) {
+      return parameters.has(name);
+    });
+  }
+
+  function restoreUrlState() {
+    const parameters = new URLSearchParams(window.location.search);
+    const query = parameters.get("q");
+    const topic = parameters.get("topic");
+    const format = parameters.get("format");
+    const sort = parameters.get("sort");
+
+    searchInput.value = typeof query === "string" ? query : "";
+    topicSelect.value = typeof topic === "string" && hasOption(topicSelect, topic) ? topic : "";
+    formatSelect.value = typeof format === "string" && hasOption(formatSelect, format) ? format : "";
+    sortSelect.value = typeof sort === "string" && hasOption(sortSelect, sort) ? sort : "newest";
+  }
+
+  function syncUrlState() {
+    if (!window.history || typeof window.history.replaceState !== "function") return;
+
+    const url = new URL(window.location.href);
+    const query = searchInput.value.trim();
+
+    if (query) url.searchParams.set("q", query);
+    else url.searchParams.delete("q");
+
+    if (topicSelect.value) url.searchParams.set("topic", topicSelect.value);
+    else url.searchParams.delete("topic");
+
+    if (formatSelect.value) url.searchParams.set("format", formatSelect.value);
+    else url.searchParams.delete("format");
+
+    if (sortSelect.value && sortSelect.value !== "newest") url.searchParams.set("sort", sortSelect.value);
+    else url.searchParams.delete("sort");
+
+    window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
   }
 
   function restorePreferences() {
@@ -106,6 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateLibrary(options) {
     const shouldSave = !options || options.save !== false;
+    const shouldSyncUrl = !options || options.syncUrl !== false;
     const query = normalize(searchInput.value);
     const topic = normalize(topicSelect.value);
     const format = normalize(formatSelect.value);
@@ -134,6 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
     resetButton.disabled = !query && !topic && !format && sortSelect.value === "newest";
 
     if (shouldSave) savePreferences();
+    if (shouldSyncUrl) syncUrlState();
   }
 
   searchInput.addEventListener("input", updateLibrary);
@@ -150,6 +194,13 @@ document.addEventListener("DOMContentLoaded", function () {
     searchInput.focus();
   });
 
-  restorePreferences();
-  updateLibrary({ save: false });
+  window.addEventListener("popstate", function () {
+    restoreUrlState();
+    updateLibrary({ save: false, syncUrl: false });
+  });
+
+  if (hasLibraryUrlState()) restoreUrlState();
+  else restorePreferences();
+
+  updateLibrary({ save: false, syncUrl: false });
 });
