@@ -1,0 +1,42 @@
+.jat-listen-page .jat-audio-companion__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.jat-listen-page .jat-audio-companion__speed {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 0 0 0.25rem;
+  color: var(--jat-text-secondary);
+  font-family: var(--jat-font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.jat-listen-page .jat-audio-companion__speed select {
+  border: 1px solid var(--jat-border-strong, rgba(79, 93, 58, 0.45));
+  border-radius: var(--jat-radius-sm, 0.25rem);
+  padding: 0.4rem 0.5rem;
+  background: var(--jat-surface-page, #f6f1e7);
+  color: var(--jat-text-primary);
+  font: inherit;
+  cursor: pointer;
+}
+
+body.dark-mode.jat-listen-page .jat-audio-companion__speed select {
+  border-color: rgba(162, 177, 121, 0.58);
+  background: #22251d;
+  color: #f5f5f5;
+}
+
+@media (max-width: 575.98px) {
+  .jat-listen-page .jat-audio-companion__speed {
+    width: 100%;
+    margin: 0.35rem 0 0;
+  }
+}
