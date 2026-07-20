@@ -70,6 +70,12 @@
   cursor: pointer;
 }
 
+.jat-listen-page .jat-audio-companion__voice select {
+  width: min(240px, 34vw);
+  max-width: 240px;
+  text-transform: none;
+}
+
 body.dark-mode.jat-listen-page .jat-audio-companion__controls > button {
   border-color: rgba(162, 177, 121, 0.62);
   color: #dde8bc;
@@ -102,5 +108,10 @@ body.dark-mode.jat-listen-page .jat-audio-companion__speed select {
   .jat-listen-page .jat-audio-companion__speed {
     width: 100%;
     margin: 0.35rem 0 0;
+  }
+
+  .jat-listen-page .jat-audio-companion__voice select {
+    width: 100%;
+    max-width: none;
   }
 }
