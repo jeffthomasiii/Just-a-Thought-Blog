@@ -5,6 +5,47 @@
   align-items: center;
 }
 
+.jat-listen-page .jat-audio-companion__controls > button {
+  min-height: 38px;
+  border: 1px solid var(--jat-accent-primary, #4f5d3a);
+  border-radius: var(--jat-radius-sm, 0.25rem);
+  padding: 0.55rem 0.85rem;
+  background: transparent;
+  color: var(--jat-accent-primary, #4f5d3a);
+  font-family: var(--jat-font-body);
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.jat-listen-page .jat-audio-companion__controls > button:first-child {
+  border-color: var(--jat-accent-primary, #4f5d3a);
+  background: var(--jat-accent-primary, #4f5d3a);
+  color: var(--jat-text-on-accent, #f6f1e7);
+}
+
+.jat-listen-page .jat-audio-companion__controls > button:hover,
+.jat-listen-page .jat-audio-companion__controls > button:focus-visible {
+  border-color: var(--jat-text-primary, #252822);
+  background: var(--jat-text-primary, #252822);
+  color: var(--jat-surface-page, #f6f1e7);
+  outline: none;
+}
+
+.jat-listen-page .jat-audio-companion__controls > button:focus-visible,
+.jat-listen-page .jat-audio-companion__speed select:focus-visible {
+  box-shadow: 0 0 0 3px rgba(198, 161, 91, 0.3);
+}
+
+.jat-listen-page .jat-audio-companion__controls > button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 .jat-listen-page .jat-audio-companion__speed {
   display: inline-flex;
   align-items: center;
@@ -19,13 +60,32 @@
 }
 
 .jat-listen-page .jat-audio-companion__speed select {
+  min-height: 38px;
   border: 1px solid var(--jat-border-strong, rgba(79, 93, 58, 0.45));
   border-radius: var(--jat-radius-sm, 0.25rem);
-  padding: 0.4rem 0.5rem;
-  background: var(--jat-surface-page, #f6f1e7);
+  padding: 0.4rem 1.8rem 0.4rem 0.6rem;
+  background-color: var(--jat-surface-page, #f6f1e7);
   color: var(--jat-text-primary);
   font: inherit;
   cursor: pointer;
+}
+
+body.dark-mode.jat-listen-page .jat-audio-companion__controls > button {
+  border-color: rgba(162, 177, 121, 0.62);
+  color: #dde8bc;
+}
+
+body.dark-mode.jat-listen-page .jat-audio-companion__controls > button:first-child {
+  border-color: #a2b179;
+  background: #a2b179;
+  color: #121212;
+}
+
+body.dark-mode.jat-listen-page .jat-audio-companion__controls > button:hover,
+body.dark-mode.jat-listen-page .jat-audio-companion__controls > button:focus-visible {
+  border-color: #d6b36b;
+  background: #d6b36b;
+  color: #121212;
 }
 
 body.dark-mode.jat-listen-page .jat-audio-companion__speed select {
@@ -35,6 +95,10 @@ body.dark-mode.jat-listen-page .jat-audio-companion__speed select {
 }
 
 @media (max-width: 575.98px) {
+  .jat-listen-page .jat-audio-companion__controls > button {
+    flex: 1 1 auto;
+  }
+
   .jat-listen-page .jat-audio-companion__speed {
     width: 100%;
     margin: 0.35rem 0 0;
