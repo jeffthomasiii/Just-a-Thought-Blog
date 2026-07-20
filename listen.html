@@ -93,6 +93,14 @@ permalink: /listen/
           </select>
         </div>
         <div class="jat-listen-filter-field">
+          <label for="jat-listen-format">Audio format</label>
+          <select id="jat-listen-format">
+            <option value="">All formats</option>
+            <option value="recorded">Recorded audio</option>
+            <option value="browser">Browser narration</option>
+          </select>
+        </div>
+        <div class="jat-listen-filter-field">
           <label for="jat-listen-sort">Sort by</label>
           <select id="jat-listen-sort">
             <option value="newest">Newest first</option>
@@ -128,6 +136,7 @@ permalink: /listen/
           data-listen-card
           data-search="{{ search_text | downcase | strip | escape }}"
           data-categories="{{ post.categories | join: '|' | downcase | escape }}"
+          data-format="{% if post.audio_file %}recorded{% else %}browser{% endif %}"
           data-date="{{ post.date | date_to_xmlschema }}"
           data-duration="{{ duration_sort_value }}"
           data-duration-known="{{ duration_known }}">
@@ -168,7 +177,7 @@ permalink: /listen/
       <div class="jat-listen-empty jat-panel" id="jat-listen-empty" hidden>
         <p class="jat-kicker">No Matches</p>
         <h3>No reflections match those filters.</h3>
-        <p>Try a broader search, choose another topic, or clear the filters to see the full library.</p>
+        <p>Try a broader search, choose another topic or format, or clear the filters to see the full library.</p>
       </div>
     </section>
 
