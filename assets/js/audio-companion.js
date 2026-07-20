@@ -5,36 +5,31 @@ document.addEventListener("DOMContentLoaded", function () {
   const stopButton = document.getElementById("jat-audio-stop");
   const rateControl = document.getElementById("jat-audio-rate");
   const voiceControl = document.getElementById("jat-audio-voice");
+  const voiceField = voiceControl ? voiceControl.closest(".jat-audio-companion__voice") : null;
+  const recordedAudio = document.getElementById("jat-recorded-audio");
   const libraryButtons = Array.from(document.querySelectorAll(".jat-listen-card__play"));
   const nowListeningTitle = document.getElementById("jat-listen-now-title");
   const statusMessage = document.getElementById("jat-listen-status");
   const rateStorageKey = "jat-audio-rate";
   const voiceStorageKey = "jat-audio-voice";
+  const hasSpeech = "speechSynthesis" in window;
 
   if (!playButton || !pauseButton || !stopButton) return;
-
-  function updateStatus(message) {
-    if (statusMessage) statusMessage.textContent = message;
-  }
-
-  if (!("speechSynthesis" in window)) {
-    playButton.disabled = true;
-    pauseButton.disabled = true;
-    stopButton.disabled = true;
-    if (rateControl) rateControl.disabled = true;
-    if (voiceControl) voiceControl.disabled = true;
-    libraryButtons.forEach(function (button) {
-      button.disabled = true;
-    });
-    updateStatus("Audio playback is not supported by this browser.");
-    return;
-  }
 
   let utterance = null;
   let selectedText = "";
   let selectedTitle = "";
   let selectedButton = null;
+  let selectedAudioFile = recordedAudio?.dataset.defaultAudio || "";
   let availableVoices = [];
+
+  function updateStatus(message) {
+    if (statusMessage) statusMessage.textContent = message;
+  }
+
+  function isRecordedMode() {
+    return Boolean(selectedAudioFile && recordedAudio);
+  }
 
   function getPlaybackRate() {
     const selectedRate = rateControl ? Number.parseFloat(rateControl.value) : 1;
@@ -49,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const validOption = Array.from(rateControl.options).some(function (option) {
         return option.value === savedRate;
       });
-
       if (savedRate && validOption) rateControl.value = savedRate;
     } catch (error) {
       // Playback still works when storage is unavailable.
@@ -62,6 +56,54 @@ document.addEventListener("DOMContentLoaded", function () {
       item.textContent = item === button ? "Selected" : "Listen";
     });
     selectedButton = button;
+  }
+
+  function stopSpeech() {
+    if (hasSpeech) window.speechSynthesis.cancel();
+    utterance = null;
+  }
+
+  function stopRecorded(resetPosition) {
+    if (!recordedAudio) return;
+    recordedAudio.pause();
+    if (resetPosition) recordedAudio.currentTime = 0;
+  }
+
+  function updateControlAvailability() {
+    const usable = isRecordedMode() || hasSpeech;
+    playButton.disabled = !usable;
+    pauseButton.disabled = !usable;
+    stopButton.disabled = !usable;
+    if (rateControl) rateControl.disabled = !usable;
+    if (voiceField) voiceField.hidden = isRecordedMode();
+    if (voiceControl) voiceControl.disabled = isRecordedMode() || !hasSpeech || availableVoices.length === 0;
+
+    libraryButtons.forEach(function (button) {
+      const hasRecordedFile = Boolean(button.dataset.audioFile);
+      button.disabled = !hasSpeech && !hasRecordedFile;
+    });
+  }
+
+  function setPlaybackMode(audioFile) {
+    stopSpeech();
+    stopRecorded(true);
+    selectedAudioFile = audioFile || "";
+
+    if (recordedAudio) {
+      if (selectedAudioFile) {
+        if (recordedAudio.getAttribute("src") !== selectedAudioFile) {
+          recordedAudio.setAttribute("src", selectedAudioFile);
+          recordedAudio.load();
+        }
+        recordedAudio.playbackRate = getPlaybackRate();
+      } else {
+        recordedAudio.removeAttribute("src");
+        recordedAudio.load();
+      }
+    }
+
+    pauseButton.textContent = "Pause";
+    updateControlAvailability();
   }
 
   function getPreferredVoice() {
@@ -78,15 +120,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return voice.name === "Microsoft Brian Online (Natural) - English (United States)";
       }) ||
       voices.find(function (voice) {
-        return voice.name.includes("Roger Online") && voice.lang === "en-US";
-      }) ||
-      voices.find(function (voice) {
-        return voice.name.includes("Christopher Online") && voice.lang === "en-US";
-      }) ||
-      voices.find(function (voice) {
-        return voice.name.includes("Brian Online") && voice.lang === "en-US";
-      }) ||
-      voices.find(function (voice) {
         return voice.name.includes("Online") && voice.lang === "en-US";
       }) ||
       voices.find(function (voice) {
@@ -98,14 +131,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function getSelectedVoice() {
     if (!voiceControl || !voiceControl.value) return getPreferredVoice();
-
     return availableVoices.find(function (voice) {
       return voice.voiceURI === voiceControl.value;
     }) || getPreferredVoice();
   }
 
   function populateVoiceOptions() {
-    if (!voiceControl) return;
+    if (!voiceControl || !hasSpeech) return;
 
     const currentValue = voiceControl.value;
     availableVoices = window.speechSynthesis
@@ -121,7 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
     voiceControl.innerHTML = '<option value="">Automatic</option>';
-
     availableVoices.forEach(function (voice) {
       const option = document.createElement("option");
       option.value = voice.voiceURI;
@@ -142,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     voiceControl.value = hasDesiredVoice ? desiredValue : "";
-    voiceControl.disabled = availableVoices.length === 0;
+    updateControlAvailability();
   }
 
   function cleanText(text) {
@@ -165,32 +196,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function getCurrentPostText() {
     if (!postBody) return "";
-
     const title = document.querySelector(".jat-post-intro h1")?.innerText || "";
     const subtitle = document.querySelector(".jat-post-intro .subheading")?.innerText || "";
     const meta = document.querySelector(".jat-post-intro .meta")?.innerText || "";
     const body = postBody.innerText || "";
-
     selectedTitle = title;
     return buildReflectionText(title, subtitle, meta, body);
   }
 
-  function speakSelectedText() {
-    const text = selectedText || getCurrentPostText();
+  function playRecorded() {
+    if (!recordedAudio || !selectedAudioFile) return;
+    stopSpeech();
+    recordedAudio.playbackRate = getPlaybackRate();
+    recordedAudio
+      .play()
+      .then(function () {
+        pauseButton.textContent = "Pause";
+        updateStatus(selectedTitle ? `Playing recorded audio for “${selectedTitle}.”` : "Playing recorded audio.");
+      })
+      .catch(function () {
+        updateStatus("The recording could not begin on this device. Press Play again or open the post directly.");
+      });
+  }
 
+  function speakSelectedText() {
+    if (!hasSpeech) {
+      updateStatus("Browser narration is not supported by this device.");
+      return;
+    }
+
+    const text = selectedText || getCurrentPostText();
     if (!text) {
       updateStatus("Choose a reflection before pressing Play.");
       return;
     }
 
-    window.speechSynthesis.cancel();
+    stopRecorded(true);
+    stopSpeech();
     pauseButton.textContent = "Pause";
 
     utterance = new SpeechSynthesisUtterance(text);
     const selectedVoice = getSelectedVoice();
-
     if (selectedVoice) utterance.voice = selectedVoice;
-
     utterance.rate = getPlaybackRate();
     utterance.pitch = 0.9;
     utterance.volume = 1;
@@ -201,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     utterance.onend = function () {
-      updateStatus(selectedTitle ? `Finished “${selectedTitle}."` : "Reflection finished.");
+      updateStatus(selectedTitle ? `Finished “${selectedTitle}.”` : "Reflection finished.");
       pauseButton.textContent = "Pause";
     };
 
@@ -214,29 +261,41 @@ document.addEventListener("DOMContentLoaded", function () {
     window.speechSynthesis.speak(utterance);
   }
 
+  function playSelected() {
+    if (isRecordedMode()) playRecorded();
+    else speakSelectedText();
+  }
+
   async function loadLibraryReflection(button) {
     const url = button.dataset.audioUrl;
     const title = button.dataset.audioTitle || "Selected reflection";
     const subtitle = button.dataset.audioSubtitle || "";
+    const audioFile = button.dataset.audioFile || "";
 
-    if (!url) return;
+    if (!url && !audioFile) return;
 
-    window.speechSynthesis.cancel();
     setSelectedButton(button);
     selectedTitle = title;
-
+    selectedText = "";
     if (nowListeningTitle) nowListeningTitle.textContent = title;
+
+    if (audioFile) {
+      setPlaybackMode(audioFile);
+      updateStatus(`Ready to play the recorded audio for “${title}.”`);
+      playRecorded();
+      return;
+    }
+
+    setPlaybackMode("");
     updateStatus("Loading the reflection…");
 
     try {
       const response = await fetch(url, { credentials: "same-origin" });
       if (!response.ok) throw new Error("Unable to load reflection");
-
       const html = await response.text();
       const parsedPage = new DOMParser().parseFromString(html, "text/html");
       const parsedBody = parsedPage.getElementById("jat-post-body");
       const parsedMeta = parsedPage.querySelector(".jat-post-intro .meta");
-
       if (!parsedBody) throw new Error("Reflection content was not found");
 
       selectedText = buildReflectionText(
@@ -245,8 +304,7 @@ document.addEventListener("DOMContentLoaded", function () {
         parsedMeta ? parsedMeta.innerText : "",
         parsedBody.innerText
       );
-
-      updateStatus(`Ready to play “${title}."`);
+      updateStatus(`Ready to play “${title}.”`);
       speakSelectedText();
     } catch (error) {
       selectedText = "";
@@ -259,14 +317,28 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   restorePlaybackRate();
-  populateVoiceOptions();
-  window.speechSynthesis.addEventListener("voiceschanged", populateVoiceOptions);
+  if (selectedAudioFile) setPlaybackMode(selectedAudioFile);
+  else updateControlAvailability();
+
+  if (hasSpeech) {
+    populateVoiceOptions();
+    window.speechSynthesis.addEventListener("voiceschanged", populateVoiceOptions);
+  }
+
+  if (!hasSpeech && !selectedAudioFile) {
+    updateStatus("Browser narration is not supported by this device. Recorded reflections will still play when available.");
+  }
 
   playButton.addEventListener("click", function () {
-    if (window.speechSynthesis.paused) {
+    if (isRecordedMode()) {
+      playRecorded();
+      return;
+    }
+
+    if (hasSpeech && window.speechSynthesis.paused) {
       window.speechSynthesis.resume();
       pauseButton.textContent = "Pause";
-      updateStatus(selectedTitle ? `Playing “${selectedTitle}."` : "Playing reflection.");
+      updateStatus(selectedTitle ? `Playing “${selectedTitle}.”` : "Playing reflection.");
       return;
     }
 
@@ -274,21 +346,34 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   pauseButton.addEventListener("click", function () {
+    if (isRecordedMode() && recordedAudio) {
+      if (recordedAudio.paused) {
+        playRecorded();
+      } else {
+        recordedAudio.pause();
+        pauseButton.textContent = "Resume";
+        updateStatus(selectedTitle ? `Paused “${selectedTitle}.”` : "Recording paused.");
+      }
+      return;
+    }
+
+    if (!hasSpeech) return;
     if (window.speechSynthesis.paused) {
       window.speechSynthesis.resume();
       pauseButton.textContent = "Pause";
-      updateStatus(selectedTitle ? `Playing “${selectedTitle}."` : "Playing reflection.");
+      updateStatus(selectedTitle ? `Playing “${selectedTitle}.”` : "Playing reflection.");
     } else if (window.speechSynthesis.speaking) {
       window.speechSynthesis.pause();
       pauseButton.textContent = "Resume";
-      updateStatus(selectedTitle ? `Paused “${selectedTitle}."` : "Reflection paused.");
+      updateStatus(selectedTitle ? `Paused “${selectedTitle}.”` : "Reflection paused.");
     }
   });
 
   stopButton.addEventListener("click", function () {
-    window.speechSynthesis.cancel();
+    stopSpeech();
+    stopRecorded(true);
     pauseButton.textContent = "Pause";
-    updateStatus(selectedTitle ? `Stopped “${selectedTitle}."` : "Playback stopped.");
+    updateStatus(selectedTitle ? `Stopped “${selectedTitle}.”` : "Playback stopped.");
   });
 
   if (rateControl) {
@@ -299,7 +384,10 @@ document.addEventListener("DOMContentLoaded", function () {
         // The selected speed still applies for the current page.
       }
 
-      if (window.speechSynthesis.speaking || window.speechSynthesis.paused) {
+      if (isRecordedMode() && recordedAudio) {
+        recordedAudio.playbackRate = getPlaybackRate();
+        updateStatus(`Playback speed set to ${getPlaybackRate()}×.`);
+      } else if (hasSpeech && (window.speechSynthesis.speaking || window.speechSynthesis.paused)) {
         speakSelectedText();
       } else {
         updateStatus(`Narration speed set to ${getPlaybackRate()}×.`);
@@ -317,12 +405,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const selectedVoice = getSelectedVoice();
       const voiceName = selectedVoice ? selectedVoice.name : "Automatic";
-
-      if (window.speechSynthesis.speaking || window.speechSynthesis.paused) {
+      if (hasSpeech && (window.speechSynthesis.speaking || window.speechSynthesis.paused)) {
         speakSelectedText();
       } else {
         updateStatus(`Narration voice set to ${voiceName}.`);
       }
+    });
+  }
+
+  if (recordedAudio) {
+    recordedAudio.addEventListener("ended", function () {
+      pauseButton.textContent = "Pause";
+      updateStatus(selectedTitle ? `Finished “${selectedTitle}.”` : "Recording finished.");
+    });
+
+    recordedAudio.addEventListener("error", function () {
+      if (!selectedAudioFile) return;
+      updateStatus("The recorded audio file could not be loaded.");
     });
   }
 
@@ -334,6 +433,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   window.addEventListener("beforeunload", function () {
-    window.speechSynthesis.cancel();
+    stopSpeech();
+    stopRecorded(false);
   });
 });
