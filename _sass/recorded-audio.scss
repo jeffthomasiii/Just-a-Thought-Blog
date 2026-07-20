@@ -1,0 +1,40 @@
+#jat-recorded-audio {
+  display: none;
+}
+
+.jat-audio-companion__voice[hidden] {
+  display: none !important;
+}
+
+.jat-listen-card__audio-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  margin: 0 0 0.65rem;
+  color: var(--jat-text-secondary);
+  font-family: var(--jat-font-body);
+  font-size: 0.78rem;
+}
+
+.jat-listen-card__audio-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  border: 1px solid rgba(79, 93, 58, 0.28);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  background: rgba(239, 228, 211, 0.55);
+  color: var(--jat-accent-primary, #4f5d3a);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+body.dark-mode .jat-listen-card__audio-badge {
+  border-color: rgba(162, 177, 121, 0.38);
+  background: rgba(162, 177, 121, 0.12);
+  color: #dde8bc;
+}
