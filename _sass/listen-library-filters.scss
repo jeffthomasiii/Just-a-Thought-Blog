@@ -1,58 +1,59 @@
 .jat-listen-filters {
   display: grid;
-  grid-template-columns: minmax(260px, 1.4fr) repeat(3, minmax(150px, 0.58fr)) auto;
-  gap: 1rem;
+  grid-template-columns: minmax(240px, 1.35fr) repeat(3, minmax(135px, 0.55fr)) auto;
+  gap: 0.7rem;
   align-items: end;
-  margin-bottom: 1.75rem;
-  padding: 1.25rem;
+  margin-bottom: 1.35rem;
+  padding: 0.85rem 1rem;
+  background: rgba(255, 253, 248, 0.42);
 }
 
 .jat-listen-filter-field {
   display: grid;
-  gap: 0.4rem;
+  gap: 0.28rem;
 }
 
 .jat-listen-filter-field label {
-  color: var(--jat-text-primary);
+  color: var(--jat-text-secondary);
   font-family: var(--jat-font-body);
-  font-size: 0.76rem;
+  font-size: 0.67rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.045em;
   text-transform: uppercase;
 }
 
 .jat-listen-filter-field input,
 .jat-listen-filter-field select {
   width: 100%;
-  min-height: 44px;
-  border: 1px solid var(--jat-border-strong, rgba(79, 93, 58, 0.35));
+  min-height: 36px;
+  border: 1px solid var(--jat-border-strong, rgba(79, 93, 58, 0.28));
   border-radius: var(--jat-radius-sm, 0.25rem);
-  padding: 0.65rem 0.75rem;
-  background: var(--jat-surface-page, #f6f1e7);
+  padding: 0.46rem 0.6rem;
+  background: rgba(246, 241, 231, 0.68);
   color: var(--jat-text-primary);
   font-family: var(--jat-font-body);
-  font-size: 0.95rem;
+  font-size: 0.84rem;
 }
 
 .jat-listen-filter-field input:focus-visible,
 .jat-listen-filter-field select:focus-visible,
 .jat-listen-filter-reset:focus-visible {
   border-color: var(--jat-accent-primary, #4f5d3a);
-  box-shadow: 0 0 0 3px rgba(198, 161, 91, 0.25);
+  box-shadow: 0 0 0 2px rgba(198, 161, 91, 0.22);
   outline: none;
 }
 
 .jat-listen-filter-reset {
-  min-height: 44px;
-  border: 1px solid var(--jat-accent-primary, #4f5d3a);
+  min-height: 36px;
+  border: 1px solid rgba(79, 93, 58, 0.38);
   border-radius: var(--jat-radius-sm, 0.25rem);
-  padding: 0.65rem 0.9rem;
+  padding: 0.46rem 0.7rem;
   background: transparent;
   color: var(--jat-accent-primary, #4f5d3a);
   font-family: var(--jat-font-body);
-  font-size: 0.76rem;
+  font-size: 0.67rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.035em;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -65,14 +66,14 @@
 
 .jat-listen-filter-reset:disabled {
   cursor: not-allowed;
-  opacity: 0.45;
+  opacity: 0.38;
 }
 
 .jat-listen-filter-count {
   grid-column: 1 / -1;
-  margin: 0;
+  margin: -0.05rem 0 0;
   color: var(--jat-text-secondary);
-  font-size: 0.88rem;
+  font-size: 0.78rem;
 }
 
 .jat-listen-card[hidden] {
@@ -101,18 +102,22 @@
 
 body.dark-mode .jat-listen-filters,
 body.dark-mode .jat-listen-empty {
-  border-color: rgba(214, 179, 107, 0.2);
+  border-color: rgba(214, 179, 107, 0.16);
+}
+
+body.dark-mode .jat-listen-filters {
+  background: rgba(24, 25, 21, 0.46);
 }
 
 body.dark-mode .jat-listen-filter-field input,
 body.dark-mode .jat-listen-filter-field select {
-  border-color: rgba(162, 177, 121, 0.45);
-  background: #22251d;
+  border-color: rgba(162, 177, 121, 0.34);
+  background: rgba(34, 37, 29, 0.72);
   color: #f5f5f5;
 }
 
 body.dark-mode .jat-listen-filter-reset {
-  border-color: rgba(162, 177, 121, 0.62);
+  border-color: rgba(162, 177, 121, 0.46);
   color: #dde8bc;
 }
 
@@ -131,6 +136,14 @@ body.dark-mode .jat-listen-filter-reset:hover:not(:disabled) {
 @media (max-width: 767.98px) {
   .jat-listen-filters {
     grid-template-columns: 1fr;
+    gap: 0.6rem;
+    padding: 0.8rem;
+  }
+
+  .jat-listen-filter-field input,
+  .jat-listen-filter-field select,
+  .jat-listen-filter-reset {
+    min-height: 40px;
   }
 
   .jat-listen-filter-reset {
