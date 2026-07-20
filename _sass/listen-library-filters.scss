@@ -1,6 +1,6 @@
 .jat-listen-filters {
   display: grid;
-  grid-template-columns: minmax(260px, 1.4fr) minmax(190px, 0.65fr) auto;
+  grid-template-columns: minmax(260px, 1.4fr) minmax(170px, 0.65fr) minmax(170px, 0.65fr) auto;
   gap: 1rem;
   align-items: end;
   margin-bottom: 1.75rem;
@@ -120,6 +120,12 @@ body.dark-mode .jat-listen-filter-reset:hover:not(:disabled) {
   border-color: #d6b36b;
   background: #d6b36b;
   color: #121212;
+}
+
+@media (max-width: 991.98px) {
+  .jat-listen-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 767.98px) {
