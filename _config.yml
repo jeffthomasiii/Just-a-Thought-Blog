@@ -3,8 +3,8 @@ email:              jeff.thomas.iii@gmail.com
 description:        Reflecting on faith, life, and the thoughts that shape us.
 author:             Jeff Thomas III
 timezone:           America/Los_Angeles
-baseurl:            "/Just-a-Thought-Blog"
-url:                "https://jeffthomasiii.github.io"
+baseurl:            ""
+url:                "https://justathoughtblog.org"
 
 # Social Profiles
 twitter_username:   jeffthomasiii
