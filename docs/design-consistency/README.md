@@ -1,44 +1,40 @@
-# Just A Thought Blog — Design Consistency Roadmap
+# Just A Thought Blog — Design Consistency Record
 
-**Status:** Final implementation in review  
+**Status:** Complete  
 **Owner:** Jeff Thomas III  
 **Repository:** `jeffthomasiii/Just-a-Thought-Blog`  
-**Baseline:** Home page and Resources page editorial-board design system  
-**Last updated:** 2026-07-16
+**Baseline:** Home and Resources editorial design system  
+**Completed:** 2026-07-16  
+**Documentation refreshed:** 2026-07-27
 
 ## Purpose
 
-This roadmap provides a systematic process for bringing the public pages of Just A Thought Blog into a consistent visual and brand system without making every page look identical.
+This folder records the completed design-consistency initiative that brought the primary public pages of Just A Thought Blog into one coordinated visual and brand system without making every page look identical.
 
-The Home page establishes the primary visual standard. The Resources page demonstrates how that system can be adapted to an interior landing page. Other pages should share the same typography, colors, spacing, component language, navigation, footer, and responsive behavior while retaining page-specific structure and purpose.
+The Home page established the primary visual direction. Resources demonstrated how that direction could adapt to an interior landing page. The remaining pages now share the same typography, colors, spacing, component language, navigation, footer, responsive behavior, dark-mode principles, and accessibility expectations while retaining page-specific structure and purpose.
 
-## Why this documentation exists
+This is now a **completed project record and current design reference**, not an active work queue.
 
-GitHub Issues are currently disabled in this repository. This folder serves as the repository-native work tracker until Issues are enabled.
+## Current References
 
-The documentation is designed to record:
-
-- What needs to change
-- Why the change is needed
-- Which files are likely involved
-- What is intentionally out of scope
-- How completion will be validated
-- What was actually changed
-- Which design decisions were made or deferred
-
-## Tracking files
-
-- [Detailed Work Items](WORK-ITEMS.md)
 - [Shared Design System](DESIGN-SYSTEM.md)
-- [Implementation Changelog](CHANGELOG.md)
 - [Design Decision Log](DECISIONS.md)
-- [Final QA Notes](DS-10-NOTES.md)
+- [Implementation Changelog](CHANGELOG.md)
+- [Final Cross-Site QA Notes](DS-10-NOTES.md)
 
-## Page archetypes
+## Historical Planning Record
+
+- [Original Work Items](WORK-ITEMS.md)
+
+`WORK-ITEMS.md` preserves the original scope and acceptance criteria as a historical planning artifact. Its unchecked boxes are not the current project status. Completed implementation and validation are recorded in the changelog, decision log, individual DS notes, merged pull requests, and final QA notes.
+
+---
+
+## Page Archetypes
 
 The site uses three related page families.
 
-### 1. Editorial landing pages
+### 1. Editorial Landing Pages
 
 **Pages:** Home, Resources, Series, Podcast
 
@@ -53,22 +49,22 @@ Shared characteristics:
 - Modular bordered sections
 - Page-specific cards and content patterns
 
-### 2. Collection and utility pages
+### 2. Collection and Utility Pages
 
-**Pages:** Posts, Search
+**Pages:** Posts, Search, Listen
 
 Shared characteristics:
 
-- Compact editorial hero
-- Strong functional hierarchy
+- Compact editorial or functional hero
+- Strong information hierarchy
 - Wider content area
-- Consistent archive and result cards
-- Filters, search, and pagination where appropriate
-- Less decorative content than landing pages
+- Consistent archive, result, or reflection cards
+- Search, filters, sorting, pagination, or playback controls where appropriate
+- Less decorative content than editorial landing pages
 
-### 3. Narrative and profile pages
+### 3. Narrative and Profile Pages
 
-**Pages:** About, CV / Professional Background
+**Pages:** About, Professional Background
 
 Shared characteristics:
 
@@ -78,111 +74,76 @@ Shared characteristics:
 - Pull quotes, profile facts, and supporting images
 - Clear relationship between Jeff Thomas III and the Just A Thought publication
 
-## Work sequence
+The Contact page remains an inherited utility page and should be included in future legacy-template cleanup rather than forced into an unrelated archetype.
 
-| ID | Work item | Phase | Status |
-|---|---|---:|---|
-| DS-01 | Consolidate shared design system and page archetypes | 0 | Complete |
-| DS-02 | Refine Home page baseline | 0 | Complete |
-| DS-03 | Correct global navigation and footer consistency | 0 | Complete |
-| DS-04 | Redesign Posts archive | 1 | Complete |
-| DS-05 | Redesign Search experience | 1 | Complete |
-| DS-06 | Rebuild CV as Professional Background | 1 | Complete |
-| DS-07 | Redesign About page | 2 | Complete |
-| DS-08 | Align Podcast page | 2 | Complete |
-| DS-09 | Align Series page | 2 | Complete |
-| DS-10 | Validate Resources and complete cross-site QA | 3 | Review |
+---
 
-## Recommended implementation order
+## Completed Work
 
-### Phase 0 — Establish the standard
+| ID | Work item | Status | Primary result |
+|---|---|---|---|
+| DS-01 | Consolidate shared design system and page archetypes | Complete | Canonical tokens, components, and page families |
+| DS-02 | Refine Home page baseline | Complete | Reader-facing Home baseline without placeholder behavior |
+| DS-03 | Correct navigation and footer consistency | Complete | Direct links, active states, accessibility, and honest planned-feature language |
+| DS-04 | Redesign Posts archive | Complete | Branded editorial archive with featured and standard cards |
+| DS-05 | Redesign Search experience | Complete | Branded Lunr search, filters, URL state, and result cards |
+| DS-06 | Rebuild CV as Professional Background | Complete | Valid responsive profile page with print support |
+| DS-07 | Redesign About page | Complete | Narrative author-and-mission page aligned with the publication voice |
+| DS-08 | Align Podcast page | Complete | Honest in-development positioning within the shared landing system |
+| DS-09 | Align Series page | Complete | Dynamic connected reading paths with ordered accessible lists |
+| DS-10 | Validate Resources and complete cross-site QA | Complete | Shared Sass migration and 48-case responsive/theme validation |
 
-1. DS-01: Consolidate shared design system and page archetypes
-2. DS-02: Refine Home page baseline
-3. DS-03: Correct global navigation and footer consistency
+---
 
-### Phase 1 — Highest-impact pages
+## Validation Summary
 
-1. DS-04: Redesign Posts archive
-2. DS-05: Redesign Search experience
-3. DS-06: Rebuild CV as Professional Background
+The completed cross-site QA covered Home, Posts, Series, Podcast, Resources, About, Search, and Professional Background.
 
-### Phase 2 — Narrative and landing pages
+Validation included:
 
-1. DS-07: Redesign About page
-2. DS-08: Align Podcast page
-3. DS-09: Align Series page
+- One `h1` and one `main` per primary page
+- Unique IDs and declared page archetypes
+- Direct navigation and footer destinations
+- Desktop, tablet, and mobile layouts
+- Light and dark modes
+- Horizontal-overflow checks
+- Keyboard navigation and visible focus
+- Heading hierarchy, landmarks, labels, and link purpose
+- Search states and URL restoration
+- Posts pagination
+- Series grouping, ordering, hash behavior, and native details controls
+- Professional Background print output
+- Resources media proportions and layout integrity
 
-### Phase 3 — Validation
+See [DS-10-NOTES.md](DS-10-NOTES.md) for the recorded evidence.
 
-1. DS-10: Validate Resources and complete cross-site QA
+---
 
-## Standard workflow for each work item
-
-1. Update the work item status in `WORK-ITEMS.md` to **In progress**.
-2. Create a dedicated branch using a descriptive name.
-3. Limit the branch and pull request to one work item unless two items are technically inseparable.
-4. Capture before screenshots at desktop, tablet, and mobile widths.
-5. Implement the scoped changes.
-6. Validate light mode, dark mode, keyboard navigation, links, and responsive behavior.
-7. Open a pull request that references the work item ID in the title and description.
-8. Add an entry to `CHANGELOG.md` describing what actually changed.
-9. Add or update any significant design decision in `DECISIONS.md`.
-10. Update the work item status to **Complete** only after the pull request is merged.
-
-## Pull request naming convention
-
-Use the work item ID at the beginning of the title.
-
-Examples:
-
-- `DS-01 Consolidate shared design tokens and components`
-- `DS-04 Redesign Posts archive`
-- `DS-06 Rebuild Professional Background page`
-
-## Branch naming convention
-
-Examples:
-
-- `agent/ds-01-shared-design-system`
-- `agent/ds-04-posts-archive`
-- `agent/ds-06-professional-background`
-
-## Completion evidence
-
-Every completed work item should record:
-
-- Branch name
-- Pull request number or URL
-- Files changed
-- Components added, replaced, or retired
-- Content changes, if any
-- Design decisions made
-- Deferred work
-- Desktop validation
-- Tablet validation
-- Mobile validation
-- Dark-mode validation
-- Accessibility validation
-- Before and after screenshots
-
-## Status definitions
-
-- **Not started:** Documented but no implementation branch exists.
-- **In progress:** A branch or active pull request exists.
-- **Review:** Implementation is complete and awaiting review or validation.
-- **Blocked:** Work cannot proceed until a dependency or decision is resolved.
-- **Complete:** Pull request merged, validation recorded, and changelog updated.
-- **Deferred:** Intentionally postponed with the reason recorded.
-
-## Guiding principles
+## Current Design Principles
 
 - Consistency does not mean sameness.
 - Shared components should support page purpose rather than erase it.
 - The Home page is the visual baseline, not a template to duplicate literally.
-- Resources is the preferred example for adapting the Home system to an interior landing page.
-- Series and Podcast retain useful page-specific functionality.
-- About remains personal and reflective rather than becoming a résumé.
+- Resources remains the preferred example for adapting the Home system to an interior landing page.
+- About should remain personal and reflective rather than résumé-like.
 - The site should feel warm, editorial, peaceful, mature, and uncluttered.
-- Typography, spacing, navigation, buttons, colors, borders, and responsive behavior should be predictable across the site.
+- Typography, spacing, navigation, buttons, colors, borders, focus states, and responsive behavior should be predictable.
+- Planned features should be described honestly and should not look active before they exist.
 - Legacy cleanup must be evidence-based and must not trade small file-size gains for avoidable regressions.
+- Reader-facing language should remain reflective, compassionate, biblically grounded, and human.
+
+---
+
+## Future Maintenance
+
+Future visual or structural changes should:
+
+1. Begin from the shared tokens and components in `_sass/design-system.scss` and `_sass/page-archetypes.scss`.
+2. Preserve the assigned page archetype or document why a different structure is necessary.
+3. Validate desktop, tablet, mobile, light mode, and dark mode.
+4. Confirm keyboard focus, heading order, link purpose, image alternatives, and readable contrast.
+5. Avoid introducing new overlapping component or token systems.
+6. Update current documentation when the implementation changes.
+7. Record significant decisions in `DECISIONS.md`.
+
+A separate inherited-template and legacy-CSS reduction project may eventually cover Contact, post layouts, utility templates, and broad Clean Blog dependencies. That work should be tested as its own coordinated initiative.
