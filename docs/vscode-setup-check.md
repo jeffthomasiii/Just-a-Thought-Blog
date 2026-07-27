@@ -1,13 +1,36 @@
 # VS Code Setup Check
 
-This file was created on the `setup/vscode-test` branch to confirm that VS Code, Git, GitHub CLI, Ruby, Bundler, Jekyll, Node.js, and npm are working.
+This document records the confirmed local development setup for Just A Thought Blog.
 
-## Local preview
+## Verified Tools
+
+The project uses:
+
+- VS Code
+- Git
+- Ruby
+- Bundler
+- Jekyll
+- Node.js and npm where required by supporting tools
+
+## Local Preview
+
+Install Ruby dependencies when needed:
+
+```bash
+bundle install
+```
 
 Run:
 
+```bash
 bundle exec jekyll serve --force_polling
+```
 
 Then open:
 
-http://localhost:4000/Just-a-Thought-Blog/
+```text
+http://localhost:4000
+```
+
+The current `_config.yml` uses an empty `baseurl` for the custom root domain. The former local path at `/Just-a-Thought-Blog/` applies only to older repository configurations.
