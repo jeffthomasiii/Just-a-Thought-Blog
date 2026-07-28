@@ -1,14 +1,18 @@
-# Just A ThoughtBlof Thomas III
+# Just A Thought Blog
 
 > Reflecting on faith, life, and the thoughts that shape us.
 
-Welcome to **Just A Thought Blog**, a personal Christian blog where I reflect on faith, Scripture, culture, biblical marriage, leadership, technology, personal growth, identity, and the joys of camping. It is a space for processing life through Scripture, story, observation, and sincere thought.
+**Live site:** https://justathoughtblog.org
 
-Every reflective post carries the same gentle invitation:
+Just A Thought Blog is a reflective Christian publication by Jeff Thomas III. It explores faith, Scripture, marriage, leadership, culture, technology, camping, and ordinary life through honest processing, biblical conviction, practical wisdom, and humble invitation.
 
-> “...just a thought.”
+The goal is not to win arguments, manufacture controversy, or present every thought as a final answer. The goal is to slow down, pay attention, think biblically, and invite readers into meaningful reflection.
 
-That phrase is intentional. It keeps the tone humble, reflective, and open-handed. The goal is not to win arguments or chase controversy. The goal is to slow down long enough to think biblically about ordinary moments, difficult questions, and the thoughts that shape how we live.
+Most reflective posts close with:
+
+> “…just a thought.”
+
+That phrase is intentional. It keeps the writing open-handed and reminds both writer and reader that reflection should lead toward humility rather than superiority.
 
 ---
 
@@ -16,11 +20,11 @@ That phrase is intentional. It keeps the tone humble, reflective, and open-hande
 
 **Just A Thought Blog exists to help readers slow down, reflect honestly, and consider life, faith, marriage, leadership, culture, technology, camping, and creation through a thoughtful Christian lens.**
 
-The blog is intended to be:
+The publication should remain:
 
-- Reflective without being overly polished
-- Biblically grounded without being heavy-handed
-- Honest without being careless
+- Reflective without becoming overly polished
+- Biblically grounded without becoming heavy-handed
+- Honest without becoming careless
 - Compassionate without avoiding conviction
 - Personal without oversharing
 - Thoughtful without becoming academic or distant
@@ -28,27 +32,25 @@ The blog is intended to be:
 
 ---
 
-## Topics I Write About
+## Primary Topics
 
-Primary content themes include:
-
-- Faith and Scripture reflections
+- Faith and Scripture
 - Biblical marriage and relationships
 - Leadership, character, and personal growth
 - Culture, discernment, and identity
 - Technology, artificial intelligence, and ethical reflection
 - RV camping, creation, rest, and slowing down
-- Devotionals, small group reflections, and resource-style content
+- Devotionals, small-group reflections, and resource-style content
 
-The blog often connects ordinary experiences, such as conversations, traffic, camping trips, work challenges, marriage moments, cultural observations, and Scripture study, to deeper spiritual reflection.
+The subjects may vary, but the central conviction remains the same: Scripture belongs in the middle of real life rather than at its edges.
 
 ---
 
 ## Editorial Voice
 
-The voice of Just A Thought Blog should feel like a thoughtful conversation with someone who has been processing something deeply and wants to share it honestly.
+The writing should feel like a thoughtful conversation with someone who has been processing something deeply and now wants to share it honestly.
 
-The writing should be:
+The voice should be:
 
 - Reflective
 - Warm
@@ -60,34 +62,41 @@ The writing should be:
 - Relatable
 - Convictional without being combative
 
-The blog should avoid sounding like:
+The blog should not sound like:
 
 - A hot-take platform
 - A political commentary brand
 - A sermon transcript
 - A devotional cliché machine
 - A debate-first space
-- A polished brand voice that loses authenticity
+- Generic motivational content
+- A polished brand voice that has lost its humanity
 
-Difficult topics are welcome, but they should be handled with humility, care, biblical faithfulness, and compassion.
+Difficult subjects are welcome, but they should be handled with humility, care, biblical faithfulness, and compassion.
+
+### Natural Prose
+
+Write in paragraphs that develop complete thoughts rather than stacking short, dramatic statements. Most paragraphs should contain three to six sentences unless a shorter paragraph genuinely serves the narrative.
+
+Emphasis should come from the progression of the thought, not from social-media-style formatting or repeated one-sentence paragraphs.
 
 ---
 
 ## Standard Blog Post Structure
 
-Most posts should follow this general structure:
+Most reflective posts should follow this general journey.
 
 ### 1. Hook
 
-Start with a relatable story, tension, question, or observation. The hook should usually be 1–3 sentences and should draw the reader in emotionally, intellectually, or spiritually.
+Begin with a relatable story, tension, question, or observation. The hook should usually be one to three sentences and should draw the reader in emotionally, intellectually, or spiritually.
 
 ### 2. Context and Reflection
 
-Explain what prompted the thought. This may include Scripture, personal experience, an observed moment, a podcast, a cultural trend, a conversation, a camping trip, or a ministry interaction.
+Explain what prompted the thought. This may include Scripture, personal experience, an observed moment, a podcast, a cultural trend, a conversation, a camping trip, a work challenge, or a ministry interaction.
 
 ### 3. Development
 
-Unpack the thought carefully. Consider biblical, relational, theological, practical, or philosophical dimensions. This is the heart of the post.
+Unpack the thought carefully. Consider its biblical, relational, theological, practical, or philosophical dimensions. This is the heart of the post.
 
 ### 4. Resolution or Open-Ended Reflection
 
@@ -95,13 +104,19 @@ Offer closure, a next step, a gentle challenge, or an unresolved but meaningful 
 
 ### 5. Signature Closing
 
-Most reflective posts should end with:
+Most reflective posts should end with the exact line:
 
-> “...just a thought.”
+> “…just a thought.”
+
+Do not require the signature closing for:
+
+- Guest-contributor posts
+- Formal resources rather than personal reflections
+- Pieces where pastoral sensitivity calls for a different ending
 
 ### 6. Optional Reader Prompt
 
-Add one thoughtful question when it would help invite reader response or reflection.
+Add one thoughtful question when it would help invite reader response or continued reflection.
 
 ---
 
@@ -112,12 +127,13 @@ Scripture should shape the reflection, not merely decorate it.
 When using Scripture:
 
 - Avoid using verses as slogans detached from context.
-- Briefly explain the surrounding context when needed.
-- Avoid making claims Scripture does not clearly support.
+- Explain the surrounding context when it materially affects the meaning.
+- Do not make claims Scripture does not clearly support.
 - Acknowledge complexity when interpreting difficult passages.
-- Distinguish between biblical command, wisdom principle, personal conviction, and application.
-- Do not imply that a personal preference is a biblical requirement.
-- Use Scripture to illuminate the thought, not force the point.
+- Distinguish between biblical command, wisdom principle, interpretation, personal conviction, and application.
+- Do not present personal preferences as biblical requirements.
+- Verify quotations, references, and translations.
+- Use Scripture to illuminate the thought rather than force the point.
 
 Preferred approach:
 
@@ -129,20 +145,39 @@ Rather than:
 
 ---
 
-## Post Categories and Tags
+## Categories and Tags
 
-Recommended primary categories:
+Use categories for broad organization and tags for specific discoverability.
 
-- `faith`
-- `marriage`
-- `leadership`
-- `culture`
-- `technology`
-- `camping`
-- `devotional`
-- `reflections`
+### Reader-Facing Categories
 
-Common tag examples:
+- Faith
+- Marriage
+- Leadership
+- Culture
+- Technology
+- Camping
+- Devotional
+- Reflections
+
+### Stored Values
+
+Category and tag values in front matter should be lowercase and hyphenated. The site may display those values as reader-facing labels.
+
+Examples:
+
+| Reader-facing label | Front-matter value |
+|---|---|
+| Faith | `faith` |
+| Biblical Marriage | `biblical-marriage` |
+| Christian Living | `christian-living` |
+| Spiritual Growth | `spiritual-growth` |
+| Faith and AI | `faith-and-ai` |
+| RV Life | `rv-life` |
+
+Avoid creating small variations of an existing category or tag. Reuse the established value whenever it accurately describes the post.
+
+Common tag examples include:
 
 - `scripture`
 - `holiness`
@@ -161,13 +196,11 @@ Common tag examples:
 - `rest`
 - `small-group`
 
-Use categories for broad organization and tags for specific discoverability.
-
 ---
 
-## YAML Front Matter Template
+## YAML Front Matter
 
-Use this template when creating new blog posts. Remove optional fields when they are not needed.
+Use this template when creating a new post. Remove optional fields when they are not needed.
 
 ```yaml
 ---
@@ -184,13 +217,15 @@ tags:
   - tag-one
   - tag-two
   - tag-three
-excerpt: "Short summary that teases the post in 1–2 sentences."
+excerpt: "Short summary that teases the post in one or two sentences."
 image: /img/posts/your-post-image.jpg
 background: /img/posts/bg-your-post-image.jpg
 scripture: "Optional Scripture Reference, such as 1 Peter 1:14–16 ESV"
 contributors: [Samatra Thomas]
 series: "Series Title Here"
 series_order: 1
+audio_file: /audio/posts/example-reflection.mp3
+audio_duration: "8 min"
 ---
 ```
 
@@ -198,18 +233,20 @@ Notes:
 
 - Use `contributors` when a post includes shared writing credit.
 - Use `series` and `series_order` only when the post belongs to a structured series.
-- Use lowercase, hyphenated values for categories and tags.
-- Keep excerpts short enough to work on cards, previews, and social sharing.
+- Use `audio_file` and `audio_duration` only when a recorded audio companion exists.
+- Existing posts without `audio_file` may use browser narration through the Audio Companion.
+- Keep descriptions and excerpts concise enough for cards, search results, and social sharing.
+- Use the actual image extension stored in the repository.
 
 ---
 
-## File Naming Conventions
+## File Naming
 
 Use lowercase, hyphenated file names.
 
 ### Blog Posts
 
-Blog post files belong in `_posts/` and should follow this format:
+Post files belong in `_posts/` and follow this format:
 
 ```text
 YYYY-MM-DD-post-title.md
@@ -223,7 +260,7 @@ Example:
 
 ### Images
 
-Recommended image naming:
+Recommended naming:
 
 ```text
 post-title.jpg
@@ -232,7 +269,7 @@ quote-post-title.jpg
 podcast-post-title.jpg
 ```
 
-Recommended image locations:
+Recommended locations:
 
 ```text
 img/posts/
@@ -245,308 +282,157 @@ img/social/
 
 ## Image and Visual Guidelines
 
-Images should support the reflective tone of the blog and should not compete with the writing.
+Images should support the reflection rather than compete with it.
 
-Preferred image style:
+Preferred visual qualities:
 
 - Natural
 - Warm
 - Reflective
 - Calm
 - Slightly cinematic
-- Creation-centered when appropriate
 - Relational when appropriate
+- Creation-centered when appropriate
 - Honest rather than overly staged
 
-Common visual motifs:
-
-- Forest trails
-- Lakes and still water
-- Campfires
-- Open roads
-- Journals
-- Coffee or quiet morning scenes
-- Warm light through trees
-- Olive branches
-- Birds or doves
-- Lamps or soft light
-- Couples walking together
-- Hands held in prayer
-- Open Bibles used naturally
-- Mountain paths
-- Campsites at sunrise or dusk
+Common motifs include forest trails, still water, campfires, open roads, journals, quiet morning scenes, warm light, olive branches, birds or doves, lamps, couples walking together, prayer, naturally placed Bibles, mountain paths, and campsites at sunrise or dusk.
 
 Generated images should follow these rules:
 
 - No text baked into the image
-- No logos
-- No watermarks
+- No logos unless specifically requested
+- No watermarks unless specifically requested
 - No overly busy backgrounds
-- Use wide cinematic images for hero headers
-- Use square or 4:5 images for social graphics
+- Wide cinematic composition for hero headers
+- Square or 4:5 composition for social graphics
 
-Preferred image prompt structure:
+Preferred prompt structure:
 
 ```text
-Create a [format/aspect ratio] image of [subject/scene], symbolizing [theme]. Use [lighting], [mood], [style], [level of realism]. No text, no logo, no watermark.
+Create a [format/aspect ratio] image of [subject or scene], symbolizing [theme]. Use [lighting], [mood], [style], and [level of realism]. No text, no logo, no watermark.
 ```
 
----
+### Visual Identity
 
-## Visual Identity Notes
+The site should feel like a calm Christian editorial journal.
 
-The visual identity should feel like a calm Christian editorial journal.
-
-Core visual direction:
+Core direction:
 
 - Warm neutral backgrounds
 - Olive green accents
 - Charcoal or deep ink text
-- Muted gold highlights used sparingly
-- Soft parchment-style cards or quote blocks
+- Muted gold used sparingly
+- Soft parchment surfaces
 - Generous whitespace
-- Clear reading experience
-
-Current brand color direction:
-
-| Color Name | Suggested HEX | Usage |
-|---|---:|---|
-| Deep Olive | `#4F5D3A` | Primary accent, buttons, links |
-| Muted Olive | `#6F7B52` | Secondary accents, icons |
-| Soft Sage | `#A8B68A` | Background accents, dividers |
-| Warm Cream | `#F6F1E7` | Page background |
-| Soft Parchment | `#EFE4D3` | Cards, quote blocks |
-| Charcoal Ink | `#252822` | Body text, headings |
-| Warm Gray | `#7A7468` | Captions, metadata |
-| Muted Gold | `#C6A15B` | Small highlights |
-
-Recommended color balance:
-
-- 65% warm neutral backgrounds
-- 20% charcoal/text colors
-- 10% olive accents
-- 5% muted gold or special highlights
-
-Typography direction:
-
-| Use | Recommended Font |
-|---|---|
-| Logo / Hero Title | Playfair Display |
-| Post Titles | Playfair Display |
-| Body Copy | Source Sans 3 or Lora |
-| Navigation | Inter or Source Sans 3 |
-| Metadata | Inter or Source Sans 3 |
-| Scripture Callouts | Playfair Display or Lora |
-| Buttons | Inter or Source Sans 3 |
+- Clear reading hierarchy
+- Rectangular components with restrained corner rounding
+- Playfair Display for primary editorial headings
 
 ---
 
-## How the Blog Is Set Up
+## Repository Structure
 
-This blog is powered by **Jekyll** and hosted with **GitHub Pages**, using a customized version of the [Start Bootstrap Clean Blog Jekyll theme](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll).
+The site is powered by **Jekyll** and hosted with **GitHub Pages**, using a customized version of the Start Bootstrap Clean Blog Jekyll theme.
 
-### Content Structure
-
-| Type | Location | Format | Description |
-|---|---|---|---|
-| **Posts** | `_posts/` | `.md` | Written in Markdown. Follows the format `YYYY-MM-DD-title.md`. Posts are listed on the homepage and blog archive. |
-| **Pages** | `/` or `_pages/` | `.html` or `.md` | Standalone content such as `about.html`, `contact.html`, resources, or landing pages. |
-| **Layouts** | `_layouts/` | `.html` | Templates for how content is wrapped, such as `post.html` and `page.html`. |
-| **Includes** | `_includes/` | `.html` | Reusable components such as navigation, header, footer, scripts, and contact form elements. |
-| **Styles** | `_sass/`, `assets/scss/` | `.scss` | Custom styling and theme overrides. Main file: `styles.scss`. |
-| **Images** | `img/`, `img/posts/` | `.png`, `.jpg`, `.webp` | Organized into site-wide, page-specific, and post-specific images. |
-| **Config** | `_config.yml` | YAML | Contains site metadata, blog settings, theme settings, and plugin options. |
-
----
-
-## Creating a New Blog Post
-
-1. Add a new `.md` file to the `_posts/` folder.
-2. Name it using the format `YYYY-MM-DD-title.md`.
-3. Add the correct YAML front matter.
-4. Write the post in Markdown.
-5. Add any related images to `img/posts/`.
-6. Confirm the post uses the correct category, tags, excerpt, image, and background values.
-7. Preview the site locally before publishing when possible.
-8. Commit and push the post to GitHub.
+| Type | Location | Description |
+|---|---|---|
+| Posts | `_posts/` | Published Markdown reflections |
+| Drafts | `_drafts/` | Unpublished post drafts |
+| Pages | Repository root or `_pages/` | About, Contact, Resources, Podcast, Search, and other standalone pages |
+| Layouts | `_layouts/` | Page and post templates |
+| Includes | `_includes/` | Navigation, footer, scripts, and reusable components |
+| Styles | `_sass/`, `assets/` | Shared design system, page styles, scripts, and compiled entry points |
+| Images | `img/` | Brand, page, post, and social imagery |
+| Audio | `audio/` | Optional recorded reflection files |
+| Configuration | `_config.yml` | Site metadata, domain, plugins, and build settings |
+| Documentation | `docs/` | Development, design-system, validation, and historical project notes |
 
 ---
 
 ## Local Development
 
-Typical Jekyll local development workflow:
+Install the project dependencies:
 
 ```bash
 bundle install
-bundle exec jekyll serve
 ```
 
-Then open the local site in a browser, usually at:
+Start the local preview:
+
+```bash
+bundle exec jekyll serve --force_polling
+```
+
+Open:
 
 ```text
 http://localhost:4000
 ```
 
-If GitHub Pages or the local Jekyll environment behaves differently, check the versions in the project’s `Gemfile`, `_config.yml`, and GitHub Pages settings.
-
----
-
-## Tech Stack
-
-- [Jekyll](https://jekyllrb.com/) — static site generator
-- GitHub Pages — hosting
-- Markdown — blog post writing and formatting
-- Liquid — Jekyll templating engine
-- SCSS / SASS — styling and theme customization
-- HTML — layouts, includes, and static pages
-- YAML — front matter and configuration
+The site now uses the custom root domain configuration with an empty `baseurl`, so the local preview should not require the former `/Just-a-Thought-Blog/` path.
 
 ---
 
 ## Publishing Workflow
 
-Recommended publishing checklist:
+1. Create a dedicated branch from `master`.
+2. Add or edit the post and related assets.
+3. Confirm the front matter renders correctly.
+4. Preview the site locally when practical.
+5. Review the title, subtitle, description, excerpt, categories, tags, Scripture references, and image paths.
+6. Confirm reflective posts end with “…just a thought.” unless an exception applies.
+7. Confirm generated images contain no unintended text, logo, or watermark.
+8. Open a pull request into `master`.
+9. Confirm the protected Jekyll build passes.
+10. Review the deployed page after merging.
 
-- Confirm the title is clear and reflective.
-- Confirm the subtitle adds value and is not redundant.
-- Confirm the excerpt is short and useful.
-- Confirm categories and tags are lowercase and consistent.
-- Confirm Scripture references are accurate and used responsibly.
-- Confirm the post ends with “...just a thought.” unless it is a guest post or formal resource.
-- Confirm the image path and background path are correct.
-- Confirm no generated image includes text, logos, or watermarks.
-- Preview locally or through GitHub Pages after publishing.
-
----
-
-## Current Priorities
-
-Near-term priorities for the blog include:
-
-- Continue refining the visual style system.
-- Improve typography consistency across the site.
-- Add or refine dark mode support.
-- Improve homepage sections and post card layouts.
-- Strengthen category pages and post discoverability.
-- Standardize post images and naming conventions.
-- Continue developing reusable post templates for faith, marriage, leadership, technology, and camping content.
+Do not make routine content or code changes directly on `master`.
 
 ---
 
-## Future Plans and Updates
+## Current Roadmap
 
-Planned or potential future updates include:
+### Completed
 
-### Content and Editorial
+- Custom domain migration to `justathoughtblog.org`
+- Shared editorial design system and page archetypes
+- Responsive light and dark modes
+- Branded Home, Posts, Search, Series, Podcast, Resources, About, and Professional Background pages
+- Centralized Audio Companion and Listen library
+- Search, filtering, sorting, and shareable Listen views
+- Sitewide blockquote styling
+- Navigation and footer consistency pass
 
-- Develop structured blog series pages.
-- Add resource-style posts and downloadable reflection guides.
-- Create small group discussion versions of selected posts.
-- Add devotional collections and Scripture-based reading paths.
-- Create a stronger archive by category, tag, and series.
+### In Progress
 
-### Podcast Extension
+- Image resizing, compression, WebP conversion, and path standardization
+- Category and tag cleanup
+- Development of *From Aleph to Tav* and supporting resources
+- Continued post-series development
 
-- Launch **Just A Thought — The Podcast** as an audio companion to the blog.
-- Convert selected blog posts into spoken reflections.
-- Add short intro/outro language and podcast artwork.
-- Create podcast cards or episode preview sections on the site.
+### Planned
 
-### Newsletter Extension
-
-- Add an email subscribe section when ready.
-- Develop a weekly or occasional reflection email.
-- Include a short note, featured reflection, Scripture or quote, and one question to sit with.
-
-### Design and User Experience
-
-- Refine the full visual style board into site-wide components.
-- Add reusable scripture callout blocks.
-- Add quote block styling.
-- Improve mobile reading experience.
-- Add social sharing images and Open Graph previews.
-- Improve footer layout, navigation, and brand consistency.
-
-### Technical Improvements
-
-- Review GitHub Pages configuration.
-- Confirm custom domain and DNS setup when ready.
-- Improve metadata for SEO and social sharing.
-- Review image file sizes and performance.
-- Clean up unused theme files or starter content.
-- Document any custom components added to `_includes/` or `_layouts/`.
+- Recorded podcast episodes
+- Email newsletter implementation
+- Downloadable reflection and small-group resources
+- Stronger category and topic archive pages
+- Additional Open Graph and social-sharing refinements
+- Evidence-based cleanup of inherited theme files and compatibility CSS
 
 ---
 
 ## Contact
-Welcome to *Just a Thought*, a personal blog where I reflect on faith, culture, biblical marriage, leadership, and the joys of camping. It’s a space for processing life through Scripture, story, and sincere thought. Every post ends with the same gentle invitation: *...just a thought.*
 
+Questions, responses, and thoughtful feedback can be shared through the site’s Contact page:
 
-## ✍️ Topics I Write About
-
-- Faith & Scripture reflections
-- Biblical marriage and relationships
-- Leadership, technology, and culture
-- Personal growth and identity
-- RV camping & slowing down with nature
-
-
-## ⚙️ How the Blog is Set Up
-
-This blog is powered by **Jekyll** and hosted with **GitHub Pages**, using a customized version of the [Clean Blog](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll) theme.
-
-### 🗂️ Content Structure
-
-| Type         | Location        | Format     | Description |
-|--------------|-----------------|------------|-------------|
-| **Posts**    | `_posts/`       | `.md`      | Written in Markdown. Follows the format `YYYY-MM-DD-title.md`. Posts are listed on the homepage and blog archive. |
-| **Pages**    | `/` or `_pages/`| `.html` or `.md` | Standalone content like `about.html`, `contact.html`, etc. |
-| **Layouts**  | `_layouts/`     | `.html`    | Templates for how content is wrapped (e.g., `post.html`, `page.html`). |
-| **Includes** | `_includes/`    | `.html`    | Reusable components like header, footer, and contact form. |
-| **Styles**   | `_sass/`, `assets/scss/` | `.scss` | Custom styling and theme overrides. Main file: `styles.scss`. |
-| **Images**   | `img/`, `img/posts/` | `.png`, `.jpg`, etc. | Organized into site-wide and post-specific images. |
-| **Config**   | `_config.yml`   | YAML       | Contains site metadata, blog settings, and plugin options. |
-
-
-## 📝 Creating a New Blog Post
-
-1. Add a new `.md` file to the `_posts/` folder.
-2. Use the format: `YYYY-MM-DD-title.md`
-3. Start with front matter:
-
-   ```yaml
-   ---
-   layout: post
-   title: "Your Post Title"
-   subtitle: "Optional Subtitle"
-   date: 2025-07-15
-   author: Jeff Thomas III
-   categories: [faith, reflection]
-   background: '/img/posts/your-image.jpg' # Optional
-   ---
-
-
-## 🧰 Tech Stack
-- [Jekyll](https://jekyllrb.com/) – static site generator
-- GitHub Pages – hosting
-- SCSS / SASS – styling
-- Markdown – content formatting
-- Liquid – Jekyll templating engine
-
-
-## 📫 Contact
-Have a question or thought? Use the [Contact Form](https://jeffthomasiii.github.io/Just-a-Thought-Blog/contact/) on the site.
+https://justathoughtblog.org/contact/
 
 ---
 
 ## License and Attribution
 
-## 📝 License
-Theme originally forked from [Start Bootstrap Clean Blog](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll).
+The theme was originally forked from [Start Bootstrap Clean Blog](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll).
 
-Content, writing, images, and customizations are © Jeff Thomas III unless otherwise noted. All rights reserved.
+Content, writing, original images, and customizations are © Jeff Thomas III unless otherwise noted. All rights reserved.
 
-Guest or contributor content remains credited where applicableContent and customizations © [Jeff Thomas III](https://jeffthomasiii.github.io/Just-a-Thought-Blog/contact/). All rights reserved.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0Nzg2Njk1NF19
--->
+Guest and contributor content remains credited to its respective author.

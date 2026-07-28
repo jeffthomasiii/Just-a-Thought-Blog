@@ -1,41 +1,35 @@
 # Just A Thought Blog — Shared Design System
 
-**Related work item:** DS-01  
-**Status:** Initial implementation  
-**Last updated:** 2026-07-15
+**Status:** Current reference  
+**Originally established:** 2026-07-15  
+**Cross-site migration completed:** 2026-07-16  
+**Documentation refreshed:** 2026-07-27
 
 ## Purpose
 
-This document defines the shared visual foundation for Just A Thought Blog. It should guide all page work without forcing every page into an identical composition.
+This document defines the current shared visual foundation for Just A Thought Blog. It should guide new page, component, and style work without forcing every page into an identical composition.
 
-The Home page remains the primary visual baseline. Resources remains the preferred example for adapting the editorial-board system to an interior landing page.
+The site should feel like a calm Christian editorial journal: warm, reflective, mature, uncluttered, and human.
 
-## Source files
+The Home page remains the primary visual baseline. Resources remains the preferred example for adapting that system to an interior editorial landing page.
 
-- `_sass/design-system.scss` — canonical tokens and shared components
-- `_sass/page-archetypes.scss` — shared page-family foundations
-- `assets/main.scss` — import order
-- `_layouts/default.html` — exposes page archetypes on the body element
+---
 
-## Import strategy
+## Canonical Source Files
 
-The shared design system currently loads after the legacy global and Home styles and before dark-mode overrides:
+- `_sass/design-system.scss` — canonical brand, semantic, typography, spacing, border, shape, and focus tokens
+- `_sass/page-archetypes.scss` — shared foundations for page families
+- `assets/main.scss` — Sass import order
+- `_layouts/default.html` — page-archetype and body-class output
+- Page-specific Sass partials — scoped adaptations built on the shared system
 
-```scss
-@import "styles";
-@import "visual-board-home";
-@import "design-system";
-@import "page-archetypes";
-@import "dark";
-```
+New shared work should begin in the canonical Sass layer rather than introducing a new parallel token or component system.
 
-This order is intentional during migration. It lets the canonical shared layer stabilize common components without prematurely deleting styles still required by Posts, Search, About, Series, Podcast, and CV.
+---
 
-## Canonical token naming
+## Visual Direction
 
-New code should use semantic or canonical tokens from `_sass/design-system.scss`.
-
-### Brand colors
+### Brand Colors
 
 - `--jat-color-olive-deep`
 - `--jat-color-olive-muted`
@@ -47,9 +41,9 @@ New code should use semantic or canonical tokens from `_sass/design-system.scss`
 - `--jat-color-gold`
 - `--jat-color-paper`
 
-### Semantic colors
+### Semantic Colors
 
-Prefer these when the intent matters more than the specific color:
+Prefer semantic tokens when the design intent matters more than the literal color:
 
 - `--jat-surface-page`
 - `--jat-surface-panel`
@@ -64,7 +58,19 @@ Prefer these when the intent matters more than the specific color:
 - `--jat-border-subtle`
 - `--jat-border-strong`
 
-### Layout and spacing
+### Recommended Visual Balance
+
+- Warm neutral backgrounds should dominate.
+- Charcoal and deep-ink tones should carry most text.
+- Olive should function as a meaningful accent rather than a universal fill.
+- Muted gold should be used sparingly for highlights, focus, dividers, and small details.
+- Shadows should clarify hierarchy rather than decorate every surface.
+
+---
+
+## Layout and Spacing
+
+Canonical width and rhythm tokens include:
 
 - `--jat-width-board`: 1280px editorial frame
 - `--jat-width-content`: 1120px content frame
@@ -74,7 +80,42 @@ Prefer these when the intent matters more than the specific color:
 - `--jat-section-space`
 - `--jat-panel-padding`
 
-### Shape and elevation
+Use the editorial frame for broad page composition, the content frame for repeated cards and functional layouts, and the reading width for sustained narrative prose.
+
+Whitespace is part of the brand. Do not compress pages merely to fit more content above the fold.
+
+---
+
+## Typography
+
+Canonical typography tokens include:
+
+- `--jat-font-display`
+- `--jat-font-body`
+- `--jat-font-reflective`
+
+General use:
+
+| Purpose | Direction |
+|---|---|
+| Logo, hero titles, post titles | Playfair Display or the canonical display token |
+| Body copy | Source Sans 3, Lora, or the canonical body token |
+| Navigation, metadata, controls | Clean readable sans-serif treatment |
+| Scripture callouts and reflective quotes | Display or reflective serif treatment |
+
+Typography should feel literary and editorial without becoming ornamental. Body copy should remain comfortable for long-form reading.
+
+---
+
+## Shape and Elevation
+
+- Use square to 4px corners for panels, cards, buttons, fields, and status labels.
+- Reserve circles for icons, social controls, and the theme toggle.
+- Avoid heavily rounded cards and pill-shaped primary buttons.
+- Use low or medium elevation only when it clarifies hierarchy.
+- Prefer borders, spacing, and tonal surfaces over heavy shadows.
+
+Canonical tokens include:
 
 - `--jat-radius-none`
 - `--jat-radius-subtle`
@@ -83,37 +124,19 @@ Prefer these when the intent matters more than the specific color:
 - `--jat-shadow-low`
 - `--jat-shadow-medium`
 
-### Typography
+---
 
-- `--jat-font-display`
-- `--jat-font-body`
-- `--jat-font-reflective`
-
-## Legacy compatibility aliases
-
-The shared token file temporarily maps earlier naming conventions to the canonical tokens. Examples include:
-
-- `--jat-deep-olive`
-- `--jat-olive-deep`
-- `--jat-muted-olive`
-- `--jat-olive-muted`
-- `--jat-charcoal`
-- `--jat-ink`
-- `--jat-muted-gold`
-- `--jat-gold`
-
-Do not use these aliases in new code. Remove them only after all dependent legacy styles have migrated.
-
-## Shared components
+## Shared Components
 
 ### Containers
 
-- `.jat-board-container` or `.jat-container-board`
+- `.jat-board-container`
+- `.jat-container-board`
 - `.jat-container-content`
 - `.jat-container-reading`
 - `.jat-page-frame`
 
-### Editorial hierarchy
+### Editorial Hierarchy
 
 - `.jat-kicker`
 - `.jat-simple-divider`
@@ -135,26 +158,26 @@ Do not use these aliases in new code. Remove them only after all dependent legac
 - `.jat-card-surface`
 - `.jat-status-label`
 
-### Page rhythm
+### Page Rhythm
 
 - `.jat-page-shell`
 - `.jat-page-section`
 
-## Page archetypes
+Use existing shared classes before creating a page-specific equivalent. Add a new shared component only when the pattern genuinely repeats across multiple contexts.
 
-Pages opt into a page family through front matter:
+---
+
+## Page Archetypes
+
+Pages opt into a family through front matter:
 
 ```yaml
 page_archetype: landing
 ```
 
-The default layout renders this as:
+The default layout exposes that value as a body class and data attribute.
 
-```html
-<body class="jat-archetype-landing" data-page-archetype="landing">
-```
-
-### Editorial landing pages
+### Editorial Landing Pages
 
 ```yaml
 page_archetype: landing
@@ -164,98 +187,123 @@ Current pages:
 
 - Home
 - Resources
-
-Planned migrations:
-
 - Series
 - Podcast
 
-Use for image-led pages with modular editorial sections.
+Use for image-led pages with modular editorial sections, framed heroes, and page-specific storytelling or promotional content.
 
-### Collection and utility pages
+### Collection and Utility Pages
 
 ```yaml
 page_archetype: collection
 ```
 
-Planned pages:
+Current pages:
 
 - Posts
 - Search
 
-Use for archives, filters, search results, and repeated content cards.
+The Listen library follows the collection-and-utility design principles even where its current implementation uses a dedicated body class and component stack.
 
-### Narrative and profile pages
+Use this family for archives, search, filters, pagination, sorting, and repeated content cards.
+
+### Narrative and Profile Pages
 
 ```yaml
 page_archetype: profile
 ```
 
-Planned pages:
+Current pages:
 
 - About
-- Professional Background / CV
+- Professional Background
 
-Use for personal narrative, author context, professional history, and comfortable long-form reading.
+Use for personal narrative, author context, professional history, profile facts, and comfortable long-form reading.
 
-## Shape rules
+### Inherited Utility Pages
 
-- Use square to 4px corners for panels, cards, buttons, and status labels.
-- Reserve circles for icons, social controls, and the theme toggle.
-- Avoid heavily rounded cards and pill-shaped primary buttons.
-- Use shadows sparingly and only where elevation clarifies hierarchy.
+Contact and some post or utility templates still retain portions of the inherited Clean Blog system. They should use current brand language and shared tokens where practical, but broad template migration should occur only within a dedicated, validated cleanup project.
 
-## Dark mode
+---
 
-The canonical design system changes semantic tokens on `body.dark-mode`. New shared components should consume semantic tokens so they inherit dark-mode behavior automatically.
+## Imagery
 
-Page-specific dark-mode CSS remains temporarily necessary for older page systems. It should be retired only after those pages migrate.
+Images should feel:
 
-## Accessibility foundations
+- Natural
+- Warm
+- Reflective
+- Calm
+- Slightly cinematic
+- Relational or creation-centered when appropriate
+- Honest rather than heavily staged
 
-The shared system includes a visible `:focus-visible` treatment for links, buttons, inputs, selects, text areas, and summary controls.
+Avoid baked-in text, unnecessary logos or watermarks, overly busy backgrounds, and generic prosperity-style Christian stock imagery.
 
-Each page implementation must still validate:
+Use wide cinematic crops for heroes and square or 4:5 crops for social and card imagery.
 
-- Heading order
+---
+
+## Dark Mode
+
+Shared components should consume semantic tokens so they inherit dark-mode behavior automatically.
+
+Dark mode should remain warm rather than shifting into a cold blue or pure-black technology aesthetic. Use deep warm surfaces, softened off-white text, olive accents, restrained gold, and sufficient contrast.
+
+Page-specific dark-mode rules remain acceptable when the component or page genuinely requires them, but they should remain scoped and should not redefine the entire site.
+
+---
+
+## Accessibility Foundations
+
+The shared system includes a visible `:focus-visible` treatment for links, buttons, inputs, selects, textareas, and summary controls.
+
+Every reader-facing change should still validate:
+
+- One clear `h1`
+- Logical heading order
 - Keyboard sequence
+- Visible focus
 - Link purpose
-- Alternative text
+- Alternative text and decorative-image handling
 - Color contrast
 - Responsive reading order
+- No unintended horizontal overflow
+- Clear labels and status messaging
+- Reduced-motion behavior where animation or smooth scrolling is used
 
-## Migration rules
+Accessibility should be treated as part of the visual system rather than a final decorative check.
 
-1. Do not remove legacy styles merely because a shared replacement exists.
-2. Migrate a page to shared classes first.
-3. Validate desktop, tablet, mobile, light mode, and dark mode.
-4. Remove only the legacy rules proven unused after migration.
-5. Record removed or retained dependencies in `CHANGELOG.md`.
-6. Record significant visual decisions in `DECISIONS.md`.
+---
 
-## Current migration status
+## Compatibility and Legacy Rules
 
-### Migrated to archetype metadata and shared semantic classes
+Earlier token aliases remain available where inherited styles still depend on them. Examples include:
 
-- Home
-- Resources
+- `--jat-deep-olive`
+- `--jat-olive-deep`
+- `--jat-muted-olive`
+- `--jat-olive-muted`
+- `--jat-charcoal`
+- `--jat-ink`
+- `--jat-muted-gold`
+- `--jat-gold`
 
-### Still dependent on legacy page systems
+Do not use these aliases in new code. Remove them only after all dependent selectors have been migrated and tested.
 
-- Posts
-- Search
-- About
-- Series
-- Podcast
-- CV / Professional Background
+The Clean Blog vendor layer, `_sass/styles.scss`, `_sass/_dark.scss`, and a limited amount of compatibility CSS remain intentionally because inherited post, Contact, and utility templates still use portions of them.
 
-### Known temporary dependencies
+---
 
-- `_sass/styles.scss` still contains earlier root variables and shared component rules.
-- `_sass/visual-board-home.scss` still contains hard-coded values and duplicate Home component definitions.
-- `assets/css/jat-pages.css` still defines the older landing-page system used by Series and Podcast.
-- `assets/css/jat-dark-pages.css` remains necessary for legacy dark-mode support.
-- Page-specific polish files remain necessary until their related work items are complete.
-- The Home layout retains page-specific inline styles that should be evaluated during DS-02.
+## Change Rules
 
-These dependencies are intentional during the non-breaking migration and are not the preferred location for new shared design rules.
+1. Use canonical tokens and shared components first.
+2. Keep page-specific selectors scoped beneath a page or component class.
+3. Do not introduce a second shared button, card, container, or typography system without a documented need.
+4. Preserve responsive behavior and dark-mode equivalence.
+5. Validate desktop, tablet, mobile, keyboard, and focus behavior.
+6. Remove legacy rules only after proving that all dependent routes have migrated.
+7. Record significant design decisions in `DECISIONS.md`.
+8. Update this reference when the implemented system changes.
+
+The migration phase is complete. Future work should maintain and extend the established system rather than continuing to describe current pages as planned migrations.
