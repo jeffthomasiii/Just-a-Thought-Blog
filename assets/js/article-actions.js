@@ -47,22 +47,28 @@
     }
   });
 
+  function buildShareMessage() {
+    return 'This article from Just A Thought Blog gave me something to reflect on: “' + title + '”';
+  }
+
   function shareUrl(service) {
+    var shareMessage = buildShareMessage();
     var encodedUrl = encodeURIComponent(pageUrl);
     var encodedTitle = encodeURIComponent(title);
-    var encodedText = encodeURIComponent(title + (description ? ' — ' + description : ''));
+    var encodedMessage = encodeURIComponent(shareMessage);
+    var encodedMessageWithUrl = encodeURIComponent(shareMessage + '\n\n' + pageUrl);
 
     switch (service) {
       case 'facebook':
-        return 'https://www.facebook.com/sharer/sharer.php?u=' + encodedUrl;
+        return 'https://www.facebook.com/sharer/sharer.php?u=' + encodedUrl + '&quote=' + encodedMessage;
       case 'threads':
-        return 'https://www.threads.net/intent/post?text=' + encodeURIComponent(title + ' ' + pageUrl);
+        return 'https://www.threads.net/intent/post?text=' + encodedMessageWithUrl;
       case 'x':
-        return 'https://twitter.com/intent/tweet?text=' + encodedTitle + '&url=' + encodedUrl;
+        return 'https://twitter.com/intent/tweet?text=' + encodedMessage + '&url=' + encodedUrl;
       case 'linkedin':
         return 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodedUrl;
       case 'email':
-        return 'mailto:?subject=' + encodedTitle + '&body=' + encodedText + '%0A%0A' + encodedUrl;
+        return 'mailto:?subject=' + encodeURIComponent('A thought worth sharing: ' + title) + '&body=' + encodedMessageWithUrl;
       default:
         return pageUrl;
     }
