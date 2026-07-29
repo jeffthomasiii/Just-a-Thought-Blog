@@ -17,8 +17,7 @@
   function closeAll(exceptName) {
     panels.forEach(function (panel) {
       var name = panel.getAttribute('data-actions-panel');
-      var shouldRemainOpen = name === exceptName;
-      panel.hidden = !shouldRemainOpen;
+      panel.hidden = name !== exceptName;
     });
 
     triggers.forEach(function (trigger) {
@@ -48,40 +47,33 @@
   });
 
   function buildShareMessage() {
-    return 'This article from Just A Thought Blog gave me something to reflect on: “' + title + '”';
+    return 'This thought from Just A Thought Blog gave me something to reflect on: “' + title + '”\n\n' + pageUrl;
   }
 
+  var shareMessage = buildShareMessage();
+  var sharePreview = root.querySelector('[data-share-preview]');
+  if (sharePreview) sharePreview.textContent = shareMessage;
+
   function shareUrl(service) {
-    var shareMessage = buildShareMessage();
     var encodedUrl = encodeURIComponent(pageUrl);
     var encodedTitle = encodeURIComponent(title);
     var encodedMessage = encodeURIComponent(shareMessage);
-    var encodedMessageWithUrl = encodeURIComponent(shareMessage + '\n\n' + pageUrl);
 
     switch (service) {
       case 'facebook':
-        return 'https://www.facebook.com/sharer/sharer.php?u=' + encodedUrl + '&quote=' + encodedMessage;
+        return 'https://www.facebook.com/sharer/sharer.php?u=' + encodedUrl;
       case 'threads':
-        return 'https://www.threads.net/intent/post?text=' + encodedMessageWithUrl;
+        return 'https://www.threads.net/intent/post?text=' + encodedMessage;
       case 'x':
-        return 'https://twitter.com/intent/tweet?text=' + encodedMessage + '&url=' + encodedUrl;
+        return 'https://x.com/intent/tweet?text=' + encodedMessage;
       case 'linkedin':
         return 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodedUrl;
       case 'email':
-        return 'mailto:?subject=' + encodeURIComponent('A thought worth sharing: ' + title) + '&body=' + encodedMessageWithUrl;
+        return 'mailto:?subject=' + encodeURIComponent('A thought worth sharing: ' + title) + '&body=' + encodedMessage;
       default:
         return pageUrl;
     }
   }
-
-  root.querySelectorAll('[data-share-service]').forEach(function (link) {
-    var service = link.getAttribute('data-share-service');
-    link.setAttribute('href', shareUrl(service));
-    if (service !== 'email') {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener noreferrer');
-    }
-  });
 
   function copyText(text) {
     if (navigator.clipboard && window.isSecureContext) {
@@ -108,19 +100,54 @@
     });
   }
 
-  var copyButton = root.querySelector('[data-copy-link]');
   var copyStatus = root.querySelector('[data-copy-status]');
 
-  if (copyButton) {
-    copyButton.addEventListener('click', function () {
-      copyText(pageUrl).then(function () {
-        copyButton.textContent = 'Link copied';
-        copyStatus.textContent = '';
+  root.querySelectorAll('[data-share-service]').forEach(function (link) {
+    var service = link.getAttribute('data-share-service');
+    link.setAttribute('href', shareUrl(service));
+
+    if (service !== 'email') {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+
+    if (service === 'facebook' || service === 'linkedin') {
+      link.addEventListener('click', function () {
+        copyText(shareMessage).then(function () {
+          if (copyStatus) copyStatus.textContent = 'Share message copied. Paste it into your ' + (service === 'facebook' ? 'Facebook' : 'LinkedIn') + ' post.';
+        }).catch(function () {
+          if (copyStatus) copyStatus.textContent = 'The platform opened, but the share message could not be copied.';
+        });
+      });
+    }
+  });
+
+  var copyShareButton = root.querySelector('[data-copy-share]');
+  if (copyShareButton) {
+    copyShareButton.addEventListener('click', function () {
+      copyText(shareMessage).then(function () {
+        copyShareButton.textContent = 'Share message copied';
+        if (copyStatus) copyStatus.textContent = '';
         window.setTimeout(function () {
-          copyButton.textContent = 'Copy link';
+          copyShareButton.textContent = 'Copy share message';
         }, 2200);
       }).catch(function () {
-        copyStatus.textContent = 'Copying was unavailable. Select the address from your browser instead.';
+        if (copyStatus) copyStatus.textContent = 'Copying was unavailable. Select the message above instead.';
+      });
+    });
+  }
+
+  var copyLinkButton = root.querySelector('[data-copy-link]');
+  if (copyLinkButton) {
+    copyLinkButton.addEventListener('click', function () {
+      copyText(pageUrl).then(function () {
+        copyLinkButton.textContent = 'Article link copied';
+        if (copyStatus) copyStatus.textContent = '';
+        window.setTimeout(function () {
+          copyLinkButton.textContent = 'Copy article link';
+        }, 2200);
+      }).catch(function () {
+        if (copyStatus) copyStatus.textContent = 'Copying was unavailable. Select the address from your browser instead.';
       });
     });
   }
