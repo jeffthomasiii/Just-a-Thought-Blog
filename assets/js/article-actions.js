@@ -4,6 +4,16 @@
   var root = document.querySelector('[data-article-actions]');
   if (!root) return;
 
+  var grokLogo = root.querySelector('.jat-logo--grok');
+  if (grokLogo) {
+    grokLogo.style.backgroundColor = 'transparent';
+    grokLogo.style.webkitMaskImage = 'none';
+    grokLogo.style.maskImage = 'none';
+    grokLogo.style.width = '1.7rem';
+    grokLogo.style.height = '1.35rem';
+    grokLogo.innerHTML = '<svg viewBox="0 0 44 28" role="img" aria-label="Grok"><text x="22" y="19" text-anchor="middle" fill="currentColor" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="-1">xAI</text></svg>';
+  }
+
   var triggers = Array.prototype.slice.call(root.querySelectorAll('[data-actions-trigger]'));
   var panels = Array.prototype.slice.call(root.querySelectorAll('[data-actions-panel]'));
   var title = root.getAttribute('data-title') || document.title;
