@@ -16,6 +16,8 @@ layout: default
   .jat-audio-companion__speed{display:inline-flex;align-items:center;gap:.35rem;margin:0 0 0 .25rem;color:#7A7468;font-family:'Source Sans 3','Open Sans',sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
   .jat-audio-companion__speed select{border:1px solid rgba(79,93,58,.45);border-radius:4px;padding:.25rem .35rem;background:#F6F1E7;color:#252822;font:inherit;cursor:pointer}
 
+  #giscus_thread{margin-top:2.25rem}
+
   body.dark-mode .jat-post-intro{background:#22251D!important;border-bottom-color:rgba(214,179,107,.18)!important}
   body.dark-mode .jat-post-intro h1{color:#F5F5F5!important}
   body.dark-mode .jat-post-intro .subheading{color:#A2B179!important}
@@ -67,7 +69,9 @@ layout: default
   {{ content }}
 </article>
 
-      <div id="giscus_thread" style="margin-top: 3rem;"></div>
+      {% include components/article-actions.html %}
+
+      <div id="giscus_thread"></div>
       <script src="https://giscus.app/client.js"
               data-repo="jeffthomasiii/Just-a-Thought-Blog"
               data-repo-id="R_kgDOPIutlg"
@@ -102,3 +106,4 @@ layout: default
   </div>
 </div>
 <script src="{{ '/assets/js/audio-companion.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/article-actions.js' | relative_url }}"></script>
