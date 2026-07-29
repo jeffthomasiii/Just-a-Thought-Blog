@@ -1,0 +1,134 @@
+{% assign jat_share_title = page.title | default: site.title %}
+{% assign jat_share_description = page.description | default: page.excerpt | strip_html | strip_newlines %}
+{% assign jat_share_url = page.url | absolute_url %}
+
+<section class="jat-article-actions"
+         data-article-actions
+         data-title="{{ jat_share_title | escape }}"
+         data-description="{{ jat_share_description | escape }}"
+         data-url="{{ jat_share_url | escape }}"
+         data-scripture="{{ page.scripture | default: '' | escape }}"
+         data-categories="{{ page.categories | join: ', ' | escape }}"
+         data-tags="{{ page.tags | join: ', ' | escape }}"
+         data-series="{{ page.series | default: '' | escape }}">
+  <nav class="jat-article-actions__row" aria-label="Article actions">
+    <button class="jat-article-actions__trigger" type="button" data-actions-trigger="share" aria-expanded="false" aria-controls="jat-share-panel">Share</button>
+    <span class="jat-article-actions__separator" aria-hidden="true">·</span>
+    <button class="jat-article-actions__trigger" type="button" data-actions-trigger="reflect" aria-expanded="false" aria-controls="jat-reflect-panel">Reflect</button>
+    <span class="jat-article-actions__separator" aria-hidden="true">·</span>
+    <a class="jat-article-actions__link" href="#giscus_thread">Comment</a>
+  </nav>
+
+  <div class="jat-article-actions__panel jat-article-actions__panel--share" id="jat-share-panel" data-actions-panel="share" hidden>
+    <h2 class="jat-article-actions__title">Share this thought</h2>
+    <p class="jat-article-actions__description">Choose a platform below. For Facebook and LinkedIn, the reflection text will be copied so you can paste it into your post.</p>
+    <blockquote class="jat-article-actions__share-preview" data-share-preview></blockquote>
+
+    <div class="jat-article-actions__icon-row" aria-label="Share on a social platform">
+      <a class="jat-article-actions__icon-link" href="#" data-share-service="facebook" aria-label="Share on Facebook" title="Facebook"><span class="jat-logo jat-logo--facebook" aria-hidden="true"></span></a>
+      <a class="jat-article-actions__icon-link" href="#" data-share-service="threads" aria-label="Share on Threads" title="Threads"><span class="jat-logo jat-logo--threads" aria-hidden="true"></span></a>
+      <a class="jat-article-actions__icon-link" href="#" data-share-service="x" aria-label="Share on X" title="X"><span class="jat-logo jat-logo--x" aria-hidden="true"></span></a>
+      <a class="jat-article-actions__icon-link" href="#" data-share-service="linkedin" aria-label="Share on LinkedIn" title="LinkedIn"><span class="jat-logo jat-logo--linkedin" aria-hidden="true"></span></a>
+      <a class="jat-article-actions__icon-link" href="#" data-share-service="email" aria-label="Share by email" title="Email">
+        <svg class="jat-brand-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.75 5.75h16.5v12.5H3.75zM4.5 6.5 12 12l7.5-5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="jat-article-actions__copy-actions">
+      <button type="button" data-copy-share>Copy share message</button>
+      <button type="button" data-copy-link>Copy article link</button>
+    </div>
+    <p class="jat-article-actions__status" data-copy-status aria-live="polite"></p>
+  </div>
+
+  <div class="jat-article-actions__panel jat-article-actions__panel--reflect" id="jat-reflect-panel" data-actions-panel="reflect" hidden>
+    <h2 class="jat-article-actions__title">Take this thought further</h2>
+    <p class="jat-article-actions__description">Choose the AI tool you already use. A reflection prompt tailored to this article will be copied before the tool opens.</p>
+
+    <fieldset class="jat-article-actions__choices">
+      <legend class="sr-only">Choose an AI tool</legend>
+      <label class="jat-ai-choice" title="ChatGPT">
+        <input class="sr-only" type="radio" name="jat-ai-tool" value="https://chatgpt.com/" checked>
+        <span class="jat-ai-icon"><span class="jat-logo jat-logo--openai" aria-hidden="true"></span></span>
+        <span class="sr-only">ChatGPT</span>
+      </label>
+      <label class="jat-ai-choice" title="Claude">
+        <input class="sr-only" type="radio" name="jat-ai-tool" value="https://claude.ai/new">
+        <span class="jat-ai-icon"><span class="jat-logo jat-logo--claude" aria-hidden="true"></span></span>
+        <span class="sr-only">Claude</span>
+      </label>
+      <label class="jat-ai-choice" title="Gemini">
+        <input class="sr-only" type="radio" name="jat-ai-tool" value="https://gemini.google.com/app">
+        <span class="jat-ai-icon"><span class="jat-logo jat-logo--gemini" aria-hidden="true"></span></span>
+        <span class="sr-only">Gemini</span>
+      </label>
+      <label class="jat-ai-choice" title="Perplexity">
+        <input class="sr-only" type="radio" name="jat-ai-tool" value="https://www.perplexity.ai/">
+        <span class="jat-ai-icon"><span class="jat-logo jat-logo--perplexity" aria-hidden="true"></span></span>
+        <span class="sr-only">Perplexity</span>
+      </label>
+      <label class="jat-ai-choice" title="Grok">
+        <input class="sr-only" type="radio" name="jat-ai-tool" value="https://x.com/i/grok">
+        <span class="jat-ai-icon"><span class="jat-logo jat-logo--grok" aria-hidden="true"></span></span>
+        <span class="sr-only">Grok</span>
+      </label>
+    </fieldset>
+
+    <button class="jat-article-actions__continue" type="button" data-open-ai>Continue →</button>
+    <p class="jat-article-actions__status" data-reflect-status aria-live="polite"></p>
+  </div>
+</section>
+
+<style>
+  .jat-article-actions{position:relative;margin-top:1.25rem;color:#817b70;font-family:'Source Sans 3','Open Sans',sans-serif}
+  .jat-article-actions__row{display:flex;flex-wrap:wrap;align-items:center;gap:.65rem;font-size:1.08rem!important;line-height:1.6;letter-spacing:.01em}
+  .jat-article-actions__trigger,.jat-article-actions__link{border:0!important;background:transparent!important;color:#7f786d!important;padding:.18rem 0!important;font-family:'Source Sans 3','Open Sans',sans-serif!important;font-size:1.08rem!important;font-weight:500!important;line-height:1.6!important;text-decoration:none!important;text-transform:none!important;letter-spacing:.01em!important;cursor:pointer;box-shadow:none!important}
+  .jat-article-actions__trigger:hover,.jat-article-actions__trigger:focus,.jat-article-actions__trigger[aria-expanded='true'],.jat-article-actions__link:hover,.jat-article-actions__link:focus{color:#4F5D3A!important;text-decoration:none!important;outline:none}
+  .jat-article-actions__trigger:focus-visible,.jat-article-actions__link:focus-visible,.jat-article-actions__continue:focus-visible,.jat-article-actions__icon-link:focus-visible,.jat-article-actions__copy-actions button:focus-visible,.jat-ai-choice:focus-within{outline:2px solid rgba(79,93,58,.55)!important;outline-offset:3px;border-radius:4px}
+  .jat-article-actions__separator{color:#aaa296;font-size:1.08rem;line-height:1}
+  .jat-article-actions__panel{width:min(420px,100%);margin-top:1rem;padding:1.2rem 1.25rem;border:1px solid rgba(79,93,58,.18);border-radius:8px;background:#fffdf9;box-shadow:0 10px 28px rgba(37,40,34,.06)}
+  .jat-article-actions__title{margin:0 0 .65rem;color:#252822;font-family:'Playfair Display','Lora',serif;font-size:1.3rem;font-weight:600;line-height:1.3}
+  .jat-article-actions__description{margin:0 0 .9rem;color:#6f695f;font-size:1rem;line-height:1.55}
+  .jat-article-actions__share-preview{position:relative;margin:0 0 1rem!important;padding:.75rem .85rem!important;border:0!important;border-left:2px solid rgba(79,93,58,.35)!important;background:rgba(246,241,231,.65)!important;color:#4d4a43!important;font-size:.98rem!important;line-height:1.5!important;font-style:normal!important;text-indent:0!important}
+  .jat-article-actions__share-preview:before,.jat-article-actions__share-preview:after{display:none!important;content:none!important}
+  .jat-article-actions__icon-row{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin:.15rem 0 1rem}
+  .jat-article-actions__icon-link{display:inline-flex;align-items:center;justify-content:center;width:2.55rem;height:2.55rem;border:1px solid rgba(79,93,58,.22);border-radius:10px;color:#6f695f!important;text-decoration:none!important;transition:color .16s ease,border-color .16s ease,background .16s ease}
+  .jat-article-actions__icon-link:hover,.jat-article-actions__icon-link:focus{color:#4F5D3A!important;border-color:rgba(79,93,58,.5);background:rgba(79,93,58,.05);text-decoration:none!important;outline:none}
+  .jat-logo{display:block;width:1.35rem;height:1.35rem;background-color:currentColor;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}
+  .jat-logo--facebook{-webkit-mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/facebook.svg');mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/facebook.svg')}
+  .jat-logo--threads{-webkit-mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/threads.svg');mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/threads.svg')}
+  .jat-logo--x{-webkit-mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/x.svg');mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/x.svg')}
+  .jat-logo--linkedin{-webkit-mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg');mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg')}
+  .jat-logo--openai{-webkit-mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg');mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg')}
+  .jat-logo--claude{-webkit-mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/claude.svg');mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/claude.svg')}
+  .jat-logo--gemini{-webkit-mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlegemini.svg');mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlegemini.svg')}
+  .jat-logo--perplexity{-webkit-mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/perplexity.svg');mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/perplexity.svg')}
+  .jat-logo--grok{-webkit-mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/xai.svg');mask-image:url('https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/xai.svg')}
+  .jat-brand-icon-svg{width:1.3rem;height:1.3rem;color:currentColor}
+  .jat-article-actions__copy-actions{display:flex;flex-wrap:wrap;gap:.55rem .9rem;padding-top:.75rem;border-top:1px solid rgba(79,93,58,.14)}
+  .jat-article-actions__copy-actions button{border:0!important;background:transparent!important;color:#6f695f!important;padding:.15rem 0!important;font-family:'Source Sans 3','Open Sans',sans-serif!important;font-size:1rem!important;font-weight:500!important;line-height:1.45!important;text-transform:none!important;letter-spacing:0!important;cursor:pointer;box-shadow:none!important}
+  .jat-article-actions__copy-actions button:hover,.jat-article-actions__copy-actions button:focus{color:#4F5D3A!important;outline:none}
+  .jat-article-actions__choices{display:flex;align-items:flex-start;gap:.7rem;flex-wrap:wrap;margin:0;padding:0;border:0;color:#6f695f}
+  .jat-ai-choice{position:relative;display:flex;align-items:center;justify-content:center;margin:0;cursor:pointer}
+  .jat-ai-icon{display:inline-flex;align-items:center;justify-content:center;width:3rem;height:3rem;border:1px solid rgba(79,93,58,.22);border-radius:10px;color:#6f695f;line-height:1;transition:color .16s ease,border-color .16s ease,background .16s ease,box-shadow .16s ease}
+  .jat-ai-icon .jat-logo{width:1.55rem;height:1.55rem}
+  .jat-ai-icon .jat-logo--grok{width:1.95rem;height:1.95rem}
+  .jat-ai-choice:hover .jat-ai-icon,.jat-ai-choice:focus-within .jat-ai-icon,.jat-ai-choice input:checked + .jat-ai-icon{color:#4F5D3A;border-color:rgba(79,93,58,.55);background:rgba(79,93,58,.07);box-shadow:0 3px 10px rgba(37,40,34,.06)}
+  .jat-article-actions__continue{margin-top:1rem;border:0!important;background:transparent!important;color:#4F5D3A!important;padding:0!important;font-family:'Source Sans 3','Open Sans',sans-serif!important;font-size:1.02rem!important;font-weight:600!important;text-transform:none!important;letter-spacing:0!important;cursor:pointer;box-shadow:none!important}
+  .jat-article-actions__continue:hover,.jat-article-actions__continue:focus{color:#252822!important;outline:none}
+  .jat-article-actions__status{min-height:1em;margin:.6rem 0 0;color:#6f695f;font-size:.92rem;line-height:1.45}
+  .jat-article-actions [hidden]{display:none!important}
+  body.dark-mode .jat-article-actions{color:#C9C1B0}
+  body.dark-mode .jat-article-actions__trigger,body.dark-mode .jat-article-actions__link{color:#C9C1B0!important}
+  body.dark-mode .jat-article-actions__trigger:hover,body.dark-mode .jat-article-actions__trigger:focus,body.dark-mode .jat-article-actions__trigger[aria-expanded='true'],body.dark-mode .jat-article-actions__link:hover,body.dark-mode .jat-article-actions__link:focus{color:#A2B179!important}
+  body.dark-mode .jat-article-actions__separator{color:#8a8274}
+  body.dark-mode .jat-article-actions__panel{border-color:rgba(214,179,107,.2);background:#22251D;box-shadow:0 12px 30px rgba(0,0,0,.2)}
+  body.dark-mode .jat-article-actions__title{color:#F5F5F5}
+  body.dark-mode .jat-article-actions__description,body.dark-mode .jat-article-actions__copy-actions button,body.dark-mode .jat-article-actions__status{color:#D4CCBC!important}
+  body.dark-mode .jat-article-actions__share-preview{border-left-color:rgba(162,177,121,.48)!important;background:rgba(255,255,255,.035)!important;color:#E4DDCF!important}
+  body.dark-mode .jat-article-actions__icon-link,body.dark-mode .jat-ai-icon{color:#D4CCBC!important;border-color:rgba(214,179,107,.24)}
+  body.dark-mode .jat-article-actions__icon-link:hover,body.dark-mode .jat-article-actions__icon-link:focus,body.dark-mode .jat-ai-choice:hover .jat-ai-icon,body.dark-mode .jat-ai-choice:focus-within .jat-ai-icon,body.dark-mode .jat-ai-choice input:checked + .jat-ai-icon{color:#A2B179!important;border-color:rgba(162,177,121,.56);background:rgba(162,177,121,.08)}
+  body.dark-mode .jat-article-actions__copy-actions{border-top-color:rgba(214,179,107,.18)}
+  body.dark-mode .jat-article-actions__copy-actions button:hover,body.dark-mode .jat-article-actions__copy-actions button:focus,body.dark-mode .jat-article-actions__continue{color:#A2B179!important}
+  @media(max-width:575.98px){.jat-article-actions__row,.jat-article-actions__trigger,.jat-article-actions__link{font-size:1rem!important}.jat-article-actions__panel{width:100%;padding:1.1rem}.jat-article-actions__description,.jat-article-actions__copy-actions button,.jat-article-actions__continue{font-size:.98rem!important}.jat-article-actions__icon-row,.jat-article-actions__choices{gap:.58rem}.jat-article-actions__icon-link{width:2.55rem;height:2.55rem}.jat-ai-icon{width:2.85rem;height:2.85rem}}
+</style>
