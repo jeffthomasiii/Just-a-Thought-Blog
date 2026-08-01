@@ -9,7 +9,29 @@
     {% else %}{{ site.title | escape }}{% endif %}
   </title>
 
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  {% assign social_title = page.title | default: site.title %}
+  {% assign social_description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 200 %}
+  {% assign social_image = page.image | default: '/img/jat-olive-branch.png' %}
+  {% assign social_url = page.url | replace:'index.html','' | absolute_url %}
+
+  <meta name="description" content="{{ social_description | truncate: 160 | escape }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:title" content="{{ social_title | escape }}">
+  <meta property="og:description" content="{{ social_description | escape }}">
+  <meta property="og:url" content="{{ social_url }}">
+  <meta property="og:image" content="{{ social_image | absolute_url }}">
+  <meta property="og:image:alt" content="{{ social_title | escape }}">
+
+  <!-- X / Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ social_title | escape }}">
+  <meta name="twitter:description" content="{{ social_description | escape }}">
+  <meta name="twitter:image" content="{{ social_image | absolute_url }}">
+  <meta name="twitter:image:alt" content="{{ social_title | escape }}">
+  {% if site.twitter_username %}<meta name="twitter:creator" content="@{{ site.twitter_username }}">{% endif %}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +40,7 @@
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="canonical" href="{{ social_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
   <!-- Favicon -->
@@ -30,6 +52,5 @@
   <!-- Social and Mobile Branding -->
   <meta name="apple-mobile-web-app-title" content="Just A Thought">
   <meta name="application-name" content="Just A Thought">
-  <meta property="og:image" content="{{ site.baseurl }}/img/jat-olive-branch.png">
 
 </head>
