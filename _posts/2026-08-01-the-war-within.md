@@ -1,28 +1,28 @@
-﻿---
-layout: post  
-title: "The War Within"  
-subtitle: "Why the battle against pride is the fight every Christian must face"  
-description: "An introduction to The Daily Death of Pride, a series exploring how pride seeks mastery within us and how following Christ requires the daily surrender of self."  
-date: 2026-08-01  
-author: Jeff Thomas III  
+---
+layout: post
+title: "The War Within"
+subtitle: "Why the battle against pride is the fight every Christian must face"
+description: "An introduction to The Daily Death of Pride, a series exploring how pride seeks mastery within us and how following Christ requires the daily surrender of self."
+date: 2026-08-01
+author: Jeff Thomas III
 categories:
--   Faith
--   Reflections  
-    tags:
--   pride
--   humility
--   discipleship
--   sanctification
--   spiritual-growth
--   christian-living
--   dying-to-self
--   spiritual-warfare  
-    excerpt: "Pride is not always an enemy approaching from the outside. Often, the most difficult spiritual battle is already taking place within us."  
-    image: /img/posts/the-war-within.jpg  
-    background: /img/posts/bg-the-war-within.jpg  
-    scripture: "Genesis 4:6–7; Luke 9:23; Philippians 2:3–8; James 4:6; 1 Peter 5:5–6"  
-    series: "The Daily Death of Pride"  
-    series_order: 1
+  - Faith
+  - Reflections
+tags:
+  - pride
+  - humility
+  - discipleship
+  - sanctification
+  - spiritual-growth
+  - christian-living
+  - dying-to-self
+  - spiritual-warfare
+excerpt: "Pride is not always an enemy approaching from the outside. Often, the most difficult spiritual battle is already taking place within us."
+image: /img/posts/the-war-within.jpg
+background: /img/posts/bg-the-war-within.jpg
+scripture: "Genesis 4:6–7; Luke 9:23; Philippians 2:3–8; James 4:6; 1 Peter 5:5–6"
+series: "The Daily Death of Pride"
+series_order: 1
 ---
 
 A friend recently described the fight against pride as “hand-to-hand combat,” and the phrase stayed with me. Part of me thought the language sounded severe, but another part of me knew that was probably why it unsettled me. I am accustomed to hearing pride described as something to watch for, guard against, or keep under control. Hand-to-hand combat suggests something much closer and more dangerous because it leaves no safe distance between you and the enemy.
