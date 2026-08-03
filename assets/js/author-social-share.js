@@ -6,10 +6,12 @@
   if (!tool || !article) return;
 
   var AUTHOR_MODE_KEY = 'jat-author-share-enabled';
+  var apiUrl = tool.getAttribute('data-api-url') || '';
   var status = tool.querySelector('[data-author-status]');
-  var importBox = tool.querySelector('[data-author-import]');
   var results = tool.querySelector('[data-author-results]');
   var preview = tool.querySelector('[data-author-article-preview]');
+  var generateButton = tool.querySelector('[data-author-generate]');
+  var clearButton = tool.querySelector('[data-author-clear]');
   var lastFocus = null;
 
   var data = {
@@ -63,45 +65,12 @@
     return input ? input.value : 'general article announcement';
   }
 
-  function buildPrompt(platforms, angle) {
-    var lines = [
-      'Act as the social media writing assistant for Jeff Thomas III, author of Just A Thought Blog.',
-      '',
-      'Write original, platform-specific captions for this published article. Preserve Jeff’s reflective, honest, warm, biblically grounded, compassionate, and conversational voice. The writing should invite reflection rather than pressure agreement.',
-      '',
-      'Do not use clickbait, exaggerated claims, generic Christian clichés, invented personal details, or unsupported theological conclusions. Do not overuse emojis, hashtags, dramatic fragments, one-sentence paragraphs, or em dashes. Keep the writing authentic rather than overly polished.',
-      '',
-      'Article title: ' + data.title,
-      'Description: ' + (data.description || 'Not provided'),
-      'Article URL: ' + data.url,
-      'Scripture: ' + (data.scripture || 'Not provided'),
-      'Categories: ' + (data.categories || 'Not provided'),
-      'Tags: ' + (data.tags || 'Not provided'),
-      'Series: ' + (data.series || 'Not provided'),
-      'Selected emphasis: ' + angle,
-      'Platforms requested: ' + platforms.join(', '),
-      '',
-      'Platform guidance:',
-      '- Facebook: personal and reflective, approximately 100–180 words, with a natural invitation to read and one thoughtful question when appropriate.',
-      '- Threads: conversational and concise, approximately 45–90 words.',
-      '- LinkedIn: professional and thoughtful when the subject supports it, approximately 80–150 words. Do not force a business angle.',
-      '- X: no more than 260 characters including the URL.',
-      '- Instagram: reflective caption, approximately 100–180 words, followed by no more than 5 relevant hashtags.',
-      '- Text message: warm, natural, and brief, as though sharing the article with a friend.',
-      '',
-      'Include the article URL in every caption. Write every URL as plain text. Never format a URL as a Markdown link and never place square brackets or parentheses around a URL. Do not italicize titles with Markdown symbols. Use “…just a thought.” only where it feels natural and consistent with the platform.',
-      '',
-      'Return only valid JSON with one key for each requested platform. Use these exact key names: facebook, threads, linkedin, x, instagram, text-message. Escape line breaks inside values as \\n. Do not use Markdown fences or add commentary outside the JSON.'
-    ];
-    return lines.join('\n');
-  }
-
   function openTool() {
     lastFocus = document.activeElement;
     preview.innerHTML = '<strong>' + escapeHtml(data.title) + '</strong>' + escapeHtml(data.description || data.url);
     tool.hidden = false;
     document.body.style.overflow = 'hidden';
-    var first = tool.querySelector('input, select, button, textarea');
+    var first = tool.querySelector('input, button, textarea');
     if (first) first.focus();
   }
 
@@ -123,7 +92,7 @@
 
   function renderCaptions(captions) {
     results.innerHTML = '';
-    Object.keys(captions).forEach(function (platform) {
+    selectedPlatforms().forEach(function (platform) {
       if (typeof captions[platform] !== 'string') return;
       var card = document.createElement('section');
       card.className = 'jat-author-share__card';
@@ -136,12 +105,15 @@
         copyText(textarea.value).then(function () {
           event.target.textContent = 'Copied';
           window.setTimeout(function () { event.target.textContent = 'Copy'; }, 1800);
+        }).catch(function () {
+          status.textContent = 'The caption could not be copied. Select it manually and try again.';
         });
       });
       var openLink = card.querySelector('[data-open-platform]');
       var urlBuilder = platformUrls[platform];
       openLink.href = urlBuilder ? urlBuilder(textarea.value) : data.url;
       openLink.addEventListener('click', function () {
+        openLink.href = urlBuilder ? urlBuilder(textarea.value) : data.url;
         if (platform === 'facebook' || platform === 'linkedin' || platform === 'instagram') {
           copyText(textarea.value);
           status.textContent = platformLabel(platform) + ' opened. The caption was copied so you can paste it.';
@@ -150,35 +122,51 @@
       results.appendChild(card);
     });
     results.hidden = !results.children.length;
+    clearButton.hidden = results.hidden;
   }
 
-  function cleanAiResponse(value) {
-    var raw = String(value || '').trim();
+  function setGenerating(isGenerating) {
+    generateButton.disabled = isGenerating;
+    generateButton.textContent = isGenerating ? 'Generating captions…' : 'Generate captions';
+  }
 
-    raw = raw.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+  function generateCaptions() {
+    var platforms = selectedPlatforms();
+    if (!platforms.length) {
+      status.textContent = 'Select at least one platform.';
+      return;
+    }
 
-    var firstBrace = raw.indexOf('{');
-    var lastBrace = raw.lastIndexOf('}');
-    if (firstBrace > -1 && lastBrace > firstBrace) raw = raw.slice(firstBrace, lastBrace + 1);
+    if (!apiUrl) {
+      status.textContent = 'The caption service has not been connected yet. Add author_social_api_url to _config.yml after deploying the Worker.';
+      return;
+    }
 
-    // Repair a Markdown link that swallowed the final JSON quote and brace.
-    raw = raw.replace(/\[(https?:\/\/[^\]"\s]+)"\}\]\((https?:\/\/[^)]*)\)\s*$/i, '$1"}');
+    setGenerating(true);
+    status.textContent = 'Writing platform-specific captions…';
 
-    // Convert ordinary Markdown-wrapped URLs back to plain-text URLs before parsing.
-    raw = raw.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, function (match, label) {
-      return label;
+    fetch(apiUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        article: data,
+        platforms: platforms,
+        angle: selectedAngle()
+      })
+    }).then(function (response) {
+      return response.json().catch(function () { return {}; }).then(function (payload) {
+        if (!response.ok) throw new Error(payload.error || 'Caption generation failed.');
+        return payload;
+      });
+    }).then(function (payload) {
+      if (!payload.captions || typeof payload.captions !== 'object') throw new Error('The caption service returned an incomplete response.');
+      renderCaptions(payload.captions);
+      status.textContent = 'Captions generated. Review and edit each one before sharing.';
+    }).catch(function (error) {
+      status.textContent = error.message || 'Caption generation failed. Please try again.';
+    }).finally(function () {
+      setGenerating(false);
     });
-
-    return raw.trim();
-  }
-
-  function parseCaptions(value) {
-    var original = String(value || '').trim();
-    var cleaned = cleanAiResponse(original);
-    return {
-      captions: JSON.parse(cleaned),
-      repaired: cleaned !== original
-    };
   }
 
   function authorModeEnabled() {
@@ -193,7 +181,7 @@
     try {
       window.localStorage.setItem(AUTHOR_MODE_KEY, 'true');
     } catch (error) {
-      // The current page still opens the tool even if storage is blocked.
+      // The current page still opens the tool if browser storage is blocked.
     }
   }
 
@@ -214,39 +202,12 @@
     element.addEventListener('click', closeTool);
   });
 
-  tool.querySelector('[data-author-generate]').addEventListener('click', function () {
-    var platforms = selectedPlatforms();
-    if (!platforms.length) {
-      status.textContent = 'Select at least one platform.';
-      return;
-    }
-    var prompt = buildPrompt(platforms, selectedAngle());
-    var destination = tool.querySelector('[data-author-ai-tool]').value;
-    var opened = window.open('about:blank', '_blank');
-    copyText(prompt).then(function () {
-      status.textContent = 'Prompt copied. Paste it into the AI conversation, then import the JSON response below.';
-      if (opened) {
-        opened.opener = null;
-        opened.location = destination;
-      } else {
-        window.location.href = destination;
-      }
-    }).catch(function () {
-      if (opened) opened.close();
-      status.textContent = 'The prompt could not be copied. Please allow clipboard access and try again.';
-    });
-  });
-
-  tool.querySelector('[data-author-load]').addEventListener('click', function () {
-    try {
-      var parsed = parseCaptions(importBox.value);
-      renderCaptions(parsed.captions);
-      status.textContent = parsed.repaired
-        ? 'Captions loaded. The tool automatically repaired Markdown formatting around the JSON.'
-        : 'Captions loaded. Review and edit each one before sharing.';
-    } catch (error) {
-      status.textContent = 'The response still could not be read. Copy the complete response again, including its opening and closing braces.';
-    }
+  generateButton.addEventListener('click', generateCaptions);
+  clearButton.addEventListener('click', function () {
+    results.innerHTML = '';
+    results.hidden = true;
+    clearButton.hidden = true;
+    status.textContent = '';
   });
 
   document.addEventListener('keydown', function (event) {
