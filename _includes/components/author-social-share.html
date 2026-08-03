@@ -1,4 +1,4 @@
-<section class="jat-author-share" data-author-share hidden aria-labelledby="jat-author-share-title">
+<section class="jat-author-share" data-author-share data-api-url="{{ site.author_social_api_url | default: '' | escape }}" hidden aria-labelledby="jat-author-share-title">
   <div class="jat-author-share__backdrop" data-author-share-close></div>
   <div class="jat-author-share__dialog" role="dialog" aria-modal="true">
     <button class="jat-author-share__close" type="button" data-author-share-close aria-label="Close social post creator">×</button>
@@ -31,22 +31,9 @@
     <div class="jat-author-share__article" data-author-article-preview></div>
 
     <div class="jat-author-share__actions">
-      <label for="jat-author-ai">AI tool</label>
-      <select id="jat-author-ai" data-author-ai-tool>
-        <option value="https://chatgpt.com/">ChatGPT</option>
-        <option value="https://claude.ai/new">Claude</option>
-        <option value="https://gemini.google.com/app">Gemini</option>
-        <option value="https://www.perplexity.ai/">Perplexity</option>
-      </select>
-      <button type="button" data-author-generate>Copy prompt &amp; open AI</button>
+      <button type="button" data-author-generate>Generate captions</button>
+      <button class="jat-author-share__secondary" type="button" data-author-clear hidden>Clear captions</button>
     </div>
-
-    <details class="jat-author-share__import">
-      <summary>Import the AI captions back into this page</summary>
-      <p>Paste the JSON response from the AI here, then select <strong>Load captions</strong>.</p>
-      <textarea data-author-import rows="7" placeholder='{"facebook":"...","threads":"..."}'></textarea>
-      <button type="button" data-author-load>Load captions</button>
-    </details>
 
     <div class="jat-author-share__results" data-author-results hidden></div>
     <p class="jat-author-share__status" data-author-status aria-live="polite"></p>
@@ -62,9 +49,8 @@
   .jat-author-share h2{margin:0 2rem .4rem 0;font-family:'Playfair Display','Lora',serif;font-size:2rem;color:#252822}.jat-author-share__intro{margin:0 0 1.2rem;color:#6f695f}
   .jat-author-share__grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.jat-author-share fieldset{margin:0;padding:1rem;border:1px solid rgba(79,93,58,.18);border-radius:8px;background:#fffdf9}.jat-author-share legend{padding:0 .3rem;color:#4F5D3A;font-weight:700}.jat-author-share label{display:block;margin:.45rem 0;cursor:pointer}.jat-author-share input{margin-right:.45rem}
   .jat-author-share__article{margin:1rem 0;padding:.85rem 1rem;border-left:3px solid #4F5D3A;background:rgba(255,253,249,.75);line-height:1.5}.jat-author-share__article strong{display:block;font-family:'Playfair Display','Lora',serif;font-size:1.12rem}
-  .jat-author-share__actions{display:grid;grid-template-columns:auto minmax(150px,220px) auto;align-items:end;gap:.65rem}.jat-author-share__actions label{margin:0}.jat-author-share select,.jat-author-share textarea{width:100%;border:1px solid rgba(79,93,58,.35);border-radius:6px;background:#fffdf9;color:#252822;padding:.65rem}.jat-author-share button[data-author-generate],.jat-author-share button[data-author-load]{border:1px solid #4F5D3A;border-radius:6px;background:#4F5D3A;color:#F6F1E7;padding:.65rem .85rem;font-weight:700;cursor:pointer}
-  .jat-author-share__import{margin-top:1rem;padding-top:.9rem;border-top:1px solid rgba(79,93,58,.16)}.jat-author-share__import summary{color:#4F5D3A;font-weight:700;cursor:pointer}.jat-author-share__import p{margin:.65rem 0;color:#6f695f}.jat-author-share__import button{margin-top:.55rem}
-  .jat-author-share__results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;margin-top:1rem}.jat-author-share__card{padding:1rem;border:1px solid rgba(79,93,58,.18);border-radius:8px;background:#fffdf9}.jat-author-share__card h3{margin:0 0 .55rem;color:#4F5D3A;font-size:.82rem;text-transform:uppercase;letter-spacing:.07em}.jat-author-share__card textarea{min-height:180px;resize:vertical}.jat-author-share__card-actions{display:flex;gap:.7rem;margin-top:.55rem}.jat-author-share__card-actions button,.jat-author-share__card-actions a{border:0;background:transparent;color:#4F5D3A;padding:0;font-weight:700;text-decoration:none;cursor:pointer}.jat-author-share__status{min-height:1.4em;margin:.8rem 0 0;color:#6f695f}
-  body.dark-mode .jat-author-share__dialog{background:#22251D;color:#F5F5F5;border-color:rgba(214,179,107,.22)}body.dark-mode .jat-author-share h2{color:#F5F5F5}body.dark-mode .jat-author-share__intro,body.dark-mode .jat-author-share__status,body.dark-mode .jat-author-share__import p{color:#C9C1B0}body.dark-mode .jat-author-share fieldset,body.dark-mode .jat-author-share__article,body.dark-mode .jat-author-share__card,body.dark-mode .jat-author-share select,body.dark-mode .jat-author-share textarea{background:#181a16;color:#F5F5F5;border-color:rgba(162,177,121,.35)}
-  @media(max-width:700px){.jat-author-share__grid,.jat-author-share__results{grid-template-columns:1fr}.jat-author-share__actions{grid-template-columns:1fr}.jat-author-share__dialog{padding:1.2rem}}
+  .jat-author-share__actions{display:flex;flex-wrap:wrap;align-items:center;gap:.65rem}.jat-author-share button[data-author-generate]{border:1px solid #4F5D3A;border-radius:6px;background:#4F5D3A;color:#F6F1E7;padding:.72rem 1rem;font-weight:700;cursor:pointer}.jat-author-share button[data-author-generate][disabled]{opacity:.6;cursor:wait}.jat-author-share__secondary{border:1px solid rgba(79,93,58,.38);border-radius:6px;background:transparent;color:#4F5D3A;padding:.72rem 1rem;font-weight:700;cursor:pointer}
+  .jat-author-share__results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;margin-top:1rem}.jat-author-share__card{padding:1rem;border:1px solid rgba(79,93,58,.18);border-radius:8px;background:#fffdf9}.jat-author-share__card h3{margin:0 0 .55rem;color:#4F5D3A;font-size:.82rem;text-transform:uppercase;letter-spacing:.07em}.jat-author-share__card textarea{width:100%;min-height:220px;resize:vertical;border:1px solid rgba(79,93,58,.35);border-radius:6px;background:#fffdf9;color:#252822;padding:.65rem}.jat-author-share__card-actions{display:flex;gap:.7rem;margin-top:.55rem}.jat-author-share__card-actions button,.jat-author-share__card-actions a{border:0;background:transparent;color:#4F5D3A;padding:0;font-weight:700;text-decoration:none;cursor:pointer}.jat-author-share__status{min-height:1.4em;margin:.8rem 0 0;color:#6f695f}
+  body.dark-mode .jat-author-share__dialog{background:#22251D;color:#F5F5F5;border-color:rgba(214,179,107,.22)}body.dark-mode .jat-author-share h2{color:#F5F5F5}body.dark-mode .jat-author-share__intro,body.dark-mode .jat-author-share__status{color:#C9C1B0}body.dark-mode .jat-author-share fieldset,body.dark-mode .jat-author-share__article,body.dark-mode .jat-author-share__card,body.dark-mode .jat-author-share__card textarea{background:#181a16;color:#F5F5F5;border-color:rgba(162,177,121,.35)}body.dark-mode .jat-author-share__secondary{color:#A2B179;border-color:rgba(162,177,121,.45)}
+  @media(max-width:700px){.jat-author-share__grid,.jat-author-share__results{grid-template-columns:1fr}.jat-author-share__dialog{padding:1.2rem}.jat-author-share__card textarea{min-height:180px}}
 </style>
