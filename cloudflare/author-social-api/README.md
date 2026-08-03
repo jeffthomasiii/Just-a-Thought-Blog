@@ -6,7 +6,7 @@ This Cloudflare Worker generates platform-specific captions directly inside the 
 
 The Worker only accepts requests from `https://justathoughtblog.org`, only accepts Just A Thought Blog article URLs, limits supported platforms, caps request size, and applies a Cloudflare rate-limit binding.
 
-This is cost-abuse protection, not user authentication. Add Cloudflare Access later before introducing publishing, private drafts, stored history, or other privileged actions.
+This is cost-abuse protection, not user authentication. Because login is intentionally deferred, someone who discovers and directly calls the Worker could still consume API usage. Keep a low OpenAI project budget and usage alert in place. Add Cloudflare Access before introducing publishing, private drafts, stored history, or other privileged actions.
 
 ## Deploy
 
