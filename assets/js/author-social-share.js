@@ -5,6 +5,7 @@
   var article = document.querySelector('[data-article-actions]');
   if (!tool || !article) return;
 
+  var AUTHOR_MODE_KEY = 'jat-author-share-enabled';
   var status = tool.querySelector('[data-author-status]');
   var importBox = tool.querySelector('[data-author-import]');
   var results = tool.querySelector('[data-author-results]');
@@ -88,9 +89,9 @@
       '- Instagram: reflective caption, approximately 100–180 words, followed by no more than 5 relevant hashtags.',
       '- Text message: warm, natural, and brief, as though sharing the article with a friend.',
       '',
-      'Include the article URL in every caption. Use “…just a thought.” only where it feels natural and consistent with the platform.',
+      'Include the article URL in every caption. Write every URL as plain text. Never format a URL as a Markdown link and never place square brackets or parentheses around a URL. Do not italicize titles with Markdown symbols. Use “…just a thought.” only where it feels natural and consistent with the platform.',
       '',
-      'Return only valid JSON with one key for each requested platform. Use these exact key names: facebook, threads, linkedin, x, instagram, text-message. Do not use Markdown fences or add commentary outside the JSON.'
+      'Return only valid JSON with one key for each requested platform. Use these exact key names: facebook, threads, linkedin, x, instagram, text-message. Escape line breaks inside values as \\n. Do not use Markdown fences or add commentary outside the JSON.'
     ];
     return lines.join('\n');
   }
@@ -151,6 +152,64 @@
     results.hidden = !results.children.length;
   }
 
+  function cleanAiResponse(value) {
+    var raw = String(value || '').trim();
+
+    raw = raw.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+
+    var firstBrace = raw.indexOf('{');
+    var lastBrace = raw.lastIndexOf('}');
+    if (firstBrace > -1 && lastBrace > firstBrace) raw = raw.slice(firstBrace, lastBrace + 1);
+
+    // Repair a Markdown link that swallowed the final JSON quote and brace.
+    raw = raw.replace(/\[(https?:\/\/[^\]"\s]+)"\}\]\((https?:\/\/[^)]*)\)\s*$/i, '$1"}');
+
+    // Convert ordinary Markdown-wrapped URLs back to plain-text URLs before parsing.
+    raw = raw.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, function (match, label) {
+      return label;
+    });
+
+    return raw.trim();
+  }
+
+  function parseCaptions(value) {
+    var original = String(value || '').trim();
+    var cleaned = cleanAiResponse(original);
+    return {
+      captions: JSON.parse(cleaned),
+      repaired: cleaned !== original
+    };
+  }
+
+  function authorModeEnabled() {
+    try {
+      return window.localStorage.getItem(AUTHOR_MODE_KEY) === 'true';
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function enableAuthorMode() {
+    try {
+      window.localStorage.setItem(AUTHOR_MODE_KEY, 'true');
+    } catch (error) {
+      // The current page still opens the tool even if storage is blocked.
+    }
+  }
+
+  function addAuthorLauncher() {
+    if (!authorModeEnabled() || document.querySelector('[data-author-share-launcher]')) return;
+    var shareActions = article.querySelector('.jat-article-actions__copy-actions');
+    if (!shareActions) return;
+
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.setAttribute('data-author-share-launcher', '');
+    button.textContent = 'Create social posts with AI';
+    button.addEventListener('click', openTool);
+    shareActions.appendChild(button);
+  }
+
   tool.querySelectorAll('[data-author-share-close]').forEach(function (element) {
     element.addEventListener('click', closeTool);
   });
@@ -179,24 +238,31 @@
   });
 
   tool.querySelector('[data-author-load]').addEventListener('click', function () {
-    var raw = importBox.value.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
     try {
-      var captions = JSON.parse(raw);
-      renderCaptions(captions);
-      status.textContent = 'Captions loaded. Review and edit each one before sharing.';
+      var parsed = parseCaptions(importBox.value);
+      renderCaptions(parsed.captions);
+      status.textContent = parsed.repaired
+        ? 'Captions loaded. The tool automatically repaired Markdown formatting around the JSON.'
+        : 'Captions loaded. Review and edit each one before sharing.';
     } catch (error) {
-      status.textContent = 'That response is not valid JSON yet. Remove any commentary around the JSON and try again.';
+      status.textContent = 'The response still could not be read. Copy the complete response again, including its opening and closing braces.';
     }
   });
 
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape' && !tool.hidden) closeTool();
-    if (event.altKey && event.shiftKey && event.key.toLowerCase() === 's') {
+    if (event.ctrlKey && event.altKey && event.key.toLowerCase() === 'j') {
       event.preventDefault();
       openTool();
     }
   });
 
   var params = new URLSearchParams(window.location.search);
-  if (params.get('author-share') === 'true' || params.get('share-ai') === 'true') openTool();
+  if (params.get('author-share') === 'true' || params.get('share-ai') === 'true') {
+    enableAuthorMode();
+    addAuthorLauncher();
+    openTool();
+  } else {
+    addAuthorLauncher();
+  }
 })();
