@@ -3,3 +3,7 @@ _site
 node_modules
 Gemfile.lock
 *.gem
+.dev.vars
+.dev.vars.*
+.env
+.env.*
