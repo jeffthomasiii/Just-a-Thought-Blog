@@ -44,19 +44,25 @@
   };
 
   function copyText(text) {
-    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text);
+    }
+
     return new Promise(function (resolve, reject) {
       var box = document.createElement('textarea');
       box.value = text;
       box.setAttribute('readonly', '');
       box.style.position = 'fixed';
+      box.style.left = '-9999px';
       box.style.opacity = '0';
       document.body.appendChild(box);
+      box.focus();
       box.select();
+
       try {
-        var ok = document.execCommand('copy');
+        var copied = document.execCommand('copy');
         document.body.removeChild(box);
-        ok ? resolve() : reject(new Error('Copy failed'));
+        copied ? resolve() : reject(new Error('Copy failed'));
       } catch (error) {
         document.body.removeChild(box);
         reject(error);
@@ -90,10 +96,12 @@
           input.checked = savedPlatforms.indexOf(input.value) > -1;
         });
       }
+
       var savedAngle = window.localStorage.getItem(ANGLE_KEY);
       if (savedAngle) {
-        var angleInput = tool.querySelector('input[name="jat-author-angle"][value="' + CSS.escape(savedAngle) + '"]');
-        if (angleInput) angleInput.checked = true;
+        tool.querySelectorAll('input[name="jat-author-angle"]').forEach(function (input) {
+          if (input.value === savedAngle) input.checked = true;
+        });
       }
     } catch (error) {}
   }
@@ -118,7 +126,7 @@
       'Tags: ' + (data.tags || 'Not provided'),
       'Series: ' + (data.series || 'Not provided'),
       'Selected emphasis: ' + angle,
-      'Platforms requested: ' + platforms.map(function (p) { return platformLabels[p]; }).join(', '),
+      'Platforms requested: ' + platforms.map(function (platform) { return platformLabels[platform]; }).join(', '),
       '',
       'Platform guidance:',
       '- Facebook: personal and reflective, approximately 100–180 words, with a natural invitation to read and one thoughtful question when appropriate.',
@@ -155,11 +163,16 @@
       var content = raw.slice(item.contentStart, end).trim();
       var normalized = item.label.toLowerCase().replace(/\s+/g, '-');
       if (normalized === 'textmessage') normalized = 'text-message';
-      if (normalized === 'text-message') captions['text-message'] = content;
-      else captions[normalized] = content;
+      captions[normalized] = content;
     });
 
     return captions;
+  }
+
+  function escapeHtml(value) {
+    return String(value || '').replace(/[&<>'"]/g, function (character) {
+      return {'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character];
+    });
   }
 
   function openTool() {
@@ -178,27 +191,21 @@
     if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
 
-  function escapeHtml(value) {
-    return String(value || '').replace(/[&<>'"]/g, function (character) {
-      return {'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character];
-    });
-  }
-
-  function platformLabel(name) {
-    return platformLabels[name] || name;
-  }
-
   function renderCaptions(captions) {
     results.innerHTML = '';
+
     selectedPlatforms().forEach(function (platform) {
       if (typeof captions[platform] !== 'string' || !captions[platform].trim()) return;
+
       var card = document.createElement('section');
       card.className = 'jat-author-share__card';
-      card.innerHTML = '<h3>' + escapeHtml(platformLabel(platform)) + '</h3>' +
-        '<textarea aria-label="' + escapeHtml(platformLabel(platform)) + ' caption"></textarea>' +
+      card.innerHTML = '<h3>' + escapeHtml(platformLabels[platform] || platform) + '</h3>' +
+        '<textarea aria-label="' + escapeHtml(platformLabels[platform] || platform) + ' caption"></textarea>' +
         '<div class="jat-author-share__card-actions"><button type="button" data-copy-caption>Copy</button><a target="_blank" rel="noopener noreferrer" data-open-platform>Open platform</a></div>';
+
       var textarea = card.querySelector('textarea');
       textarea.value = captions[platform];
+
       card.querySelector('[data-copy-caption]').addEventListener('click', function (event) {
         copyText(textarea.value).then(function () {
           event.target.textContent = 'Copied';
@@ -207,6 +214,7 @@
           status.textContent = 'The caption could not be copied. Select it manually and try again.';
         });
       });
+
       var openLink = card.querySelector('[data-open-platform]');
       var urlBuilder = platformUrls[platform];
       openLink.href = urlBuilder ? urlBuilder(textarea.value) : data.url;
@@ -214,9 +222,10 @@
         openLink.href = urlBuilder ? urlBuilder(textarea.value) : data.url;
         if (platform === 'facebook' || platform === 'linkedin' || platform === 'instagram') {
           copyText(textarea.value);
-          status.textContent = platformLabel(platform) + ' opened. The caption was copied so you can paste it.';
+          status.textContent = (platformLabels[platform] || platform) + ' opened. The caption was copied so you can paste it.';
         }
       });
+
       results.appendChild(card);
     });
 
@@ -248,6 +257,7 @@
     if (!authorModeEnabled() || document.querySelector('[data-author-share-launcher]')) return;
     var shareActions = article.querySelector('.jat-article-actions__copy-actions');
     if (!shareActions) return;
+
     var button = document.createElement('button');
     button.type = 'button';
     button.setAttribute('data-author-share-launcher', '');
@@ -270,19 +280,19 @@
       status.textContent = 'Select at least one platform.';
       return;
     }
+
     saveSelections();
-    var prompt = buildPrompt(platforms, selectedAngle());
-    var opened = window.open('about:blank', '_blank');
-    copyText(prompt).then(function () {
-      status.textContent = 'Request copied. Paste it into ChatGPT, copy the complete response, then return here and select Import from clipboard.';
-      if (opened) {
-        opened.opener = null;
-        opened.location = 'https://chatgpt.com/';
-      } else {
-        window.location.href = 'https://chatgpt.com/';
-      }
+    status.textContent = 'Copying the request and opening ChatGPT…';
+
+    copyText(buildPrompt(platforms, selectedAngle())).then(function () {
+      /*
+       * Navigate the current tab instead of opening about:blank and redirecting it.
+       * Mobile browsers frequently block that delayed popup redirect. A direct
+       * navigation is reliable, can open the ChatGPT app when supported, and the
+       * browser Back action returns to the preserved Author Tool state.
+       */
+      window.location.assign('https://chatgpt.com/');
     }).catch(function () {
-      if (opened) opened.close();
       status.textContent = 'The request could not be copied. Please allow clipboard access and try again.';
     });
   });
@@ -293,6 +303,7 @@
       status.textContent = 'This browser does not allow direct clipboard reading. Paste the response into the fallback field below.';
       return;
     }
+
     navigator.clipboard.readText().then(function (text) {
       importResponse(text);
     }).catch(function () {
