@@ -1,0 +1,65 @@
+<section class="jat-author-share" data-author-share hidden aria-labelledby="jat-author-share-title">
+  <div class="jat-author-share__backdrop" data-author-share-close></div>
+  <div class="jat-author-share__dialog" role="dialog" aria-modal="true">
+    <button class="jat-author-share__close" type="button" data-author-share-close aria-label="Close social post creator">×</button>
+    <p class="jat-author-share__eyebrow">Author tool</p>
+    <h2 id="jat-author-share-title">Create social posts</h2>
+    <p class="jat-author-share__intro">Choose the platforms and emphasis, then send one prepared request to ChatGPT. When you return, import the response from your clipboard.</p>
+
+    <div class="jat-author-share__grid">
+      <fieldset data-platform-fieldset>
+        <legend>Platforms</legend>
+        <label><input type="checkbox" value="facebook" checked> Facebook</label>
+        <label><input type="checkbox" value="threads" checked> Threads</label>
+        <label><input type="checkbox" value="linkedin" checked> LinkedIn</label>
+        <label><input type="checkbox" value="x"> X</label>
+        <label><input type="checkbox" value="instagram"> Instagram</label>
+        <label><input type="checkbox" value="text-message"> Text message</label>
+      </fieldset>
+
+      <fieldset data-angle-fieldset>
+        <legend>Emphasis</legend>
+        <label><input type="radio" name="jat-author-angle" value="general article announcement" checked> General announcement</label>
+        <label><input type="radio" name="jat-author-angle" value="personal reflection"> Personal reflection</label>
+        <label><input type="radio" name="jat-author-angle" value="faith and Scripture"> Faith and Scripture</label>
+        <label><input type="radio" name="jat-author-angle" value="marriage and relationships"> Marriage and relationships</label>
+        <label><input type="radio" name="jat-author-angle" value="leadership and professional application"> Leadership and professional</label>
+        <label><input type="radio" name="jat-author-angle" value="a reflective question for readers"> Ask readers a question</label>
+      </fieldset>
+    </div>
+
+    <div class="jat-author-share__article" data-author-article-preview></div>
+
+    <div class="jat-author-share__actions">
+      <button type="button" data-author-send>Copy request &amp; open ChatGPT</button>
+      <button type="button" data-author-clipboard>Import from clipboard</button>
+      <button class="jat-author-share__secondary" type="button" data-author-start-over>Start over</button>
+    </div>
+
+    <details class="jat-author-share__fallback" data-author-fallback>
+      <summary>Clipboard import unavailable?</summary>
+      <p>Paste ChatGPT’s complete response here, then select <strong>Import pasted response</strong>.</p>
+      <textarea data-author-paste rows="8" placeholder="Paste the complete labeled response here"></textarea>
+      <button type="button" data-author-paste-import>Import pasted response</button>
+    </details>
+
+    <div class="jat-author-share__results" data-author-results hidden></div>
+    <p class="jat-author-share__status" data-author-status aria-live="polite"></p>
+  </div>
+</section>
+
+<style>
+  .jat-author-share{position:fixed;inset:0;z-index:10050;font-family:'Source Sans 3','Open Sans',sans-serif;color:#252822}
+  .jat-author-share[hidden]{display:none!important}.jat-author-share__backdrop{position:absolute;inset:0;background:rgba(25,28,22,.72)}
+  .jat-author-share__dialog{position:relative;width:min(880px,calc(100% - 2rem));max-height:calc(100vh - 2rem);overflow:auto;margin:1rem auto;padding:1.5rem;border:1px solid rgba(79,93,58,.25);border-radius:12px;background:#F6F1E7;box-shadow:0 24px 70px rgba(0,0,0,.28)}
+  .jat-author-share__close{position:absolute;top:.7rem;right:.85rem;border:0;background:transparent;color:#7A7468;font-size:2rem;line-height:1;cursor:pointer}
+  .jat-author-share__eyebrow{margin:0 0 .2rem;color:#4F5D3A;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em}
+  .jat-author-share h2{margin:0 2rem .4rem 0;font-family:'Playfair Display','Lora',serif;font-size:2rem;color:#252822}.jat-author-share__intro{margin:0 0 1.2rem;color:#6f695f}
+  .jat-author-share__grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.jat-author-share fieldset{margin:0;padding:1rem;border:1px solid rgba(79,93,58,.18);border-radius:8px;background:#fffdf9}.jat-author-share legend{padding:0 .3rem;color:#4F5D3A;font-weight:700}.jat-author-share label{display:block;margin:.45rem 0;cursor:pointer}.jat-author-share input{margin-right:.45rem}
+  .jat-author-share__article{margin:1rem 0;padding:.85rem 1rem;border-left:3px solid #4F5D3A;background:rgba(255,253,249,.75);line-height:1.5}.jat-author-share__article strong{display:block;font-family:'Playfair Display','Lora',serif;font-size:1.12rem}
+  .jat-author-share__actions{display:flex;flex-wrap:wrap;align-items:center;gap:.65rem}.jat-author-share__actions button,.jat-author-share button[data-author-paste-import]{border:1px solid #4F5D3A;border-radius:6px;background:#4F5D3A;color:#F6F1E7;padding:.72rem 1rem;font-weight:700;cursor:pointer}.jat-author-share__actions button[data-author-clipboard]{background:transparent;color:#4F5D3A}.jat-author-share__secondary{background:transparent!important;color:#6f695f!important;border-color:rgba(79,93,58,.3)!important}
+  .jat-author-share__fallback{margin-top:1rem;padding-top:.8rem;border-top:1px solid rgba(79,93,58,.16)}.jat-author-share__fallback summary{color:#4F5D3A;font-weight:700;cursor:pointer}.jat-author-share__fallback p{margin:.65rem 0;color:#6f695f}.jat-author-share__fallback textarea{width:100%;border:1px solid rgba(79,93,58,.35);border-radius:6px;background:#fffdf9;color:#252822;padding:.65rem;resize:vertical}.jat-author-share__fallback button{margin-top:.55rem}
+  .jat-author-share__results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;margin-top:1rem}.jat-author-share__card{padding:1rem;border:1px solid rgba(79,93,58,.18);border-radius:8px;background:#fffdf9}.jat-author-share__card h3{margin:0 0 .55rem;color:#4F5D3A;font-size:.82rem;text-transform:uppercase;letter-spacing:.07em}.jat-author-share__card textarea{width:100%;min-height:220px;resize:vertical;border:1px solid rgba(79,93,58,.35);border-radius:6px;background:#fffdf9;color:#252822;padding:.65rem}.jat-author-share__card-actions{display:flex;gap:.7rem;margin-top:.55rem}.jat-author-share__card-actions button,.jat-author-share__card-actions a{border:0;background:transparent;color:#4F5D3A;padding:0;font-weight:700;text-decoration:none;cursor:pointer}.jat-author-share__status{min-height:1.4em;margin:.8rem 0 0;color:#6f695f}
+  body.dark-mode .jat-author-share__dialog{background:#22251D;color:#F5F5F5;border-color:rgba(214,179,107,.22)}body.dark-mode .jat-author-share h2{color:#F5F5F5}body.dark-mode .jat-author-share__intro,body.dark-mode .jat-author-share__status,body.dark-mode .jat-author-share__fallback p{color:#C9C1B0}body.dark-mode .jat-author-share fieldset,body.dark-mode .jat-author-share__article,body.dark-mode .jat-author-share__card,body.dark-mode .jat-author-share__card textarea,body.dark-mode .jat-author-share__fallback textarea{background:#181a16;color:#F5F5F5;border-color:rgba(162,177,121,.35)}body.dark-mode .jat-author-share__actions button[data-author-clipboard]{color:#A2B179;border-color:#A2B179}body.dark-mode .jat-author-share__secondary{color:#C9C1B0!important}
+  @media(max-width:700px){.jat-author-share__grid,.jat-author-share__results{grid-template-columns:1fr}.jat-author-share__dialog{padding:1.2rem}.jat-author-share__actions{align-items:stretch}.jat-author-share__actions button{width:100%}.jat-author-share__card textarea{min-height:180px}}
+</style>
