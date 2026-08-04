@@ -70,6 +70,28 @@
     });
   }
 
+  function copyTextSynchronously(text) {
+    var box = document.createElement('textarea');
+    box.value = text;
+    box.setAttribute('readonly', '');
+    box.style.position = 'fixed';
+    box.style.left = '-9999px';
+    box.style.opacity = '0';
+    document.body.appendChild(box);
+    box.focus();
+    box.select();
+
+    var copied = false;
+    try {
+      copied = document.execCommand('copy');
+    } catch (error) {
+      copied = false;
+    }
+
+    document.body.removeChild(box);
+    return copied;
+  }
+
   function selectedPlatforms() {
     return Array.prototype.slice.call(tool.querySelectorAll('[data-platform-fieldset] input:checked')).map(function (input) {
       return input.value;
@@ -282,19 +304,18 @@
     }
 
     saveSelections();
-    status.textContent = 'Copying the request and opening ChatGPT…';
+    var prompt = buildPrompt(platforms, selectedAngle());
+    var copied = copyTextSynchronously(prompt);
 
-    copyText(buildPrompt(platforms, selectedAngle())).then(function () {
-      /*
-       * Navigate the current tab instead of opening about:blank and redirecting it.
-       * Mobile browsers frequently block that delayed popup redirect. A direct
-       * navigation is reliable, can open the ChatGPT app when supported, and the
-       * browser Back action returns to the preserved Author Tool state.
-       */
-      window.location.assign('https://chatgpt.com/');
-    }).catch(function () {
-      status.textContent = 'The request could not be copied. Please allow clipboard access and try again.';
-    });
+    if (!copied && navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(prompt).catch(function () {});
+    }
+
+    status.textContent = copied
+      ? 'Request copied. Opening ChatGPT…'
+      : 'Opening ChatGPT. If the request was not copied, return and try again.';
+
+    window.location.href = 'https://chatgpt.com/';
   });
 
   tool.querySelector('[data-author-clipboard]').addEventListener('click', function () {
