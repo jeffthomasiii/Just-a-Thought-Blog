@@ -6,12 +6,13 @@
   if (!tool || !article) return;
 
   var AUTHOR_MODE_KEY = 'jat-author-share-enabled';
-  var apiUrl = tool.getAttribute('data-api-url') || '';
+  var PLATFORM_KEY = 'jat-author-share-platforms';
+  var ANGLE_KEY = 'jat-author-share-angle';
   var status = tool.querySelector('[data-author-status]');
   var results = tool.querySelector('[data-author-results]');
   var preview = tool.querySelector('[data-author-article-preview]');
-  var generateButton = tool.querySelector('[data-author-generate]');
-  var clearButton = tool.querySelector('[data-author-clear]');
+  var pasteBox = tool.querySelector('[data-author-paste]');
+  var fallback = tool.querySelector('[data-author-fallback]');
   var lastFocus = null;
 
   var data = {
@@ -22,6 +23,15 @@
     categories: article.getAttribute('data-categories') || '',
     tags: article.getAttribute('data-tags') || '',
     series: article.getAttribute('data-series') || ''
+  };
+
+  var platformLabels = {
+    facebook: 'Facebook',
+    threads: 'Threads',
+    linkedin: 'LinkedIn',
+    x: 'X',
+    instagram: 'Instagram',
+    'text-message': 'Text Message'
   };
 
   var platformUrls = {
@@ -55,7 +65,7 @@
   }
 
   function selectedPlatforms() {
-    return Array.prototype.slice.call(tool.querySelectorAll('fieldset:first-of-type input:checked')).map(function (input) {
+    return Array.prototype.slice.call(tool.querySelectorAll('[data-platform-fieldset] input:checked')).map(function (input) {
       return input.value;
     });
   }
@@ -65,9 +75,97 @@
     return input ? input.value : 'general article announcement';
   }
 
+  function saveSelections() {
+    try {
+      window.localStorage.setItem(PLATFORM_KEY, JSON.stringify(selectedPlatforms()));
+      window.localStorage.setItem(ANGLE_KEY, selectedAngle());
+    } catch (error) {}
+  }
+
+  function restoreSelections() {
+    try {
+      var savedPlatforms = JSON.parse(window.localStorage.getItem(PLATFORM_KEY) || 'null');
+      if (Array.isArray(savedPlatforms) && savedPlatforms.length) {
+        tool.querySelectorAll('[data-platform-fieldset] input').forEach(function (input) {
+          input.checked = savedPlatforms.indexOf(input.value) > -1;
+        });
+      }
+      var savedAngle = window.localStorage.getItem(ANGLE_KEY);
+      if (savedAngle) {
+        var angleInput = tool.querySelector('input[name="jat-author-angle"][value="' + CSS.escape(savedAngle) + '"]');
+        if (angleInput) angleInput.checked = true;
+      }
+    } catch (error) {}
+  }
+
+  function buildPrompt(platforms, angle) {
+    var requestedSections = platforms.map(function (platform) {
+      return '=== ' + platformLabels[platform].toUpperCase() + ' ===';
+    }).join('\n');
+
+    return [
+      'Act as the social media writing assistant for Jeff Thomas III, author of Just A Thought Blog.',
+      '',
+      'Write original, platform-specific captions for this published article. Preserve Jeff’s reflective, honest, warm, biblically grounded, compassionate, and conversational voice. Invite reflection rather than pressure agreement.',
+      '',
+      'Do not use clickbait, exaggerated claims, generic Christian clichés, invented personal details, unsupported theological conclusions, excessive emojis, excessive hashtags, dramatic fragments, or em dashes. Keep the writing authentic rather than overly polished.',
+      '',
+      'Article title: ' + data.title,
+      'Description: ' + (data.description || 'Not provided'),
+      'Article URL: ' + data.url,
+      'Scripture: ' + (data.scripture || 'Not provided'),
+      'Categories: ' + (data.categories || 'Not provided'),
+      'Tags: ' + (data.tags || 'Not provided'),
+      'Series: ' + (data.series || 'Not provided'),
+      'Selected emphasis: ' + angle,
+      'Platforms requested: ' + platforms.map(function (p) { return platformLabels[p]; }).join(', '),
+      '',
+      'Platform guidance:',
+      '- Facebook: personal and reflective, approximately 100–180 words, with a natural invitation to read and one thoughtful question when appropriate.',
+      '- Threads: conversational and concise, approximately 45–90 words.',
+      '- LinkedIn: professional and thoughtful when the subject supports it, approximately 80–150 words. Do not force a business angle.',
+      '- X: no more than 260 characters including the URL.',
+      '- Instagram: reflective, approximately 100–180 words, followed by no more than 5 relevant hashtags.',
+      '- Text Message: warm, natural, and brief, as though sharing the article with a friend.',
+      '',
+      'Include the article URL as plain text in every caption. Do not format URLs as Markdown links. Do not use Markdown symbols around article or series titles. Use “…just a thought.” only where it feels natural.',
+      '',
+      'Return only the requested caption sections, using these exact headings on their own lines:',
+      requestedSections,
+      '',
+      'Place each complete caption immediately below its heading. Do not add an introduction, explanation, code fence, JSON, or closing commentary.'
+    ].join('\n');
+  }
+
+  function parseLabeledResponse(value) {
+    var raw = String(value || '').replace(/```(?:text|markdown)?/gi, '').trim();
+    var matches = [];
+    var headingPattern = /^===\s*(FACEBOOK|THREADS|LINKEDIN|X|INSTAGRAM|TEXT(?:\s|-)?MESSAGE)\s*===\s*$/gim;
+    var match;
+
+    while ((match = headingPattern.exec(raw)) !== null) {
+      matches.push({ label: match[1], index: match.index, contentStart: headingPattern.lastIndex });
+    }
+
+    if (!matches.length) throw new Error('No caption headings were found.');
+
+    var captions = {};
+    matches.forEach(function (item, index) {
+      var end = index + 1 < matches.length ? matches[index + 1].index : raw.length;
+      var content = raw.slice(item.contentStart, end).trim();
+      var normalized = item.label.toLowerCase().replace(/\s+/g, '-');
+      if (normalized === 'textmessage') normalized = 'text-message';
+      if (normalized === 'text-message') captions['text-message'] = content;
+      else captions[normalized] = content;
+    });
+
+    return captions;
+  }
+
   function openTool() {
     lastFocus = document.activeElement;
     preview.innerHTML = '<strong>' + escapeHtml(data.title) + '</strong>' + escapeHtml(data.description || data.url);
+    restoreSelections();
     tool.hidden = false;
     document.body.style.overflow = 'hidden';
     var first = tool.querySelector('input, button, textarea');
@@ -87,13 +185,13 @@
   }
 
   function platformLabel(name) {
-    return {'facebook':'Facebook','threads':'Threads','linkedin':'LinkedIn','x':'X','instagram':'Instagram','text-message':'Text message'}[name] || name;
+    return platformLabels[name] || name;
   }
 
   function renderCaptions(captions) {
     results.innerHTML = '';
     selectedPlatforms().forEach(function (platform) {
-      if (typeof captions[platform] !== 'string') return;
+      if (typeof captions[platform] !== 'string' || !captions[platform].trim()) return;
       var card = document.createElement('section');
       card.className = 'jat-author-share__card';
       card.innerHTML = '<h3>' + escapeHtml(platformLabel(platform)) + '</h3>' +
@@ -121,52 +219,15 @@
       });
       results.appendChild(card);
     });
-    results.hidden = !results.children.length;
-    clearButton.hidden = results.hidden;
+
+    if (!results.children.length) throw new Error('No requested captions could be matched to the response.');
+    results.hidden = false;
+    fallback.open = false;
+    status.textContent = 'Captions imported. Review and edit each one before sharing.';
   }
 
-  function setGenerating(isGenerating) {
-    generateButton.disabled = isGenerating;
-    generateButton.textContent = isGenerating ? 'Generating captions…' : 'Generate captions';
-  }
-
-  function generateCaptions() {
-    var platforms = selectedPlatforms();
-    if (!platforms.length) {
-      status.textContent = 'Select at least one platform.';
-      return;
-    }
-
-    if (!apiUrl) {
-      status.textContent = 'The caption service has not been connected yet. Add author_social_api_url to _config.yml after deploying the Worker.';
-      return;
-    }
-
-    setGenerating(true);
-    status.textContent = 'Writing platform-specific captions…';
-
-    fetch(apiUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        article: data,
-        platforms: platforms,
-        angle: selectedAngle()
-      })
-    }).then(function (response) {
-      return response.json().catch(function () { return {}; }).then(function (payload) {
-        if (!response.ok) throw new Error(payload.error || 'Caption generation failed.');
-        return payload;
-      });
-    }).then(function (payload) {
-      if (!payload.captions || typeof payload.captions !== 'object') throw new Error('The caption service returned an incomplete response.');
-      renderCaptions(payload.captions);
-      status.textContent = 'Captions generated. Review and edit each one before sharing.';
-    }).catch(function (error) {
-      status.textContent = error.message || 'Caption generation failed. Please try again.';
-    }).finally(function () {
-      setGenerating(false);
-    });
+  function importResponse(value) {
+    renderCaptions(parseLabeledResponse(value));
   }
 
   function authorModeEnabled() {
@@ -180,16 +241,13 @@
   function enableAuthorMode() {
     try {
       window.localStorage.setItem(AUTHOR_MODE_KEY, 'true');
-    } catch (error) {
-      // The current page still opens the tool if browser storage is blocked.
-    }
+    } catch (error) {}
   }
 
   function addAuthorLauncher() {
     if (!authorModeEnabled() || document.querySelector('[data-author-share-launcher]')) return;
     var shareActions = article.querySelector('.jat-article-actions__copy-actions');
     if (!shareActions) return;
-
     var button = document.createElement('button');
     button.type = 'button';
     button.setAttribute('data-author-share-launcher', '');
@@ -202,11 +260,60 @@
     element.addEventListener('click', closeTool);
   });
 
-  generateButton.addEventListener('click', generateCaptions);
-  clearButton.addEventListener('click', function () {
+  tool.querySelectorAll('[data-platform-fieldset] input, [data-angle-fieldset] input').forEach(function (input) {
+    input.addEventListener('change', saveSelections);
+  });
+
+  tool.querySelector('[data-author-send]').addEventListener('click', function () {
+    var platforms = selectedPlatforms();
+    if (!platforms.length) {
+      status.textContent = 'Select at least one platform.';
+      return;
+    }
+    saveSelections();
+    var prompt = buildPrompt(platforms, selectedAngle());
+    var opened = window.open('about:blank', '_blank');
+    copyText(prompt).then(function () {
+      status.textContent = 'Request copied. Paste it into ChatGPT, copy the complete response, then return here and select Import from clipboard.';
+      if (opened) {
+        opened.opener = null;
+        opened.location = 'https://chatgpt.com/';
+      } else {
+        window.location.href = 'https://chatgpt.com/';
+      }
+    }).catch(function () {
+      if (opened) opened.close();
+      status.textContent = 'The request could not be copied. Please allow clipboard access and try again.';
+    });
+  });
+
+  tool.querySelector('[data-author-clipboard]').addEventListener('click', function () {
+    if (!navigator.clipboard || !navigator.clipboard.readText || !window.isSecureContext) {
+      fallback.open = true;
+      status.textContent = 'This browser does not allow direct clipboard reading. Paste the response into the fallback field below.';
+      return;
+    }
+    navigator.clipboard.readText().then(function (text) {
+      importResponse(text);
+    }).catch(function () {
+      fallback.open = true;
+      status.textContent = 'Clipboard access was blocked. Paste the response into the fallback field below.';
+    });
+  });
+
+  tool.querySelector('[data-author-paste-import]').addEventListener('click', function () {
+    try {
+      importResponse(pasteBox.value);
+    } catch (error) {
+      status.textContent = error.message || 'The pasted response could not be imported.';
+    }
+  });
+
+  tool.querySelector('[data-author-start-over]').addEventListener('click', function () {
     results.innerHTML = '';
     results.hidden = true;
-    clearButton.hidden = true;
+    pasteBox.value = '';
+    fallback.open = false;
     status.textContent = '';
   });
 
