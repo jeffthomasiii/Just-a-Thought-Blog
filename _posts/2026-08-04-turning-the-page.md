@@ -6,17 +6,17 @@ description: "A reflection on how reading Scripture sequentially can reveal mean
 date: 2026-08-04
 author: Jeff Thomas III
 categories:
-* Faith
-* Reflections
+- Faith
+- Reflections
 tags:
-* scripture
-* bible-reading
-* hebrews
-* james
-* faith
-* obedience
-* discipleship
-* spiritual-growth
+- scripture
+- bible-reading
+- hebrews
+- james
+- faith
+- obedience
+- discipleship
+- spiritual-growth
 excerpt: "I finished Hebrews and turned the page to James. What felt like an ordinary transition became a reminder that Scripture often speaks across its pages."
 image: /img/posts/turning-the-page.jpg
 background: /img/posts/bg-turning-the-page.jpg
@@ -59,7 +59,7 @@ James writes:
 
 > _“But be doers of the word and not hearers only, deceiving yourselves.”_
 >
-> - James 1:22, CSB
+> - James 1:22 CSB
 
 Later, he asks what good it is for someone to claim faith while showing no evidence of mercy, obedience, or love. James is not dismissing faith or replacing it with human effort. He is examining the kind of faith that remains disconnected from the way a person lives.
 
