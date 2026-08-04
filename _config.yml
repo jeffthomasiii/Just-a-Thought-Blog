@@ -6,10 +6,6 @@ timezone:           America/Los_Angeles
 baseurl:            ""
 url:                "https://justathoughtblog.org"
 
-# Author social caption service
-# Add the deployed Cloudflare Worker URL after deployment.
-author_social_api_url: ""
-
 # Social Profiles
 twitter_username:   jeffthomasiii
 github_username:    jeffthomasiii
