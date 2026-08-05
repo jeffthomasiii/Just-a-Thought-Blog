@@ -33,9 +33,9 @@ This document tracks the conversion of published posts to the canonical content 
 | Clothed in Strength: When a Woman Laughs at the Future | devotional | faith | Migrated | Proverbs 31 and scripture-study tags standardized; Scripture added. |
 | Marriage IS Ministry | reflection | faith, marriage | Migrated | Added covenant, spiritual-formation, dying-to-self, and Scripture metadata. |
 | Speak Life Over Them | series-introduction | faith, marriage | Needs review | Filename date and front-matter date differ; establish canonical publication date before migration. |
-| Husbands, Speak Life When She Forgets Who She Is | reflection | faith, marriage | Audited | Add Speak Life Over Them series metadata, order 2. |
-| Wives, Speak Life When He Feels the Weight of It All | reflection | faith, marriage | Audited | Add Speak Life Over Them series metadata, order 3. |
-| Thinking Out Loud, Why I Blog | reflection | faith, leadership | Audited | Normalize Personal Reflection category. |
+| Husbands, Speak Life When She Forgets Who She Is | reflection | faith, marriage | Migrated | Added Speak Life Over Them series metadata, order 2, standardized tags, and Scripture list. |
+| Wives, Speak Life When He Feels the Weight of It All | reflection | faith, marriage | Migrated | Added Speak Life Over Them series metadata, order 3, standardized tags, and Scripture list. |
+| Thinking Out Loud, Why I Blog | reflection | faith, leadership | Migrated | Replaced Personal Reflection category; standardized spiritual-growth and spiritual-disciplines tags. |
 | Hearing My Words Out Loud | reflection | technology, culture | Needs review | Current categories are malformed; excerpt also contains a spacing typo. |
 | When Silence Isn’t Submission | reflection | faith, culture, leadership | Needs review | Body contains corrupted text; filename uses a typographic apostrophe. |
 | Spiritual Sweat | devotional | faith | Audited | Replace generic discipline tag with spiritual-disciplines. |
@@ -57,14 +57,13 @@ This document tracks the conversion of published posts to the canonical content 
 
 ## Migration progress
 
-- **Migrated:** 5
-- **Audited and ready:** 13
+- **Migrated:** 8
+- **Audited and ready:** 10
 - **Needs review:** 9
 
 ## Next migration sequence
 
 1. Resolve the publication date for `Speak Life Over Them` before changing its metadata.
-2. Migrate the two companion Speak Life posts with consistent series metadata.
-3. Migrate `Thinking Out Loud, Why I Blog` and the next unblocked July posts.
-4. Continue chronologically, separating metadata-only updates from posts requiring editorial review.
-5. Run the required site build after each logical batch.
+2. Migrate `Spiritual Sweat`, `Guard Your Heart`, `Between Pines and Shorelines`, and `What Does It Mean to Be Holy?`.
+3. Continue chronologically, separating metadata-only updates from posts requiring editorial review.
+4. Run the required site build after each logical batch.
