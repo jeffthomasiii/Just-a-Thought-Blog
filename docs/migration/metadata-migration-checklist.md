@@ -59,21 +59,50 @@ A post is migration-complete only when all applicable checks pass:
 | 2025-08-11 | Say It So They Hear You | reflection | leadership, technology, faith | — | Audited |
 | 2025-08-13 | Let Them Talk—Let God Speak | devotional | faith, leadership | — | Audited |
 | 2025-08-15 | Tuned Together: What Praying Out Loud Does for Your Marriage | reflection | faith, marriage | — | Audited |
-| 2025-08 | Guarding the Garden of Your Marriage | reflection | faith, marriage | — | Audited |
-| 2025-08 | Pursuing Peace on Purpose | reflection | faith, leadership | — | Audited |
-| 2025-08 | The Villain in Us All | reflection | faith | The Daily Death of Pride (proposed prelude) | Audited |
-| 2025-08 | Conspiracy and Trust | reflection | faith, culture | — | Audited |
-| 2025-08 | The Level Ground at the Cross | reflection | faith | — | Audited |
+| 2025-08-18 | Guarding the Garden of Your Marriage | reflection | faith, marriage | — | Audited |
+| 2025-08-20 | Pursuing Peace on Purpose | reflection | faith, leadership | — | Audited |
+| 2025-08-22 | The Villain in Us All | reflection | faith | The Daily Death of Pride (proposed prelude) | Audited |
+| 2025-08-26 | Conspiracy and Trust | reflection | faith, culture | — | Audited |
+| 2025-08-28 | The Level Ground at the Cross | reflection | faith | — | Audited |
 | 2025-09 | Leading Where It Matters Most | reflection | leadership, marriage, faith | — | Audited |
 | 2025-09 | The Measure of Success | reflection | leadership, faith | — | Audited |
 | 2025-09 | When Life Gets Full | reflection | faith, creation | — | Audited |
 | 2025-09 | Strong Enough to Be Gentle | reflection | faith, marriage, leadership | — | Audited |
 | 2025-09 | Why Hope Matters More Than We Realize | reflection | faith | — | Audited |
 | 2025-09 | Created, Fallen, Restored | bible-study | faith | — | Audited |
+| 2025-10-01 | When Her Growth Matters More Than My Credit | reflection | faith, marriage | — | Audited |
+| 2025-10-03 | Stay Teachable | reflection | faith, leadership | 10 Skills Every Man Should Have | Audited |
+| 2025-10-05 | No Rush: Road Trips and Marriage | reflection | faith, marriage, creation | — | Audited |
+| 2025-10-07 | Trust Grows in the Hard Conversations | reflection | faith, marriage | — | Audited |
+| 2025-10-10 | Words and Numbers Matter | reflection | faith, leadership | 10 Skills Every Man Should Have | Audited |
+| 2025-10-15 | Real Victories | reflection | faith, leadership | — | Audited |
+| 2025-10-17 | Master Yourself Before Leading Others | reflection | faith, leadership | 10 Skills Every Man Should Have | Audited |
+| 2025-10-22 | Joy Is Contagious | reflection | faith, marriage | — | Audited |
+| 2025-10-24 | Strong Enough to Serve | reflection | faith, leadership | 10 Skills Every Man Should Have | Audited |
+| 2025-10-26 | The Work of Keeping Warm | reflection | faith, marriage | — | Audited |
+| 2025-10-29 | You Can’t Love Christ and Hate His Church | reflection | faith, culture | — | Audited |
+| 2025-10-31 | The Quiet Confidence of Self-Reliance | reflection | faith, leadership, marriage | 10 Skills Every Man Should Have | Audited |
+
+## October 2025 Migration Details
+
+| Date | Post | Proposed Tags | Scripture Array | Migration Notes |
+|---|---|---|---|---|
+| 2025-10-01 | When Her Growth Matters More Than My Credit | `humility`, `pride`, `communication`, `spiritual-growth`, `biblical-marriage`, `encouragement` | `1 Corinthians 3:6` | Replace subject categories with `reflection`; normalize Scripture scalar. |
+| 2025-10-03 | Stay Teachable | `teachability`, `humility`, `lifelong-learning`, `wisdom`, `character`, `spiritual-growth` | `Proverbs 1:5` | Preserve series order 2; remove StackEdit metadata comment. |
+| 2025-10-05 | No Rush: Road Trips and Marriage | `biblical-marriage`, `patience`, `slowing-down`, `road-trips`, `camping`, `travel`, `oneness`, `marital-growth` | `Genesis 2:24`; `Ecclesiastes 3:1` | Normalize contributor list for Samatra Thomas and split Scripture references. |
+| 2025-10-07 | Trust Grows in the Hard Conversations | `biblical-marriage`, `trust`, `communication`, `honesty`, `vulnerability`, `marital-conflict`, `forgiveness`, `intimacy` | `Proverbs 24:26`; `Ephesians 4:32` | Preserve external source link; verify or soften unsupported conflict-statistic wording during cleanup. |
+| 2025-10-10 | Words and Numbers Matter | `competence`, `literacy`, `numeracy`, `responsibility`, `wisdom`, `stewardship`, `communication`, `financial-literacy` | `Proverbs 4:7` | Preserve series order 3. |
+| 2025-10-15 | Real Victories | `perseverance`, `confidence`, `humility`, `spiritual-growth`, `endurance`, `faithfulness`, `entitlement` | `James 1:3`; `Philippians 4:13` | Remove redundant `faith` tag; retain the opening quote as unattributed unless a source is verified; remove StackEdit comment. |
+| 2025-10-17 | Master Yourself Before Leading Others | `self-control`, `emotional-discipline`, `mental-discipline`, `servant-leadership`, `patience`, `anger`, `fruit-of-the-spirit`, `emotional-maturity` | `Proverbs 16:32`; `Galatians 5:22-23` | Preserve series order 4. |
+| 2025-10-22 | Joy Is Contagious | `joy`, `gratitude`, `emotional-contagion`, `complaining`, `fruit-of-the-spirit`, `marital-connection`, `encouragement` | `Proverbs 17:22`; `Galatians 5:22` | Normalize contributor list for Samatra Thomas; verify Harvard/University of California research attribution during editorial cleanup. |
+| 2025-10-24 | Strong Enough to Serve | `physical-strength`, `endurance`, `service`, `stewardship`, `discipline`, `servant-leadership`, `manhood` | `1 Corinthians 9:27`; `1 Timothy 4:8` | Preserve series order 5; remove StackEdit metadata comment. |
+| 2025-10-26 | The Work of Keeping Warm | `biblical-marriage`, `intentionality`, `rekindling`, `affection`, `marital-connection`, `service`, `humility` | `Romans 12:10-11`; `Song of Solomon 8:6-7` | Correct doubled `.md.md` filename only with URL protection; repair missing punctuation in “warm—you”; remove StackEdit comment. |
+| 2025-10-29 | You Can’t Love Christ and Hate His Church | `church`, `body-of-christ`, `bride-of-christ`, `covenant`, `grace`, `church-hurt`, `christian-community`, `sanctification` | `Ephesians 5:25-32`; `1 Corinthians 3:16`; `Ephesians 1:22-23` | Standardize closing phrase; review several absolute theological statements for the approved humble-claim standard without changing the article’s central argument. |
+| 2025-10-31 | The Quiet Confidence of Self-Reliance | `self-reliance`, `competence`, `responsibility`, `stewardship`, `practical-skills`, `household-management`, `service`, `preparedness` | `Proverbs 27:23` | Preserve series order 6. |
 
 ## Remaining Audit Queue
 
-- [ ] October 2025
+- [x] October 2025
 - [ ] November 2025
 - [ ] December 2025
 - [ ] January 2026
@@ -93,8 +122,11 @@ A post is migration-complete only when all applicable checks pass:
 - [ ] Repair corrupted body text in `When Silence Isn’t Submission`
 - [ ] Normalize Samatra Thomas contributor metadata where applicable
 - [ ] Review inconsistent filenames separately before any rename
+- [ ] Correct `2025-10-26-the-work-of-keeping-warm.md.md` without breaking the published URL
+- [ ] Remove residual StackEdit metadata comments from audited posts
 - [ ] Review image files currently stored inside `_posts`
 - [ ] Verify source attribution for research claims and lengthy quotations noted during audit
+- [ ] Standardize closing phrase capitalization and punctuation where noted
 
 ## Migration Progress
 
@@ -102,7 +134,7 @@ A post is migration-complete only when all applicable checks pass:
 |---|---:|
 | Architecture | 100% |
 | Taxonomy | 100% |
-| Content audit | In progress |
+| Content audit | In progress through October 2025 |
 | Front matter migration | 0% |
 | Validation | 0% |
 | Collection pages | 0% |
