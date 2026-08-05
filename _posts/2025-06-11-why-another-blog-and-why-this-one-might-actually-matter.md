@@ -1,8 +1,24 @@
 ---
+layout: post
 title: "Why Another Blog? And Why This One Might Actually Matter"
+description: "An introduction to Just A Thought and its purpose as a quiet space for honest reflection, biblical thinking, and everyday life."
 date: 2025-06-11
-categories: [intro, welcome]
-tags: [faith-in-practice, biblical-marriage, thoughtful-tech, camping-life, scripture-journaling, christian-living]
+author: Jeff Thomas III
+categories:
+  - reflection
+collections:
+  - faith
+  - marriage
+  - leadership
+  - technology
+  - culture
+  - creation
+tags:
+  - about-just-a-thought
+  - biblical-reflection
+  - christian-living
+  - everyday-faith
+  - spiritual-growth
 excerpt: "This blog isn't about being loud or polished, it's about honest reflection, biblical thinking, and real life. Here's what you can expect from Just A Thought."
 image: /img/posts/intro-blog-post-candle-scenedefault-og.jpg
 ---
