@@ -28,10 +28,10 @@ This document tracks the conversion of published posts to the canonical content 
 | Post | Article type | Collections | Status | Notes |
 |---|---|---|---|---|
 | Why Another Blog? And Why This One Might Actually Matter | reflection | faith, marriage, leadership, technology, culture, creation | Migrated | Foundational welcome post; intentional exception appearing in all six collections. |
-| Filling the Mind, Not Emptying It | devotional | faith | Audited | Normalize Scripture and spiritual-discipline tags. |
-| Whose Order Are You Following? | reflection | faith, marriage, leadership | Audited | Replace subject-style categories with article type. |
-| Clothed in Strength: When a Woman Laughs at the Future | devotional | faith | Audited | Standardize Proverbs 31 and scripture-study tags. |
-| Marriage IS Ministry | reflection | faith, marriage | Audited | Add covenant, spiritual-formation, and dying-to-self tags. |
+| Filling the Mind, Not Emptying It | devotional | faith | Migrated | Scripture converted to a list; biblical-meditation and spiritual-discipline tags standardized. |
+| Whose Order Are You Following? | reflection | faith, marriage, leadership | Migrated | Subject-style categories replaced with article type; Scripture references added. |
+| Clothed in Strength: When a Woman Laughs at the Future | devotional | faith | Migrated | Proverbs 31 and scripture-study tags standardized; Scripture added. |
+| Marriage IS Ministry | reflection | faith, marriage | Migrated | Added covenant, spiritual-formation, dying-to-self, and Scripture metadata. |
 | Speak Life Over Them | series-introduction | faith, marriage | Needs review | Filename date and front-matter date differ; establish canonical publication date before migration. |
 | Husbands, Speak Life When She Forgets Who She Is | reflection | faith, marriage | Audited | Add Speak Life Over Them series metadata, order 2. |
 | Wives, Speak Life When He Feels the Weight of It All | reflection | faith, marriage | Audited | Add Speak Life Over Them series metadata, order 3. |
@@ -55,10 +55,16 @@ This document tracks the conversion of published posts to the canonical content 
 | Conspiracy and Trust | reflection | faith, culture | Audited | Discernment, media, fear, and truth. |
 | The Level Ground at the Cross | reflection | faith | Audited | Candidate for a future cornerstone or Start Here pathway. |
 
+## Migration progress
+
+- **Migrated:** 5
+- **Audited and ready:** 13
+- **Needs review:** 9
+
 ## Next migration sequence
 
-1. Migrate the four remaining unblocked June and early-July posts.
-2. Resolve the publication date for `Speak Life Over Them` before changing its metadata.
-3. Migrate the two companion Speak Life posts with consistent series metadata.
+1. Resolve the publication date for `Speak Life Over Them` before changing its metadata.
+2. Migrate the two companion Speak Life posts with consistent series metadata.
+3. Migrate `Thinking Out Loud, Why I Blog` and the next unblocked July posts.
 4. Continue chronologically, separating metadata-only updates from posts requiring editorial review.
 5. Run the required site build after each logical batch.
