@@ -80,7 +80,7 @@ Official values:
 - `leadership`
 - `technology`
 - `culture`
-- `camping`
+- `creation`
 
 Collections drive homepage topic cards, collection landing pages, and related-content pathways.
 
@@ -104,11 +104,11 @@ Artificial intelligence, architecture and design technology, digital tools, inno
 
 Books, ideas, media, politics, public life, discernment, social questions, and faithful cultural engagement.
 
-### Camping
+### Creation
 
-Camping, travel, outdoor life, creation, rest, quiet, adventure, and reflections shaped by time away from ordinary routines.
+Camping, hiking, beaches, outdoor travel, nature, rest, quiet, adventure, and reflections shaped by the created world.
 
-A post does not need to be primarily about camping to belong here, but the outdoor setting or experience should meaningfully shape the reflection.
+Camping belongs within this broader collection rather than defining the whole collection. A post does not need to be about camping specifically, but creation, an outdoor setting, or time in nature should meaningfully shape the reflection.
 
 ## Tags
 
@@ -245,7 +245,7 @@ Changes to official article types or reader collections require an update to thi
 
 - Adopted **Article Type** as the editorial term for values stored in `categories`.
 - Clarified the separate responsibilities of article types and reader collections.
-- Standardized the sixth homepage reader collection as `camping` rather than `creation`.
+- Confirmed `creation` as the sixth reader collection, encompassing camping, hiking, beaches, outdoor travel, nature, and related reflections.
 - Added collection definitions and a classification test.
 
 #### 1.0 — 2026-08-04
