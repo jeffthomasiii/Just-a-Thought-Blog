@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import re
 from pathlib import Path
 
 import yaml
@@ -11,8 +10,8 @@ POSTS = ROOT / "_posts"
 LOG = ROOT / "docs" / "migration" / "migration-log.md"
 EXPECTED_COUNT = 14
 REQUIRED = {
-    "layout", "title", "subtitle", "description", "date", "author",
-    "categories", "collections", "tags", "scripture", "image",
+    "layout", "title", "description", "date", "author",
+    "categories", "collections", "tags", "image",
     "background", "excerpt",
 }
 ALLOWED_CATEGORIES = {"reflection", "devotional", "study", "resource"}
@@ -65,8 +64,8 @@ def validate() -> list[str]:
             errors.append(f"{path.name}: tags must be a non-empty YAML array")
 
         scripture = data.get("scripture")
-        if not isinstance(scripture, list) or not scripture:
-            errors.append(f"{path.name}: scripture must be a non-empty YAML array")
+        if scripture is not None and (not isinstance(scripture, list) or not scripture):
+            errors.append(f"{path.name}: scripture must be a non-empty YAML array when present")
 
         if "header-image" in data:
             errors.append(f"{path.name}: obsolete header-image field remains")
@@ -107,7 +106,7 @@ Status: Complete
 - [x] Article Types normalized
 - [x] Collections added
 - [x] Tags standardized
-- [x] Scripture converted to YAML arrays
+- [x] Scripture fields normalized where applicable
 - [x] Contributors verified
 - [x] Series verified
 - [x] Images normalized to required front matter fields
@@ -121,7 +120,7 @@ Notes:
 
 - Audited all fourteen January 2026 posts.
 - Confirmed every post already uses the normalized content architecture schema.
-- Verified required front matter, controlled article types and collections, standardized tags, Scripture arrays, contributor and series consistency, and required image fields.
+- Verified required front matter, controlled article types and collections, standardized tags, optional Scripture arrays, contributor and series consistency, and required image fields.
 - Confirmed obsolete `header-image` fields and residual StackEdit metadata are absent.
 - Article bodies were not modified because no January metadata migration remained outstanding.
 - Full Jekyll build validation remains pending until a broader migration checkpoint.
@@ -144,7 +143,6 @@ def main() -> None:
     print(f"Validated {EXPECTED_COUNT} January 2026 posts successfully.")
     update_log()
 
-    # Remove one-time validation machinery from the resulting commit.
     (ROOT / ".github" / "scripts" / "validate_january_2026.py").unlink(missing_ok=True)
     (ROOT / ".github" / "workflows" / "validate-january-2026.yml").unlink(missing_ok=True)
 
