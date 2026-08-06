@@ -6,17 +6,24 @@ description: "A reflective capstone to the Lead Like This series, reminding us t
 date: 2025-12-29
 author: Jeff Thomas III
 categories:
-  - leadership
+  - reflection
+collections:
   - faith
-tags:
   - leadership
-  - formation
+tags:
+  - servant-leadership
+  - spiritual-formation
   - faithfulness
+  - surrender
+  - abiding
+  - obedience
 excerpt: "Before God asks us to lead anyone else, He asks us to walk faithfully with Him."
-background: /img/posts/bg-lead-like-this-closing-reflection.jpg
 image: /img/posts/lead-like-this-closing-reflection.jpg
-scripture: "Mark 10:42–45; Luke 16:10; John 15:4–5"
-contributors: []
+background: /img/posts/bg-lead-like-this-closing-reflection.jpg
+scripture:
+  - Mark 10:42-45
+  - Luke 16:10
+  - John 15:4-5
 series: "Lead Like This"
 series_order: 9
 ---
@@ -51,7 +58,3 @@ It is revealed by how faithfully you follow Christ.
 Before you lead anyone, let Him lead you.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE1MjY3MDA2XX0=
--->
