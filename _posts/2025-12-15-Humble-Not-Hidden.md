@@ -6,17 +6,24 @@ description: "A reflective leadership post exploring the difference between true
 date: 2025-12-15
 author: Jeff Thomas III
 categories:
-  - leadership
+  - reflection
+collections:
   - faith
+  - leadership
 tags:
   - humility
-  - leadership
   - character
+  - courage
+  - obedience
+  - spiritual-formation
+  - influence
 excerpt: "Humility is not hiding. It is the courage to show up with a surrendered heart and a steady posture."
-background: /img/posts/bg-lead-like-this-humble-not-hidden.jpg
 image: /img/posts/lead-like-this-humble-not-hidden.jpg
-scripture: "Philippians 2:3; Micah 6:8; James 4:6"
-contributors: []
+background: /img/posts/bg-lead-like-this-humble-not-hidden.jpg
+scripture:
+  - Philippians 2:3
+  - Micah 6:8
+  - James 4:6
 series: "Lead Like This"
 series_order: 3
 ---
@@ -57,7 +64,3 @@ Humility is not hidden. It is honest. It is steady. It is surrendered.
 And that kind of humility shapes leaders who can be trusted.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNjU5ODYxNl19
--->
