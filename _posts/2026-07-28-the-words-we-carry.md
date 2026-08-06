@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "The Words We Carry"
 subtitle: "How one childhood lesson taught me to respect the weight of language"
@@ -6,8 +6,10 @@ description: "A childhood lesson about looking up words became a lifelong remind
 date: 2026-07-28
 author: Jeff Thomas III
 categories:
-  - Faith
-  - Reflections
+  - reflection
+collections:
+  - faith
+  - culture
 tags:
   - words
   - speech
@@ -15,12 +17,16 @@ tags:
   - christian-living
   - discernment
   - communication
-  - james
-  - proverbs
+  - labels
+  - truth-and-grace
 excerpt: "The words we use are never just sounds. They carry meaning, shape perceptions, and often leave marks that last far longer than we realize."
 image: /img/posts/the-words-we-carry.jpg
 background: /img/posts/bg-the-words-we-carry.jpg
-scripture: "Proverbs 18:21; James 1:19; James 3:1–12; Ephesians 4:29"
+scripture:
+  - Proverbs 18:21
+  - James 1:19
+  - James 3:1-12
+  - Ephesians 4:29
 ---
 
 There are some lessons from childhood that don't make much sense when you're young, but somehow they stay with you for the rest of your life. One of those lessons came from my mom.
