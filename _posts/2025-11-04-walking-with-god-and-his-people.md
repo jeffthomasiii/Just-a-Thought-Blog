@@ -6,10 +6,11 @@ description: "Faith was never meant to be a solo journey. Christianity is a rela
 date: 2025-11-04
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
-  - relationships
 tags:
-  - Christian living
+  - christian-living
   - friendship
   - community
   - discipleship
@@ -17,7 +18,10 @@ tags:
 excerpt: "Christianity was never meant to be lived in isolation. Our walk with God naturally calls us into relationship with His people."
 image: /img/posts/walking-with-god-and-his-people.jpg
 background: /img/posts/bg-walking-with-god-and-his-people.jpg
-scripture: "Acts 2:42–47; Proverbs 27:17; Exodus 20:1–17"
+scripture:
+  - Acts 2:42–47
+  - Proverbs 27:17
+  - Exodus 20:1–17
 ---
 
 Some Christians live as if faith were a solo journey. They love God, read His Word, and pray faithfully, but quietly keep their distance from others. Sometimes it’s because of past hurt, sometimes exhaustion, and sometimes it just feels easier. But Christianity was never meant to be lived in isolation.  
@@ -40,8 +44,3 @@ So, if your faith feels stagnant, maybe what’s missing isn’t another devotio
 Maybe the next step in deepening your relationship with God isn’t something new to *learn*, but someone new to *walk with.* Invite a friend over for coffee. Join a small group. Text the person who comes to mind when you pray. God often speaks through His people, it’s just that sometimes, we haven’t been listening.  
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MDc4NTYxMiwtMjk0NjE5MTEzLDU5MT
-Y0NzM3MSwxMzY3MzAzMDIxXX0=
--->
