@@ -5,18 +5,22 @@ subtitle: "Skill #1 – Willingness to Learn and Grow"
 description: "Humility, curiosity, and openness to God and others form the foundation of growth. A man doesn’t have to know everything, he just has to keep learning."
 date: 2025-10-03
 author: Jeff Thomas III
-categories:  
-- manhood  
-- faith  
-- growth
-tags:  
-- humility  
-- teachability  
-- character  
+categories:
+  - reflection
+collections:
+  - faith
+  - leadership
+tags:
+  - humility
+  - teachability
+  - character
+  - spiritual-growth
+  - manhood
 excerpt: "Teachability isn’t weakness, it’s humility. A man who keeps learning will never stop growing."
 image: /img/posts/stay-teachable.jpg
 background: /img/posts/bg-stay-teachable.jpg
-scripture: "Proverbs 1:5 NIV"
+scripture:
+  - Proverbs 1:5
 series: "10 Skills Every Man Should Have"
 series_order: 2
 ---
@@ -44,7 +48,3 @@ Staying teachable is not about arriving. It’s about remaining open. Open to Go
 Because a man who keeps learning will never stop growing.  
 
 …just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1Mjc2ODIxM119
--->
