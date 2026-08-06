@@ -1,13 +1,29 @@
 ---
 layout: post
 title: "Hearing My Words Out Loud: Exploring NotebookLM and Blog-to-Podcast AI"
-subtitle: "Reflecting on what happens when your blog talks back"
-date: 2025-07-18
-excerpt: "What if your blog could talk back? I used NotebookLM to turn three of my posts into podcast-style episodesand hearing them out loud changed the way I think about writing, reflection, and how our words are received."
-categories: faith tech
-tags: [notebooklm, ai, podcast, blog, reflection]
+subtitle: Reflecting on what happens when your blog talks back
+description: "A reflection on using NotebookLM to turn written blog posts into podcast-style conversations and hear familiar ideas from a different perspective."
+date: "2025-07-18"
 author: Jeff Thomas III
-background: /img/posts/bg-hearing-my-words-out-loud.png
+categories:
+- reflection
+collections:
+- technology
+- culture
+tags:
+- "artificial-intelligence"
+- notebooklm
+- audio
+- podcasting
+- writing
+- blogging
+- "digital-tools"
+- "content-creation"
+- reflection
+excerpt: "What if your blog could talk back? I used NotebookLM to turn three of my posts into podcast-style episodes, and hearing them out loud changed the way I think about writing, reflection, and how our words are received."
+image: "/img/posts/hearing-my-words-out-loud.png"
+background: "/img/posts/bg-hearing-my-words-out-loud.png"
+scripture: []
 ---
 
 
