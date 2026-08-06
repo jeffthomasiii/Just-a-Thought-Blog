@@ -2,24 +2,30 @@
 layout: post
 title: "The Power of a Look: Where Your Eyes Go, Your Feet Will Follow"
 subtitle: "How a lingering gaze can change your direction, and your heart"
-description: "David’s fall didn’t begin with adultery, it began with a look. This post explores the biblical and psychological truth that our gaze often determines our direction."
+description: "A reflection on David's fall, Joseph's response to temptation, and the biblical importance of directing our attention toward what forms faithfulness."
 date: 2025-08-06
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
-  - spiritual-discipline
 tags:
   - purity
   - temptation
   - david-and-bathsheba
-  - discipline
-  - vision
-  - psychology
-excerpt: "David’s downfall began not with adultery, but with a look. Our gaze shapes our steps, toward Christ or away from Him. Where are your eyes leading you?"
+  - spiritual-discipline
+  - attention
+  - holiness
+scripture:
+  - "2 Samuel 11:1–4"
+  - "Hebrews 12:2"
+  - "Matthew 6:22–23"
+  - "Psalm 101:3"
+  - "Genesis 3:6"
+  - "Genesis 39:11–12"
+excerpt: "David's downfall began with a lingering look. What we repeatedly focus on can quietly shape our desires, choices, and direction."
 image: /img/posts/look-and-follow.jpg
 background: /img/posts/bg-look-and-follow.jpg
-header-image: /img/posts/header-look-and-follow.jpg
-scripture: "2 Samuel 11:1–4; Hebrews 12:2 ESV"
 ---
 
 **It started with a look.**  
