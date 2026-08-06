@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document records implementation progress for the Just A Thought metadata migration.
+This document records implementation progress for the Just A Thought metadata migration under Content Architecture 1.1.
 
 ## Status
 
@@ -11,376 +11,106 @@ This document records implementation progress for the Just A Thought metadata mi
 | Architecture | Complete |
 | Taxonomy | Complete |
 | Audit | Complete |
-| Metadata Migration | In Progress |
-| Validation | In Progress |
+| Metadata Migration | Complete |
+| Repository Validation | Pending |
 | Collection Pages | Pending |
 | Discovery | Pending |
 
+## Migration Standard
+
+Each published post was reviewed against `docs/content-architecture.md` and normalized using the approved responsibilities:
+
+- `categories`: editorial Article Type
+- `collections`: reader journey
+- `tags`: specific reusable topics
+- `series` and `series_order`: intentional reading sequence
+- `scripture`: YAML array of central passages
+
+Published article bodies, filenames, image paths, and URLs were preserved unless a documented repair was required.
+
 ## Monthly Progress
 
-### June 2025
-
-Status: Complete
-
-- [x] Front matter updated
-- [x] YAML validated
-- [x] Article Types normalized
-- [x] Collections added
-- [x] Tags standardized
-- [x] Scripture converted to YAML arrays
-- [x] Contributors verified
-- [x] Series verified
-- [x] Images verified against existing paths
-- [ ] Jekyll build verified
-
-Commits:
-
-- `22d68655109b6f20c02af05ed9e633df9c35e28c`
-- `23910b520074fe3a48376799989a091a33507393`
-- `b7d1c067018b472e43e0cbcfaba7fd38c61ca6a4`
-
-Notes:
-
-- Migrated all three June 2025 posts.
-- Added missing required front matter fields.
-- Preserved published article bodies while removing residual StackEdit metadata from the introductory post.
-- Full Jekyll build validation remains pending until a broader migration checkpoint.
-
-### July 2025
-
-Status: Complete
-
-- [x] Front matter updated
-- [x] YAML validated
-- [x] Article Types normalized
-- [x] Collections added
-- [x] Tags standardized
-- [x] Scripture converted to YAML arrays
-- [x] Contributors verified
-- [x] Series verified
-- [x] Images normalized to required front matter fields
-- [ ] Jekyll build verified
-
-Commits:
-
-- `c08e5de76d7eb1ebaad4143055ffe047d973693a`
-- `e5f27d2b656ff121c3d4318a217a34b136596f85`
-- `fee3d97fc2e19889e0f391b780595ab47e16332d`
-- `60a4f2619939d16b3c6b402e5a9b51420c8416bb`
-- `a1675fb3bbfaacfb7d35a1a20cb409bee2540629`
-- `55b275904070058a26cd46cefc4db2735ab180c0`
-- `275ed5a402a595e4a19bfb27c1f6f0dc0049d357`
-- `87a5a4c2ca2fe220d9a345fef723c292963aecc5`
-- `035042d8a2fd81c44a8473405eac2256500ab246`
-- `382350c82b77de040c4236ed6eba4c449e79472b`
-- `249f29dc2139051479aed1c12a2acfd46749a3f5`
-- `7f6ddbc832a465b82bdde1f971622fbc13aa974e`
-
-Notes:
-
-- Migrated all twelve July 2025 posts.
-- Added structured metadata for the three-part `Speak Life Over Them` series.
-- Corrected the introductory series post date to match its published filename date.
-- Normalized Samatra Thomas as a contributor on `Between Pines and Shorelines`.
-- Repaired malformed front matter in `Hearing My Words Out Loud` and normalized its excerpt.
-- Article bodies were preserved; previously identified editorial and body-text issues remain deferred.
-- Full Jekyll build validation remains pending until a broader migration checkpoint.
-
-### August 2025
-
-Status: Complete
-
-- [x] Front matter updated
-- [x] YAML validated
-- [x] Article Types normalized
-- [x] Collections added
-- [x] Tags standardized
-- [x] Scripture converted to YAML arrays
-- [x] Contributors verified
-- [x] Series verified
-- [x] Images normalized to required front matter fields
-- [ ] Jekyll build verified
-
-Commits:
-
-- `3ef61f7caeafce31b59120453a4484052f1498f3`
-- `b763ea43617c4bd35c9e4eb753fa54f7bd0f8c31`
-- `0d609317132381a0f18a83e5086894492e695fa6`
-- `f0725a355d7c95febefe143999c2f9fdc9cf5488`
-- `d5e96dfb3a90417d1c9e9aa145e4467378af0f60`
-- `a580f63d6a9b32bbe3d5396bf1c9458387b435a3`
-- `ef967c1c374d378a416070ff644a9a89605c401a`
-- `397e0811adf14c34cac5c85cfd4a45cf16a8ca05`
-- `1b06f22c764f12f564233db3e8879521672f389e`
-- `131d711ebd807fa901e6dda5a619872af0c96f20`
-- `012012f37626a5da32f4d5f777dcd45002eb2c54`
-- `301fe1ab9b18a1fd4391f1fc6f9659b7b6a6d4a6`
-
-Notes:
-
-- Migrated all twelve August 2025 posts.
-- Moved camping-related content into the `creation` reader journey rather than treating camping as a collection.
-- Normalized faith-and-culture reflections into both `faith` and `culture` collections where appropriate.
-- Added `leadership` and `technology` collections only where the reader journey is supported by the article content.
-- Converted all Scripture metadata to YAML arrays and removed obsolete `header-image` fields where present.
-- Article bodies were preserved; previously identified editorial and body-text issues remain deferred.
-- Full Jekyll build validation remains pending until a broader migration checkpoint.
-
-### September 2025
-
-Status: Complete
-
-- [x] Front matter updated
-- [x] YAML validated
-- [x] Article Types normalized
-- [x] Collections added
-- [x] Tags standardized
-- [x] Scripture converted to YAML arrays
-- [x] Contributors verified
-- [x] Series verified
-- [x] Images normalized to required front matter fields
-- [ ] Jekyll build verified
-
-Commits:
-
-- `834ea16747d7e19b9de61b971540b0fb6d0e3b98`
-- `70f2e8ed0941b79f432e9055136012f721c06361`
-- `36432cda29bb64fe88f64a65e366298755f3a522`
-- `c1885020a5b16d55aff168b77fcff43b3a92b1cc`
-
-Notes:
-
-- Audited and migrated all fourteen September 2025 posts.
-- Restored every September article body from `master` before applying metadata-only changes, correcting the earlier accidental body modification in `The Woman You Gave Me`.
-- Normalized the two-part `Love & Respect; More Than a Cycle` series and the opening installment of `10 Skills Every Man Should Have`.
-- Moved camping and outdoor content into the `creation` reader journey and applied `technology`, `culture`, `marriage`, and `leadership` collections where supported by each article.
-- Converted Scripture metadata to YAML arrays, removed obsolete `header-image` fields, and removed residual StackEdit metadata.
-- The controlled migration workflow completed successfully; full Jekyll build verification remains pending.
-
-### October 2025
-
-Status: Complete
-
-- [x] Front matter updated
-- [x] YAML validated
-- [x] Article Types normalized
-- [x] Collections added
-- [x] Tags standardized
-- [x] Scripture converted to YAML arrays
-- [x] Contributors verified
-- [x] Series verified
-- [x] Images normalized to required front matter fields
-- [ ] Jekyll build verified
-
-Commits:
-
-- `a012973ee66f68dd53d10dca43cccc1518508d18`
-- `72a9a303bd20c292c41497eb48cdebb830895e42`
-- `25a899dfcc2cd90e24c5680323fe9f36baa04ddd`
-- `fbe4ab2a1b88567d4e656b8a4ae8bbab78885eeb`
-- `63b7840b4767f72a018da3465c003253390a3b33`
-- `dc41442675b113efbce0cb47db586ee4f296e8ac`
-- `8ec2ac49b649114d19e652538caee08e19a3fbf8`
-- `236adb6923cef05e8e6addbc684fe7e735bcccf7`
-- `f93160a1f4c61c568873687509e4609df3d8809a`
-- `e4659d2f1a78ce3f95520d82be474bba1327bcee`
-- `d5f5205a45d3249da094fc935b32d7f540316d53`
-- `8ae977b33dc5c6e18cc36d6139cf2ddeba1bbfba`
-
-Notes:
-
-- Migrated all twelve October 2025 posts.
-- Normalized five entries in the `10 Skills Every Man Should Have` series, covering series orders 2–6.
-- Normalized Samatra Thomas as a contributor on `No Rush: Road Trips and Marriage` and `Joy Is Contagious`.
-- Placed the road-trip and camping context in `No Rush: Road Trips and Marriage` within the `creation` reader journey.
-- Preserved the `.md.md` filename anomaly for `The Work of Keeping Warm` for later URL-safe cleanup.
-- Removed residual StackEdit metadata where present.
-- Article bodies were preserved; previously identified editorial and body-text issues remain deferred.
-- Full Jekyll build validation remains pending until a broader migration checkpoint.
-
-### November 2025
-
-Status: Complete
-
-- [x] Front matter updated
-- [x] YAML validated
-- [x] Article Types normalized
-- [x] Collections added
-- [x] Tags standardized
-- [x] Scripture converted to YAML arrays
-- [x] Contributors verified
-- [x] Series verified
-- [x] Images normalized to required front matter fields
-- [ ] Jekyll build verified
-
-Commits:
-
-- `e49ba55045c7ffd3892c29ed0b2892d3cb3fb696`
-- `8aac455f674da3ecbdd2d8c25c35d59f8a9f8607`
-- `c7fb40b2a5f5ca7f39b2649f1a43747cdc737a7b`
-- `f16d63b7e1cf35a4dc5359df8c7f92726f64bb6b`
-- `b65eea5d7e3cad8f2edf41aa42ff98fe6e0ad03e`
-- `632dae6ee477a4e4b3728486573dfd2d235acaa5`
-- `95c7c6d03e74d349781e61dbfb04099debc8273e`
-- `0eda4efb8420073fa7e65ebc89a07c2ea79f88ab`
-- `f653d1a2180e4e81a34627ca30ae57c65c2c1540`
-- `0ff34eb8abdaeaf83d5f5dffcd47ae3c849d3b95`
-- `951353746c9cd9f97eda43206e3378e5b640fee2`
-- `3e59c9e47ed1938ed3d54ddefcf0fb6928420adb`
-- `7289b3e4f91bcaa4a19470f87af862f900f91b4e`
-
-Notes:
-
-- Migrated all thirteen November 2025 posts.
-- Continued the `10 Skills Every Man Should Have` series through its final four installments.
-- Normalized all five entries in `The Practice of Holy Thinking` series.
-- Added the `Character Before Competence` series metadata to `You Can't Fake Care`.
-- Removed empty contributor fields and residual StackEdit metadata where present.
-- Article bodies were preserved; previously identified editorial and body-text issues remain deferred.
-- Full Jekyll build validation remains pending until a broader migration checkpoint.
-
-### December 2025
-
-Status: Complete
-
-- [x] Front matter updated
-- [x] YAML validated
-- [x] Article Types normalized
-- [x] Collections added
-- [x] Tags standardized
-- [x] Scripture converted to YAML arrays
-- [x] Contributors verified
-- [x] Series verified
-- [x] Images normalized to required front matter fields
-- [ ] Jekyll build verified
-
-Commits:
-
-- `e8534608c121284080151ea3905989cfff20152d`
-- `f059538e386e023a38c4ad7fc324a6cdffd59d5d`
-- `b3e17470ab0a9decb2a99955a1c7dd4350829a4e`
-- `dadffe90a4a91a919bda2bb95ba2173e83854600`
-- `c96667c106e2e2b630c493d6345c2e13f6d44d27`
-- `9e27acad4d11d881138abd67609545e6b28b57ab`
-- `6c0704ccf90d79893ebe310acd600709c4720519`
-- `1c43c5b340dc1bb40865cb00a36123f6fc7e55d2`
-- `12ce9a52fe3e014ae64614791883e53ba9d8915a`
-- `fdd97807a96ff3c712dac7db6336250c13930a94`
-- `17e70b3b770ae9c2d2ce8d0cea82901b0cd46cd8`
-- `d33a40f739009b78a5db16c8882c2d1eac346b84`
-- `156b2fac5ae375d875f89ec4f93ed148a5daa26d`
-- `8e9f8f5e3f1b7de2aedab1639e543281210f6850`
-- `070e676fc8efc00d428f3a4c4f1080a87f7b144e`
-
-Notes:
-
-- Migrated all fifteen December 2025 posts.
-- Completed the `10 Skills Every Man Should Have` series metadata with its concluding installment.
-- Normalized all nine entries in the `Lead Like This` series, including its introduction and closing reflection.
-- Normalized Samatra Thomas as a contributor on `The Mind I Fell For`.
-- Removed empty contributor and series fields and residual StackEdit metadata where present.
-- Preserved existing filenames, including the Unicode ellipsis in `Before You Lead Anyone…`, to avoid changing published URLs.
-- Article bodies were preserved; editorial quality review remains deferred.
-- Full Jekyll build validation remains pending until a broader migration checkpoint.
-
-### January 2026
-
-Status: Complete
-
-- [x] Front matter updated
-- [x] YAML validated
-- [x] Article Types normalized
-- [x] Collections added
-- [x] Tags standardized
-- [x] Scripture converted to YAML arrays
-- [x] Contributors verified
-- [x] Series verified
-- [x] Images normalized to required front matter fields
-- [ ] Jekyll build verified
-
-Commits:
-
-- `b2c97ca9ed0048a9f9680053878a0019f5fefd06`
-
-Notes:
-
-- Audited and migrated all fourteen January 2026 posts.
-- Restored each published article body from `master` before applying metadata-only changes.
-- Normalized every post to the `reflection` article type and assigned supported `faith`, `marriage`, `leadership`, and `culture` reader journeys.
-- Standardized tags, corrected the January 2 date format, converted populated Scripture fields to YAML arrays, and removed empty optional fields and residual StackEdit metadata.
-- Preserved existing filenames and image paths to avoid changing published URLs or asset references.
-- The controlled migration workflow completed successfully; full Jekyll build verification remains pending.
-
-### February 2026
-
-Status: Complete
-
-- [x] Front matter updated
-- [x] YAML validated
-- [x] Article Types normalized
-- [x] Collections added
-- [x] Tags standardized
-- [x] Scripture converted to YAML arrays
-- [x] Contributors verified
-- [x] Series verified
-- [x] Images normalized to required front matter fields
-- [ ] Jekyll build verified
-
-Commits:
-
-- `839d2581035efbc01c8d0d546fec4132872982a2`
-
-Notes:
-
-- Audited and migrated all ten February 2026 posts.
-- Restored each published article body from `master` before applying metadata-only changes.
-- Normalized the four published installments of `Faith, Wisdom, and the Machine`, preserving their existing series order.
-- Classified `The Road Between Confusion and Clarity` as a Bible study and `The Paradox of Pain` as a devotional; the remaining posts were normalized as reflections.
-- Assigned supported `faith`, `technology`, `leadership`, `culture`, `creation`, and `marriage` reader journeys based on each article’s central subject and setting.
-- Standardized tags, converted Scripture fields to YAML arrays, removed obsolete `header-image` fields, empty optional fields, and residual StackEdit metadata.
-- Preserved existing filenames and image paths to avoid changing published URLs or asset references.
-- The controlled migration workflow completed successfully; full Jekyll build verification remains pending.
-
-### March 2026
-
-Status: Complete
-
-- [x] Front matter updated
-- [x] YAML validated
-- [x] Article Types normalized
-- [x] Collections added
-- [x] Tags standardized
-- [x] Scripture converted to YAML arrays
-- [x] Contributors verified
-- [x] Series verified
-- [x] Images normalized to required front matter fields
-- [ ] Jekyll build verified
-
-Commits:
-
-- `cdedec2056053f32660e8b6508f8fe733b676ef8`
-- `170cfc778ffd757b58ed4c9d45559ba4517b41a0`
-- `ce2454713ed18ac411048c6a3e1db34a2a17f103`
-- `19b45bc5ce4fa11ec1f34b6eb6d9ab607f2773a1`
-- `e074e8765edc6aad75b5ca2650e9b3d3059fc847`
-
-Notes:
-
-- Audited and migrated all five March 2026 posts.
-- Preserved each published article body while applying metadata-only changes.
-- Continued `Faith, Wisdom, and the Machine` with series orders 5 and 6.
-- Assigned supported `faith`, `technology`, `marriage`, `leadership`, and `culture` reader journeys.
-- Standardized tags, converted Scripture fields to YAML arrays, removed obsolete `header-image` fields, and removed residual StackEdit metadata.
-- Preserved existing filenames and image paths to avoid changing published URLs or asset references.
-- Full Jekyll build verification remains pending.
-
-
-## Future Development
-
-Deferred until after metadata migration:
+| Batch | Posts | Status | Primary migration commit(s) |
+|---|---:|:---:|---|
+| June 2025 | 3 | Complete | `22d68655109b6f20c02af05ed9e633df9c35e28c`, `23910b520074fe3a48376799989a091a33507393`, `b7d1c067018b472e43e0cbcfaba7fd38c61ca6a4` |
+| July 2025 | 12 | Complete | `c08e5de76d7eb1ebaad4143055ffe047d973693a` through `7f6ddbc832a465b82bdde1f971622fbc13aa974e` |
+| August 2025 | 12 | Complete | `3ef61f7caeafce31b59120453a4484052f1498f3` through `301fe1ab9b18a1fd4391f1fc6f9659b7b6a6d4a6` |
+| September 2025 | 14 | Complete | `c1885020a5b16d55aff168b77fcff43b3a92b1cc` |
+| October 2025 | 12 | Complete | `a012973ee66f68dd53d10dca43cccc1518508d18` through `8ae977b33dc5c6e18cc36d6139cf2ddeba1bbfba` |
+| November 2025 | 13 | Complete | `e49ba55045c7ffd3892c29ed0b2892d3cb3fb696` through `7289b3e4f91bcaa4a19470f87af862f900f91b4e` |
+| December 2025 | 15 | Complete | `e8534608c121284080151ea3905989cfff20152d` through `070e676fc8efc00d428f3a4c4f1080a87f7b144e` |
+| January 2026 | 14 | Complete | `b2c97ca9ed0048a9f9680053878a0019f5fefd06` |
+| February 2026 | 10 | Complete | `839d2581035efbc01c8d0d546fec4132872982a2` |
+| March 2026 | 5 | Complete | `cdedec2056053f32660e8b6508f8fe733b676ef8` through `e074e8765edc6aad75b5ca2650e9b3d3059fc847` |
+| April 2026 | 4 | Complete | `2aa47676aee9ef23b1d762012cf262d4ac8388e6` |
+| May 2026 | 2 | Complete | `ec3b68f1070de690178cbf250927c39d7b180ea7`, `dde7f3b7b06b3ee13ae941064d11aa316bb10599` |
+| June 2026 | 3 | Complete | `299b6cb1d4476a0caef03899da870ca39af474ff`, `764e77ab48b306695bd95524772c312a7966ddb4`, `7a29b2e84185ce99261cc92d1e9fe9f51d3cb897` |
+| July 2026 | 3 | Complete | `72c320603fb8f668a6fabf65f462d86a0a127cbe`, `b285180b8f3dff7e442b2abc72667527df51588d`, `6ddabfbbd2b55d68997bbe5664d9a7d071b5dc13` |
+| August 2026 | 2 | Complete | `30419c537a84e261cffc6b872a710484f00b41f9`, `0ebdf2e4750b766e80d415e164cb2d284de67d4e` |
+
+**Total migrated posts: 124**
+
+## Batch Notes
+
+### June–August 2025
+
+- Established the normalized front-matter structure across the opening archive.
+- Added structured series metadata for `Speak Life Over Them`.
+- Moved camping and outdoor content into the broader `creation` reader journey.
+- Normalized Samatra Thomas as a contributor where applicable.
+- Repaired malformed front matter without rewriting published article bodies.
+
+### September–December 2025
+
+- Restored September bodies from `master` before applying metadata-only changes, correcting an earlier accidental body modification.
+- Normalized `Love & Respect; More Than a Cycle`, `10 Skills Every Man Should Have`, `The Practice of Holy Thinking`, and `Lead Like This`.
+- Preserved the `.md.md` filename anomaly for `The Work of Keeping Warm` and the Unicode ellipsis filename in `Before You Lead Anyone…` to avoid changing published URLs.
+- Removed obsolete `header-image` fields, empty optional fields, and residual StackEdit metadata where present.
+
+### January–March 2026
+
+- Restored published bodies from `master` before metadata-only changes.
+- Normalized `Faith, Wisdom, and the Machine` through series order 6.
+- Applied the approved Article Types, including `reflection`, `devotional`, and `bible-study` where supported by the finished editorial form.
+- Assigned only supported reader journeys from the official collection taxonomy.
+
+### April–May 2026
+
+- Migrated all five installments of `Known & Loved`, preserving series orders 1–5.
+- Preserved filenames, image paths, published URLs, and article bodies.
+
+### June–August 2026
+
+- Preserved Samatra Thomas as a contributor where applicable.
+- Normalized `The Honored Vessel`, `Prepared Before She Needs You`, and `The Words We Carry` across the faith, marriage, and culture reader journeys.
+- Removed the stray byte-order mark from `The Words We Carry` and residual StackEdit metadata from `The Honored Vessel`.
+- Preserved `The Daily Death of Pride` series metadata on `The War Within`.
+- Corrected front-matter indentation in `Turning the Page` while preserving its published body.
+
+## Validation Checklist
+
+The repository-wide validation pass must confirm:
+
+- [ ] Every `_posts` file contains parseable YAML front matter.
+- [ ] Required fields are populated.
+- [ ] `categories` contains one official Article Type.
+- [ ] `collections` contains only official reader-journey values.
+- [ ] Tags use lowercase kebab case.
+- [ ] Scripture is stored as a YAML array using standard hyphens in ranges.
+- [ ] Contributors are stored as arrays.
+- [ ] `series` and numeric `series_order` appear together.
+- [ ] Obsolete `header-image` fields and StackEdit metadata are absent.
+- [ ] No temporary migration scripts or workflows remain in the PR.
+- [ ] `bundle exec jekyll build` completes successfully.
+
+## Known Deferred Items
+
+These are intentionally outside the metadata migration and should be handled as separate work:
 
 - Editorial quality review
 - Voice consistency review
-- Paragraph flow review
+- Paragraph-flow and AI-style writing review
 - Cornerstone article expansion
-- AI-style writing review
+- URL-safe evaluation of legacy filename anomalies
+- Collection landing pages
+- Related-content and discovery implementation
