@@ -2,20 +2,27 @@
 layout: post
 title: "Conspiracy and Trust"
 subtitle: "Isaiah 8:12 and the choice between fear and reverence"
-description: "A devotional reflection on Isaiah 8:12, reminding us not to fear what the world fears or chase conspiracies, but to set apart Christ as Lord in our hearts."
+description: "A devotional reflection on Isaiah 8:12 and the call to resist fear, rumor, and cultural paranoia by setting apart God as holy in our hearts."
 date: 2025-08-26
 author: Jeff Thomas III
 categories:
+  - devotional
+collections:
   - faith
+  - culture
 tags:
   - trust
   - fear
   - conspiracy
-  - Isaiah
-excerpt: "Isaiah 8:12 calls us not to fear what others fear or chase cultural conspiracies, but to anchor our hearts in reverence for God."
+  - isaiah
+  - reverence
+  - cultural-discernment
+scripture:
+  - "Isaiah 8:12"
+  - "1 Peter 3:15"
+excerpt: "Isaiah 8:12 calls us not to fear what others fear or chase every rumor, but to anchor our hearts in reverence for God."
 image: /img/posts/conspiracy-and-trust.jpg
 background: /img/posts/bg-conspiracy-and-trust.jpg
-scripture: "Isaiah 8:12 ESV"
 ---
 
 Have you noticed how easy it is to get swept up in what everyone else is talking about?  
