@@ -101,3 +101,28 @@ body blockquote > :last-child {
     left: 0.85rem;
   }
 }
+
+/* Release-candidate visual fixes */
+body.dark-mode .jat-search-tools select,
+body.dark-mode #category-filter,
+body.dark-mode #tag-filter {
+  border-color: rgba(214, 179, 107, 0.3);
+  background-color: #22251d;
+  color: #f6f1e7;
+  color-scheme: dark;
+}
+
+body.dark-mode .jat-search-tools select option,
+body.dark-mode #category-filter option,
+body.dark-mode #tag-filter option {
+  background-color: #22251d;
+  color: #f6f1e7;
+}
+
+body.dark-mode .jat-search-tools select:focus,
+body.dark-mode #category-filter:focus,
+body.dark-mode #tag-filter:focus {
+  border-color: #d6b36b;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(214, 179, 107, 0.16);
+}

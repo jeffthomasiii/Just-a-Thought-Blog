@@ -4,6 +4,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="baseurl" content="{{ site.baseurl }}">
 
+  <script>
+    (function () {
+      try {
+        var storedTheme = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+          document.documentElement.classList.add('dark-mode-pending');
+        }
+      } catch (error) {
+        // Continue with the default light theme when storage is unavailable.
+      }
+    })();
+  </script>
+  <style>
+    html.dark-mode-pending,
+    html.dark-mode-pending body {
+      background: #181914;
+      color: #F6F1E7;
+    }
+  </style>
+
   <title>
     {% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}
     {% else %}{{ site.title | escape }}{% endif %}

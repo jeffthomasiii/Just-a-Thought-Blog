@@ -22,8 +22,8 @@ scripture:
   - "Habakkuk 2:2-3"
   - "Acts 20:22-24"
 excerpt: "Ideas rise and fall, but vision born from God endures seasons, pressure, and time."
-image: /img/posts/bg-lead-like-this-vision-that-lasts.jpg
-background: /img/posts/bg-lead-like-this-vision-that-lasts.jpg
+image: /img/posts/lead-like-this-intro.jpg
+background: /img/posts/lead-like-this-intro.jpg
 series: "Lead Like This"
 series_order: 6
 ---
