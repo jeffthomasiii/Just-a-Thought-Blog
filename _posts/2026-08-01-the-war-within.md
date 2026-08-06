@@ -6,8 +6,9 @@ description: "An introduction to The Daily Death of Pride, a series exploring ho
 date: 2026-08-01
 author: Jeff Thomas III
 categories:
-  - Faith
-  - Reflections
+  - reflection
+collections:
+  - faith
 tags:
   - pride
   - humility
@@ -20,7 +21,12 @@ tags:
 excerpt: "Pride is not always an enemy approaching from the outside. Often, the most difficult spiritual battle is already taking place within us."
 image: /img/posts/the-war-within.jpg
 background: /img/posts/bg-the-war-within.jpg
-scripture: "Genesis 4:6–7; Luke 9:23; Philippians 2:3–8; James 4:6; 1 Peter 5:5–6"
+scripture:
+  - Genesis 4:6-7
+  - Luke 9:23
+  - Philippians 2:3-8
+  - James 4:6
+  - 1 Peter 5:5-6
 series: "The Daily Death of Pride"
 series_order: 1
 ---
