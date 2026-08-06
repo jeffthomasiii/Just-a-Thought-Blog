@@ -6,21 +6,23 @@ description: "A reflective look at how urgency crowds out what matters in leader
 date: 2025-12-07
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
-  - leadership
   - marriage
+  - leadership
 tags:
   - priorities
   - busyness
-  - leadership
-  - discipleship
+  - discernment
+  - spiritual-discipline
+  - work-life-balance
+  - biblical-marriage
 excerpt: "Urgency is loud. Importance is quiet. This post explores how the urgent quietly takes over in leadership, work, life, church, and marriage."
 image: /img/posts/when-the-urgent-header.jpg
 background: /img/posts/bg-when-the-urgent.jpg
-scripture: "Luke 10:38–42 ESV"
-contributors: []
-series:
-series_order:
+scripture:
+  - Luke 10:38-42
 ---
 
 It is strange how the urgent always feels louder than the important. It rarely arrives with danger. It just shows up with a timestamp, a notification, or a sense of pressure. My wife and I were talking about that recently after she read a small book titled *Tyranny of the Urgent* by Charles E. Hummel. We were discussing its premise and how relevant it is to leadership, prioritization, and the way we try to manage our days. The more we talked, the more I realized how easily urgency takes over without asking.
@@ -50,7 +52,3 @@ Mary chose the better thing. She chose what mattered, not what pressed the harde
 Maybe today is simply a reminder to slow down. Notice what actually matters. And let the urgent wait its turn.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNjk1Mjc0NCwtMTk0NjM1MDc0OF19
--->
