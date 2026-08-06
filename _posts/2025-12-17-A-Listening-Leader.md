@@ -6,17 +6,24 @@ description: "A reflective leadership post exploring the discipline of listening
 date: 2025-12-17
 author: Jeff Thomas III
 categories:
-  - leadership
+  - reflection
+collections:
   - faith
+  - leadership
 tags:
   - listening
-  - leadership
+  - wisdom
   - character
+  - empathy
+  - communication
+  - servant-leadership
 excerpt: "Listening is more than hearing words. It is paying attention to the heart behind them and creating space for wisdom to rise."
-background: /img/posts/bg-lead-like-this-listening-leader.jpg
 image: /img/posts/lead-like-this-listening-leader.jpg
-scripture: "James 1:19; Proverbs 18:13; John 10:27"
-contributors: []
+background: /img/posts/bg-lead-like-this-listening-leader.jpg
+scripture:
+  - James 1:19
+  - Proverbs 18:13
+  - John 10:27
 series: "Lead Like This"
 series_order: 4
 ---
