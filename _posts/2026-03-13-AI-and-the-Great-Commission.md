@@ -6,20 +6,22 @@ description: "AI is not the Gospel, but it can carry it further and faster than 
 date: 2026-03-13
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
-  - evangelism
-  - missions
   - technology
 tags:
-  - ai
+  - artificial-intelligence
   - great-commission
   - gospel-outreach
   - digital-missions
+  - evangelism
+  - technology
 excerpt: "If we can use AI to reach the unreached, what's stopping us?"
 image: /img/posts/ai-and-the-great-commission.jpg
 background: /img/posts/bg-ai-and-the-great-commission.jpg
-header-image: /img/posts/header-ai-and-the-great-commission.jpg
-scripture: "Matthew 28:19-20 ESV"
+scripture:
+  - Matthew 28:19–20 ESV
 series: "Faith, Wisdom, and the Machine"
 series_order: 6
 ---
@@ -53,7 +55,3 @@ Because the call to go still stands. The tools are just faster now.
 So let’s use them.
 
 Just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTM5MzYxOF19
--->
