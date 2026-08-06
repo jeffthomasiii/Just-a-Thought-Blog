@@ -6,18 +6,22 @@ description: "How to keep the Great Commission central while navigating the chan
 date: 2026-03-06
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
   - technology
 tags:
-  - ai
-  - great commission
+  - artificial-intelligence
+  - great-commission
   - evangelism
   - discipleship
+  - technology
+  - missions
 excerpt: "AI can help us go faster, speak louder, and reach farther—but it cannot fulfill the Great Commission for us."
 image: /img/posts/modern-tools-ancient-mission.jpg
 background: /img/posts/bg-modern-tools-ancient-mission.jpg
-header-image: /img/posts/header-modern-tools-ancient-mission.jpg
-scripture: "Matthew 28:19–20 ESV"
+scripture:
+  - Matthew 28:19–20 ESV
 series: "Faith, Wisdom, and the Machine"
 series_order: 5
 ---
@@ -48,7 +52,3 @@ Technology may open new doors, but we still have to walk through them. With humi
 So yes, use AI. Use it well. Just don’t let it do what Jesus asked *you* to do.
 
 Just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzUxNTkyNjRdfQ==
--->
