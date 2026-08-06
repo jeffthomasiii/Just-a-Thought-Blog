@@ -128,25 +128,29 @@ Notes:
 
 ### September 2025
 
-Status: Verification Required
+Status: In Progress
 
-- [ ] Front matter fully verified
-- [ ] YAML fully validated
-- [ ] Article Types fully normalized
-- [ ] Collections fully verified
-- [ ] Tags fully standardized
-- [ ] Scripture fully converted to YAML arrays
+- [ ] Front matter updated
+- [ ] YAML validated
+- [ ] Article Types normalized
+- [ ] Collections added
+- [ ] Tags standardized
+- [ ] Scripture converted to YAML arrays
 - [ ] Contributors verified
 - [ ] Series verified
 - [ ] Images normalized to required front matter fields
 - [ ] Jekyll build verified
 
+Commits:
+
+- `834ea16747d7e19b9de61b971540b0fb6d0e3b98`
+- `853f17c2c808570c444e390842ee2f6b0ed7dd6e`
+
 Notes:
 
-- September 2025 is now represented in the migration log.
-- Fourteen September posts are present in the repository.
-- At least one September post still uses the legacy category structure and scalar Scripture metadata, so this month cannot yet be marked complete.
-- A full September verification and remediation batch is required before final migration validation.
+- Verified that all fourteen September 2025 posts remained on the legacy metadata structure.
+- A controlled repository-side migration is running to restore each article body from `master`, normalize front matter, and remove residual StackEdit metadata.
+- September must be verified and marked complete before proceeding to the next monthly batch.
 
 ### October 2025
 
@@ -223,12 +227,11 @@ Commits:
 Notes:
 
 - Migrated all thirteen November 2025 posts.
-- Completed series metadata for entries 7–10 of `10 Skills Every Man Should Have`.
+- Continued the `10 Skills Every Man Should Have` series through its final four installments.
 - Normalized all five entries in `The Practice of Holy Thinking` series.
-- Preserved the existing `Character Before Competence` series metadata on `You Can't Fake Care`.
+- Added the `Character Before Competence` series metadata to `You Can't Fake Care`.
 - Removed empty contributor fields and residual StackEdit metadata where present.
-- Converted Scripture metadata to YAML arrays and normalized categories as editorial formats with collections as reader journeys.
-- Article bodies were otherwise preserved; previously identified editorial and body-text issues remain deferred.
+- Article bodies were preserved; previously identified editorial and body-text issues remain deferred.
 - Full Jekyll build validation remains pending until a broader migration checkpoint.
 
 ### December 2025
