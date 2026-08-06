@@ -1,23 +1,28 @@
 ---
 layout: post
-title: "Love in Marriage"
-subtitle: "When closeness isn’t the same as connection"
-description: "A reflection on how couples can share life together while still remaining partially unknown."
+title: Love in Marriage
+subtitle: When closeness isn’t the same as connection
+description: A reflection on how couples can share life together while still remaining partially unknown.
 date: 2026-04-26
 author: Jeff Thomas III
 categories:
-  - marriage
-  - faith
+- reflection
+collections:
+- faith
+- marriage
 tags:
-  - marriage
-  - intimacy
-  - relationships
-excerpt: "You can share a life with someone… and still not fully share yourself."
+- biblical-marriage
+- intimacy
+- vulnerability
+- communication
+- relationships
+series: Known & Loved
+series_order: 4
 image: /img/posts/love-in-marriage.jpg
 background: /img/posts/bg-love-in-marriage.jpg
-series: "Known & Loved"
-series_order: 4
+excerpt: You can share a life with someone… and still not fully share yourself.
 ---
+
 
 Marriage creates closeness. Shared space. Shared responsibilities. Shared routines. Over time, it can feel like two lives have fully merged into one. And in many ways, they have. But there’s a difference between sharing a life and sharing yourself. Because it’s possible to be physically close, emotionally steady, and practically aligned while still holding parts of yourself at a distance. 
 
@@ -37,6 +42,3 @@ Not just in the big moments. But in the small, everyday ones where it would be e
 or just shared existence.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbODU5Mjc5Njg0XX0=
--->

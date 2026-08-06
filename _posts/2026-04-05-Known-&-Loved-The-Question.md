@@ -1,25 +1,30 @@
 ---
 layout: post
-title: "Can You Love Without Knowing?"
-subtitle: "On being known, being loved, and the space in between"
-description: "A reflective look at whether real love can exist without vulnerability, and what it means to be truly known."
+title: Can You Love Without Knowing?
+subtitle: On being known, being loved, and the space in between
+description: A reflective look at whether real love can exist without vulnerability, and what it means to be truly known.
 date: 2026-04-05
 author: Jeff Thomas III
 categories:
-  - faith
-  - relationships
+- reflection
+collections:
+- faith
+- marriage
 tags:
-  - love
-  - vulnerability
-  - marriage
-  - identity
-excerpt: "Can you truly love someone if you don’t really know them—and can you be loved if parts of you remain hidden?"
+- love
+- vulnerability
+- identity
+- intimacy
+- relationships
+series: Known & Loved
+series_order: 1
+scripture:
+- Psalm 139:1–4
 image: /img/posts/can-you-love-without-knowing.jpg
 background: /img/posts/bg-can-you-love-without-knowing.jpg
-scripture: "Psalm 139:1–4"
-series: "Known & Loved"
-series_order: 1
+excerpt: Can you truly love someone if you don’t really know them—and can you be loved if parts of you remain hidden?
 ---
+
 
 Can you really love someone… if you don’t actually know them?
 
@@ -114,7 +119,3 @@ Not just whether we’re loved…
 but whether we’re willing to be seen.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwODEyNzM0MiwxMTIzNjM4NjQzLC0xMj
-YzNTc4NTQ4XX0=
--->

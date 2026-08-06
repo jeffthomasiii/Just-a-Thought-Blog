@@ -1,23 +1,28 @@
 ---
 layout: post
-title: "The Illusion of Love"
-subtitle: "When what we love isn’t the full picture"
-description: "A reflection on how we often love versions of people rather than who they truly are."
+title: The Illusion of Love
+subtitle: When what we love isn’t the full picture
+description: A reflection on how we often love versions of people rather than who they truly are.
 date: 2026-04-12
 author: Jeff Thomas III
 categories:
-  - relationships
-  - faith
+- reflection
+collections:
+- faith
+- marriage
 tags:
-  - love
-  - perception
-  - identity
-excerpt: "It’s possible to love what you see… without truly knowing who someone is."
+- love
+- perception
+- identity
+- vulnerability
+- relationships
+series: Known & Loved
+series_order: 2
 image: /img/posts/the-illusion-of-love.jpg
 background: /img/posts/bg-the-illusion-of-love.jpg
-series: "Known & Loved"
-series_order: 2
+excerpt: It’s possible to love what you see… without truly knowing who someone is.
 ---
+
 
 We say we love people. And most of the time, we mean it. But sometimes I wonder…
 Do we actually love them? Or do we love what we see?

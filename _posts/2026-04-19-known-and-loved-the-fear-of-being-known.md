@@ -1,23 +1,28 @@
 ---
 layout: post
-title: "The Fear of Being Known"
-subtitle: "Why we hide what we most want seen"
-description: "A reflection on the tension between our desire to be loved and our fear of being fully known."
+title: The Fear of Being Known
+subtitle: Why we hide what we most want seen
+description: A reflection on the tension between our desire to be loved and our fear of being fully known.
 date: 2026-04-19
 author: Jeff Thomas III
 categories:
-  - faith
-  - relationships
+- reflection
+collections:
+- faith
+- marriage
 tags:
-  - vulnerability
-  - fear
-  - identity
-excerpt: "We say we want to be loved deeply… but being known deeply feels risky."
+- vulnerability
+- fear
+- identity
+- intimacy
+- relationships
+series: Known & Loved
+series_order: 3
 image: /img/posts/the-fear-of-being-known.jpg
 background: /img/posts/bg-the-fear-of-being-known.jpg
-series: "Known & Loved"
-series_order: 3
+excerpt: We say we want to be loved deeply… but being known deeply feels risky.
 ---
+
 
 Most people want to be loved. Not casually. Not temporarily. Deeply. The kind of love that feels steady. Safe. Unshaken. But being loved like that comes with something we don’t always talk about. Being known. And that’s where things get complicated.
 
@@ -40,6 +45,3 @@ But we’re not always sure what will happen if someone actually sees all of who
 And until that question is answered, there’s always going to be a limit to how deeply we allow ourselves to be seen. Maybe the challenge isn’t just learning how to love others well. Maybe it’s learning how to be known without retreating.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDk2MzQxNjgsLTE1Mzc1MjA0XX0=
--->
