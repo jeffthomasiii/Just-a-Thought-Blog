@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
+# One-time deterministic cleanup for the final repository validation pass.
 POSTS = Path("_posts")
 
 ASSET_REPLACEMENTS = {
