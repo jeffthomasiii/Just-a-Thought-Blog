@@ -1,25 +1,28 @@
 ---
 layout: post
-title: The Deep Is Where You Grow
-description: Sometimes, the place God calls us is the very place we feel least in control. But it’s in the deep. not on the shore, where trust grows and faith is stretched.
-excerpt: The shoreline is safe. Predictable. But the deep? That’s where faith gets real. Where trust is tested, and where growth begins.
-author: Jeff Thomas III
+title: "The Deep Is Where You Grow"
+subtitle: "Trust often deepens beyond the edge of comfort"
+description: "A personal reflection on comfort, control, and the way faith is stretched when God calls us beyond the safety of the shoreline."
 date: 2025-08-04
-background: /img/posts/bg-the-deep-is-where-you-grow.jpg
-tags:
-  - spiritual
-  - growth
-  - trust
-  - faith
-  - journey
-  - obedience
-  - comfort
-  - zone
-  - deep
-  - places
-  - calling
+author: Jeff Thomas III
 categories:
-  - Faith
+  - reflection
+collections:
+  - faith
+tags:
+  - spiritual-growth
+  - trust
+  - obedience
+  - comfort-zone
+  - calling
+  - faith
+scripture:
+  - "Matthew 14:29"
+  - "Joshua 3:15"
+  - "Hebrews 11:8"
+excerpt: "The shoreline feels safe, but growth often begins where control ends and trust becomes necessary."
+image: /img/posts/bg-the-deep-is-where-you-grow.jpg
+background: /img/posts/bg-the-deep-is-where-you-grow.jpg
 ---
 It was a quiet conversation, just my wife and I, sharing what we’d been learning in our time with God.  
 She shared with a calm, steady conviction, the kind that doesn’t need emphasis or explanation.  
