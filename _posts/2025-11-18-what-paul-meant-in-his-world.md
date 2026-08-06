@@ -6,16 +6,20 @@ description: "Understanding the cultural and historical world behind Paul's call
 date: 2025-11-18
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
+  - culture
 tags:
   - philippians
-  - holiness
+  - biblical-context
   - christian-thinking
+  - spiritual-formation
 excerpt: "Understanding Paul’s imprisonment and Roman culture changes how we hear his words in Philippians 4:8."
 image: /img/posts/paul-context.jpg
 background: /img/posts/bg-paul-context.jpg
-scripture: "Philippians 4:8 ESV"
-contributors: []
+scripture:
+  - Philippians 4:8
 series: "The Practice of Holy Thinking"
 series_order: 1
 ---
@@ -60,6 +64,3 @@ Remembering Paul’s world shifts how we hear his words. Philippians 4:8 isn’t
 **If Paul could think on these things in chains, what might God be inviting us to think on in ours?**
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzU0NDVdfQ==
--->
