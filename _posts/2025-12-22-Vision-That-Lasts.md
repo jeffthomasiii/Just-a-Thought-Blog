@@ -18,16 +18,14 @@ tags:
   - surrender
   - spiritual-formation
 excerpt: "Ideas rise and fall, but vision born from God endures seasons, pressure, and time."
-image: /img/posts/lead-like-this-vision-that-lasts.jpg
+image: /img/posts/bg-lead-like-this-vision-that-lasts.jpg
 background: /img/posts/bg-lead-like-this-vision-that-lasts.jpg
-scripture:
   - Proverbs 29:18
   - Habakkuk 2:2-3
   - Acts 20:22-24
 series: "Lead Like This"
 series_order: 6
 ---
-
 There is a difference between a good idea, and a God shaped vision. Ideas come quickly. Ideas spark excitement. Ideas rise in moments of clarity and fall in moments of pressure. But vision, real vision, the kind that endures storms and seasons, does not come from our ambition. It comes from God.
 
 Leaders often feel pressure to create vision. Define the plan. Chart the future. Paint the picture. And while planning has its place, Scripture never treats vision as something we invent. It treats vision as something we receive.

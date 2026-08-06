@@ -21,10 +21,9 @@ tags:
 - "personal-growth"
 excerpt: "Most of my best thoughts start messy. But somewhere in the writing, I hear God’s voice. This blog isn’t about platform, it's about obedience, clarity, and growth."
 image: "/img/posts/thinking-out-loud.jpg"
-background: "/img/posts/bg-thinking-out-loud.jpg"
+background: "/img/posts/thinking-out-loud.jpg"
 scripture: []
 ---
-
 Most of my best thoughts start messy.  
 
 They arrive like clutter, half-finished phrases, lingering questions, a swirl of conviction and curiosity. For a while, I tried to ignore them. I’d hear a whisper from the Lord in church, or during quiet time, something like *“write this down”*. I didn’t. Life got busy. I figured it wasn’t that important.  

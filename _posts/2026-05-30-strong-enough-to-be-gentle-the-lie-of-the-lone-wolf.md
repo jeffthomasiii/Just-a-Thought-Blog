@@ -23,11 +23,9 @@ tags:
 excerpt: "What if real strength isn't found in becoming harder, louder, or more independent? What if it is found in becoming strong enough to be gentle?"
 image: /img/posts/strong-enough-to-be-gentle-lone-wolf.jpg
 background: /img/posts/bg-strong-enough-to-be-gentle-lone-wolf.jpg
-scripture:
   - Ephesians 5:25-28
   - Matthew 11:29
 ---
-
 I recently listened to a [podcast interview with Jason Wilson](https://youtu.be/2fBVdWRs62Q?si=bGWWZvS_oS19Nudv) where he mentioned something I had never really considered before. He talked about wolves and pointed out that the leaders of a wolf pack are often described not as a lone alpha male, but as an alpha pair—a bonded male and female working together for the good of the pack.
 
 Now, before anyone writes me a lengthy email about wolf biology, I realize analogies have limits. Nature is not our ultimate source of truth, and God's design for marriage and leadership is not based on the behavior of animals. Still, the idea stuck with me because it pushed against a message that seems to be growing louder in our culture: the idea that the ideal man is a lone wolf.

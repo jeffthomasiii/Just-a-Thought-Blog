@@ -17,14 +17,12 @@ tags:
 - servant-leadership
 - spiritual-formation
 excerpt: We’re called to tend sheep, not systems. The danger isn’t using tools, it’s when the tools start using us.
-image: /img/posts/the-quiet-replacement.jpg
+image: /img/posts/header-the-quiet-replacement.jpg
 background: /img/posts/bg-the-quiet-replacement.jpg
-scripture:
 - John 21:17
 series: Faith, Wisdom, and the Machine
 series_order: 3
 ---
-
 We’re not usually tempted to abandon our calling in one dramatic decision. The real danger is slower, more polite. It disguises itself in words like “efficiency,” “scalability,” and “best practice.”
 
 That’s how ministry can quietly become management.

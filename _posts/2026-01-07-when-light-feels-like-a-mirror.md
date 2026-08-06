@@ -16,15 +16,12 @@ tags:
 - holiness
 - conviction
 - christian-witness
-scripture:
 - Matthew 5:14
 - John 4:29
 image: /img/posts/light-mirror-preview.jpg
 background: /img/posts/bg-light-mirror.jpg
 excerpt: Being the light of the world isn’t about shining on people, it’s about reflecting Christ. And sometimes that reflection reveals more than we expect.
 ---
-
-
 I used to think being the light of the world meant bringing warmth, clarity, and hope wherever I went. Like a sunrise. A lantern. Something people would naturally be drawn to.  
 But lately, sometimes it feels more like I’m walking around with a mirror. And people don’t always like what they see.
 

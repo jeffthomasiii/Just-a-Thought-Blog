@@ -16,14 +16,11 @@ tags:
 - faithfulness
 - discernment
 - perseverance
-scripture:
 - Ephesians 6:13 (ESV)
 image: /img/posts/standing-ready.jpg
 background: /img/posts/bg-standing-ready.jpg
 excerpt: Most men understand physical protection. Fewer realize that spiritual protection requires preparation long before the battle appears.
 ---
-
-
 They show up quietly, through insecurity, exhaustion, discouragement, or a sudden heaviness that settles into your wife’s or your child’s heart. Not as a crisis you can point to, but as a weight you can feel. The room feels different. The tone shifts. You can tell something is being carried.
 
 In one version of the moment, you notice it and don’t feel rushed or threatened by it. You’re not perfectly composed, but you’re present. You listen before you speak. You don’t rush to solve what doesn’t need solving. Words come slowly, but they’re steady. You’re able to remind her of what’s true without dismissing what hurts. Sometimes you pray out loud. Sometimes you just stay close. The situation itself doesn’t instantly change, but the space between you does. The weight doesn’t feel as lonely anymore.

@@ -21,11 +21,9 @@ tags:
 excerpt: "Joy doesn’t stay still. It spreads, shapes, and softens the world around us, often faster than we realize."
 image: /img/posts/joy-is-contagious.jpg
 background: /img/posts/bg-joy-is-contagious.jpg
-scripture:
   - Proverbs 17:22
   - Galatians 5:22
 ---
-
 My wife is the funniest person I know. For those of us who know her personally, you can spot her smile across the room before you even hear her laugh. And when you do hear it, you know what’s coming next, it starts soft, then grows louder, and before long, everyone’s laughing with her.
 
 She laughs when she’s nervous. She laughs when she’s happy. She even laughs when things don’t make sense. But the laugh that’s most contagious, the one that seems to shift the whole atmosphere, is when she’s full of joy. It’s the kind of laugh that doesn’t just echo; it multiplies.

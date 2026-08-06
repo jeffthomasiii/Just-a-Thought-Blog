@@ -18,11 +18,9 @@ tags:
 excerpt: The disciples walked a road from confusion to clarity. Maybe we are still on that road too.
 image: /img/posts/the-road-between-confusion-and-clarity.jpg
 background: /img/posts/bg-the-road-between-confusion-and-clarity.jpg
-scripture:
 - Mark 8:29
 - Luke 24:45
 ---
-
 I have been on both sides of the conversation.
 
 The one who just discovered something in Scripture that felt unmistakably clear and wondered why everyone else did not see it the same way.

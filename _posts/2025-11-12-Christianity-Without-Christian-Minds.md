@@ -19,12 +19,10 @@ tags:
 excerpt: "R. Kent Hughes called it 'the great scandal of today's church', Christians who do not think Christianly. What does that mean, and how can we reclaim the discipline of mind?"
 image: /img/posts/christianity-without-christian-minds.jpg
 background: /img/posts/bg-christianity-without-christian-minds.jpg
-scripture:
   - Romans 12:2
   - 1 Corinthians 2:16
   - Matthew 22:37
 ---
-
 There’s a line from R. Kent Hughes’ *Disciplines of a Godly Man* that refuses to leave me:  
 > *“This cosmic potential of the believer’s mind introduced the great scandal of today's church: Christianity without Christian minds, that is, Christians who do not think Christianly...”*
 

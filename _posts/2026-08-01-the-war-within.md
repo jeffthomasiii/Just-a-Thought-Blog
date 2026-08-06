@@ -21,7 +21,6 @@ tags:
 excerpt: "Pride is not always an enemy approaching from the outside. Often, the most difficult spiritual battle is already taking place within us."
 image: /img/posts/the-war-within.jpg
 background: /img/posts/bg-the-war-within.jpg
-scripture:
   - Genesis 4:6-7
   - Luke 9:23
   - Philippians 2:3-8
@@ -30,7 +29,6 @@ scripture:
 series: "The Daily Death of Pride"
 series_order: 1
 ---
-
 A friend recently described the fight against pride as “hand-to-hand combat,” and the phrase stayed with me. Part of me thought the language sounded severe, but another part of me knew that was probably why it unsettled me. I am accustomed to hearing pride described as something to watch for, guard against, or keep under control. Hand-to-hand combat suggests something much closer and more dangerous because it leaves no safe distance between you and the enemy.
 
 He went on to say that pride, in its various forms, ends either with its death or ours. Then he added something even more difficult to ignore: pride is probably seeking mastery over each of us in at least one way right now. I read those words more than once, and they made me wonder whether I have been treating pride too casually.

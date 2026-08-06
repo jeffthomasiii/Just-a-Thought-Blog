@@ -17,14 +17,12 @@ tags:
 - faithfulness
 - hidden-work
 excerpt: AI can analyze results, but only God sees the motives. Not all faithfulness comes with feedback.
-image: /img/posts/the-god-who-sees-the-hidden-work.jpg
+image: /img/posts/header-the-god-who-sees-the-hidden-work.jpg
 background: /img/posts/bg-the-god-who-sees-the-hidden-work.jpg
-scripture:
 - Matthew 6:4
 series: Faith, Wisdom, and the Machine
 series_order: 2
 ---
-
 > **Not everything faithful is measurable. Not everything measurable is faithful.**
 
 It’s hard to admit how often we crave results that people can see. Sermon clicks. Social shares. Study attendance. Giving metrics. And now, with AI tools promising optimization, we’re told we can finally “track what works” in ministry.

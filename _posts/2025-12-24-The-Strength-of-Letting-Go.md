@@ -18,16 +18,14 @@ tags:
   - leadership-development
   - spiritual-formation
 excerpt: "Letting go is not the absence of strength. It is strength disciplined by trust and surrender."
-image: /img/posts/lead-like-this-letting-go.jpg
-background: /img/posts/eths-letting-go.jpg
-scripture:
+image: /img/posts/bg-lead-like-this-letting-go.jpg
+background: /img/posts/bg-lead-like-this-letting-go.jpg
   - Psalm 46:10
   - Exodus 18:17-23
   - Matthew 25:14-30
 series: "Lead Like This"
 series_order: 7
 ---
-
 Holding on feels strong. It feels responsible. It feels safe. When outcomes matter and people depend on us, tightening our grip can seem like the wise thing to do. But over time, what begins as responsibility can quietly become control, and what feels like strength can slowly become strain.
 
 Many leaders believe letting go means caring less or disengaging. In reality, letting go often requires more strength than holding on. It requires trust. It requires humility. It requires the willingness to admit that we are not meant to carry everything alone.

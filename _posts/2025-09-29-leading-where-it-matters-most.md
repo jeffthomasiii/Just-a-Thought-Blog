@@ -17,7 +17,6 @@ tags:
 - integrity
 - humility
 - accountability
-scripture:
 - 1 Timothy 3:4–5
 - Proverbs 29:18
 - Joshua 24:15
@@ -30,8 +29,6 @@ image: /img/posts/leading-where-it-matters-most.jpg
 background: /img/posts/bg-leading-where-it-matters-most.jpg
 excerpt: If we’d never tolerate working under a bad boss, why do we sometimes expect our wives to endure that same kind of leadership at home?
 ---
-
-
 > if your wife had the freedom to “quit” following your leadership, would she?
 
 Think about the worst boss you’ve ever had. Maybe they barked orders without listening. Maybe they had no clear plan, or they demanded respect without ever earning it. You probably hated working under them, maybe even dreaded walking through the door each morning.  

@@ -18,11 +18,9 @@ tags:
 excerpt: "Not every win makes you stronger. Some victories only feed entitlement, while others deepen your confidence in God."
 image: /img/posts/real-victories.jpg
 background: /img/posts/bg-real-victories.jpg
-scripture:
   - James 1:3
   - Philippians 4:13
 ---
-
 > *“Empty victories teach entitlement; real victories teach confidence.”*
 
 I can’t tell you who said it, but I can tell you it *feels* true. Because the victories that built my confidence were never the easy ones. They were the ones that cost something. The ones that left scars and taught humility. The kind that reminds you confidence isn’t loud, it’s grounded.  

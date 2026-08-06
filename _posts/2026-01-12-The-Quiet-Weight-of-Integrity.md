@@ -16,7 +16,6 @@ tags:
 - leadership
 - faithfulness
 - accountability
-scripture:
 - Proverbs 10:9
 - Psalm 15:1–2
 - Proverbs 11:3 (ESV)
@@ -24,8 +23,6 @@ image: /img/posts/quiet-weight-integrity.jpg
 background: /img/posts/bg-quiet-weight-integrity.jpg
 excerpt: Integrity is easy to define, difficult to carry, and increasingly rare. A quiet reflection on why it still matters.
 ---
-
-
 Integrity is one of those qualities nearly everyone agrees is important, yet far fewer are willing to carry. It asks little in explanation and much in practice. Be the same person in public and private. Let your words and actions agree. Walk straight, even when no one is watching. The idea is simple. The weight of it is not.
 
 In a world that rewards visibility, speed, and self-promotion, integrity moves slowly and without applause. It resists shortcuts. It limits justifications. It refuses to bend simply because bending would be easier. And because of that, integrity often feels heavier than compromise, even when it leads to greater peace over time.

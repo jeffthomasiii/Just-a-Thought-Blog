@@ -19,11 +19,9 @@ tags:
 excerpt: "The phrase 'maybe love is not enough' sounds wise, but Scripture invites us to see love through a different lens."
 image: /img/posts/love-not-enough.jpg
 background: /img/posts/bg-love-not-enough.jpg
-scripture:
   - 1 John 4:8
   - 1 Corinthians 13:4-8
 ---
-
 I hear it often in movies, late-night couple conversations, and even quiet moments with friends. It is that familiar line: “Maybe sometimes love just is not enough.” It sounds wise. It even feels true in certain moments, especially when someone is hurting. But every time I sit with that phrase, something in me hesitates. Because if God is love, not just loving, but the very essence of Love, then maybe the problem is not that love is not enough. Maybe it is that what we are calling “love” is not the kind Scripture talks about.
 
 People usually say it after something painful. A broken trust. A failed relationship. A marriage drifting apart. Or a friendship that weakened under pressure. The moment feels so heavy that the phrase appears comforting. It gives us language for disappointment. It explains why things did not work out the way we hoped.

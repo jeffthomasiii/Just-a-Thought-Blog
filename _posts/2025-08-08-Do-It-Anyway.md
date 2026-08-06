@@ -17,14 +17,12 @@ tags:
   - grace
   - boundaries
   - relationships
-scripture:
   - "Romans 12:21"
   - "Galatians 6:9"
 excerpt: "When someone mistreats you, it is easy to pull back or match their energy. But their behavior does not have to determine who you become."
 image: /img/posts/bg-do-it-anyway.jpg
 background: /img/posts/bg-do-it-anyway.jpg
 ---
-
 You hold the door open. They walk through without a glance.  
 No “thank you.” No smile. Just… silence.  
 
@@ -144,6 +142,3 @@ Because who you’re becoming matters more than how they’re behaving.
 
 **…just a thought.**
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0OTM1NzgzMSw5NTc5MTAyNDNdfQ==
--->

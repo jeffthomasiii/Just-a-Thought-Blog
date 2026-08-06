@@ -18,12 +18,10 @@ tags:
 - relationships
 series: Known & Loved
 series_order: 2
-image: /img/posts/the-illusion-of-love.jpg
+image: /img/posts/bg-the-illusion-of-love.jpg
 background: /img/posts/bg-the-illusion-of-love.jpg
 excerpt: It’s possible to love what you see… without truly knowing who someone is.
 ---
-
-
 We say we love people. And most of the time, we mean it. But sometimes I wonder…
 Do we actually love them? Or do we love what we see?
 

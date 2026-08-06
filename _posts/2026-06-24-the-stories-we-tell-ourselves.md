@@ -20,12 +20,10 @@ tags:
 excerpt: "What looked like leftovers to one person looked like something shared to another, and that difference revealed something important about relationships."
 image: /img/posts/the-stories-we-tell-ourselves.jpg
 background: /img/posts/bg-the-stories-we-tell-ourselves.jpg
-scripture:
   - 1 Corinthians 13:7
 contributors:
   - Samatra Thomas
 ---
-
 The other day I stepped out of my office for lunch while my wife was working in the next room. Like many couples today, we're both hybrid workers. Some days we're in the office, some days we're working from home, and on this particular day we were both home. When I walked into the room, she told me she had bought me a hamburger for lunch. Then she mentioned there was half a piece of cake if I wanted dessert.
 
 Without thinking much about it, and mostly trying to be funny, I replied, *"So you're giving me your leftovers?"* She smiled and said, *"It's shared."* We both laughed and moved on with our day, but for some reason that short exchange stayed with me.

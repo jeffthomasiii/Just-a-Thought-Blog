@@ -18,16 +18,14 @@ tags:
   - abiding
   - obedience
 excerpt: "Before God asks us to lead anyone else, He asks us to walk faithfully with Him."
-image: /img/posts/lead-like-this-closing-reflection.jpg
+image: /img/posts/bg-lead-like-this-closing-reflection.jpg
 background: /img/posts/bg-lead-like-this-closing-reflection.jpg
-scripture:
   - Mark 10:42-45
   - Luke 16:10
   - John 15:4-5
 series: "Lead Like This"
 series_order: 9
 ---
-
 Leadership has a way of pulling our attention outward. Toward results. Toward expectations. Toward people watching and depending and waiting. Over time, it becomes easy to measure leadership by what is visible and immediate. But God measures leadership differently.
 
 > Before He asks us to lead anyone, He asks us to walk with Him.

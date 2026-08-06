@@ -19,12 +19,10 @@ tags:
 excerpt: "Teachability isn’t weakness, it’s humility. A man who keeps learning will never stop growing."
 image: /img/posts/stay-teachable.jpg
 background: /img/posts/bg-stay-teachable.jpg
-scripture:
   - Proverbs 1:5
 series: "10 Skills Every Man Should Have"
 series_order: 2
 ---
-
 I once heard someone say, “The moment you think you’ve arrived is the moment you stop growing.” That line has stayed with me, because it names a quiet temptation in every man: to assume we’ve learned enough, done enough, and figured out enough to coast.  
 
 I remember watching two men approach the same problem very differently. One was a seasoned tradesman asked to learn a new digital tool for his work. He laughed it off, saying, “That’s for the younger guys, I’ve been doing this long enough, I don’t need it.” The other man, only a few years younger, leaned in. He asked questions, took notes, and wrestled with it until he got it. A year later, the first man was struggling to stay relevant in his field, while the second had become the go-to mentor for others.  

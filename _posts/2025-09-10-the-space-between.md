@@ -17,7 +17,6 @@ tags:
 - perseverance
 - sanctification
 - hiking
-scripture:
 - Hebrews 12:2
 - Philippians 3:14
 - Ephesians 2:8
@@ -25,8 +24,6 @@ image: /img/posts/the-space-between-thumbnail.jpg
 background: /img/posts/bg-the-space-between.jpg
 excerpt: The space between isn’t failure, it’s formation. And it’s where grace does its best work.
 ---
-
-
 I remember standing at the trailhead of a hike, looking at the sign with a glossy photo of the summit view. Blue skies, endless valleys, and the promise of a breathtaking reward. But a couple of hours in, the only view I had was dust, sweat, and a winding path that seemed to climb forever. My legs were sore, my backpack heavy, and I caught myself thinking, *Is this even worth it?*  
 
 That moment, the long stretch between the starting point and the destination, felt like a picture of life with God. We know what’s promised, but the “in-between” is where we actually live most of the time.  

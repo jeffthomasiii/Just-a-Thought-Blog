@@ -16,14 +16,11 @@ tags:
 - grace
 - discernment
 - christian-living
-scripture:
 - Ephesians 4:15 (ESV)
 image: /img/posts/truthing-in-love-post.jpg
 background: /img/posts/truthing-in-love-bg.jpg
 excerpt: Truth without love wounds. Love without truth deceives. Somewhere between the two is a harder disciplinetruthing in love.
 ---
-
-
 There is a kind of honesty that feels faithful yet leaves people wounded. There is also a kind of love that feels gentle but quietly avoids what needs to be said. We agree, at least in theory, that truth matters. We also agree that love matters. But when the two collide, we tend to favor one and sacrifice the other. Only later do we discover the harder call Scripture makes, the discipline that refuses to separate them. It is often described as truthing in love.
 
 I first came across the phrase in *Disciplines of a Godly Man*, where it is framed as a discipline of integrity. What stayed with me was not the definition, but the implication. Truthing suggests movement. It assumes responsibility, not just belief. And when paired with love, it quietly exposes how often I justify either silence or sharpness, rather than doing the harder work of holding both together.

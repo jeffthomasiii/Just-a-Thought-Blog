@@ -19,10 +19,8 @@ tags:
 excerpt: "Failure isn’t the opposite of progress, it’s part of it. When we stop fearing failure, we start growing faster. ‘Fail fast’ isn’t about rushing, it’s about releasing."
 image: /img/posts/fail-fast-grow-forward.jpg
 background: /img/posts/bg-fail-fast-grow-forward.jpg
-scripture:
   - Proverbs 24:16
 ---
-
 You can tell a lot about a person by how long they stare at their mistakes. Some replay them like a bad highlight reel, pausing, rewinding, analyzing every angle, while others take a breath, jot down what they learned, and move on.  
 
 Our Chief of Staff said something recently that stuck with me:  

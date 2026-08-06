@@ -23,13 +23,11 @@ tags:
 - "first-timothy"
 excerpt: "Spiritual growth does not happen by accident. Like physical training, it requires focus, discipline, endurance, and a willingness to remove what distracts us."
 image: "/img/posts/spiritual-sweat.jpg"
-background: "/img/posts/bg-spiritual-sweat.jpg"
-scripture:
+background: "/img/posts/spiritual-sweat.jpg"
 - "1 Timothy 4:7"
 - "Hebrews 12:1"
 - "Philippians 3:14"
 ---
-
 The sun hadn’t risen yet, but he was already drenched in sweat.  
 Breath visible in the morning chill. Laces double-knotted.  
 No earbuds, no crowd, just the rhythm of sneakers striking pavement and the faint hum of focus in his chest.  
@@ -125,6 +123,3 @@ Because godliness isn’t grown in comfort, it’s forged in commitment.
 
 What’s one weight you need to lay aside to train more freely for godliness?
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc0MTM2OTk3XX0=
--->

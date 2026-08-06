@@ -18,14 +18,11 @@ tags:
 - relationships
 series: Love & Respect; More Than a Cycle
 series_order: 1
-scripture:
 - Ephesians 4:26–27
 image: /img/posts/the-cycle-we-dont-see.jpg
 background: /img/posts/bg-the-cycle-we-dont-see.jpg
 excerpt: Many of us don’t realize we’re in a destructive cycle until it’s already spinning. The good news is, cycles can change.
 ---
-
-
 This post is part of a short series called **“Love & Respect; More Than a Cycle,”** reflecting on lessons we learned years ago in our Marrieds Small Group while going through Dr. Emerson Eggerichs’ book *Love & Respect.* These aren’t chapter summaries, but reflections on how the ideas have shaped my perspective on marriage.  
 
 ---

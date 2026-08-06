@@ -17,7 +17,6 @@ tags:
 excerpt: "The Christian mind isn’t achieved through effort—it’s received through surrender and shaped by the Spirit."
 image: /img/posts/mind-of-christ.jpg
 background: /img/posts/bg-mind-of-christ.jpg
-scripture:
   - Philippians 4:8
   - Philippians 2:5
   - 1 Corinthians 2:16
@@ -26,7 +25,6 @@ scripture:
 series: "The Practice of Holy Thinking"
 series_order: 3
 ---
-
 There’s a moment every believer faces when positive thinking simply stops working. You try to calm your mind. You try to “think better thoughts.” You try to talk yourself back into peace. And maybe it lasts for a minute… until reality rushes back in and your mind goes right back to racing.
 
 Most of us know that feeling.  

@@ -17,7 +17,6 @@ tags:
 - wisdom
 - success
 - stewardship
-scripture:
 - Proverbs 23:4
 - Luke 5:16
 - Matthew 25:23
@@ -25,8 +24,6 @@ image: /img/posts/stop-wearing-yourself-out.jpg
 background: /img/posts/bg-stop-wearing-yourself-out.jpg
 excerpt: 'Hustle culture promises success but often leaves us restless. Proverbs 23:4 offers a better way: wisdom over weariness.'
 ---
-
-
 ### Rise and Grind… Until You Can’t  
 “Rise and grind.”  
 “Sleep when you’re dead.”  

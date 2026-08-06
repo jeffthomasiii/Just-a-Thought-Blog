@@ -19,10 +19,8 @@ tags:
 excerpt: "True trust in marriage grows not in the easy talks, but in the hard conversations handled with honesty, patience, and grace."
 image: /img/posts/trust-hard-conversations.jpg
 background: /img/posts/bg-trust-hard-conversations.jpg
-scripture:
   - Proverbs 24:26
 ---
-
 ### The Topics We’d Rather Avoid
 Every couple has them, the “don’t-go-there” conversations. Money. Intimacy. Family. The ones that feel risky, like one wrong word could tip everything into tension. It feels safer to avoid them, but avoidance doesn’t build trust. It slowly erodes it.  
 

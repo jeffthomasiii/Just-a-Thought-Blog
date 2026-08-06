@@ -19,12 +19,10 @@ tags:
 excerpt: "Words and numbers may not feel heroic, but they quietly shape the way a man leads and provides."
 image: /img/posts/words-and-numbers-matter.jpg
 background: /img/posts/bg-words-and-numbers-matter.jpg
-scripture:
   - Proverbs 4:7
 series: "10 Skills Every Man Should Have"
 series_order: 3
 ---
-
 Not long ago, I overheard a man joking about how he didn’t bother reading the fine print, “That’s what lawyers are for,” he said. Another time, a young husband laughed about how his wife handled all the budgeting because “numbers just aren’t my thing.” It was said lightly, but beneath the humor I heard something sobering: a shrugging off of responsibility.  
 
 Words and numbers may not feel heroic, but they quietly shape the way a man leads and provides. You don’t need to be a scholar or a mathematician. You don’t need to write novels or solve complex equations. But every man should be competent enough to read with understanding, communicate clearly, and handle the math of daily life.  

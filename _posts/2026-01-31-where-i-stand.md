@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Where I Stand
+subtitle: A reflection on humility, anxiety, and the quiet confidence of knowing one’s position beneath Christ.
 description: A reflection on humility, anxiety, and the quiet confidence of knowing one’s position beneath Christ.
 date: '2026-01-31'
 author: Jeff Thomas III
@@ -19,8 +20,6 @@ image: /img/posts/where-i-stand.jpg
 background: /img/posts/bg-where-i-stand.jpg
 excerpt: Humility isn’t about being small. It’s about knowing where you stand.
 ---
-
-
 Sometimes a statement carries weight not because it’s dramatic,  
 but because it’s settled.
 

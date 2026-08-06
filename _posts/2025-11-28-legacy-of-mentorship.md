@@ -19,12 +19,10 @@ tags:
 excerpt: "The legacy of mentorship is this: keep learning, keep teaching. Be humble enough to stay a student, and generous enough to be a teacher."
 image: /img/posts/legacy-of-mentorship.jpg
 background: /img/posts/bg-legacy-of-mentorship.jpg
-scripture:
   - 2 Timothy 2:2
 series: "10 Skills Every Man Should Have"
 series_order: 10
 ---
-
 Every man stands in two roles at once: student and teacher. No one ever “arrives.” We are always learning from someone ahead of us, and we are always being watched by someone behind us.  
 > Be humble enough to stay a student, and generous enough to be a teacher.
 

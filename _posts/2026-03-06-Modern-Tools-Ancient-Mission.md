@@ -18,14 +18,12 @@ tags:
   - technology
   - missions
 excerpt: "AI can help us go faster, speak louder, and reach farther—but it cannot fulfill the Great Commission for us."
-image: /img/posts/modern-tools-ancient-mission.jpg
+image: /img/posts/header-modern-tools-ancient-mission.jpg
 background: /img/posts/bg-modern-tools-ancient-mission.jpg
-scripture:
   - Matthew 28:19–20 ESV
 series: "Faith, Wisdom, and the Machine"
 series_order: 5
 ---
-
 The mission hasn’t changed.
 
 Jesus still calls us to go and make disciples. To teach, to baptize, to love, and to obey. That calling remains whether we’re speaking from a pulpit or typing from a laptop.

@@ -18,7 +18,6 @@ tags:
 - spiritual-unity
 series: Marriage Reflections
 series_order: 2
-scripture:
 - Genesis 2:24
 - 1 John 4:8
 - Ephesians 5:32
@@ -27,8 +26,6 @@ image: /img/posts/you-him-and-i.jpg
 background: /img/posts/bg-you-him-and-i.jpg
 excerpt: 'Marriage was never meant to be a duet, it was always meant to be a trio: you, him, and God.'
 ---
-
-
 ### Every Story Needs a Third Voice  
 Every marriage tells a story.  
 There’s the story of *you*; your hopes, your wounds, your way of seeing the world.  

@@ -22,7 +22,6 @@ excerpt: "In a culture that rewards visibility, maybe the strongest men are the 
 image: /img/posts/quiet-strength.jpg
 background: /img/posts/bg-quiet-strength.jpg
 ---
-
 I once heard the phrase “gray man” used in a military context.
 
 It refers to someone who blends into their environment.  

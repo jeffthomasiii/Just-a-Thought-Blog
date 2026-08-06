@@ -17,7 +17,6 @@ tags:
   - gottman-method
   - healing
   - humility
-scripture:
   - "Proverbs 15:1"
   - "Galatians 6:1"
   - "Romans 12:10"
@@ -30,8 +29,6 @@ excerpt: "The Four Horsemen can expose destructive patterns in a marriage, but t
 image: /img/posts/bg-what-the-four-horsemen-cant-kill.png
 background: /img/posts/bg-what-the-four-horsemen-cant-kill.png
 ---
-
-
 You can feel the room change before a word is even spoken.  
 
 The air tightens. The distance grows.  

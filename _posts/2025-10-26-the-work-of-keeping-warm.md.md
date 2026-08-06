@@ -19,11 +19,9 @@ tags:
 excerpt: "Love isn’t lost because the fire burned out; it’s lost when we stop looking for matches. Sometimes keeping love warm means returning to the small things that once sparked joy between you."
 image: /img/posts/the-work-of-keeping-warm.jpg
 background: /img/posts/bg-the-work-of-keeping-warm.jpg
-scripture:
   - Romans 12:10-11
   - Song of Solomon 8:6-7
 ---
-
 > *“If you want the fire to keep burning, you have to keep feeding it, and if the fire has gone out, you have to start with some kindling.”*  
 
 That line stopped me in my tracks.  

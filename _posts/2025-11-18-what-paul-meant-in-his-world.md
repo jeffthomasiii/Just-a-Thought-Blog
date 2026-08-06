@@ -18,12 +18,10 @@ tags:
 excerpt: "Understanding Paul’s imprisonment and Roman culture changes how we hear his words in Philippians 4:8."
 image: /img/posts/paul-context.jpg
 background: /img/posts/bg-paul-context.jpg
-scripture:
   - Philippians 4:8
 series: "The Practice of Holy Thinking"
 series_order: 1
 ---
-
 Have you ever noticed how easy it is to read Scripture as if it were written from a quiet coffee shop instead of a prison cell? We highlight and underline Paul’s words, but sometimes we forget the chains hanging from his wrists. And hereright in the discomfort of captivityPaul urges believers to set their minds on what is “true… honorable… just… pure… lovely… commendable.”
 
 When we remember where Paul was, the weight of his words changes.  

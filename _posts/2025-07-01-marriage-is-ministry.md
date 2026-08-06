@@ -21,12 +21,10 @@ tags:
 - "dying-to-self"
 excerpt: "Marriage is more than companionship or romance, it's a sacred reflection of Christ and the Church. What if every moment in marriage was seen as ministry?"
 image: "/img/posts/marriage-is-ministry.jpg"
-background: "/img/posts/bg-marriage-is-ministry.jpg"
-scripture:
+background: "/img/posts/marriage-is-ministry.jpg"
 - "Ephesians 5:2"
 - "Ephesians 5:21-33"
 ---
-
 ## Marriage IS Ministry
 
 I used to think ministry happened mostly on stages, in pulpits, or mission fields. But somewhere between unspoken expectations, quiet apologies, and Saturday morning dishes, God showed me something deeper. Marriage itself is ministry. And not just any ministry, it’s a picture of the most sacred mystery Paul ever wrote about.

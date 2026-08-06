@@ -19,12 +19,10 @@ tags:
 excerpt: "A man who prioritizes people over projects communicates something profound: 'You matter more than what I can get done.'"
 image: /img/posts/people-over-projects.jpg
 background: /img/posts/bg-people-over-projects.jpg
-scripture:
   - Ephesians 4:2–3
 series: "10 Skills Every Man Should Have"
 series_order: 7
 ---
-
 It’s easy to measure success by tasks completed, goals achieved, or projects finished. But life has a way of reminding us that people matter more than projects.  
 
 I once knew a man who could fix anything with his hands but struggled to connect with those around him. His house was immaculate, his work meticulous, but his relationships were strained. The problem wasn’t competence, it was connection.  

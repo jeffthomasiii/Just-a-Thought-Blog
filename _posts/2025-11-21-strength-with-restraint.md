@@ -19,12 +19,10 @@ tags:
 excerpt: "The true test of strength isn’t in how much force you can unleash, but in how much wisdom you show when you don’t."
 image: /img/posts/strength-with-restraint.jpg
 background: /img/posts/bg-strength-with-restraint.jpg
-scripture:
   - Proverbs 25:28
 series: "10 Skills Every Man Should Have"
 series_order: 9
 ---
-
 Strength is a gift, but without restraint, it can quickly become a danger. The same hands that can protect can also wound. The same weapon that can guard the innocent can also destroy if wielded without wisdom. That’s why every man should pursue both competence and character when it comes to self-defense.  
 
 Unarmed skills teach confidence in the body God has given you. They remind you that courage isn’t found in intimidation but in preparation. Weapons proficiency, whether with a firearm, bow, or blade, adds another layer of responsibility. To hold a weapon well is not to dominate others, but to steward power wisely. Competence matters because in a crisis, fumbling is dangerous. But character matters even more, because the person behind the trigger or the handle shapes the outcome.  

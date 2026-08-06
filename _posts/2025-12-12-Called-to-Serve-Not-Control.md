@@ -18,15 +18,13 @@ tags:
   - trust
   - influence
 excerpt: "Leadership never begins with control. It begins with a servant heart that trusts God with the outcomes."
-image: /img/posts/lead-like-this-serve-not-control.jpg
+image: /img/posts/bg-lead-like-this-serve-not-control.jpg
 background: /img/posts/bg-lead-like-this-serve-not-control.jpg
-scripture:
   - Mark 10:43
   - Philippians 2:3-7
 series: "Lead Like This"
 series_order: 2
 ---
-
 Most of us do not think of ourselves as controlling. We think we are being responsible, clear, protective, or diligent. But it is surprising how easily leadership can drift from serving people to managing outcomes, from lifting others to gripping tighter, from shepherding to steering.
 
 Control often disguises itself as care.

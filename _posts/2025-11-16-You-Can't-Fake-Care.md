@@ -19,12 +19,10 @@ tags:
 excerpt: "People can feel the truth beneath your tone. Real leadership begins where genuine care begins."
 image: /img/posts/you-cant-fake-care.jpg
 background: /img/posts/bg-you-cant-fake-care.jpg
-scripture:
   - Romans 12:9
 series: "Character Before Competence"
 series_order: 1
 ---
-
 It happens more often than we admit.  
 Someone stands up in a meeting, checks all the right boxes, says all the right things, and hits every bullet point that sounds like “good leadership.” But something feels off. The words land, but they don’t resonate. The room gets quieter, not more unified. No one can explain it, but everyone senses the gap: the tone doesn’t match the message.
 

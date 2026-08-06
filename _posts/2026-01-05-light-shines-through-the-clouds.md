@@ -16,7 +16,6 @@ tags:
 - courage
 - faithfulness
 - christian-living
-scripture:
 - Matthew 5:14–16
 - John 1:5
 - Philippians 2:15
@@ -24,8 +23,6 @@ image: /img/posts/light-through-clouds.jpg
 background: /img/posts/bg-light-through-clouds.jpg
 excerpt: Darkness doesn’t need to disappear for light to matter. It only needs light to remain.
 ---
-
-
 There’s something quietly powerful about watching light break through heavy clouds. The sky doesn’t suddenly clear. The darkness doesn’t retreat. And yet, that thin beam of light changes everything about how the moment feels. It doesn’t need to overpower the clouds. It simply shines through them.
 
 It’s easy to let the atmosphere around us dictate our posture. When voices grow louder, attitudes sharper, and patience thinner, the pressure to respond in kind can feel almost automatic. Not because we want to become like the darkness, but because standing apart from it requires intention.

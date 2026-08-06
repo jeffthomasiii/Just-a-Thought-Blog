@@ -22,11 +22,10 @@ tags:
   - scripture-journaling
   - reflective-writing
 excerpt: "This blog isn't about being loud or polished, it's about honest reflection, biblical thinking, and real life. Here's what you can expect from Just A Thought."
-image: /img/posts/intro-blog-post-candle-scenedefault-og.jpg
-background: /img/posts/intro-blog-post-candle-scenedefault-og.jpg
+image: /img/posts/intro-blog-post-candle-scene.jpg
+background: /img/posts/intro-blog-post-candle-scene.jpg
 scripture: []
 ---
-
 We don’t need another blog.  
 At least, not another blog shouting opinions into the digital void or pretending to have all the answers.  
 But maybe… just maybe… we need a space to slow down and think again.

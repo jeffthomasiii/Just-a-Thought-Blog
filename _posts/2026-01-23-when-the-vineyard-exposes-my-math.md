@@ -15,14 +15,11 @@ tags:
 - comparison
 - kingdom-of-god
 - humility
-scripture:
 - Matthew 20:1–16
 image: /img/posts/vineyard-last-first.jpg
 background: /img/posts/bg-vineyard-last-first.jpg
 excerpt: Jesus’ vineyard parable doesn’t just teach generosity. It exposes how often I keep score.
 ---
-
-
 I’ve heard the phrase for the better part of my Christian life: *“The last shall be first, and the first shall be last.”*  
 It’s familiar enough to feel almost poetic. Familiar enough to nod at without stopping.
 

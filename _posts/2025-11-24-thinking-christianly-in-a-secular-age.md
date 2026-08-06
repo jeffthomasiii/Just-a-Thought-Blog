@@ -16,14 +16,12 @@ tags:
   - discipleship
   - christian-thinking
 excerpt: "Christian thinking slows the spiral, interrupts the noise, and reorients the heart toward Christ."
-image: /img/posts/thinking-christianly.jpg
-background: /img/posts/bg-thinking-christianly.jpg
-scripture:
+image: /img/thinking-christianly.jpg
+background: /img/bg-thinking-christianly.jpg
   - Philippians 4:8
 series: "The Practice of Holy Thinking"
 series_order: 4
 ---
-
 Some days it feels like our minds belong more to the world around us than to the God within us. You open your phone—before you even open your eyes all the wayand a flood of opinions, headlines, arguments, ads, heartbreaks, and random noise hits you before your soul has a chance to wake up.
 
 And it’s subtle, but somewhere in that swirl of information, the mind begins to bend.  

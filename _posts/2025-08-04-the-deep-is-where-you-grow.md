@@ -16,7 +16,6 @@ tags:
   - comfort-zone
   - calling
   - faith
-scripture:
   - "Matthew 14:29"
   - "Joshua 3:15"
   - "Hebrews 11:8"
@@ -93,6 +92,3 @@ Where you're reminded that walking by faith isn’t about swimming, it's about *
 
 What’s the “shore” in your life right now?  
 What would it look like to step into the deep, where trust is required and growth begins?
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODIxMzM0OTJdfQ==
--->

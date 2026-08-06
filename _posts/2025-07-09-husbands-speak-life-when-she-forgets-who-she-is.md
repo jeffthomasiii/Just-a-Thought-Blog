@@ -23,8 +23,7 @@ tags:
 - "spiritual-leadership"
 excerpt: "When your wife is weary, anxious, or questioning her worth, you have the opportunity to speak life and truth over her. Here's how to pray for her and affirm who God says she is."
 image: "/img/posts/speak-life-over-her.jpg"
-background: "/img/posts/bg-speak-life-over-her.jpg"
-scripture:
+background: "/img/posts/speak-life-over-her.jpg"
 - "Proverbs 31:25"
 - "Isaiah 26:3"
 - "Matthew 11:28"
@@ -32,7 +31,6 @@ scripture:
 series: Speak Life Over Them
 series_order: 2
 ---
-
 > **👤 This post is written for husbands.** *(Wives, read it too. you’ll find insight here.)*
 
 She’s strong, but even strength gets weary.  

@@ -16,14 +16,11 @@ tags:
 - contentment
 - speech
 - spiritual-growth
-scripture:
 - Numbers 13–14
 image: /img/posts/the-problem-of-complaining-og.jpg
 background: /img/posts/the-problem-of-complaining-bg.jpg
 excerpt: Complaining often feels harmless, even honest, but over time it reshapes how we see reality, people, and responsibility.
 ---
-
-
 Complaining rarely announces itself. It usually slips into conversation quietly, wrapped in honesty, fatigue, or shared frustration. By the time we notice it, it already feels normal.
 
 Most of us don’t think of ourselves as complainers. We think of ourselves as observant. Realistic. Honest about what isn’t working. And often, what we’re saying *is* true. That’s part of what makes complaining so easy to miss.

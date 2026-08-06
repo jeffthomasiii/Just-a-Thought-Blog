@@ -21,12 +21,10 @@ tags:
 - wives
 excerpt: "This two-part series invites husbands and wives to intentionally pray for and speak truth over each other with the power of Scripture, compassion, and clarity."
 image: "/img/posts/speak-life-over-them.jpg"
-background: "/img/posts/bg-speak-life-over-them.jpg"
-scripture: []
+background: "/img/posts/speak-life-over-them.jpg"
 series: Speak Life Over Them
 series_order: 1
 ---
-
 Have you ever realized you were trying to fix something with good intentions… but the wrong tools?
 
 That was me, not too long ago.

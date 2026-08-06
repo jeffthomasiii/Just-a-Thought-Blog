@@ -1,6 +1,7 @@
 ---
 layout: post
 title: When Growth Feels Like Trespassing
+subtitle: A reflective look at imposter syndrome as a signal of growth rather than incapability.
 description: A reflective look at imposter syndrome as a signal of growth rather than incapability.
 date: '2026-01-27'
 author: Jeff Thomas III
@@ -15,12 +16,10 @@ tags:
 - boundaries
 - courage
 - spiritual-formation
-image: /img/posts/when-growth-feels-like-trespassing.jpg
-background: /img/posts/bg-when-growth-feels-like-trespassing.jpg
+image: /img/posts/default-og.jpg
+background: /img/posts/bg-post.jpg
 excerpt: What if imposter syndrome isn’t evidence that you don’t belong, but a sign that you’re standing somewhere new?
 ---
-
-
 There’s a particular kind of discomfort that shows up when responsibility arrives before confidence feels settled.  
 Not panic. Not failure. Just the persistent sense that you don’t quite belong yet.
 

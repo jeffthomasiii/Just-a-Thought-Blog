@@ -18,12 +18,10 @@ tags:
 - relationships
 series: Known & Loved
 series_order: 4
-image: /img/posts/love-in-marriage.jpg
+image: /img/posts/bg-love-in-marriage.jpg
 background: /img/posts/bg-love-in-marriage.jpg
 excerpt: You can share a life with someone… and still not fully share yourself.
 ---
-
-
 Marriage creates closeness. Shared space. Shared responsibilities. Shared routines. Over time, it can feel like two lives have fully merged into one. And in many ways, they have. But there’s a difference between sharing a life and sharing yourself. Because it’s possible to be physically close, emotionally steady, and practically aligned while still holding parts of yourself at a distance. 
 
 Not out of rebellion. Not out of disconnect. Just out of habit. Or caution. Or maybe even peacekeeping. You learn what works. What keeps things smooth. What avoids unnecessary tension.

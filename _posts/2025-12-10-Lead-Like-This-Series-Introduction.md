@@ -20,14 +20,12 @@ tags:
 excerpt: "Before we talk about leading anyone else, we have to talk about who we are becoming under God’s hand."
 image: /img/posts/lead-like-this-intro.jpg
 background: /img/posts/bg-lead-like-this-intro.jpg
-scripture:
   - Mark 10:42-45
   - Proverbs 4:23
   - 1 Timothy 4:12
 series: "Lead Like This"
 series_order: 1
 ---
-
 Sometimes leadership sneaks up on you. One day you’re just trying to do the right thing, and before you know it, someone is watching the way you carry yourself, listening to the way you speak, or following the choices you make. Most of us never apply for leadership, it finds us in the quiet places of life long before it finds us in the public ones.
 
 And honestly? Leadership has a way of exposing what’s really inside of us. Not to shame us, but to shape us.

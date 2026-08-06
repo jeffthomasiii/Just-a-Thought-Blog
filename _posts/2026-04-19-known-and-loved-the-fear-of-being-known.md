@@ -18,12 +18,10 @@ tags:
 - relationships
 series: Known & Loved
 series_order: 3
-image: /img/posts/the-fear-of-being-known.jpg
+image: /img/posts/bg-the-fear-of-being-known.jpg
 background: /img/posts/bg-the-fear-of-being-known.jpg
 excerpt: We say we want to be loved deeply… but being known deeply feels risky.
 ---
-
-
 Most people want to be loved. Not casually. Not temporarily. Deeply. The kind of love that feels steady. Safe. Unshaken. But being loved like that comes with something we don’t always talk about. Being known. And that’s where things get complicated.
 
 > Because as much as we want to be loved, there’s a part of us that hesitates to be fully seen.

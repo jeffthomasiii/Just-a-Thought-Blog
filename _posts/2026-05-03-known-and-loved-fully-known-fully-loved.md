@@ -16,14 +16,12 @@ tags:
   - acceptance
   - gods-love
 excerpt: "The kind of love we’re looking for… already exists."
-image: /img/posts/fully-known-fully-loved.jpg
+image: /img/posts/bg-fully-known-fully-loved.jpg
 background: /img/posts/bg-fully-known-fully-loved.jpg
-scripture:
   - Psalm 139:1-4
 series: "Known & Loved"
 series_order: 5
 ---
-
 There’s something we all seem to be looking for. Even if we don’t always say it out loud.
 > To be fully known and still fully loved.
 

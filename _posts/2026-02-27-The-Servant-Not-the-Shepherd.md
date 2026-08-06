@@ -17,14 +17,12 @@ tags:
 - trust
 - spiritual-discernment
 excerpt: AI can carry buckets, but it can’t choose the well. It’s a tool, not a shepherd.
-image: /img/posts/the-servant-not-the-shepherd.jpg
+image: /img/posts/header-the-servant-not-the-shepherd.jpg
 background: /img/posts/bg-the-servant-not-the-shepherd.jpg
-scripture:
 - Psalm 23:1
 series: Faith, Wisdom, and the Machine
 series_order: 4
 ---
-
 There’s a quiet danger in convenience. The more a tool helps us, the easier it is to forget that it is only a tool. That’s especially true with AI.
 
 It can summarize commentary, suggest applications, polish language, even simulate tone. But it can’t discern the heart of God for the people He’s entrusted to us.

@@ -21,10 +21,8 @@ tags:
 excerpt: "Urgency is loud. Importance is quiet. This post explores how the urgent quietly takes over in leadership, work, life, church, and marriage."
 image: /img/posts/when-the-urgent-header.jpg
 background: /img/posts/bg-when-the-urgent.jpg
-scripture:
   - Luke 10:38-42
 ---
-
 It is strange how the urgent always feels louder than the important. It rarely arrives with danger. It just shows up with a timestamp, a notification, or a sense of pressure. My wife and I were talking about that recently after she read a small book titled *Tyranny of the Urgent* by Charles E. Hummel. We were discussing its premise and how relevant it is to leadership, prioritization, and the way we try to manage our days. The more we talked, the more I realized how easily urgency takes over without asking.
 
 I have not read the book yet, but the idea is simple. The urgent is not always harmful. It just demands attention. And without noticing, the important things slowly move to the sidelines.

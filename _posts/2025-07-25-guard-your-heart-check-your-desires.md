@@ -24,12 +24,10 @@ tags:
 excerpt: "Desire doesn’t destroy us overnight, it quietly takes root. Guarding your heart means catching what grows there early, before it bears fruit in your life. Here’s why that matters now more than ever."
 image: "/img/posts/guard-your-heart-check-your-desires.png"
 background: "/img/posts/guard-your-heart-check-your-desires.png"
-scripture:
 - "Proverbs 4:23"
 - "Psalm 119:11"
 - "James 1:14-15"
 ---
-
 > *“Above all else, **guard your heart**, for everything you do flows from it.”* - *Proverbs 4:23*
 
 ### The Slow Drift

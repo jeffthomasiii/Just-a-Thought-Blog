@@ -17,15 +17,12 @@ tags:
 - husbands
 - servant-leadership
 - accountability
-scripture:
 - Genesis 3:12
 - Ephesians 5:25
-image: /img/posts/the-woman-you-gave-me.jpg
+image: /img/posts/bg-the-woman-you-gave-me.jpg
 background: /img/posts/bg-the-woman-you-gave-me.jpg
 excerpt: Adam deflected blame. Christ embraced responsibility. What does that mean for husbands today?
 ---
-
-
 #### The Oldest Excuse in the Book
 It’s one of the oldest moves in the book. When God confronted Adam after the Fall, his reply wasn’t a confession but a deflection:  
 *“The woman whom you gave to be with me, she gave me fruit of the tree, and I ate.”* (Genesis 3:12)  

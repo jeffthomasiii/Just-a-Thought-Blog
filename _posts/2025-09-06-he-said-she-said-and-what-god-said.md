@@ -16,7 +16,6 @@ tags:
 - listening
 - relationships
 - conflict-resolution
-scripture:
 - James 1:19
 - Ephesians 4:29
 - Proverbs 18:21
@@ -25,7 +24,6 @@ image: /img/posts/he-said-she-said.jpg
 background: /img/posts/bg-he-said-she-said.jpg
 excerpt: Men and women often talk past each other, not because we don’t care, but because we communicate differently. The good news? God’s wisdom offers us a way through.
 ---
-
 Sometimes the smallest words cause the biggest misunderstandings.  
 
 I remember hearing about a husband who asked his wife, “Is dinner almost ready?” He meant it as a simple question. She heard it as a critique. One question, two very different interpretations. Neither meant harm, but the gap between intention and reception turned the air in the room a little heavier.  

@@ -18,14 +18,11 @@ tags:
 - relationships
 series: Known & Loved
 series_order: 1
-scripture:
 - Psalm 139:1–4
 image: /img/posts/can-you-love-without-knowing.jpg
 background: /img/posts/bg-can-you-love-without-knowing.jpg
 excerpt: Can you truly love someone if you don’t really know them—and can you be loved if parts of you remain hidden?
 ---
-
-
 Can you really love someone… if you don’t actually know them?
 
 And maybe the harder question…

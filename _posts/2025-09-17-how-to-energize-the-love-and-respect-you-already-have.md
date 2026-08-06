@@ -18,14 +18,11 @@ tags:
 - spiritual-intimacy
 series: Love & Respect; More Than a Cycle
 series_order: 2
-scripture:
 - Ephesians 5:33
-image: /img/posts/energize-love-and-respect.jpg
-background: /img/posts/bg-energize-love-and-respect.jpg
+image: /img/posts/default-og.jpg
+background: /img/posts/default-og.jpg
 excerpt: Most marriages don’t need to reinvent themselves, they just need to recharge what’s already there.
 ---
-
-
 This post is part of a short series called **“Love & Respect; More Than a Cycle,”** reflecting on lessons we learned years ago in our Marrieds Small Group while going through Dr. Emerson Eggerichs’ book *Love & Respect.* These aren’t chapter summaries, but reflections on how the ideas have shaped my perspective on marriage.  
 
 ---

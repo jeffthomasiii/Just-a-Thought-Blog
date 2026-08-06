@@ -22,10 +22,8 @@ tags:
 excerpt: "Holiness isn’t about being flawless, it’s about being set apart. This post wrestles with Peter’s call to be holy and explores what it means practically, with real-life reflections and relatable stories."
 image: "/img/posts/What-Does-It-Mean-to-Be-Holy.png"
 background: "/img/posts/What-Does-It-Mean-to-Be-Holy.png"
-scripture:
 - "1 Peter 1:14-16"
 ---
-
 > *“As obedient children, do not be conformed to the passions of your former ignorance, but as He who called you is holy, you also be holy in all your conduct, since it is written, ‘You shall be holy, for I am holy.’”* 1 Peter 1:14–16 (ESV)
 
 

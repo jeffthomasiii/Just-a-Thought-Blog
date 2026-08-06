@@ -20,11 +20,9 @@ tags:
 excerpt: "Because in the end, being a man isn’t about arriving, it’s about walking faithfully, learning humbly, and giving generously."
 image: /img/posts/more-than-skills.jpg
 background: /img/posts/bg-more-than-skills.jpg
-scripture: []
 series: "10 Skills Every Man Should Have"
 series_order: 11
 ---
-
 We’ve walked through ten skills, some practical, some relational, some spiritual. But they were never just skills. They were invitations. Each one called us to something deeper than competence. They called us to character.  
 
 The **Foundations** reminded us that before we build, we must be teachable, thoughtful, disciplined, and strong enough to serve. The **Skills** showed us that self-reliance, relationship, preparedness, and strength with restraint are not luxuries, but essentials for a man who wants to carry weight faithfully. And the **Implementation** reminded us that we are always both students and teachers, passing on what we’ve learned to those who come after us.  

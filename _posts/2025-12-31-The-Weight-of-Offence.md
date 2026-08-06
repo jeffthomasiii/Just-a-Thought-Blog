@@ -20,12 +20,10 @@ tags:
 excerpt: "Offense often feels justified, but it is never neutral. What we carry shapes how heavy life becomes."
 image: /img/posts/the-weight-of-offense.jpg
 background: /img/posts/bg-the-weight-of-offense.jpg
-scripture:
   - Hebrews 12:1
   - Proverbs 19:11
   - Matthew 11:28-30
 ---
-
 On our morning walk today, Samatra said something that stopped me mid-step.
 
 > *“I’m no longer going to carry the weight of being offended by other people’s behavior.”*

@@ -18,13 +18,11 @@ tags:
   - leadership
   - humility
   - audience-awareness
-scripture:
   - "1 Corinthians 2:1–5"
 excerpt: "Big words may sound impressive, but clarity is what helps people receive and remember the message."
-image: /img/posts/big-words-small-impact.jpg
+image: /img/posts/bg-say-it-so-they-hear-you.jpg
 background: /img/posts/bg-say-it-so-they-hear-you.jpg
 ---
-
 I give presentations to rooms of twenty and two hundred. Sometimes I’m unpacking technical workflows in Revit or explaining BIM collaboration to a boardroom full of decision-makers. Other times I’m leading a couples' small group or talking about faith and marriage with people I love. The topics vary, but one lesson shows up everywhere:
 
 If people can’t follow your words, they won’t follow your message.

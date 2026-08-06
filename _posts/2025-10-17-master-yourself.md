@@ -19,13 +19,11 @@ tags:
 excerpt: "A man who cannot master his emotions will eventually be mastered by them."
 image: /img/posts/master-yourself.jpg
 background: /img/posts/bg-master-yourself.jpg
-scripture:
   - Proverbs 16:32
   - Galatians 5:22-23
 series: "10 Skills Every Man Should Have"
 series_order: 4
 ---
-
 There’s a familiar scene on the freeway. A driver cuts someone off, and in seconds the quiet hum of traffic is interrupted by yelling, honking, and maybe even a reckless swerve. It doesn’t take much to see how quickly emotions can hijack reason. We’ve all been there, in the car, in our homes, at work, reacting before thinking, speaking before listening.  
 
 A man who cannot master his emotions will eventually be mastered by them.  

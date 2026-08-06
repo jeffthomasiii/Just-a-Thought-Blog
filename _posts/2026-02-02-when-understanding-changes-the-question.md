@@ -1,6 +1,7 @@
 ---
 layout: post
 title: When Understanding Changes the Question
+subtitle: A personal reflection on how AI tools are reshaping our relationship with understanding, trust, and discernment.
 description: A personal reflection on how AI tools are reshaping our relationship with understanding, trust, and discernment.
 date: '2026-02-02'
 author: Jeff Thomas III
@@ -19,7 +20,6 @@ excerpt: AI hasn’t made me smarter, it’s made me more aware of what I don’
 image: /img/posts/when-understanding-changes-the-question.jpg
 background: /img/posts/bg-when-understanding-changes-the-question.jpg
 ---
-
 I remember listening to an AI-generated audio overview of one of my own [blog posts](https://jeffthomasiii.github.io/Just-a-Thought-Blog/faith/tech/2025/07/18/Hearing-My-Words-Out-Loud.html) and stopping halfway through.
 
 My first thought was, *That’s exactly what I was trying to say.*  

@@ -23,8 +23,7 @@ tags:
 - "emotional-support"
 excerpt: "Your husband may never ask for prayer, but that doesn’t mean he doesn’t need it. Here’s how to intercede for him and speak truth into the battles he faces in silence."
 image: "/img/posts/speak-life-over-him.jpg"
-background: "/img/posts/bg-speak-life-over-him.jpg"
-scripture:
+background: "/img/posts/speak-life-over-him.jpg"
 - "Psalm 23:1"
 - "Romans 8:1"
 - "1 Corinthians 10:13"
@@ -32,7 +31,6 @@ scripture:
 series: Speak Life Over Them
 series_order: 3
 ---
-
 > **👤 This post is written for wives.** *(Husbands, read it too, you’ll find insight here.)*
 
 He may not say it, but you can feel it.  

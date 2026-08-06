@@ -18,16 +18,14 @@ tags:
   - spiritual-formation
   - influence
 excerpt: "Humility is not hiding. It is the courage to show up with a surrendered heart and a steady posture."
-image: /img/posts/lead-like-this-humble-not-hidden.jpg
+image: /img/posts/bg-lead-like-this-humble-not-hidden.jpg
 background: /img/posts/bg-lead-like-this-humble-not-hidden.jpg
-scripture:
   - Philippians 2:3
   - Micah 6:8
   - James 4:6
 series: "Lead Like This"
 series_order: 3
 ---
-
 Humility is one of those words we admire in theory but wrestle with in practice. We know it is good. We know it is godly. We know Jesus modeled it perfectly. Yet somewhere along the way, humility became tangled with something else. Not confidence. Not courage. Something quieter and more deceptive. Hiding.
 
 Many of us were taught to avoid pride by avoiding visibility. Blend in. Stay low. Do not step forward unless someone pushes you. But that is not humility. That is fear dressed in modest clothing. Hiding looks humble on the outside, but on the inside it is often a fear of failure, rejection, comparison, or judgment.

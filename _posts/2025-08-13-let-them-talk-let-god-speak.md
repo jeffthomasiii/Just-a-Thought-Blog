@@ -17,7 +17,6 @@ tags:
   - vindication
   - identity-in-christ
   - self-control
-scripture:
   - "Psalm 119:23"
   - "Psalm 138:8"
   - "Romans 12:21"
@@ -29,7 +28,6 @@ excerpt: "Psalm 119:23 offers a different response to pressure: not retaliation,
 image: /img/posts/bg-let-them-talk.jpg
 background: /img/posts/bg-let-them-talk.jpg
 ---
-
 What if we fought slander and pressure not with speeches or strategies, but with Scripture?
 
 In a world where reputations are currency and retaliation is seen as strength, Psalm 119:23 gives us a radically different model:  
@@ -151,6 +149,3 @@ And let your soul stay anchored in the only voice that matters.
 …just a thought.
 
 When was the last time you felt the pull to defend your name? What would it look like to turn to Scripture instead?
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA3NjE2NzY2LDE3MzM2NzgzMzZdfQ==
--->

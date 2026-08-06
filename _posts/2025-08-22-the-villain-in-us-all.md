@@ -17,15 +17,13 @@ tags:
   - heroes-and-villains
   - self-righteousness
   - gospel
-scripture:
   - "Romans 3:10–12"
   - "Romans 3:23"
   - "Isaiah 64:6"
 excerpt: "We naturally want to see ourselves as the hero, but the gospel confronts our self-righteousness and points us to Christ as the One who redeems the story."
-image: /img/posts/villain-in-us-all.jpg
+image: /img/posts/bg-villain-in-us-all.jpg
 background: /img/posts/bg-villain-in-us-all.jpg
 ---
-
 I came across a post on social media the other day that made me stop scrolling. It said, *“The villain and hero almost always have the same backstory. They were both hurt in some way. The villain says, ‘The world hurt me, so I’m going to hurt it back.’ The hero says, ‘The world hurt me, and I’m not going to let this happen to anyone else.’”*  
 
 That struck me. There’s a lot of truth in it. Then someone in the comments added a nuance: villains are often hurt by those who were supposed to protect them, parents, leaders, even the law. Heroes, on the other hand, are usually hurt by clear enemies: Batman lost his parents to crime, Spider-Man lost his uncle to a criminal he could have stopped. Both are fueled by pain, but villains often wrestle with betrayal while heroes wrestle with loss.  
@@ -73,6 +71,3 @@ We all want to see ourselves as the hero. But without Jesus, we’re the villain
 
 …just a thought.
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg3MTMzMDA2LC03NDM3ODEzODhdfQ==
--->

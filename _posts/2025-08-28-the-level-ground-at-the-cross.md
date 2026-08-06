@@ -17,15 +17,13 @@ tags:
   - favoritism
   - cultural-identity
   - church
-scripture:
   - "Romans 2:11"
   - "James 2:1"
   - "Galatians 3:28"
 excerpt: "God shows no partiality. At the foot of the cross, our ladders of status and favoritism give way to level ground."
-image: /img/posts/god-has-no-favorites.jpg
+image: /img/posts/bg-god-has-no-favorites.jpg
 background: /img/posts/bg-god-has-no-favorites.jpg
 ---
-
 Have you ever noticed how quickly favoritism shows up in life?  
 On the playground, it’s who gets picked first for the team.  
 In the workplace, it’s who gets the promotion everyone else quietly questions.  

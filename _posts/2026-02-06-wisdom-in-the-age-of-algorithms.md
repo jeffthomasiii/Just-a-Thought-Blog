@@ -19,12 +19,10 @@ tags:
 excerpt: AI can offer speed and support, but it can never replace the spiritual responsibility of rightly dividing the word of truth.
 image: /img/posts/wisdom-in-the-age-of-algorithms.jpg
 background: /img/posts/bg-wisdom-in-the-age-of-algorithms.jpg
-scripture:
 - 2 Timothy 2:15
 series: Faith, Wisdom, and the Machine
 series_order: 1
 ---
-
 > **“Study to show yourself approved, because AI won’t stand before God in your place.”**
 
 There’s something sobering about typing a prompt into a chatbot and getting a clean sermon outline in seconds. Relevant scriptures. Catchy alliteration. Even a closing prayer. It’s fast. It’s polished. But is it wise?

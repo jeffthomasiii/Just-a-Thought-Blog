@@ -16,7 +16,6 @@ tags:
   - spiritual-discipline
   - attention
   - holiness
-scripture:
   - "2 Samuel 11:1–4"
   - "Hebrews 12:2"
   - "Matthew 6:22–23"
@@ -27,7 +26,6 @@ excerpt: "David's downfall began with a lingering look. What we repeatedly focus
 image: /img/posts/look-and-follow.jpg
 background: /img/posts/bg-look-and-follow.jpg
 ---
-
 **It started with a look.**  
 That’s often how it goes. A glance becomes a gaze, and a gaze becomes a path.
 
@@ -106,6 +104,3 @@ That’s why Scripture doesn’t just say *don’t look*, it says *fix your eyes
 
 What’s one thing you've been looking at lately that’s quietly shaping your direction, for better or for worse?
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NzAzNTgyNF19
--->

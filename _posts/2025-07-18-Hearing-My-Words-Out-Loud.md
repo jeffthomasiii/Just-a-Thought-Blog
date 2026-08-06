@@ -21,12 +21,10 @@ tags:
 - "content-creation"
 - reflection
 excerpt: "What if your blog could talk back? I used NotebookLM to turn three of my posts into podcast-style episodes, and hearing them out loud changed the way I think about writing, reflection, and how our words are received."
-image: "/img/posts/hearing-my-words-out-loud.png"
+image: "/img/posts/bg-hearing-my-words-out-loud.png"
 background: "/img/posts/bg-hearing-my-words-out-loud.png"
 scripture: []
 ---
-
-
 I recently heard one of my blog posts read back to me, not by a friend, not by a narrator, but by two AI hosts having a conversation *about* it.
 
 There was something both surreal and strangely insightful about hearing my own words interpreted, discussed, and responded to… like my blog had come alive.
@@ -138,6 +136,3 @@ Will I create a full podcast? Maybe. Maybe not. The inspiration is there, but so
 
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODkwMzMyOTNdfQ==
--->

@@ -17,13 +17,11 @@ tags:
   - trust
   - rest
   - attention
-scripture:
   - "Isaiah 26:3"
 excerpt: "Peace is not always found by accident. Sometimes it is protected by deliberately returning our focus to the One who holds us steady."
 image: /img/posts/bg-pursuing-peace-on-purpose.jpg
 background: /img/posts/bg-pursuing-peace-on-purpose.jpg
 ---
-
 Sometimes peace isn’t handed to you, you have to fight for it, not with your fists, but with your focus.
 
 Camping has become part of our monthly rhythm, a time to step away from the constant noise and reconnect. But in July, work travel and a full calendar kept us from getting out, so by August we were more than ready for a reset.
@@ -45,6 +43,3 @@ That night, under a cooler sky, I thought about how often life gives us the same
 The truth is, peace is something we protect by choosing it over and over again, even when the conditions aren’t perfect. Especially when they aren’t perfect.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzE1NTc3NF19
--->
