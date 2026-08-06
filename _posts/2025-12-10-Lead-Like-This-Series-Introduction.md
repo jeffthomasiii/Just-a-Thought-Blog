@@ -6,17 +6,24 @@ description: "A reflective introduction to the 'Lead Like This' leadership serie
 date: 2025-12-10
 author: Jeff Thomas III
 categories:
-  - leadership
+  - series-introduction
+collections:
   - faith
-tags:
   - leadership
+tags:
+  - servant-leadership
   - character
   - discipleship
+  - spiritual-formation
+  - influence
+  - obedience
 excerpt: "Before we talk about leading anyone else, we have to talk about who we are becoming under God’s hand."
-background: /img/posts/bg-lead-like-this-intro.jpg
 image: /img/posts/lead-like-this-intro.jpg
-scripture: "Mark 10:42–45; Proverbs 4:23; 1 Timothy 4:12"
-contributors: []
+background: /img/posts/bg-lead-like-this-intro.jpg
+scripture:
+  - Mark 10:42-45
+  - Proverbs 4:23
+  - 1 Timothy 4:12
 series: "Lead Like This"
 series_order: 1
 ---
@@ -56,6 +63,3 @@ So before we talk about leading anyone else, let’s start with the question tha
 **Who am I becoming under God’s hand?**
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MjY2NDMzMSwtMTk5MTUzMTIzN119
--->
