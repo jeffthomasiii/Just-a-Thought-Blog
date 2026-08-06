@@ -5,17 +5,22 @@ subtitle: "Conclusion to the Series"
 description: "These ten skills were never just about competence, they were about character, legacy, and a way of life worth passing on."
 date: 2025-12-05
 author: Jeff Thomas III
-categories:  
-- manhood  
-- faith  
-- growth
-tags:  
-- legacy  
-- character  
-- discipleship  
+categories:
+  - reflection
+collections:
+  - faith
+  - leadership
+tags:
+  - legacy
+  - character
+  - discipleship
+  - manhood
+  - lifelong-learning
+  - mentorship
 excerpt: "Because in the end, being a man isn’t about arriving, it’s about walking faithfully, learning humbly, and giving generously."
 image: /img/posts/more-than-skills.jpg
 background: /img/posts/bg-more-than-skills.jpg
+scripture: []
 series: "10 Skills Every Man Should Have"
 series_order: 11
 ---
@@ -37,7 +42,3 @@ If you’ve followed along through these posts, I hope they’ve challenged you,
 Because in the end, being a man isn’t about arriving, it’s about walking faithfully, learning humbly, and giving generously. That’s a life worth building. That’s a legacy worth leaving.  
 
 …just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMjAzNjcwOCwtMTcxMDI2NDE4M119
--->
