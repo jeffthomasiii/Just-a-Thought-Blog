@@ -6,21 +6,24 @@ description: "A reflective look at C. S. Lewis’s warning about words losing th
 date: 2025-12-08
 author: Jeff Thomas III
 categories:
-  - faith
   - reflection
+collections:
+  - faith
+  - culture
 tags:
-  - C.S. Lewis
-  - Mere Christianity
-  - Christian identity
-  - Church
+  - c-s-lewis
+  - mere-christianity
+  - christian-identity
+  - church
   - language
+  - discipleship
+  - discernment
 excerpt: "C. S. Lewis warned that some words stop describing truth and become expressions of approval or disappointment. What happens when 'Christian' and 'Church' drift in that direction?"
 image: /img/posts/when-words-drift.jpg
 background: /img/posts/bg-when-words-drift.jpg
-scripture: "Acts 11:26; Ephesians 2:19–22"
-contributors: []
-series:
-series_order:
+scripture:
+  - Acts 11:26
+  - Ephesians 2:19-22
 ---
 
 ### When Words Drift
