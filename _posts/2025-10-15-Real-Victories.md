@@ -6,18 +6,21 @@ description: "Reflecting on why easy wins often breed entitlement while hard-fou
 date: 2025-10-15
 author: Jeff Thomas III
 categories:
-  - faith
   - reflection
+collections:
+  - faith
+  - leadership
 tags:
   - confidence
   - humility
   - perseverance
-  - growth
-  - faith
+  - spiritual-growth
 excerpt: "Not every win makes you stronger. Some victories only feed entitlement, while others deepen your confidence in God."
 image: /img/posts/real-victories.jpg
 background: /img/posts/bg-real-victories.jpg
-scripture: "James 1:3; Philippians 4:13"
+scripture:
+  - James 1:3
+  - Philippians 4:13
 ---
 
 > *“Empty victories teach entitlement; real victories teach confidence.”*
@@ -35,8 +38,3 @@ Maybe that’s the quiet power of real victories, they don’t inflate your ego,
 …just a thought.  
 
 When was the last time a hard-earned victory taught you more than an easy one ever could?
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNTAxMTY1MSwtMjA5NDQwNTI4NywtMT
-Q5MTI5MjgzMF19
--->
