@@ -5,18 +5,22 @@ subtitle: "Skill #2 – Understanding Math and Literacy Concepts"
 description: "Everyday competence with words and numbers isn’t about being impressive, it’s about being steady, trustworthy, and prepared to lead well."
 date: 2025-10-10
 author: Jeff Thomas III
-categories:  
-- manhood  
-- faith  
-- growth
-tags:  
-- competence  
-- wisdom  
-- responsibility  
+categories:
+  - reflection
+collections:
+  - faith
+  - leadership
+tags:
+  - competence
+  - wisdom
+  - responsibility
+  - manhood
+  - practical-skills
 excerpt: "Words and numbers may not feel heroic, but they quietly shape the way a man leads and provides."
 image: /img/posts/words-and-numbers-matter.jpg
 background: /img/posts/bg-words-and-numbers-matter.jpg
-scripture: "Proverbs 4:7 NIV"
+scripture:
+  - Proverbs 4:7
 series: "10 Skills Every Man Should Have"
 series_order: 3
 ---
