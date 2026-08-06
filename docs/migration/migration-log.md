@@ -126,6 +126,28 @@ Notes:
 - Article bodies were preserved; previously identified editorial and body-text issues remain deferred.
 - Full Jekyll build validation remains pending until a broader migration checkpoint.
 
+### September 2025
+
+Status: Verification Required
+
+- [ ] Front matter fully verified
+- [ ] YAML fully validated
+- [ ] Article Types fully normalized
+- [ ] Collections fully verified
+- [ ] Tags fully standardized
+- [ ] Scripture fully converted to YAML arrays
+- [ ] Contributors verified
+- [ ] Series verified
+- [ ] Images normalized to required front matter fields
+- [ ] Jekyll build verified
+
+Notes:
+
+- September 2025 is now represented in the migration log.
+- Fourteen September posts are present in the repository.
+- At least one September post still uses the legacy category structure and scalar Scripture metadata, so this month cannot yet be marked complete.
+- A full September verification and remediation batch is required before final migration validation.
+
 ### October 2025
 
 Status: Complete
@@ -165,6 +187,48 @@ Notes:
 - Preserved the `.md.md` filename anomaly for `The Work of Keeping Warm` for later URL-safe cleanup.
 - Removed residual StackEdit metadata where present.
 - Article bodies were preserved; previously identified editorial and body-text issues remain deferred.
+- Full Jekyll build validation remains pending until a broader migration checkpoint.
+
+### November 2025
+
+Status: Complete
+
+- [x] Front matter updated
+- [x] YAML validated
+- [x] Article Types normalized
+- [x] Collections added
+- [x] Tags standardized
+- [x] Scripture converted to YAML arrays
+- [x] Contributors verified
+- [x] Series verified
+- [x] Images normalized to required front matter fields
+- [ ] Jekyll build verified
+
+Commits:
+
+- `e49ba55045c7ffd3892c29ed0b2892d3cb3fb696`
+- `8aac455f674da3ecbdd2d8c25c35d59f8a9f8607`
+- `c7fb40b2a5f5ca7f39b2649f1a43747cdc737a7b`
+- `f16d63b7e1cf35a4dc5359df8c7f92726f64bb6b`
+- `b65eea5d7e3cad8f2edf41aa42ff98fe6e0ad03e`
+- `632dae6ee477a4e4b3728486573dfd2d235acaa5`
+- `95c7c6d03e74d349781e61dbfb04099debc8273e`
+- `0eda4efb8420073fa7e65ebc89a07c2ea79f88ab`
+- `f653d1a2180e4e81a34627ca30ae57c65c2c1540`
+- `0ff34eb8abdaeaf83d5f5dffcd47ae3c849d3b95`
+- `951353746c9cd9f97eda43206e3378e5b640fee2`
+- `3e59c9e47ed1938ed3d54ddefcf0fb6928420adb`
+- `7289b3e4f91bcaa4a19470f87af862f900f91b4e`
+
+Notes:
+
+- Migrated all thirteen November 2025 posts.
+- Completed series metadata for entries 7–10 of `10 Skills Every Man Should Have`.
+- Normalized all five entries in `The Practice of Holy Thinking` series.
+- Preserved the existing `Character Before Competence` series metadata on `You Can't Fake Care`.
+- Removed empty contributor fields and residual StackEdit metadata where present.
+- Converted Scripture metadata to YAML arrays and normalized categories as editorial formats with collections as reader journeys.
+- Article bodies were otherwise preserved; previously identified editorial and body-text issues remain deferred.
 - Full Jekyll build validation remains pending until a broader migration checkpoint.
 
 ### December 2025
