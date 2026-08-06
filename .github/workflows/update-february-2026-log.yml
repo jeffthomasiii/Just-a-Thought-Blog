@@ -1,0 +1,65 @@
+name: Update February 2026 migration log
+
+on:
+  push:
+    branches: [content-architecture-v1-1]
+    paths: [.github/workflows/update-february-2026-log.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  update-log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update migration log
+        shell: python
+        run: |
+          from pathlib import Path
+          path = Path('docs/migration/migration-log.md')
+          text = path.read_text(encoding='utf-8')
+          marker = '\n## Future Development\n'
+          assert marker in text
+          assert '### February 2026' not in text
+          section = '''
+### February 2026
+
+Status: Complete
+
+- [x] Front matter updated
+- [x] YAML validated
+- [x] Article Types normalized
+- [x] Collections added
+- [x] Tags standardized
+- [x] Scripture converted to YAML arrays
+- [x] Contributors verified
+- [x] Series verified
+- [x] Images normalized to required front matter fields
+- [ ] Jekyll build verified
+
+Commits:
+
+- `839d2581035efbc01c8d0d546fec4132872982a2`
+
+Notes:
+
+- Audited and migrated all ten February 2026 posts.
+- Restored each published article body from `master` before applying metadata-only changes.
+- Normalized the four published installments of `Faith, Wisdom, and the Machine`, preserving their existing series order.
+- Classified `The Road Between Confusion and Clarity` as a Bible study and `The Paradox of Pain` as a devotional; the remaining posts were normalized as reflections.
+- Assigned supported `faith`, `technology`, `leadership`, `culture`, `creation`, and `marriage` reader journeys based on each article’s central subject and setting.
+- Standardized tags, converted Scripture fields to YAML arrays, removed obsolete `header-image` fields, empty optional fields, and residual StackEdit metadata.
+- Preserved existing filenames and image paths to avoid changing published URLs or asset references.
+- The controlled migration workflow completed successfully; full Jekyll build verification remains pending.
+
+'''
+          path.write_text(text.replace(marker, '\n' + section + '## Future Development\n'), encoding='utf-8')
+      - name: Commit migration log
+        run: |
+          rm .github/workflows/update-february-2026-log.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/migration/migration-log.md .github/workflows/update-february-2026-log.yml
+          git commit -m 'Complete February 2026 migration log'
+          git push
