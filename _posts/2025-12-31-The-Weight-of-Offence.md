@@ -1,20 +1,29 @@
 ---
 layout: post
 title: "The Weight of Offense"
+subtitle: "Choosing Not to Carry What Was Never Ours to Hold"
 description: "A reflection on how carrying offense weighs us down, and the quiet freedom found in choosing not to hold what God never asked us to carry."
 date: 2025-12-31
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
   - leadership
 tags:
   - offense
+  - forgiveness
   - wisdom
-  - spiritual growth
-  - emotional health
+  - spiritual-growth
+  - emotional-health
+  - freedom
 excerpt: "Offense often feels justified, but it is never neutral. What we carry shapes how heavy life becomes."
 image: /img/posts/the-weight-of-offense.jpg
 background: /img/posts/bg-the-weight-of-offense.jpg
+scripture:
+  - Hebrews 12:1
+  - Proverbs 19:11
+  - Matthew 11:28-30
 ---
 
 On our morning walk today, Samatra said something that stopped me mid-step.
