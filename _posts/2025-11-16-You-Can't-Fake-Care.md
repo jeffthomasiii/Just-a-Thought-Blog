@@ -6,17 +6,21 @@ description: "A reflective leadership post on authenticity, psychology, and the 
 date: 2025-11-16
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
+  - faith
   - leadership
-  - relationships
 tags:
   - authenticity
   - influence
   - emotional-intelligence
+  - leadership
+  - care
 excerpt: "People can feel the truth beneath your tone. Real leadership begins where genuine care begins."
 image: /img/posts/you-cant-fake-care.jpg
 background: /img/posts/bg-you-cant-fake-care.jpg
-scripture: "Romans 12:9 — Let love be genuine."
-contributors: []
+scripture:
+  - Romans 12:9
 series: "Character Before Competence"
 series_order: 1
 ---
