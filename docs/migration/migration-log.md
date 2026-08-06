@@ -341,6 +341,40 @@ Notes:
 - Preserved existing filenames and image paths to avoid changing published URLs or asset references.
 - The controlled migration workflow completed successfully; full Jekyll build verification remains pending.
 
+### March 2026
+
+Status: Complete
+
+- [x] Front matter updated
+- [x] YAML validated
+- [x] Article Types normalized
+- [x] Collections added
+- [x] Tags standardized
+- [x] Scripture converted to YAML arrays
+- [x] Contributors verified
+- [x] Series verified
+- [x] Images normalized to required front matter fields
+- [ ] Jekyll build verified
+
+Commits:
+
+- `cdedec2056053f32660e8b6508f8fe733b676ef8`
+- `170cfc778ffd757b58ed4c9d45559ba4517b41a0`
+- `ce2454713ed18ac411048c6a3e1db34a2a17f103`
+- `19b45bc5ce4fa11ec1f34b6eb6d9ab607f2773a1`
+- `e074e8765edc6aad75b5ca2650e9b3d3059fc847`
+
+Notes:
+
+- Audited and migrated all five March 2026 posts.
+- Preserved each published article body while applying metadata-only changes.
+- Continued `Faith, Wisdom, and the Machine` with series orders 5 and 6.
+- Assigned supported `faith`, `technology`, `marriage`, `leadership`, and `culture` reader journeys.
+- Standardized tags, converted Scripture fields to YAML arrays, removed obsolete `header-image` fields, and removed residual StackEdit metadata.
+- Preserved existing filenames and image paths to avoid changing published URLs or asset references.
+- Full Jekyll build verification remains pending.
+
+
 ## Future Development
 
 Deferred until after metadata migration:
