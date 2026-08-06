@@ -1,25 +1,31 @@
 ---
 layout: post
-title: "10 Skills Every Man Should Have and Continue to Develop"
-subtitle: "A foundational list every man can keep pursuing"
-description: "These 10 skills, physical, emotional, relational, and spiritual, aren’t about arriving, but about continuing to grow into responsibility, resilience, and character."
+title: 10 Skills Every Man Should Have and Continue to Develop
+subtitle: A foundational list every man can keep pursuing
+description: These 10 skills, physical, emotional, relational, and spiritual, aren’t about arriving, but about continuing to grow into responsibility, resilience, and character.
 date: 2025-09-26
 author: Jeff Thomas III
-categories:  
-- manhood  
-- faith  
-- growth
-tags:  
-- skills  
-- responsibility  
-- character  
-excerpt: "These aren’t flashy skills. They’re foundational meant to shape men into steady, dependable leaders who never stop growing."
+categories:
+- reflection
+collections:
+- faith
+- leadership
+tags:
+- manhood
+- life-skills
+- responsibility
+- character
+- mentorship
+series: 10 Skills Every Man Should Have
+series_order: 1
+scripture:
+- Proverbs 16:32
+- 2 Timothy 2:2
 image: /img/posts/10-skills-every-man.jpg
 background: /img/posts/bg-10-skills-every-man.jpg
-scripture: "Proverbs 16:32, 2 Timothy 2:2"
-series: "10 Skills Every Man Should Have"
-series_order: 1
+excerpt: These aren’t flashy skills. They’re foundational meant to shape men into steady, dependable leaders who never stop growing.
 ---
+
 
 Back in 2022, I posted a simple list on Instagram and Facebook called *10 Skills Every Man Should Have and Continue to Develop.* It wasn’t a grand essay, just a list. But it resonated.  
 
@@ -76,8 +82,4 @@ And they remind us that becoming a man is not about arriving, it’s about conti
 
 Over the next few weeks, I’ll be unpacking each of these skills in more detail.  
 
-…just a thought.  
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDI4ODM4NjIsMTcwODkwNzgzMywtMT
-EzODcxMTc4MF19
--->
+…just a thought.

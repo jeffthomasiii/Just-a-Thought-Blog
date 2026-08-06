@@ -1,23 +1,29 @@
 ---
 layout: post
-title: "Progress Not Perfection: Grace in the Process"
-subtitle: "Why steady faithfulness matters more than flawless performance"
-description: "A candid story from BIM standardization that reminds us spiritual growth is measured in grace-filled progress, not perfection."
+title: 'Progress Not Perfection: Grace in the Process'
+subtitle: Why steady faithfulness matters more than flawless performance
+description: A candid story from BIM standardization that reminds us spiritual growth is measured in grace-filled progress, not perfection.
 date: 2025-09-02
 author: Jeff Thomas III
-categories:  
-- faith  
-- tech
-tags:  
-- grace  
-- growth  
-- BIM  
-- faithfulness  
-excerpt: "Perfection is Christ’s role. Progress is ours. And grace is what bridges the space between."
+categories:
+- reflection
+collections:
+- faith
+- technology
+- leadership
+tags:
+- grace
+- spiritual-growth
+- bim
+- faithfulness
+- continuous-improvement
+scripture:
+- Philippians 1:6
 image: /img/posts/progress-not-perfection.jpg
 background: /img/posts/bg-progress-not-perfection.jpg
-scripture: "Philippians 1:6"
+excerpt: Perfection is Christ’s role. Progress is ours. And grace is what bridges the space between.
 ---
+
 
 If you’ve ever tried to set a standard that everyone was supposed to follow, you know the tension. You build something you believe will help, only to watch it resisted, ignored, or changed. It can feel like running on a treadmill, working hard but not getting anywhere.  
 
@@ -51,8 +57,4 @@ I used to think success meant flawless rollout, instant adoption, and no mistake
 
 Perfection is Christ’s role. Progress is ours. And grace is what bridges the space between.  
 
-…just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1ODM2NjgwNiwtMTU0MjI4NzA2N119
--->
+…just a thought.

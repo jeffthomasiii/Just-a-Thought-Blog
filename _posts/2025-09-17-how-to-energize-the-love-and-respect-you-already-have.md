@@ -1,25 +1,30 @@
 ---
 layout: post
-title: "How to Energize the Love & Respect You Already Have"
-subtitle: "Recharging what God already placed in your marriage"
-description: "Love and respect aren’t something new to chase, they’re already in your marriage. Here’s how to keep them energized."
+title: How to Energize the Love & Respect You Already Have
+subtitle: Recharging what God already placed in your marriage
+description: Love and respect aren’t something new to chase, they’re already in your marriage. Here’s how to keep them energized.
 date: 2025-09-17
 author: Jeff Thomas III
 categories:
-  - faith
-  - marriage
+- reflection
+collections:
+- faith
+- marriage
 tags:
-  - love
-  - respect
-  - marriage
-  - relationships
-excerpt: "Most marriages don’t need to reinvent themselves, they just need to recharge what’s already there."
+- love-and-respect
+- biblical-marriage
+- gratitude
+- listening
+- spiritual-intimacy
+series: Love & Respect; More Than a Cycle
+series_order: 2
+scripture:
+- Ephesians 5:33
 image: /img/posts/energize-love-and-respect.jpg
 background: /img/posts/bg-energize-love-and-respect.jpg
-scripture: "Ephesians 5:33"
-series: "Love & Respect; More Than a Cycle"
-series_order: 2
+excerpt: Most marriages don’t need to reinvent themselves, they just need to recharge what’s already there.
 ---
+
 
 This post is part of a short series called **“Love & Respect; More Than a Cycle,”** reflecting on lessons we learned years ago in our Marrieds Small Group while going through Dr. Emerson Eggerichs’ book *Love & Respect.* These aren’t chapter summaries, but reflections on how the ideas have shaped my perspective on marriage.  
 
@@ -40,8 +45,4 @@ So how do we recharge what’s already built in?
 
 What I realized back then, and still need reminding of today, is that we don’t need to reinvent our marriage; we just need to keep it plugged into its power source. The love and respect God already placed there can be re-energized daily with small, intentional choices.  
 
-…just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MzE0NTU0MywtNDMzOTA2MzRdfQ==
--->
+…just a thought.

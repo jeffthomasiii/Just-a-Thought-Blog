@@ -1,27 +1,33 @@
 ---
 layout: post
-title: "You, Him, and I"
-subtitle: "Marriage as God Intended"
-description: "Marriage was never meant to be a duet, it was always meant to be a trio: you, him, and God. Without His voice, the story bends back toward us. With Him, it becomes a picture of Christ and the Church."
+title: You, Him, and I
+subtitle: Marriage as God Intended
+description: 'Marriage was never meant to be a duet, it was always meant to be a trio: you, him, and God. Without His voice, the story bends back toward us. With Him, it becomes a picture of Christ and the Church.'
 date: 2025-09-04
 author: Jeff Thomas III
 categories:
-  - faith
-  - marriage
+- reflection
+collections:
+- faith
+- marriage
 tags:
-  - marriage
-  - faith
-  - God-centered
-  - biblical-marriage
-  - covenant
-excerpt: "Marriage was never meant to be a duet, it was always meant to be a trio: you, him, and God."
+- biblical-marriage
+- god-centered-marriage
+- covenant
+- christ-and-the-church
+- spiritual-unity
+series: Marriage Reflections
+series_order: 2
+scripture:
+- Genesis 2:24
+- 1 John 4:8
+- Ephesians 5:32
+- Ecclesiastes 4:12
 image: /img/posts/you-him-and-i.jpg
 background: /img/posts/bg-you-him-and-i.jpg
-header-image: /img/posts/header-you-him-and-i.jpg
-scripture: "Genesis 2:24; 1 John 4:8; Ephesians 5:32; Ecclesiastes 4:12"
-series: "Marriage Reflections"
-series_order: 2
+excerpt: 'Marriage was never meant to be a duet, it was always meant to be a trio: you, him, and God.'
 ---
+
 
 ### Every Story Needs a Third Voice  
 Every marriage tells a story.  
@@ -83,8 +89,4 @@ The tension of marriage, whose way, whose needs, whose love, is resolved only wh
 Because at the heart of it, marriage isn’t just about two people learning to love each other. It’s about two people learning to reflect the love of Christ. And that story can only be written with Him at the center.  
 > #### *Marriage isn’t just about two people learning to love each other. It’s about two people learning to reflect the love of Christ.*
 
-…just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDI2NjM1MDddfQ==
--->
+…just a thought.

@@ -1,29 +1,30 @@
 ---
 layout: post
-title: "The Woman You Gave Me: When Men Refuse Responsibility"
-subtitle: "From Adam’s blame to Christ’s example"
-description: "Exploring the responsibility of husbands through Adam’s failure in Eden and Christ’s example of sacrificial love."
+title: 'The Woman You Gave Me: When Men Refuse Responsibility'
+subtitle: From Adam’s blame to Christ’s example
+description: Exploring the responsibility of husbands through Adam’s failure in Eden and Christ’s example of sacrificial love.
 date: 2025-09-01
 author: Jeff Thomas III
 categories:
-  - reflection
+- reflection
 collections:
-  - faith
-  - marriage
-  - leadership
+- faith
+- marriage
+- leadership
 tags:
-  - responsibility
-  - biblical-marriage
-  - husbands
-  - servant-leadership
-  - accountability
-excerpt: "Adam deflected blame. Christ embraced responsibility. What does that mean for husbands today?"
+- responsibility
+- biblical-marriage
+- husbands
+- servant-leadership
+- accountability
+scripture:
+- Genesis 3:12
+- Ephesians 5:25
 image: /img/posts/the-woman-you-gave-me.jpg
 background: /img/posts/bg-the-woman-you-gave-me.jpg
-scripture:
-  - Genesis 3:12
-  - Ephesians 5:25
+excerpt: Adam deflected blame. Christ embraced responsibility. What does that mean for husbands today?
 ---
+
 
 #### The Oldest Excuse in the Book
 It’s one of the oldest moves in the book. When God confronted Adam after the Fall, his reply wasn’t a confession but a deflection:  
@@ -40,53 +41,38 @@ It shows up in subtle, everyday ways:
 - **“Work is just too demanding right now; she knows I can’t be fully present.”**  
   The laptop glows late into the night. She offers tea and a chance to talk, but the reply is quick: *“Just a few more things.”* Weeks roll by this way. Deep down he tells himself, *“She understands. I’ll reconnect when things slow down.”* But the truth is, the slowdown never comes, and presence gets traded away.  
 
-- **“She’s better with the kids, so I let her handle it.”**  
-  The kids run to her for comfort, discipline, and direction. He loves them, but he stays on the edges, assuming she’s more natural at parenting. Over time, she carries the weight of both nurture and correction while he excuses his distance as “her strength.”  
+- **“I wouldn’t be angry if she didn’t push my buttons.”**  
+  They’re running late, and he snaps. Later he justifies it: *“If she hadn’t said it that way, I wouldn’t have lost it.”* Instead of owning his reaction, he pins it on her tone.  
 
-- **“I’d step up if she’d step back.”**  
-  She pays the bills, manages the schedule, and makes decisions because someone has to. He resents her control but rarely takes initiative. His excuse is ready: *“She won’t let me lead.”* But leadership isn’t taken by force; it’s earned through consistency, humility, and sacrifice.  
-
-In each case, the blame rests elsewhere. The excuse sounds reasonable. But beneath it is the same pattern as Adam: *The woman You gave me…*  
+Each moment feels reasonable. But like Adam’s words, they shift the weight. We protect ourselves instead of embracing the responsibility given to us.
 
 
-#### Responsibility Before Authority
-Many men want the authority of leadership without the weight of responsibility. But biblical leadership doesn’t begin with control; it begins with sacrifice.  
+#### The Objection That Proves the Point  
+I can almost hear the objection: *“Why are we the ones who always have to…?”*  
 
-Ephesians 5:25 says, *“Husbands, love your wives, as Christ loved the church and gave himself up for her.”* Christ didn’t wait for the Church to become worthy of His love. He acted first. He took responsibility for a bride who could not save herself.  
+But that question itself illustrates the point. It’s Adam’s move all over again, deflecting instead of embracing. The truth is, yes, wives also have responsibilities in marriage. Scripture is clear about that. But their role isn’t ours to manage. Ours is to love.  
 
-That doesn’t mean a husband is responsible for every choice his wife makes, nor does it erase her agency or accountability before God. But it does mean he cannot make her behavior the excuse for his disobedience. His calling remains his calling.  
-
-A husband can say, *“I was wrong.”*  
-He can say, *“I should have listened.”*  
-He can say, *“I haven’t been present, and I want to change.”*  
-
-Those words don’t weaken him. They reveal strength.  
+And here’s the hard truth: if my love for my wife rises and falls based on her behavior, then it isn’t love. At least not the kind Christ modeled. His love wasn’t conditional. It wasn’t offered when we “deserved it.” He chose to bear responsibility, even when it wasn’t His fault, because that’s what true love does.  
 
 
-#### Christ, the Better Adam
-Where Adam blamed his bride, Christ gave Himself for His.  
-Where Adam hid, Christ stepped forward.  
-Where Adam allowed sin to fracture the relationship, Christ bore the cost of reconciliation.  
+#### Christ: The Better Adam
+Where Adam deflected, Christ embraced. He bore a cross that wasn’t His fault but was His responsibility.  
+- **In Gethsemane**, He prayed, “Not my will, but yours be done” (Luke 22:42).  
+- **On the road to Calvary**, He carried the weight of sins He never committed (Isaiah 53:5).  
+- **On the cross**, He declared, “Father, forgive them” (Luke 23:34), taking responsibility for reconciliation when blame would have been easier.  
 
-The contrast is uncomfortable because it exposes how quickly we defend ourselves. But it also gives us hope. We are not trapped in Adam’s pattern. In Christ, men can learn a different way: not blame, but ownership; not passivity, but presence; not domination, but sacrificial love.  
-
-Responsibility does not mean carrying guilt that isn’t yours. It means refusing to hide from what is. It means asking, *What is mine to own? What is mine to repair? What is mine to do next?*  
+This is the model for husbands: not blame-shifting, but burden-bearing. Not ducking responsibility, but stepping into it with sacrificial love.  
 
 
-#### The Question We Have to Ask
-When something breaks down in marriage, the easiest question is, *“What did she do?”* The harder and more fruitful question is, *“What is God asking of me?”*  
+#### Tending the Garden of Marriage
+Every marriage is its own kind of garden. A place of beauty that also requires tending, guarding, and nourishing. Adam abandoned that call. Christ fulfilled it. And we as husbands are invited to follow His example.  
 
-Maybe the first step isn’t explaining why you reacted the way you did. Maybe it’s listening. Maybe it’s apologizing without qualification. Maybe it’s taking initiative in an area you’ve avoided. Maybe it’s asking your wife where she feels alone and being willing to hear the answer.  
+It’s not about being flawless, it’s about being faithful. About choosing responsibility over excuses. About saying, “I’ll carry this, even when it’s not my fault, because God entrusted me to love and lead.”  
 
-Adam’s words have echoed through generations: *“The woman You gave me…”* But husbands who follow Christ are invited to speak differently.  
 
-Not, *“She made me.”*  
-But, *“I was wrong.”*  
-Not, *“She won’t let me.”*  
-But, *“How can I serve?”*  
-Not, *“If she changes…”*  
-But, *“Lord, change me.”*  
+#### The Question Every Husband Faces
+So here’s the real question: when tension rises, will we echo Adam;*“the woman you gave me”* or Christ;*“the burden I’ll carry for her good”*?  
 
-Because the first responsibility of leadership is not managing someone else. It is surrendering yourself.  
+One deflects. The other embraces. One leaves the garden in ruins. The other restores it with love.  
 
 …just a thought.

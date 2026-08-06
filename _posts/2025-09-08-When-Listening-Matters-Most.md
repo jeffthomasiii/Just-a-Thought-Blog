@@ -1,24 +1,29 @@
 ---
 layout: post
-title: "When Listening Matters Most"
-subtitle: "What a business insight teaches us about marriage"
-description: "If executives should spend 65% of their time listening, how much more should husbands? A reflection on listening as love."
+title: When Listening Matters Most
+subtitle: What a business insight teaches us about marriage
+description: If executives should spend 65% of their time listening, how much more should husbands? A reflection on listening as love.
 date: 2025-09-08
 author: Jeff Thomas III
-categories:  
-- marriage  
+categories:
+- reflection
+collections:
 - faith
-tags:  
-- listening  
-- communication  
-- marriage  
-- love  
-- covenant
-excerpt: "If executives must listen to lead well, how much more must husbands listen to love well?"
+- marriage
+- leadership
+tags:
+- listening
+- communication
+- biblical-marriage
+- love
+- servant-leadership
+scripture:
+- James 1:19
 image: /img/posts/when-listening-matters-most.jpg
 background: /img/posts/bg-when-listening-matters-most.jpg
-scripture: "James 1:19"
+excerpt: If executives must listen to lead well, how much more must husbands listen to love well?
 ---
+
 
 In his book *Disciplines of a Godly Man*, R. Kent Hughes notes that the **Harvard Business Review recommends an effective executive should spend 65 percent of his time listening**. That number stopped me in my tracks. Hughes’ point was simple but piercing: *if that much listening is essential in the boardroom, how much more so in marriage?*  
 
@@ -44,8 +49,4 @@ It might feel small, but in a covenant built on love, it’s the small things th
 
 Listening in marriage isn’t just good communication. It’s Christlike humility. And when we take it seriously, we discover that love grows best when our ears are open.  
 
-…just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzkzNzk5OTEsMTE0ODY3MTgxXX0=
--->
+…just a thought.

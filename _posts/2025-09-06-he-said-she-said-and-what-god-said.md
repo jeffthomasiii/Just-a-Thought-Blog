@@ -1,24 +1,31 @@
 ---
 layout: post
-title: "He Said, She Said, and What God Said"
-subtitle: "Why we talk past each other and how Scripture helps us bridge the gap"
-description: "An honest look at the way men and women communicate differently, what research shows, and how God’s Word gives us a better way forward."
+title: He Said, She Said, and What God Said
+subtitle: Why we talk past each other and how Scripture helps us bridge the gap
+description: An honest look at the way men and women communicate differently, what research shows, and how God’s Word gives us a better way forward.
 date: 2025-09-06
 author: Jeff Thomas III
-categories:  
-- marriage  
+categories:
+- reflection
+collections:
 - faith
-
-tags:  
-- communication  
-- relationships  
-- biblical-marriage  
-- science
-excerpt: "Men and women often talk past each other, not because we don’t care, but because we communicate differently. The good news? God’s wisdom offers us a way through."
+- marriage
+tags:
+- communication
+- biblical-marriage
+- listening
+- relationships
+- conflict-resolution
+scripture:
+- James 1:19
+- Ephesians 4:29
+- Proverbs 18:21
+- John 1:14
 image: /img/posts/he-said-she-said.jpg
 background: /img/posts/bg-he-said-she-said.jpg
-scripture: "James 1:19 ESV"
+excerpt: Men and women often talk past each other, not because we don’t care, but because we communicate differently. The good news? God’s wisdom offers us a way through.
 ---
+
 Sometimes the smallest words cause the biggest misunderstandings.  
 
 I remember hearing about a husband who asked his wife, “Is dinner almost ready?” He meant it as a simple question. She heard it as a critique. One question, two very different interpretations. Neither meant harm, but the gap between intention and reception turned the air in the room a little heavier.  
@@ -57,6 +64,3 @@ These aren’t quick fixes, they’re daily choices. And they don’t erase our 
 Men and women may use words differently, but God calls us to the same goal: love that builds up. When we stop measuring conversations by who’s “right” and start measuring them by whether we’re reflecting Christ, we discover a language deeper than words.  
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODI5OTc3NTNdfQ==
--->
