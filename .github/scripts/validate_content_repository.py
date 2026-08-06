@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+# Repository-wide validation for the completed metadata migration.
 from collections import defaultdict
 from pathlib import Path
 import re
