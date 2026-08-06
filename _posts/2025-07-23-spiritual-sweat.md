@@ -1,11 +1,33 @@
 ---
 layout: post
-title: "Spiritual Sweat"
+title: Spiritual Sweat
 subtitle: "Training Naked: The Lost Discipline of Undistracted Devotion"
-date: 2025-07-23
+description: "A devotional reflection on spiritual training, undistracted devotion, and the practices that form endurance, focus, and godliness."
+date: "2025-07-23"
 author: Jeff Thomas III
-tags: [faith, discipline, godliness, spiritual-growth]
-image: /img/posts/spiritual-sweat.jpg
+categories:
+- devotional
+collections:
+- faith
+tags:
+- "spiritual-disciplines"
+- godliness
+- "spiritual-growth"
+- endurance
+- obedience
+- prayer
+- scripture
+- fasting
+- focus
+- distraction
+- "first-timothy"
+excerpt: "Spiritual growth does not happen by accident. Like physical training, it requires focus, discipline, endurance, and a willingness to remove what distracts us."
+image: "/img/posts/spiritual-sweat.jpg"
+background: "/img/posts/bg-spiritual-sweat.jpg"
+scripture:
+- "1 Timothy 4:7"
+- "Hebrews 12:1"
+- "Philippians 3:14"
 ---
 
 The sun hadn’t risen yet, but he was already drenched in sweat.  
