@@ -1,22 +1,28 @@
 ---
 layout: post
 title: "Do It Anyway: Becoming Who You Are, Not What They Deserve"
-subtitle: "When their behavior shifts, your character doesn’t have to."
-description: "Don't let someone else's behavior rewrite your character. This post reflects on Christlike consistency, marriage, and the quiet strength of loving anyway."
+subtitle: "When their behavior shifts, your character doesn’t have to"
+description: "A reflection on Christlike consistency, marriage, boundaries, and refusing to let someone else's behavior rewrite your character."
 date: 2025-08-08
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
   - marriage
 tags:
   - christlike-character
   - spiritual-maturity
   - consistency
-  - love-anyway
+  - grace
+  - boundaries
   - relationships
-excerpt: "When someone mistreats you, it's easy to pull back or match their energy. But what if you stayed rooted in who God called you to be? Do it anyway, because that's who you are."
+scripture:
+  - "Romans 12:21"
+  - "Galatians 6:9"
+excerpt: "When someone mistreats you, it is easy to pull back or match their energy. But their behavior does not have to determine who you become."
+image: /img/posts/bg-do-it-anyway.jpg
 background: /img/posts/bg-do-it-anyway.jpg
-scripture: "Romans 12:21; Galatians 6:9"
 ---
 
 You hold the door open. They walk through without a glance.  
