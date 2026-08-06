@@ -5,18 +5,22 @@ subtitle: "Skills #8–9 – Unarmed Self-Defense & Weapons Proficiency"
 description: "True strength isn’t reckless, it’s restrained. Self-defense and weapons proficiency are about stewardship, preparation, and wisdom under control."
 date: 2025-11-21
 author: Jeff Thomas III
-categories:  
-- manhood  
-- faith  
-- growth
-tags:  
-- strength  
-- discipline  
-- self-defense  
+categories:
+  - reflection
+collections:
+  - faith
+  - leadership
+tags:
+  - strength
+  - discipline
+  - self-defense
+  - self-control
+  - manhood
 excerpt: "The true test of strength isn’t in how much force you can unleash, but in how much wisdom you show when you don’t."
 image: /img/posts/strength-with-restraint.jpg
 background: /img/posts/bg-strength-with-restraint.jpg
-scripture: "Proverbs 25:28 NIV"
+scripture:
+  - Proverbs 25:28
 series: "10 Skills Every Man Should Have"
 series_order: 9
 ---
