@@ -6,16 +6,19 @@ description: "Paul didn’t choose his words casually. Each term in Philippians 
 date: 2025-11-20
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
 tags:
   - philippians
   - word-study
   - spiritual-formation
+  - christian-thinking
 excerpt: "Eight Greek words. Eight invitations. Eight ways of aligning your mind with the character of Christ."
 image: /img/posts/philippians-word-study.jpg
 background: /img/posts/bg-philippians-word-study.jpg
-scripture: "Philippians 4:8 ESV"
-contributors: []
+scripture:
+  - Philippians 4:8
 series: "The Practice of Holy Thinking"
 series_order: 2
 ---
@@ -57,7 +60,3 @@ Eight doorways into the peace of God.
 **What might shift in us if we allowed God, not culture, to define what we consider beautiful, worthy, and good?**
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0NjY5NzE2LDkyMDc0NDAyNF19
--->
