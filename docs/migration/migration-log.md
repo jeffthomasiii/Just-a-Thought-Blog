@@ -283,6 +283,34 @@ Notes:
 - Article bodies were preserved; editorial quality review remains deferred.
 - Full Jekyll build validation remains pending until a broader migration checkpoint.
 
+### January 2026
+
+Status: Complete
+
+- [x] Front matter updated
+- [x] YAML validated
+- [x] Article Types normalized
+- [x] Collections added
+- [x] Tags standardized
+- [x] Scripture converted to YAML arrays
+- [x] Contributors verified
+- [x] Series verified
+- [x] Images normalized to required front matter fields
+- [ ] Jekyll build verified
+
+Commits:
+
+- `b2c97ca9ed0048a9f9680053878a0019f5fefd06`
+
+Notes:
+
+- Audited and migrated all fourteen January 2026 posts.
+- Restored each published article body from `master` before applying metadata-only changes.
+- Normalized every post to the `reflection` article type and assigned supported `faith`, `marriage`, `leadership`, and `culture` reader journeys.
+- Standardized tags, corrected the January 2 date format, converted populated Scripture fields to YAML arrays, and removed empty optional fields and residual StackEdit metadata.
+- Preserved existing filenames and image paths to avoid changing published URLs or asset references.
+- The controlled migration workflow completed successfully; full Jekyll build verification remains pending.
+
 ## Future Development
 
 Deferred until after metadata migration:
