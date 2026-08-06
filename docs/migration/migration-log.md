@@ -167,6 +167,50 @@ Notes:
 - Article bodies were preserved; previously identified editorial and body-text issues remain deferred.
 - Full Jekyll build validation remains pending until a broader migration checkpoint.
 
+### December 2025
+
+Status: Complete
+
+- [x] Front matter updated
+- [x] YAML validated
+- [x] Article Types normalized
+- [x] Collections added
+- [x] Tags standardized
+- [x] Scripture converted to YAML arrays
+- [x] Contributors verified
+- [x] Series verified
+- [x] Images normalized to required front matter fields
+- [ ] Jekyll build verified
+
+Commits:
+
+- `e8534608c121284080151ea3905989cfff20152d`
+- `f059538e386e023a38c4ad7fc324a6cdffd59d5d`
+- `b3e17470ab0a9decb2a99955a1c7dd4350829a4e`
+- `dadffe90a4a91a919bda2bb95ba2173e83854600`
+- `c96667c106e2e2b630c493d6345c2e13f6d44d27`
+- `9e27acad4d11d881138abd67609545e6b28b57ab`
+- `6c0704ccf90d79893ebe310acd600709c4720519`
+- `1c43c5b340dc1bb40865cb00a36123f6fc7e55d2`
+- `12ce9a52fe3e014ae64614791883e53ba9d8915a`
+- `fdd97807a96ff3c712dac7db6336250c13930a94`
+- `17e70b3b770ae9c2d2ce8d0cea82901b0cd46cd8`
+- `d33a40f739009b78a5db16c8882c2d1eac346b84`
+- `156b2fac5ae375d875f89ec4f93ed148a5daa26d`
+- `8e9f8f5e3f1b7de2aedab1639e543281210f6850`
+- `070e676fc8efc00d428f3a4c4f1080a87f7b144e`
+
+Notes:
+
+- Migrated all fifteen December 2025 posts.
+- Completed the `10 Skills Every Man Should Have` series metadata with its concluding installment.
+- Normalized all nine entries in the `Lead Like This` series, including its introduction and closing reflection.
+- Normalized Samatra Thomas as a contributor on `The Mind I Fell For`.
+- Removed empty contributor and series fields and residual StackEdit metadata where present.
+- Preserved existing filenames, including the Unicode ellipsis in `Before You Lead Anyone…`, to avoid changing published URLs.
+- Article bodies were preserved; editorial quality review remains deferred.
+- Full Jekyll build validation remains pending until a broader migration checkpoint.
+
 ## Future Development
 
 Deferred until after metadata migration:
