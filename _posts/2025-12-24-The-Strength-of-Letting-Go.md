@@ -6,17 +6,24 @@ description: "A reflective leadership post exploring why releasing control, trus
 date: 2025-12-24
 author: Jeff Thomas III
 categories:
-  - leadership
+  - reflection
+collections:
   - faith
+  - leadership
 tags:
   - trust
   - delegation
-  - leadership
+  - surrender
+  - stewardship
+  - leadership-development
+  - spiritual-formation
 excerpt: "Letting go is not the absence of strength. It is strength disciplined by trust and surrender."
-background: /img/posts/eths-letting-go.jpg
 image: /img/posts/lead-like-this-letting-go.jpg
-scripture: "Psalm 46:10; Exodus 18:17–23; Matthew 25:14–30"
-contributors: []
+background: /img/posts/eths-letting-go.jpg
+scripture:
+  - Psalm 46:10
+  - Exodus 18:17-23
+  - Matthew 25:14-30
 series: "Lead Like This"
 series_order: 7
 ---
@@ -51,6 +58,3 @@ True strength in leadership is not found in holding everything together.
 It is found in trusting God enough to let some things go.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ4MDQzMTg0XX0=
--->
