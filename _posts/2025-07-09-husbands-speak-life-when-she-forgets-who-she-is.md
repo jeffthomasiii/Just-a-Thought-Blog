@@ -1,10 +1,36 @@
 ---
-title: Husbands, Speak Life When She Forgets Who She Is
+layout: post
+title: "Husbands, Speak Life When She Forgets Who She Is"
 subtitle: A Speak Life Series
-date: 2025-07-09
-tags: [marriage, husbands, prayer, speaking life, biblical marriage]
-excerpt: When your wife is weary, anxious, or questioning her worth, you have the authority to speak life and truth over her. Here's how to pray for her and affirm who God says she is.
-image: /img/posts/speak-life-over-her.jpg
+description: "A reflection for husbands on praying for their wives and speaking truth, encouragement, and identity over them in seasons of weariness, anxiety, and doubt."
+date: "2025-07-09"
+author: Jeff Thomas III
+categories:
+- reflection
+collections:
+- faith
+- marriage
+tags:
+- "biblical-marriage"
+- husbands
+- prayer
+- encouragement
+- communication
+- "speaking-life"
+- identity
+- anxiety
+- "emotional-support"
+- "spiritual-leadership"
+excerpt: "When your wife is weary, anxious, or questioning her worth, you have the opportunity to speak life and truth over her. Here's how to pray for her and affirm who God says she is."
+image: "/img/posts/speak-life-over-her.jpg"
+background: "/img/posts/bg-speak-life-over-her.jpg"
+scripture:
+- "Proverbs 31:25"
+- "Isaiah 26:3"
+- "Matthew 11:28"
+- "Ephesians 5:25"
+series: Speak Life Over Them
+series_order: 2
 ---
 
 > **👤 This post is written for husbands.** *(Wives, read it too. you’ll find insight here.)*
