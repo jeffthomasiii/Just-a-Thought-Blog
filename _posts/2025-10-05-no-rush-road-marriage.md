@@ -5,20 +5,26 @@ subtitle: "Learning to enjoy the journey instead of hurrying to arrive"
 description: "A reflection on slowing down in both travel and marriage, seeing the beauty in the journey rather than rushing to reach the destination."
 date: 2025-10-05
 author: Jeff Thomas III
-categories:  
-- marriage  
-- reflection
-tags:  
-- marriage  
-- journey  
-- patience  
-- relationships
+contributors:
+  - Samatra Thomas
+categories:
+  - reflection
+collections:
+  - faith
+  - marriage
+  - creation
+tags:
+  - biblical-marriage
+  - patience
+  - marital-growth
+  - road-trips
+  - slowing-down
 excerpt: "What if the goal in marriage isn't to hurry toward 'oneness' but to enjoy the road that gets us there?"
 image: /img/posts/no-rush-road-marriage.jpg
 background: /img/posts/bg-no-rush-road-marriage.jpg
-scripture: "Genesis 2:24, Ecclesiastes 3:1 (ESV)"
-contributors: [Samatra Thomas]
-
+scripture:
+  - Genesis 2:24
+  - Ecclesiastes 3:1
 ---
 Every road trip tells a story.  
 
