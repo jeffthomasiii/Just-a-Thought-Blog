@@ -1,22 +1,27 @@
 ---
 layout: post
-title: "Bite the Bagel"
-subtitle: "Creating Space Between Emotion and Response"
-description: "A reflection on emotional awareness, self-control, and the power of pausing before responding."
-date: 2026-02-23
+title: Bite the Bagel
+subtitle: Creating Space Between Emotion and Response
+description: A reflection on emotional awareness, self-control, and the power of pausing before responding.
+date: '2026-02-23'
 author: Jeff Thomas III
 categories:
-  - faith
-  - leadership
+- reflection
+collections:
+- faith
+- leadership
+- marriage
 tags:
-  - emotional maturity
-  - self awareness
-  - wisdom
-  - communication
-excerpt: "Sometimes the most mature response is not immediate. What if the key is learning to pause?"
+- emotional-maturity
+- self-awareness
+- wisdom
+- communication
+excerpt: Sometimes the most mature response is not immediate. What if the key is learning to pause?
 image: /img/posts/bite-the-bagel.jpg
 background: /img/posts/bg-bite-the-bagel.jpg
-scripture: "James 1:19; Proverbs 16:32 ESV"
+scripture:
+- James 1:19
+- Proverbs 16:32
 ---
 
 Sometimes the most damaging words are not planned.  
@@ -161,7 +166,3 @@ Before you escalate.
 Bite the bagel.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NDE1NDQ0NF19
--->

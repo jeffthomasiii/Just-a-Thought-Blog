@@ -1,22 +1,25 @@
 ---
 layout: post
-title: "Driving Through the Fog"
-subtitle: "When You Can’t See Far, But You Can See Enough"
-description: "A poetic reflection on stress, worry, anxiety, and the quiet courage of moving forward when the road feels hidden."
-date: 2026-02-18
+title: Driving Through the Fog
+subtitle: When You Can’t See Far, But You Can See Enough
+description: A poetic reflection on stress, worry, anxiety, and the quiet courage of moving forward when the road feels hidden.
+date: '2026-02-18'
 author: Jeff Thomas III
 categories:
-  - faith
-  - reflection
+- reflection
+collections:
+- faith
+- creation
 tags:
-  - anxiety
-  - stress
-  - trust
-  - perseverance
-excerpt: "Sometimes life feels like driving through thick fog. You can’t see far, but maybe you can see enough."
+- anxiety
+- stress
+- trust
+- perseverance
+excerpt: Sometimes life feels like driving through thick fog. You can’t see far, but maybe you can see enough.
 image: /img/posts/driving-through-the-fog.jpg
 background: /img/posts/bg-driving-through-the-fog.jpg
-scripture: "Psalm 119:105 ESV"
+scripture:
+- Psalm 119:105
 ---
 
 It was the kind of fog that makes you slow down instinctively.

@@ -1,24 +1,27 @@
 ---
 layout: post
-title: "The God Who Sees the Hidden Work"
-subtitle: "Why ministry metrics miss what God rewards"
-description: "A reflection on the unseen faithfulness of ministry in an age obsessed with measurable success."
-date: 2026-02-13
+title: The God Who Sees the Hidden Work
+subtitle: Why ministry metrics miss what God rewards
+description: A reflection on the unseen faithfulness of ministry in an age obsessed with measurable success.
+date: '2026-02-13'
 author: Jeff Thomas III
 categories:
-  - faith
-  - technology
+- reflection
+collections:
+- faith
+- technology
+- leadership
 tags:
-  - ai
-  - ministry
-  - faithfulness
-  - hidden work
-excerpt: "AI can analyze results, but only God sees the motives. Not all faithfulness comes with feedback."
+- artificial-intelligence
+- ministry
+- faithfulness
+- hidden-work
+excerpt: AI can analyze results, but only God sees the motives. Not all faithfulness comes with feedback.
 image: /img/posts/the-god-who-sees-the-hidden-work.jpg
 background: /img/posts/bg-the-god-who-sees-the-hidden-work.jpg
-header-image: /img/posts/header-the-god-who-sees-the-hidden-work.jpg
-scripture: "Matthew 6:4 ESV"
-series: "Faith, Wisdom, and the Machine"
+scripture:
+- Matthew 6:4
+series: Faith, Wisdom, and the Machine
 series_order: 2
 ---
 
@@ -50,7 +53,3 @@ But let your soul return to this truth: God sees the work no one else does. And 
 Your spreadsheet might not count that midnight hospital visit or that one student you faithfully mentored for years. But heaven records it. And heaven rewards it.
 
 Just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzY0NTI3MTRdfQ==
--->

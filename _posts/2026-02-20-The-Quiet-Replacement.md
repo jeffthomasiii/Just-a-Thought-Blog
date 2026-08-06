@@ -1,24 +1,27 @@
 ---
 layout: post
-title: "The Quiet Replacement: When Ministry Becomes Management"
-subtitle: "When efficiency subtly replaces obedience"
-description: "A cautionary reflection on how AI tools and tech culture can slowly shift the heart of ministry from spiritual formation to systems management."
-date: 2026-02-20
+title: 'The Quiet Replacement: When Ministry Becomes Management'
+subtitle: When efficiency subtly replaces obedience
+description: A cautionary reflection on how AI tools and tech culture can slowly shift the heart of ministry from spiritual formation to systems management.
+date: '2026-02-20'
 author: Jeff Thomas III
 categories:
-  - faith
-  - technology
+- reflection
+collections:
+- faith
+- technology
+- leadership
 tags:
-  - ai
-  - obedience
-  - leadership
-  - formation
-excerpt: "We’re called to tend sheep, not systems. The danger isn’t using tools, it’s when the tools start using us."
+- artificial-intelligence
+- obedience
+- servant-leadership
+- spiritual-formation
+excerpt: We’re called to tend sheep, not systems. The danger isn’t using tools, it’s when the tools start using us.
 image: /img/posts/the-quiet-replacement.jpg
 background: /img/posts/bg-the-quiet-replacement.jpg
-header-image: /img/posts/header-the-quiet-replacement.jpg
-scripture: "John 21:17 ESV"
-series: "Faith, Wisdom, and the Machine"
+scripture:
+- John 21:17
+series: Faith, Wisdom, and the Machine
 series_order: 3
 ---
 
@@ -60,7 +63,3 @@ So yes, use the tools. Organize the systems. But never forget who you are. You w
 You were called to feed sheep.
 
 Just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NzM4NjAxNF19
--->

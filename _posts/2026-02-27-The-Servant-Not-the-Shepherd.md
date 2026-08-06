@@ -1,24 +1,27 @@
 ---
 layout: post
-title: "The Servant, Not the Shepherd"
-subtitle: "Why AI should help carry the load, not define the direction"
-description: "Reflecting on the role of technology as a ministry helper, not a leader, and how we guard against misplacing trust."
-date: 2026-02-27
+title: The Servant, Not the Shepherd
+subtitle: Why AI should help carry the load, not define the direction
+description: Reflecting on the role of technology as a ministry helper, not a leader, and how we guard against misplacing trust.
+date: '2026-02-27'
 author: Jeff Thomas III
 categories:
-  - faith
-  - technology
+- reflection
+collections:
+- faith
+- technology
+- leadership
 tags:
-  - ai
-  - leadership
-  - trust
-  - spiritual-discernment
-excerpt: "AI can carry buckets, but it can’t choose the well. It’s a tool, not a shepherd."
+- artificial-intelligence
+- servant-leadership
+- trust
+- spiritual-discernment
+excerpt: AI can carry buckets, but it can’t choose the well. It’s a tool, not a shepherd.
 image: /img/posts/the-servant-not-the-shepherd.jpg
 background: /img/posts/bg-the-servant-not-the-shepherd.jpg
-header-image: /img/posts/header-the-servant-not-the-shepherd.jpg
-scripture: "Psalm 23:1 ESV"
-series: "Faith, Wisdom, and the Machine"
+scripture:
+- Psalm 23:1
+series: Faith, Wisdom, and the Machine
 series_order: 4
 ---
 
@@ -49,7 +52,3 @@ Because the moment the servant starts giving directions, we’ve lost the Shephe
 Let AI serve the mission. But never let it define it.
 
 Just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3ODMyMTE4OF19
--->

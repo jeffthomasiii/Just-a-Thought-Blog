@@ -1,22 +1,26 @@
 ---
 layout: post
-title: "The Dysangelion of Judas"
-subtitle: "When closeness to Christ replaces surrender"
-description: "A reflective warning on proximity to Christ, hidden compromise, and the quiet danger of valuing usefulness over surrender."
-date: 2026-02-04
+title: The Dysangelion of Judas
+subtitle: When closeness to Christ replaces surrender
+description: A reflective warning on proximity to Christ, hidden compromise, and the quiet danger of valuing usefulness over surrender.
+date: '2026-02-04'
 author: Jeff Thomas III
 categories:
-  - faith
+- reflection
+collections:
+- faith
 tags:
-  - Judas
-  - repentance
-  - discipleship
-  - integrity
-  - worship
-excerpt: "Judas’s story is not about ignorance or impulse, but about proximity without surrender, and what happens when faith is quietly measured instead of lived."
+- judas-iscariot
+- repentance
+- discipleship
+- integrity
+- worship
+excerpt: Judas’s story is not about ignorance or impulse, but about proximity without surrender, and what happens when faith is quietly measured instead of lived.
 image: /img/posts/dysangelion-of-judas.jpg
 background: /img/posts/bg-dysangelion-of-judas.jpg
-scripture: "Matthew 26–27; John 12:1–8"
+scripture:
+- Matthew 26-27
+- John 12:1-8
 ---
 
 The word *gospel* means good news.  
