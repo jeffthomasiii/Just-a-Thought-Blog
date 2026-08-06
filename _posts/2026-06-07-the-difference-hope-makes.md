@@ -6,19 +6,22 @@ description: "A reflective look at how hope enables people to endure suffering, 
 date: 2026-06-07
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
-  - reflections
 tags:
   - hope
-  - faith
   - perseverance
   - suffering
   - christian-living
   - resurrection
+  - endurance
+  - trust-in-god
 excerpt: "Hope does not remove suffering, but it often determines whether we can endure it. The deeper question is whether our hope is strong enough to survive when circumstances don't."
 image: /img/posts/the-difference-hope-makes.jpg
 background: /img/posts/bg-the-difference-hope-makes.jpg
-scripture: "Romans 5:3–5 ESV"
+scripture:
+  - Romans 5:3-5
 ---
 
 In 1915, Sir Ernest Shackleton and his crew set out on what was supposed to be one of the greatest Antarctic expeditions in history. Instead, they found themselves trapped in ice hundreds of miles from civilization after their ship, *Endurance*, became frozen in place.
@@ -76,6 +79,3 @@ As Christians, we are also people waiting for rescue, although ours is far great
 And when hope is anchored there, it becomes strong enough to endure almost anything.
 
 ...just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTY3NzgyXX0=
--->
