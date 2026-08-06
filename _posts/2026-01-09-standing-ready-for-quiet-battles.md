@@ -1,24 +1,28 @@
 ---
 layout: post
-title: "Standing Ready for Quiet Battles"
-subtitle: "Spiritual protection begins long before the moment arrives"
-description: "A reflection on spiritual preparation, marriage, and the quiet battles that require men to be ready before they come."
-date: 2026-01-09
+title: Standing Ready for Quiet Battles
+subtitle: Spiritual protection begins long before the moment arrives
+description: A reflection on spiritual preparation, marriage, and the quiet battles that require men to be ready before they come.
+date: '2026-01-09'
 author: Jeff Thomas III
 categories:
-  - faith
-  - marriage
+- reflection
+collections:
+- faith
+- leadership
 tags:
-  - spiritual leadership
-  - marriage
-  - fatherhood
-  - preparation
-  - prayer
-excerpt: "Most men understand physical protection. Fewer realize that spiritual protection requires preparation long before the battle appears."
+- spiritual-warfare
+- readiness
+- faithfulness
+- discernment
+- perseverance
+scripture:
+- Ephesians 6:13 (ESV)
 image: /img/posts/standing-ready.jpg
 background: /img/posts/bg-standing-ready.jpg
-scripture: "Ephesians 6:13 (ESV)"
+excerpt: Most men understand physical protection. Fewer realize that spiritual protection requires preparation long before the battle appears.
 ---
+
 
 They show up quietly, through insecurity, exhaustion, discouragement, or a sudden heaviness that settles into your wife’s or your child’s heart. Not as a crisis you can point to, but as a weight you can feel. The room feels different. The tone shifts. You can tell something is being carried.
 

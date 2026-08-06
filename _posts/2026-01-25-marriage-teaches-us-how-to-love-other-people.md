@@ -1,23 +1,25 @@
 ---
 layout: post
-title: "Marriage Teaches Us How to Love Other People"
-subtitle: ""
-description: "Marriage quietly exposes the limits of our love and stretches it outward, shaping how we learn patience, empathy, and grace with others."
-date: 2026-01-25
+title: Marriage Teaches Us How to Love Other People
+description: Marriage quietly exposes the limits of our love and stretches it outward, shaping how we learn patience, empathy, and grace with others.
+date: '2026-01-25'
 author: Jeff Thomas III
 categories:
-  - marriage
-  - faith
+- reflection
+collections:
+- faith
+- marriage
 tags:
-  - marriage
-  - love
-  - formation
-  - relationships
-excerpt: "Marriage doesn’t just shape how we love one person, it quietly trains us in how we love everyone else."
+- biblical-marriage
+- love
+- spiritual-formation
+- relationships
+- grace
 image: /img/posts/marriage-teaches-love-outward.jpg
 background: /img/posts/bg-marriage-teaches-love-outward.jpg
-scripture: ""
+excerpt: Marriage doesn’t just shape how we love one person, it quietly trains us in how we love everyone else.
 ---
+
 
 Marriage teaches us quickly that love is harder than we thought.  
 Not in grand gestures or dramatic sacrifices, but in the small, repeated moments where patience wears thin and understanding feels costly.

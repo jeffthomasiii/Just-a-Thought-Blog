@@ -1,20 +1,25 @@
 ---
 layout: post
-title: "Where I Stand"
-description: "A reflection on humility, anxiety, and the quiet confidence of knowing one’s position beneath Christ."
-date: 2026-01-31
+title: Where I Stand
+description: A reflection on humility, anxiety, and the quiet confidence of knowing one’s position beneath Christ.
+date: '2026-01-31'
 author: Jeff Thomas III
 categories:
-  - faith
+- reflection
+collections:
+- faith
+- culture
 tags:
-  - humility
-  - anxiety
-  - spiritual formation
-  - faith and fear
-excerpt: "Humility isn’t about being small. It’s about knowing where you stand."
+- conviction
+- faith
+- culture
+- discernment
+- christian-witness
 image: /img/posts/where-i-stand.jpg
 background: /img/posts/bg-where-i-stand.jpg
+excerpt: Humility isn’t about being small. It’s about knowing where you stand.
 ---
+
 
 Sometimes a statement carries weight not because it’s dramatic,  
 but because it’s settled.
@@ -58,8 +63,3 @@ If the lowest place before Christ still places us above what opposes Him, then w
 We just need to know where we stand.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzEzNjcxODUsLTE3MTEzODMyODZdfQ
-==
--->

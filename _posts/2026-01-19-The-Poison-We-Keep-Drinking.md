@@ -1,23 +1,28 @@
 ---
 layout: post
-title: "The Poison We Keep Drinking"
-subtitle: "When offense lingers longer than the wound"
-description: "Holding on to bitterness often harms the one carrying it more than the one who caused it."
-date: 2026-01-19
+title: The Poison We Keep Drinking
+subtitle: When offense lingers longer than the wound
+description: Holding on to bitterness often harms the one carrying it more than the one who caused it.
+date: '2026-01-19'
 author: Jeff Thomas III
 categories:
-  - faith
-  - reflection
+- reflection
+collections:
+- faith
+- culture
 tags:
-  - forgiveness
-  - offense
-  - bitterness
-  - spiritual health
-excerpt: "Bitterness promises justice but often delivers quiet harm. What we refuse to release slowly reshapes us."
+- offense
+- forgiveness
+- bitterness
+- healing
+- spiritual-growth
+scripture:
+- Hebrews 12:15 (ESV)
 image: /img/posts/the-poison-we-keep-drinking.jpg
 background: /img/posts/bg-the-poison-we-keep-drinking.jpg
-scripture: "Hebrews 12:15 (ESV)"
+excerpt: Bitterness promises justice but often delivers quiet harm. What we refuse to release slowly reshapes us.
 ---
+
 
 ### The Poison We Keep Drinking
 

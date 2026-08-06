@@ -1,24 +1,28 @@
 ---
 layout: post
-title: "Truthing in Love"
-subtitle: "Integrity Where Truth and Love Refuse to Separate"
-description: "A reflective exploration of integrity, truth, and love as a lived discipline shaped by Scripture and practice."
-date: 2026-01-14
+title: Truthing in Love
+subtitle: Integrity Where Truth and Love Refuse to Separate
+description: A reflective exploration of integrity, truth, and love as a lived discipline shaped by Scripture and practice.
+date: '2026-01-14'
 author: Jeff Thomas III
 categories:
-  - faith
-  - leadership
+- reflection
+collections:
+- faith
+- culture
 tags:
-  - integrity
-  - truth
-  - love
-  - discipleship
-  - spiritual formation
-excerpt: "Truth without love wounds. Love without truth deceives. Somewhere between the two is a harder disciplinetruthing in love."
+- truth-in-love
+- communication
+- grace
+- discernment
+- christian-living
+scripture:
+- Ephesians 4:15 (ESV)
 image: /img/posts/truthing-in-love-post.jpg
 background: /img/posts/truthing-in-love-bg.jpg
-scripture: "Ephesians 4:15 (ESV)"
+excerpt: Truth without love wounds. Love without truth deceives. Somewhere between the two is a harder disciplinetruthing in love.
 ---
+
 
 There is a kind of honesty that feels faithful yet leaves people wounded. There is also a kind of love that feels gentle but quietly avoids what needs to be said. We agree, at least in theory, that truth matters. We also agree that love matters. But when the two collide, we tend to favor one and sacrifice the other. Only later do we discover the harder call Scripture makes, the discipline that refuses to separate them. It is often described as truthing in love.
 
@@ -35,6 +39,3 @@ The longer I sit with this phrase, the more I realize how much it costs. Truthin
 When I look to Jesus, I do not see truth separated from love, or love diluted by truth. I see both held together with perfect faithfulness. He spoke what was true even when it cost Him, and He loved without compromise even when truth offended. That standard does not leave me discouraged, but it does leave me honest. Truthing in love is not something I expect to master. It feels more like a discipline I will spend a lifetime practicing, repenting through, and returning to again and again.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1OTcyMTc3OV19
--->

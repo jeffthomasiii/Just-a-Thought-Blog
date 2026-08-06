@@ -1,27 +1,27 @@
 ---
 layout: post
-title: "When the Vineyard Exposes My Math"
-subtitle: "On the last being first, and the first being last"
-description: "A reflective look at Matthew 20 and the unsettling kindness of God’s generosity."
-date: 2026-01-23
+title: When the Vineyard Exposes My Math
+subtitle: On the last being first, and the first being last
+description: A reflective look at Matthew 20 and the unsettling kindness of God’s generosity.
+date: '2026-01-23'
 author: Jeff Thomas III
 categories:
-  - faith
-  - gospel-reflections
+- reflection
+collections:
+- faith
 tags:
-  - Matthew
-  - parables
-  - grace
-  - generosity
-  - comparison
-excerpt: "Jesus’ vineyard parable doesn’t just teach generosity. It exposes how often I keep score."
+- grace
+- fairness
+- comparison
+- kingdom-of-god
+- humility
+scripture:
+- Matthew 20:1–16
 image: /img/posts/vineyard-last-first.jpg
 background: /img/posts/bg-vineyard-last-first.jpg
-scripture: "Matthew 20:1–16"
-contributors: []
-series: ""
-series_order:
+excerpt: Jesus’ vineyard parable doesn’t just teach generosity. It exposes how often I keep score.
 ---
+
 
 I’ve heard the phrase for the better part of my Christian life: *“The last shall be first, and the first shall be last.”*  
 It’s familiar enough to feel almost poetic. Familiar enough to nod at without stopping.
@@ -107,7 +107,3 @@ Still noticing where I resist it.
 Still learning how to rejoice when mercy flows freely, even when it disrupts my math.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMzNTMwOTYsLTI0NDc1MzI0Ml19
--->

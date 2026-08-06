@@ -1,23 +1,30 @@
 ---
 layout: post
-title: "The Quiet Weight of Integrity"
-subtitle: "Why what seems simple often costs the most"
-description: "A reflective exploration of integrity; why it is admired, resisted, and quietly necessary in a culture shaped by self-interest."
-date: 2026-01-12
+title: The Quiet Weight of Integrity
+subtitle: Why what seems simple often costs the most
+description: A reflective exploration of integrity; why it is admired, resisted, and quietly necessary in a culture shaped by self-interest.
+date: '2026-01-12'
 author: Jeff Thomas III
 categories:
-  - faith
-  - leadership
+- reflection
+collections:
+- faith
+- leadership
 tags:
-  - integrity
-  - character
-  - wisdom
-  - christian-living
-excerpt: "Integrity is easy to define, difficult to carry, and increasingly rare. A quiet reflection on why it still matters."
+- integrity
+- character
+- leadership
+- faithfulness
+- accountability
+scripture:
+- Proverbs 10:9
+- Psalm 15:1–2
+- Proverbs 11:3 (ESV)
 image: /img/posts/quiet-weight-integrity.jpg
 background: /img/posts/bg-quiet-weight-integrity.jpg
-scripture: "Proverbs 10:9; Psalm 15:1–2; Proverbs 11:3 (ESV)"
+excerpt: Integrity is easy to define, difficult to carry, and increasingly rare. A quiet reflection on why it still matters.
 ---
+
 
 Integrity is one of those qualities nearly everyone agrees is important, yet far fewer are willing to carry. It asks little in explanation and much in practice. Be the same person in public and private. Let your words and actions agree. Walk straight, even when no one is watching. The idea is simple. The weight of it is not.
 

@@ -1,23 +1,30 @@
 ---
 layout: post
-title: "When Light Refuses to Dim"
-subtitle: "Letting Christ Shine Through Heavy Skies"
-description: "Even a dim light shines brightly in dark places. A reflection on letting the light of Christ shine without fear, regardless of the world’s behavior."
-date: 2026-01-05
+title: When Light Refuses to Dim
+subtitle: Letting Christ Shine Through Heavy Skies
+description: Even a dim light shines brightly in dark places. A reflection on letting the light of Christ shine without fear, regardless of the world’s behavior.
+date: '2026-01-05'
 author: Jeff Thomas III
 categories:
-  - faith
+- reflection
+collections:
+- faith
+- culture
 tags:
-  - light
-  - darkness
-  - courage
-  - faithfulness
-  - christian-living
-excerpt: "Darkness doesn’t need to disappear for light to matter. It only needs light to remain."
+- light
+- darkness
+- courage
+- faithfulness
+- christian-living
+scripture:
+- Matthew 5:14–16
+- John 1:5
+- Philippians 2:15
 image: /img/posts/light-through-clouds.jpg
 background: /img/posts/bg-light-through-clouds.jpg
-scripture: "Matthew 5:14–16; John 1:5; Philippians 2:15"
+excerpt: Darkness doesn’t need to disappear for light to matter. It only needs light to remain.
 ---
+
 
 There’s something quietly powerful about watching light break through heavy clouds. The sky doesn’t suddenly clear. The darkness doesn’t retreat. And yet, that thin beam of light changes everything about how the moment feels. It doesn’t need to overpower the clouds. It simply shines through them.
 
