@@ -4,10 +4,13 @@ on:
   pull_request:
     branches:
       - master
+  push:
+    branches:
+      - content-architecture-v1-1
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -17,6 +20,26 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Apply final validation corrections
+        if: github.ref_name == 'content-architecture-v1-1'
+        run: python .github/scripts/fix_final_validation_findings.py
+
+      - name: Commit validation corrections
+        if: github.ref_name == 'content-architecture-v1-1'
+        run: |
+          if git diff --quiet; then
+            echo "No validation corrections required."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add _posts
+            git commit -m "Correct final repository validation findings"
+            git push origin content-architecture-v1-1
+          fi
 
       - name: Set up Python
         uses: actions/setup-python@v5
