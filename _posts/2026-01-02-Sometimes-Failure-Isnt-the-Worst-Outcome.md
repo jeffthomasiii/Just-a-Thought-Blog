@@ -16,9 +16,10 @@ tags:
 - trust
 - spiritual-growth
 - obedience
-- Proverbs 16:9
 image: /img/posts/sometimes-failure-isnt-the-worst-outcome.jpg
 background: /img/posts/bg-sometimes-failure-isnt-the-worst-outcome.jpg
+scripture:
+  - "Proverbs 16:9"
 excerpt: We fear failure, but Scripture often warns us about success at the wrong thing. Sometimes a closed door is not loss, but protection.
 ---
 There are few things more disorienting than wanting something deeply, praying for it earnestly, and watching it fall apart anyway. We call that failure. We replay it. We wonder what we did wrong. And in a culture that celebrates winning, hustle, and “making it,” failure can start to feel like a verdict on our effort, our faith, or our worth.

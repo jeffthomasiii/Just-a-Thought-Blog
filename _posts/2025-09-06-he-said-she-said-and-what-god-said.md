@@ -16,12 +16,13 @@ tags:
 - listening
 - relationships
 - conflict-resolution
-- James 1:19
-- Ephesians 4:29
-- Proverbs 18:21
-- John 1:14
 image: /img/posts/he-said-she-said.jpg
 background: /img/posts/bg-he-said-she-said.jpg
+scripture:
+  - "James 1:19"
+  - "Ephesians 4:29"
+  - "Proverbs 18:21"
+  - "John 1:14"
 excerpt: Men and women often talk past each other, not because we don’t care, but because we communicate differently. The good news? God’s wisdom offers us a way through.
 ---
 Sometimes the smallest words cause the biggest misunderstandings.  

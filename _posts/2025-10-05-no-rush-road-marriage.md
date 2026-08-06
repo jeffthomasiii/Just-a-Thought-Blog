@@ -19,11 +19,12 @@ tags:
   - marital-growth
   - road-trips
   - slowing-down
+scripture:
+  - "Genesis 2:24"
+  - "Ecclesiastes 3:1"
 excerpt: "What if the goal in marriage isn't to hurry toward 'oneness' but to enjoy the road that gets us there?"
 image: /img/posts/no-rush-road-marriage.jpg
 background: /img/posts/bg-no-rush-road-marriage.jpg
-  - Genesis 2:24
-  - Ecclesiastes 3:1
 ---
 Every road trip tells a story.  
 

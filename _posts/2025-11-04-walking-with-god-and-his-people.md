@@ -15,12 +15,13 @@ tags:
   - community
   - discipleship
   - church
+scripture:
+  - "Acts 2:42–47"
+  - "Proverbs 27:17"
+  - "Exodus 20:1–17"
 excerpt: "Christianity was never meant to be lived in isolation. Our walk with God naturally calls us into relationship with His people."
 image: /img/posts/walking-with-god-and-his-people.jpg
 background: /img/posts/bg-walking-with-god-and-his-people.jpg
-  - Acts 2:42–47
-  - Proverbs 27:17
-  - Exodus 20:1–17
 ---
 Some Christians live as if faith were a solo journey. They love God, read His Word, and pray faithfully, but quietly keep their distance from others. Sometimes it’s because of past hurt, sometimes exhaustion, and sometimes it just feels easier. But Christianity was never meant to be lived in isolation.  
 

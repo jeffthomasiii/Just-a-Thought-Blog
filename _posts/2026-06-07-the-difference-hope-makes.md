@@ -17,10 +17,11 @@ tags:
   - resurrection
   - endurance
   - trust-in-god
+scripture:
+  - "Romans 5:3-5"
 excerpt: "Hope does not remove suffering, but it often determines whether we can endure it. The deeper question is whether our hope is strong enough to survive when circumstances don't."
 image: /img/posts/the-difference-hope-makes.jpg
 background: /img/posts/bg-the-difference-hope-makes.jpg
-  - Romans 5:3-5
 ---
 In 1915, Sir Ernest Shackleton and his crew set out on what was supposed to be one of the greatest Antarctic expeditions in history. Instead, they found themselves trapped in ice hundreds of miles from civilization after their ship, *Endurance*, became frozen in place.
 

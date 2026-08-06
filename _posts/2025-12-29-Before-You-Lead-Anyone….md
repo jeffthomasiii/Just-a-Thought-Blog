@@ -17,12 +17,13 @@ tags:
   - surrender
   - abiding
   - obedience
+scripture:
+  - "Mark 10:42-45"
+  - "Luke 16:10"
+  - "John 15:4-5"
 excerpt: "Before God asks us to lead anyone else, He asks us to walk faithfully with Him."
 image: /img/posts/bg-lead-like-this-closing-reflection.jpg
 background: /img/posts/bg-lead-like-this-closing-reflection.jpg
-  - Mark 10:42-45
-  - Luke 16:10
-  - John 15:4-5
 series: "Lead Like This"
 series_order: 9
 ---

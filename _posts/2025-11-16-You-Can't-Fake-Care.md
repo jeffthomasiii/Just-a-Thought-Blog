@@ -16,10 +16,11 @@ tags:
   - emotional-intelligence
   - leadership
   - care
+scripture:
+  - "Romans 12:9"
 excerpt: "People can feel the truth beneath your tone. Real leadership begins where genuine care begins."
 image: /img/posts/you-cant-fake-care.jpg
 background: /img/posts/bg-you-cant-fake-care.jpg
-  - Romans 12:9
 series: "Character Before Competence"
 series_order: 1
 ---

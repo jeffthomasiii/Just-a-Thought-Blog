@@ -16,6 +16,7 @@ tags:
   - spiritual-discipline
   - attention
   - holiness
+scripture:
   - "2 Samuel 11:1–4"
   - "Hebrews 12:2"
   - "Matthew 6:22–23"

@@ -16,9 +16,10 @@ tags:
 - bitterness
 - healing
 - spiritual-growth
-- Hebrews 12:15 (ESV)
 image: /img/posts/the-poison-we-keep-drinking.jpg
 background: /img/posts/bg-the-poison-we-keep-drinking.jpg
+scripture:
+  - "Hebrews 12:15 (ESV)"
 excerpt: Bitterness promises justice but often delivers quiet harm. What we refuse to release slowly reshapes us.
 ---
 ### The Poison We Keep Drinking

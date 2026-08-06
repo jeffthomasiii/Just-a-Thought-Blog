@@ -15,10 +15,11 @@ tags:
   - vulnerability
   - acceptance
   - gods-love
+scripture:
+  - "Psalm 139:1-4"
 excerpt: "The kind of love we’re looking for… already exists."
 image: /img/posts/bg-fully-known-fully-loved.jpg
 background: /img/posts/bg-fully-known-fully-loved.jpg
-  - Psalm 139:1-4
 series: "Known & Loved"
 series_order: 5
 ---

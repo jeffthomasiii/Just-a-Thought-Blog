@@ -16,10 +16,11 @@ tags:
   - service
   - first-aid
   - manhood
+scripture:
+  - "Proverbs 22:3"
 excerpt: "Medical, first aid, and communications basics won’t make headlines. But they can mean everything in a moment that matters."
 image: /img/posts/prepared-to-help.jpg
 background: /img/posts/bg-prepared-to-help.jpg
-  - Proverbs 22:3
 series: "10 Skills Every Man Should Have"
 series_order: 8
 ---

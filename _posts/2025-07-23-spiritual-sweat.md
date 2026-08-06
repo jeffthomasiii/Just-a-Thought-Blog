@@ -21,12 +21,13 @@ tags:
 - focus
 - distraction
 - "first-timothy"
+scripture:
+  - "1 Timothy 4:7"
+  - "Hebrews 12:1"
+  - "Philippians 3:14"
 excerpt: "Spiritual growth does not happen by accident. Like physical training, it requires focus, discipline, endurance, and a willingness to remove what distracts us."
 image: "/img/posts/spiritual-sweat.jpg"
 background: "/img/posts/spiritual-sweat.jpg"
-- "1 Timothy 4:7"
-- "Hebrews 12:1"
-- "Philippians 3:14"
 ---
 The sun hadn’t risen yet, but he was already drenched in sweat.  
 Breath visible in the morning chill. Laces double-knotted.  

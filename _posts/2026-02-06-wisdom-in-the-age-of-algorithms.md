@@ -16,10 +16,11 @@ tags:
 - ministry
 - wisdom
 - discernment
+scripture:
+  - "2 Timothy 2:15"
 excerpt: AI can offer speed and support, but it can never replace the spiritual responsibility of rightly dividing the word of truth.
 image: /img/posts/wisdom-in-the-age-of-algorithms.jpg
 background: /img/posts/bg-wisdom-in-the-age-of-algorithms.jpg
-- 2 Timothy 2:15
 series: Faith, Wisdom, and the Machine
 series_order: 1
 ---

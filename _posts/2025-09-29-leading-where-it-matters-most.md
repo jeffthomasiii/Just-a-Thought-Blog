@@ -17,16 +17,17 @@ tags:
 - integrity
 - humility
 - accountability
-- 1 Timothy 3:4–5
-- Proverbs 29:18
-- Joshua 24:15
-- Proverbs 20:7
-- Ephesians 5:25
-- Joshua 1:9
-- James 1:19
-- Hebrews 13:17
 image: /img/posts/leading-where-it-matters-most.jpg
 background: /img/posts/bg-leading-where-it-matters-most.jpg
+scripture:
+  - "1 Timothy 3:4–5"
+  - "Proverbs 29:18"
+  - "Joshua 24:15"
+  - "Proverbs 20:7"
+  - "Ephesians 5:25"
+  - "Joshua 1:9"
+  - "James 1:19"
+  - "Hebrews 13:17"
 excerpt: If we’d never tolerate working under a bad boss, why do we sometimes expect our wives to endure that same kind of leadership at home?
 ---
 > if your wife had the freedom to “quit” following your leadership, would she?

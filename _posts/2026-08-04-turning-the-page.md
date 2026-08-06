@@ -18,13 +18,14 @@ tags:
   - obedience
   - discipleship
   - spiritual-growth
+scripture:
+  - "Hebrews 10:19-25"
+  - "Hebrews 11:1-12:2"
+  - "James 1:2-27"
+  - "James 2:14-26"
 excerpt: "I finished Hebrews and turned the page to James. What felt like an ordinary transition became a reminder that Scripture often speaks across its pages."
 image: /img/posts/turning-the-page.jpg
 background: /img/posts/bg-turning-the-page.jpg
-  - Hebrews 10:19-25
-  - Hebrews 11:1-12:2
-  - James 1:2-27
-  - James 2:14-26
 ---
 This morning, I finished reading Hebrews and opened the book of James. I have been reading through the New Testament each day, so there was nothing unusual about the moment. Hebrews ended, James came next, and I turned the page. Before I began reading, though, a simple thought crossed my mind: what a fitting transition.
 

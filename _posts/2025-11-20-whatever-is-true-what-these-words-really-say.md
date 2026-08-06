@@ -14,10 +14,11 @@ tags:
   - word-study
   - spiritual-formation
   - christian-thinking
+scripture:
+  - "Philippians 4:8"
 excerpt: "Eight Greek words. Eight invitations. Eight ways of aligning your mind with the character of Christ."
 image: /img/posts/philippians-word-study.jpg
 background: /img/posts/bg-philippians-word-study.jpg
-  - Philippians 4:8
 series: "The Practice of Holy Thinking"
 series_order: 2
 ---

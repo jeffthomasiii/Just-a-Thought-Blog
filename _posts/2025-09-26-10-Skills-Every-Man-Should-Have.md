@@ -18,10 +18,11 @@ tags:
 - mentorship
 series: 10 Skills Every Man Should Have
 series_order: 1
-- Proverbs 16:32
-- 2 Timothy 2:2
 image: /img/posts/10-skills-every-man.jpg
 background: /img/posts/bg-10-skills-every-man.jpg
+scripture:
+  - "Proverbs 16:32"
+  - "2 Timothy 2:2"
 excerpt: These aren’t flashy skills. They’re foundational meant to shape men into steady, dependable leaders who never stop growing.
 ---
 Back in 2022, I posted a simple list on Instagram and Facebook called *10 Skills Every Man Should Have and Continue to Develop.* It wasn’t a grand essay, just a list. But it resonated.  

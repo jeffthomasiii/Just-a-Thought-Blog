@@ -16,11 +16,12 @@ tags:
   - endurance
   - stewardship
   - manhood
+scripture:
+  - "1 Corinthians 9:27"
+  - "1 Timothy 4:8"
 excerpt: "True strength is measured not by how much weight you can lift, but by how much you can carry for the good of others."
 image: /img/posts/strong-enough-to-serve.jpg
 background: /img/posts/bg-strong-enough-to-serve.jpg
-  - 1 Corinthians 9:27
-  - 1 Timothy 4:8
 series: "10 Skills Every Man Should Have"
 series_order: 5
 ---

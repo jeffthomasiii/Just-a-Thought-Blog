@@ -17,12 +17,13 @@ tags:
   - obedience
   - spiritual-formation
   - influence
+scripture:
+  - "Philippians 2:3"
+  - "Micah 6:8"
+  - "James 4:6"
 excerpt: "Humility is not hiding. It is the courage to show up with a surrendered heart and a steady posture."
 image: /img/posts/bg-lead-like-this-humble-not-hidden.jpg
 background: /img/posts/bg-lead-like-this-humble-not-hidden.jpg
-  - Philippians 2:3
-  - Micah 6:8
-  - James 4:6
 series: "Lead Like This"
 series_order: 3
 ---

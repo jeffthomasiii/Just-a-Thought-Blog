@@ -17,7 +17,7 @@ tags:
 - courage
 - spiritual-formation
 image: /img/posts/default-og.jpg
-background: /img/posts/bg-post.jpg
+background: /img/bg-post.jpg
 excerpt: What if imposter syndrome isn’t evidence that you don’t belong, but a sign that you’re standing somewhere new?
 ---
 There’s a particular kind of discomfort that shows up when responsibility arrives before confidence feels settled.  

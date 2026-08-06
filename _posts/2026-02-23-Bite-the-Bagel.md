@@ -16,11 +16,12 @@ tags:
 - self-awareness
 - wisdom
 - communication
+scripture:
+  - "James 1:19"
+  - "Proverbs 16:32"
 excerpt: Sometimes the most mature response is not immediate. What if the key is learning to pause?
 image: /img/posts/bite-the-bagel.jpg
 background: /img/posts/bg-bite-the-bagel.jpg
-- James 1:19
-- Proverbs 16:32
 ---
 Sometimes the most damaging words are not planned.  
 

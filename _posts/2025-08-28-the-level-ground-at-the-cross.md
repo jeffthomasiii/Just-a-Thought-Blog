@@ -17,6 +17,7 @@ tags:
   - favoritism
   - cultural-identity
   - church
+scripture:
   - "Romans 2:11"
   - "James 2:1"
   - "Galatians 3:28"

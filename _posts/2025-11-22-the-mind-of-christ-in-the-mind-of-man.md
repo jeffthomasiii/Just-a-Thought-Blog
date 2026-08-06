@@ -14,14 +14,15 @@ tags:
   - spiritual-formation
   - mind-of-christ
   - surrender
+scripture:
+  - "Philippians 4:8"
+  - "Philippians 2:5"
+  - "1 Corinthians 2:16"
+  - "Romans 12:2"
+  - "2 Corinthians 10:5"
 excerpt: "The Christian mind isn’t achieved through effort—it’s received through surrender and shaped by the Spirit."
 image: /img/posts/mind-of-christ.jpg
 background: /img/posts/bg-mind-of-christ.jpg
-  - Philippians 4:8
-  - Philippians 2:5
-  - 1 Corinthians 2:16
-  - Romans 12:2
-  - 2 Corinthians 10:5
 series: "The Practice of Holy Thinking"
 series_order: 3
 ---

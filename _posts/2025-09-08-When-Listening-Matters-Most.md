@@ -17,9 +17,10 @@ tags:
 - biblical-marriage
 - love
 - servant-leadership
-- James 1:19
 image: /img/posts/when-listening-matters-most.jpg
 background: /img/posts/bg-when-listening-matters-most.jpg
+scripture:
+  - "James 1:19"
 excerpt: If executives must listen to lead well, how much more must husbands listen to love well?
 ---
 In his book *Disciplines of a Godly Man*, R. Kent Hughes notes that the **Harvard Business Review recommends an effective executive should spend 65 percent of his time listening**. That number stopped me in my tracks. Hughes’ point was simple but piercing: *if that much listening is essential in the boardroom, how much more so in marriage?*  

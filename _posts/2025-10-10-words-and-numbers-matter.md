@@ -16,10 +16,11 @@ tags:
   - responsibility
   - manhood
   - practical-skills
+scripture:
+  - "Proverbs 4:7"
 excerpt: "Words and numbers may not feel heroic, but they quietly shape the way a man leads and provides."
 image: /img/posts/words-and-numbers-matter.jpg
 background: /img/posts/bg-words-and-numbers-matter.jpg
-  - Proverbs 4:7
 series: "10 Skills Every Man Should Have"
 series_order: 3
 ---

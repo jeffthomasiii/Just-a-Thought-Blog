@@ -15,10 +15,11 @@ tags:
   - culture
   - discipleship
   - christian-thinking
+scripture:
+  - "Philippians 4:8"
 excerpt: "Christian thinking slows the spiral, interrupts the noise, and reorients the heart toward Christ."
 image: /img/thinking-christianly.jpg
 background: /img/bg-thinking-christianly.jpg
-  - Philippians 4:8
 series: "The Practice of Holy Thinking"
 series_order: 4
 ---

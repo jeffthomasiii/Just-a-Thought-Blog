@@ -21,13 +21,14 @@ tags:
 - temptation
 - integrity
 - "emotional-support"
+scripture:
+  - "Psalm 23:1"
+  - "Romans 8:1"
+  - "1 Corinthians 10:13"
+  - "Ecclesiastes 4:9-10"
 excerpt: "Your husband may never ask for prayer, but that doesn’t mean he doesn’t need it. Here’s how to intercede for him and speak truth into the battles he faces in silence."
 image: "/img/posts/speak-life-over-him.jpg"
 background: "/img/posts/speak-life-over-him.jpg"
-- "Psalm 23:1"
-- "Romans 8:1"
-- "1 Corinthians 10:13"
-- "Ecclesiastes 4:9-10"
 series: Speak Life Over Them
 series_order: 3
 ---

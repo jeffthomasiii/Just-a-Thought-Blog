@@ -17,10 +17,11 @@ tags:
   - grace
   - assumptions
   - husband-and-wife
+scripture:
+  - "1 Corinthians 13:7"
 excerpt: "What looked like leftovers to one person looked like something shared to another, and that difference revealed something important about relationships."
 image: /img/posts/the-stories-we-tell-ourselves.jpg
 background: /img/posts/bg-the-stories-we-tell-ourselves.jpg
-  - 1 Corinthians 13:7
 contributors:
   - Samatra Thomas
 ---

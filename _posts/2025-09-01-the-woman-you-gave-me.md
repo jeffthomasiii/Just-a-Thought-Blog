@@ -17,10 +17,11 @@ tags:
 - husbands
 - servant-leadership
 - accountability
-- Genesis 3:12
-- Ephesians 5:25
 image: /img/posts/bg-the-woman-you-gave-me.jpg
 background: /img/posts/bg-the-woman-you-gave-me.jpg
+scripture:
+  - "Genesis 3:12"
+  - "Ephesians 5:25"
 excerpt: Adam deflected blame. Christ embraced responsibility. What does that mean for husbands today?
 ---
 #### The Oldest Excuse in the Book

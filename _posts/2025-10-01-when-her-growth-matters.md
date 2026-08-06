@@ -16,10 +16,11 @@ tags:
   - spiritual-growth
   - pride
   - biblical-marriage
+scripture:
+  - "1 Corinthians 3:6"
 excerpt: "It’s easy to want the credit when your spouse finally “gets it.” But as Paul reminds us, 'I planted, Apollos watered, but God gave the growth.' The win isn’t being right; it’s growing together in truth."
 image: /img/posts/when-her-growth-matters.jpg
 background: /img/posts/bg-when-her-growth-matters.jpg
-  - 1 Corinthians 3:6
 ---
 > ...what matters isn’t who said it first, it’s that the truth took root.
 

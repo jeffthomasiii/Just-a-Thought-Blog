@@ -15,11 +15,12 @@ tags:
 - discipleship
 - integrity
 - worship
+scripture:
+  - "Matthew 26-27"
+  - "John 12:1-8"
 excerpt: Judas’s story is not about ignorance or impulse, but about proximity without surrender, and what happens when faith is quietly measured instead of lived.
 image: /img/posts/dysangelion-of-judas.jpg
 background: /img/posts/bg-dysangelion-of-judas.jpg
-- Matthew 26-27
-- John 12:1-8
 ---
 The word *gospel* means good news.  
 It announces rescue, forgiveness, life, and restoration in Jesus Christ.

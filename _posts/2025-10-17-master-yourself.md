@@ -16,11 +16,12 @@ tags:
   - leadership
   - emotional-maturity
   - manhood
+scripture:
+  - "Proverbs 16:32"
+  - "Galatians 5:22-23"
 excerpt: "A man who cannot master his emotions will eventually be mastered by them."
 image: /img/posts/master-yourself.jpg
 background: /img/posts/bg-master-yourself.jpg
-  - Proverbs 16:32
-  - Galatians 5:22-23
 series: "10 Skills Every Man Should Have"
 series_order: 4
 ---

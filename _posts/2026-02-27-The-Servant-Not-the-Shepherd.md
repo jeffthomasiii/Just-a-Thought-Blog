@@ -16,10 +16,11 @@ tags:
 - servant-leadership
 - trust
 - spiritual-discernment
+scripture:
+  - "Psalm 23:1"
 excerpt: AI can carry buckets, but it can’t choose the well. It’s a tool, not a shepherd.
 image: /img/posts/header-the-servant-not-the-shepherd.jpg
 background: /img/posts/bg-the-servant-not-the-shepherd.jpg
-- Psalm 23:1
 series: Faith, Wisdom, and the Machine
 series_order: 4
 ---

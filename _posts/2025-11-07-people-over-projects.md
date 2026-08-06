@@ -16,10 +16,11 @@ tags:
   - humility
   - leadership
   - communication
+scripture:
+  - "Ephesians 4:2–3"
 excerpt: "A man who prioritizes people over projects communicates something profound: 'You matter more than what I can get done.'"
 image: /img/posts/people-over-projects.jpg
 background: /img/posts/bg-people-over-projects.jpg
-  - Ephesians 4:2–3
 series: "10 Skills Every Man Should Have"
 series_order: 7
 ---

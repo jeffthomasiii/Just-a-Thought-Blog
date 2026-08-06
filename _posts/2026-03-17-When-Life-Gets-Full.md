@@ -16,11 +16,12 @@ tags:
   - priorities
   - margin
   - endurance
+scripture:
+  - "Mark 6:31 ESV"
+  - "Ecclesiastes 3:1 ESV"
 excerpt: "Life got full fast. This is a quick pause to reflect on structure, discipline, and why rest isn’t optional."
 image: /img/posts/when-life-gets-full.jpg
 background: /img/posts/bg-when-life-gets-full.jpg
-  - Mark 6:31 ESV
-  - Ecclesiastes 3:1 ESV
 ---
 Life didn’t gradually get busy… it just kind of stacked.
 

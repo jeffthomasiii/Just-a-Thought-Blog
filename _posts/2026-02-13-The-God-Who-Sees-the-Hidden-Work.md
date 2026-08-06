@@ -16,10 +16,11 @@ tags:
 - ministry
 - faithfulness
 - hidden-work
+scripture:
+  - "Matthew 6:4"
 excerpt: AI can analyze results, but only God sees the motives. Not all faithfulness comes with feedback.
 image: /img/posts/header-the-god-who-sees-the-hidden-work.jpg
 background: /img/posts/bg-the-god-who-sees-the-hidden-work.jpg
-- Matthew 6:4
 series: Faith, Wisdom, and the Machine
 series_order: 2
 ---

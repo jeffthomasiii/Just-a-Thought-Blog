@@ -17,12 +17,13 @@ tags:
   - obedience
   - stewardship
   - influence
+scripture:
+  - "Luke 16:10"
+  - "1 Samuel 16:7"
+  - "Matthew 25:21"
 excerpt: "God does not entrust influence to those chasing visibility, but to those shaped by faithfulness."
 image: /img/posts/bg-lead-like-this-leader-god-trusts.jpg
 background: /img/posts/bg-lead-like-this-leader-god-trusts.jpg
-  - Luke 16:10
-  - 1 Samuel 16:7
-  - Matthew 25:21
 series: "Lead Like This"
 series_order: 8
 ---

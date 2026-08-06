@@ -17,6 +17,7 @@ tags:
   - heroes-and-villains
   - self-righteousness
   - gospel
+scripture:
   - "Romans 3:10–12"
   - "Romans 3:23"
   - "Isaiah 64:6"

@@ -18,14 +18,15 @@ tags:
   - christian-living
   - dying-to-self
   - spiritual-warfare
+scripture:
+  - "Genesis 4:6-7"
+  - "Luke 9:23"
+  - "Philippians 2:3-8"
+  - "James 4:6"
+  - "1 Peter 5:5-6"
 excerpt: "Pride is not always an enemy approaching from the outside. Often, the most difficult spiritual battle is already taking place within us."
 image: /img/posts/the-war-within.jpg
 background: /img/posts/bg-the-war-within.jpg
-  - Genesis 4:6-7
-  - Luke 9:23
-  - Philippians 2:3-8
-  - James 4:6
-  - 1 Peter 5:5-6
 series: "The Daily Death of Pride"
 series_order: 1
 ---

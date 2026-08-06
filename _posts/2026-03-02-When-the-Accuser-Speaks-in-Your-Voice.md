@@ -16,12 +16,13 @@ tags:
   - spiritual-maturity
   - conviction
   - condemnation
+scripture:
+  - "Revelation 12:10"
+  - "Romans 8:1"
+  - "2 Corinthians 10:5"
 excerpt: "What if spiritual maturity begins with refusing to agree with a voice God never gave you?"
 image: /img/posts/when-the-accuser-speaks.jpg
 background: /img/posts/bg-when-the-accuser-speaks-hero.jpg
-  - Revelation 12:10
-  - Romans 8:1
-  - 2 Corinthians 10:5
 ---
 Have you ever noticed how cruel your inner voice can be?
 

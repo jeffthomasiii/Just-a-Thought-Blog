@@ -17,12 +17,13 @@ tags:
   - spiritual-formation
   - influence
   - obedience
+scripture:
+  - "Mark 10:42-45"
+  - "Proverbs 4:23"
+  - "1 Timothy 4:12"
 excerpt: "Before we talk about leading anyone else, we have to talk about who we are becoming under God’s hand."
 image: /img/posts/lead-like-this-intro.jpg
 background: /img/posts/bg-lead-like-this-intro.jpg
-  - Mark 10:42-45
-  - Proverbs 4:23
-  - 1 Timothy 4:12
 series: "Lead Like This"
 series_order: 1
 ---

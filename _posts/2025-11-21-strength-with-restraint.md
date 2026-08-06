@@ -16,10 +16,11 @@ tags:
   - self-defense
   - self-control
   - manhood
+scripture:
+  - "Proverbs 25:28"
 excerpt: "The true test of strength isn’t in how much force you can unleash, but in how much wisdom you show when you don’t."
 image: /img/posts/strength-with-restraint.jpg
 background: /img/posts/bg-strength-with-restraint.jpg
-  - Proverbs 25:28
 series: "10 Skills Every Man Should Have"
 series_order: 9
 ---

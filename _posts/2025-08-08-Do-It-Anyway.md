@@ -17,6 +17,7 @@ tags:
   - grace
   - boundaries
   - relationships
+scripture:
   - "Romans 12:21"
   - "Galatians 6:9"
 excerpt: "When someone mistreats you, it is easy to pull back or match their energy. But their behavior does not have to determine who you become."

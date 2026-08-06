@@ -15,10 +15,11 @@ tags:
   - biblical-context
   - christian-thinking
   - spiritual-formation
+scripture:
+  - "Philippians 4:8"
 excerpt: "Understanding Paul’s imprisonment and Roman culture changes how we hear his words in Philippians 4:8."
 image: /img/posts/paul-context.jpg
 background: /img/posts/bg-paul-context.jpg
-  - Philippians 4:8
 series: "The Practice of Holy Thinking"
 series_order: 1
 ---

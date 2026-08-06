@@ -21,13 +21,14 @@ tags:
 - anxiety
 - "emotional-support"
 - "spiritual-leadership"
+scripture:
+  - "Proverbs 31:25"
+  - "Isaiah 26:3"
+  - "Matthew 11:28"
+  - "Ephesians 5:25"
 excerpt: "When your wife is weary, anxious, or questioning her worth, you have the opportunity to speak life and truth over her. Here's how to pray for her and affirm who God says she is."
 image: "/img/posts/speak-life-over-her.jpg"
 background: "/img/posts/speak-life-over-her.jpg"
-- "Proverbs 31:25"
-- "Isaiah 26:3"
-- "Matthew 11:28"
-- "Ephesians 5:25"
 series: Speak Life Over Them
 series_order: 2
 ---

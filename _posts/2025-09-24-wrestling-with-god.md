@@ -15,9 +15,10 @@ tags:
 - blessing
 - spiritual-formation
 - surrender
-- Genesis 32:22–32
 image: /img/posts/wrestling-with-god.jpg
 background: /img/posts/bg-wrestling-with-god.jpg
+scripture:
+  - "Genesis 32:22–32"
 excerpt: What does it truly mean to wrestle with God? Jacob’s limp leaves us wondering whether the mark of the struggle is a wound, or a blessing.
 ---
 What does it mean to wrestle with God?  

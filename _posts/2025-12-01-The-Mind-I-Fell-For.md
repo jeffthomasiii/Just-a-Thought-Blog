@@ -18,10 +18,11 @@ tags:
   - communication
   - marital-growth
   - spiritual-growth
+scripture:
+  - "Proverbs 27:17"
 excerpt: "One of the most fascinating, funny, and challenging things I love most about my wife is her mind, the way she sees the world, questions what others take for granted, and filters everything through both heart and reason."
 image: /img/posts/the-mind-i-fell-for.jpg
 background: /img/posts/bg-the-mind-i-fell-for.jpg
-  - Proverbs 27:17
 ---
 There are two phrases my wife says that always make me stop mid-thought:  
 > “I feel like…”  

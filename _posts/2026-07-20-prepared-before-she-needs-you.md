@@ -19,12 +19,13 @@ tags:
   - listening
   - humility
   - christian-living
+scripture:
+  - "1 Peter 3:7"
+  - "Romans 8:26"
+  - "Ephesians 6:18"
 excerpt: "A husband cannot wait until the hard conversation begins to become spiritually prepared. The quiet time he spends with God shapes the man his wife encounters when she needs him most."
 image: /img/posts/prepared-before-she-needs-you.jpg
 background: /img/posts/bg-prepared-before-she-needs-you.jpg
-  - 1 Peter 3:7
-  - Romans 8:26
-  - Ephesians 6:18
 ---
 As husbands, we tend to understand preparation in practical terms. We think about whether the bills are paid, whether the family is protected, whether the car is maintained, and whether we have a plan if something goes wrong. We think about insurance, savings, emergencies, repairs, and the responsibilities that come with caring for a household. Those things matter. A husband should take seriously the practical needs of his family. But I have been thinking about another kind of preparation, one that is much easier to overlook because no one sees it until the moment we need it.
 

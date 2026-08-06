@@ -16,10 +16,11 @@ tags:
   - legacy
   - wisdom
   - manhood
+scripture:
+  - "2 Timothy 2:2"
 excerpt: "The legacy of mentorship is this: keep learning, keep teaching. Be humble enough to stay a student, and generous enough to be a teacher."
 image: /img/posts/legacy-of-mentorship.jpg
 background: /img/posts/bg-legacy-of-mentorship.jpg
-  - 2 Timothy 2:2
 series: "10 Skills Every Man Should Have"
 series_order: 10
 ---

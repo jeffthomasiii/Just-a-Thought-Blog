@@ -14,11 +14,12 @@ tags:
   - spiritual-discipline
   - thought-life
   - christian-thinking
+scripture:
+  - "Philippians 4:8"
+  - "2 Corinthians 10:5"
 excerpt: "The Christian mind is not formed by accidentit is trained through small, faithful returns to Christ."
 image: /img/posts/training-the-mind.jpg
 background: /img/posts/bg-training-the-mind.jpg
-  - Philippians 4:8
-  - 2 Corinthians 10:5
 series: "The Practice of Holy Thinking"
 series_order: 5
 ---

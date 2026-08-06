@@ -17,6 +17,7 @@ tags:
   - unity
   - communication
   - spiritual-practices
+scripture:
   - "Matthew 18:19"
   - "1 Peter 3:7"
 excerpt: "Praying aloud with your spouse may feel awkward at first, but it can help bring two hearts back into harmony with God and one another."

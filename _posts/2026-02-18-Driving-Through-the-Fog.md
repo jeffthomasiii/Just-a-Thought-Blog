@@ -15,10 +15,11 @@ tags:
 - stress
 - trust
 - perseverance
+scripture:
+  - "Psalm 119:105"
 excerpt: Sometimes life feels like driving through thick fog. You can’t see far, but maybe you can see enough.
 image: /img/posts/driving-through-the-fog.jpg
 background: /img/posts/bg-driving-through-the-fog.jpg
-- Psalm 119:105
 ---
 It was the kind of fog that makes you slow down instinctively.
 

@@ -18,6 +18,7 @@ tags:
   - leadership
   - humility
   - audience-awareness
+scripture:
   - "1 Corinthians 2:1–5"
 excerpt: "Big words may sound impressive, but clarity is what helps people receive and remember the message."
 image: /img/posts/bg-say-it-so-they-hear-you.jpg

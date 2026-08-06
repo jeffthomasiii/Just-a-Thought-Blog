@@ -17,11 +17,12 @@ tags:
   - surrender
   - trust
   - influence
+scripture:
+  - "Mark 10:43"
+  - "Philippians 2:3-7"
 excerpt: "Leadership never begins with control. It begins with a servant heart that trusts God with the outcomes."
 image: /img/posts/bg-lead-like-this-serve-not-control.jpg
 background: /img/posts/bg-lead-like-this-serve-not-control.jpg
-  - Mark 10:43
-  - Philippians 2:3-7
 series: "Lead Like This"
 series_order: 2
 ---

@@ -16,6 +16,7 @@ tags:
   - comfort-zone
   - calling
   - faith
+scripture:
   - "Matthew 14:29"
   - "Joshua 3:15"
   - "Hebrews 11:8"

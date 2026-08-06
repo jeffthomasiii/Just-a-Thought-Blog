@@ -16,9 +16,10 @@ tags:
 - spiritual-growth
 - neuroscience
 - discernment
-- Proverbs 4:23
 image: /img/posts/when-your-heart-talks-back.jpg
 background: /img/posts/bg-when-your-heart-talks-back.jpg
+scripture:
+  - "Proverbs 4:23"
 excerpt: Proverbs 4:23 tells us to guard our hearts because everything we do flows from them. Science now shows that the heart's influence on our lives is more than symbolic, it's built into the way God designed us.
 ---
 If your heart could talk to your brain, what would it say?  

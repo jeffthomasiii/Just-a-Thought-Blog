@@ -17,9 +17,10 @@ tags:
 - bim
 - faithfulness
 - continuous-improvement
-- Philippians 1:6
 image: /img/posts/bg-progress-not-perfection.jpg
 background: /img/posts/bg-progress-not-perfection.jpg
+scripture:
+  - "Philippians 1:6"
 excerpt: Perfection is Christ’s role. Progress is ours. And grace is what bridges the space between.
 ---
 If you’ve ever tried to set a standard that everyone was supposed to follow, you know the tension. You build something you believe will help, only to watch it resisted, ignored, or changed. It can feel like running on a treadmill, working hard but not getting anywhere.  

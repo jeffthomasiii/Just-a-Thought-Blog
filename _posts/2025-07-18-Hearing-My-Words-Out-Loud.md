@@ -23,7 +23,6 @@ tags:
 excerpt: "What if your blog could talk back? I used NotebookLM to turn three of my posts into podcast-style episodes, and hearing them out loud changed the way I think about writing, reflection, and how our words are received."
 image: "/img/posts/bg-hearing-my-words-out-loud.png"
 background: "/img/posts/bg-hearing-my-words-out-loud.png"
-scripture: []
 ---
 I recently heard one of my blog posts read back to me, not by a friend, not by a narrator, but by two AI hosts having a conversation *about* it.
 

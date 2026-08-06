@@ -17,12 +17,13 @@ tags:
   - ambition
   - surrender
   - spiritual-formation
+scripture:
+  - "Proverbs 29:18"
+  - "Habakkuk 2:2-3"
+  - "Acts 20:22-24"
 excerpt: "Ideas rise and fall, but vision born from God endures seasons, pressure, and time."
 image: /img/posts/bg-lead-like-this-vision-that-lasts.jpg
 background: /img/posts/bg-lead-like-this-vision-that-lasts.jpg
-  - Proverbs 29:18
-  - Habakkuk 2:2-3
-  - Acts 20:22-24
 series: "Lead Like This"
 series_order: 6
 ---

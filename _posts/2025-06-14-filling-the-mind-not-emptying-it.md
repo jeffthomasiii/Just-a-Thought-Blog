@@ -17,16 +17,17 @@ tags:
   - peace
   - wisdom
   - psalm-119
+scripture:
+  - "Psalm 119:15"
+  - "Psalm 1"
+  - "Joshua 1:8"
+  - "Romans 12:2"
+  - "Isaiah 26:3"
+  - "Psalm 119:99"
+  - "Psalm 63:6"
 excerpt: "Biblical meditation isn't about emptying your mind—it's about filling it with God's truth. Learn how Scripture defines meditation and how it transforms the heart."
 image: /img/posts/biblical-meditation.jpg
 background: /img/posts/biblical-meditation.jpg
-  - Psalm 119:15
-  - Psalm 1
-  - Joshua 1:8
-  - Romans 12:2
-  - Isaiah 26:3
-  - Psalm 119:99
-  - Psalm 63:6
 ---
 Have you ever caught yourself replaying a worry on loop, like a mental broken record? Or maybe a conversation from earlier in the day keeps circling your mind? Whether we realize it or not, we’re always meditating on something.
 

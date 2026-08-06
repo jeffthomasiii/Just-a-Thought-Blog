@@ -16,10 +16,11 @@ tags:
 - obedience
 - servant-leadership
 - spiritual-formation
+scripture:
+  - "John 21:17"
 excerpt: We’re called to tend sheep, not systems. The danger isn’t using tools, it’s when the tools start using us.
 image: /img/posts/header-the-quiet-replacement.jpg
 background: /img/posts/bg-the-quiet-replacement.jpg
-- John 21:17
 series: Faith, Wisdom, and the Machine
 series_order: 3
 ---

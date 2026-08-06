@@ -17,6 +17,7 @@ tags:
   - gottman-method
   - healing
   - humility
+scripture:
   - "Proverbs 15:1"
   - "Galatians 6:1"
   - "Romans 12:10"

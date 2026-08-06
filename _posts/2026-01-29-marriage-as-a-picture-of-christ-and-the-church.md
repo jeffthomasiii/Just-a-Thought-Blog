@@ -16,9 +16,10 @@ tags:
 - covenant
 - christ-and-the-church
 - sacrificial-love
-- Ephesians 5:25–27
 image: /img/posts/marriage-christ-church.jpg
 background: /img/posts/bg-marriage-christ-church.jpg
+scripture:
+  - "Ephesians 5:25–27"
 excerpt: Marriage is invited to be more than a relationship to maintain, it can become a quiet witness to the self-giving love of Christ.
 ---
 There are seasons in marriage where you start asking quieter questions.

@@ -17,6 +17,7 @@ tags:
   - vindication
   - identity-in-christ
   - self-control
+scripture:
   - "Psalm 119:23"
   - "Psalm 138:8"
   - "Romans 12:21"

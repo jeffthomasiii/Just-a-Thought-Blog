@@ -17,12 +17,13 @@ tags:
   - stewardship
   - leadership-development
   - spiritual-formation
+scripture:
+  - "Psalm 46:10"
+  - "Exodus 18:17-23"
+  - "Matthew 25:14-30"
 excerpt: "Letting go is not the absence of strength. It is strength disciplined by trust and surrender."
 image: /img/posts/bg-lead-like-this-letting-go.jpg
 background: /img/posts/bg-lead-like-this-letting-go.jpg
-  - Psalm 46:10
-  - Exodus 18:17-23
-  - Matthew 25:14-30
 series: "Lead Like This"
 series_order: 7
 ---

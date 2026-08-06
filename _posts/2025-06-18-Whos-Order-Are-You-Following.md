@@ -20,18 +20,19 @@ tags:
   - christian-living
   - work-life-balance
   - relational-order
+scripture:
+  - "Matthew 6:33"
+  - "Genesis 2:24"
+  - "Ephesians 6:4"
+  - "Exodus 20:12"
+  - "Proverbs 17:17"
+  - "Colossians 3:23"
+  - "Galatians 6:10"
+  - "Matthew 28:19"
+  - "Hebrews 13:2"
 excerpt: "When our priorities are out of order, even good things can become distractions from God’s best. What if real peace begins by realigning with God’s original design?"
 image: /img/posts/whose-order-are-you-following.jpg
 background: /img/posts/whose-order-are-you-following.jpg
-  - Matthew 6:33
-  - Genesis 2:24
-  - Ephesians 6:4
-  - Exodus 20:12
-  - Proverbs 17:17
-  - Colossians 3:23
-  - Galatians 6:10
-  - Matthew 28:19
-  - Hebrews 13:2
 ---
 We live in a world where “good people” will drop everything for a friend, stay late at work without hesitation, and serve at church every Sunday, but haven’t had an uninterrupted dinner with their spouse or children in months. 
 

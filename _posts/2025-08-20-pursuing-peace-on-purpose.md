@@ -17,6 +17,7 @@ tags:
   - trust
   - rest
   - attention
+scripture:
   - "Isaiah 26:3"
 excerpt: "Peace is not always found by accident. Sometimes it is protected by deliberately returning our focus to the One who holds us steady."
 image: /img/posts/bg-pursuing-peace-on-purpose.jpg

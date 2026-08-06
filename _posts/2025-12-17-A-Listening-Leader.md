@@ -17,12 +17,13 @@ tags:
   - empathy
   - communication
   - servant-leadership
+scripture:
+  - "James 1:19"
+  - "Proverbs 18:13"
+  - "John 10:27"
 excerpt: "Listening is more than hearing words. It is paying attention to the heart behind them and creating space for wisdom to rise."
 image: /img/posts/bg-lead-like-this-listening-leader.jpg
 background: /img/posts/bg-lead-like-this-listening-leader.jpg
-  - James 1:19
-  - Proverbs 18:13
-  - John 10:27
 series: "Lead Like This"
 series_order: 4
 ---

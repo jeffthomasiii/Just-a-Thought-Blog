@@ -19,11 +19,12 @@ tags:
   - gentleness
   - covenant
   - christian-living
+scripture:
+  - "1 Peter 3:7"
+  - "Ephesians 5:25-28"
 excerpt: "Peter does not use “weaker vessel” to lower a wife’s worth. He uses it to raise a husband’s responsibility."
 image: /img/posts/the-honored-vessel.jpg
 background: /img/posts/bg-the-honored-vessel.jpg
-  - 1 Peter 3:7
-  - Ephesians 5:25-28
 ---
 There are some Bible phrases that make people tense up before the conversation even begins. *“Weaker vessel”* is one of them. For some, it sounds like Scripture is calling women inferior, and for others, it has been used to justify the very kind of harshness Peter seems to be warning husbands against.
 

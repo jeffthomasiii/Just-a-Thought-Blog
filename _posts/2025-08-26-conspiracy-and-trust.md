@@ -17,6 +17,7 @@ tags:
   - isaiah
   - reverence
   - cultural-discernment
+scripture:
   - "Isaiah 8:12"
   - "1 Peter 3:15"
 excerpt: "Isaiah 8:12 calls us not to fear what others fear or chase every rumor, but to anchor our hearts in reverence for God."

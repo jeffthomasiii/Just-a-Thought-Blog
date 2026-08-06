@@ -15,11 +15,12 @@ tags:
   - humility
   - perseverance
   - spiritual-growth
+scripture:
+  - "James 1:3"
+  - "Philippians 4:13"
 excerpt: "Not every win makes you stronger. Some victories only feed entitlement, while others deepen your confidence in God."
 image: /img/posts/real-victories.jpg
 background: /img/posts/bg-real-victories.jpg
-  - James 1:3
-  - Philippians 4:13
 ---
 > *“Empty victories teach entitlement; real victories teach confidence.”*
 

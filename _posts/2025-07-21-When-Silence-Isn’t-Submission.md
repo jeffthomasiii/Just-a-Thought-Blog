@@ -21,17 +21,18 @@ tags:
 - courage
 - "biblical-voice"
 - "public-witness"
+scripture:
+  - "Romans 13:1"
+  - "Acts 5:29"
+  - "Isaiah 1:17"
+  - "Jeremiah 22:3"
+  - "Proverbs 31:8-9"
+  - "1 Timothy 2:1-2"
+  - "Ephesians 4:15"
+  - "2 Timothy 2:25"
 excerpt: "Christians are often told to stay out of politics, but what if our silence is part of the problem? This post challenges our assumptions about authority, obedience, and the biblical call to speak up for truth and justice."
 image: "/img/posts/when-silence-isnt-submission.jpg"
 background: "/img/posts/when-silence-isnt-submission.jpg"
-- "Romans 13:1"
-- "Acts 5:29"
-- "Isaiah 1:17"
-- "Jeremiah 22:3"
-- "Proverbs 31:8-9"
-- "1 Timothy 2:1-2"
-- "Ephesians 4:15"
-- "2 Timothy 2:25"
 ---
 What if we’ve misunderstood what silence really says?
 

@@ -16,9 +16,10 @@ tags:
 - biblical-marriage
 - growth
 - outdoor-life
-- Ecclesiastes 3:1
 image: /img/posts/from-backyard-to-backroads.jpg
 background: /img/posts/bg-from-backyard-to-backroads.jpg
+scripture:
+  - "Ecclesiastes 3:1"
 excerpt: What began as a backyard campout grew into towing a trailer and monthly adventures. Along the way, we discovered lessons in risk, growth, and relationship.
 ---
 Our first camping trip wasn’t to a national park or even a state campground. It was in our own backyard. We didn’t check the weather app. We didn’t really make a packing list. Truthfully, we didn’t know what we didn’t know. We just dragged out a tent, talked way too long about what we’d eat, and gave it a shot. The luxury of being steps from our kitchen made the menu the biggest decision we worried about. Everything else? We figured we’d learn as we went.  

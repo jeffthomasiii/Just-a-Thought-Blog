@@ -19,11 +19,12 @@ tags:
 - "marriage-as-ministry"
 - "spiritual-formation"
 - "dying-to-self"
+scripture:
+  - "Ephesians 5:2"
+  - "Ephesians 5:21-33"
 excerpt: "Marriage is more than companionship or romance, it's a sacred reflection of Christ and the Church. What if every moment in marriage was seen as ministry?"
 image: "/img/posts/marriage-is-ministry.jpg"
 background: "/img/posts/marriage-is-ministry.jpg"
-- "Ephesians 5:2"
-- "Ephesians 5:21-33"
 ---
 ## Marriage IS Ministry
 

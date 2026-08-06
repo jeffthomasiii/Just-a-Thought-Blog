@@ -17,6 +17,7 @@ tags:
   - forgiveness
   - resentment
   - boundaries
+scripture:
   - "2 Corinthians 10:5"
 excerpt: "What we ignore can grow. Marriage requires the shared work of identifying and pulling the subtle weeds that threaten unity."
 image: /img/posts/bg-guarding-the-garden-of-your-marriage.png

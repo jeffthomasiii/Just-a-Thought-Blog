@@ -14,10 +14,11 @@ tags:
 - discipline
 - spiritual-growth
 - endurance
+scripture:
+  - "Hebrews 12:11"
 excerpt: What if the discomfort you want removed is the very thing shaping you? Hebrews 12:11 reframes pain as preparation.
 image: /img/posts/bg-the-paradox-of-pain.jpg
 background: /img/posts/bg-the-paradox-of-pain.jpg
-- Hebrews 12:11
 ---
 It’s still dark.
 

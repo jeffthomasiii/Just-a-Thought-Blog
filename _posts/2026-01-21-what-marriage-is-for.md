@@ -16,9 +16,10 @@ tags:
 - spiritual-formation
 - faithfulness
 - covenant
-- James 1:2–4
 image: /img/posts/marriage-what-its-for.jpg
 background: /img/posts/bg-marriage-what-its-for.jpg
+scripture:
+  - "James 1:2–4"
 excerpt: Marriage often exposes more than it resolves. What if that tension isn’t failure, but formation, God’s quiet work shaping us over time?
 ---
 Most of us enter marriage carrying a quiet hope that it will make life easier.  

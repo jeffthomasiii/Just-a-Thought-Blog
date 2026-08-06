@@ -16,10 +16,11 @@ tags:
   - character
   - spiritual-growth
   - manhood
+scripture:
+  - "Proverbs 1:5"
 excerpt: "Teachability isn’t weakness, it’s humility. A man who keeps learning will never stop growing."
 image: /img/posts/stay-teachable.jpg
 background: /img/posts/bg-stay-teachable.jpg
-  - Proverbs 1:5
 series: "10 Skills Every Man Should Have"
 series_order: 2
 ---

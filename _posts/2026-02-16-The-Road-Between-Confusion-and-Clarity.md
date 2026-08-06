@@ -15,11 +15,12 @@ tags:
 - spiritual-growth
 - humility
 - grace
+scripture:
+  - "Mark 8:29"
+  - "Luke 24:45"
 excerpt: The disciples walked a road from confusion to clarity. Maybe we are still on that road too.
 image: /img/posts/the-road-between-confusion-and-clarity.jpg
 background: /img/posts/bg-the-road-between-confusion-and-clarity.jpg
-- Mark 8:29
-- Luke 24:45
 ---
 I have been on both sides of the conversation.
 

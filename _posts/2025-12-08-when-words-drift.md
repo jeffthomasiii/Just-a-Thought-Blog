@@ -18,11 +18,12 @@ tags:
   - language
   - discipleship
   - discernment
+scripture:
+  - "Acts 11:26"
+  - "Ephesians 2:19-22"
 excerpt: "C. S. Lewis warned that some words stop describing truth and become expressions of approval or disappointment. What happens when 'Christian' and 'Church' drift in that direction?"
 image: /img/posts/when-words-drift.jpg
 background: /img/posts/bg-when-words-drift.jpg
-  - Acts 11:26
-  - Ephesians 2:19-22
 ---
 ### When Words Drift
 Every once in a while, I hear someone describe a person as a “good Christian,” and I find myself wondering what they mean. Sometimes it sounds like they are describing a personality, not a disciple. Other times it sounds like a soft compliment for behavior they approve of. Recently, I heard someone say a church “did not feel Christian enough,” and it made me pause. Since when did Christian become a feeling we get from a service and not a description of the people God has redeemed? It reminded me of something C. S. Lewis wrote about words drifting away from reality. They stop describing truth and start expressing our approval or disappointment. It is a quiet shift, but it shapes how we see ourselves, our churches, and even our faith.

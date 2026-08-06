@@ -17,10 +17,11 @@ tags:
   - discipleship
   - technology
   - missions
+scripture:
+  - "Matthew 28:19–20 ESV"
 excerpt: "AI can help us go faster, speak louder, and reach farther—but it cannot fulfill the Great Commission for us."
 image: /img/posts/header-modern-tools-ancient-mission.jpg
 background: /img/posts/bg-modern-tools-ancient-mission.jpg
-  - Matthew 28:19–20 ESV
 series: "Faith, Wisdom, and the Machine"
 series_order: 5
 ---

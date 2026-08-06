@@ -17,10 +17,11 @@ tags:
   - digital-missions
   - evangelism
   - technology
+scripture:
+  - "Matthew 28:19–20 ESV"
 excerpt: "If we can use AI to reach the unreached, what's stopping us?"
 image: /img/posts/header-ai-and-the-great-commission.jpg
 background: /img/posts/bg-ai-and-the-great-commission.jpg
-  - Matthew 28:19–20 ESV
 series: "Faith, Wisdom, and the Machine"
 series_order: 6
 ---
