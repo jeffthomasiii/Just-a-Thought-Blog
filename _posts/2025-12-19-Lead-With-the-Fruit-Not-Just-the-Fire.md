@@ -6,17 +6,23 @@ description: "A reflective leadership post exploring why passion can ignite a mo
 date: 2025-12-19
 author: Jeff Thomas III
 categories:
-  - leadership
+  - reflection
+collections:
   - faith
+  - leadership
 tags:
   - character
-  - fruit of the Spirit
-  - leadership
+  - fruit-of-the-spirit
+  - passion
+  - spiritual-formation
+  - servant-leadership
+  - self-control
 excerpt: "Fire can start something powerful, but only fruit can sustain what God begins through us."
-background: /img/posts/bg-lead-like-this-fruit-not-fire.jpg
 image: /img/posts/lead-like-this-fruit-not-fire.jpg
-scripture: "Galatians 5:22–23; Matthew 7:15–20"
-contributors: []
+background: /img/posts/bg-lead-like-this-fruit-not-fire.jpg
+scripture:
+  - Galatians 5:22-23
+  - Matthew 7:15-20
 series: "Lead Like This"
 series_order: 5
 ---
