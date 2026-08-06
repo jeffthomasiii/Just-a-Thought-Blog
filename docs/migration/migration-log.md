@@ -86,6 +86,46 @@ Notes:
 - Article bodies were preserved; previously identified editorial and body-text issues remain deferred.
 - Full Jekyll build validation remains pending until a broader migration checkpoint.
 
+### August 2025
+
+Status: Complete
+
+- [x] Front matter updated
+- [x] YAML validated
+- [x] Article Types normalized
+- [x] Collections added
+- [x] Tags standardized
+- [x] Scripture converted to YAML arrays
+- [x] Contributors verified
+- [x] Series verified
+- [x] Images normalized to required front matter fields
+- [ ] Jekyll build verified
+
+Commits:
+
+- `3ef61f7caeafce31b59120453a4484052f1498f3`
+- `b763ea43617c4bd35c9e4eb753fa54f7bd0f8c31`
+- `0d609317132381a0f18a83e5086894492e695fa6`
+- `f0725a355d7c95febefe143999c2f9fdc9cf5488`
+- `d5e96dfb3a90417d1c9e9aa145e4467378af0f60`
+- `a580f63d6a9b32bbe3d5396bf1c9458387b435a3`
+- `ef967c1c374d378a416070ff644a9a89605c401a`
+- `397e0811adf14c34cac5c85cfd4a45cf16a8ca05`
+- `1b06f22c764f12f564233db3e8879521672f389e`
+- `131d711ebd807fa901e6dda5a619872af0c96f20`
+- `012012f37626a5da32f4d5f777dcd45002eb2c54`
+- `301fe1ab9b18a1fd4391f1fc6f9659b7b6a6d4a6`
+
+Notes:
+
+- Migrated all twelve August 2025 posts.
+- Moved camping-related content into the `creation` reader journey rather than treating camping as a collection.
+- Normalized faith-and-culture reflections into both `faith` and `culture` collections where appropriate.
+- Added `leadership` and `technology` collections only where the reader journey is supported by the article content.
+- Converted all Scripture metadata to YAML arrays and removed obsolete `header-image` fields where present.
+- Article bodies were preserved; previously identified editorial and body-text issues remain deferred.
+- Full Jekyll build validation remains pending until a broader migration checkpoint.
+
 ## Future Development
 
 Deferred until after metadata migration:
