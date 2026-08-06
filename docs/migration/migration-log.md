@@ -128,17 +128,17 @@ Notes:
 
 ### September 2025
 
-Status: In Progress
+Status: Complete
 
-- [ ] Front matter updated
-- [ ] YAML validated
-- [ ] Article Types normalized
-- [ ] Collections added
-- [ ] Tags standardized
-- [ ] Scripture converted to YAML arrays
-- [ ] Contributors verified
-- [ ] Series verified
-- [ ] Images normalized to required front matter fields
+- [x] Front matter updated
+- [x] YAML validated
+- [x] Article Types normalized
+- [x] Collections added
+- [x] Tags standardized
+- [x] Scripture converted to YAML arrays
+- [x] Contributors verified
+- [x] Series verified
+- [x] Images normalized to required front matter fields
 - [ ] Jekyll build verified
 
 Commits:
@@ -146,12 +146,16 @@ Commits:
 - `834ea16747d7e19b9de61b971540b0fb6d0e3b98`
 - `70f2e8ed0941b79f432e9055136012f721c06361`
 - `36432cda29bb64fe88f64a65e366298755f3a522`
+- `c1885020a5b16d55aff168b77fcff43b3a92b1cc`
 
 Notes:
 
-- Verified that all fourteen September 2025 posts remained on the legacy metadata structure.
-- A controlled repository-side migration restores each article body from `master`, normalizes front matter, and removes residual StackEdit metadata.
-- September must be verified and marked complete before proceeding to the next monthly batch.
+- Audited and migrated all fourteen September 2025 posts.
+- Restored every September article body from `master` before applying metadata-only changes, correcting the earlier accidental body modification in `The Woman You Gave Me`.
+- Normalized the two-part `Love & Respect; More Than a Cycle` series and the opening installment of `10 Skills Every Man Should Have`.
+- Moved camping and outdoor content into the `creation` reader journey and applied `technology`, `culture`, `marriage`, and `leadership` collections where supported by each article.
+- Converted Scripture metadata to YAML arrays, removed obsolete `header-image` fields, and removed residual StackEdit metadata.
+- The controlled migration workflow completed successfully; full Jekyll build verification remains pending.
 
 ### October 2025
 
