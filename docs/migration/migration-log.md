@@ -145,12 +145,12 @@ Commits:
 
 - `834ea16747d7e19b9de61b971540b0fb6d0e3b98`
 - `70f2e8ed0941b79f432e9055136012f721c06361`
-- `e1af234b6f5aeea63df2cc7ca80cc72eaebf71cb`
+- `36432cda29bb64fe88f64a65e366298755f3a522`
 
 Notes:
 
 - Verified that all fourteen September 2025 posts remained on the legacy metadata structure.
-- A controlled repository-side migration is running to restore each article body from `master`, normalize front matter, and remove residual StackEdit metadata.
+- A controlled repository-side migration restores each article body from `master`, normalizes front matter, and removes residual StackEdit metadata.
 - September must be verified and marked complete before proceeding to the next monthly batch.
 
 ### October 2025
