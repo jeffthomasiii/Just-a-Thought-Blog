@@ -1,0 +1,32 @@
+name: Update January 2026 migration log
+
+on:
+  push:
+    branches:
+      - content-architecture-v1-1
+    paths:
+      - .github/workflows/update-january-2026-log.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update-log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: content-architecture-v1-1
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Update migration log
+        run: python .github/scripts/update_january_2026_log.py
+      - name: Commit migration log
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Complete January 2026 migration log"
+          git push origin HEAD:content-architecture-v1-1
