@@ -6,17 +6,23 @@ description: "A reflection on the strength and wisdom in choosing not to speak t
 date: 2026-03-02
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
-  - spiritual-growth
 tags:
   - identity
-  - spiritual warfare
+  - spiritual-warfare
   - self-talk
-  - maturity
+  - spiritual-maturity
+  - conviction
+  - condemnation
 excerpt: "What if spiritual maturity begins with refusing to agree with a voice God never gave you?"
 image: /img/posts/when-the-accuser-speaks.jpg
 background: /img/posts/bg-when-the-accuser-speaks.jpg
-scripture: "Revelation 12:10; Romans 8:1; 2 Corinthians 10:5"
+scripture:
+  - Revelation 12:10
+  - Romans 8:1
+  - 2 Corinthians 10:5
 ---
 
 Have you ever noticed how cruel your inner voice can be?
@@ -101,6 +107,3 @@ but what we allow ourselves to believe in private.
 And maybe strength looks like refusing to agree with a voice God never gave you.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwODMzODAwNV19
--->
