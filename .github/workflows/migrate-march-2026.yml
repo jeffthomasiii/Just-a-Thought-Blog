@@ -1,0 +1,200 @@
+name: Migrate March 2026 metadata
+
+on:
+  push:
+    branches: [content-architecture-v1-1]
+    paths: [.github/workflows/migrate-march-2026.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install YAML support
+        run: pip install pyyaml
+      - name: Migrate March posts
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          import subprocess
+          import yaml
+
+          posts = {
+            '2026-03-02-When-the-Accuser-Speaks-in-Your-Voice.md': '''---
+          layout: post
+          title: "When the Accuser Speaks in Your Voice"
+          subtitle: "Learning to recognize a voice God never gave you"
+          description: "A reflection on the strength and wisdom in choosing not to speak to ourselves with the tone of accusation."
+          date: 2026-03-02
+          author: Jeff Thomas III
+          categories:
+            - reflection
+          collections:
+            - faith
+          tags:
+            - identity-in-christ
+            - spiritual-warfare
+            - self-talk
+            - condemnation
+            - spiritual-growth
+          excerpt: "What if spiritual maturity begins with refusing to agree with a voice God never gave you?"
+          image: /img/posts/when-the-accuser-speaks.jpg
+          background: /img/posts/bg-when-the-accuser-speaks.jpg
+          scripture:
+            - Revelation 12:10
+            - Romans 8:1
+            - 2 Corinthians 10:5
+          ---''',
+            '2026-03-04-Quiet-Strength-in-a-Loud-World.md': '''---
+          layout: post
+          title: "Quiet Strength in a Loud World"
+          subtitle: "On blending in, protecting well, and resisting the urge to perform"
+          description: "A reflection on the military concept of the ‘gray man,’ cultural performative strength, and what quiet, steady protection really looks like."
+          date: 2026-03-04
+          author: Jeff Thomas III
+          categories:
+            - reflection
+          collections:
+            - culture
+            - marriage
+            - leadership
+          tags:
+            - masculinity
+            - quiet-strength
+            - preparedness
+            - self-control
+            - protection
+            - performative-culture
+          excerpt: "In a culture that rewards visibility, maybe the strongest men are the ones who don’t feel the need to announce it."
+          image: /img/posts/quiet-strength.jpg
+          background: /img/posts/bg-quiet-strength.jpg
+          ---''',
+            '2026-03-06-Modern-Tools-Ancient-Mission.md': '''---
+          layout: post
+          title: "Modern Tools, Ancient Mission"
+          subtitle: "AI may change how we share the gospel, but not what we've been entrusted to share"
+          description: "How to keep the Great Commission central while navigating the changing landscape of technology and communication."
+          date: 2026-03-06
+          author: Jeff Thomas III
+          categories:
+            - reflection
+          collections:
+            - faith
+            - technology
+          tags:
+            - artificial-intelligence
+            - great-commission
+            - evangelism
+            - discipleship
+            - ministry
+          excerpt: "AI can help us go faster, speak louder, and reach farther—but it cannot fulfill the Great Commission for us."
+          image: /img/posts/modern-tools-ancient-mission.jpg
+          background: /img/posts/bg-modern-tools-ancient-mission.jpg
+          scripture:
+            - Matthew 28:19-20 ESV
+          series: "Faith, Wisdom, and the Machine"
+          series_order: 5
+          ---''',
+            '2026-03-13-AI-and-the-Great-Commission.md': '''---
+          layout: post
+          title: "AI and the Great Commission"
+          subtitle: "Exploring how AI can aid missions, translation, and outreach"
+          description: "AI is not the Gospel, but it can carry it further and faster than ever before. What happens when we leverage today's tools for the mission Jesus gave us?"
+          date: 2026-03-13
+          author: Jeff Thomas III
+          categories:
+            - reflection
+          collections:
+            - faith
+            - technology
+          tags:
+            - artificial-intelligence
+            - great-commission
+            - evangelism
+            - missions
+            - bible-translation
+            - digital-ministry
+          excerpt: "If we can use AI to reach the unreached, what's stopping us?"
+          image: /img/posts/ai-and-the-great-commission.jpg
+          background: /img/posts/bg-ai-and-the-great-commission.jpg
+          scripture:
+            - Matthew 28:19-20 ESV
+          series: "Faith, Wisdom, and the Machine"
+          series_order: 6
+          ---''',
+            '2026-03-17-When-Life-Gets-Full.md': '''---
+          layout: post
+          title: "When Life Gets Full"
+          subtitle: "Trying to come up for air"
+          description: "A short reflection on busy seasons, unfinished thoughts, and learning to prioritize structure, discipline, and rest."
+          date: 2026-03-17
+          author: Jeff Thomas III
+          categories:
+            - reflection
+          collections:
+            - faith
+          tags:
+            - busyness
+            - rest
+            - discipline
+            - priorities
+            - margin
+            - spiritual-rhythms
+          excerpt: "Life got full fast. This is a quick pause to reflect on structure, discipline, and why rest isn’t optional."
+          image: /img/posts/when-life-gets-full.jpg
+          background: /img/posts/bg-when-life-gets-full.jpg
+          scripture:
+            - Mark 6:31 ESV
+            - Ecclesiastes 3:1 ESV
+          ---'''
+          }
+
+          def published_body(filename):
+              source = subprocess.check_output(
+                  ['git', 'show', f'origin/master:_posts/{filename}'], text=True
+              )
+              parts = source.split('---', 2)
+              assert len(parts) == 3, filename
+              body = parts[2]
+              body = re.sub(r'\n?<!--stackedit_data:.*?-->\s*$', '', body, flags=re.S)
+              return body.rstrip() + '\n'
+
+          for filename, front_matter in posts.items():
+              front_matter = re.sub(r'^          ', '', front_matter, flags=re.M)
+              body = published_body(filename)
+              path = Path('_posts') / filename
+              path.write_text(front_matter + '\n' + body, encoding='utf-8')
+
+              written = path.read_text(encoding='utf-8')
+              parts = written.split('---', 2)
+              assert len(parts) == 3, filename
+              data = yaml.safe_load(parts[1])
+              assert data['categories'] in ([data['categories'][0]],), filename
+              assert data['categories'][0] in {
+                  'reflection', 'devotional', 'bible-study', 'resource',
+                  'series-introduction', 'guest-post', 'announcement'
+              }, filename
+              assert data.get('collections'), filename
+              assert all(tag == tag.lower() and ' ' not in tag for tag in data['tags']), filename
+              if 'scripture' in data:
+                  assert isinstance(data['scripture'], list), filename
+              assert parts[2].lstrip('\n') == body.lstrip('\n'), filename
+
+          assert len(list(Path('_posts').glob('2026-03-*.md'))) == 5
+      - name: Commit migration
+        run: |
+          rm .github/workflows/migrate-march-2026.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add _posts/2026-03-*.md .github/workflows/migrate-march-2026.yml
+          git commit -m 'Migrate March 2026 post metadata'
+          git push
