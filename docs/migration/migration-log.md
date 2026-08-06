@@ -311,6 +311,36 @@ Notes:
 - Preserved existing filenames and image paths to avoid changing published URLs or asset references.
 - The controlled migration workflow completed successfully; full Jekyll build verification remains pending.
 
+### February 2026
+
+Status: Complete
+
+- [x] Front matter updated
+- [x] YAML validated
+- [x] Article Types normalized
+- [x] Collections added
+- [x] Tags standardized
+- [x] Scripture converted to YAML arrays
+- [x] Contributors verified
+- [x] Series verified
+- [x] Images normalized to required front matter fields
+- [ ] Jekyll build verified
+
+Commits:
+
+- `839d2581035efbc01c8d0d546fec4132872982a2`
+
+Notes:
+
+- Audited and migrated all ten February 2026 posts.
+- Restored each published article body from `master` before applying metadata-only changes.
+- Normalized the four published installments of `Faith, Wisdom, and the Machine`, preserving their existing series order.
+- Classified `The Road Between Confusion and Clarity` as a Bible study and `The Paradox of Pain` as a devotional; the remaining posts were normalized as reflections.
+- Assigned supported `faith`, `technology`, `leadership`, `culture`, `creation`, and `marriage` reader journeys based on each article’s central subject and setting.
+- Standardized tags, converted Scripture fields to YAML arrays, removed obsolete `header-image` fields, empty optional fields, and residual StackEdit metadata.
+- Preserved existing filenames and image paths to avoid changing published URLs or asset references.
+- The controlled migration workflow completed successfully; full Jekyll build verification remains pending.
+
 ## Future Development
 
 Deferred until after metadata migration:
