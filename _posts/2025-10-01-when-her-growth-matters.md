@@ -6,17 +6,21 @@ description: "Reflecting on how pride wants the credit in marriage, but love cel
 date: 2025-10-01
 author: Jeff Thomas III
 categories:
-  - marriage
+  - reflection
+collections:
   - faith
+  - marriage
 tags:
   - humility
   - communication
-  - growth
+  - spiritual-growth
   - pride
+  - biblical-marriage
 excerpt: "It’s easy to want the credit when your spouse finally “gets it.” But as Paul reminds us, 'I planted, Apollos watered, but God gave the growth.' The win isn’t being right; it’s growing together in truth."
 image: /img/posts/when-her-growth-matters.jpg
 background: /img/posts/bg-when-her-growth-matters.jpg
-scripture: "1 Corinthians 3:6 ESV"
+scripture:
+  - 1 Corinthians 3:6
 ---
 > ...what matters isn’t who said it first, it’s that the truth took root.
 
