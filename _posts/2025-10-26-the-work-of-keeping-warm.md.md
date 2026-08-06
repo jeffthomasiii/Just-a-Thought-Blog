@@ -6,18 +6,22 @@ description: "A reflection on how love, like fire, needs tending, sometimes with
 date: 2025-10-26
 author: Jeff Thomas III
 categories:
-  - marriage
+  - reflection
+collections:
   - faith
-tags:
-  - relationships
   - marriage
+tags:
+  - biblical-marriage
   - intentionality
   - rekindling
   - love
+  - marital-growth
 excerpt: "Love isn’t lost because the fire burned out; it’s lost when we stop looking for matches. Sometimes keeping love warm means returning to the small things that once sparked joy between you."
 image: /img/posts/the-work-of-keeping-warm.jpg
 background: /img/posts/bg-the-work-of-keeping-warm.jpg
-scripture: "Romans 12:10–11 ESV, Song of Solomon 8:6–7 NIV"
+scripture:
+  - Romans 12:10-11
+  - Song of Solomon 8:6-7
 ---
 
 > *“If you want the fire to keep burning, you have to keep feeding it, and if the fire has gone out, you have to start with some kindling.”*  
@@ -54,6 +58,3 @@ And sometimes, that steady fire is the most beautiful kind.
 …just a thought.  
  
 What’s one small thing you could do this week to “feed the fire” in your relationship?
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDUyOTE0M119
--->
