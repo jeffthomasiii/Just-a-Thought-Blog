@@ -5,18 +5,22 @@ subtitle: "Skill #10 – Being Both Student and Teacher"
 description: "No man ever 'arrives.' We are always students, always teachers. Wisdom is meant to flow through us, shaping generations to come."
 date: 2025-11-28
 author: Jeff Thomas III
-categories:  
-- manhood  
-- faith  
-- growth
-tags:  
-- mentorship  
-- discipleship  
-- legacy  
+categories:
+  - reflection
+collections:
+  - faith
+  - leadership
+tags:
+  - mentorship
+  - discipleship
+  - legacy
+  - wisdom
+  - manhood
 excerpt: "The legacy of mentorship is this: keep learning, keep teaching. Be humble enough to stay a student, and generous enough to be a teacher."
 image: /img/posts/legacy-of-mentorship.jpg
 background: /img/posts/bg-legacy-of-mentorship.jpg
-scripture: "2 Timothy 2:2 NIV"
+scripture:
+  - 2 Timothy 2:2
 series: "10 Skills Every Man Should Have"
 series_order: 10
 ---
