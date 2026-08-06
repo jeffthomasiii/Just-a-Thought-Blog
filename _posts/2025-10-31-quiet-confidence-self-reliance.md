@@ -5,18 +5,22 @@ subtitle: "Skill #5 – Cooking, Cleaning, Budgeting, and Repair"
 description: "Self-reliance doesn’t mean isolation, it means being prepared to serve. True confidence is found in competence that makes life lighter for others."
 date: 2025-10-31
 author: Jeff Thomas III
-categories:  
-- manhood  
-- faith  
-- growth
-tags:  
-- self-reliance  
-- responsibility  
-- competence  
+categories:
+  - reflection
+collections:
+  - faith
+  - leadership
+tags:
+  - self-reliance
+  - responsibility
+  - competence
+  - stewardship
+  - manhood
 excerpt: "A man who practices self-reliance doesn’t make life harder for those around him, he makes life lighter."
 image: /img/posts/quiet-confidence-self-reliance.jpg
 background: /img/posts/bg-quiet-confidence-self-reliance.jpg
-scripture: "Proverbs 27:23 NIV"
+scripture:
+  - Proverbs 27:23
 series: "10 Skills Every Man Should Have"
 series_order: 6
 ---
