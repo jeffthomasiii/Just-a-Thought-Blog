@@ -6,17 +6,24 @@ description: "A reflective leadership post exploring the difference between pers
 date: 2025-12-22
 author: Jeff Thomas III
 categories:
-  - leadership
+  - reflection
+collections:
   - faith
+  - leadership
 tags:
   - vision
-  - leadership
   - obedience
+  - discernment
+  - ambition
+  - surrender
+  - spiritual-formation
 excerpt: "Ideas rise and fall, but vision born from God endures seasons, pressure, and time."
-background: /img/posts/bg-lead-like-this-vision-that-lasts.jpg
 image: /img/posts/lead-like-this-vision-that-lasts.jpg
-scripture: "Proverbs 29:18; Habakkuk 2:2–3; Acts 20:22–24"
-contributors: []
+background: /img/posts/bg-lead-like-this-vision-that-lasts.jpg
+scripture:
+  - Proverbs 29:18
+  - Habakkuk 2:2-3
+  - Acts 20:22-24
 series: "Lead Like This"
 series_order: 6
 ---
