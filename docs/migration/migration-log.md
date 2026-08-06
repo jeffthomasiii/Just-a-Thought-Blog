@@ -126,6 +126,47 @@ Notes:
 - Article bodies were preserved; previously identified editorial and body-text issues remain deferred.
 - Full Jekyll build validation remains pending until a broader migration checkpoint.
 
+### October 2025
+
+Status: Complete
+
+- [x] Front matter updated
+- [x] YAML validated
+- [x] Article Types normalized
+- [x] Collections added
+- [x] Tags standardized
+- [x] Scripture converted to YAML arrays
+- [x] Contributors verified
+- [x] Series verified
+- [x] Images normalized to required front matter fields
+- [ ] Jekyll build verified
+
+Commits:
+
+- `a012973ee66f68dd53d10dca43cccc1518508d18`
+- `72a9a303bd20c292c41497eb48cdebb830895e42`
+- `25a899dfcc2cd90e24c5680323fe9f36baa04ddd`
+- `fbe4ab2a1b88567d4e656b8a4ae8bbab78885eeb`
+- `63b7840b4767f72a018da3465c003253390a3b33`
+- `dc41442675b113efbce0cb47db586ee4f296e8ac`
+- `8ec2ac49b649114d19e652538caee08e19a3fbf8`
+- `236adb6923cef05e8e6addbc684fe7e735bcccf7`
+- `f93160a1f4c61c568873687509e4609df3d8809a`
+- `e4659d2f1a78ce3f95520d82be474bba1327bcee`
+- `d5f5205a45d3249da094fc935b32d7f540316d53`
+- `8ae977b33dc5c6e18cc36d6139cf2ddeba1bbfba`
+
+Notes:
+
+- Migrated all twelve October 2025 posts.
+- Normalized five entries in the `10 Skills Every Man Should Have` series, covering series orders 2–6.
+- Normalized Samatra Thomas as a contributor on `No Rush: Road Trips and Marriage` and `Joy Is Contagious`.
+- Placed the road-trip and camping context in `No Rush: Road Trips and Marriage` within the `creation` reader journey.
+- Preserved the `.md.md` filename anomaly for `The Work of Keeping Warm` for later URL-safe cleanup.
+- Removed residual StackEdit metadata where present.
+- Article bodies were preserved; previously identified editorial and body-text issues remain deferred.
+- Full Jekyll build validation remains pending until a broader migration checkpoint.
+
 ## Future Development
 
 Deferred until after metadata migration:
