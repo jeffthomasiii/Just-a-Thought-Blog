@@ -1,0 +1,319 @@
+.jat-collection-hero {
+  padding: clamp(2rem, 5vw, 4rem) 0 0;
+}
+
+.jat-collection-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr);
+  min-height: 540px;
+  overflow: hidden;
+  border: 1px solid var(--jat-border-subtle);
+  background: var(--jat-surface-panel);
+}
+
+.jat-collection-hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2.5rem, 6vw, 5rem);
+}
+
+.jat-collection-hero-copy h1 {
+  margin-bottom: 0.45rem;
+  font-size: clamp(3.2rem, 7vw, 6.4rem);
+  line-height: 0.95;
+}
+
+.jat-collection-subtitle {
+  margin: 0;
+  color: var(--jat-action-primary);
+  font-family: var(--jat-font-reflective);
+  font-size: clamp(1.2rem, 2.2vw, 1.65rem);
+  font-style: italic;
+}
+
+.jat-collection-lede {
+  max-width: 680px;
+  margin-top: 1.2rem;
+  color: var(--jat-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.jat-collection-hero-media {
+  position: relative;
+  min-height: 420px;
+  background-position: center;
+  background-size: cover;
+}
+
+.jat-collection-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(246, 241, 231, 0.22), rgba(23, 28, 20, 0.06));
+}
+
+.jat-collection-hero-mark {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  display: grid;
+  width: 72px;
+  height: 72px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  background: rgba(33, 39, 27, 0.72);
+  color: #f6f1e7;
+  font-size: 2rem;
+  backdrop-filter: blur(8px);
+}
+
+.jat-collection-main {
+  padding: clamp(2rem, 5vw, 4rem) 0 clamp(4rem, 8vw, 7rem);
+}
+
+.jat-collection-main > .container {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.jat-collection-intro,
+.jat-collection-related {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  padding: clamp(2rem, 5vw, 3.5rem);
+}
+
+.jat-collection-intro h2,
+.jat-collection-section-heading h2,
+.jat-collection-related h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+}
+
+.jat-collection-intro-copy p {
+  margin-top: 0;
+  color: var(--jat-text-secondary);
+  line-height: 1.75;
+}
+
+.jat-collection-intro-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.jat-collection-section {
+  padding: clamp(2rem, 5vw, 3.5rem);
+}
+
+.jat-collection-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.7fr);
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--jat-border-subtle);
+}
+
+.jat-collection-section-heading > p {
+  margin: 0;
+  color: var(--jat-text-secondary);
+  line-height: 1.65;
+}
+
+.jat-collection-feature-grid,
+.jat-collection-series-grid,
+.jat-collection-recent-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.jat-collection-feature {
+  overflow: hidden;
+}
+
+.jat-collection-feature-media {
+  display: block;
+  min-height: 220px;
+  background-color: var(--jat-surface-panel);
+  background-position: center;
+  background-size: cover;
+}
+
+.jat-collection-feature-copy,
+.jat-collection-series-card > div:last-child,
+.jat-collection-recent-card {
+  padding: 1.5rem;
+}
+
+.jat-collection-feature h3,
+.jat-collection-series-card h3,
+.jat-collection-recent-card h3 {
+  margin-top: 0;
+}
+
+.jat-collection-feature h3 a,
+.jat-collection-recent-card h3 a {
+  color: var(--jat-text-primary);
+  text-decoration: none;
+}
+
+.jat-collection-feature h3 a:hover,
+.jat-collection-recent-card h3 a:hover {
+  color: var(--jat-action-primary);
+}
+
+.jat-collection-feature-subtitle {
+  color: var(--jat-action-primary) !important;
+  font-family: var(--jat-font-reflective);
+  font-style: italic;
+}
+
+.jat-collection-series-card {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  overflow: hidden;
+}
+
+.jat-collection-series-image {
+  min-height: 190px;
+  background-position: center;
+  background-size: cover;
+}
+
+.jat-collection-recent-card time,
+.jat-collection-list-date {
+  color: var(--jat-text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.jat-collection-recent-card p,
+.jat-collection-series-card p {
+  color: var(--jat-text-secondary);
+  line-height: 1.6;
+}
+
+.jat-collection-all-list {
+  border-top: 1px solid var(--jat-border-subtle);
+}
+
+.jat-collection-list-item {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr) auto;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--jat-border-subtle);
+  color: var(--jat-text-primary);
+  text-decoration: none;
+}
+
+.jat-collection-list-item:hover {
+  color: var(--jat-action-primary);
+  text-decoration: none;
+}
+
+.jat-collection-list-copy {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.jat-collection-list-copy small {
+  color: var(--jat-text-secondary);
+}
+
+.jat-collection-list-arrow {
+  font-size: 1.25rem;
+}
+
+.jat-collection-related-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.jat-collection-related-links a {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1.25rem;
+  border: 1px solid var(--jat-border-subtle);
+  background: var(--jat-surface-card);
+  color: var(--jat-text-primary);
+  text-decoration: none;
+}
+
+.jat-collection-related-links a span {
+  color: var(--jat-text-secondary);
+  font-size: 0.9rem;
+}
+
+.jat-collection-related-links a em {
+  color: var(--jat-action-primary);
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+body.dark-mode .jat-collection-hero-grid,
+body.dark-mode .jat-collection-intro,
+body.dark-mode .jat-collection-section,
+body.dark-mode .jat-collection-related {
+  border-color: rgba(214, 179, 107, 0.16);
+}
+
+body.dark-mode .jat-collection-hero-overlay {
+  background: linear-gradient(90deg, rgba(24, 25, 20, 0.14), rgba(24, 25, 20, 0.26));
+}
+
+@media (max-width: 991.98px) {
+  .jat-collection-hero-grid,
+  .jat-collection-intro,
+  .jat-collection-related,
+  .jat-collection-section-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-collection-hero-media {
+    min-height: 360px;
+    order: -1;
+  }
+
+  .jat-collection-feature-grid,
+  .jat-collection-series-grid,
+  .jat-collection-recent-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-collection-hero-copy,
+  .jat-collection-intro,
+  .jat-collection-section,
+  .jat-collection-related {
+    padding: 1.5rem;
+  }
+
+  .jat-collection-series-card,
+  .jat-collection-list-item {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-collection-series-image {
+    min-height: 180px;
+  }
+
+  .jat-collection-related-links {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-collection-list-arrow {
+    display: none;
+  }
+}
