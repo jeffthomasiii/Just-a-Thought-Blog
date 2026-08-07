@@ -1,0 +1,155 @@
+---
+layout: default
+---
+
+{% assign collection_posts = site.posts | where_exp: "post", "post.collections contains page.collection_key" %}
+{% assign recent_collection_posts = collection_posts | slice: 0, 6 %}
+{% assign collection_series = collection_posts | group_by: "series" %}
+
+<header class="jat-collection-hero jat-page-shell">
+  <div class="container jat-board-container">
+    <div class="jat-collection-hero-grid">
+      <div class="jat-collection-hero-copy">
+        <p class="jat-kicker">Explore the Library</p>
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}<p class="jat-collection-subtitle">{{ page.subtitle }}</p>{% endif %}
+        <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
+        {% if page.description %}<p class="jat-collection-lede">{{ page.description }}</p>{% endif %}
+        <div class="jat-button-row">
+          <a class="btn jat-btn jat-btn-primary" href="#start-here">Start Here</a>
+          <a class="btn jat-btn jat-btn-secondary" href="#all-reflections">Browse {{ collection_posts | size }} Reflections</a>
+        </div>
+      </div>
+      <div class="jat-collection-hero-media"{% if page.background %} style="background-image: url('{{ page.background | relative_url }}');"{% endif %} aria-hidden="true">
+        <div class="jat-collection-hero-overlay"></div>
+        <div class="jat-collection-hero-mark"><span>{{ page.icon | default: '❦' }}</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="jat-collection-main jat-page-shell">
+  <div class="container jat-board-container">
+    <section class="jat-collection-intro jat-panel" aria-labelledby="collection-intro-heading">
+      <div>
+        <p class="jat-kicker">About This Collection</p>
+        <h2 id="collection-intro-heading">{{ page.intro_heading | default: page.title }}</h2>
+      </div>
+      <div class="jat-collection-intro-copy">
+        {{ content }}
+      </div>
+    </section>
+
+    <section class="jat-collection-section jat-panel jat-panel--parchment" id="start-here" aria-labelledby="start-here-heading">
+      <div class="jat-collection-section-heading">
+        <div>
+          <p class="jat-kicker">Start Here</p>
+          <h2 id="start-here-heading">A few places to begin.</h2>
+        </div>
+        <p>These reflections offer a broad introduction to the questions and themes explored throughout this collection.</p>
+      </div>
+      <div class="jat-collection-feature-grid">
+        {% for featured_title in page.start_here %}
+          {% assign featured_post = site.posts | where: "title", featured_title | first %}
+          {% if featured_post %}
+            {% assign featured_image = featured_post.image | default: featured_post.background %}
+            <article class="jat-collection-feature jat-card-surface">
+              <a class="jat-collection-feature-media" href="{{ featured_post.url | relative_url }}"{% if featured_image %} style="background-image:url('{{ featured_image | relative_url }}');"{% endif %} aria-label="Read {{ featured_post.title | escape }}"></a>
+              <div class="jat-collection-feature-copy">
+                <p class="jat-kicker">{{ featured_post.categories | first | default: 'Reflection' }}</p>
+                <h3><a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a></h3>
+                {% if featured_post.subtitle %}<p class="jat-collection-feature-subtitle">{{ featured_post.subtitle }}</p>{% endif %}
+                {% if featured_post.excerpt %}<p>{{ featured_post.excerpt | strip_html | truncatewords: 24 }}</p>{% endif %}
+                <a class="jat-text-link" href="{{ featured_post.url | relative_url }}">Read Reflection →</a>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="jat-collection-section jat-panel" aria-labelledby="series-heading">
+      <div class="jat-collection-section-heading">
+        <div>
+          <p class="jat-kicker">Go Deeper</p>
+          <h2 id="series-heading">Series in {{ page.title }}</h2>
+        </div>
+        <p>Some ideas need more than one reflection. These connected series stay with a question long enough to explore it from several angles.</p>
+      </div>
+      <div class="jat-collection-series-grid">
+        {% assign visible_collection_series = 0 %}
+        {% for group in collection_series %}
+          {% if group.name and group.name != "" %}
+            {% assign visible_collection_series = visible_collection_series | plus: 1 %}
+            {% assign series_posts = group.items | sort: "series_order" %}
+            {% assign first_post = series_posts | first %}
+            {% assign series_image = first_post.image | default: first_post.background %}
+            <article class="jat-collection-series-card jat-card-surface">
+              {% if series_image %}<div class="jat-collection-series-image" style="background-image:url('{{ series_image | relative_url }}');" aria-hidden="true"></div>{% endif %}
+              <div>
+                <span class="jat-status-label">{{ series_posts | size }} reflection{% if series_posts.size != 1 %}s{% endif %}</span>
+                <h3>{{ group.name }}</h3>
+                {% if first_post.series_description %}<p>{{ first_post.series_description | strip_html | truncatewords: 24 }}</p>{% elsif first_post.description %}<p>{{ first_post.description | strip_html | truncatewords: 24 }}</p>{% endif %}
+                <a class="jat-text-link" href="{{ '/series/' | relative_url }}#{{ group.name | slugify }}">Explore Series →</a>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
+        {% if visible_collection_series == 0 %}<p class="jat-collection-empty">No multi-part series are currently assigned to this collection.</p>{% endif %}
+      </div>
+    </section>
+
+    <section class="jat-collection-section jat-panel jat-panel--parchment" aria-labelledby="recent-heading">
+      <div class="jat-collection-section-heading">
+        <div>
+          <p class="jat-kicker">Recently Added</p>
+          <h2 id="recent-heading">New reflections in {{ page.title }}</h2>
+        </div>
+        <p>The newest additions to this part of the library.</p>
+      </div>
+      <div class="jat-collection-recent-grid">
+        {% for post in recent_collection_posts %}
+          <article class="jat-collection-recent-card jat-card-surface">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 18 }}</p>{% endif %}
+            <a class="jat-text-link" href="{{ post.url | relative_url }}">Read →</a>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="jat-collection-section jat-panel" id="all-reflections" aria-labelledby="all-reflections-heading">
+      <div class="jat-collection-section-heading">
+        <div>
+          <p class="jat-kicker">The Full Shelf</p>
+          <h2 id="all-reflections-heading">All {{ page.title }} reflections</h2>
+        </div>
+        <p>{{ collection_posts | size }} reflection{% if collection_posts.size != 1 %}s{% endif %} currently live in this collection.</p>
+      </div>
+      <div class="jat-collection-all-list">
+        {% for post in collection_posts %}
+          <a class="jat-collection-list-item" href="{{ post.url | relative_url }}">
+            <span class="jat-collection-list-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span class="jat-collection-list-copy"><strong>{{ post.title }}</strong>{% if post.subtitle %}<small>{{ post.subtitle }}</small>{% endif %}</span>
+            <span class="jat-collection-list-arrow" aria-hidden="true">→</span>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    {% if page.related_collections %}
+    <section class="jat-collection-related jat-panel" aria-labelledby="related-collections-heading">
+      <div>
+        <p class="jat-kicker">Keep Exploring</p>
+        <h2 id="related-collections-heading">Related collections</h2>
+      </div>
+      <div class="jat-collection-related-links">
+        {% for related in page.related_collections %}
+          <a href="{{ '/collections/' | append: related.key | append: '/' | relative_url }}"><strong>{{ related.title }}</strong><span>{{ related.description }}</span><em>Explore →</em></a>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+  </div>
+</main>
