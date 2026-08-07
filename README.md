@@ -145,39 +145,40 @@ Rather than:
 
 ---
 
-## Categories and Tags
+## Content Architecture
 
-Use categories for broad organization and tags for specific discoverability.
+Published post front matter is the content database for Just A Thought. Metadata fields have separate responsibilities and should not be used interchangeably.
 
-### Reader-Facing Categories
+### Article Types
 
-- Faith
-- Marriage
-- Leadership
-- Culture
-- Technology
-- Camping
-- Devotional
-- Reflections
+Article Types describe editorial format and are stored in Jekyll's `categories` field. A post must use exactly one official Article Type:
 
-### Stored Values
+- `reflection`
+- `devotional`
+- `bible-study`
+- `resource`
+- `series-introduction`
+- `guest-post`
+- `announcement`
 
-Category and tag values in front matter should be lowercase and hyphenated. The site may display those values as reader-facing labels.
+### Reader Collections
+
+Reader Collections describe where readers should discover a post. Official values are:
+
+- `faith`
+- `marriage`
+- `leadership`
+- `technology`
+- `culture`
+- `creation`
+
+Collections are broad, overlapping reader pathways. They are not Article Types.
+
+### Topic Tags
+
+Tags describe specific reusable ideas within and across collections. They should be lowercase kebab case and should reuse the canonical vocabulary whenever possible.
 
 Examples:
-
-| Reader-facing label | Front-matter value |
-|---|---|
-| Faith | `faith` |
-| Biblical Marriage | `biblical-marriage` |
-| Christian Living | `christian-living` |
-| Spiritual Growth | `spiritual-growth` |
-| Faith and AI | `faith-and-ai` |
-| RV Life | `rv-life` |
-
-Avoid creating small variations of an existing category or tag. Reuse the established value whenever it accurately describes the post.
-
-Common tag examples include:
 
 - `scripture`
 - `holiness`
@@ -187,14 +188,21 @@ Common tag examples include:
 - `communication`
 - `covenant`
 - `servant-leadership`
-- `character`
 - `discernment`
-- `ai`
-- `faith-and-ai`
-- `rv-life`
+- `artificial-intelligence`
+- `technology-ethics`
 - `creation`
 - `rest`
-- `small-group`
+- `content-architecture`
+- `craftsmanship`
+
+Do not use `faith`, `marriage`, `leadership`, or other collection labels as substitute tags when the purpose is collection membership. Do not use `reflection` or another Article Type as a tag merely to repeat `categories`.
+
+The canonical rules live in:
+
+- `docs/content-architecture.md`
+- `docs/collection-definitions.md`
+- `docs/tag-taxonomy.md`
 
 ---
 
@@ -210,18 +218,19 @@ subtitle: "Optional Subtitle Here"
 description: "Optional meta description for SEO and cards"
 date: YYYY-MM-DD
 author: Jeff Thomas III
+contributors:
+  - Samatra Thomas
 categories:
-  - category-one
-  - category-two
+  - reflection
+collections:
+  - faith
 tags:
-  - tag-one
-  - tag-two
-  - tag-three
+  - specific-tag
 excerpt: "Short summary that teases the post in one or two sentences."
 image: /img/posts/your-post-image.jpg
 background: /img/posts/bg-your-post-image.jpg
-scripture: "Optional Scripture Reference, such as 1 Peter 1:14–16 ESV"
-contributors: [Samatra Thomas]
+scripture:
+  - 1 Peter 1:14-16
 series: "Series Title Here"
 series_order: 1
 audio_file: /audio/posts/example-reflection.mp3
@@ -231,7 +240,12 @@ audio_duration: "8 min"
 
 Notes:
 
+- Use exactly one official Article Type in `categories`.
+- Use the smallest useful set of official Reader Collections in `collections`.
+- Use normalized lowercase kebab-case tags from the canonical tag taxonomy whenever possible.
+- Store Scripture as a YAML array, even when only one reference is present.
 - Use `contributors` when a post includes shared writing credit.
+- Guest status is derived from `author`; do not add a separate guest boolean.
 - Use `series` and `series_order` only when the post belongs to a structured series.
 - Use `audio_file` and `audio_duration` only when a recorded audio companion exists.
 - Existing posts without `audio_file` may use browser narration through the Audio Companion.
@@ -379,7 +393,7 @@ The site now uses the custom root domain configuration with an empty `baseurl`, 
 2. Add or edit the post and related assets.
 3. Confirm the front matter renders correctly.
 4. Preview the site locally when practical.
-5. Review the title, subtitle, description, excerpt, categories, tags, Scripture references, and image paths.
+5. Review the title, subtitle, description, excerpt, Article Type, Reader Collections, tags, Scripture references, contributors, series metadata, and image paths.
 6. Confirm reflective posts end with “…just a thought.” unless an exception applies.
 7. Confirm generated images contain no unintended text, logo, or watermark.
 8. Open a pull request into `master`.
@@ -402,11 +416,12 @@ Do not make routine content or code changes directly on `master`.
 - Search, filtering, sorting, and shareable Listen views
 - Sitewide blockquote styling
 - Navigation and footer consistency pass
+- Content architecture migration and canonical taxonomy standardization
 
 ### In Progress
 
 - Image resizing, compression, WebP conversion, and path standardization
-- Category and tag cleanup
+- Continued taxonomy governance as the library grows
 - Development of *From Aleph to Tav* and supporting resources
 - Continued post-series development
 
@@ -415,7 +430,7 @@ Do not make routine content or code changes directly on `master`.
 - Recorded podcast episodes
 - Email newsletter implementation
 - Downloadable reflection and small-group resources
-- Stronger category and topic archive pages
+- Stronger collection, Article Type, Scripture, and topic archive pages
 - Additional Open Graph and social-sharing refinements
 - Evidence-based cleanup of inherited theme files and compatibility CSS
 
