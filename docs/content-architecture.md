@@ -1,15 +1,15 @@
 # Just A Thought Content Architecture
 
-**Version:** 1.1  
+**Version:** 1.2  
 **Status:** Canonical  
 **Adopted:** 2026-08-04  
-**Revised:** 2026-08-05
+**Revised:** 2026-08-07
 
 ## Purpose
 
 Just A Thought is a growing library of thoughtful, biblically grounded writing rather than a chronological blog alone. Readers should be able to discover content by editorial format, reader journey, specific theme, series, and Scripture.
 
-Published post front matter is the single source of truth. The site will not require a separate database of existing or future posts.
+Published post front matter is the single source of truth. The site does not require a separate database of existing or future posts.
 
 ## Metadata Responsibilities
 
@@ -27,9 +27,19 @@ Metadata should not duplicate the responsibility of another field.
 
 Throughout editorial documentation and planning, use the term **Article Type** rather than Category. Jekyll will continue storing article types in the `categories` field.
 
+## Canonical Taxonomy Registry
+
+The taxonomy has three layers with different governance rules:
+
+1. **Article Types** are a closed controlled vocabulary.
+2. **Reader Collections** are a closed controlled vocabulary.
+3. **Topic Tags** are a controlled but extensible vocabulary.
+
+New Article Types or Reader Collections require an architecture revision. New tags may be introduced as the library grows, but should follow the tag governance rules and be documented in `docs/tag-taxonomy.md`.
+
 ## Article Types
 
-Article types describe editorial format. They are stored in Jekyll's `categories` field. A post should normally have one article type.
+Article Types describe editorial format. They are stored in Jekyll's `categories` field. Every standard post must have exactly one Article Type.
 
 Official values:
 
@@ -63,7 +73,7 @@ The opening article that frames the purpose, scope, and direction of a series.
 
 ### Guest Post
 
-An article written primarily by a contributor other than Jeff Thomas III.
+An article written primarily by a contributor other than Jeff Thomas III. Guest status is derived from the `author` field; do not add a separate `guest: true` flag. The `guest-post` Article Type remains the standard Article Type for a guest-authored reflection under the current architecture.
 
 ### Announcement
 
@@ -73,14 +83,14 @@ Site, ministry, publication, or project news. Use sparingly.
 
 Collections are broad reader-facing pathways. A post may belong to multiple collections when the overlap is central and useful.
 
-Official values:
+Official values, in canonical order:
 
-- `faith`
-- `marriage`
-- `leadership`
-- `technology`
-- `culture`
-- `creation`
+1. `faith`
+2. `marriage`
+3. `leadership`
+4. `technology`
+5. `culture`
+6. `creation`
 
 Collections drive homepage topic cards, collection landing pages, and related-content pathways.
 
@@ -110,9 +120,28 @@ Camping, hiking, beaches, outdoor travel, nature, rest, quiet, adventure, and re
 
 Camping belongs within this broader collection rather than defining the whole collection. A post does not need to be about camping specifically, but creation, an outdoor setting, or time in nature should meaningfully shape the reflection.
 
+### Collection Assignment Principles
+
+1. Assign the smallest useful set of collections.
+2. Prefer relevance over completeness.
+3. A post may have one collection.
+4. Two collections are common when the overlap is substantial.
+5. Three collections should be uncommon and clearly justified.
+6. Collection placement may change when an article is substantially revised.
+7. Homepage collection pages may feature or curate posts independently of chronology.
+
+Detailed inclusion and exclusion guidance is maintained in `docs/collection-definitions.md`.
+
 ## Tags
 
 Tags identify specific ideas, themes, practices, audiences, tensions, passages, or subjects.
+
+Tags are a **controlled but extensible vocabulary**. The registry is maintained in `docs/tag-taxonomy.md` and is organized into:
+
+- Preferred Core Tags
+- Approved Extended Tags
+- Scripture Tags
+- Approved Replacements / Aliases
 
 Rules:
 
@@ -122,6 +151,9 @@ Rules:
 - Avoid duplicate meanings and spelling variants.
 - Avoid using collection names as tags unless the tag adds a distinct meaning.
 - Prefer stable concepts that can connect multiple posts.
+- Aim for 5–10 meaningful tags for a normal post.
+- Add a new tag only when it is reusable or provides meaningful discovery value.
+- Before broad use, add the new term to `docs/tag-taxonomy.md`.
 
 Examples:
 
@@ -131,6 +163,25 @@ Examples:
 - `artificial-intelligence`
 - `servant-leadership`
 - `biblical-meditation`
+- `content-architecture`
+- `craftsmanship`
+
+## Metadata Responsibility Rule
+
+Do not put information into one field simply because another field seems inconvenient.
+
+- broad editorial format → **Article Type** / `categories`
+- curated reader pathway → **Reader Collection** / `collections`
+- granular reusable concept → **Topic Tag** / `tags`
+- ordered body of writing → **Series** / `series`
+- primary writer → **Author** / `author`
+- material co-participant → **Contributor** / `contributors`
+
+Examples:
+
+- Do not use `faith` as a tag when the purpose is collection membership.
+- Do not use `reflection` as a tag when the purpose is Article Type.
+- Do not create `behind-the-scenes` as a Collection unless the architecture is intentionally revised; use an appropriate tag instead.
 
 ## Series
 
@@ -156,9 +207,17 @@ scripture:
 
 Use standard English Bible-book names. Use an en dash in published prose when appropriate, but use a standard hyphen in YAML ranges for predictable processing.
 
-## Contributors
+## Authorship and Contributors
 
-Use machine-readable contributor metadata.
+The `author` field identifies the primary writer and owner of the article.
+
+```yaml
+author: Jeff Thomas III
+```
+
+A guest author is any primary author other than Jeff Thomas III. Guest status is derived from `author`; do not introduce a redundant `guest` boolean.
+
+Use contributor metadata for people who made a material contribution to the content without being the primary author.
 
 ```yaml
 author: Jeff Thomas III
@@ -167,6 +226,8 @@ contributors:
 ```
 
 Do not place contributor credits inside the `author` string.
+
+Guest-contributor posts are not required to use the signature `…just a thought.` closing.
 
 ## Standard Front Matter Order
 
@@ -237,9 +298,26 @@ The site should eventually support browsing by:
 
 ## Governance
 
-Changes to official article types or reader collections require an update to this document and an entry in the changelog.
+Changes to official Article Types or Reader Collections require:
+
+1. An update to this document.
+2. An entry in the changelog.
+3. A corresponding validator update.
+4. A review of existing content affected by the change.
+
+Tag additions and aliases are governed by `docs/tag-taxonomy.md`.
 
 ### Changelog
+
+#### 1.2 — 2026-08-07
+
+- Added the Canonical Taxonomy Registry and clarified closed versus extensible vocabularies.
+- Confirmed that `categories` stores exactly one Article Type rather than a topical category.
+- Confirmed the six official Reader Collections and canonical order.
+- Defined tag registry classes and governance.
+- Clarified metadata responsibility boundaries between Article Types, Collections, Tags, Series, Authors, and Contributors.
+- Clarified guest-author derivation from the `author` field without adding a redundant guest boolean.
+- Confirmed Scripture as a YAML array of references.
 
 #### 1.1 — 2026-08-05
 
