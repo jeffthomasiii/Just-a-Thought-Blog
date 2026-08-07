@@ -1,27 +1,29 @@
 ---
 layout: post
-title: "Wisdom in the Age of Algorithms"
-subtitle: "Why discernment, not just data, must guide our use of AI in ministry"
-description: "Exploring the need for Spirit-led wisdom when using AI in ministry, and why no tool can replace the responsibility of biblical discernment."
-date: 2026-02-06
+title: Wisdom in the Age of Algorithms
+subtitle: Why discernment, not just data, must guide our use of AI in ministry
+description: Exploring the need for Spirit-led wisdom when using AI in ministry, and why no tool can replace the responsibility of biblical discernment.
+date: '2026-02-06'
 author: Jeff Thomas III
 categories:
-  - faith
-  - technology
+- reflection
+collections:
+- faith
+- technology
+- leadership
 tags:
-  - ai
-  - ministry
-  - wisdom
-  - discernment
-excerpt: "AI can offer speed and support, but it can never replace the spiritual responsibility of rightly dividing the word of truth."
+- artificial-intelligence
+- ministry
+- wisdom
+- discernment
+scripture:
+  - "2 Timothy 2:15"
+excerpt: AI can offer speed and support, but it can never replace the spiritual responsibility of rightly dividing the word of truth.
 image: /img/posts/wisdom-in-the-age-of-algorithms.jpg
 background: /img/posts/bg-wisdom-in-the-age-of-algorithms.jpg
-header-image: /img/posts/header-wisdom-in-the-age-of-algorithms.jpg
-scripture: "2 Timothy 2:15 ESV"
-series: "Faith, Wisdom, and the Machine"
+series: Faith, Wisdom, and the Machine
 series_order: 1
 ---
-
 > **“Study to show yourself approved, because AI won’t stand before God in your place.”**
 
 There’s something sobering about typing a prompt into a chatbot and getting a clean sermon outline in seconds. Relevant scriptures. Catchy alliteration. Even a closing prayer. It’s fast. It’s polished. But is it wise?
@@ -63,7 +65,3 @@ So yes, leverage AI for support, but don’t outsource your study. Don’t trade
 Because when you stand to teach, lead, write, or preach, AI won’t be the one accountable for your words. You will.
 
 Just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MjYwMjU4XX0=
--->

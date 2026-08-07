@@ -5,22 +5,25 @@ subtitle: "Skill #6 – Building Strong Interpersonal Relationships"
 description: "Accomplishments fade, but relationships endure. Interpersonal skills, listening, empathy, encouragement, are not 'soft skills' but essential ones."
 date: 2025-11-07
 author: Jeff Thomas III
-categories:  
-- manhood  
-- faith  
-- growth
-tags:  
-- relationships  
-- empathy  
-- humility  
+categories:
+  - reflection
+collections:
+  - faith
+  - leadership
+tags:
+  - relationships
+  - empathy
+  - humility
+  - leadership
+  - communication
+scripture:
+  - "Ephesians 4:2–3"
 excerpt: "A man who prioritizes people over projects communicates something profound: 'You matter more than what I can get done.'"
 image: /img/posts/people-over-projects.jpg
 background: /img/posts/bg-people-over-projects.jpg
-scripture: "Ephesians 4:2–3 NIV"
 series: "10 Skills Every Man Should Have"
 series_order: 7
 ---
-
 It’s easy to measure success by tasks completed, goals achieved, or projects finished. But life has a way of reminding us that people matter more than projects.  
 
 I once knew a man who could fix anything with his hands but struggled to connect with those around him. His house was immaculate, his work meticulous, but his relationships were strained. The problem wasn’t competence, it was connection.  
@@ -43,8 +46,3 @@ A man who prioritizes people over projects communicates something profound: “Y
 Because in the end, people forget most of our projects, but they never forget how we treated them.  
 
 …just a thought.  
-
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI5MTU3NTU5LDExNTcyMzYyNzldfQ==
--->

@@ -1,26 +1,27 @@
 ---
 layout: post
-title: "When Your Heart Talks Back"
-subtitle: "Why Proverbs 4:23 and Neuroscience Agree"
-description: "Exploring how Scripture's command to guard your heart aligns with modern science on the heart–brain connection."
+title: When Your Heart Talks Back
+subtitle: Why Proverbs 4:23 and Neuroscience Agree
+description: Exploring how Scripture's command to guard your heart aligns with modern science on the heart–brain connection.
 date: 2025-09-12
 author: Jeff Thomas III
 categories:
-  - faith
-  - science
+- reflection
+collections:
+- faith
+- culture
 tags:
-  - Proverbs 4:23
-  - heart-brain connection
-  - spiritual growth
-  - neuroscience
-  - guarding your heart
-excerpt: "Proverbs 4:23 tells us to guard our hearts because everything we do flows from them. Science now shows that the heart's influence on our lives is more than symbolic, it's built into the way God designed us."
+- proverbs-4-23
+- heart-brain-connection
+- spiritual-growth
+- neuroscience
+- discernment
 image: /img/posts/when-your-heart-talks-back.jpg
 background: /img/posts/bg-when-your-heart-talks-back.jpg
-header-image: /img/posts/header-when-your-heart-talks-back.jpg
-scripture: "Proverbs 4:23"
+scripture:
+  - "Proverbs 4:23"
+excerpt: Proverbs 4:23 tells us to guard our hearts because everything we do flows from them. Science now shows that the heart's influence on our lives is more than symbolic, it's built into the way God designed us.
 ---
-
 If your heart could talk to your brain, what would it say?  
 
 Science says it’s been speaking all along. And Scripture has been telling us to listen for thousands of years.  
@@ -78,7 +79,3 @@ Guard it well. Nourish it with truth. Protect it from the lies and toxins that s
 Above all else, guard your heart.  
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTUxNzc4ODksOTEyNzIwNjk4XX0=
--->

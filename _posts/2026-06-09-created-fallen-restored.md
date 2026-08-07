@@ -6,22 +6,25 @@ description: "A reflective exploration of why humanity is capable of both remark
 date: 2026-06-09
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
-  - reflections
 tags:
+  - image-of-god
+  - human-nature
+  - sin
+  - redemption
+  - sanctification
   - christian-living
   - discipleship
-  - biblical-reflection
-  - sanctification
-  - human-nature
-  - image-of-god
-  - redemption
+scripture:
+  - "Genesis 1:27"
+  - "Romans 3:23"
+  - "Romans 8:29"
 excerpt: "Humanity is capable of extraordinary beauty and extraordinary brokenness. Scripture explains why, and offers hope for something greater."
 image: /img/posts/created-fallen-restored.jpg
 background: /img/posts/bg-created-fallen-restored.jpg
-scripture: "Genesis 1:27; Romans 3:23; Romans 8:29"
 ---
-
 Every now and then, I encounter something that reminds me how difficult it is to explain humanity.
 
 People can be remarkably compassionate. They sacrifice for their families, serve complete strangers, and give generously with little expectation of receiving anything in return. Throughout history, ordinary men and women have devoted their lives to healing the sick, defending the vulnerable, and improving the lives of people they may never meet.
@@ -65,6 +68,3 @@ Perhaps this is why the Christian understanding of humanity feels so complete. I
 The entire story of humanity can be understood through those three realities, and perhaps many of the contradictions we wrestle with begin to make sense when we view ourselves through that lens.
 
 ...just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNjI2NjgwNiwtMjAzMTgyNzk1Nl19
--->

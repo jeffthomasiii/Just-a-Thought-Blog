@@ -6,21 +6,26 @@ description: "A reflective leadership post exploring why true influence begins w
 date: 2025-12-12
 author: Jeff Thomas III
 categories:
-  - leadership
+  - reflection
+collections:
   - faith
-tags:
   - leadership
+tags:
+  - servant-leadership
   - character
   - service
+  - surrender
+  - trust
+  - influence
+scripture:
+  - "Mark 10:43"
+  - "Philippians 2:3-7"
 excerpt: "Leadership never begins with control. It begins with a servant heart that trusts God with the outcomes."
+image: /img/posts/bg-lead-like-this-serve-not-control.jpg
 background: /img/posts/bg-lead-like-this-serve-not-control.jpg
-image: /img/posts/lead-like-this-serve-not-control.jpg
-scripture: "Mark 10:43; Philippians 2:3–7"
-contributors: []
 series: "Lead Like This"
 series_order: 2
 ---
-
 Most of us do not think of ourselves as controlling. We think we are being responsible, clear, protective, or diligent. But it is surprising how easily leadership can drift from serving people to managing outcomes, from lifting others to gripping tighter, from shepherding to steering.
 
 Control often disguises itself as care.
@@ -61,7 +66,3 @@ Trust God with the results.
 It is amazing what opens up when our hands finally do.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTc1MzI5NDBdfQ==
--->

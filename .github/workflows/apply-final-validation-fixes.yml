@@ -1,0 +1,38 @@
+name: Apply final validation fixes
+
+on:
+  push:
+    branches:
+      - content-architecture-v1-1
+    paths:
+      - .github/scripts/fix_final_validation_findings.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: content-architecture-v1-1
+          fetch-depth: 0
+
+      - name: Apply validation fixes
+        run: python .github/scripts/fix_final_validation_findings.py
+
+      - name: Commit corrected posts
+        run: |
+          if git diff --quiet; then
+            echo "No changes required."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _posts
+          git commit -m "Correct final repository validation findings"
+          git push origin content-architecture-v1-1

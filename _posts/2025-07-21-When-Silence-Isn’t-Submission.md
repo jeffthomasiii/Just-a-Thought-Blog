@@ -1,22 +1,39 @@
 ---
 layout: post
 title: When Silence Isn’t Submission
-date: 2025-07-21
+subtitle: "Faith, public responsibility, and the courage to speak"
+description: "A reflection on Christian political silence, civic responsibility, conscience, authority, and the biblical call to speak truth and pursue justice."
+date: "2025-07-21"
 author: Jeff Thomas III
 categories:
-  - faith
-  - culture
+- reflection
+collections:
+- faith
+- culture
+- leadership
 tags:
-  - politics
-  - christian-living
-  - government
-  - justice
-  - silence
-  - biblical-voice
-excerpt: Christians are often told to stay out of politics, but what if our silence is part of the problem? This post challenges our assumptions about authority, obedience, and the biblical call to speak up for truth and justice.
-image: /img/posts/when-silence-isnt-submission.jpg
+- politics
+- "civic-engagement"
+- "christian-living"
+- government
+- justice
+- conscience
+- courage
+- "biblical-voice"
+- "public-witness"
+scripture:
+  - "Romans 13:1"
+  - "Acts 5:29"
+  - "Isaiah 1:17"
+  - "Jeremiah 22:3"
+  - "Proverbs 31:8-9"
+  - "1 Timothy 2:1-2"
+  - "Ephesians 4:15"
+  - "2 Timothy 2:25"
+excerpt: "Christians are often told to stay out of politics, but what if our silence is part of the problem? This post challenges our assumptions about authority, obedience, and the biblical call to speak up for truth and justice."
+image: "/img/posts/when-silence-isnt-submission.jpg"
+background: "/img/posts/when-silence-isnt-submission.jpg"
 ---
-
 What if we’ve misunderstood what silence really says?
 
 We like to think staying quiet keeps us neutral, especially in the political world. But in truth, silence speaks. It signals acceptance, apathy, or even fear. And as followers of Christ, we're not called to any of those.
@@ -124,6 +141,3 @@ And light speaks.
 …just a thought.
 
 Where might God be asking you to speak up, and what would it look like to do it with grace?
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0OTg4NDc2MF19
--->

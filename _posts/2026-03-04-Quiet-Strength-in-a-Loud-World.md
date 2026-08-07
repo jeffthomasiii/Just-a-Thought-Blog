@@ -6,18 +6,22 @@ description: "A reflection on the military concept of the ‘gray man,’ cultur
 date: 2026-03-04
 author: Jeff Thomas III
 categories:
-  - culture
+  - reflection
+collections:
   - marriage
+  - leadership
+  - culture
 tags:
   - masculinity
   - leadership
-  - culture
+  - cultural-discernment
   - marriage
+  - preparedness
+  - humility
 excerpt: "In a culture that rewards visibility, maybe the strongest men are the ones who don’t feel the need to announce it."
 image: /img/posts/quiet-strength.jpg
 background: /img/posts/bg-quiet-strength.jpg
 ---
-
 I once heard the phrase “gray man” used in a military context.
 
 It refers to someone who blends into their environment.  
@@ -113,7 +117,3 @@ The gray man says nothing.
 And if you’re paying attention, that silence speaks volumes.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODIyOTEzMzNdfQ==
--->

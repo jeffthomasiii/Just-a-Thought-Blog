@@ -6,24 +6,25 @@ description: "AI is not the Gospel, but it can carry it further and faster than 
 date: 2026-03-13
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
-  - evangelism
-  - missions
   - technology
 tags:
-  - ai
+  - artificial-intelligence
   - great-commission
   - gospel-outreach
   - digital-missions
+  - evangelism
+  - technology
+scripture:
+  - "Matthew 28:19–20 ESV"
 excerpt: "If we can use AI to reach the unreached, what's stopping us?"
-image: /img/posts/ai-and-the-great-commission.jpg
+image: /img/posts/header-ai-and-the-great-commission.jpg
 background: /img/posts/bg-ai-and-the-great-commission.jpg
-header-image: /img/posts/header-ai-and-the-great-commission.jpg
-scripture: "Matthew 28:19-20 ESV"
 series: "Faith, Wisdom, and the Machine"
 series_order: 6
 ---
-
 > **"If we can use AI to reach the unreached, what's stopping us?"**
 
 The same technology that answers your email in seconds can also translate the Gospel into dozens of languages. It can generate Bible study plans for remote villages. It can train underground pastors using simulations and sermons tailored to their context. It can even whisper truth in digital places where missionaries can't go. Imagine an AI-powered audio Bible streaming into an isolated home in a country closed to the Gospel, or a seeker in a remote region talking to a chatbot that gently leads them to the words of Jesus.
@@ -53,7 +54,3 @@ Because the call to go still stands. The tools are just faster now.
 So let’s use them.
 
 Just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTM5MzYxOF19
--->

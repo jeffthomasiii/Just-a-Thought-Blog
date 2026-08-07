@@ -1,25 +1,30 @@
 ---
 layout: post
-title: "The Space Between"
-subtitle: "Perfection is Christ’s role. Progress is ours. Grace bridges the gap."
-description: "Reflecting on the frustration and beauty of living in the 'in-between', where progress meets grace on the way to perfection in Christ."
+title: The Space Between
+subtitle: Perfection is Christ’s role. Progress is ours. Grace bridges the gap.
+description: Reflecting on the frustration and beauty of living in the 'in-between', where progress meets grace on the way to perfection in Christ.
 date: 2025-09-10
 author: Jeff Thomas III
-categories:  
-  - faith  
-  - marriage  
-tags:  
-  - grace  
-  - holiness  
-  - progress  
-  - perseverance  
-excerpt: "The space between isn’t failure, it’s formation. And it’s where grace does its best work."
+categories:
+- reflection
+collections:
+- faith
+- marriage
+- creation
+tags:
+- grace
+- spiritual-formation
+- perseverance
+- sanctification
+- hiking
 image: /img/posts/the-space-between-thumbnail.jpg
 background: /img/posts/bg-the-space-between.jpg
-header-image: /img/posts/bg-the-space-between.jpg
-scripture: "Hebrews 12:2; Philippians 3:14; Ephesians 2:8"
+scripture:
+  - "Hebrews 12:2"
+  - "Philippians 3:14"
+  - "Ephesians 2:8"
+excerpt: The space between isn’t failure, it’s formation. And it’s where grace does its best work.
 ---
-
 I remember standing at the trailhead of a hike, looking at the sign with a glossy photo of the summit view. Blue skies, endless valleys, and the promise of a breathtaking reward. But a couple of hours in, the only view I had was dust, sweat, and a winding path that seemed to climb forever. My legs were sore, my backpack heavy, and I caught myself thinking, *Is this even worth it?*  
 
 That moment, the long stretch between the starting point and the destination, felt like a picture of life with God. We know what’s promised, but the “in-between” is where we actually live most of the time.  
@@ -52,7 +57,3 @@ One day, the summit will come. The scaffolding will come down. The view will ope
 The space between is not failure. It’s formation. And it’s where we learn to trust the One who already finished the climb for us.  
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwOTc5OTg2OSwxODg0MjYzNDddfQ==
--->

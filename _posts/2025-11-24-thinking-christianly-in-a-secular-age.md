@@ -6,20 +6,23 @@ description: "Philippians 4:8 confronts the modern world with a timeless questio
 date: 2025-11-24
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
+  - culture
 tags:
   - philippians
   - culture
   - discipleship
+  - christian-thinking
+scripture:
+  - "Philippians 4:8"
 excerpt: "Christian thinking slows the spiral, interrupts the noise, and reorients the heart toward Christ."
-image: /img/posts/thinking-christianly.jpg
-background: /img/posts/bg-thinking-christianly.jpg
-scripture: "Philippians 4:8 ESV"
-contributors: []
+image: /img/thinking-christianly.jpg
+background: /img/bg-thinking-christianly.jpg
 series: "The Practice of Holy Thinking"
 series_order: 4
 ---
-
 Some days it feels like our minds belong more to the world around us than to the God within us. You open your phone—before you even open your eyes all the wayand a flood of opinions, headlines, arguments, ads, heartbreaks, and random noise hits you before your soul has a chance to wake up.
 
 And it’s subtle, but somewhere in that swirl of information, the mind begins to bend.  
@@ -70,6 +73,3 @@ So maybe the challenge for us today isn’t to escape the modern world but to re
 **What have I allowed to shape my mindset that was never meant to shape my soul?**
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMzc4MTI2NV19
--->

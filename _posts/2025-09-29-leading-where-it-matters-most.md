@@ -1,28 +1,35 @@
 ---
 layout: post
-title: "Leading Where It Matters Most"
-subtitle: "Why the traits of great leaders belong first in the home"
-description: "We’d hate to work for a boss without vision, humility, or integrity, so why do we think our wives should thrive under that same kind of leadership at home?"
+title: Leading Where It Matters Most
+subtitle: Why the traits of great leaders belong first in the home
+description: We’d hate to work for a boss without vision, humility, or integrity, so why do we think our wives should thrive under that same kind of leadership at home?
 date: 2025-09-29
 author: Jeff Thomas III
-categories:  
-- marriage  
-- leadership  
+categories:
+- reflection
+collections:
 - faith
-tags:
-- leadership
 - marriage
-- faith
+- leadership
+tags:
 - servant-leadership
-- family
-
-excerpt: "If we’d never tolerate working under a bad boss, why do we sometimes expect our wives to endure that same kind of leadership at home?"
+- biblical-marriage
+- integrity
+- humility
+- accountability
 image: /img/posts/leading-where-it-matters-most.jpg
 background: /img/posts/bg-leading-where-it-matters-most.jpg
-scripture: "1 Timothy 3:4–5 ESV"
-
+scripture:
+  - "1 Timothy 3:4–5"
+  - "Proverbs 29:18"
+  - "Joshua 24:15"
+  - "Proverbs 20:7"
+  - "Ephesians 5:25"
+  - "Joshua 1:9"
+  - "James 1:19"
+  - "Hebrews 13:17"
+excerpt: If we’d never tolerate working under a bad boss, why do we sometimes expect our wives to endure that same kind of leadership at home?
 ---
-
 > if your wife had the freedom to “quit” following your leadership, would she?
 
 Think about the worst boss you’ve ever had. Maybe they barked orders without listening. Maybe they had no clear plan, or they demanded respect without ever earning it. You probably hated working under them, maybe even dreaded walking through the door each morning.  
@@ -72,7 +79,3 @@ If we’d hate to work for a boss with no vision, no integrity, no humility, no 
 …just a thought.  
 
 Which leadership trait do you think matters most in marriage, and why?
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc5MDkzOCwtMTk1NzUzNTk2N119
--->

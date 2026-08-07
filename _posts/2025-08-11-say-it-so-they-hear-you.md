@@ -1,27 +1,29 @@
 ---
 layout: post
-title: Say It So They Hear You
-subtitle: Clarity isn't dumbing it down, it's raising your message up.
+title: "Say It So They Hear You"
+subtitle: "Clarity isn't dumbing it down, it's raising your message up"
+description: "A reflection on communication, leadership, audience awareness, and why clarity matters more than sounding impressive."
 date: 2025-08-11
-excerpt: "Big words might sound smart, but they don't always connect. Whether I’m explaining BIM workflows or leading a couples’ group, the same truth applies: clarity is what makes your words matter."
 author: Jeff Thomas III
 categories:
-  - faith leadership communication
-tags:
-  - clarity
-  - public
-  - speaking
-  - vocabulary
-  - humility
-  - communication
-  - audience
-  - awareness
+  - reflection
+collections:
+  - faith
   - leadership
-  - language
+  - technology
+tags:
+  - communication
+  - clarity
+  - public-speaking
+  - leadership
+  - humility
+  - audience-awareness
+scripture:
+  - "1 Corinthians 2:1–5"
+excerpt: "Big words may sound impressive, but clarity is what helps people receive and remember the message."
+image: /img/posts/bg-say-it-so-they-hear-you.jpg
 background: /img/posts/bg-say-it-so-they-hear-you.jpg
-header-image: /img/posts/big-words-small-impact.jpg
 ---
-
 I give presentations to rooms of twenty and two hundred. Sometimes I’m unpacking technical workflows in Revit or explaining BIM collaboration to a boardroom full of decision-makers. Other times I’m leading a couples' small group or talking about faith and marriage with people I love. The topics vary, but one lesson shows up everywhere:
 
 If people can’t follow your words, they won’t follow your message.

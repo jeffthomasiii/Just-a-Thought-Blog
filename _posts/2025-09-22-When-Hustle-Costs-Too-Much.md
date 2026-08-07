@@ -1,26 +1,30 @@
 ---
 layout: post
-title: "When Hustle Costs Too Much"
-subtitle: "Ancient wisdom for a culture obsessed with grind"
-description: "Proverbs 23:4 challenges the endless pursuit of hustle, reminding us that wisdom, rest, and restraint matter more than wealth."
+title: When Hustle Costs Too Much
+subtitle: Ancient wisdom for a culture obsessed with grind
+description: Proverbs 23:4 challenges the endless pursuit of hustle, reminding us that wisdom, rest, and restraint matter more than wealth.
 date: 2025-09-22
 author: Jeff Thomas III
 categories:
-  - faith
-  - culture
-  - leadership
+- reflection
+collections:
+- faith
+- culture
+- leadership
 tags:
-  - hustle-culture
-  - rest
-  - wisdom
-  - success
-  - proverbs
-excerpt: "Hustle culture promises success but often leaves us restless. Proverbs 23:4 offers a better way: wisdom over weariness."
+- hustle-culture
+- rest
+- wisdom
+- success
+- stewardship
 image: /img/posts/stop-wearing-yourself-out.jpg
 background: /img/posts/bg-stop-wearing-yourself-out.jpg
-scripture: "Proverbs 23:4 – Do not wear yourself out to get rich; have the wisdom to show restraint."
+scripture:
+  - "Proverbs 23:4"
+  - "Luke 5:16"
+  - "Matthew 25:23"
+excerpt: 'Hustle culture promises success but often leaves us restless. Proverbs 23:4 offers a better way: wisdom over weariness.'
 ---
-
 ### Rise and Grind… Until You Can’t  
 “Rise and grind.”  
 “Sleep when you’re dead.”  
@@ -59,8 +63,4 @@ So maybe today, success looks less like chasing the next dollar and more like pu
 
 …just a thought.  
 
-Where in your life do you feel the pull of hustle culture most strongly, and what would wisdom and restraint look like there?  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTUzNTVdfQ==
--->
+Where in your life do you feel the pull of hustle culture most strongly, and what would wisdom and restraint look like there?

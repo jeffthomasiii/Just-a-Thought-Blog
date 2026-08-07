@@ -1,23 +1,28 @@
 ---
 layout: post
-title: "When Light Feels Like a Mirror"
-subtitle: "On reflecting Christ and letting the Spirit do the revealing"
-description: "Being the light of the world sometimes means holding a mirror, not a spotlight. What others see in that reflection often reveals what God is doing beneath the surface."
-date: 2026-01-07
+title: When Light Feels Like a Mirror
+subtitle: On reflecting Christ and letting the Spirit do the revealing
+description: Being the light of the world sometimes means holding a mirror, not a spotlight. What others see in that reflection often reveals what God is doing beneath the surface.
+date: '2026-01-07'
 author: Jeff Thomas III
 categories:
-  - faith
-  - reflection
+- reflection
+collections:
+- faith
+- culture
 tags:
-  - light of the world
-  - spiritual growth
-  - holiness
-excerpt: "Being the light of the world isn’t about shining on people, it’s about reflecting Christ. And sometimes that reflection reveals more than we expect."
+- light-of-the-world
+- spiritual-growth
+- holiness
+- conviction
+- christian-witness
 image: /img/posts/light-mirror-preview.jpg
 background: /img/posts/bg-light-mirror.jpg
-scripture: "Matthew 5:14 ESV, John 4:29 ESV"
+scripture:
+  - "Matthew 5:14"
+  - "John 4:29"
+excerpt: Being the light of the world isn’t about shining on people, it’s about reflecting Christ. And sometimes that reflection reveals more than we expect.
 ---
-
 I used to think being the light of the world meant bringing warmth, clarity, and hope wherever I went. Like a sunrise. A lantern. Something people would naturally be drawn to.  
 But lately, sometimes it feels more like I’m walking around with a mirror. And people don’t always like what they see.
 
@@ -50,6 +55,3 @@ You’re just holding the mirror.
 Let Him do the rest.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTA1NDAyXX0=
--->

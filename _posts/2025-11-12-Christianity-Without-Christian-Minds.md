@@ -6,18 +6,24 @@ description: "Exploring R. Kent Hughes’ warning against 'Christianity without 
 date: 2025-11-12
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
-  - discipleship
+  - culture
 tags:
   - spiritual-growth
   - christian-living
-  - discipline-of-mind
+  - christian-thinking
+  - discernment
+  - discipleship
+scripture:
+  - "Romans 12:2"
+  - "1 Corinthians 2:16"
+  - "Matthew 22:37"
 excerpt: "R. Kent Hughes called it 'the great scandal of today's church', Christians who do not think Christianly. What does that mean, and how can we reclaim the discipline of mind?"
 image: /img/posts/christianity-without-christian-minds.jpg
 background: /img/posts/bg-christianity-without-christian-minds.jpg
-scripture: "Romans 12:2 (ESV)"
 ---
-
 There’s a line from R. Kent Hughes’ *Disciplines of a Godly Man* that refuses to leave me:  
 > *“This cosmic potential of the believer’s mind introduced the great scandal of today's church: Christianity without Christian minds, that is, Christians who do not think Christianly...”*
 
@@ -73,8 +79,3 @@ Maybe the next time we scroll, react, or speak, we could pause and ask:
 Because when we do, the world catches a glimpse of what a transformed mind, and a transformed life, really looks like.  
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcxNzM1NjEzLC0xNDEyMDE4NDk3LDczMD
-k5ODExNl19
--->

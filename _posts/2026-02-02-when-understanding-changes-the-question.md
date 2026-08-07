@@ -1,24 +1,25 @@
 ---
 layout: post
-title: "When Understanding Changes the Question"
-subtitle: ""
-description: "A personal reflection on how AI tools are reshaping our relationship with understanding, trust, and discernment."
-date: 2026-02-02
+title: When Understanding Changes the Question
+subtitle: A personal reflection on how AI tools are reshaping our relationship with understanding, trust, and discernment.
+description: A personal reflection on how AI tools are reshaping our relationship with understanding, trust, and discernment.
+date: '2026-02-02'
 author: Jeff Thomas III
 categories:
-  - technology
-  - reflection
+- reflection
+collections:
+- technology
+- culture
 tags:
-  - AI
-  - discernment
-  - understanding
-  - NotebookLM
-  - wisdom
-excerpt: "AI hasn’t made me smarter, it’s made me more aware of what I don’t understand, and how often I’ve been willing to move forward anyway."
+- artificial-intelligence
+- discernment
+- understanding
+- notebooklm
+- wisdom
+excerpt: AI hasn’t made me smarter, it’s made me more aware of what I don’t understand, and how often I’ve been willing to move forward anyway.
 image: /img/posts/when-understanding-changes-the-question.jpg
 background: /img/posts/bg-when-understanding-changes-the-question.jpg
 ---
-
 I remember listening to an AI-generated audio overview of one of my own [blog posts](https://jeffthomasiii.github.io/Just-a-Thought-Blog/faith/tech/2025/07/18/Hearing-My-Words-Out-Loud.html) and stopping halfway through.
 
 My first thought was, *That’s exactly what I was trying to say.*  
@@ -137,10 +138,3 @@ Between speed and discernment.
 When understanding changes, the questions we ask change too.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MzUxMzIwMCw2MTE4NjU1NTYsLTg5NT
-c3OTE5LC0xOTcyMTc2NTc3LDE5NzgyNTgxMTMsMTc1MTM1MjA3
-OSw1MzIyNTM4MjksMTEwOTI0NTE2Niw0MjAwMDEzNTAsLTExMj
-U2NzAxNjhdfQ==
--->

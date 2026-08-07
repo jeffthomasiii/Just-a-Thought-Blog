@@ -1,26 +1,27 @@
 ---
 layout: post
-title: "The Problem of Complaining"
-subtitle: "When familiar words quietly reshape perception"
-description: "A reflective look at how complaining quietly shapes perception, spreads easily, and erodes trust in work, marriage, and leadership."
-date: 2026-01-16
+title: The Problem of Complaining
+subtitle: When familiar words quietly reshape perception
+description: A reflective look at how complaining quietly shapes perception, spreads easily, and erodes trust in work, marriage, and leadership.
+date: '2026-01-16'
 author: Jeff Thomas III
 categories:
-  - faith
-  - leadership
-  - relationships
+- reflection
+collections:
+- faith
+- culture
 tags:
-  - speech
-  - wisdom
-  - integrity
-  - character
-  - formation
-excerpt: "Complaining often feels harmless, even honest, but over time it reshapes how we see reality, people, and responsibility."
+- complaining
+- gratitude
+- contentment
+- speech
+- spiritual-growth
 image: /img/posts/the-problem-of-complaining-og.jpg
 background: /img/posts/the-problem-of-complaining-bg.jpg
-scripture: "Numbers 13–14"
+scripture:
+  - "Numbers 13–14"
+excerpt: Complaining often feels harmless, even honest, but over time it reshapes how we see reality, people, and responsibility.
 ---
-
 Complaining rarely announces itself. It usually slips into conversation quietly, wrapped in honesty, fatigue, or shared frustration. By the time we notice it, it already feels normal.
 
 Most of us don’t think of ourselves as complainers. We think of ourselves as observant. Realistic. Honest about what isn’t working. And often, what we’re saying *is* true. That’s part of what makes complaining so easy to miss.
@@ -52,7 +53,3 @@ There’s a quiet wisdom in how we speak when things aren’t ideal. A way of be
 Not every frustration needs rehearsal. Not every observation needs repetition. Sometimes the difference between awareness and erosion is simply what we allow our words to practice.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3ODU5Mzc4NCwxOTk3NDk0MjgzXX0=
--->

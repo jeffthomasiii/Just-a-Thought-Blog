@@ -6,21 +6,27 @@ description: "A reflective leadership post exploring why God entrusts influence 
 date: 2025-12-26
 author: Jeff Thomas III
 categories:
-  - leadership
+  - reflection
+collections:
   - faith
-tags:
-  - trust
-  - faithfulness
   - leadership
+tags:
+  - faithfulness
+  - trust
+  - character
+  - obedience
+  - stewardship
+  - influence
+scripture:
+  - "Luke 16:10"
+  - "1 Samuel 16:7"
+  - "Matthew 25:21"
 excerpt: "God does not entrust influence to those chasing visibility, but to those shaped by faithfulness."
-background: /img/posts/-lead-like-this-leader-god-trusts.jpg
-image: /img/posts/lead-like-this-leader-god-trusts.jpg
-scripture: "Luke 16:10; 1 Samuel 16:7; Matthew 25:21"
-contributors: []
+image: /img/posts/bg-lead-like-this-leader-god-trusts.jpg
+background: /img/posts/bg-lead-like-this-leader-god-trusts.jpg
 series: "Lead Like This"
 series_order: 8
 ---
-
 Most people want influence. Fewer people want the formation that makes influence safe.
 
 We often imagine leadership trust as something God gives suddenly, in big moments, with visible platforms and clear authority. But Scripture tells a quieter story. God entrusts leadership slowly. Carefully. Purposefully. And almost always out of sight.
@@ -57,6 +63,3 @@ It is to be trusted.
 And when God trusts a leader, He knows their influence will point back to Him.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMTcxODIxN119
--->

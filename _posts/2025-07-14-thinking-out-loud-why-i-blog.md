@@ -1,14 +1,28 @@
 ---
 layout: post
 title: "Thinking Out Loud, Why I Blog"
-subtitle: "Reflection as a Spiritual Discipline"
-date: 2025-07-14
-categories: [Faith, Personal Reflection]
-tags: [reflection, obedience, spiritual growth, journaling, writing]
-image: /img/posts/thinking-out-loud.jpg
-excerpt: Most of my best thoughts start messy. But somewhere in the writing, I hear God’s voice. This blog isn’t about platform, it's about obedience, clarity, and growth.
+subtitle: Reflection as a Spiritual Discipline
+description: "A personal reflection on writing as a spiritual discipline that creates room for clarity, obedience, discernment, and growth."
+date: "2025-07-14"
+author: Jeff Thomas III
+categories:
+- reflection
+collections:
+- faith
+- leadership
+tags:
+- reflection
+- obedience
+- "spiritual-growth"
+- "spiritual-disciplines"
+- journaling
+- writing
+- discernment
+- "personal-growth"
+excerpt: "Most of my best thoughts start messy. But somewhere in the writing, I hear God’s voice. This blog isn’t about platform, it's about obedience, clarity, and growth."
+image: "/img/posts/thinking-out-loud.jpg"
+background: "/img/posts/thinking-out-loud.jpg"
 ---
-
 Most of my best thoughts start messy.  
 
 They arrive like clutter, half-finished phrases, lingering questions, a swirl of conviction and curiosity. For a while, I tried to ignore them. I’d hear a whisper from the Lord in church, or during quiet time, something like *“write this down”*. I didn’t. Life got busy. I figured it wasn’t that important.  

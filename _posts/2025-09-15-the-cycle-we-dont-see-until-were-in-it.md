@@ -1,26 +1,29 @@
 ---
 layout: post
-title: "The Cycle We Don’t See Until We’re In It"
-subtitle: "Recognizing the unseen patterns that shape our marriage"
-description: "A reflection on how cycles of love, respect, and frustration form in marriage, and how to break free from the ones that tear down."
+title: The Cycle We Don’t See Until We’re In It
+subtitle: Recognizing the unseen patterns that shape our marriage
+description: A reflection on how cycles of love, respect, and frustration form in marriage, and how to break free from the ones that tear down.
 date: 2025-09-15
 author: Jeff Thomas III
 categories:
-  - faith
-  - marriage
+- reflection
+collections:
+- faith
+- marriage
 tags:
-  - love
-  - respect
-  - marriage
-  - relationships
-excerpt: "Many of us don’t realize we’re in a destructive cycle until it’s already spinning. The good news is, cycles can change."
+- love-and-respect
+- biblical-marriage
+- conflict-cycles
+- grace
+- relationships
+series: Love & Respect; More Than a Cycle
+series_order: 1
 image: /img/posts/the-cycle-we-dont-see.jpg
 background: /img/posts/bg-the-cycle-we-dont-see.jpg
-scripture: "Ephesians 4:26–27"
-series: "Love & Respect; More Than a Cycle"
-series_order: 1
+scripture:
+  - "Ephesians 4:26–27"
+excerpt: Many of us don’t realize we’re in a destructive cycle until it’s already spinning. The good news is, cycles can change.
 ---
-
 This post is part of a short series called **“Love & Respect; More Than a Cycle,”** reflecting on lessons we learned years ago in our Marrieds Small Group while going through Dr. Emerson Eggerichs’ book *Love & Respect.* These aren’t chapter summaries, but reflections on how the ideas have shaped my perspective on marriage.  
 
 ---
@@ -35,8 +38,4 @@ But cycles can change. When we choose grace instead of accusation, patience inst
 
 Maybe the most important step is simply asking: *What cycle am I in right now? And is it one that builds or one that breaks?*  
 
-…just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTcwNjM4MjhdfQ==
--->
+…just a thought.

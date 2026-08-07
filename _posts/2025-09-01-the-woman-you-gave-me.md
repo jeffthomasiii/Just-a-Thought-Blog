@@ -1,24 +1,29 @@
 ---
 layout: post
-title: "The Woman You Gave Me: When Men Refuse Responsibility"
-subtitle: "From Adam’s blame to Christ’s example"
-description: "Exploring the responsibility of husbands through Adam’s failure in Eden and Christ’s example of sacrificial love."
+title: 'The Woman You Gave Me: When Men Refuse Responsibility'
+subtitle: From Adam’s blame to Christ’s example
+description: Exploring the responsibility of husbands through Adam’s failure in Eden and Christ’s example of sacrificial love.
 date: 2025-09-01
 author: Jeff Thomas III
 categories:
-  - faith
-  - marriage
+- reflection
+collections:
+- faith
+- marriage
+- leadership
 tags:
-  - responsibility
-  - marriage
-  - husbands
-  - leadership
-excerpt: "Adam deflected blame. Christ embraced responsibility. What does that mean for husbands today?"
-image: /img/posts/the-woman-you-gave-me.jpg
+- responsibility
+- biblical-marriage
+- husbands
+- servant-leadership
+- accountability
+image: /img/posts/bg-the-woman-you-gave-me.jpg
 background: /img/posts/bg-the-woman-you-gave-me.jpg
-scripture: "Genesis 3:12; Ephesians 5:25"
+scripture:
+  - "Genesis 3:12"
+  - "Ephesians 5:25"
+excerpt: Adam deflected blame. Christ embraced responsibility. What does that mean for husbands today?
 ---
-
 #### The Oldest Excuse in the Book
 It’s one of the oldest moves in the book. When God confronted Adam after the Fall, his reply wasn’t a confession but a deflection:  
 *“The woman whom you gave to be with me, she gave me fruit of the tree, and I ate.”* (Genesis 3:12)  
@@ -69,7 +74,3 @@ So here’s the real question: when tension rises, will we echo Adam;*“the wom
 One deflects. The other embraces. One leaves the garden in ruins. The other restores it with love.  
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUyMzI4NTgzXX0=
--->

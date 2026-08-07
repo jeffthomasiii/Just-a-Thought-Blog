@@ -2,23 +2,27 @@
 layout: post
 title: "Pursuing Peace on Purpose"
 subtitle: "Choosing calm when circumstances try to steal it"
-description: "A story about our August camping trip and how a small crisis became an opportunity to press on toward peace."
+description: "A camping reflection on interruption, attention, trust, and the deliberate work of keeping our minds anchored in God when circumstances become frustrating."
 date: 2025-08-20
 author: Jeff Thomas III
-categories:  
-- faith  
-- camping
-tags:  
-- peace  
-- perseverance  
-- camping  
-- trust
-excerpt: "Peace isn’t found by accident, it’s found on purpose. Here’s how an unexpected camping problem became a reminder to keep my mind fixed on the One who gives perfect peace."
+categories:
+  - reflection
+collections:
+  - faith
+  - creation
+tags:
+  - peace
+  - perseverance
+  - camping
+  - trust
+  - rest
+  - attention
+scripture:
+  - "Isaiah 26:3"
+excerpt: "Peace is not always found by accident. Sometimes it is protected by deliberately returning our focus to the One who holds us steady."
 image: /img/posts/bg-pursuing-peace-on-purpose.jpg
 background: /img/posts/bg-pursuing-peace-on-purpose.jpg
-scripture: "Isaiah 26:3 ESV"
 ---
-
 Sometimes peace isn’t handed to you, you have to fight for it, not with your fists, but with your focus.
 
 Camping has become part of our monthly rhythm, a time to step away from the constant noise and reconnect. But in July, work travel and a full calendar kept us from getting out, so by August we were more than ready for a reset.
@@ -40,6 +44,3 @@ That night, under a cooler sky, I thought about how often life gives us the same
 The truth is, peace is something we protect by choosing it over and over again, even when the conditions aren’t perfect. Especially when they aren’t perfect.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzE1NTc3NF19
--->

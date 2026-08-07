@@ -1,15 +1,30 @@
 ---
-title: "What Does It Mean to Be Holy?"
-date: 2025-07-30
-author: Jeff Thomas III
-tags: [holiness, 1 Peter, spiritual growth, Christian living, discipleship]
-scripture: "1 Peter 1:14–16 (ESV)"
 layout: post
-categories: [Faith, Just a Thought]
+title: "What Does It Mean to Be Holy?"
+subtitle: Living as someone set apart for God
+description: "A reflection on 1 Peter 1:14–16 and what holiness means as belonging to God, resisting old patterns, and growing in obedience."
+date: "2025-07-30"
+author: Jeff Thomas III
+categories:
+- reflection
+collections:
+- faith
+tags:
+- holiness
+- "first-peter"
+- "spiritual-growth"
+- "christian-living"
+- discipleship
+- obedience
+- "identity-in-christ"
+- sanctification
+- "set-apart"
+scripture:
+  - "1 Peter 1:14-16"
 excerpt: "Holiness isn’t about being flawless, it’s about being set apart. This post wrestles with Peter’s call to be holy and explores what it means practically, with real-life reflections and relatable stories."
-background: /img/posts/What-Does-It-Mean-to-Be-Holy.png
+image: "/img/posts/What-Does-It-Mean-to-Be-Holy.png"
+background: "/img/posts/What-Does-It-Mean-to-Be-Holy.png"
 ---
-
 > *“As obedient children, do not be conformed to the passions of your former ignorance, but as He who called you is holy, you also be holy in all your conduct, since it is written, ‘You shall be holy, for I am holy.’”* 1 Peter 1:14–16 (ESV)
 
 

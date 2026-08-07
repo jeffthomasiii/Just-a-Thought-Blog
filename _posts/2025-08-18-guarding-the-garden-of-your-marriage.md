@@ -2,14 +2,27 @@
 layout: post
 title: "Guarding the Garden of Your Marriage"
 subtitle: "Because weeds don’t wait for permission"
+description: "A reflection on guarding unity in marriage by confronting resentment, assumptions, outside influences, and other small patterns before they take root."
 date: 2025-08-18
-excerpt: "In marriage, what you ignore grows, especially the lies and assumptions that divide. Guard the garden. Pull the weeds."
-categories: faith marriage
-tags: [marriage, unity, thought life, spiritual growth, forgiveness]
 author: Jeff Thomas III
+categories:
+  - reflection
+collections:
+  - faith
+  - marriage
+tags:
+  - biblical-marriage
+  - unity
+  - thought-life
+  - forgiveness
+  - resentment
+  - boundaries
+scripture:
+  - "2 Corinthians 10:5"
+excerpt: "What we ignore can grow. Marriage requires the shared work of identifying and pulling the subtle weeds that threaten unity."
+image: /img/posts/bg-guarding-the-garden-of-your-marriage.png
 background: /img/posts/bg-guarding-the-garden-of-your-marriage.png
 ---
-
 If you’ve ever let a garden go untended, even for a few weeks, you know what happens. The weeds don’t ask for permission. They just show up. Grow fast. And take over.
 
 Marriage is no different.  

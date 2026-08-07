@@ -1,26 +1,27 @@
 ---
 layout: post
-title: "The Road Between Confusion and Clarity"
-subtitle: "On the Progressive Revelation of the Disciples"
-description: "The disciples did not understand everything at once. Their journey from confusion to clarity teaches us humility and grace toward one another."
-date: 2026-02-16
+title: The Road Between Confusion and Clarity
+subtitle: On the Progressive Revelation of the Disciples
+description: The disciples did not understand everything at once. Their journey from confusion to clarity teaches us humility and grace toward one another.
+date: '2026-02-16'
 author: Jeff Thomas III
 categories:
-  - faith
-  - discipleship
+- bible-study
+collections:
+- faith
 tags:
-  - progressive revelation
-  - mark 8
-  - spiritual growth
-  - humility
-  - grace
-excerpt: "The disciples walked a road from confusion to clarity. Maybe we are still on that road too."
+- progressive-revelation
+- mark-8
+- spiritual-growth
+- humility
+- grace
+scripture:
+  - "Mark 8:29"
+  - "Luke 24:45"
+excerpt: The disciples walked a road from confusion to clarity. Maybe we are still on that road too.
 image: /img/posts/the-road-between-confusion-and-clarity.jpg
 background: /img/posts/bg-the-road-between-confusion-and-clarity.jpg
-scripture: "Mark 8:29; Luke 24:45 ESV"
 ---
-
-
 I have been on both sides of the conversation.
 
 The one who just discovered something in Scripture that felt unmistakably clear and wondered why everyone else did not see it the same way.

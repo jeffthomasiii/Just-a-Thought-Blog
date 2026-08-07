@@ -5,22 +5,26 @@ subtitle: "Skill #4 – Physical Strength and Endurance"
 description: "Physical strength isn’t about vanity, it’s about stewardship. True strength shows itself in service and endurance, not in appearance."
 date: 2025-10-24
 author: Jeff Thomas III
-categories:  
-- manhood  
-- faith  
-- growth
-tags:  
-- strength  
-- service  
-- endurance  
+categories:
+  - reflection
+collections:
+  - faith
+  - leadership
+tags:
+  - strength
+  - service
+  - endurance
+  - stewardship
+  - manhood
+scripture:
+  - "1 Corinthians 9:27"
+  - "1 Timothy 4:8"
 excerpt: "True strength is measured not by how much weight you can lift, but by how much you can carry for the good of others."
 image: /img/posts/strong-enough-to-serve.jpg
 background: /img/posts/bg-strong-enough-to-serve.jpg
-scripture: "1 Corinthians 9:27 NIV, 1 Timothy 4:8 NIV"
 series: "10 Skills Every Man Should Have"
 series_order: 5
 ---
-
 Strength is often measured in pounds lifted or miles run, but real strength is tested in moments of service. Carrying groceries for your wife. Helping a neighbor move. Loading heavy supplies for a church event. It’s not glamorous, but it matters.  
 
 The Apostle Paul wrote, *“I strike a blow to my body and make it my slave so that after I have preached to others, I myself will not be disqualified for the prize.”* (1 Corinthians 9:27 NIV). For him, physical discipline was never about appearance, it was about stewardship. The body is a vessel for service, and service requires endurance.  
@@ -40,7 +44,3 @@ The question isn’t, *How strong are you?* but rather, *Who benefits from your 
 Because true strength is measured not by how much weight you can lift, but by how much you can carry for the good of others.  
 
 …just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNjI0ODI4Nl19
--->

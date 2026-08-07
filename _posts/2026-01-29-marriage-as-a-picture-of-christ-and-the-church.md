@@ -1,24 +1,27 @@
 ---
 layout: post
-title: "Marriage as a Picture of Christ and the Church"
-subtitle: ""
-description: "Marriage is not merely practical; it is a living parable meant to point beyond itself to the covenant love of Christ for His church."
-date: 2026-01-29
+title: Marriage as a Picture of Christ and the Church
+subtitle: Marriage is not merely practical; it is a living parable meant to point beyond itself to the covenant love of Christ for His church.
+description: Marriage is not merely practical; it is a living parable meant to point beyond itself to the covenant love of Christ for His church.
+date: '2026-01-29'
 author: Jeff Thomas III
 categories:
-  - marriage
-  - faith
+- reflection
+collections:
+- faith
+- marriage
 tags:
-  - marriage
-  - gospel
-  - covenant
-  - ephesians
-excerpt: "Marriage is invited to be more than a relationship to maintain, it can become a quiet witness to the self-giving love of Christ."
+- biblical-marriage
+- gospel
+- covenant
+- christ-and-the-church
+- sacrificial-love
 image: /img/posts/marriage-christ-church.jpg
 background: /img/posts/bg-marriage-christ-church.jpg
-scripture: "Ephesians 5:25–27 ESV"
+scripture:
+  - "Ephesians 5:25–27"
+excerpt: Marriage is invited to be more than a relationship to maintain, it can become a quiet witness to the self-giving love of Christ.
 ---
-
 There are seasons in marriage where you start asking quieter questions.
 
 Not, *How do we fix this?*  
@@ -65,7 +68,3 @@ Not performatively.
 But truly.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTA2OTMzMjMsLTIwNjUyODUzNzldfQ
-==
--->

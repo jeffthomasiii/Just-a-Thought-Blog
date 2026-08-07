@@ -1,8 +1,9 @@
 # Just A Thought Content Architecture
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Status:** Canonical  
-**Adopted:** 2026-08-04
+**Adopted:** 2026-08-04  
+**Revised:** 2026-08-05
 
 ## Purpose
 
@@ -14,19 +15,21 @@ Published post front matter is the single source of truth. The site will not req
 
 Each field has one responsibility:
 
-| Field | Question it answers |
-|---|---|
-| `categories` | What kind of article is this? |
-| `collections` | Where should readers discover it? |
-| `tags` | What specific ideas does it explore? |
-| `series` | What larger intentional conversation does it belong to? |
-| `scripture` | Which biblical passages are central to it? |
+| Internal concept | Front matter field | Question it answers |
+|---|---|---|
+| Article Type | `categories` | What kind of article is this? |
+| Reader Collection | `collections` | Where should readers discover it? |
+| Topic Tag | `tags` | What specific ideas does it explore? |
+| Series | `series` | What larger intentional conversation does it belong to? |
+| Scripture | `scripture` | Which biblical passages are central to it? |
 
 Metadata should not duplicate the responsibility of another field.
 
+Throughout editorial documentation and planning, use the term **Article Type** rather than Category. Jekyll will continue storing article types in the `categories` field.
+
 ## Article Types
 
-Article types are stored in Jekyll's `categories` field. A post should normally have one article type.
+Article types describe editorial format. They are stored in Jekyll's `categories` field. A post should normally have one article type.
 
 Official values:
 
@@ -81,6 +84,32 @@ Official values:
 
 Collections drive homepage topic cards, collection landing pages, and related-content pathways.
 
+### Faith
+
+Scripture, discipleship, prayer, spiritual formation, Christian living, theology, and walking with Christ in ordinary life.
+
+### Marriage
+
+Biblical marriage, covenant, communication, unity, intimacy, conflict, sacrifice, and relational growth between spouses.
+
+### Leadership
+
+Character, influence, responsibility, mentoring, stewardship, workplace leadership, ministry leadership, and servant leadership.
+
+### Technology
+
+Artificial intelligence, architecture and design technology, digital tools, innovation, ethics, and navigating technological change.
+
+### Culture
+
+Books, ideas, media, politics, public life, discernment, social questions, and faithful cultural engagement.
+
+### Creation
+
+Camping, hiking, beaches, outdoor travel, nature, rest, quiet, adventure, and reflections shaped by the created world.
+
+Camping belongs within this broader collection rather than defining the whole collection. A post does not need to be about camping specifically, but creation, an outdoor setting, or time in nature should meaningfully shape the reflection.
+
 ## Tags
 
 Tags identify specific ideas, themes, practices, audiences, tensions, passages, or subjects.
@@ -105,7 +134,7 @@ Examples:
 
 ## Series
 
-Series metadata is independent of categories, collections, and tags.
+Series metadata is independent of article types, collections, and tags.
 
 ```yaml
 series: "The Daily Death of Pride"
@@ -169,6 +198,18 @@ series_order: 1
 
 Omit optional fields when they do not apply. Do not leave empty keys solely to preserve the template.
 
+## Classification Test
+
+Use these questions in order when classifying a post:
+
+1. **Article Type:** What editorial form best describes the finished piece?
+2. **Reader Collections:** Which homepage pathways would reasonably help a reader discover it?
+3. **Tags:** Which specific, reusable ideas distinguish it from other posts in those collections?
+4. **Series:** Does it belong to an intentional, named reading sequence?
+5. **Scripture:** Which passages are central enough to support future Scripture browsing?
+
+A Christian worldview alone does not automatically place every post in the Faith collection. Faith should be central to the article's subject, development, or application.
+
 ## Recommendation Priority
 
 Future related-content scoring should generally prioritize:
@@ -186,7 +227,7 @@ The purpose is not to maximize clicks. It is to help readers continue thinking t
 
 The site should eventually support browsing by:
 
-- Collection
+- Reader collection
 - Article type
 - Series
 - Scripture
@@ -196,9 +237,16 @@ The site should eventually support browsing by:
 
 ## Governance
 
-Changes to official article types or collections require an update to this document and an entry in the changelog.
+Changes to official article types or reader collections require an update to this document and an entry in the changelog.
 
 ### Changelog
+
+#### 1.1 — 2026-08-05
+
+- Adopted **Article Type** as the editorial term for values stored in `categories`.
+- Clarified the separate responsibilities of article types and reader collections.
+- Confirmed `creation` as the sixth reader collection, encompassing camping, hiking, beaches, outdoor travel, nature, and related reflections.
+- Added collection definitions and a classification test.
 
 #### 1.0 — 2026-08-04
 

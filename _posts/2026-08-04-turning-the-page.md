@@ -6,23 +6,27 @@ description: "A reflection on how reading Scripture sequentially can reveal mean
 date: 2026-08-04
 author: Jeff Thomas III
 categories:
-- Faith
-- Reflections
+  - reflection
+collections:
+  - faith
 tags:
-- scripture
-- bible-reading
-- hebrews
-- james
-- faith
-- obedience
-- discipleship
-- spiritual-growth
+  - scripture
+  - bible-reading
+  - hebrews
+  - james
+  - faith
+  - obedience
+  - discipleship
+  - spiritual-growth
+scripture:
+  - "Hebrews 10:19-25"
+  - "Hebrews 11:1-12:2"
+  - "James 1:2-27"
+  - "James 2:14-26"
 excerpt: "I finished Hebrews and turned the page to James. What felt like an ordinary transition became a reminder that Scripture often speaks across its pages."
 image: /img/posts/turning-the-page.jpg
 background: /img/posts/bg-turning-the-page.jpg
-scripture: "Hebrews 10:19–25; Hebrews 11:1–12:2; James 1:2–27; James 2:14–26"
 ---
-
 This morning, I finished reading Hebrews and opened the book of James. I have been reading through the New Testament each day, so there was nothing unusual about the moment. Hebrews ended, James came next, and I turned the page. Before I began reading, though, a simple thought crossed my mind: what a fitting transition.
 
 Hebrews had spent chapter after chapter directing my attention toward Christ, reminding me of who He is, what He has accomplished, and why He is worthy of our confidence. Then, immediately after finishing a book that repeatedly calls believers to hold fast, endure, and keep looking to Jesus, I arrived at a letter that seems deeply concerned with what faith looks like once it begins shaping the way we live.

@@ -1,11 +1,30 @@
 ---
+layout: post
 title: Speak Life Over Them
-date: 2025-07-02
-tags: [marriage, prayer, speaking life, husbands, wives, biblical marriage]
-excerpt: This 2-part blog series invites husbands and wives to intentionally pray for and speak truth over each other with the power of Scripture, compassion, and clarity.
-image: /img/posts/speak-life-over-them.jpg
+subtitle: An introduction to praying for and encouraging your spouse
+description: "An introduction to a series inviting husbands and wives to pray intentionally and speak Scripture-shaped truth, encouragement, and compassion over one another."
+date: "2025-07-07"
+author: Jeff Thomas III
+categories:
+- "series-introduction"
+collections:
+- faith
+- marriage
+tags:
+- "biblical-marriage"
+- prayer
+- encouragement
+- communication
+- "spiritual-warfare"
+- "speaking-life"
+- husbands
+- wives
+excerpt: "This two-part series invites husbands and wives to intentionally pray for and speak truth over each other with the power of Scripture, compassion, and clarity."
+image: "/img/posts/speak-life-over-them.jpg"
+background: "/img/posts/speak-life-over-them.jpg"
+series: Speak Life Over Them
+series_order: 1
 ---
-
 Have you ever realized you were trying to fix something with good intentions… but the wrong tools?
 
 That was me, not too long ago.

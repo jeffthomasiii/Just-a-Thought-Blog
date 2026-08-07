@@ -6,21 +6,27 @@ description: "A reflective leadership post exploring the difference between true
 date: 2025-12-15
 author: Jeff Thomas III
 categories:
-  - leadership
+  - reflection
+collections:
   - faith
+  - leadership
 tags:
   - humility
-  - leadership
   - character
+  - courage
+  - obedience
+  - spiritual-formation
+  - influence
+scripture:
+  - "Philippians 2:3"
+  - "Micah 6:8"
+  - "James 4:6"
 excerpt: "Humility is not hiding. It is the courage to show up with a surrendered heart and a steady posture."
+image: /img/posts/bg-lead-like-this-humble-not-hidden.jpg
 background: /img/posts/bg-lead-like-this-humble-not-hidden.jpg
-image: /img/posts/lead-like-this-humble-not-hidden.jpg
-scripture: "Philippians 2:3; Micah 6:8; James 4:6"
-contributors: []
 series: "Lead Like This"
 series_order: 3
 ---
-
 Humility is one of those words we admire in theory but wrestle with in practice. We know it is good. We know it is godly. We know Jesus modeled it perfectly. Yet somewhere along the way, humility became tangled with something else. Not confidence. Not courage. Something quieter and more deceptive. Hiding.
 
 Many of us were taught to avoid pride by avoiding visibility. Blend in. Stay low. Do not step forward unless someone pushes you. But that is not humility. That is fear dressed in modest clothing. Hiding looks humble on the outside, but on the inside it is often a fear of failure, rejection, comparison, or judgment.
@@ -57,7 +63,3 @@ Humility is not hidden. It is honest. It is steady. It is surrendered.
 And that kind of humility shapes leaders who can be trusted.
 
 …just a thought.
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNjU5ODYxNl19
--->

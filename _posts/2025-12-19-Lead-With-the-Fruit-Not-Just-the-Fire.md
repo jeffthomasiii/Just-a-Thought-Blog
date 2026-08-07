@@ -6,21 +6,26 @@ description: "A reflective leadership post exploring why passion can ignite a mo
 date: 2025-12-19
 author: Jeff Thomas III
 categories:
-  - leadership
+  - reflection
+collections:
   - faith
+  - leadership
 tags:
   - character
-  - fruit of the Spirit
-  - leadership
+  - fruit-of-the-spirit
+  - passion
+  - spiritual-formation
+  - servant-leadership
+  - self-control
+scripture:
+  - "Galatians 5:22-23"
+  - "Matthew 7:15-20"
 excerpt: "Fire can start something powerful, but only fruit can sustain what God begins through us."
+image: /img/posts/bg-lead-like-this-fruit-not-fire.jpg
 background: /img/posts/bg-lead-like-this-fruit-not-fire.jpg
-image: /img/posts/lead-like-this-fruit-not-fire.jpg
-scripture: "Galatians 5:22–23; Matthew 7:15–20"
-contributors: []
 series: "Lead Like This"
 series_order: 5
 ---
-
 There is something energizing about fire. Passion. Drive. Vision. The spark that makes a leader move and makes others want to move with them. Fire can start something powerful. Fire can gather people. Fire can break inertia and stir hope.
 
 But fire alone cannot sustain anything.

@@ -5,22 +5,25 @@ subtitle: "Skill #7 – Medical, First Aid, and Communications Basics"
 description: "Preparedness isn’t about fear, it’s about love. A man who knows the basics can bring calm when it matters most."
 date: 2025-11-14
 author: Jeff Thomas III
-categories:  
-- manhood  
-- faith  
-- growth
-tags:  
-- preparedness  
-- responsibility  
-- service  
+categories:
+  - reflection
+collections:
+  - faith
+  - leadership
+tags:
+  - preparedness
+  - responsibility
+  - service
+  - first-aid
+  - manhood
+scripture:
+  - "Proverbs 22:3"
 excerpt: "Medical, first aid, and communications basics won’t make headlines. But they can mean everything in a moment that matters."
 image: /img/posts/prepared-to-help.jpg
 background: /img/posts/bg-prepared-to-help.jpg
-scripture: "Proverbs 22:3 NIV"
 series: "10 Skills Every Man Should Have"
 series_order: 8
 ---
-
 Crisis rarely announces itself. It shows up in the middle of dinner when a child starts choking, on the side of the road after an accident, or in a storm when the power goes out and cell service fails. In those moments, the difference between panic and peace is often preparation.  
 
 A man doesn’t need to be a doctor or a soldier to make a difference. But every man should know the basics: how to stop a bleed, how to perform CPR, how to use a radio when phones don’t work, how to calm a voice over the airwaves until help arrives. These aren’t glamorous skills, but they are lifesaving ones.  

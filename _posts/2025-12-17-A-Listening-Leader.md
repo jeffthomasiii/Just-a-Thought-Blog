@@ -6,21 +6,27 @@ description: "A reflective leadership post exploring the discipline of listening
 date: 2025-12-17
 author: Jeff Thomas III
 categories:
-  - leadership
+  - reflection
+collections:
   - faith
+  - leadership
 tags:
   - listening
-  - leadership
+  - wisdom
   - character
+  - empathy
+  - communication
+  - servant-leadership
+scripture:
+  - "James 1:19"
+  - "Proverbs 18:13"
+  - "John 10:27"
 excerpt: "Listening is more than hearing words. It is paying attention to the heart behind them and creating space for wisdom to rise."
+image: /img/posts/bg-lead-like-this-listening-leader.jpg
 background: /img/posts/bg-lead-like-this-listening-leader.jpg
-image: /img/posts/lead-like-this-listening-leader.jpg
-scripture: "James 1:19; Proverbs 18:13; John 10:27"
-contributors: []
 series: "Lead Like This"
 series_order: 4
 ---
-
 There is a kind of leader who walks into a room and fills it with noise. They speak quickly. They answer before the question is finished. They have a response for every situation. They assume they understand. They assume they know. They assume they are right.
 
 And then there is another kind of leader.  

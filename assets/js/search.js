@@ -158,9 +158,9 @@
       footer.appendChild(date);
     }
 
-    const action = document.createElement("span");
+    const action = document.createElement("a");
     action.className = "jat-text-link";
-    action.setAttribute("aria-hidden", "true");
+    action.href = doc.url;
     action.textContent = "Read Reflection →";
     footer.appendChild(action);
 
@@ -210,6 +210,7 @@
 
   function safeTerms(query) {
     return query
+      .toLocaleLowerCase()
       .replace(/[^\w\s-]/g, " ")
       .trim()
       .split(/\s+/)

@@ -6,19 +6,23 @@ description: "A reflection on how God models the only perfect union of being ful
 date: 2026-05-03
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
 tags:
-  - God
-  - identity
   - love
+  - identity
+  - vulnerability
+  - acceptance
+  - gods-love
+scripture:
+  - "Psalm 139:1-4"
 excerpt: "The kind of love we’re looking for… already exists."
-image: /img/posts/fully-known-fully-loved.jpg
+image: /img/posts/bg-fully-known-fully-loved.jpg
 background: /img/posts/bg-fully-known-fully-loved.jpg
-scripture: "Psalm 139:1–4"
 series: "Known & Loved"
 series_order: 5
 ---
-
 There’s something we all seem to be looking for. Even if we don’t always say it out loud.
 > To be fully known and still fully loved.
 
@@ -34,7 +38,3 @@ It’s whether we’re willing to receive it. To stop managing. To stop filterin
 > It’s built on who **He** is.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIxOTYzNjU0LC02NjgzNTk0MTQsLTE0Nz
-E1NTgzMDBdfQ==
--->

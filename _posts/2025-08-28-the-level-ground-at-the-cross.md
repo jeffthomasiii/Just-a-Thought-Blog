@@ -2,10 +2,12 @@
 layout: post
 title: "The Level Ground at the Cross: Why God Has No Favorites"
 subtitle: "Learning impartial love in a world full of favoritism"
-description: "A biblical reflection on impartiality, favoritism, cultural identity, justice, and unity in Christ."
+description: "A biblical reflection on impartiality, favoritism, cultural identity, justice, and the unity believers share in Christ."
 date: 2025-08-28
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
   - culture
 tags:
@@ -13,12 +15,16 @@ tags:
   - unity
   - justice
   - favoritism
-excerpt: "God has no favorites. At the foot of the cross, the ground is level, inviting us to love without partiality."
-image: /img/posts/god-has-no-favorites.jpg
+  - cultural-identity
+  - church
+scripture:
+  - "Romans 2:11"
+  - "James 2:1"
+  - "Galatians 3:28"
+excerpt: "God shows no partiality. At the foot of the cross, our ladders of status and favoritism give way to level ground."
+image: /img/posts/bg-god-has-no-favorites.jpg
 background: /img/posts/bg-god-has-no-favorites.jpg
-scripture: "Romans 2:11; James 2:1"
 ---
-
 Have you ever noticed how quickly favoritism shows up in life?  
 On the playground, it’s who gets picked first for the team.  
 In the workplace, it’s who gets the promotion everyone else quietly questions.  

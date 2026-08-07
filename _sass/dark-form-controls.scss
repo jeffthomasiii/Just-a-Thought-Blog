@@ -1,0 +1,38 @@
+/* Dark-mode form control normalization across Search and Listen pages. */
+body.dark-mode .jat-search-form input[type='search'],
+body.dark-mode .jat-search-form select,
+body.dark-mode .jat-listen-filter-field input,
+body.dark-mode .jat-listen-filter-field select,
+body.dark-mode .jat-listen-now-playing select,
+body.dark-mode .jat-listen-now-playing input,
+body.dark-mode input[type='search'],
+body.dark-mode select {
+  border-color: rgba(214, 179, 107, 0.3) !important;
+  background-color: #22251d !important;
+  color: #f6f1e7 !important;
+  color-scheme: dark;
+}
+
+body.dark-mode .jat-search-form select option,
+body.dark-mode .jat-listen-filter-field select option,
+body.dark-mode .jat-listen-now-playing select option,
+body.dark-mode select option {
+  background-color: #22251d !important;
+  color: #f6f1e7 !important;
+}
+
+body.dark-mode .jat-search-form input[type='search']::placeholder,
+body.dark-mode .jat-listen-filter-field input::placeholder,
+body.dark-mode .jat-listen-now-playing input::placeholder,
+body.dark-mode input[type='search']::placeholder {
+  color: #c9c1b0 !important;
+  opacity: 1;
+}
+
+body.dark-mode .jat-search-form input[type='search']:-webkit-autofill,
+body.dark-mode .jat-listen-filter-field input:-webkit-autofill,
+body.dark-mode input[type='search']:-webkit-autofill {
+  -webkit-text-fill-color: #f6f1e7 !important;
+  box-shadow: 0 0 0 1000px #22251d inset !important;
+  caret-color: #f6f1e7;
+}

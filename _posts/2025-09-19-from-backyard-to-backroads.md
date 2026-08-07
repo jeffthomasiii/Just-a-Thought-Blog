@@ -1,24 +1,27 @@
 ---
 layout: post
-title: "From Backyard to Backroads"
-subtitle: "How a small step turned into a lifestyle of adventure"
-description: "A reflective look at how our camping journey began with a backyard experiment, grew into towing a trailer, and taught us about risk, growth, and relationship."
+title: From Backyard to Backroads
+subtitle: How a small step turned into a lifestyle of adventure
+description: A reflective look at how our camping journey began with a backyard experiment, grew into towing a trailer, and taught us about risk, growth, and relationship.
 date: 2025-09-19
 author: Jeff Thomas III
 categories:
-  - camping
-  - marriage
+- reflection
+collections:
+- creation
+- marriage
 tags:
-  - camping
-  - marriage
-  - adventure
-  - growth
-excerpt: "What began as a backyard campout grew into towing a trailer and monthly adventures. Along the way, we discovered lessons in risk, growth, and relationship."
+- camping
+- adventure
+- biblical-marriage
+- growth
+- outdoor-life
 image: /img/posts/from-backyard-to-backroads.jpg
 background: /img/posts/bg-from-backyard-to-backroads.jpg
-scripture: "Ecclesiastes 3:1 – For everything there is a season, and a time for every matter under heaven."
+scripture:
+  - "Ecclesiastes 3:1"
+excerpt: What began as a backyard campout grew into towing a trailer and monthly adventures. Along the way, we discovered lessons in risk, growth, and relationship.
 ---
-
 Our first camping trip wasn’t to a national park or even a state campground. It was in our own backyard. We didn’t check the weather app. We didn’t really make a packing list. Truthfully, we didn’t know what we didn’t know. We just dragged out a tent, talked way too long about what we’d eat, and gave it a shot. The luxury of being steps from our kitchen made the menu the biggest decision we worried about. Everything else? We figured we’d learn as we went.  
 
 That backyard campout was our “training wheels.” It was clumsy, simple, and more novelty than necessity, but it gave us a taste of adventure without the pressure of getting everything right.  
@@ -59,8 +62,4 @@ Looking back, it wasn’t really about the tent or the resort-style pool or even
 
 Adventure doesn’t always begin with a big leap. Sometimes it begins with a backyard trial run. The important part is to start—because on the other side of risk and growth is deeper relationship, richer memories, and a story worth telling.  
 
-…just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjcwNTY4NjBdfQ==
--->
+…just a thought.

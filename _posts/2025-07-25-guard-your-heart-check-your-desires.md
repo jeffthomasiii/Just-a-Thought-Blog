@@ -1,14 +1,34 @@
 ---
 layout: post
 title: "Guard Your Heart: Check Your Desires Early"
-date: 2025-07-25
+subtitle: Why hidden desires should be examined before they take root
+description: "A reflection on guarding the heart, examining desire early, and recognizing how temptation grows before it becomes destructive."
+date: "2025-07-25"
 author: Jeff Thomas III
-categories: [faith, reflection]
-tags: [Proverbs, heart, desires, self-control, spiritual-discipline]
+categories:
+- reflection
+collections:
+- faith
+- culture
+tags:
+- proverbs
+- "guard-your-heart"
+- desires
+- temptation
+- "self-control"
+- "spiritual-disciplines"
+- discernment
+- stewardship
+- james
+- "christian-living"
+scripture:
+  - "Proverbs 4:23"
+  - "Psalm 119:11"
+  - "James 1:14-15"
 excerpt: "Desire doesn’t destroy us overnight, it quietly takes root. Guarding your heart means catching what grows there early, before it bears fruit in your life. Here’s why that matters now more than ever."
-background: /img/posts/guard-your-heart-check-your-desires.png
+image: "/img/posts/guard-your-heart-check-your-desires.png"
+background: "/img/posts/guard-your-heart-check-your-desires.png"
 ---
-
 > *“Above all else, **guard your heart**, for everything you do flows from it.”* - *Proverbs 4:23*
 
 ### The Slow Drift
@@ -114,4 +134,3 @@ Just something I’m thinking about lately…
 
 > **What about you?**  
 > What are you currently desiring that might need re-examination? Have you ever noticed a time when catching a small thought early saved you from a bigger mistake?
-

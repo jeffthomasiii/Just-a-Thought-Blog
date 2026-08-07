@@ -6,21 +6,24 @@ description: "A reflection on how our love for Christ cannot be separated from o
 date: 2025-10-29
 author: Jeff Thomas III
 categories:
-  - faith
   - reflection
+collections:
+  - faith
+  - culture
 tags:
   - church
-  - christ
-  - body
-  - bride
+  - body-of-christ
+  - bride-of-christ
   - grace
-  - love
+  - covenant-love
+scripture:
+  - "Ephesians 5:25-32"
+  - "1 Corinthians 3:16"
+  - "Ephesians 1:22-23"
 excerpt: "You can be disappointed with the Church and still love Christ, but you can’t love Christ and hate His Body. The Head and the Body are one, and His love is covenant, not convenience."
 image: /img/posts/you-cant-love-christ-and-hate-his-church.jpg
 background: /img/posts/bg-you-cant-love-christ-and-hate-his-church.jpg
-scripture: "Ephesians 5:25–32, 1 Corinthians 3:16, Ephesians 1:22–23"
 ---
-
 ### **When Love and Frustration Collide**
 
 Let’s be honest, the Church can be hard to love sometimes.  

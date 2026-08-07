@@ -6,20 +6,23 @@ description: "Philippians 4:8 shows us that the mind is shaped by small, daily c
 date: 2025-11-26
 author: Jeff Thomas III
 categories:
+  - reflection
+collections:
   - faith
 tags:
   - philippians
   - spiritual-discipline
   - thought-life
+  - christian-thinking
+scripture:
+  - "Philippians 4:8"
+  - "2 Corinthians 10:5"
 excerpt: "The Christian mind is not formed by accidentit is trained through small, faithful returns to Christ."
 image: /img/posts/training-the-mind.jpg
 background: /img/posts/bg-training-the-mind.jpg
-scripture: "Philippians 4:8 ESV"
-contributors: []
 series: "The Practice of Holy Thinking"
 series_order: 5
 ---
-
 There’s a quiet moment in every day when you realize your thoughts have drifted somewhere you didn’t intend them to go. Maybe it happens while driving, or standing in line, or scrolling through another headline that seems designed to unsettle you. You catch your mind spiralingtoward worry, cynicism, frustration, or even just mindless noiseand you wonder, *How did I get here?*
 
 That moment is more spiritual than we think.
@@ -74,6 +77,3 @@ It’s anchored in a deeper one.
 And that realitythe reality shaped by Christis where peace lives.
 
 …just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyODQyMTcxOV19
--->

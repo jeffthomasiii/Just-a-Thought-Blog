@@ -1,15 +1,29 @@
 ---
 layout: post
 title: "Tuned Together: What Praying Out Loud Does for Your Marriage"
-subtitle: "Like a piano, a marriage needs tuning, prayer is the tool."
+subtitle: "Like a piano, a marriage needs tuning, and prayer is one of the tools"
+description: "A reflection on how praying aloud together can help married couples grow in spiritual intimacy, understanding, unity, and shared dependence on God."
 date: 2025-08-15
-excerpt: "Praying out loud with your spouse may feel awkward at first, but it's one of the most powerful ways to bring your hearts back into harmony, with God and each other."
-categories: [marriage, faith]
-tags: [prayer, marriage, spiritual-practices, unity, communication]
 author: Jeff Thomas III
+categories:
+  - reflection
+collections:
+  - faith
+  - marriage
+tags:
+  - biblical-marriage
+  - prayer
+  - spiritual-intimacy
+  - unity
+  - communication
+  - spiritual-practices
+scripture:
+  - "Matthew 18:19"
+  - "1 Peter 3:7"
+excerpt: "Praying aloud with your spouse may feel awkward at first, but it can help bring two hearts back into harmony with God and one another."
+image: /img/posts/bg-tuned-together.png
 background: /img/posts/bg-tuned-together.png
 ---
-
 ### When the Notes Are There but the Music Is Off
 
 Even the finest pianos fall out of tune. Not because they’re broken, but because life pulls at them. Humidity. Pressure. Time. If left untouched, they slowly lose their harmony, even though all the keys still work. Marriage is the same way. 
@@ -58,6 +72,3 @@ No marriage stays in tune by accident. But couples who pray together? They becom
 …just a thought.
 
 Have you and your spouse ever prayed out loud together? What’s held you back or helped you grow?
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzM5OTI1N119
--->

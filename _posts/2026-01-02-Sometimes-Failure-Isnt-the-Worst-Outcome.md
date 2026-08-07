@@ -1,25 +1,27 @@
 ---
 layout: post
-title: "Sometimes Failure Isn’t the Worst Outcome"
-subtitle: "On closed doors, discernment, and quiet trust"
-description: "A reflective meditation on failure, success, discernment, and trusting God when doors close."
-date: 2026-1-02
+title: Sometimes Failure Isn’t the Worst Outcome
+subtitle: On closed doors, discernment, and quiet trust
+description: A reflective meditation on failure, success, discernment, and trusting God when doors close.
+date: '2026-01-02'
 author: Jeff Thomas III
 categories:
-  - faith
-  - reflection
+- reflection
+collections:
+- faith
+- leadership
 tags:
-  - discernment
-  - failure
-  - trust
-  - growth
-  - obedience
-excerpt: "We fear failure, but Scripture often warns us about success at the wrong thing. Sometimes a closed door is not loss, but protection."
+- discernment
+- failure
+- trust
+- spiritual-growth
+- obedience
 image: /img/posts/sometimes-failure-isnt-the-worst-outcome.jpg
 background: /img/posts/bg-sometimes-failure-isnt-the-worst-outcome.jpg
-scripture: "Proverbs 16:9 ESV"
+scripture:
+  - "Proverbs 16:9"
+excerpt: We fear failure, but Scripture often warns us about success at the wrong thing. Sometimes a closed door is not loss, but protection.
 ---
-
 There are few things more disorienting than wanting something deeply, praying for it earnestly, and watching it fall apart anyway. We call that failure. We replay it. We wonder what we did wrong. And in a culture that celebrates winning, hustle, and “making it,” failure can start to feel like a verdict on our effort, our faith, or our worth.
 
 I recently heard **[Ruslan KD](https://www.youtube.com/channel/UCj2yZE96gWsFyeVYnY9zXeg)** say something that stopped me in my tracks: *“Sometimes failure isn’t the worst outcome. It could be success at the wrong thing.”*

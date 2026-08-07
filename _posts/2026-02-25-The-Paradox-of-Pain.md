@@ -1,24 +1,25 @@
 ---
 layout: post
-title: "The Paradox of Pain"
-subtitle: "When discipline feels like breaking but is actually becoming"
-description: "Hebrews 12:11 through the lens of athletic training and spiritual discipline, reframing pain as preparation rather than punishment."
-date: 2026-02-25
+title: The Paradox of Pain
+subtitle: When discipline feels like breaking but is actually becoming
+description: Hebrews 12:11 through the lens of athletic training and spiritual discipline, reframing pain as preparation rather than punishment.
+date: '2026-02-25'
 author: Jeff Thomas III
 categories:
-  - faith
-  - discipleship
+- devotional
+collections:
+- faith
 tags:
-  - Hebrews 12
-  - discipline
-  - spiritual growth
-  - endurance
-excerpt: "What if the discomfort you want removed is the very thing shaping you? Hebrews 12:11 reframes pain as preparation."
-image: /img/posts/the-paradox-of-pain.jpg
+- hebrews-12
+- discipline
+- spiritual-growth
+- endurance
+scripture:
+  - "Hebrews 12:11"
+excerpt: What if the discomfort you want removed is the very thing shaping you? Hebrews 12:11 reframes pain as preparation.
+image: /img/posts/bg-the-paradox-of-pain.jpg
 background: /img/posts/bg-the-paradox-of-pain.jpg
-scripture: "Hebrews 12:11 ESV"
 ---
-
 It’s still dark.
 
 The stadium lights hum against the quiet of early morning. The scoreboard is blank. The bleachers sit empty. No crowd. No applause. No one watching.

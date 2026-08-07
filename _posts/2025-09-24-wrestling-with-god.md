@@ -1,26 +1,26 @@
 ---
 layout: post
-title: "Wrestling With God"
-subtitle: "What Jacob’s story stirs in us about struggle, blessing, and the limp we carry"
-description: "A reflective look at Jacob’s night of wrestling with God, the limp that remained, and what it might mean for us to wrestle with Him today."
+title: Wrestling With God
+subtitle: What Jacob’s story stirs in us about struggle, blessing, and the limp we carry
+description: A reflective look at Jacob’s night of wrestling with God, the limp that remained, and what it might mean for us to wrestle with Him today.
 date: 2025-09-24
 author: Jeff Thomas III
-categories:  
-  - faith  
-  - reflection
-tags:  
-  - Jacob  
-  - struggle  
-  - blessing  
-  - faith  
-  - reflection
-excerpt: "What does it truly mean to wrestle with God? Jacob’s limp leaves us wondering whether the mark of the struggle is a wound, or a blessing."
+categories:
+- reflection
+collections:
+- faith
+tags:
+- jacob
+- struggle
+- blessing
+- spiritual-formation
+- surrender
 image: /img/posts/wrestling-with-god.jpg
 background: /img/posts/bg-wrestling-with-god.jpg
-scripture: "Genesis 32:22–32"
+scripture:
+  - "Genesis 32:22–32"
+excerpt: What does it truly mean to wrestle with God? Jacob’s limp leaves us wondering whether the mark of the struggle is a wound, or a blessing.
 ---
-
-
 What does it mean to wrestle with God?  
 
 Jacob’s story gives us a picture. A night beside the river. Everything he owned, everyone he loved, sent ahead. Nothing left but fear, memory, and the weight of tomorrow.  
@@ -86,8 +86,4 @@ So I find myself asking: what if the limp isn’t the evidence of defeat… but 
 What does wrestling with God mean for you?  
 And if you walk with a limp, is it a wound… or is it a blessing?  
 
-…just a thought.  
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMDQ1ODU3OV19
--->
+…just a thought.

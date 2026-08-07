@@ -1,12 +1,31 @@
 ---
-title: "Marriage IS Ministry"
-date: 2025-07-01
-categories: [marriage, faith]
-tags: [Ephesians 5, Christ and the Church, biblical marriage, sacrificial love, mystery of marriage]
+layout: post
+title: Marriage IS Ministry
+subtitle: Seeing covenant love as a daily reflection of Christ and the Church
+description: "A reflection on marriage as ministry and the ways covenant love, sacrifice, service, and forgiveness can point toward Christ and the Church."
+date: "2025-07-01"
+author: Jeff Thomas III
+categories:
+- reflection
+collections:
+- faith
+- marriage
+tags:
+- "ephesians-5"
+- "christ-and-the-church"
+- "biblical-marriage"
+- covenant
+- "sacrificial-love"
+- "marriage-as-ministry"
+- "spiritual-formation"
+- "dying-to-self"
+scripture:
+  - "Ephesians 5:2"
+  - "Ephesians 5:21-33"
 excerpt: "Marriage is more than companionship or romance, it's a sacred reflection of Christ and the Church. What if every moment in marriage was seen as ministry?"
-image: /img/posts/marriage-is-ministry.jpg
+image: "/img/posts/marriage-is-ministry.jpg"
+background: "/img/posts/marriage-is-ministry.jpg"
 ---
-
 ## Marriage IS Ministry
 
 I used to think ministry happened mostly on stages, in pulpits, or mission fields. But somewhere between unspoken expectations, quiet apologies, and Saturday morning dishes, God showed me something deeper. Marriage itself is ministry. And not just any ministry, it’s a picture of the most sacred mystery Paul ever wrote about.

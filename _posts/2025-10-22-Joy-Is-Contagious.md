@@ -5,23 +5,26 @@ subtitle: "What We Carry Affects What We Create"
 description: "Exploring how joy, like laughter, spreads through our lives, shaping the spaces and souls around us."
 date: 2025-10-22
 author: Jeff Thomas III
+contributors:
+  - Samatra Thomas
 categories:
+  - reflection
+collections:
   - faith
   - marriage
-  - reflection
 tags:
   - joy
   - gratitude
   - emotional-contagion
   - psychology
-  - marriage
+  - biblical-marriage
+scripture:
+  - "Proverbs 17:22"
+  - "Galatians 5:22"
 excerpt: "Joy doesn’t stay still. It spreads, shapes, and softens the world around us, often faster than we realize."
 image: /img/posts/joy-is-contagious.jpg
 background: /img/posts/bg-joy-is-contagious.jpg
-scripture: "Proverbs 17:22 NIV"
-contributors: [Samatra Thomas]
 ---
-
 My wife is the funniest person I know. For those of us who know her personally, you can spot her smile across the room before you even hear her laugh. And when you do hear it, you know what’s coming next, it starts soft, then grows louder, and before long, everyone’s laughing with her.
 
 She laughs when she’s nervous. She laughs when she’s happy. She even laughs when things don’t make sense. But the laugh that’s most contagious, the one that seems to shift the whole atmosphere, is when she’s full of joy. It’s the kind of laugh that doesn’t just echo; it multiplies.

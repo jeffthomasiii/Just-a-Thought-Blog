@@ -5,21 +5,25 @@ subtitle: "Learning to Love the Way She Thinks"
 description: "A reflective look at the beauty, humor, and challenge of loving a mind that sees the world differently, and how God uses that in marriage."
 date: 2025-12-01
 author: Jeff Thomas III
+contributors:
+  - Samatra Thomas
 categories:
-  - marriage
-  - relationships
-tags:
-  - love
-  - marriage
+  - reflection
+collections:
   - faith
+  - marriage
+tags:
+  - biblical-marriage
   - perspective
+  - communication
+  - marital-growth
+  - spiritual-growth
+scripture:
+  - "Proverbs 27:17"
 excerpt: "One of the most fascinating, funny, and challenging things I love most about my wife is her mind, the way she sees the world, questions what others take for granted, and filters everything through both heart and reason."
 image: /img/posts/the-mind-i-fell-for.jpg
 background: /img/posts/bg-the-mind-i-fell-for.jpg
-scripture: "Proverbs 27:17 ESV"
-contributors: [Samatra Thomas]
 ---
-
 There are two phrases my wife says that always make me stop mid-thought:  
 > “I feel like…”  
 > or “That doesn’t make sense to me…”  
@@ -69,6 +73,3 @@ Because in her mind, I see a glimpse of God’s creativity and the divine remind
 …just a thought.
 
 What’s one thing about the way your spouse thinks that both challenges and inspires you?
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI0OTQwMzA4XX0=
--->

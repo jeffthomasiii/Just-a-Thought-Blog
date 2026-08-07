@@ -1,28 +1,31 @@
----  
-layout: post  
-title: "The Stories We Tell Ourselves"  
-subtitle: "The stories we tell ourselves about the people we love"  
-description: "A simple lunchtime conversation about a piece of cake became a reminder of how often our relationships are shaped by the stories we tell ourselves, not just the facts in front of us."  
-date: 2026-06-24  
-author: Jeff Thomas III  
-categories:  
-- marriage  
-- reflections  
-tags:  
-- marriage  
-- communication  
-- perspective  
-- relationships  
-- grace  
-- husband-and-wife  
-excerpt: "What looked like leftovers to one person looked like something shared to another, and that difference revealed something important about relationships."  
-image: /img/posts/the-stories-we-tell-ourselves.jpg  
-background: /img/posts/bg-the-stories-we-tell-ourselves.jpg  
-scripture: "1 Corinthians 13:7 ESV"  
-contributors: [Samatra Thomas]  
 ---
-
-The other day I stepped out of my office for lunch while my wife was working in the next room. Like many couples today, we're both hybrid workers. Some days we're in the office, some days we're working from home, and on this particular day we were both home. When I walked into the room, she told me she had bought me a hamburger for lunch. Then she mentioned there was half a piece of cake if I wanted dessert. 
+layout: post
+title: "The Stories We Tell Ourselves"
+subtitle: "The stories we tell ourselves about the people we love"
+description: "A simple lunchtime conversation about a piece of cake became a reminder of how often our relationships are shaped by the stories we tell ourselves, not just the facts in front of us."
+date: 2026-06-24
+author: Jeff Thomas III
+categories:
+  - reflection
+collections:
+  - marriage
+tags:
+  - marriage
+  - communication
+  - perspective
+  - relationships
+  - grace
+  - assumptions
+  - husband-and-wife
+scripture:
+  - "1 Corinthians 13:7"
+excerpt: "What looked like leftovers to one person looked like something shared to another, and that difference revealed something important about relationships."
+image: /img/posts/the-stories-we-tell-ourselves.jpg
+background: /img/posts/bg-the-stories-we-tell-ourselves.jpg
+contributors:
+  - Samatra Thomas
+---
+The other day I stepped out of my office for lunch while my wife was working in the next room. Like many couples today, we're both hybrid workers. Some days we're in the office, some days we're working from home, and on this particular day we were both home. When I walked into the room, she told me she had bought me a hamburger for lunch. Then she mentioned there was half a piece of cake if I wanted dessert.
 
 Without thinking much about it, and mostly trying to be funny, I replied, *"So you're giving me your leftovers?"* She smiled and said, *"It's shared."* We both laughed and moved on with our day, but for some reason that short exchange stayed with me.
 
@@ -55,6 +58,3 @@ I think that's part of what Paul is getting at when he writes that love *"bears 
 The stories we tell ourselves matter. Sometimes those stories bring us closer together. Sometimes they quietly build walls. And sometimes all it takes to change the story is a simple reminder that what looked like leftovers to one person looked like something shared to another.
 
 ...just a thought.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTgxNzUyNzddfQ==
--->
