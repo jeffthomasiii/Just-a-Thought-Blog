@@ -9,6 +9,7 @@ on:
       - content-architecture-v1-1
       - curated-library-v1
       - explore-library-v1
+      - related-reflections-v1
   workflow_dispatch:
 
 permissions:
