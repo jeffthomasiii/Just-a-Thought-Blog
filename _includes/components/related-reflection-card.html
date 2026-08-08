@@ -1,0 +1,17 @@
+{% assign candidate = include.candidate %}
+{% assign candidate_image = candidate.image | default: candidate.background %}
+<article class="jat-related-card jat-card-surface">
+  <a href="{{ candidate.url | relative_url }}" class="jat-related-card-link">
+    {% if candidate_image %}
+      <div class="jat-related-card-media" style="background-image:url('{{ candidate_image | relative_url }}');" aria-hidden="true"></div>
+    {% else %}
+      <div class="jat-related-card-media jat-related-card-media--fallback" aria-hidden="true"><span>❦</span></div>
+    {% endif %}
+    <div class="jat-related-card-copy">
+      <span class="jat-related-label">{{ include.label }}</span>
+      <h3>{{ candidate.title }}</h3>
+      {% if candidate.excerpt %}<p>{{ candidate.excerpt | strip_html | truncatewords: 18 }}</p>{% endif %}
+      <span class="jat-related-action">Read Reflection <span aria-hidden="true">→</span></span>
+    </div>
+  </a>
+</article>
