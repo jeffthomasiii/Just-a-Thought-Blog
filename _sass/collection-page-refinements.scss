@@ -1,0 +1,165 @@
+.jat-collection-intro {
+  grid-template-columns: minmax(210px, .55fr) minmax(0, 1.45fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+/* Keep every non-hero section on one visual hierarchy. */
+.jat-collection-intro-heading .jat-collection-section-title,
+.jat-collection-section-heading .jat-collection-section-title,
+.jat-collection-related .jat-collection-section-title,
+.jat-collection-shelf summary .jat-collection-section-title {
+  margin: 0;
+  font-size: clamp(1.7rem, 2.6vw, 2.15rem);
+  line-height: 1.12;
+}
+
+.jat-collection-intro-copy {
+  max-width: 760px;
+}
+
+.jat-collection-intro-copy p {
+  margin-top: 0;
+  margin-bottom: .75rem;
+  color: var(--jat-text-secondary);
+  font-size: .94rem;
+  line-height: 1.6;
+}
+
+.jat-collection-intro-copy p:last-child {
+  margin-bottom: 0;
+}
+
+/* Give the hero description room before the primary actions. */
+.jat-collection-hero-actions {
+  margin-top: 1.35rem;
+}
+
+/* Shared line-icon treatment for the six reader collections. */
+.jat-collection-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.jat-collection-hero-mark .jat-collection-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.jat-collection-series-copy {
+  gap: .22rem;
+}
+
+.jat-collection-series-count {
+  color: var(--jat-text-muted);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.jat-collection-series-copy small {
+  margin-top: .15rem;
+}
+
+.jat-collection-series-empty {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: .25rem;
+  padding: 1rem 1.15rem;
+  border: 1px dashed var(--jat-border-subtle);
+  background: var(--jat-surface-card);
+}
+
+.jat-collection-series-empty strong {
+  font-family: var(--jat-font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.jat-collection-series-empty span {
+  color: var(--jat-text-secondary);
+  font-size: .88rem;
+  line-height: 1.45;
+}
+
+/* Related collections stay visually connected without becoming another large shelf. */
+.jat-collection-related {
+  grid-template-columns: minmax(180px, .42fr) minmax(0, 1.58fr);
+  gap: clamp(1.25rem, 3vw, 2.25rem);
+  padding: clamp(1rem, 2.4vw, 1.5rem);
+}
+
+.jat-collection-related-links {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .55rem;
+}
+
+.jat-collection-related-links a {
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: .65rem;
+  align-items: center;
+  min-height: 76px;
+  padding: .7rem .8rem;
+}
+
+.jat-related-collection-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--jat-border-subtle);
+  border-radius: 50%;
+  color: var(--jat-action-primary);
+}
+
+.jat-related-collection-icon .jat-collection-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.jat-related-collection-copy {
+  display: grid;
+  gap: .12rem;
+}
+
+.jat-related-collection-copy strong {
+  font-size: .95rem;
+  line-height: 1.15;
+}
+
+.jat-related-collection-copy > span {
+  color: var(--jat-text-secondary);
+  font-size: .76rem;
+  line-height: 1.3;
+}
+
+.jat-related-collection-copy em {
+  color: var(--jat-action-primary);
+  font-size: .68rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+  .jat-collection-intro,
+  .jat-collection-related {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-collection-intro-copy {
+    max-width: none;
+  }
+
+  .jat-collection-related-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-collection-related-links {
+    grid-template-columns: 1fr;
+  }
+}

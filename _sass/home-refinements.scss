@@ -18,63 +18,118 @@
 }
 
 .jat-topic-heading {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(260px, 1.15fr);
   gap: 2rem;
+  align-items: end;
   margin-bottom: 1rem;
+  padding-bottom: .85rem;
+  border-bottom: 1px solid var(--jat-border-subtle);
 }
 
 .jat-topic-heading .jat-kicker {
-  flex: 0 0 auto;
+  margin-bottom: .35rem;
+}
+
+.jat-topic-heading h2 {
+  margin: 0;
+  color: var(--jat-text-primary);
+  font-family: var(--jat-font-display);
+  font-size: clamp(1.65rem, 2.5vw, 2.15rem);
+  line-height: 1.08;
 }
 
 .jat-topic-note {
   max-width: 560px;
   margin: 0;
   color: var(--jat-text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   line-height: 1.45;
-  text-align: right;
+  text-align: left;
+}
+
+.jat-topic-grid--collections {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .75rem;
 }
 
 .jat-topic-card {
-  cursor: default;
+  cursor: pointer;
+  padding-bottom: .25rem;
+  border: 1px solid transparent;
+  transition: border-color .2s ease, background-color .2s ease, transform .2s ease;
+}
+
+.jat-topic-card:hover {
+  border-color: var(--jat-border-subtle);
+  background: var(--jat-surface-card);
+  transform: translateY(-2px);
 }
 
 .jat-topic-card .jat-topic-image {
+  min-height: 112px;
+  margin-bottom: 1.1rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* Keep homepage discovery visually tied to the collection landing pages. */
 .jat-topic-image--faith {
-  background-image: url('../img/Faith-topic-card.jpg');
+  background-image: url('../img/collections/faith-hero.png');
 }
 
 .jat-topic-image--marriage {
-  background-image: url('../img/Marriage-topic-card.jpg');
+  background-image: url('../img/collections/marriage-hero.png');
 }
 
 .jat-topic-image--leadership {
-  background-image: url('../img/Leadership-topic-card.jpg');
+  background-image: url('../img/collections/leadership-hero.png');
 }
 
 .jat-topic-image--technology {
-  background-image: url('../img/Technology-topic-card.jpg');
-}
-
-.jat-topic-image--camping {
-  background-image: url('../img/Camping-topic-card.jpg');
+  background-image: url('../img/collections/technology-hero.png');
 }
 
 .jat-topic-image--culture {
-  background-image: url('../img/Culture-topic-card.jpg');
+  background-image: url('../img/collections/culture-hero.png');
 }
 
-.jat-topic-actions {
-  margin-top: 1.25rem;
-  text-align: right;
+.jat-topic-image--creation {
+  background-image: url('../img/collections/creation-hero.png');
+}
+
+.jat-topic-card .jat-topic-icon {
+  width: 42px;
+  height: 42px;
+  margin-top: -2.55rem;
+  margin-bottom: .45rem;
+}
+
+.jat-topic-card .jat-topic-icon .jat-collection-icon {
+  width: 21px;
+  height: 21px;
+}
+
+.jat-topic-card h3 {
+  margin-bottom: .2rem;
+  font-size: 1.2rem;
+}
+
+.jat-topic-card p {
+  margin: 0 .35rem .45rem;
+  color: var(--jat-text-secondary);
+  font-size: .78rem;
+  line-height: 1.35;
+}
+
+.jat-topic-meta {
+  margin: auto .35rem .2rem;
+  color: var(--jat-action-primary);
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
 }
 
 .jat-series-card .jat-series-item {
@@ -149,23 +204,28 @@ body.dark-mode .jat-series-thumb-missing {
   color: var(--jat-action-primary);
 }
 
+@media (max-width: 991.98px) {
+  .jat-topic-grid--collections {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 767.98px) {
   .jat-topic-heading {
-    flex-direction: column;
-    gap: 0.25rem;
+    grid-template-columns: 1fr;
+    gap: .5rem;
   }
 
   .jat-topic-note {
     max-width: none;
-    text-align: left;
-  }
-
-  .jat-topic-actions {
-    text-align: left;
   }
 }
 
 @media (max-width: 575.98px) {
+  .jat-topic-grid--collections {
+    grid-template-columns: 1fr;
+  }
+
   .jat-series-card .jat-series-item {
     grid-template-columns: 76px minmax(0, 1fr);
   }

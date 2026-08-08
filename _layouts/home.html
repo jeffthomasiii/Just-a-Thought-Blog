@@ -5,6 +5,12 @@ layout: default
 {% assign latest_post = site.posts | first %}
 {% assign recent_posts = site.posts | slice: 1, 4 %}
 {% assign series_groups = site.posts | group_by: "series" %}
+{% assign faith_posts = site.posts | where_exp: "post", "post.collections contains 'faith'" %}
+{% assign marriage_posts = site.posts | where_exp: "post", "post.collections contains 'marriage'" %}
+{% assign leadership_posts = site.posts | where_exp: "post", "post.collections contains 'leadership'" %}
+{% assign technology_posts = site.posts | where_exp: "post", "post.collections contains 'technology'" %}
+{% assign culture_posts = site.posts | where_exp: "post", "post.collections contains 'culture'" %}
+{% assign creation_posts = site.posts | where_exp: "post", "post.collections contains 'creation'" %}
 
 <header class="jat-board-hero jat-page-shell">
   <div class="container jat-board-container">
@@ -13,7 +19,7 @@ layout: default
         <p class="jat-kicker">A Reflective Christian Journal</p>
         <h1>The Thoughts<br>That Shape Us</h1>
         <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
-        <p>Reflecting on faith, marriage, leadership, culture, technology, camping, and the ordinary moments where God teaches extraordinary things.</p>
+        <p>Reflecting on faith, marriage, leadership, culture, technology, creation, and the ordinary moments where God teaches extraordinary things.</p>
         <div class="jat-button-row">
           <a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">Read the Blog</a>
           <a class="btn jat-btn jat-btn-secondary" href="{{ '/podcast/' | relative_url }}">Explore the Podcast</a>
@@ -58,18 +64,56 @@ layout: default
     <section class="jat-discovery-row">
       <div class="jat-topic-section jat-panel">
         <div class="jat-topic-heading">
-          <p class="jat-kicker">Explore By Topic</p>
-          <p class="jat-topic-note">Topic collections are being organized. Every reflection remains available in the complete archive while those collections grow.</p>
+          <div>
+            <p class="jat-kicker">Explore By Topic</p>
+            <h2>Enter the library from wherever you are.</h2>
+          </div>
+          <p class="jat-topic-note">Each collection gathers related reflections, curated starting points, longer reading paths, and a full shelf for deeper browsing.</p>
         </div>
-        <div class="jat-topic-grid">
-          <article class="jat-topic-card"><div class="jat-topic-image jat-topic-image--faith" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true"><i class="fas fa-cross"></i></span><h3>Faith</h3><p>Scripture, discipleship, prayer, and the daily walk with God.</p></article>
-          <article class="jat-topic-card"><div class="jat-topic-image jat-topic-image--marriage" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true"><i class="fas fa-ring"></i></span><h3>Marriage</h3><p>Covenant, communication, unity, and building a God-centered marriage.</p></article>
-          <article class="jat-topic-card"><div class="jat-topic-image jat-topic-image--leadership" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true"><i class="far fa-compass"></i></span><h3>Leadership</h3><p>Character before competence, leading with humility and strength.</p></article>
-          <article class="jat-topic-card"><div class="jat-topic-image jat-topic-image--technology" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true"><i class="fas fa-microchip"></i></span><h3>Technology</h3><p>AI, ethics, innovation, and navigating a changing world.</p></article>
-          <article class="jat-topic-card"><div class="jat-topic-image jat-topic-image--camping" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true"><i class="fas fa-tree"></i></span><h3>Camping</h3><p>Creation, rest, adventure, and the thoughts that come when we slow down.</p></article>
-          <article class="jat-topic-card"><div class="jat-topic-image jat-topic-image--culture" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true"><i class="fas fa-users"></i></span><h3>Culture</h3><p>Truth, wisdom, and discernment in the world around us.</p></article>
+        <div class="jat-topic-grid jat-topic-grid--collections">
+          <a class="jat-topic-card" href="{{ '/collections/faith/' | relative_url }}">
+            <div class="jat-topic-image jat-topic-image--faith" aria-hidden="true"></div>
+            <span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='faith' %}</span>
+            <h3>Faith</h3>
+            <p>Scripture, discipleship, formation, and the daily walk with God.</p>
+            <span class="jat-topic-meta">{{ faith_posts | size }} reflections · Explore →</span>
+          </a>
+          <a class="jat-topic-card" href="{{ '/collections/marriage/' | relative_url }}">
+            <div class="jat-topic-image jat-topic-image--marriage" aria-hidden="true"></div>
+            <span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='marriage' %}</span>
+            <h3>Marriage</h3>
+            <p>Covenant, communication, sacrifice, intimacy, and growing together.</p>
+            <span class="jat-topic-meta">{{ marriage_posts | size }} reflections · Explore →</span>
+          </a>
+          <a class="jat-topic-card" href="{{ '/collections/leadership/' | relative_url }}">
+            <div class="jat-topic-image jat-topic-image--leadership" aria-hidden="true"></div>
+            <span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='leadership' %}</span>
+            <h3>Leadership</h3>
+            <p>Character, service, responsibility, influence, and leading well.</p>
+            <span class="jat-topic-meta">{{ leadership_posts | size }} reflections · Explore →</span>
+          </a>
+          <a class="jat-topic-card" href="{{ '/collections/technology/' | relative_url }}">
+            <div class="jat-topic-image jat-topic-image--technology" aria-hidden="true"></div>
+            <span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='technology' %}</span>
+            <h3>Technology</h3>
+            <p>AI, ethics, stewardship, innovation, and navigating changing tools wisely.</p>
+            <span class="jat-topic-meta">{{ technology_posts | size }} reflections · Explore →</span>
+          </a>
+          <a class="jat-topic-card" href="{{ '/collections/culture/' | relative_url }}">
+            <div class="jat-topic-image jat-topic-image--culture" aria-hidden="true"></div>
+            <span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='culture' %}</span>
+            <h3>Culture</h3>
+            <p>Truth, wisdom, discernment, and thoughtful engagement with the world around us.</p>
+            <span class="jat-topic-meta">{{ culture_posts | size }} reflections · Explore →</span>
+          </a>
+          <a class="jat-topic-card" href="{{ '/collections/creation/' | relative_url }}">
+            <div class="jat-topic-image jat-topic-image--creation" aria-hidden="true"></div>
+            <span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='creation' %}</span>
+            <h3>Creation</h3>
+            <p>Nature, rest, travel, stillness, adventure, and the perspective found outdoors.</p>
+            <span class="jat-topic-meta">{{ creation_posts | size }} reflections · Explore →</span>
+          </a>
         </div>
-        <div class="jat-topic-actions"><a class="jat-text-link" href="{{ '/posts' | relative_url }}">Browse All Reflections →</a></div>
       </div>
 
       <aside class="jat-series-card jat-panel">
