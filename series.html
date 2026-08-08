@@ -3,7 +3,7 @@ layout: default
 page_archetype: landing
 body_class: jat-series-page
 title: "Series"
-description: "Explore connected Just A Thought Blog series on Scripture, marriage, leadership, culture, technology, character, and ordinary life with God."
+description: "Explore connected Just A Thought series and follow ordered reading paths through faith, marriage, leadership, technology, culture, and creation."
 permalink: /series/
 ---
 
@@ -15,20 +15,41 @@ permalink: /series/
 {% for group in series_groups %}
   {% if group.name and group.name != "" %}
     {% assign visible_series_count = visible_series_count | plus: 1 %}
-    {% if group.name == "Created, Fallen, Restored" %}
-      {% assign featured_group_name = group.name %}
-      {% assign featured_posts = group.items | sort: "series_order" %}
-    {% endif %}
-    {% unless featured_posts %}
-      {% assign featured_group_name = group.name %}
-      {% assign featured_posts = group.items | sort: "series_order" %}
-    {% endunless %}
   {% endif %}
 {% endfor %}
 
+{% comment %}
+The most recently published post that belongs to a series determines the
+featured reading path. site.posts is already ordered newest-first.
+{% endcomment %}
+{% for post in site.posts %}
+  {% if post.series and post.series != "" %}
+    {% assign featured_group_name = post.series %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if featured_group_name %}
+  {% for group in series_groups %}
+    {% if group.name == featured_group_name %}
+      {% assign featured_posts = group.items | sort: "series_order" %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
 {% assign featured_first_post = featured_posts | first %}
-{% assign featured_image = featured_first_post.image | default: featured_first_post.background %}
-{% assign featured_description = featured_first_post.series_description | default: featured_first_post.description | default: featured_first_post.excerpt %}
+{% assign featured_intro = nil %}
+{% for post in featured_posts %}
+  {% if post.categories contains "series-introduction" %}
+    {% assign featured_intro = post %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% assign featured_source = featured_intro | default: featured_first_post %}
+{% assign featured_image = featured_source.image | default: featured_source.background | default: featured_first_post.image | default: featured_first_post.background %}
+{% assign featured_description = featured_source.series_description | default: featured_intro.description | default: featured_first_post.series_description %}
+{% assign featured_status = featured_source.series_status | default: featured_first_post.series_status | default: "Reading Path" %}
 
 <header class="jat-board-hero jat-series-hero">
   <div class="container jat-board-container">
@@ -37,7 +58,7 @@ permalink: /series/
         <p class="jat-kicker">Explore by Series</p>
         <h1>Some thoughts are better explored over time.</h1>
         <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
-        <p class="jat-series-hero-lede">These collections gather related reflections into thoughtful reading paths through Scripture, marriage, leadership, culture, technology, character, and ordinary life with God.</p>
+        <p class="jat-series-hero-lede">Series gather connected reflections into intentional reading paths, giving an idea room to develop across more than one article.</p>
 
         {% if featured_group_name %}
           <div class="jat-series-featured-copy">
@@ -46,9 +67,9 @@ permalink: /series/
             {% if featured_description %}
               <p>{{ featured_description | strip_html }}</p>
             {% else %}
-              <p>A connected collection for readers who want to stay with one question or theme a little longer.</p>
+              <p>A connected reading path for readers who want to stay with this question or theme a little longer.</p>
             {% endif %}
-            <p class="jat-series-count">{{ featured_posts | size }} reflection{% if featured_posts.size != 1 %}s{% endif %} in this reading path</p>
+            <p class="jat-series-count">{{ featured_status }} · {{ featured_posts | size }} reflection{% if featured_posts.size != 1 %}s{% endif %}</p>
           </div>
         {% endif %}
 
@@ -58,7 +79,7 @@ permalink: /series/
           {% else %}
             <a class="btn jat-btn jat-btn-primary" href="#all-series">Explore Series</a>
           {% endif %}
-          <a class="btn jat-btn jat-btn-secondary" href="{{ '/posts/' | relative_url }}">Browse All Reflections</a>
+          <a class="btn jat-btn jat-btn-secondary" href="{{ '/explore/' | relative_url }}">Explore the Library</a>
         </div>
       </div>
 
@@ -70,7 +91,7 @@ permalink: /series/
         {% endif %}
         <div class="jat-series-hero-caption">
           <strong>{% if featured_group_name %}{{ featured_group_name }}{% else %}Connected Reflections{% endif %}</strong>
-          <span>Read one reflection at a time or follow the full path in order.</span>
+          <span>Begin with the first reflection or move directly to the part that meets you where you are.</span>
         </div>
       </div>
     </div>
@@ -83,9 +104,9 @@ permalink: /series/
       <div class="jat-series-section-heading jat-series-section-heading-row">
         <div>
           <p class="jat-kicker">All Series</p>
-          <h2 id="all-series-heading">Browse connected reflections by theme.</h2>
+          <h2 id="all-series-heading">Choose a thought worth staying with.</h2>
         </div>
-        <p>Choose a collection that meets the question, season, or area of growth you are carrying right now. Each series opens into an ordered reading list below.</p>
+        <p>Each series is an ordered reading path built around a larger question, theme, or area of growth. Start at the beginning or open the reading list and choose where to enter.</p>
       </div>
 
       {% if visible_series_count > 0 %}
@@ -94,9 +115,17 @@ permalink: /series/
             {% if group.name and group.name != "" %}
               {% assign series_posts = group.items | sort: "series_order" %}
               {% assign first_post = series_posts | first %}
-              {% assign series_image = first_post.image | default: first_post.background %}
-              {% assign series_description = first_post.series_description | default: first_post.description | default: first_post.excerpt %}
-              {% assign primary_category = first_post.categories | first | default: "Reflection" %}
+              {% assign series_intro = nil %}
+              {% assign series_collections = "" | split: "" %}
+              {% for post in series_posts %}
+                {% if post.categories contains "series-introduction" and series_intro == nil %}{% assign series_intro = post %}{% endif %}
+                {% if post.collections %}{% assign series_collections = series_collections | concat: post.collections %}{% endif %}
+              {% endfor %}
+              {% assign series_collections = series_collections | uniq %}
+              {% assign series_source = series_intro | default: first_post %}
+              {% assign series_image = series_source.image | default: series_source.background | default: first_post.image | default: first_post.background %}
+              {% assign series_description = series_source.series_description | default: series_intro.description | default: first_post.series_description %}
+              {% assign series_status = series_source.series_status | default: first_post.series_status | default: "Reading Path" %}
 
               <article class="jat-series-card jat-card-surface">
                 <a class="jat-series-card-link" href="#{{ group.name | slugify }}" aria-label="Open the {{ group.name }} reading list">
@@ -109,15 +138,19 @@ permalink: /series/
                     <span class="jat-series-card-count jat-status-label">{{ series_posts | size }} reflection{% if series_posts.size != 1 %}s{% endif %}</span>
                   </div>
                   <div class="jat-series-card-copy">
-                    <p class="jat-kicker">{{ primary_category | replace: '-', ' ' }}</p>
+                    {% if series_collections.size > 0 %}
+                      <p class="jat-kicker">{% for collection in series_collections limit:2 %}{{ collection | replace: '-', ' ' }}{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+                    {% else %}
+                      <p class="jat-kicker">{{ series_status }}</p>
+                    {% endif %}
                     <h3>{{ group.name }}</h3>
                     {% if series_description %}
-                      <p>{{ series_description | strip_html | truncatewords: 26 }}</p>
+                      <p>{{ series_description | strip_html | truncatewords: 30 }}</p>
                     {% else %}
-                      <p>A connected set of reflections gathered to help readers stay with this theme over time.</p>
+                      <p>A connected reading path that develops this theme across multiple reflections.</p>
                     {% endif %}
                     <div class="jat-series-card-meta" aria-hidden="true">
-                      {% for tag in first_post.tags limit:2 %}<span>{{ tag | replace: '-', ' ' }}</span>{% endfor %}
+                      <span>{{ series_status }}</span>
                       <strong>View reading list →</strong>
                     </div>
                   </div>
@@ -131,9 +164,9 @@ permalink: /series/
           <span aria-hidden="true">❦</span>
           <div>
             <h3>Connected reading paths are still taking shape.</h3>
-            <p>Until the first series is ready, the complete reflection archive remains available to browse by date.</p>
+            <p>Until the first series is ready, explore the library by collection, theme, or search.</p>
           </div>
-          <a class="btn jat-btn jat-btn-primary" href="{{ '/posts/' | relative_url }}">Browse Reflections</a>
+          <a class="btn jat-btn jat-btn-primary" href="{{ '/explore/' | relative_url }}">Explore the Library</a>
         </div>
       {% endif %}
     </section>
@@ -142,8 +175,8 @@ permalink: /series/
       <section class="jat-series-panel jat-series-reading-panel jat-panel jat-panel--parchment" id="series-details" aria-labelledby="reading-lists-heading">
         <div class="jat-series-section-heading">
           <p class="jat-kicker">Reading Lists</p>
-          <h2 id="reading-lists-heading">Open a series when you are ready to read.</h2>
-          <p>Each collection stays compact until you open it. Then you can begin at the first reflection, continue in sequence, or return to the part that speaks most directly to where you are.</p>
+          <h2 id="reading-lists-heading">Follow the path in order, or enter where you need to.</h2>
+          <p>Every series preserves its intended sequence while still giving you the freedom to return to a particular reflection whenever it is useful.</p>
         </div>
 
         <div class="jat-series-detail-list">
@@ -151,21 +184,39 @@ permalink: /series/
             {% if group.name and group.name != "" %}
               {% assign series_posts = group.items | sort: "series_order" %}
               {% assign first_post = series_posts | first %}
-              {% assign series_description = first_post.series_description | default: first_post.description | default: first_post.excerpt %}
+              {% assign series_intro = nil %}
+              {% assign series_collections = "" | split: "" %}
+              {% for post in series_posts %}
+                {% if post.categories contains "series-introduction" and series_intro == nil %}{% assign series_intro = post %}{% endif %}
+                {% if post.collections %}{% assign series_collections = series_collections | concat: post.collections %}{% endif %}
+              {% endfor %}
+              {% assign series_collections = series_collections | uniq %}
+              {% assign series_source = series_intro | default: first_post %}
+              {% assign series_description = series_source.series_description | default: series_intro.description | default: first_post.series_description %}
+              {% assign series_status = series_source.series_status | default: first_post.series_status | default: "Reading Path" %}
 
               <details class="jat-series-detail" id="{{ group.name | slugify }}">
                 <summary>
                   <div class="jat-series-detail-heading">
-                    <span class="jat-status-label">{{ series_posts | size }} reflection{% if series_posts.size != 1 %}s{% endif %}</span>
+                    <span class="jat-status-label">{{ series_status }} · {{ series_posts | size }} reflection{% if series_posts.size != 1 %}s{% endif %}</span>
                     <h3>{{ group.name }}</h3>
                     {% if series_description %}
-                      <p>{{ series_description | strip_html | truncatewords: 30 }}</p>
+                      <p>{{ series_description | strip_html | truncatewords: 34 }}</p>
                     {% else %}
                       <p>A connected reading path through this theme.</p>
+                    {% endif %}
+                    {% if series_collections.size > 0 %}
+                      <div class="jat-series-detail-collections" aria-label="Collections">
+                        {% for collection in series_collections limit:3 %}<span>{{ collection | replace: '-', ' ' }}</span>{% endfor %}
+                      </div>
                     {% endif %}
                   </div>
                   <span class="jat-series-detail-action" aria-hidden="true"><span class="jat-series-open-label">Open</span><span class="jat-series-close-label">Close</span><i></i></span>
                 </summary>
+                <div class="jat-series-start-row">
+                  <p>Read from the beginning for the full progression, or choose any part below.</p>
+                  <a class="jat-text-link" href="{{ first_post.url | relative_url }}">Begin with Part {% if first_post.series_order %}{{ first_post.series_order }}{% else %}1{% endif %} →</a>
+                </div>
                 <div class="jat-series-post-list">
                   {% for post in series_posts %}
                     <a class="jat-series-post" href="{{ post.url | relative_url }}">
@@ -185,29 +236,22 @@ permalink: /series/
       </section>
     {% endif %}
 
-    <section class="jat-series-panel jat-series-pathways jat-panel" aria-labelledby="pathways-heading">
-      <div class="jat-series-pathways-intro">
-        <p class="jat-kicker">Reading Pathways</p>
-        <h2 id="pathways-heading">Begin with what you are processing now.</h2>
-        <p>You do not need to choose the perfect starting point. Begin with the theme closest to your present questions, then let one reflection lead naturally to the next.</p>
-        <a class="jat-text-link" href="{{ '/search/' | relative_url }}">Search every reflection →</a>
+    {% assign library_collections = "faith,marriage,leadership,technology,culture,creation" | split: "," %}
+    <section class="jat-series-panel jat-series-library-handoff jat-panel" aria-labelledby="series-library-heading">
+      <div class="jat-series-library-copy">
+        <p class="jat-kicker">Explore Beyond Series</p>
+        <h2 id="series-library-heading">Not every thought needs a reading order.</h2>
+        <p>If a series is not what you are looking for, enter the larger library through one of the six collections and follow the themes that matter most to you.</p>
+        <a class="btn jat-btn jat-btn-primary" href="{{ '/explore/' | relative_url }}">Explore the Full Library</a>
       </div>
-      <div class="jat-series-pathway-grid">
-        <article>
-          <span aria-hidden="true">01</span>
-          <h3>Faith and Discipleship</h3>
-          <p>For questions of identity, obedience, suffering, hope, wisdom, and spiritual formation.</p>
-        </article>
-        <article>
-          <span aria-hidden="true">02</span>
-          <h3>Marriage and Relationships</h3>
-          <p>For covenant, communication, unity, love, respect, vulnerability, and shared growth.</p>
-        </article>
-        <article>
-          <span aria-hidden="true">03</span>
-          <h3>Leadership, Culture, and Technology</h3>
-          <p>For influence, character, work, ethics, responsibility, discernment, and faithful practice.</p>
-        </article>
+      <div class="jat-series-library-links" aria-label="Explore collections">
+        {% for collection in library_collections %}
+          <a href="{{ '/collections/' | append: collection | append: '/' | relative_url }}">
+            <span class="jat-series-library-icon" aria-hidden="true">{% include collection-icon.html key=collection %}</span>
+            <span>{{ collection | capitalize }}</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        {% endfor %}
       </div>
     </section>
   </div>
