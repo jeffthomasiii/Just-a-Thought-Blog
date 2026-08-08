@@ -1,0 +1,286 @@
+/* =========================================================
+   Just A Thought — Explore the Library
+   Central discovery hub for collections, series, search, and archive.
+   ========================================================= */
+
+.jat-explore-page {
+  background: var(--jat-surface-page);
+}
+
+.jat-explore-hero {
+  padding: clamp(8.5rem, 13vw, 11rem) 0 clamp(3.5rem, 7vw, 5.5rem);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(198, 161, 91, 0.12), transparent 32%),
+    linear-gradient(180deg, var(--jat-surface-panel), var(--jat-surface-page));
+  border-bottom: 1px solid var(--jat-border-subtle);
+}
+
+.jat-explore-hero-copy {
+  max-width: 820px;
+}
+
+.jat-explore-hero h1 {
+  margin: 0;
+  color: var(--jat-text-primary);
+  font-family: var(--jat-font-display);
+  font-size: clamp(2.7rem, 6vw, 4.85rem);
+  line-height: .98;
+}
+
+.jat-explore-lede {
+  max-width: 760px;
+  margin: 1.35rem 0 0;
+  color: var(--jat-text-secondary);
+  font-size: clamp(1rem, 1.7vw, 1.18rem);
+  line-height: 1.7;
+}
+
+.jat-explore-main {
+  padding-top: clamp(2.75rem, 6vw, 4.5rem);
+  padding-bottom: clamp(4rem, 8vw, 6rem);
+}
+
+.jat-explore-section + .jat-explore-section {
+  margin-top: 4rem;
+}
+
+.jat-explore-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(280px, 1.1fr);
+  gap: 2.5rem;
+  align-items: end;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--jat-border-subtle);
+}
+
+.jat-explore-section-heading h2,
+.jat-explore-deeper h2,
+.jat-explore-search h2,
+.jat-explore-archive h2 {
+  margin: 0;
+  color: var(--jat-text-primary);
+  font-family: var(--jat-font-display);
+}
+
+.jat-explore-section-heading h2 {
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
+  line-height: 1.08;
+}
+
+.jat-explore-section-heading > p {
+  max-width: 600px;
+  margin: 0;
+  color: var(--jat-text-secondary);
+  font-size: .92rem;
+  line-height: 1.6;
+}
+
+.jat-explore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.jat-explore-card {
+  overflow: hidden;
+  border: 1px solid var(--jat-border-subtle);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.jat-explore-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--jat-action-primary);
+  box-shadow: 0 12px 30px rgba(37, 40, 34, .08);
+}
+
+.jat-explore-card-link {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.jat-explore-card-media {
+  position: relative;
+  min-height: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jat-explore-card-media::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(37, 40, 34, .04), rgba(37, 40, 34, .28));
+  content: "";
+}
+
+.jat-explore-card-icon {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  bottom: 1rem;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid rgba(246, 241, 231, .65);
+  border-radius: 50%;
+  background: rgba(37, 40, 34, .58);
+  color: #f6f1e7;
+  backdrop-filter: blur(8px);
+}
+
+.jat-explore-card-icon .jat-collection-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.jat-explore-card-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.1rem 1.15rem 1.2rem;
+}
+
+.jat-explore-card-meta {
+  margin-bottom: .35rem;
+  color: var(--jat-action-primary);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.jat-explore-card h3 {
+  margin: 0 0 .35rem;
+  color: var(--jat-text-primary);
+  font-family: var(--jat-font-display);
+  font-size: 1.45rem;
+}
+
+.jat-explore-card p {
+  margin: 0 0 1rem;
+  color: var(--jat-text-secondary);
+  font-size: .88rem;
+  line-height: 1.5;
+}
+
+.jat-explore-card-action {
+  margin-top: auto;
+  color: var(--jat-action-primary);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.jat-explore-deeper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: center;
+  margin-top: clamp(3.5rem, 7vw, 5rem);
+  padding: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.jat-explore-deeper-copy {
+  max-width: 720px;
+}
+
+.jat-explore-deeper h2 {
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+}
+
+.jat-explore-deeper p,
+.jat-explore-search p,
+.jat-explore-archive p {
+  color: var(--jat-text-secondary);
+  line-height: 1.6;
+}
+
+.jat-explore-deeper-copy > p:not(.jat-kicker) {
+  margin: .7rem 0 1.25rem;
+}
+
+.jat-explore-deeper-mark {
+  color: var(--jat-accent-highlight);
+  font-family: var(--jat-font-display);
+  font-size: clamp(4rem, 9vw, 7rem);
+  line-height: 1;
+  opacity: .62;
+}
+
+.jat-explore-search,
+.jat-explore-archive {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1.25rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--jat-border-subtle);
+}
+
+.jat-explore-search h2,
+.jat-explore-archive h2 {
+  font-size: clamp(1.5rem, 2.7vw, 2rem);
+}
+
+.jat-explore-search p,
+.jat-explore-archive p {
+  max-width: 680px;
+  margin: .4rem 0 0;
+  font-size: .9rem;
+}
+
+body.dark-mode .jat-explore-hero {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(214, 179, 107, .08), transparent 32%),
+    linear-gradient(180deg, var(--jat-surface-panel), var(--jat-surface-page));
+}
+
+body.dark-mode .jat-explore-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 991.98px) {
+  .jat-explore-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .jat-explore-section-heading {
+    grid-template-columns: 1fr;
+    gap: .75rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .jat-explore-deeper,
+  .jat-explore-search,
+  .jat-explore-archive {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .jat-explore-deeper-mark {
+    display: none;
+  }
+
+  .jat-explore-search .btn,
+  .jat-explore-archive .jat-text-link {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-explore-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-explore-card-media {
+    min-height: 165px;
+  }
+}
