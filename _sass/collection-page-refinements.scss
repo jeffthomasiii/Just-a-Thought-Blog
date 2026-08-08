@@ -85,17 +85,30 @@
   line-height: 1.45;
 }
 
-/* Related collection cards repeat the same visual symbol used in the hero. */
+/* Related collections stay visually connected without becoming another large shelf. */
+.jat-collection-related {
+  grid-template-columns: minmax(180px, .42fr) minmax(0, 1.58fr);
+  gap: clamp(1.25rem, 3vw, 2.25rem);
+  padding: clamp(1rem, 2.4vw, 1.5rem);
+}
+
+.jat-collection-related-links {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .55rem;
+}
+
 .jat-collection-related-links a {
-  grid-template-columns: 44px minmax(0, 1fr);
-  gap: .9rem;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: .65rem;
   align-items: center;
+  min-height: 76px;
+  padding: .7rem .8rem;
 }
 
 .jat-related-collection-icon {
   display: grid;
-  width: 44px;
-  height: 44px;
+  width: 34px;
+  height: 34px;
   place-items: center;
   border: 1px solid var(--jat-border-subtle);
   border-radius: 50%;
@@ -103,33 +116,50 @@
 }
 
 .jat-related-collection-icon .jat-collection-icon {
-  width: 23px;
-  height: 23px;
+  width: 18px;
+  height: 18px;
 }
 
 .jat-related-collection-copy {
   display: grid;
-  gap: .25rem;
+  gap: .12rem;
+}
+
+.jat-related-collection-copy strong {
+  font-size: .95rem;
+  line-height: 1.15;
 }
 
 .jat-related-collection-copy > span {
   color: var(--jat-text-secondary);
-  font-size: .9rem;
+  font-size: .76rem;
+  line-height: 1.3;
 }
 
 .jat-related-collection-copy em {
   color: var(--jat-action-primary);
-  font-size: .8rem;
+  font-size: .68rem;
   font-style: normal;
   font-weight: 700;
 }
 
 @media (max-width: 991.98px) {
-  .jat-collection-intro {
+  .jat-collection-intro,
+  .jat-collection-related {
     grid-template-columns: 1fr;
   }
 
   .jat-collection-intro-copy {
     max-width: none;
+  }
+
+  .jat-collection-related-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-collection-related-links {
+    grid-template-columns: 1fr;
   }
 }
