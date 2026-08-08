@@ -1,39 +1,28 @@
 {% assign related_count = 0 %}
 {% capture rendered_tokens %}|{{ page.url }}|{% endcapture %}
-
 {% capture related_cards %}{% endcapture %}
 
 {% comment %}
 Related reflection priority:
 1. Same series
-2. Shared collection + shared tag(s)
-3. Two or more shared tags
-4. Shared tag
-5. Shared collection
-6. Recent fallback
+2. Three or more high-signal shared tags
+3. Two high-signal shared tags
+4. One high-signal shared tag + shared collection
+5. One high-signal shared tag
+6. Shared collection fallback
+7. Recent library fallback
 
-This keeps broad collections from overwhelming stronger thematic relationships.
+Broad organizational tags are intentionally excluded from thematic ranking. They remain
+useful metadata, but they are too common to establish a meaningful editorial relationship.
 {% endcomment %}
+{% assign broad_related_tags = "|christian-living|spiritual-growth|discipleship|faith|marriage|leadership|technology|culture|creation|reflection|" %}
 
 {% if page.series and page.series != "" %}
   {% for candidate in site.posts %}
     {% if related_count < 3 and candidate.url != page.url and candidate.series == page.series %}
       {% capture candidate_token %}|{{ candidate.url }}|{% endcapture %}
       {% unless rendered_tokens contains candidate_token %}
-        {% assign candidate_image = candidate.image | default: candidate.background %}
-        {% capture card %}
-          <article class="jat-related-card jat-card-surface">
-            <a href="{{ candidate.url | relative_url }}" class="jat-related-card-link">
-              {% if candidate_image %}<div class="jat-related-card-media" style="background-image:url('{{ candidate_image | relative_url }}');" aria-hidden="true"></div>{% else %}<div class="jat-related-card-media jat-related-card-media--fallback" aria-hidden="true"><span>❦</span></div>{% endif %}
-              <div class="jat-related-card-copy">
-                <span class="jat-related-label">Same Series</span>
-                <h3>{{ candidate.title }}</h3>
-                {% if candidate.excerpt %}<p>{{ candidate.excerpt | strip_html | truncatewords: 18 }}</p>{% endif %}
-                <span class="jat-related-action">Read Reflection <span aria-hidden="true">→</span></span>
-              </div>
-            </a>
-          </article>
-        {% endcapture %}
+        {% capture card %}{% include components/related-reflection-card.html candidate=candidate label="Same Series" %}{% endcapture %}
         {% capture related_cards %}{{ related_cards }}{{ card }}{% endcapture %}
         {% capture rendered_tokens %}{{ rendered_tokens }}{{ candidate_token }}{% endcapture %}
         {% assign related_count = related_count | plus: 1 %}
@@ -42,30 +31,89 @@ This keeps broad collections from overwhelming stronger thematic relationships.
   {% endfor %}
 {% endif %}
 
-{% if related_count < 3 and page.collections and page.tags %}
+{% if related_count < 3 and page.tags %}
   {% for candidate in site.posts %}
-    {% if related_count < 3 and candidate.url != page.url %}
+    {% if related_count < 3 and candidate.url != page.url and candidate.tags %}
       {% capture candidate_token %}|{{ candidate.url }}|{% endcapture %}
       {% unless rendered_tokens contains candidate_token %}
+        {% assign shared_specific_count = 0 %}
+        {% assign first_theme = "" %}
+        {% assign second_theme = "" %}
+        {% for tag in page.tags %}
+          {% if candidate.tags contains tag %}
+            {% capture tag_token %}|{{ tag }}|{% endcapture %}
+            {% unless broad_related_tags contains tag_token %}
+              {% if shared_specific_count == 0 %}{% assign first_theme = tag | replace: '-', ' ' %}{% endif %}
+              {% if shared_specific_count == 1 %}{% assign second_theme = tag | replace: '-', ' ' %}{% endif %}
+              {% assign shared_specific_count = shared_specific_count | plus: 1 %}
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+        {% if shared_specific_count >= 3 %}
+          {% capture match_label %}Shared Themes · {{ first_theme }} + {{ second_theme }}{% endcapture %}
+          {% capture card %}{% include components/related-reflection-card.html candidate=candidate label=match_label %}{% endcapture %}
+          {% capture related_cards %}{{ related_cards }}{{ card }}{% endcapture %}
+          {% capture rendered_tokens %}{{ rendered_tokens }}{{ candidate_token }}{% endcapture %}
+          {% assign related_count = related_count | plus: 1 %}
+        {% endif %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if related_count < 3 and page.tags %}
+  {% for candidate in site.posts %}
+    {% if related_count < 3 and candidate.url != page.url and candidate.tags %}
+      {% capture candidate_token %}|{{ candidate.url }}|{% endcapture %}
+      {% unless rendered_tokens contains candidate_token %}
+        {% assign shared_specific_count = 0 %}
+        {% assign first_theme = "" %}
+        {% assign second_theme = "" %}
+        {% for tag in page.tags %}
+          {% if candidate.tags contains tag %}
+            {% capture tag_token %}|{{ tag }}|{% endcapture %}
+            {% unless broad_related_tags contains tag_token %}
+              {% if shared_specific_count == 0 %}{% assign first_theme = tag | replace: '-', ' ' %}{% endif %}
+              {% if shared_specific_count == 1 %}{% assign second_theme = tag | replace: '-', ' ' %}{% endif %}
+              {% assign shared_specific_count = shared_specific_count | plus: 1 %}
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+        {% if shared_specific_count == 2 %}
+          {% capture match_label %}Shared Themes · {{ first_theme }} + {{ second_theme }}{% endcapture %}
+          {% capture card %}{% include components/related-reflection-card.html candidate=candidate label=match_label %}{% endcapture %}
+          {% capture related_cards %}{{ related_cards }}{{ card }}{% endcapture %}
+          {% capture rendered_tokens %}{{ rendered_tokens }}{{ candidate_token }}{% endcapture %}
+          {% assign related_count = related_count | plus: 1 %}
+        {% endif %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if related_count < 3 and page.tags and page.collections %}
+  {% for candidate in site.posts %}
+    {% if related_count < 3 and candidate.url != page.url and candidate.tags and candidate.collections %}
+      {% capture candidate_token %}|{{ candidate.url }}|{% endcapture %}
+      {% unless rendered_tokens contains candidate_token %}
+        {% assign shared_specific_count = 0 %}
+        {% assign first_theme = "" %}
         {% assign shared_collection_count = 0 %}
-        {% assign shared_tag_count = 0 %}
-        {% if candidate.collections %}{% for collection in page.collections %}{% if candidate.collections contains collection %}{% assign shared_collection_count = shared_collection_count | plus: 1 %}{% endif %}{% endfor %}{% endif %}
-        {% if candidate.tags %}{% for tag in page.tags %}{% if candidate.tags contains tag %}{% assign shared_tag_count = shared_tag_count | plus: 1 %}{% endif %}{% endfor %}{% endif %}
-        {% if shared_collection_count > 0 and shared_tag_count > 0 %}
-          {% assign candidate_image = candidate.image | default: candidate.background %}
-          {% capture card %}
-            <article class="jat-related-card jat-card-surface">
-              <a href="{{ candidate.url | relative_url }}" class="jat-related-card-link">
-                {% if candidate_image %}<div class="jat-related-card-media" style="background-image:url('{{ candidate_image | relative_url }}');" aria-hidden="true"></div>{% else %}<div class="jat-related-card-media jat-related-card-media--fallback" aria-hidden="true"><span>❦</span></div>{% endif %}
-                <div class="jat-related-card-copy">
-                  <span class="jat-related-label">Strong Match</span>
-                  <h3>{{ candidate.title }}</h3>
-                  {% if candidate.excerpt %}<p>{{ candidate.excerpt | strip_html | truncatewords: 18 }}</p>{% endif %}
-                  <span class="jat-related-action">Read Reflection <span aria-hidden="true">→</span></span>
-                </div>
-              </a>
-            </article>
-          {% endcapture %}
+        {% for tag in page.tags %}
+          {% if candidate.tags contains tag %}
+            {% capture tag_token %}|{{ tag }}|{% endcapture %}
+            {% unless broad_related_tags contains tag_token %}
+              {% if shared_specific_count == 0 %}{% assign first_theme = tag | replace: '-', ' ' %}{% endif %}
+              {% assign shared_specific_count = shared_specific_count | plus: 1 %}
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+        {% for collection in page.collections %}
+          {% if candidate.collections contains collection %}{% assign shared_collection_count = shared_collection_count | plus: 1 %}{% endif %}
+        {% endfor %}
+        {% if shared_specific_count == 1 and shared_collection_count > 0 %}
+          {% capture match_label %}Shared Theme · {{ first_theme }}{% endcapture %}
+          {% capture card %}{% include components/related-reflection-card.html candidate=candidate label=match_label %}{% endcapture %}
           {% capture related_cards %}{{ related_cards }}{{ card }}{% endcapture %}
           {% capture rendered_tokens %}{{ rendered_tokens }}{{ candidate_token }}{% endcapture %}
           {% assign related_count = related_count | plus: 1 %}
@@ -77,57 +125,23 @@ This keeps broad collections from overwhelming stronger thematic relationships.
 
 {% if related_count < 3 and page.tags %}
   {% for candidate in site.posts %}
-    {% if related_count < 3 and candidate.url != page.url %}
+    {% if related_count < 3 and candidate.url != page.url and candidate.tags %}
       {% capture candidate_token %}|{{ candidate.url }}|{% endcapture %}
       {% unless rendered_tokens contains candidate_token %}
-        {% assign shared_tag_count = 0 %}
-        {% if candidate.tags %}{% for tag in page.tags %}{% if candidate.tags contains tag %}{% assign shared_tag_count = shared_tag_count | plus: 1 %}{% endif %}{% endfor %}{% endif %}
-        {% if shared_tag_count >= 2 %}
-          {% assign candidate_image = candidate.image | default: candidate.background %}
-          {% capture card %}
-            <article class="jat-related-card jat-card-surface">
-              <a href="{{ candidate.url | relative_url }}" class="jat-related-card-link">
-                {% if candidate_image %}<div class="jat-related-card-media" style="background-image:url('{{ candidate_image | relative_url }}');" aria-hidden="true"></div>{% else %}<div class="jat-related-card-media jat-related-card-media--fallback" aria-hidden="true"><span>❦</span></div>{% endif %}
-                <div class="jat-related-card-copy">
-                  <span class="jat-related-label">Related Theme</span>
-                  <h3>{{ candidate.title }}</h3>
-                  {% if candidate.excerpt %}<p>{{ candidate.excerpt | strip_html | truncatewords: 18 }}</p>{% endif %}
-                  <span class="jat-related-action">Read Reflection <span aria-hidden="true">→</span></span>
-                </div>
-              </a>
-            </article>
-          {% endcapture %}
-          {% capture related_cards %}{{ related_cards }}{{ card }}{% endcapture %}
-          {% capture rendered_tokens %}{{ rendered_tokens }}{{ candidate_token }}{% endcapture %}
-          {% assign related_count = related_count | plus: 1 %}
-        {% endif %}
-      {% endunless %}
-    {% endif %}
-  {% endfor %}
-{% endif %}
-
-{% if related_count < 3 and page.tags %}
-  {% for candidate in site.posts %}
-    {% if related_count < 3 and candidate.url != page.url %}
-      {% capture candidate_token %}|{{ candidate.url }}|{% endcapture %}
-      {% unless rendered_tokens contains candidate_token %}
-        {% assign shared_tag_count = 0 %}
-        {% if candidate.tags %}{% for tag in page.tags %}{% if candidate.tags contains tag %}{% assign shared_tag_count = shared_tag_count | plus: 1 %}{% endif %}{% endfor %}{% endif %}
-        {% if shared_tag_count > 0 %}
-          {% assign candidate_image = candidate.image | default: candidate.background %}
-          {% capture card %}
-            <article class="jat-related-card jat-card-surface">
-              <a href="{{ candidate.url | relative_url }}" class="jat-related-card-link">
-                {% if candidate_image %}<div class="jat-related-card-media" style="background-image:url('{{ candidate_image | relative_url }}');" aria-hidden="true"></div>{% else %}<div class="jat-related-card-media jat-related-card-media--fallback" aria-hidden="true"><span>❦</span></div>{% endif %}
-                <div class="jat-related-card-copy">
-                  <span class="jat-related-label">Related Theme</span>
-                  <h3>{{ candidate.title }}</h3>
-                  {% if candidate.excerpt %}<p>{{ candidate.excerpt | strip_html | truncatewords: 18 }}</p>{% endif %}
-                  <span class="jat-related-action">Read Reflection <span aria-hidden="true">→</span></span>
-                </div>
-              </a>
-            </article>
-          {% endcapture %}
+        {% assign shared_specific_count = 0 %}
+        {% assign first_theme = "" %}
+        {% for tag in page.tags %}
+          {% if candidate.tags contains tag %}
+            {% capture tag_token %}|{{ tag }}|{% endcapture %}
+            {% unless broad_related_tags contains tag_token %}
+              {% if shared_specific_count == 0 %}{% assign first_theme = tag | replace: '-', ' ' %}{% endif %}
+              {% assign shared_specific_count = shared_specific_count | plus: 1 %}
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+        {% if shared_specific_count == 1 %}
+          {% capture match_label %}Shared Theme · {{ first_theme }}{% endcapture %}
+          {% capture card %}{% include components/related-reflection-card.html candidate=candidate label=match_label %}{% endcapture %}
           {% capture related_cards %}{{ related_cards }}{{ card }}{% endcapture %}
           {% capture rendered_tokens %}{{ rendered_tokens }}{{ candidate_token }}{% endcapture %}
           {% assign related_count = related_count | plus: 1 %}
@@ -139,26 +153,20 @@ This keeps broad collections from overwhelming stronger thematic relationships.
 
 {% if related_count < 3 and page.collections %}
   {% for candidate in site.posts %}
-    {% if related_count < 3 and candidate.url != page.url %}
+    {% if related_count < 3 and candidate.url != page.url and candidate.collections %}
       {% capture candidate_token %}|{{ candidate.url }}|{% endcapture %}
       {% unless rendered_tokens contains candidate_token %}
         {% assign shared_collection_count = 0 %}
-        {% if candidate.collections %}{% for collection in page.collections %}{% if candidate.collections contains collection %}{% assign shared_collection_count = shared_collection_count | plus: 1 %}{% endif %}{% endfor %}{% endif %}
+        {% assign first_collection = "" %}
+        {% for collection in page.collections %}
+          {% if candidate.collections contains collection %}
+            {% if shared_collection_count == 0 %}{% assign first_collection = collection | replace: '-', ' ' %}{% endif %}
+            {% assign shared_collection_count = shared_collection_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
         {% if shared_collection_count > 0 %}
-          {% assign candidate_image = candidate.image | default: candidate.background %}
-          {% capture card %}
-            <article class="jat-related-card jat-card-surface">
-              <a href="{{ candidate.url | relative_url }}" class="jat-related-card-link">
-                {% if candidate_image %}<div class="jat-related-card-media" style="background-image:url('{{ candidate_image | relative_url }}');" aria-hidden="true"></div>{% else %}<div class="jat-related-card-media jat-related-card-media--fallback" aria-hidden="true"><span>❦</span></div>{% endif %}
-                <div class="jat-related-card-copy">
-                  <span class="jat-related-label">Shared Collection</span>
-                  <h3>{{ candidate.title }}</h3>
-                  {% if candidate.excerpt %}<p>{{ candidate.excerpt | strip_html | truncatewords: 18 }}</p>{% endif %}
-                  <span class="jat-related-action">Read Reflection <span aria-hidden="true">→</span></span>
-                </div>
-              </a>
-            </article>
-          {% endcapture %}
+          {% capture match_label %}Shared Collection · {{ first_collection }}{% endcapture %}
+          {% capture card %}{% include components/related-reflection-card.html candidate=candidate label=match_label %}{% endcapture %}
           {% capture related_cards %}{{ related_cards }}{{ card }}{% endcapture %}
           {% capture rendered_tokens %}{{ rendered_tokens }}{{ candidate_token }}{% endcapture %}
           {% assign related_count = related_count | plus: 1 %}
@@ -173,20 +181,7 @@ This keeps broad collections from overwhelming stronger thematic relationships.
     {% if related_count < 3 and candidate.url != page.url %}
       {% capture candidate_token %}|{{ candidate.url }}|{% endcapture %}
       {% unless rendered_tokens contains candidate_token %}
-        {% assign candidate_image = candidate.image | default: candidate.background %}
-        {% capture card %}
-          <article class="jat-related-card jat-card-surface">
-            <a href="{{ candidate.url | relative_url }}" class="jat-related-card-link">
-              {% if candidate_image %}<div class="jat-related-card-media" style="background-image:url('{{ candidate_image | relative_url }}');" aria-hidden="true"></div>{% else %}<div class="jat-related-card-media jat-related-card-media--fallback" aria-hidden="true"><span>❦</span></div>{% endif %}
-              <div class="jat-related-card-copy">
-                <span class="jat-related-label">From the Library</span>
-                <h3>{{ candidate.title }}</h3>
-                {% if candidate.excerpt %}<p>{{ candidate.excerpt | strip_html | truncatewords: 18 }}</p>{% endif %}
-                <span class="jat-related-action">Read Reflection <span aria-hidden="true">→</span></span>
-              </div>
-            </a>
-          </article>
-        {% endcapture %}
+        {% capture card %}{% include components/related-reflection-card.html candidate=candidate label="From the Library" %}{% endcapture %}
         {% capture related_cards %}{{ related_cards }}{{ card }}{% endcapture %}
         {% capture rendered_tokens %}{{ rendered_tokens }}{{ candidate_token }}{% endcapture %}
         {% assign related_count = related_count | plus: 1 %}
@@ -202,7 +197,7 @@ This keeps broad collections from overwhelming stronger thematic relationships.
       <p class="jat-kicker">Keep Exploring</p>
       <h2 id="related-reflections-heading">Related Reflections</h2>
     </div>
-    <p>Continue with reflections connected by series, collection, or theme.</p>
+    <p>Continue with reflections connected by series, shared theme, or collection.</p>
   </div>
   <div class="jat-related-grid">{{ related_cards }}</div>
   <div class="jat-related-footer"><a class="jat-text-link" href="{{ '/explore/' | relative_url }}">Explore the Library →</a></div>
