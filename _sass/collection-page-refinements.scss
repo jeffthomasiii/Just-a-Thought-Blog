@@ -1,5 +1,5 @@
 .jat-collection-intro {
-  grid-template-columns: minmax(190px, .5fr) minmax(0, 1.5fr);
+  grid-template-columns: minmax(210px, .55fr) minmax(0, 1.45fr);
   gap: clamp(1.5rem, 4vw, 3rem);
   align-items: start;
   padding: clamp(1.25rem, 3vw, 2rem);
@@ -12,16 +12,19 @@
 }
 
 .jat-collection-intro-copy {
-  columns: 2;
-  column-gap: 2rem;
+  max-width: 760px;
 }
 
 .jat-collection-intro-copy p {
   margin-top: 0;
+  margin-bottom: .75rem;
   color: var(--jat-text-secondary);
   font-size: .94rem;
   line-height: 1.6;
-  break-inside: avoid;
+}
+
+.jat-collection-intro-copy p:last-child {
+  margin-bottom: 0;
 }
 
 .jat-collection-series-copy {
@@ -41,7 +44,11 @@
 }
 
 @media (max-width: 991.98px) {
+  .jat-collection-intro {
+    grid-template-columns: 1fr;
+  }
+
   .jat-collection-intro-copy {
-    columns: 1;
+    max-width: none;
   }
 }
