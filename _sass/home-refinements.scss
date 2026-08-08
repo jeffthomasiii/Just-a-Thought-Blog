@@ -74,28 +74,29 @@
   background-size: cover;
 }
 
+/* Keep homepage discovery visually tied to the collection landing pages. */
 .jat-topic-image--faith {
-  background-image: url('../img/Faith-topic-card.jpg');
+  background-image: url('../img/collections/faith-hero.png');
 }
 
 .jat-topic-image--marriage {
-  background-image: url('../img/Marriage-topic-card.jpg');
+  background-image: url('../img/collections/marriage-hero.png');
 }
 
 .jat-topic-image--leadership {
-  background-image: url('../img/Leadership-topic-card.jpg');
+  background-image: url('../img/collections/leadership-hero.png');
 }
 
 .jat-topic-image--technology {
-  background-image: url('../img/Technology-topic-card.jpg');
+  background-image: url('../img/collections/technology-hero.png');
 }
 
 .jat-topic-image--culture {
-  background-image: url('../img/Culture-topic-card.jpg');
+  background-image: url('../img/collections/culture-hero.png');
 }
 
 .jat-topic-image--creation {
-  background-image: url('../img/Camping-topic-card.jpg');
+  background-image: url('../img/collections/creation-hero.png');
 }
 
 .jat-topic-card .jat-topic-icon {
