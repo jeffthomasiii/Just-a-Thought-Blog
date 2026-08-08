@@ -1,0 +1,52 @@
+/* =========================================================
+   Site Interface Consistency v1
+   Shared refinements and targeted fixes discovered during the
+   site-wide interface audit.
+   ========================================================= */
+
+/* About — writer identity card */
+.jat-about-page .jat-about-author-card h2 {
+  max-width: 100%;
+  font-size: clamp(1.8rem, 2.8vw, 2.35rem);
+  line-height: 1.04;
+  white-space: nowrap;
+}
+
+.jat-about-page .jat-about-author-mark {
+  min-height: 138px;
+  margin: 1.35rem 0;
+  padding: 0.75rem 0;
+  overflow: hidden;
+}
+
+.jat-about-page .jat-about-author-mark img {
+  display: block;
+  width: min(100%, 210px);
+  max-width: 210px;
+  height: auto;
+  max-height: 112px;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 1099.98px) and (min-width: 992px) {
+  .jat-about-page .jat-about-author-card h2 {
+    font-size: clamp(1.65rem, 2.35vw, 2rem);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .jat-about-page .jat-about-author-card h2 {
+    white-space: normal;
+  }
+
+  .jat-about-page .jat-about-author-mark {
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-about-page .jat-about-author-card h2 {
+    font-size: clamp(1.9rem, 9vw, 2.35rem);
+  }
+}
