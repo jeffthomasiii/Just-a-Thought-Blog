@@ -11,6 +11,7 @@ on:
       - explore-library-v1
       - related-reflections-v1
       - series-reading-paths-v1
+      - site-interface-consistency-v1
   workflow_dispatch:
 
 permissions:
