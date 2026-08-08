@@ -8,6 +8,23 @@ permalink: /explore/
 ---
 
 {% assign collection_keys = "faith,marriage,leadership,technology,culture,creation" | split: "," %}
+{% assign series_groups = site.posts | group_by: "series" %}
+{% assign featured_series_name = nil %}
+{% assign featured_series_image = nil %}
+{% for group in series_groups %}
+  {% if group.name and group.name != "" %}
+    {% assign series_posts = group.items | sort: "series_order" %}
+    {% assign first_series_post = series_posts | first %}
+    {% if featured_series_name == nil %}
+      {% assign featured_series_name = group.name %}
+      {% assign featured_series_image = first_series_post.image | default: first_series_post.background %}
+    {% endif %}
+    {% if group.name == "Created, Fallen, Restored" %}
+      {% assign featured_series_name = group.name %}
+      {% assign featured_series_image = first_series_post.image | default: first_series_post.background %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
 
 <header class="jat-explore-hero">
   <div class="container jat-board-container">
@@ -69,25 +86,32 @@ permalink: /explore/
         <p>Series gather connected reflections into ordered reading paths. They are a place to stay with one question, theme, or area of growth long enough for the ideas to build on one another.</p>
         <a class="btn jat-btn jat-btn-primary" href="{{ '/series/' | relative_url }}">Explore Series</a>
       </div>
-      <div class="jat-explore-deeper-mark" aria-hidden="true">❦</div>
+      {% if featured_series_image %}
+        <a class="jat-explore-deeper-media" href="{{ '/series/' | relative_url }}{% if featured_series_name %}#{{ featured_series_name | slugify }}{% endif %}" aria-label="Explore the {{ featured_series_name }} series">
+          <img src="{{ featured_series_image | relative_url }}" alt="" loading="lazy">
+          {% if featured_series_name %}<span>{{ featured_series_name }}</span>{% endif %}
+        </a>
+      {% endif %}
     </section>
 
-    <section class="jat-explore-search" aria-labelledby="search-heading">
-      <div class="jat-explore-search-copy">
-        <p class="jat-kicker">Looking for Something Specific?</p>
-        <h2 id="search-heading">Search the Library</h2>
-        <p>Search across the full Just A Thought archive when you already have a title, topic, Scripture passage, or idea in mind.</p>
-      </div>
-      <a class="btn jat-btn jat-btn-secondary" href="{{ '/search/' | relative_url }}">Search Every Reflection</a>
-    </section>
+    <div class="jat-explore-utility-grid">
+      <section class="jat-explore-utility" aria-labelledby="search-heading">
+        <div>
+          <p class="jat-kicker">Find a Specific Thought</p>
+          <h2 id="search-heading">Search the Library</h2>
+          <p>Search the full archive by title, topic, Scripture passage, or idea.</p>
+        </div>
+        <a class="btn jat-btn jat-btn-secondary" href="{{ '/search/' | relative_url }}">Search the Library</a>
+      </section>
 
-    <section class="jat-explore-archive" aria-labelledby="archive-heading">
-      <div>
-        <p class="jat-kicker">Prefer the Archive?</p>
-        <h2 id="archive-heading">Every reflection is still here.</h2>
-        <p>The library adds new ways to discover the writing without taking away the traditional chronological archive.</p>
-      </div>
-      <a class="jat-text-link" href="{{ '/posts/' | relative_url }}">Browse all reflections →</a>
-    </section>
+      <section class="jat-explore-utility" aria-labelledby="archive-heading">
+        <div>
+          <p class="jat-kicker">Browse by Date</p>
+          <h2 id="archive-heading">Every reflection is still here.</h2>
+          <p>Prefer the traditional chronological archive? Nothing has gone away.</p>
+        </div>
+        <a class="btn jat-btn jat-btn-secondary" href="{{ '/posts/' | relative_url }}">Browse All Reflections</a>
+      </section>
+    </div>
   </div>
 </main>
