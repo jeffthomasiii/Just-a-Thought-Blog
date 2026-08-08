@@ -1,0 +1,160 @@
+/* =========================================================
+   Related Reflections
+   Compact post-to-post discovery cards.
+   ========================================================= */
+
+.jat-related {
+  margin-top: clamp(2.75rem, 6vw, 4rem);
+  padding-top: clamp(2rem, 4vw, 2.75rem);
+  border-top: 1px solid var(--jat-border-subtle);
+}
+
+.jat-related-heading {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(240px, 1.1fr);
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 1.25rem;
+}
+
+.jat-related-heading h2 {
+  margin: 0;
+  color: var(--jat-text-primary);
+  font-family: var(--jat-font-display);
+  font-size: clamp(1.7rem, 3vw, 2.25rem);
+  line-height: 1.08;
+}
+
+.jat-related-heading > p {
+  margin: 0;
+  color: var(--jat-text-secondary);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.jat-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .85rem;
+}
+
+.jat-related-card {
+  overflow: hidden;
+  border: 1px solid var(--jat-border-subtle);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.jat-related-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--jat-action-primary);
+  box-shadow: 0 10px 24px rgba(37, 40, 34, .08);
+}
+
+.jat-related-card-link {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.jat-related-card-media {
+  min-height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jat-related-card-media--fallback {
+  display: grid;
+  place-items: center;
+  background: var(--jat-surface-panel);
+  color: var(--jat-accent-highlight);
+  font-family: var(--jat-font-display);
+  font-size: 2rem;
+}
+
+.jat-related-card-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: .95rem 1rem 1rem;
+}
+
+.jat-related-label {
+  margin-bottom: .35rem;
+  color: var(--jat-action-primary);
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.jat-related-card h3 {
+  margin: 0 0 .45rem;
+  color: var(--jat-text-primary);
+  font-family: var(--jat-font-display);
+  font-size: 1.18rem;
+  line-height: 1.18;
+}
+
+.jat-related-card p {
+  margin: 0 0 .8rem;
+  color: var(--jat-text-secondary);
+  font-size: .8rem;
+  line-height: 1.45;
+}
+
+.jat-related-action {
+  margin-top: auto;
+  color: var(--jat-action-primary);
+  font-size: .67rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.jat-related-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: .9rem;
+}
+
+body.dark-mode .jat-related-card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 991.98px) {
+  .jat-related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .jat-related-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .jat-related-heading {
+    grid-template-columns: 1fr;
+    gap: .55rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-related-card:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+
+  .jat-related-card-media {
+    min-height: 150px;
+  }
+
+  .jat-related-footer {
+    justify-content: flex-start;
+  }
+}
