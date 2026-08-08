@@ -1,0 +1,166 @@
+/* =========================================================
+   Series Reading Paths v1
+   Refinements layered on top of the existing Series page.
+   ========================================================= */
+
+.jat-series-page .jat-series-detail-collections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+}
+
+.jat-series-page .jat-series-detail-collections span {
+  padding: 0.24rem 0.5rem;
+  border: 1px solid var(--jat-border-subtle);
+  background: var(--jat-surface-parchment, rgba(238, 231, 216, 0.55));
+  color: var(--jat-text-muted);
+  font-size: 0.65rem;
+  font-weight: 750;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.jat-series-page .jat-series-start-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem clamp(1.3rem, 2.5vw, 1.85rem);
+  border-top: 1px solid var(--jat-border-subtle);
+  background: var(--jat-surface-panel);
+}
+
+.jat-series-page .jat-series-start-row p {
+  margin: 0;
+  color: var(--jat-text-secondary);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.jat-series-page .jat-series-start-row .jat-text-link {
+  flex: 0 0 auto;
+  font-size: 0.8rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.jat-series-page .jat-series-start-row + .jat-series-post-list {
+  border-top: 1px solid var(--jat-border-subtle);
+}
+
+.jat-series-page .jat-series-library-handoff {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(420px, 1.18fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.jat-series-page .jat-series-library-copy {
+  max-width: 620px;
+}
+
+.jat-series-page .jat-series-library-copy h2 {
+  margin: 0;
+  font-size: clamp(2.25rem, 4.6vw, 3.75rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+
+.jat-series-page .jat-series-library-copy > p:not(.jat-kicker) {
+  margin: 1rem 0 0;
+  color: var(--jat-text-secondary);
+  line-height: 1.68;
+}
+
+.jat-series-page .jat-series-library-copy .jat-btn {
+  margin-top: 1.5rem;
+}
+
+.jat-series-page .jat-series-library-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--jat-border-subtle);
+  border-left: 1px solid var(--jat-border-subtle);
+}
+
+.jat-series-page .jat-series-library-links > a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.8rem;
+  align-items: center;
+  min-height: 78px;
+  padding: 1rem 1.1rem;
+  border-right: 1px solid var(--jat-border-subtle);
+  border-bottom: 1px solid var(--jat-border-subtle);
+  background: var(--jat-surface-card);
+  color: var(--jat-text-primary);
+  text-decoration: none !important;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.jat-series-page .jat-series-library-links > a:hover,
+.jat-series-page .jat-series-library-links > a:focus-visible {
+  background: var(--jat-surface-parchment, #f3ede1);
+  color: var(--jat-action-primary);
+}
+
+.jat-series-page .jat-series-library-icon {
+  display: grid;
+  width: 1.8rem;
+  height: 1.8rem;
+  place-items: center;
+  color: var(--jat-action-primary);
+}
+
+.jat-series-page .jat-series-library-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+}
+
+.jat-series-page .jat-series-library-links > a > span:nth-child(2) {
+  font-family: var(--jat-font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.jat-series-page .jat-series-library-links > a > span:last-child {
+  color: var(--jat-action-primary);
+  transition: transform 150ms ease;
+}
+
+.jat-series-page .jat-series-library-links > a:hover > span:last-child {
+  transform: translateX(3px);
+}
+
+@media (max-width: 991.98px) {
+  .jat-series-page .jat-series-library-handoff {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-series-page .jat-series-start-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .jat-series-page .jat-series-start-row .jat-text-link {
+    white-space: normal;
+  }
+
+  .jat-series-page .jat-series-library-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+body.dark-mode .jat-series-page .jat-series-start-row {
+  background: var(--jat-surface-panel);
+}
+
+body.dark-mode .jat-series-page .jat-series-library-links > a:hover,
+body.dark-mode .jat-series-page .jat-series-library-links > a:focus-visible {
+  background: var(--jat-surface-panel);
+}
