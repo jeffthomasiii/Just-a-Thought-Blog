@@ -30,7 +30,7 @@ layout: default
 <main class="jat-collection-main jat-page-shell">
   <div class="container jat-board-container">
     <section class="jat-collection-intro jat-panel" aria-labelledby="collection-intro-heading">
-      <div>
+      <div class="jat-collection-intro-heading">
         <p class="jat-kicker">About This Collection</p>
         <h2 id="collection-intro-heading">{{ page.intro_heading | default: page.title }}</h2>
       </div>
@@ -75,8 +75,8 @@ layout: default
             <a class="jat-collection-series-card jat-card-surface" href="{{ '/series/' | relative_url }}#{{ featured_series_name | slugify }}">
               {% if series_image %}<span class="jat-collection-series-image" style="background-image:url('{{ series_image | relative_url }}');"></span>{% endif %}
               <span class="jat-collection-series-copy">
-                <span class="jat-status-label">{{ series_posts | size }} reflection{% if series_posts.size != 1 %}s{% endif %}</span>
                 <strong>{{ featured_series_name }}</strong>
+                <span class="jat-collection-series-count">{{ series_posts | size }} reflection{% if series_posts.size != 1 %}s{% endif %}</span>
                 <small>Explore series →</small>
               </span>
             </a>
