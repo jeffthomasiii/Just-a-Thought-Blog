@@ -1,8 +1,7 @@
 {% assign current_url = page.url | default: '/' %}
 {% assign latest_post = site.posts | first %}
 {% assign home_active = false %}
-{% assign posts_active = false %}
-{% assign series_active = false %}
+{% assign explore_active = false %}
 {% assign listen_active = false %}
 {% assign podcast_active = false %}
 {% assign resources_active = false %}
@@ -10,8 +9,8 @@
 {% assign search_active = false %}
 
 {% if current_url == '/' %}{% assign home_active = true %}{% endif %}
-{% if page.layout == 'post' or current_url contains '/posts' %}{% assign posts_active = true %}{% endif %}
-{% if current_url contains '/series' %}{% assign series_active = true %}{% endif %}
+{% if current_url contains '/explore' or current_url contains '/collections/' or current_url contains '/series/' or current_url contains '/posts' %}{% assign explore_active = true %}{% endif %}
+{% if page.layout == 'post' %}{% assign explore_active = true %}{% endif %}
 {% if current_url contains '/listen' %}{% assign listen_active = true %}{% endif %}
 {% if current_url contains '/podcast' %}{% assign podcast_active = true %}{% endif %}
 {% if current_url contains '/resources' %}{% assign resources_active = true %}{% endif %}
@@ -37,8 +36,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto align-items-lg-center">
         <li class="nav-item"><a class="nav-link{% if home_active %} active{% endif %}" href="{{ '/' | relative_url }}"{% if home_active %} aria-current="page"{% endif %}>Home</a></li>
-        <li class="nav-item"><a class="nav-link{% if posts_active %} active{% endif %}" href="{{ '/posts' | relative_url }}"{% if posts_active %} aria-current="page"{% endif %}>Posts</a></li>
-        <li class="nav-item"><a class="nav-link{% if series_active %} active{% endif %}" href="{{ '/series/' | relative_url }}"{% if series_active %} aria-current="page"{% endif %}>Series</a></li>
+        <li class="nav-item"><a class="nav-link{% if explore_active %} active{% endif %}" href="{{ '/explore/' | relative_url }}"{% if explore_active %} aria-current="page"{% endif %}>Explore</a></li>
         <li class="nav-item"><a class="nav-link{% if listen_active %} active{% endif %}" href="{{ '/listen/' | relative_url }}"{% if listen_active %} aria-current="page"{% endif %}>Listen</a></li>
         <li class="nav-item"><a class="nav-link{% if podcast_active %} active{% endif %}" href="{{ '/podcast/' | relative_url }}"{% if podcast_active %} aria-current="page"{% endif %}>Podcast</a></li>
         <li class="nav-item"><a class="nav-link{% if resources_active %} active{% endif %}" href="{{ '/resources/' | relative_url }}"{% if resources_active %} aria-current="page"{% endif %}>Resources</a></li>
