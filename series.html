@@ -247,7 +247,7 @@ featured reading path. site.posts is already ordered newest-first.
       <div class="jat-series-library-links" aria-label="Explore collections">
         {% for collection in library_collections %}
           <a href="{{ '/collections/' | append: collection | append: '/' | relative_url }}">
-            <span class="jat-series-library-icon" aria-hidden="true">{% include collection-icon.html collection=collection %}</span>
+            <span class="jat-series-library-icon" aria-hidden="true">{% include collection-icon.html key=collection %}</span>
             <span>{{ collection | capitalize }}</span>
             <span aria-hidden="true">→</span>
           </a>
