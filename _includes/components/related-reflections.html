@@ -1,0 +1,152 @@
+{% assign related_count = 0 %}
+{% capture rendered_tokens %}|{{ page.url }}|{% endcapture %}
+
+<section class="jat-related" aria-labelledby="related-reflections-heading">
+  <div class="jat-related-heading">
+    <div>
+      <p class="jat-kicker">Keep Exploring</p>
+      <h2 id="related-reflections-heading">Related Reflections</h2>
+    </div>
+    <p>Continue with reflections connected by series, collection, or theme.</p>
+  </div>
+
+  <div class="jat-related-grid">
+    {% if page.series and page.series != "" %}
+      {% for candidate in site.posts %}
+        {% if related_count < 3 and candidate.url != page.url and candidate.series == page.series %}
+          {% capture candidate_token %}|{{ candidate.url }}|{% endcapture %}
+          {% unless rendered_tokens contains candidate_token %}
+            {% assign candidate_image = candidate.image | default: candidate.background %}
+            <article class="jat-related-card jat-card-surface">
+              <a href="{{ candidate.url | relative_url }}" class="jat-related-card-link">
+                {% if candidate_image %}
+                  <div class="jat-related-card-media" style="background-image:url('{{ candidate_image | relative_url }}');" aria-hidden="true"></div>
+                {% else %}
+                  <div class="jat-related-card-media jat-related-card-media--fallback" aria-hidden="true"><span>❦</span></div>
+                {% endif %}
+                <div class="jat-related-card-copy">
+                  <span class="jat-related-label">Same Series</span>
+                  <h3>{{ candidate.title }}</h3>
+                  {% if candidate.excerpt %}<p>{{ candidate.excerpt | strip_html | truncatewords: 18 }}</p>{% endif %}
+                  <span class="jat-related-action">Read Reflection <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+            </article>
+            {% capture rendered_tokens %}{{ rendered_tokens }}{{ candidate_token }}{% endcapture %}
+            {% assign related_count = related_count | plus: 1 %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if related_count < 3 and page.collections %}
+      {% for candidate in site.posts %}
+        {% if related_count < 3 and candidate.url != page.url %}
+          {% capture candidate_token %}|{{ candidate.url }}|{% endcapture %}
+          {% unless rendered_tokens contains candidate_token %}
+            {% assign shared_collection = false %}
+            {% if candidate.collections %}
+              {% for collection in page.collections %}
+                {% if candidate.collections contains collection %}
+                  {% assign shared_collection = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if shared_collection %}
+              {% assign candidate_image = candidate.image | default: candidate.background %}
+              <article class="jat-related-card jat-card-surface">
+                <a href="{{ candidate.url | relative_url }}" class="jat-related-card-link">
+                  {% if candidate_image %}
+                    <div class="jat-related-card-media" style="background-image:url('{{ candidate_image | relative_url }}');" aria-hidden="true"></div>
+                  {% else %}
+                    <div class="jat-related-card-media jat-related-card-media--fallback" aria-hidden="true"><span>❦</span></div>
+                  {% endif %}
+                  <div class="jat-related-card-copy">
+                    <span class="jat-related-label">Shared Collection</span>
+                    <h3>{{ candidate.title }}</h3>
+                    {% if candidate.excerpt %}<p>{{ candidate.excerpt | strip_html | truncatewords: 18 }}</p>{% endif %}
+                    <span class="jat-related-action">Read Reflection <span aria-hidden="true">→</span></span>
+                  </div>
+                </a>
+              </article>
+              {% capture rendered_tokens %}{{ rendered_tokens }}{{ candidate_token }}{% endcapture %}
+              {% assign related_count = related_count | plus: 1 %}
+            {% endif %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if related_count < 3 and page.tags %}
+      {% for candidate in site.posts %}
+        {% if related_count < 3 and candidate.url != page.url %}
+          {% capture candidate_token %}|{{ candidate.url }}|{% endcapture %}
+          {% unless rendered_tokens contains candidate_token %}
+            {% assign shared_tag = false %}
+            {% if candidate.tags %}
+              {% for tag in page.tags %}
+                {% if candidate.tags contains tag %}
+                  {% assign shared_tag = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if shared_tag %}
+              {% assign candidate_image = candidate.image | default: candidate.background %}
+              <article class="jat-related-card jat-card-surface">
+                <a href="{{ candidate.url | relative_url }}" class="jat-related-card-link">
+                  {% if candidate_image %}
+                    <div class="jat-related-card-media" style="background-image:url('{{ candidate_image | relative_url }}');" aria-hidden="true"></div>
+                  {% else %}
+                    <div class="jat-related-card-media jat-related-card-media--fallback" aria-hidden="true"><span>❦</span></div>
+                  {% endif %}
+                  <div class="jat-related-card-copy">
+                    <span class="jat-related-label">Related Theme</span>
+                    <h3>{{ candidate.title }}</h3>
+                    {% if candidate.excerpt %}<p>{{ candidate.excerpt | strip_html | truncatewords: 18 }}</p>{% endif %}
+                    <span class="jat-related-action">Read Reflection <span aria-hidden="true">→</span></span>
+                  </div>
+                </a>
+              </article>
+              {% capture rendered_tokens %}{{ rendered_tokens }}{{ candidate_token }}{% endcapture %}
+              {% assign related_count = related_count | plus: 1 %}
+            {% endif %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if related_count < 3 %}
+      {% for candidate in site.posts %}
+        {% if related_count < 3 and candidate.url != page.url %}
+          {% capture candidate_token %}|{{ candidate.url }}|{% endcapture %}
+          {% unless rendered_tokens contains candidate_token %}
+            {% assign candidate_image = candidate.image | default: candidate.background %}
+            <article class="jat-related-card jat-card-surface">
+              <a href="{{ candidate.url | relative_url }}" class="jat-related-card-link">
+                {% if candidate_image %}
+                  <div class="jat-related-card-media" style="background-image:url('{{ candidate_image | relative_url }}');" aria-hidden="true"></div>
+                {% else %}
+                  <div class="jat-related-card-media jat-related-card-media--fallback" aria-hidden="true"><span>❦</span></div>
+                {% endif %}
+                <div class="jat-related-card-copy">
+                  <span class="jat-related-label">From the Library</span>
+                  <h3>{{ candidate.title }}</h3>
+                  {% if candidate.excerpt %}<p>{{ candidate.excerpt | strip_html | truncatewords: 18 }}</p>{% endif %}
+                  <span class="jat-related-action">Read Reflection <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+            </article>
+            {% capture rendered_tokens %}{{ rendered_tokens }}{{ candidate_token }}{% endcapture %}
+            {% assign related_count = related_count | plus: 1 %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  <div class="jat-related-footer">
+    <a class="jat-text-link" href="{{ '/explore/' | relative_url }}">Explore the Library →</a>
+  </div>
+</section>
