@@ -1,0 +1,93 @@
+---
+layout: default
+page_archetype: landing
+body_class: jat-explore-page
+title: "Explore the Library"
+description: "Explore Just A Thought by collection, connected series, or search the full library for a specific idea, Scripture passage, or theme."
+permalink: /explore/
+---
+
+{% assign collection_keys = "faith,marriage,leadership,technology,culture,creation" | split: "," %}
+
+<header class="jat-explore-hero">
+  <div class="container jat-board-container">
+    <div class="jat-explore-hero-copy">
+      <p class="jat-kicker">Explore Just A Thought</p>
+      <h1>Explore the Library</h1>
+      <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
+      <p class="jat-explore-lede">Follow an idea, question, or season rather than simply browsing by date. Begin with a broad collection, stay with a connected series, or search for the thought you are carrying right now.</p>
+    </div>
+  </div>
+</header>
+
+<main class="jat-explore-main jat-page-shell">
+  <div class="container jat-board-container">
+    <section class="jat-explore-section" aria-labelledby="collections-heading">
+      <div class="jat-explore-section-heading">
+        <div>
+          <p class="jat-kicker">Explore by Collection</p>
+          <h2 id="collections-heading">Start with the part of life you are thinking about.</h2>
+        </div>
+        <p>Each collection gathers reflections from across the archive into a more intentional place to begin. A single reflection may belong to more than one collection because life rarely fits neatly into one category.</p>
+      </div>
+
+      <div class="jat-explore-grid">
+        {% for key in collection_keys %}
+          {% assign collection_page = site.pages | where: "collection_key", key | first %}
+          {% assign reflection_count = 0 %}
+          {% for post in site.posts %}
+            {% if post.collections contains key %}
+              {% assign reflection_count = reflection_count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+
+          {% if collection_page %}
+            <article class="jat-explore-card jat-card-surface">
+              <a href="{{ collection_page.url | relative_url }}" class="jat-explore-card-link" aria-label="Explore the {{ collection_page.title }} collection">
+                <div class="jat-explore-card-media" style="background-image: url('{{ collection_page.background | relative_url }}');">
+                  <span class="jat-explore-card-icon" aria-hidden="true">{% include collection-icon.html key=key %}</span>
+                </div>
+                <div class="jat-explore-card-copy">
+                  <div class="jat-explore-card-meta">
+                    <span>{{ reflection_count }} reflection{% if reflection_count != 1 %}s{% endif %}</span>
+                  </div>
+                  <h3>{{ collection_page.title }}</h3>
+                  <p>{{ collection_page.subtitle }}</p>
+                  <span class="jat-explore-card-action">Explore Collection <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="jat-explore-deeper jat-panel jat-panel--parchment" aria-labelledby="deeper-heading">
+      <div class="jat-explore-deeper-copy">
+        <p class="jat-kicker">Go Deeper</p>
+        <h2 id="deeper-heading">Some thoughts are better explored over time.</h2>
+        <p>Series gather connected reflections into ordered reading paths. They are a place to stay with one question, theme, or area of growth long enough for the ideas to build on one another.</p>
+        <a class="btn jat-btn jat-btn-primary" href="{{ '/series/' | relative_url }}">Explore Series</a>
+      </div>
+      <div class="jat-explore-deeper-mark" aria-hidden="true">❦</div>
+    </section>
+
+    <section class="jat-explore-search" aria-labelledby="search-heading">
+      <div class="jat-explore-search-copy">
+        <p class="jat-kicker">Looking for Something Specific?</p>
+        <h2 id="search-heading">Search the Library</h2>
+        <p>Search across the full Just A Thought archive when you already have a title, topic, Scripture passage, or idea in mind.</p>
+      </div>
+      <a class="btn jat-btn jat-btn-secondary" href="{{ '/search/' | relative_url }}">Search Every Reflection</a>
+    </section>
+
+    <section class="jat-explore-archive" aria-labelledby="archive-heading">
+      <div>
+        <p class="jat-kicker">Prefer the Archive?</p>
+        <h2 id="archive-heading">Every reflection is still here.</h2>
+        <p>The library adds new ways to discover the writing without taking away the traditional chronological archive.</p>
+      </div>
+      <a class="jat-text-link" href="{{ '/posts/' | relative_url }}">Browse all reflections →</a>
+    </section>
+  </div>
+</main>
