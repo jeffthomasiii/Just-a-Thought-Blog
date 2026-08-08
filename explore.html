@@ -8,21 +8,12 @@ permalink: /explore/
 ---
 
 {% assign collection_keys = "faith,marriage,leadership,technology,culture,creation" | split: "," %}
-{% assign series_groups = site.posts | group_by: "series" %}
 {% assign featured_series_name = nil %}
 {% assign featured_series_image = nil %}
-{% for group in series_groups %}
-  {% if group.name and group.name != "" %}
-    {% assign series_posts = group.items | sort: "series_order" %}
-    {% assign first_series_post = series_posts | first %}
-    {% if featured_series_name == nil %}
-      {% assign featured_series_name = group.name %}
-      {% assign featured_series_image = first_series_post.image | default: first_series_post.background %}
-    {% endif %}
-    {% if group.name == "Created, Fallen, Restored" %}
-      {% assign featured_series_name = group.name %}
-      {% assign featured_series_image = first_series_post.image | default: first_series_post.background %}
-    {% endif %}
+{% for post in site.posts %}
+  {% if featured_series_name == nil and post.series and post.series != "" %}
+    {% assign featured_series_name = post.series %}
+    {% assign featured_series_image = post.image | default: post.background %}
   {% endif %}
 {% endfor %}
 
