@@ -1,0 +1,388 @@
+/* =========================================================
+   Site Interface Consistency v1
+   Shared refinements and targeted fixes discovered during the
+   site-wide interface audit.
+   ========================================================= */
+
+/* About — writer identity card */
+.jat-about-page .jat-about-author-card h2 {
+  max-width: 100%;
+  font-size: clamp(1.8rem, 2.8vw, 2.35rem);
+  line-height: 1.04;
+  white-space: nowrap;
+}
+
+.jat-about-page .jat-about-author-mark {
+  display: flex;
+  min-height: 138px;
+  margin: 1.35rem 0;
+  padding: 0.75rem 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.jat-about-page .jat-about-author-mark img {
+  display: block;
+  width: min(100%, 210px);
+  max-width: 210px;
+  height: auto;
+  max-height: 112px;
+  object-fit: contain;
+  object-position: center;
+  /* The source PNG has uneven transparent canvas around the visible mark.
+     Offset the artwork so the visible JAT/branch mark, not the image box,
+     is visually centered inside the writer card. */
+  transform: translate(-38%, -30%);
+}
+
+/* Global navigation — brand prominence and action spacing */
+.jat-site-nav .jat-nav-brand {
+  gap: 0.85rem;
+  color: var(--jat-action-primary, #4F5D3A) !important;
+}
+
+.jat-site-nav .jat-nav-logo {
+  width: 50px;
+  height: 50px;
+  flex: 0 0 50px;
+}
+
+.jat-site-nav .jat-nav-wordmark {
+  color: var(--jat-action-primary, #4F5D3A);
+  font-size: 1.3rem;
+}
+
+.jat-site-nav .jat-theme-nav-item {
+  display: flex;
+  align-items: center;
+  margin-left: 0.35rem;
+}
+
+.jat-site-nav .jat-latest-nav-item {
+  margin-left: 0.45rem;
+}
+
+.jat-site-nav .theme-toggle {
+  display: inline-grid;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  place-items: center;
+}
+
+/* Homepage — approved Podcast Spotlight mark */
+.jat-podcast-card .jat-podcast-logo-img {
+  content: url('/img/brand/logos/just-a-thought-podcast-logo.png');
+}
+
+/* Search — compact, architecture-aware control panel */
+.jat-search-main {
+  gap: clamp(2.25rem, 5vw, 4rem);
+}
+
+.jat-search-panel {
+  display: block;
+  padding: clamp(1.25rem, 2.5vw, 1.8rem);
+}
+
+.jat-search-panel-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(280px, 1.2fr);
+  gap: 1rem 2rem;
+  align-items: end;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--jat-border-subtle);
+}
+
+.jat-search-panel-heading h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.6rem, 2.6vw, 2.15rem);
+}
+
+.jat-search-panel-heading > p {
+  margin: 0;
+  color: var(--jat-text-secondary);
+  line-height: 1.55;
+}
+
+.jat-search-form {
+  gap: 0.9rem;
+}
+
+.jat-search-query-field,
+.jat-search-field {
+  gap: 0.35rem;
+}
+
+.jat-search-form input[type='search'],
+.jat-search-form select {
+  min-height: 44px;
+  font-size: 0.94rem;
+}
+
+.jat-search-form input[type='search'] {
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+}
+
+.jat-search-form select {
+  padding-top: 0.62rem;
+  padding-bottom: 0.62rem;
+}
+
+.jat-search-filters {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) auto;
+  gap: 0.65rem;
+}
+
+.jat-search-clear-wrap .jat-btn {
+  min-height: 44px;
+  padding: 0.62rem 1rem;
+}
+
+.jat-search-guidance {
+  grid-column: auto;
+  margin: 0.8rem 0 0;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--jat-border-subtle);
+}
+
+.jat-search-state {
+  min-height: 210px;
+  padding: clamp(1.75rem, 4vw, 3rem);
+}
+
+/* =========================================================
+   Anchor hero normalization
+   Listen establishes the preferred visual proportion. Image-led
+   anchors share one height, while text-only utility heroes remain
+   intentionally shorter but use the same framed language.
+   ========================================================= */
+
+body.jat-archetype-landing,
+body.jat-archetype-profile {
+  --jat-primary-hero-height: 520px;
+  --jat-primary-hero-copy-padding: clamp(2.2rem, 4vw, 3.5rem);
+}
+
+body.jat-archetype-landing .jat-board-hero-grid,
+.jat-series-page .jat-series-hero-grid,
+.jat-about-page .jat-about-hero-grid {
+  min-height: var(--jat-primary-hero-height);
+}
+
+body.jat-archetype-landing .jat-board-hero-image,
+.jat-resources-document .jat-resources-hero-media,
+.jat-series-page .jat-series-hero-media,
+.jat-about-page .jat-about-hero-image,
+.jat-podcast-page .jat-podcast-hero-image {
+  min-height: var(--jat-primary-hero-height);
+}
+
+.jat-resources-document .jat-resources-hero-media img,
+.jat-series-page .jat-series-hero-media > img,
+.jat-series-page .jat-series-hero-media > .jat-series-image-fallback,
+.jat-about-page .jat-about-hero-image img {
+  min-height: var(--jat-primary-hero-height);
+}
+
+/* Keep Home from becoming taller than the shared anchor proportion. */
+body.jat-archetype-landing:not(.jat-podcast-page):not(.jat-resources-document):not(.jat-series-page) .jat-board-hero-copy h1 {
+  font-size: clamp(3.1rem, 5vw, 4.85rem);
+}
+
+/* Match the softer Home-page transition instead of a hard image edge. */
+.jat-resources-document .jat-resources-hero-media::before,
+.jat-series-page .jat-series-hero-media::before,
+.jat-about-page .jat-about-hero-image::before {
+  background: linear-gradient(
+    90deg,
+    #fffdf8 0%,
+    rgba(255, 253, 248, 0.9) 8%,
+    rgba(255, 253, 248, 0.55) 19%,
+    rgba(255, 253, 248, 0.12) 34%,
+    rgba(255, 253, 248, 0) 52%
+  );
+}
+
+body.dark-mode .jat-resources-hero-media::before,
+body.dark-mode .jat-series-hero-media::before,
+body.dark-mode .jat-about-hero-image::before {
+  background: linear-gradient(
+    90deg,
+    #22251d 0%,
+    rgba(34, 37, 29, 0.92) 8%,
+    rgba(34, 37, 29, 0.58) 19%,
+    rgba(34, 37, 29, 0.14) 34%,
+    rgba(34, 37, 29, 0) 52%
+  );
+}
+
+/* Explore stays image-free but now uses the same visual scale family. */
+.jat-explore-hero {
+  padding-top: clamp(6.75rem, 10vw, 8rem);
+  padding-bottom: 0.85rem;
+  border-bottom: 0;
+  background: var(--jat-surface-page);
+}
+
+.jat-explore-hero-inner {
+  display: flex;
+  min-height: 430px;
+  align-items: center;
+  padding: clamp(2.2rem, 4vw, 3.5rem);
+  border: 1px solid var(--jat-border-strong);
+  background:
+    radial-gradient(circle at 86% 18%, rgba(198, 161, 91, 0.12), transparent 30%),
+    var(--jat-surface-card);
+  box-shadow: var(--jat-shadow-panel);
+}
+
+.jat-explore-hero-copy {
+  max-width: 820px;
+}
+
+/* Posts/Search: compact utility heroes should still read as real cards. */
+.jat-posts-hero,
+.jat-search-hero {
+  padding-bottom: 0.85rem;
+  border-bottom: 0;
+}
+
+.jat-posts-hero-inner,
+.jat-search-hero-inner {
+  min-height: 310px;
+  padding: clamp(2rem, 4vw, 3rem);
+  border: 1px solid var(--jat-border-strong);
+  background: var(--jat-surface-card);
+  box-shadow: var(--jat-shadow-panel);
+}
+
+@media (max-width: 1099.98px) and (min-width: 992px) {
+  .jat-about-page .jat-about-author-card h2 {
+    font-size: clamp(1.65rem, 2.35vw, 2rem);
+  }
+
+  .jat-site-nav .jat-nav-logo {
+    width: 46px;
+    height: 46px;
+    flex-basis: 46px;
+  }
+
+  .jat-site-nav .jat-nav-wordmark {
+    font-size: 1.2rem;
+  }
+
+  .jat-search-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .jat-about-page .jat-about-author-card h2 {
+    white-space: normal;
+  }
+
+  .jat-about-page .jat-about-author-mark {
+    min-height: 120px;
+  }
+
+  .jat-about-page .jat-about-author-mark img {
+    transform: translate(-34%, -26%);
+  }
+
+  .jat-site-nav .jat-theme-nav-item,
+  .jat-site-nav .jat-latest-nav-item {
+    margin-left: 0;
+  }
+
+  .jat-search-panel-heading {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .jat-search-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .jat-search-clear-wrap {
+    grid-column: 1 / -1;
+  }
+
+  body.jat-archetype-landing .jat-board-hero-grid,
+  .jat-series-page .jat-series-hero-grid,
+  .jat-about-page .jat-about-hero-grid,
+  .jat-explore-hero-inner,
+  .jat-posts-hero-inner,
+  .jat-search-hero-inner {
+    min-height: 0;
+  }
+
+  body.jat-archetype-landing .jat-board-hero-image,
+  .jat-resources-document .jat-resources-hero-media,
+  .jat-series-page .jat-series-hero-media,
+  .jat-about-page .jat-about-hero-image,
+  .jat-podcast-page .jat-podcast-hero-image {
+    min-height: 0;
+  }
+
+  .jat-resources-document .jat-resources-hero-media::before,
+  .jat-series-page .jat-series-hero-media::before,
+  .jat-about-page .jat-about-hero-image::before {
+    background: linear-gradient(
+      180deg,
+      #fffdf8 0%,
+      rgba(255, 253, 248, 0.88) 8%,
+      rgba(255, 253, 248, 0.42) 20%,
+      rgba(255, 253, 248, 0) 38%
+    );
+  }
+
+  body.dark-mode .jat-resources-hero-media::before,
+  body.dark-mode .jat-series-hero-media::before,
+  body.dark-mode .jat-about-hero-image::before {
+    background: linear-gradient(
+      180deg,
+      #22251d 0%,
+      rgba(34, 37, 29, 0.9) 8%,
+      rgba(34, 37, 29, 0.44) 20%,
+      rgba(34, 37, 29, 0) 38%
+    );
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-about-page .jat-about-author-card h2 {
+    font-size: clamp(1.9rem, 9vw, 2.35rem);
+  }
+
+  .jat-site-nav .jat-nav-logo {
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+  }
+
+  .jat-site-nav .jat-nav-wordmark {
+    font-size: 1.12rem;
+  }
+
+  .jat-search-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-search-clear-wrap {
+    grid-column: 1;
+  }
+
+  .jat-search-clear-wrap .jat-btn {
+    width: 100%;
+  }
+
+  .jat-explore-hero-inner,
+  .jat-posts-hero-inner,
+  .jat-search-hero-inner {
+    padding: 1.75rem;
+  }
+}

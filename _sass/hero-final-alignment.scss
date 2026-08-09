@@ -1,0 +1,109 @@
+/* =========================================================
+   Final anchor hero alignment
+   Side-by-side desktop correction for the primary reader-facing
+   destinations. Home remains an intentional brand-led variant.
+   Explore, Listen, Resources, and About share one internal system.
+   ========================================================= */
+
+@media (min-width: 992px) {
+  :root {
+    --jat-anchor-hero-height: 520px;
+    --jat-anchor-copy-pad-x: clamp(2.75rem, 4vw, 3.5rem);
+    --jat-anchor-copy-pad-y: 3rem;
+    --jat-anchor-title-size: clamp(3rem, 3.7vw, 3.55rem);
+  }
+
+  /* One physical frame height for the four primary interior destinations. */
+  .jat-listen-hero .jat-listen-hero-grid,
+  .jat-explore-hero .jat-explore-hero-frame,
+  .jat-resources-hero .jat-resources-hero-grid,
+  .jat-about-page .jat-about-hero-grid {
+    height: var(--jat-anchor-hero-height) !important;
+    min-height: var(--jat-anchor-hero-height) !important;
+    max-height: var(--jat-anchor-hero-height) !important;
+    grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr) !important;
+  }
+
+  /* Shared text geometry: fixed top position, consistent horizontal inset,
+     and actions anchored to a common bottom baseline. */
+  .jat-listen-hero .jat-listen-hero-copy,
+  .jat-explore-hero .jat-explore-hero-copy,
+  .jat-resources-document .jat-resources-hero .jat-board-hero-copy,
+  .jat-about-page .jat-about-hero-copy {
+    display: flex !important;
+    min-height: 0 !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    box-sizing: border-box;
+    padding: var(--jat-anchor-copy-pad-y) var(--jat-anchor-copy-pad-x) !important;
+  }
+
+  .jat-listen-hero .jat-kicker,
+  .jat-explore-hero .jat-kicker,
+  .jat-resources-hero .jat-kicker,
+  .jat-about-page .jat-about-hero .jat-kicker {
+    margin: 0 0 1rem !important;
+    font-size: 0.73rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.12em !important;
+    line-height: 1.4 !important;
+  }
+
+  .jat-listen-hero .jat-listen-hero-copy h1,
+  .jat-explore-hero h1,
+  .jat-resources-document .jat-resources-hero .jat-board-hero-copy h1,
+  .jat-about-page .jat-about-hero h1 {
+    max-width: 650px !important;
+    margin: 0 !important;
+    font-size: var(--jat-anchor-title-size) !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.045em !important;
+    line-height: 0.98 !important;
+  }
+
+  .jat-listen-hero .jat-simple-divider,
+  .jat-explore-hero .jat-simple-divider,
+  .jat-resources-hero .jat-simple-divider,
+  .jat-about-hero .jat-simple-divider {
+    width: min(280px, 100%) !important;
+    margin: 1.15rem 0 1rem !important;
+  }
+
+  .jat-listen-hero .jat-board-hero-copy > p:not(.jat-kicker),
+  .jat-explore-hero .jat-explore-lede,
+  .jat-resources-document .jat-resources-hero .jat-board-hero-copy > p:not(.jat-kicker),
+  .jat-about-page .jat-about-hero-copy > p:not(.jat-kicker) {
+    max-width: 600px !important;
+    margin: 0 !important;
+    color: var(--jat-text-secondary) !important;
+    font-family: var(--jat-font-body) !important;
+    font-size: 1rem !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 1.55 !important;
+  }
+
+  .jat-listen-hero .jat-button-row,
+  .jat-explore-hero .jat-explore-hero-actions,
+  .jat-resources-hero .jat-button-row,
+  .jat-about-page .jat-about-hero-actions {
+    margin-top: auto !important;
+    padding-top: 1.25rem !important;
+  }
+
+  /* Preserve the readable About image caption position. */
+  .jat-about-page .jat-about-image-caption {
+    z-index: 3;
+    right: clamp(1.25rem, 3vw, 2rem);
+    left: 34%;
+    max-width: 430px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .jat-about-page .jat-about-image-caption {
+    left: clamp(1.25rem, 3vw, 2rem);
+    max-width: 70%;
+  }
+}

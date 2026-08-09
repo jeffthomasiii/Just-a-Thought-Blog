@@ -14,6 +14,7 @@ layout: null
     "date": {{ post.date | date_to_xmlschema | jsonify }},
     "date_display": {{ post.date | date: "%B %-d, %Y" | jsonify }},
     "categories": {{ post.categories | default: empty | jsonify }},
+    "collections": {{ post.collections | default: empty | jsonify }},
     "tags": {{ post.tags | default: empty | jsonify }},
     "series": {{ post.series | default: "" | jsonify }}
   }{% unless forloop.last %},{% endunless %}

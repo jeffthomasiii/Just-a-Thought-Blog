@@ -1,0 +1,365 @@
+/* =========================================================
+   Listen-reference hero system
+   Listen remains the canonical desktop anchor-page proportion.
+   ========================================================= */
+
+:root {
+  --jat-listen-reference-hero-height: 430px;
+  --jat-listen-reference-copy-padding: clamp(2rem, 3.5vw, 3rem);
+}
+
+/* Header brand — increase the mark without changing navigation rhythm. */
+.jat-site-nav .jat-nav-logo {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
+}
+
+.jat-site-nav .jat-nav-brand {
+  gap: 0.9rem;
+}
+
+/* Home, Listen, Resources — same actual frame height. */
+.jat-board-hero .jat-board-hero-grid,
+.jat-resources-hero .jat-resources-hero-grid {
+  height: var(--jat-listen-reference-hero-height);
+  min-height: var(--jat-listen-reference-hero-height);
+  max-height: var(--jat-listen-reference-hero-height);
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+}
+
+.jat-board-hero .jat-board-hero-copy,
+.jat-resources-hero .jat-board-hero-copy {
+  min-height: 0;
+  padding: var(--jat-listen-reference-copy-padding);
+}
+
+.jat-board-hero .jat-board-hero-copy h1 {
+  max-width: 650px;
+  font-size: clamp(2.75rem, 4vw, 3.85rem);
+  line-height: 0.98;
+}
+
+.jat-board-hero .jat-board-hero-copy > p:not(.jat-kicker) {
+  max-width: 620px;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.jat-board-hero .jat-simple-divider,
+.jat-resources-hero .jat-simple-divider,
+.jat-about-hero .jat-simple-divider,
+.jat-explore-hero .jat-simple-divider,
+.jat-posts-hero .jat-simple-divider {
+  margin: 0.9rem 0 0.85rem;
+}
+
+.jat-board-hero .jat-board-hero-copy > .jat-button-row,
+.jat-resources-hero .jat-board-hero-copy > .jat-button-row {
+  margin-top: 1rem;
+}
+
+.jat-board-hero .jat-board-hero-image,
+.jat-resources-document .jat-resources-hero-media,
+.jat-resources-document .jat-resources-hero-media img {
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  aspect-ratio: auto;
+}
+
+.jat-resources-document .jat-resources-hero-media {
+  min-height: 0;
+  aspect-ratio: auto;
+}
+
+/* Resources needs tighter copy than Home to fit the same reference height. */
+.jat-resources-hero .jat-board-hero-copy {
+  padding: clamp(1.65rem, 2.8vw, 2.25rem);
+}
+
+.jat-resources-document .jat-board-hero-copy h1 {
+  max-width: 610px;
+  margin: 0;
+  font-size: clamp(2.45rem, 3.35vw, 3.15rem);
+  line-height: 1;
+}
+
+.jat-resources-document .jat-board-hero-copy > p:not(.jat-kicker) {
+  max-width: 590px;
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.48;
+}
+
+.jat-resources-hero .jat-button-row {
+  display: flex;
+  margin-top: 0.85rem !important;
+}
+
+/* Shared soft blend at the copy/image boundary. */
+.jat-resources-document .jat-resources-hero-media::before,
+.jat-about-page .jat-about-hero-image::before,
+.jat-posts-hero-media::before,
+.jat-explore-hero-media::before {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #fffdf8 0%,
+    rgba(255, 253, 248, 0.9) 8%,
+    rgba(255, 253, 248, 0.55) 19%,
+    rgba(255, 253, 248, 0.12) 34%,
+    rgba(255, 253, 248, 0) 52%
+  );
+  content: '';
+  pointer-events: none;
+}
+
+/* About — slightly taller than Listen to leave breathing room after the actions. */
+.jat-about-page .jat-about-hero-grid {
+  height: 455px;
+  min-height: 455px;
+  max-height: 455px;
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+}
+
+.jat-about-page .jat-about-hero-copy {
+  min-height: 0;
+  padding: clamp(2.15rem, 3.5vw, 3rem);
+}
+
+.jat-about-page .jat-about-hero h1 {
+  max-width: 650px;
+  font-size: clamp(2.7rem, 3.9vw, 3.7rem);
+  line-height: 0.98;
+}
+
+.jat-about-page .jat-about-hero-copy > p:not(.jat-kicker) {
+  margin-bottom: 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.jat-about-page .jat-about-hero-actions {
+  margin-top: 1.2rem;
+}
+
+.jat-about-page .jat-about-hero-image,
+.jat-about-page .jat-about-hero-image img {
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  aspect-ratio: auto;
+}
+
+/* Keep the caption in the readable portion of the image, away from the white blend. */
+.jat-about-page .jat-about-image-caption {
+  z-index: 3;
+  right: clamp(1.25rem, 3vw, 2rem);
+  left: 34%;
+  max-width: 430px;
+  text-align: left;
+}
+
+/* Explore — same frame size as Home, with one strong exploration image. */
+.jat-explore-hero {
+  padding: 6.4rem 0 0.85rem;
+  border-bottom: 0;
+  background: var(--jat-surface-page);
+}
+
+.jat-explore-hero .jat-explore-hero-frame {
+  display: grid;
+  height: var(--jat-listen-reference-hero-height);
+  min-height: var(--jat-listen-reference-hero-height);
+  max-height: var(--jat-listen-reference-hero-height);
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  overflow: hidden;
+  border: 1px solid var(--jat-border-strong);
+  background: var(--jat-surface-card);
+  box-shadow: var(--jat-shadow-panel);
+}
+
+.jat-explore-hero-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--jat-listen-reference-copy-padding);
+}
+
+.jat-explore-hero h1 {
+  max-width: 650px;
+  font-size: clamp(2.75rem, 4vw, 3.85rem);
+  line-height: 0.98;
+}
+
+.jat-explore-lede {
+  max-width: 620px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.jat-explore-hero-actions {
+  margin-top: 1rem;
+}
+
+.jat-explore-hero-media {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.jat-explore-hero-media > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Posts — visual archive hero using the newest reflection image. */
+.jat-posts-hero {
+  padding: 6.4rem 0 0.85rem;
+  border-bottom: 0;
+}
+
+.jat-posts-hero .jat-posts-hero-inner {
+  display: grid;
+  height: var(--jat-listen-reference-hero-height);
+  min-height: var(--jat-listen-reference-hero-height);
+  max-height: var(--jat-listen-reference-hero-height);
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  gap: 0;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid var(--jat-border-strong);
+  background: var(--jat-surface-card);
+  box-shadow: var(--jat-shadow-panel);
+}
+
+.jat-posts-hero-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--jat-listen-reference-copy-padding);
+}
+
+.jat-posts-hero h1 {
+  margin: 0;
+  font-size: clamp(2.75rem, 4vw, 3.85rem);
+  line-height: 0.98;
+}
+
+.jat-posts-hero-copy > p:not(.jat-kicker):not(.jat-posts-page-label) {
+  max-width: 620px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.jat-posts-hero-actions {
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.jat-posts-hero-media {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--jat-surface-muted);
+}
+
+.jat-posts-hero-media img,
+.jat-posts-hero-media .jat-posts-image-fallback {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body.dark-mode .jat-resources-hero-media::before,
+body.dark-mode .jat-about-hero-image::before,
+body.dark-mode .jat-posts-hero-media::before,
+body.dark-mode .jat-explore-hero-media::before {
+  background: linear-gradient(
+    90deg,
+    #22251d 0%,
+    rgba(34, 37, 29, 0.92) 8%,
+    rgba(34, 37, 29, 0.58) 19%,
+    rgba(34, 37, 29, 0.14) 34%,
+    rgba(34, 37, 29, 0) 52%
+  );
+}
+
+@media (max-width: 991.98px) {
+  .jat-site-nav .jat-nav-logo {
+    width: 50px;
+    height: 50px;
+    flex-basis: 50px;
+  }
+
+  .jat-board-hero .jat-board-hero-grid,
+  .jat-resources-hero .jat-resources-hero-grid,
+  .jat-about-page .jat-about-hero-grid,
+  .jat-explore-hero .jat-explore-hero-frame,
+  .jat-posts-hero .jat-posts-hero-inner {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    grid-template-columns: 1fr;
+  }
+
+  .jat-board-hero .jat-board-hero-image,
+  .jat-resources-document .jat-resources-hero-media,
+  .jat-about-page .jat-about-hero-image,
+  .jat-explore-hero-media,
+  .jat-posts-hero-media {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .jat-about-page .jat-about-image-caption {
+    left: clamp(1.25rem, 3vw, 2rem);
+    max-width: 70%;
+  }
+
+  .jat-resources-document .jat-resources-hero-media::before,
+  .jat-about-page .jat-about-hero-image::before,
+  .jat-posts-hero-media::before,
+  .jat-explore-hero-media::before {
+    background: linear-gradient(180deg, #fffdf8 0%, rgba(255,253,248,.88) 8%, rgba(255,253,248,.42) 20%, rgba(255,253,248,0) 38%);
+  }
+
+  body.dark-mode .jat-resources-hero-media::before,
+  body.dark-mode .jat-about-hero-image::before,
+  body.dark-mode .jat-posts-hero-media::before,
+  body.dark-mode .jat-explore-hero-media::before {
+    background: linear-gradient(180deg, #22251d 0%, rgba(34,37,29,.9) 8%, rgba(34,37,29,.44) 20%, rgba(34,37,29,0) 38%);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-board-hero .jat-board-hero-copy,
+  .jat-resources-hero .jat-board-hero-copy,
+  .jat-about-page .jat-about-hero-copy,
+  .jat-explore-hero-copy,
+  .jat-posts-hero-copy {
+    padding: 1.75rem;
+  }
+
+  .jat-board-hero .jat-board-hero-copy h1,
+  .jat-resources-document .jat-board-hero-copy h1,
+  .jat-about-page .jat-about-hero h1,
+  .jat-explore-hero h1,
+  .jat-posts-hero h1 {
+    font-size: clamp(2.4rem, 11vw, 3rem);
+  }
+}

@@ -21,8 +21,8 @@ layout: default
         <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
         <p>Reflecting on faith, marriage, leadership, culture, technology, creation, and the ordinary moments where God teaches extraordinary things.</p>
         <div class="jat-button-row">
-          <a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">Read the Blog</a>
-          <a class="btn jat-btn jat-btn-secondary" href="{{ '/podcast/' | relative_url }}">Explore the Podcast</a>
+          <a class="btn jat-btn jat-btn-primary" href="{{ '/explore/' | relative_url }}">Explore the Library</a>
+          <a class="btn jat-btn jat-btn-secondary" href="{{ '/listen/' | relative_url }}">Listen</a>
         </div>
       </div>
       <div class="jat-board-hero-image" style="background-image: url('{{ page.background | default: '/img/bg-index.jpg' | prepend: site.baseurl | replace: '//', '/' }}');" aria-hidden="true"></div>
@@ -71,48 +71,12 @@ layout: default
           <p class="jat-topic-note">Each collection gathers related reflections, curated starting points, longer reading paths, and a full shelf for deeper browsing.</p>
         </div>
         <div class="jat-topic-grid jat-topic-grid--collections">
-          <a class="jat-topic-card" href="{{ '/collections/faith/' | relative_url }}">
-            <div class="jat-topic-image jat-topic-image--faith" aria-hidden="true"></div>
-            <span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='faith' %}</span>
-            <h3>Faith</h3>
-            <p>Scripture, discipleship, formation, and the daily walk with God.</p>
-            <span class="jat-topic-meta">{{ faith_posts | size }} reflections · Explore →</span>
-          </a>
-          <a class="jat-topic-card" href="{{ '/collections/marriage/' | relative_url }}">
-            <div class="jat-topic-image jat-topic-image--marriage" aria-hidden="true"></div>
-            <span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='marriage' %}</span>
-            <h3>Marriage</h3>
-            <p>Covenant, communication, sacrifice, intimacy, and growing together.</p>
-            <span class="jat-topic-meta">{{ marriage_posts | size }} reflections · Explore →</span>
-          </a>
-          <a class="jat-topic-card" href="{{ '/collections/leadership/' | relative_url }}">
-            <div class="jat-topic-image jat-topic-image--leadership" aria-hidden="true"></div>
-            <span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='leadership' %}</span>
-            <h3>Leadership</h3>
-            <p>Character, service, responsibility, influence, and leading well.</p>
-            <span class="jat-topic-meta">{{ leadership_posts | size }} reflections · Explore →</span>
-          </a>
-          <a class="jat-topic-card" href="{{ '/collections/technology/' | relative_url }}">
-            <div class="jat-topic-image jat-topic-image--technology" aria-hidden="true"></div>
-            <span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='technology' %}</span>
-            <h3>Technology</h3>
-            <p>AI, ethics, stewardship, innovation, and navigating changing tools wisely.</p>
-            <span class="jat-topic-meta">{{ technology_posts | size }} reflections · Explore →</span>
-          </a>
-          <a class="jat-topic-card" href="{{ '/collections/culture/' | relative_url }}">
-            <div class="jat-topic-image jat-topic-image--culture" aria-hidden="true"></div>
-            <span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='culture' %}</span>
-            <h3>Culture</h3>
-            <p>Truth, wisdom, discernment, and thoughtful engagement with the world around us.</p>
-            <span class="jat-topic-meta">{{ culture_posts | size }} reflections · Explore →</span>
-          </a>
-          <a class="jat-topic-card" href="{{ '/collections/creation/' | relative_url }}">
-            <div class="jat-topic-image jat-topic-image--creation" aria-hidden="true"></div>
-            <span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='creation' %}</span>
-            <h3>Creation</h3>
-            <p>Nature, rest, travel, stillness, adventure, and the perspective found outdoors.</p>
-            <span class="jat-topic-meta">{{ creation_posts | size }} reflections · Explore →</span>
-          </a>
+          <a class="jat-topic-card" href="{{ '/collections/faith/' | relative_url }}"><div class="jat-topic-image jat-topic-image--faith" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='faith' %}</span><h3>Faith</h3><p>Scripture, discipleship, formation, and the daily walk with God.</p><span class="jat-topic-meta">{{ faith_posts | size }} reflections · Explore →</span></a>
+          <a class="jat-topic-card" href="{{ '/collections/marriage/' | relative_url }}"><div class="jat-topic-image jat-topic-image--marriage" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='marriage' %}</span><h3>Marriage</h3><p>Covenant, communication, sacrifice, intimacy, and growing together.</p><span class="jat-topic-meta">{{ marriage_posts | size }} reflections · Explore →</span></a>
+          <a class="jat-topic-card" href="{{ '/collections/leadership/' | relative_url }}"><div class="jat-topic-image jat-topic-image--leadership" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='leadership' %}</span><h3>Leadership</h3><p>Character, service, responsibility, influence, and leading well.</p><span class="jat-topic-meta">{{ leadership_posts | size }} reflections · Explore →</span></a>
+          <a class="jat-topic-card" href="{{ '/collections/technology/' | relative_url }}"><div class="jat-topic-image jat-topic-image--technology" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='technology' %}</span><h3>Technology</h3><p>AI, ethics, stewardship, innovation, and navigating changing tools wisely.</p><span class="jat-topic-meta">{{ technology_posts | size }} reflections · Explore →</span></a>
+          <a class="jat-topic-card" href="{{ '/collections/culture/' | relative_url }}"><div class="jat-topic-image jat-topic-image--culture" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='culture' %}</span><h3>Culture</h3><p>Truth, wisdom, discernment, and thoughtful engagement with the world around us.</p><span class="jat-topic-meta">{{ culture_posts | size }} reflections · Explore →</span></a>
+          <a class="jat-topic-card" href="{{ '/collections/creation/' | relative_url }}"><div class="jat-topic-image jat-topic-image--creation" aria-hidden="true"></div><span class="jat-topic-icon" aria-hidden="true">{% include collection-icon.html key='creation' %}</span><h3>Creation</h3><p>Nature, rest, travel, stillness, adventure, and the perspective found outdoors.</p><span class="jat-topic-meta">{{ creation_posts | size }} reflections · Explore →</span></a>
         </div>
       </div>
 
@@ -123,15 +87,9 @@ layout: default
           {% if series_group.name and series_group.name != "" and shown_series_count < 4 %}
             {% assign shown_series_count = shown_series_count | plus: 1 %}
             {% assign series_posts = series_group.items | sort: 'date' %}
-            {% assign first_post = series_posts | first %}
             {% assign series_image = nil %}
-            {% for series_post in series_posts %}
-              {% unless series_image %}{% assign series_image = series_post.image | default: series_post.background %}{% endunless %}
-            {% endfor %}
-            <a class="jat-series-item" href="{{ '/series/' | relative_url }}#{{ series_group.name | slugify }}">
-              {% if series_image %}<span class="jat-series-thumb" style="background-image: url('{{ series_image | prepend: site.baseurl | replace: '//', '/' }}');" aria-hidden="true"></span>{% else %}<span class="jat-series-thumb jat-series-thumb-missing" aria-hidden="true">Series</span>{% endif %}
-              <span class="jat-series-copy"><strong>{{ series_group.name }}</strong><em>{{ series_group.items | size }} reflection{% if series_group.items.size != 1 %}s{% endif %}</em><span class="jat-series-link">View Series →</span></span>
-            </a>
+            {% for series_post in series_posts %}{% unless series_image %}{% assign series_image = series_post.image | default: series_post.background %}{% endunless %}{% endfor %}
+            <a class="jat-series-item" href="{{ '/series/' | relative_url }}#{{ series_group.name | slugify }}">{% if series_image %}<span class="jat-series-thumb" style="background-image: url('{{ series_image | prepend: site.baseurl | replace: '//', '/' }}');" aria-hidden="true"></span>{% else %}<span class="jat-series-thumb jat-series-thumb-missing" aria-hidden="true">Series</span>{% endif %}<span class="jat-series-copy"><strong>{{ series_group.name }}</strong><em>{{ series_group.items | size }} reflection{% if series_group.items.size != 1 %}s{% endif %}</em><span class="jat-series-link">View Series →</span></span></a>
           {% endif %}
         {% endfor %}
         {% if shown_series_count == 0 %}<div class="jat-series-empty">Series collections will appear here as they grow.</div>{% endif %}
@@ -139,81 +97,20 @@ layout: default
     </section>
 
     <section class="jat-home-projects jat-panel" aria-labelledby="home-projects-heading">
-      <div class="jat-home-projects-heading">
-        <div>
-          <p class="jat-kicker">Things I’m Building</p>
-          <h2 id="home-projects-heading">Ideas explored beyond the page</h2>
-        </div>
-        <p>Writing is one way I process an idea, but it is not the only one. These projects explore how thoughtful design and practical technology might help people prepare, discover, and navigate everyday experiences more intentionally.</p>
-      </div>
-
+      <div class="jat-home-projects-heading"><div><p class="jat-kicker">Things I’m Building</p><h2 id="home-projects-heading">Ideas explored beyond the page</h2></div><p>Writing is one way I process an idea, but it is not the only one. These projects explore how thoughtful design and practical technology might help people prepare, discover, and navigate everyday experiences more intentionally.</p></div>
       <div class="jat-home-project-grid">
-        <article class="jat-home-project-card jat-card-surface">
-          <div class="jat-home-project-visual jat-project-visual--bluegreen">
-            <img src="https://jeffthomasiii.github.io/bluegreen-guide/assets/brand/bluegreen-guide-logo-primary-transparent.svg" alt="BlueGreen Guide" loading="lazy">
-          </div>
-          <div class="jat-home-project-copy">
-            <span class="jat-status-label">Featured Project</span>
-            <h3>BlueGreen Guide</h3>
-            <p>An outdoor discovery and wayfinding project for exploring practical experiences across water and land.</p>
-            <a class="jat-text-link" href="{{ '/projects/' | relative_url }}#featured-projects">Explore the Project →</a>
-          </div>
-        </article>
-
-        <article class="jat-home-project-card jat-card-surface">
-          <div class="jat-home-project-visual jat-project-visual--pawpath">
-            <img src="https://jeffthomasiii.github.io/pawpath/assets/PawPath_logo_Transparent.png" alt="PawPath" loading="lazy">
-          </div>
-          <div class="jat-home-project-copy">
-            <span class="jat-status-label">Featured Project</span>
-            <h3>PawPath</h3>
-            <p>A pet-care preparedness tool for campers, RV travelers, road-trippers, and others traveling with pets.</p>
-            <a class="jat-text-link" href="{{ '/projects/' | relative_url }}#featured-projects">Explore the Project →</a>
-          </div>
-        </article>
+        <article class="jat-home-project-card jat-card-surface"><div class="jat-home-project-visual jat-project-visual--bluegreen"><img src="https://jeffthomasiii.github.io/bluegreen-guide/assets/brand/bluegreen-guide-logo-primary-transparent.svg" alt="BlueGreen Guide" loading="lazy"></div><div class="jat-home-project-copy"><span class="jat-status-label">Featured Project</span><h3>BlueGreen Guide</h3><p>An outdoor discovery and wayfinding project for exploring practical experiences across water and land.</p><a class="jat-text-link" href="{{ '/projects/' | relative_url }}#featured-projects">Explore the Project →</a></div></article>
+        <article class="jat-home-project-card jat-card-surface"><div class="jat-home-project-visual jat-project-visual--pawpath"><img src="https://jeffthomasiii.github.io/pawpath/assets/PawPath_logo_Transparent.png" alt="PawPath" loading="lazy"></div><div class="jat-home-project-copy"><span class="jat-status-label">Featured Project</span><h3>PawPath</h3><p>A pet-care preparedness tool for campers, RV travelers, road-trippers, and others traveling with pets.</p><a class="jat-text-link" href="{{ '/projects/' | relative_url }}#featured-projects">Explore the Project →</a></div></article>
       </div>
-
-      <div class="jat-home-projects-footer">
-        <a class="btn jat-btn jat-btn-secondary" href="{{ '/projects/' | relative_url }}">View All Projects</a>
-      </div>
+      <div class="jat-home-projects-footer"><a class="btn jat-btn jat-btn-secondary" href="{{ '/projects/' | relative_url }}">View All Projects</a></div>
     </section>
 
     <section class="jat-engagement-row">
-      <aside class="jat-memory-card jat-panel">
-        <p class="jat-kicker">Thought Worth Remembering</p>
-        <p>“Sometimes strength isn't standing over someone. Sometimes it's walking faithfully beside them.”</p>
-        <div class="jat-signature">...just a thought.</div>
-      </aside>
-      <aside class="jat-podcast-card jat-panel">
-        <p class="jat-kicker">Podcast Spotlight</p>
-        <div class="jat-podcast-grid">
-          <img class="jat-podcast-logo-img" src="{{ site.baseurl }}/img/just-a-thought-podcast-logo.svg" alt="Just A Thought — The Podcast logo">
-          <div>
-            <h3>Just A Thought — The Podcast</h3>
-            <p>Thoughtful conversations are being prepared. Visit the podcast page for the vision behind the show and future updates.</p>
-            <a class="btn jat-btn jat-btn-primary" href="{{ '/podcast/' | relative_url }}">Explore the Podcast</a>
-          </div>
-        </div>
-      </aside>
-      <aside class="jat-newsletter-card jat-panel">
-        <p class="jat-kicker">Thought Letter</p>
-        <h3>A Future Email Edition</h3>
-        <p>The Thought Letter is planned as an occasional reflection delivered by email. No signup is open yet.</p>
-      </aside>
+      <aside class="jat-memory-card jat-panel"><p class="jat-kicker">Thought Worth Remembering</p><p>“Sometimes strength isn't standing over someone. Sometimes it's walking faithfully beside them.”</p><div class="jat-signature">...just a thought.</div></aside>
+      <aside class="jat-podcast-card jat-panel"><p class="jat-kicker">Podcast Spotlight</p><div class="jat-podcast-grid"><img class="jat-podcast-logo-img" src="{{ '/img/brand/logos/just-a-thought-podcast-logo.png' | relative_url }}" alt="Just A Thought — The Podcast logo"><div><h3>Just A Thought — The Podcast</h3><p>Thoughtful conversations are being prepared. Visit the podcast page for the vision behind the show and future updates.</p><a class="btn jat-btn jat-btn-primary" href="{{ '/podcast/' | relative_url }}">Explore the Podcast</a></div></div></aside>
+      <aside class="jat-newsletter-card jat-panel"><p class="jat-kicker">Thought Letter</p><h3>A Future Email Edition</h3><p>The Thought Letter is planned as an occasional reflection delivered by email. No signup is open yet.</p></aside>
     </section>
 
-    <section class="jat-recent-section jat-panel">
-      <p class="jat-kicker">Recent Reflections</p>
-      <div class="jat-recent-grid">
-        {% for post in recent_posts %}
-        <article class="jat-recent-card jat-card-surface">
-          <h3><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h3>
-          {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>{% endif %}
-          <a class="jat-text-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">Read More →</a>
-        </article>
-        {% endfor %}
-      </div>
-      <div class="jat-view-all"><a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">View All Posts →</a></div>
-    </section>
+    <section class="jat-recent-section jat-panel"><p class="jat-kicker">Recent Reflections</p><div class="jat-recent-grid">{% for post in recent_posts %}<article class="jat-recent-card jat-card-surface"><h3><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h3>{% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>{% endif %}<a class="jat-text-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">Read More →</a></article>{% endfor %}</div><div class="jat-view-all"><a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">View All Reflections →</a></div></section>
   </div>
 </main>

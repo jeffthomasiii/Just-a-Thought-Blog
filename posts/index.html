@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Posts
+title: All Reflections
 description: Thoughtful reflections on faith, marriage, leadership, culture, technology, camping, and the ordinary moments that shape us.
 page_archetype: collection
 ---
@@ -8,6 +8,7 @@ page_archetype: collection
 {% assign archive_posts = paginator.posts | default: site.posts %}
 {% assign archive_page = paginator.page | default: 1 %}
 {% assign featured_post = archive_posts | first %}
+{% assign hero_image = featured_post.image | default: featured_post.background %}
 
 <header class="jat-collection-hero jat-posts-hero jat-page-shell">
   <div class="jat-page-frame jat-posts-hero-inner">
@@ -17,9 +18,17 @@ page_archetype: collection
       <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
       <p>{{ page.description }}</p>
       {% if archive_page > 1 %}<p class="jat-posts-page-label">Archive page {{ archive_page }} of {{ paginator.total_pages }}</p>{% endif %}
+      <div class="jat-button-row jat-posts-hero-actions">
+        <a class="btn jat-btn jat-btn-primary" href="{{ '/explore/' | relative_url }}">Explore the Library</a>
+        <a class="btn jat-btn jat-btn-secondary" href="{{ '/search/' | relative_url }}">Search Reflections</a>
+      </div>
     </div>
-    <div class="jat-posts-hero-actions">
-      <a class="btn jat-btn jat-btn-secondary" href="{{ '/search/' | relative_url }}">Search Reflections</a>
+    <div class="jat-posts-hero-media" aria-hidden="true">
+      {% if hero_image %}
+        <img src="{{ hero_image | relative_url }}" alt="">
+      {% else %}
+        <div class="jat-posts-image-fallback"><span>Just A Thought</span></div>
+      {% endif %}
     </div>
   </div>
 </header>
@@ -28,7 +37,8 @@ page_archetype: collection
   {% if featured_post %}
     {% if archive_page == 1 %}
       {% assign featured_image = featured_post.image | default: featured_post.background %}
-      {% assign featured_category = featured_post.categories | first %}
+      {% assign featured_collection = featured_post.collections | first %}
+      {% assign featured_type = featured_post.categories | first %}
       <section class="jat-posts-featured-section" aria-labelledby="featured-reflection-title">
         <p class="jat-kicker">Newest Reflection</p>
         <article class="jat-posts-featured jat-card-surface">
@@ -41,7 +51,8 @@ page_archetype: collection
           </a>
           <div class="jat-posts-featured-copy">
             <div class="jat-posts-labels">
-              {% if featured_category %}<span>{{ featured_category }}</span>{% else %}<span>Reflection</span>{% endif %}
+              {% if featured_collection %}<span>{{ featured_collection | replace: '-', ' ' }}</span>{% endif %}
+              {% if featured_type %}<span>{{ featured_type | replace: '-', ' ' }}</span>{% endif %}
               {% if featured_post.series %}<span>{{ featured_post.series }}</span>{% endif %}
             </div>
             <h2 id="featured-reflection-title"><a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a></h2>
@@ -66,7 +77,7 @@ page_archetype: collection
         <div class="jat-posts-section-heading">
           <div>
             <p class="jat-kicker">{% if archive_page == 1 %}Continue Reading{% else %}Reflection Archive{% endif %}</p>
-            <h2 id="archive-grid-title">{% if archive_page == 1 %}More Recent Reflections{% else %}Posts on Page {{ archive_page }}{% endif %}</h2>
+            <h2 id="archive-grid-title">{% if archive_page == 1 %}More Recent Reflections{% else %}Reflections on Page {{ archive_page }}{% endif %}</h2>
           </div>
           <a class="jat-text-link" href="{{ '/search/' | relative_url }}">Find a Specific Topic →</a>
         </div>
@@ -74,7 +85,8 @@ page_archetype: collection
         <div class="jat-posts-grid">
           {% for post in grid_posts %}
             {% assign post_image = post.image | default: post.background %}
-            {% assign post_category = post.categories | first %}
+            {% assign post_collection = post.collections | first %}
+            {% assign post_type = post.categories | first %}
             <article class="jat-post-card jat-card-surface">
               <a class="jat-post-card-media" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">
                 {% if post_image %}
@@ -85,7 +97,8 @@ page_archetype: collection
               </a>
               <div class="jat-post-card-body">
                 <div class="jat-posts-labels">
-                  {% if post_category %}<span>{{ post_category }}</span>{% else %}<span>Reflection</span>{% endif %}
+                  {% if post_collection %}<span>{{ post_collection | replace: '-', ' ' }}</span>{% endif %}
+                  {% if post_type %}<span>{{ post_type | replace: '-', ' ' }}</span>{% endif %}
                   {% if post.series %}<span>{{ post.series }}</span>{% endif %}
                 </div>
                 <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
@@ -106,21 +119,21 @@ page_archetype: collection
     <section class="jat-posts-empty jat-panel jat-panel--padded">
       <p class="jat-kicker">Reflection Archive</p>
       <h2>New reflections are being prepared.</h2>
-      <p>The archive will appear here as posts are published.</p>
+      <p>The archive will appear here as reflections are published.</p>
     </section>
   {% endif %}
 
   {% if paginator.total_pages > 1 %}
-    <nav class="jat-posts-pagination" aria-label="Posts archive pagination">
+    <nav class="jat-posts-pagination" aria-label="Reflection archive pagination">
       <div class="jat-posts-pagination-side">
         {% if paginator.previous_page %}
-          <a class="btn jat-btn jat-btn-secondary" rel="prev" href="{{ paginator.previous_page_path | relative_url }}">← Newer Posts</a>
+          <a class="btn jat-btn jat-btn-secondary" rel="prev" href="{{ paginator.previous_page_path | relative_url }}">← Newer Reflections</a>
         {% endif %}
       </div>
       <p>Page {{ paginator.page }} of {{ paginator.total_pages }}</p>
       <div class="jat-posts-pagination-side jat-posts-pagination-side--next">
         {% if paginator.next_page %}
-          <a class="btn jat-btn jat-btn-secondary" rel="next" href="{{ paginator.next_page_path | relative_url }}">Older Posts →</a>
+          <a class="btn jat-btn jat-btn-secondary" rel="next" href="{{ paginator.next_page_path | relative_url }}">Older Reflections →</a>
         {% endif %}
       </div>
     </nav>

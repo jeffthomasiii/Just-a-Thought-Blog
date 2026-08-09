@@ -3,7 +3,6 @@
 {% assign home_active = false %}
 {% assign explore_active = false %}
 {% assign listen_active = false %}
-{% assign podcast_active = false %}
 {% assign resources_active = false %}
 {% assign about_active = false %}
 {% assign search_active = false %}
@@ -11,8 +10,7 @@
 {% if current_url == '/' %}{% assign home_active = true %}{% endif %}
 {% if current_url contains '/explore' or current_url contains '/collections/' or current_url contains '/series/' or current_url contains '/posts' %}{% assign explore_active = true %}{% endif %}
 {% if page.layout == 'post' %}{% assign explore_active = true %}{% endif %}
-{% if current_url contains '/listen' %}{% assign listen_active = true %}{% endif %}
-{% if current_url contains '/podcast' %}{% assign podcast_active = true %}{% endif %}
+{% if current_url contains '/listen' or current_url contains '/podcast' %}{% assign listen_active = true %}{% endif %}
 {% if current_url contains '/resources' %}{% assign resources_active = true %}{% endif %}
 {% if current_url contains '/about' %}{% assign about_active = true %}{% endif %}
 {% if current_url contains '/search' %}{% assign search_active = true %}{% endif %}
@@ -20,11 +18,10 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top jat-site-nav" id="mainNav" aria-label="Primary navigation">
   <div class="container jat-nav-inner">
-    <a class="navbar-brand jat-nav-brand" href="{{ '/' | relative_url }}" aria-label="Just A Thought Blog home">
-      <img src="{{ site.baseurl }}/img/favicon-lightbulb-dove.png" alt="" class="jat-nav-logo">
+    <a class="navbar-brand jat-nav-brand" href="{{ '/' | relative_url }}" aria-label="Just A Thought home">
+      <img src="{{ '/img/brand/logos/just-a-thought-favicon.png' | relative_url }}" alt="" class="jat-nav-logo">
       <span class="jat-nav-wordmark">
         <span>Just A Thought</span>
-        <small>Blog</small>
       </span>
     </a>
 
@@ -38,7 +35,6 @@
         <li class="nav-item"><a class="nav-link{% if home_active %} active{% endif %}" href="{{ '/' | relative_url }}"{% if home_active %} aria-current="page"{% endif %}>Home</a></li>
         <li class="nav-item"><a class="nav-link{% if explore_active %} active{% endif %}" href="{{ '/explore/' | relative_url }}"{% if explore_active %} aria-current="page"{% endif %}>Explore</a></li>
         <li class="nav-item"><a class="nav-link{% if listen_active %} active{% endif %}" href="{{ '/listen/' | relative_url }}"{% if listen_active %} aria-current="page"{% endif %}>Listen</a></li>
-        <li class="nav-item"><a class="nav-link{% if podcast_active %} active{% endif %}" href="{{ '/podcast/' | relative_url }}"{% if podcast_active %} aria-current="page"{% endif %}>Podcast</a></li>
         <li class="nav-item"><a class="nav-link{% if resources_active %} active{% endif %}" href="{{ '/resources/' | relative_url }}"{% if resources_active %} aria-current="page"{% endif %}>Resources</a></li>
         <li class="nav-item"><a class="nav-link{% if about_active %} active{% endif %}" href="{{ '/about' | relative_url }}"{% if about_active %} aria-current="page"{% endif %}>About</a></li>
         <li class="nav-item">

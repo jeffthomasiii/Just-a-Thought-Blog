@@ -14,7 +14,7 @@
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 1.25rem 2rem;
   align-items: center;
-  margin-bottom: clamp(3rem, 7vw, 5.5rem);
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
   padding: clamp(1.5rem, 4vw, 2.5rem);
 }
 
@@ -48,6 +48,32 @@
   font-size: 0.9rem;
 }
 
+.jat-listen-podcast-link {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr) auto;
+  gap: clamp(1.25rem, 3vw, 2.25rem);
+  align-items: center;
+  margin: 0 0 clamp(3rem, 7vw, 5.5rem);
+  padding: clamp(1.35rem, 3vw, 2rem);
+}
+
+.jat-listen-podcast-logo {
+  display: block;
+  width: 100%;
+  max-width: 128px;
+  height: auto;
+  object-fit: contain;
+}
+
+.jat-listen-podcast-copy {
+  min-width: 0;
+}
+
+.jat-listen-podcast-link p {
+  max-width: 760px;
+  margin-bottom: 0;
+}
+
 .jat-listen-library__heading {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
@@ -70,6 +96,10 @@
   display: grid;
   grid-template-columns: minmax(150px, 0.72fr) minmax(0, 1.28fr);
   overflow: hidden;
+}
+
+.jat-listen-card[hidden] {
+  display: none !important;
 }
 
 .jat-listen-card__image {
@@ -139,18 +169,16 @@
   color: var(--jat-text-on-accent, #252822);
 }
 
-.jat-listen-podcast-link {
+.jat-listen-library-toggle {
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  align-items: center;
-  margin-top: clamp(3rem, 7vw, 5.5rem);
-  padding: clamp(1.5rem, 4vw, 2.5rem);
+  justify-content: center;
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--jat-border-subtle);
 }
 
-.jat-listen-podcast-link p {
-  max-width: 760px;
-  margin-bottom: 0;
+.jat-listen-library-toggle[hidden] {
+  display: none !important;
 }
 
 @media (max-width: 1199.98px) {
@@ -161,7 +189,8 @@
 
 @media (max-width: 767.98px) {
   .jat-listen-player,
-  .jat-listen-library__heading {
+  .jat-listen-library__heading,
+  .jat-listen-podcast-link {
     grid-template-columns: 1fr;
   }
 
@@ -174,12 +203,12 @@
     max-height: 320px;
   }
 
-  .jat-listen-podcast-link {
-    display: block;
+  .jat-listen-podcast-logo {
+    max-width: 110px;
   }
 
   .jat-listen-podcast-link .jat-btn {
-    margin-top: 1.25rem;
+    width: fit-content;
   }
 }
 
