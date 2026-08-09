@@ -21,8 +21,8 @@ layout: default
         <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
         <p>Reflecting on faith, marriage, leadership, culture, technology, creation, and the ordinary moments where God teaches extraordinary things.</p>
         <div class="jat-button-row">
-          <a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">Read the Blog</a>
-          <a class="btn jat-btn jat-btn-secondary" href="{{ '/podcast/' | relative_url }}">Explore the Podcast</a>
+          <a class="btn jat-btn jat-btn-primary" href="{{ '/explore/' | relative_url }}">Explore the Library</a>
+          <a class="btn jat-btn jat-btn-secondary" href="{{ '/listen/' | relative_url }}">Listen</a>
         </div>
       </div>
       <div class="jat-board-hero-image" style="background-image: url('{{ page.background | default: '/img/bg-index.jpg' | prepend: site.baseurl | replace: '//', '/' }}');" aria-hidden="true"></div>
@@ -187,7 +187,7 @@ layout: default
       <aside class="jat-podcast-card jat-panel">
         <p class="jat-kicker">Podcast Spotlight</p>
         <div class="jat-podcast-grid">
-          <img class="jat-podcast-logo-img" src="{{ site.baseurl }}/img/just-a-thought-podcast-logo.svg" alt="Just A Thought — The Podcast logo">
+          <img class="jat-podcast-logo-img" src="{{ '/img/brand/logos/just-a-thought-podcast-logo.png' | relative_url }}" alt="Just A Thought — The Podcast logo">
           <div>
             <h3>Just A Thought — The Podcast</h3>
             <p>Thoughtful conversations are being prepared. Visit the podcast page for the vision behind the show and future updates.</p>
@@ -213,7 +213,7 @@ layout: default
         </article>
         {% endfor %}
       </div>
-      <div class="jat-view-all"><a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">View All Posts →</a></div>
+      <div class="jat-view-all"><a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">View All Reflections →</a></div>
     </section>
   </div>
 </main>
