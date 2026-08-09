@@ -73,6 +73,84 @@
   content: url('/img/brand/logos/just-a-thought-podcast-logo.png');
 }
 
+/* Search — compact, architecture-aware control panel */
+.jat-search-main {
+  gap: clamp(2.25rem, 5vw, 4rem);
+}
+
+.jat-search-panel {
+  display: block;
+  padding: clamp(1.25rem, 2.5vw, 1.8rem);
+}
+
+.jat-search-panel-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(280px, 1.2fr);
+  gap: 1rem 2rem;
+  align-items: end;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--jat-border-subtle);
+}
+
+.jat-search-panel-heading h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.6rem, 2.6vw, 2.15rem);
+}
+
+.jat-search-panel-heading > p {
+  margin: 0;
+  color: var(--jat-text-secondary);
+  line-height: 1.55;
+}
+
+.jat-search-form {
+  gap: 0.9rem;
+}
+
+.jat-search-query-field,
+.jat-search-field {
+  gap: 0.35rem;
+}
+
+.jat-search-form input[type='search'],
+.jat-search-form select {
+  min-height: 44px;
+  font-size: 0.94rem;
+}
+
+.jat-search-form input[type='search'] {
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+}
+
+.jat-search-form select {
+  padding-top: 0.62rem;
+  padding-bottom: 0.62rem;
+}
+
+.jat-search-filters {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) auto;
+  gap: 0.65rem;
+}
+
+.jat-search-clear-wrap .jat-btn {
+  min-height: 44px;
+  padding: 0.62rem 1rem;
+}
+
+.jat-search-guidance {
+  grid-column: auto;
+  margin: 0.8rem 0 0;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--jat-border-subtle);
+}
+
+.jat-search-state {
+  min-height: 210px;
+  padding: clamp(1.75rem, 4vw, 3rem);
+}
+
 @media (max-width: 1099.98px) and (min-width: 992px) {
   .jat-about-page .jat-about-author-card h2 {
     font-size: clamp(1.65rem, 2.35vw, 2rem);
@@ -86,6 +164,10 @@
 
   .jat-site-nav .jat-nav-wordmark {
     font-size: 1.2rem;
+  }
+
+  .jat-search-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) auto;
   }
 }
 
@@ -102,6 +184,19 @@
   .jat-site-nav .jat-latest-nav-item {
     margin-left: 0;
   }
+
+  .jat-search-panel-heading {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .jat-search-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .jat-search-clear-wrap {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -117,5 +212,17 @@
 
   .jat-site-nav .jat-nav-wordmark {
     font-size: 1.12rem;
+  }
+
+  .jat-search-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .jat-search-clear-wrap {
+    grid-column: 1;
+  }
+
+  .jat-search-clear-wrap .jat-btn {
+    width: 100%;
   }
 }
