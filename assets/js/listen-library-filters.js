@@ -7,9 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const countMessage = document.getElementById("jat-listen-filter-count");
   const emptyState = document.getElementById("jat-listen-empty");
   const grid = document.getElementById("jat-listen-grid");
+  const toggleButton = document.getElementById("jat-listen-library-toggle");
+  const toggleWrap = document.getElementById("jat-listen-library-toggle-wrap");
   const cards = Array.from(document.querySelectorAll("[data-listen-card]"));
   const preferenceStorageKey = "jat-listen-library-preferences";
   const urlParameterNames = ["q", "topic", "format", "sort"];
+  const collapsedLimit = 6;
+  let libraryExpanded = false;
 
   if (!searchInput || !topicSelect || !formatSelect || !sortSelect || !resetButton || !grid || cards.length === 0) return;
 
@@ -146,13 +150,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  function hasActiveDiscoveryState() {
+    return Boolean(
+      normalize(searchInput.value) ||
+      normalize(topicSelect.value) ||
+      normalize(formatSelect.value) ||
+      sortSelect.value !== "newest"
+    );
+  }
+
+  function updateToggle(totalMatches) {
+    if (!toggleButton || !toggleWrap) return;
+
+    const shouldShowToggle = !hasActiveDiscoveryState() && totalMatches > collapsedLimit;
+    toggleWrap.hidden = !shouldShowToggle;
+
+    if (!shouldShowToggle) return;
+
+    toggleButton.setAttribute("aria-expanded", libraryExpanded ? "true" : "false");
+    toggleButton.textContent = libraryExpanded ? "Show Fewer Reflections" : `Show More Reflections (${totalMatches - collapsedLimit})`;
+  }
+
   function updateLibrary(options) {
     const shouldSave = !options || options.save !== false;
     const shouldSyncUrl = !options || options.syncUrl !== false;
     const query = normalize(searchInput.value);
     const topic = normalize(topicSelect.value);
     const format = normalize(formatSelect.value);
-    let visibleCount = 0;
+    const discoveryActive = hasActiveDiscoveryState();
+    let matchedCount = 0;
+    let displayedCount = 0;
 
     sortCards();
 
@@ -163,39 +190,71 @@ document.addEventListener("DOMContentLoaded", function () {
       const matchesQuery = !query || searchText.includes(query);
       const matchesTopic = !topic || categories.includes(topic);
       const matchesFormat = !format || cardFormat === format;
-      const isVisible = matchesQuery && matchesTopic && matchesFormat;
+      const isMatch = matchesQuery && matchesTopic && matchesFormat;
 
-      card.hidden = !isVisible;
-      if (isVisible) visibleCount += 1;
+      if (isMatch) matchedCount += 1;
+
+      const shouldDisplayMatch = isMatch && (discoveryActive || libraryExpanded || matchedCount <= collapsedLimit);
+      card.hidden = !shouldDisplayMatch;
+      if (shouldDisplayMatch) displayedCount += 1;
     });
 
     if (countMessage) {
-      countMessage.textContent = `Showing ${visibleCount} ${visibleCount === 1 ? "reflection" : "reflections"}.`;
+      if (!discoveryActive && !libraryExpanded && matchedCount > collapsedLimit) {
+        countMessage.textContent = `Showing ${displayedCount} of ${matchedCount} reflections.`;
+      } else {
+        countMessage.textContent = `Showing ${displayedCount} ${displayedCount === 1 ? "reflection" : "reflections"}.`;
+      }
     }
 
-    if (emptyState) emptyState.hidden = visibleCount !== 0;
+    if (emptyState) emptyState.hidden = matchedCount !== 0;
     resetButton.disabled = !query && !topic && !format && sortSelect.value === "newest";
+    updateToggle(matchedCount);
 
     if (shouldSave) savePreferences();
     if (shouldSyncUrl) syncUrlState();
   }
 
-  searchInput.addEventListener("input", updateLibrary);
-  topicSelect.addEventListener("change", updateLibrary);
-  formatSelect.addEventListener("change", updateLibrary);
-  sortSelect.addEventListener("change", updateLibrary);
+  searchInput.addEventListener("input", function () {
+    libraryExpanded = false;
+    updateLibrary();
+  });
+  topicSelect.addEventListener("change", function () {
+    libraryExpanded = false;
+    updateLibrary();
+  });
+  formatSelect.addEventListener("change", function () {
+    libraryExpanded = false;
+    updateLibrary();
+  });
+  sortSelect.addEventListener("change", function () {
+    libraryExpanded = false;
+    updateLibrary();
+  });
   resetButton.addEventListener("click", function () {
     searchInput.value = "";
     topicSelect.value = "";
     formatSelect.value = "";
     sortSelect.value = "newest";
+    libraryExpanded = false;
     clearSavedPreferences();
     updateLibrary({ save: false });
     searchInput.focus();
   });
 
+  if (toggleButton) {
+    toggleButton.addEventListener("click", function () {
+      libraryExpanded = !libraryExpanded;
+      updateLibrary({ save: false, syncUrl: false });
+      if (!libraryExpanded) {
+        document.getElementById("reflection-library")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  }
+
   window.addEventListener("popstate", function () {
     restoreUrlState();
+    libraryExpanded = false;
     updateLibrary({ save: false, syncUrl: false });
   });
 
