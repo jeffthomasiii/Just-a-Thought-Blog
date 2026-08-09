@@ -17,20 +17,26 @@ permalink: /explore/
   {% endif %}
 {% endfor %}
 
-<header class="jat-explore-hero">
+<header class="jat-explore-hero jat-page-shell">
   <div class="container jat-board-container">
-    <div class="jat-explore-hero-copy">
-      <p class="jat-kicker">Explore Just A Thought</p>
-      <h1>Explore the Library</h1>
-      <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
-      <p class="jat-explore-lede">Follow an idea, question, or season rather than simply browsing by date. Begin with a broad collection, stay with a connected series, or search for the thought you are carrying right now.</p>
+    <div class="jat-explore-hero-frame">
+      <div class="jat-explore-hero-copy">
+        <p class="jat-kicker">Explore Just A Thought</p>
+        <h1>Explore the Library</h1>
+        <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
+        <p class="jat-explore-lede">Follow an idea, question, or season rather than simply browsing by date. Begin with a broad collection, stay with a connected series, or search for the thought you are carrying right now.</p>
+        <div class="jat-button-row jat-explore-hero-actions">
+          <a class="btn jat-btn jat-btn-primary" href="#collections">Browse Collections</a>
+          <a class="btn jat-btn jat-btn-secondary" href="{{ '/search/' | relative_url }}">Search the Library</a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
 <main class="jat-explore-main jat-page-shell">
   <div class="container jat-board-container">
-    <section class="jat-explore-section" aria-labelledby="collections-heading">
+    <section class="jat-explore-section" id="collections" aria-labelledby="collections-heading">
       <div class="jat-explore-section-heading">
         <div>
           <p class="jat-kicker">Explore by Collection</p>
