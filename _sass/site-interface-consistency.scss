@@ -68,6 +68,11 @@
   place-items: center;
 }
 
+/* Homepage — approved Podcast Spotlight mark */
+.jat-podcast-card .jat-podcast-logo-img {
+  content: url('/img/brand/logos/just-a-thought-podcast-logo.png');
+}
+
 @media (max-width: 1099.98px) and (min-width: 992px) {
   .jat-about-page .jat-about-author-card h2 {
     font-size: clamp(1.65rem, 2.35vw, 2rem);
