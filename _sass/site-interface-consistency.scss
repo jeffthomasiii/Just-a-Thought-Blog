@@ -30,7 +30,10 @@
   max-height: 112px;
   object-fit: contain;
   object-position: center;
-  transform: translateY(8px);
+  /* The source PNG has uneven transparent canvas around the visible mark.
+     Offset the artwork so the visible JAT/branch mark, not the image box,
+     is visually centered inside the writer card. */
+  transform: translate(-38%, -30%);
 }
 
 /* Global navigation — brand prominence and action spacing */
@@ -284,6 +287,10 @@ body.dark-mode .jat-about-hero-image::before {
 
   .jat-about-page .jat-about-author-mark {
     min-height: 120px;
+  }
+
+  .jat-about-page .jat-about-author-mark img {
+    transform: translate(-34%, -26%);
   }
 
   .jat-site-nav .jat-theme-nav-item,
