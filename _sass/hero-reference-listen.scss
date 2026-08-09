@@ -1,8 +1,6 @@
 /* =========================================================
    Listen-reference hero system
-   Uses the Listen page's rendered proportions as the canonical
-   desktop anchor-page hero: ~430px, two-part composition, compact
-   copy, and soft image-to-surface blending.
+   Listen remains the canonical desktop anchor-page proportion.
    ========================================================= */
 
 :root {
@@ -25,15 +23,13 @@
   padding: var(--jat-listen-reference-copy-padding);
 }
 
-.jat-board-hero .jat-board-hero-copy h1,
-.jat-resources-document .jat-board-hero-copy h1 {
+.jat-board-hero .jat-board-hero-copy h1 {
   max-width: 650px;
-  font-size: clamp(2.75rem, 4.1vw, 4rem);
+  font-size: clamp(2.75rem, 4vw, 3.85rem);
   line-height: 0.98;
 }
 
-.jat-board-hero .jat-board-hero-copy > p:not(.jat-kicker),
-.jat-resources-document .jat-board-hero-copy > p:not(.jat-kicker) {
+.jat-board-hero .jat-board-hero-copy > p:not(.jat-kicker) {
   max-width: 620px;
   font-size: 1rem;
   line-height: 1.55;
@@ -44,12 +40,12 @@
 .jat-about-hero .jat-simple-divider,
 .jat-explore-hero .jat-simple-divider,
 .jat-posts-hero .jat-simple-divider {
-  margin: 1rem 0 0.95rem;
+  margin: 0.9rem 0 0.85rem;
 }
 
 .jat-board-hero .jat-board-hero-copy > .jat-button-row,
 .jat-resources-hero .jat-board-hero-copy > .jat-button-row {
-  margin-top: 1.25rem;
+  margin-top: 1rem;
 }
 
 .jat-board-hero .jat-board-hero-image,
@@ -66,7 +62,31 @@
   aspect-ratio: auto;
 }
 
-/* Home/Listen-style soft blend at the copy/image boundary. */
+/* Resources needs tighter copy than Home to fit the same reference height. */
+.jat-resources-hero .jat-board-hero-copy {
+  padding: clamp(1.65rem, 2.8vw, 2.25rem);
+}
+
+.jat-resources-document .jat-board-hero-copy h1 {
+  max-width: 610px;
+  margin: 0;
+  font-size: clamp(2.45rem, 3.35vw, 3.15rem);
+  line-height: 1;
+}
+
+.jat-resources-document .jat-board-hero-copy > p:not(.jat-kicker) {
+  max-width: 590px;
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.48;
+}
+
+.jat-resources-hero .jat-button-row {
+  display: flex;
+  margin-top: 0.85rem !important;
+}
+
+/* Shared soft blend at the copy/image boundary. */
 .jat-resources-document .jat-resources-hero-media::before,
 .jat-about-page .jat-about-hero-image::before,
 .jat-posts-hero-media::before,
@@ -86,29 +106,33 @@
   pointer-events: none;
 }
 
-/* About — same 430px frame, with one concise hero paragraph. */
+/* About — slightly taller than Listen to leave breathing room after the actions. */
 .jat-about-page .jat-about-hero-grid {
-  height: var(--jat-listen-reference-hero-height);
-  min-height: var(--jat-listen-reference-hero-height);
-  max-height: var(--jat-listen-reference-hero-height);
+  height: 455px;
+  min-height: 455px;
+  max-height: 455px;
   grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
 }
 
 .jat-about-page .jat-about-hero-copy {
   min-height: 0;
-  padding: var(--jat-listen-reference-copy-padding);
+  padding: clamp(2.15rem, 3.5vw, 3rem);
 }
 
 .jat-about-page .jat-about-hero h1 {
   max-width: 650px;
-  font-size: clamp(2.75rem, 4.1vw, 4rem);
+  font-size: clamp(2.7rem, 3.9vw, 3.7rem);
   line-height: 0.98;
 }
 
 .jat-about-page .jat-about-hero-copy > p:not(.jat-kicker) {
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 0.98rem;
   line-height: 1.55;
+}
+
+.jat-about-page .jat-about-hero-actions {
+  margin-top: 1.2rem;
 }
 
 .jat-about-page .jat-about-hero-image,
@@ -119,7 +143,16 @@
   aspect-ratio: auto;
 }
 
-/* Explore — now a true two-part card using the six collection images. */
+/* Keep the caption in the readable portion of the image, away from the white blend. */
+.jat-about-page .jat-about-image-caption {
+  z-index: 3;
+  right: clamp(1.25rem, 3vw, 2rem);
+  left: 34%;
+  max-width: 430px;
+  text-align: left;
+}
+
+/* Explore — same frame size as Home, with one strong exploration image. */
 .jat-explore-hero {
   padding: 6.4rem 0 0.85rem;
   border-bottom: 0;
@@ -148,7 +181,7 @@
 
 .jat-explore-hero h1 {
   max-width: 650px;
-  font-size: clamp(2.75rem, 4.1vw, 4rem);
+  font-size: clamp(2.75rem, 4vw, 3.85rem);
   line-height: 0.98;
 }
 
@@ -160,29 +193,22 @@
 }
 
 .jat-explore-hero-actions {
-  margin-top: 1.25rem;
+  margin-top: 1rem;
 }
 
 .jat-explore-hero-media {
   position: relative;
-  display: grid;
-  min-width: 0;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-  overflow: hidden;
-}
-
-.jat-explore-hero-tile {
   min-width: 0;
   min-height: 0;
   overflow: hidden;
 }
 
-.jat-explore-hero-tile img {
+.jat-explore-hero-media > img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 /* Posts — visual archive hero using the newest reflection image. */
@@ -215,7 +241,7 @@
 
 .jat-posts-hero h1 {
   margin: 0;
-  font-size: clamp(2.75rem, 4.1vw, 4rem);
+  font-size: clamp(2.75rem, 4vw, 3.85rem);
   line-height: 0.98;
 }
 
@@ -227,7 +253,7 @@
 }
 
 .jat-posts-hero-actions {
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   padding: 0;
 }
 
@@ -283,30 +309,23 @@ body.dark-mode .jat-explore-hero-media::before {
     aspect-ratio: 16 / 9;
   }
 
+  .jat-about-page .jat-about-image-caption {
+    left: clamp(1.25rem, 3vw, 2rem);
+    max-width: 70%;
+  }
+
   .jat-resources-document .jat-resources-hero-media::before,
   .jat-about-page .jat-about-hero-image::before,
   .jat-posts-hero-media::before,
   .jat-explore-hero-media::before {
-    background: linear-gradient(
-      180deg,
-      #fffdf8 0%,
-      rgba(255, 253, 248, 0.88) 8%,
-      rgba(255, 253, 248, 0.42) 20%,
-      rgba(255, 253, 248, 0) 38%
-    );
+    background: linear-gradient(180deg, #fffdf8 0%, rgba(255,253,248,.88) 8%, rgba(255,253,248,.42) 20%, rgba(255,253,248,0) 38%);
   }
 
   body.dark-mode .jat-resources-hero-media::before,
   body.dark-mode .jat-about-hero-image::before,
   body.dark-mode .jat-posts-hero-media::before,
   body.dark-mode .jat-explore-hero-media::before {
-    background: linear-gradient(
-      180deg,
-      #22251d 0%,
-      rgba(34, 37, 29, 0.9) 8%,
-      rgba(34, 37, 29, 0.44) 20%,
-      rgba(34, 37, 29, 0) 38%
-    );
+    background: linear-gradient(180deg, #22251d 0%, rgba(34,37,29,.9) 8%, rgba(34,37,29,.44) 20%, rgba(34,37,29,0) 38%);
   }
 }
 
@@ -324,6 +343,6 @@ body.dark-mode .jat-explore-hero-media::before {
   .jat-about-page .jat-about-hero h1,
   .jat-explore-hero h1,
   .jat-posts-hero h1 {
-    font-size: clamp(2.5rem, 12vw, 3.2rem);
+    font-size: clamp(2.4rem, 11vw, 3rem);
   }
 }
