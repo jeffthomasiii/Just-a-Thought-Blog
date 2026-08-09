@@ -8,6 +8,17 @@
   --jat-listen-reference-copy-padding: clamp(2rem, 3.5vw, 3rem);
 }
 
+/* Header brand — increase the mark without changing navigation rhythm. */
+.jat-site-nav .jat-nav-logo {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
+}
+
+.jat-site-nav .jat-nav-brand {
+  gap: 0.9rem;
+}
+
 /* Home, Listen, Resources — same actual frame height. */
 .jat-board-hero .jat-board-hero-grid,
 .jat-resources-hero .jat-resources-hero-grid {
@@ -288,6 +299,12 @@ body.dark-mode .jat-explore-hero-media::before {
 }
 
 @media (max-width: 991.98px) {
+  .jat-site-nav .jat-nav-logo {
+    width: 50px;
+    height: 50px;
+    flex-basis: 50px;
+  }
+
   .jat-board-hero .jat-board-hero-grid,
   .jat-resources-hero .jat-resources-hero-grid,
   .jat-about-page .jat-about-hero-grid,
