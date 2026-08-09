@@ -28,7 +28,8 @@ page_archetype: collection
   {% if featured_post %}
     {% if archive_page == 1 %}
       {% assign featured_image = featured_post.image | default: featured_post.background %}
-      {% assign featured_category = featured_post.categories | first %}
+      {% assign featured_collection = featured_post.collections | first %}
+      {% assign featured_type = featured_post.categories | first %}
       <section class="jat-posts-featured-section" aria-labelledby="featured-reflection-title">
         <p class="jat-kicker">Newest Reflection</p>
         <article class="jat-posts-featured jat-card-surface">
@@ -41,7 +42,8 @@ page_archetype: collection
           </a>
           <div class="jat-posts-featured-copy">
             <div class="jat-posts-labels">
-              {% if featured_category %}<span>{{ featured_category }}</span>{% else %}<span>Reflection</span>{% endif %}
+              {% if featured_collection %}<span>{{ featured_collection | replace: '-', ' ' }}</span>{% endif %}
+              {% if featured_type %}<span>{{ featured_type | replace: '-', ' ' }}</span>{% endif %}
               {% if featured_post.series %}<span>{{ featured_post.series }}</span>{% endif %}
             </div>
             <h2 id="featured-reflection-title"><a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a></h2>
@@ -74,7 +76,8 @@ page_archetype: collection
         <div class="jat-posts-grid">
           {% for post in grid_posts %}
             {% assign post_image = post.image | default: post.background %}
-            {% assign post_category = post.categories | first %}
+            {% assign post_collection = post.collections | first %}
+            {% assign post_type = post.categories | first %}
             <article class="jat-post-card jat-card-surface">
               <a class="jat-post-card-media" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">
                 {% if post_image %}
@@ -85,7 +88,8 @@ page_archetype: collection
               </a>
               <div class="jat-post-card-body">
                 <div class="jat-posts-labels">
-                  {% if post_category %}<span>{{ post_category }}</span>{% else %}<span>Reflection</span>{% endif %}
+                  {% if post_collection %}<span>{{ post_collection | replace: '-', ' ' }}</span>{% endif %}
+                  {% if post_type %}<span>{{ post_type | replace: '-', ' ' }}</span>{% endif %}
                   {% if post.series %}<span>{{ post.series }}</span>{% endif %}
                 </div>
                 <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
