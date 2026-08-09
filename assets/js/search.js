@@ -8,8 +8,10 @@
   const stateEl = document.getElementById("search-state");
   const stateTitleEl = document.getElementById("search-state-title");
   const stateCopyEl = document.getElementById("search-state-copy");
+  const collectionFilter = document.getElementById("collection-filter");
   const categoryFilter = document.getElementById("category-filter");
   const tagFilter = document.getElementById("tag-filter");
+  const seriesFilter = document.getElementById("series-filter");
   const clearBtn = document.getElementById("clear-filters");
 
   if (!input || !resultsEl || !metaEl || !stateEl || !stateTitleEl || !stateCopyEl) return;
@@ -17,6 +19,17 @@
   const baseurl = document.querySelector('meta[name="baseurl"]')?.content || "";
   const indexPath = `${baseurl}/search.json`.replace(/\/{2,}/g, "/");
   const resultLimit = 30;
+  const lowSignalThemes = new Set([
+    "christian-living",
+    "spiritual-growth",
+    "discipleship",
+    "faith",
+    "marriage",
+    "leadership",
+    "technology",
+    "culture",
+    "creation"
+  ]);
   let data = [];
   let index = null;
   let inputTimer = null;
@@ -29,6 +42,14 @@
 
   function uniqueSorted(values) {
     return [...new Set(values.filter(Boolean).map(String))].sort((a, b) => a.localeCompare(b));
+  }
+
+  function displayLabel(value) {
+    return String(value || "")
+      .split("-")
+      .filter(Boolean)
+      .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+      .join(" ");
   }
 
   function setBusy(isBusy) {
@@ -52,13 +73,12 @@
     stateEl.removeAttribute("data-state");
   }
 
-  function populateSelect(select, values) {
+  function populateSelect(select, values, formatter = displayLabel) {
     if (!select) return;
-
     values.forEach((value) => {
       const option = document.createElement("option");
       option.value = value;
-      option.textContent = value;
+      option.textContent = formatter(value);
       select.appendChild(option);
     });
   }
@@ -71,36 +91,49 @@
   function readUrlState() {
     const params = new URLSearchParams(window.location.search);
     const query = params.get("q") || "";
-    const category = params.get("category") || "";
-    const tag = params.get("tag") || "";
+    const collection = params.get("collection") || "";
+    const type = params.get("type") || params.get("category") || "";
+    const theme = params.get("theme") || params.get("tag") || "";
+    const series = params.get("series") || "";
 
     input.value = query;
-    if (categoryFilter) categoryFilter.value = hasOption(categoryFilter, category) ? category : "";
-    if (tagFilter) tagFilter.value = hasOption(tagFilter, tag) ? tag : "";
+    if (collectionFilter) collectionFilter.value = hasOption(collectionFilter, collection) ? collection : "";
+    if (categoryFilter) categoryFilter.value = hasOption(categoryFilter, type) ? type : "";
+    if (tagFilter) tagFilter.value = hasOption(tagFilter, theme) ? theme : "";
+    if (seriesFilter) seriesFilter.value = hasOption(seriesFilter, series) ? series : "";
   }
 
   function syncUrlState() {
     const params = new URLSearchParams();
     const query = input.value.trim();
-    const category = categoryFilter?.value?.trim() || "";
-    const tag = tagFilter?.value?.trim() || "";
+    const collection = collectionFilter?.value?.trim() || "";
+    const type = categoryFilter?.value?.trim() || "";
+    const theme = tagFilter?.value?.trim() || "";
+    const series = seriesFilter?.value?.trim() || "";
 
     if (query) params.set("q", query);
-    if (category) params.set("category", category);
-    if (tag) params.set("tag", tag);
+    if (collection) params.set("collection", collection);
+    if (type) params.set("type", type);
+    if (theme) params.set("theme", theme);
+    if (series) params.set("series", series);
 
     const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ""}${window.location.hash}`;
-    window.history.replaceState({ query, category, tag }, "", nextUrl);
+    window.history.replaceState({ query, collection, type, theme, series }, "", nextUrl);
   }
 
   function matchesFilters(doc) {
-    const category = categoryFilter?.value?.trim() || "";
-    const tag = tagFilter?.value?.trim() || "";
+    const collection = collectionFilter?.value?.trim() || "";
+    const type = categoryFilter?.value?.trim() || "";
+    const theme = tagFilter?.value?.trim() || "";
+    const series = seriesFilter?.value?.trim() || "";
+    const collections = normalizeList(doc.collections);
     const categories = normalizeList(doc.categories);
     const tags = normalizeList(doc.tags);
 
-    if (category && !categories.includes(category)) return false;
-    if (tag && !tags.includes(tag)) return false;
+    if (collection && !collections.includes(collection)) return false;
+    if (type && !categories.includes(type)) return false;
+    if (theme && !tags.includes(theme)) return false;
+    if (series && doc.series !== series) return false;
     return true;
   }
 
@@ -120,11 +153,13 @@
     const labels = document.createElement("div");
     labels.className = "jat-search-result-labels";
 
+    const collections = normalizeList(doc.collections);
     const categories = normalizeList(doc.categories);
-    const tags = normalizeList(doc.tags);
-    if (categories[0]) labels.appendChild(createLabel(categories[0]));
+    const tags = normalizeList(doc.tags).filter((tag) => !lowSignalThemes.has(tag));
+    if (collections[0]) labels.appendChild(createLabel(displayLabel(collections[0])));
+    if (categories[0]) labels.appendChild(createLabel(displayLabel(categories[0])));
     if (doc.series) labels.appendChild(createLabel(`Series: ${doc.series}`));
-    tags.slice(0, 2).forEach((tag) => labels.appendChild(createLabel(tag)));
+    tags.slice(0, 2).forEach((tag) => labels.appendChild(createLabel(displayLabel(tag))));
     if (labels.childElementCount) article.appendChild(labels);
 
     const heading = document.createElement("h3");
@@ -171,10 +206,14 @@
 
   function describeFilters() {
     const parts = [];
-    const category = categoryFilter?.value?.trim() || "";
-    const tag = tagFilter?.value?.trim() || "";
-    if (category) parts.push(`category “${category}”`);
-    if (tag) parts.push(`tag “${tag}”`);
+    const collection = collectionFilter?.value?.trim() || "";
+    const type = categoryFilter?.value?.trim() || "";
+    const theme = tagFilter?.value?.trim() || "";
+    const series = seriesFilter?.value?.trim() || "";
+    if (collection) parts.push(`collection “${displayLabel(collection)}”`);
+    if (type) parts.push(`type “${displayLabel(type)}”`);
+    if (theme) parts.push(`theme “${displayLabel(theme)}”`);
+    if (series) parts.push(`series “${series}”`);
     return parts;
   }
 
@@ -190,7 +229,7 @@
         "No reflections matched",
         context
           ? `Try a broader phrase or clear one of the filters applied to ${context}.`
-          : "Try a broader phrase or explore the complete Posts archive."
+          : "Try a broader phrase or explore the full library."
       );
       return;
     }
@@ -219,7 +258,6 @@
 
   function processTerms(terms) {
     if (!index?.pipeline) return terms;
-
     return terms.flatMap((term) => index.pipeline.runString(term)).filter(Boolean);
   }
 
@@ -229,7 +267,7 @@
     return index.query((builder) => {
       terms.forEach((term) => {
         const titleOptions = { boost: 12, fields: ["title"], usePipeline: false };
-        const supportingOptions = { boost: 6, fields: ["subtitle", "tags", "categories", "series"], usePipeline: false };
+        const supportingOptions = { boost: 6, fields: ["subtitle", "tags", "collections", "categories", "series"], usePipeline: false };
         const excerptOptions = { boost: 3, fields: ["excerpt"], usePipeline: false };
         const contentOptions = { boost: 1, fields: ["content"], usePipeline: false };
 
@@ -255,7 +293,6 @@
 
   function searchDocuments(query) {
     const allowedIds = new Set(data.filter(matchesFilters).map((doc) => String(doc.id)));
-
     if (!query) return data.filter((doc) => allowedIds.has(String(doc.id)));
 
     const processedTerms = processTerms(safeTerms(query));
@@ -281,21 +318,23 @@
   function runSearch(options = {}) {
     const { syncUrl = true } = options;
     const query = input.value.trim();
-    const category = categoryFilter?.value?.trim() || "";
-    const tag = tagFilter?.value?.trim() || "";
-    const hasFilters = Boolean(category || tag);
+    const collection = collectionFilter?.value?.trim() || "";
+    const type = categoryFilter?.value?.trim() || "";
+    const theme = tagFilter?.value?.trim() || "";
+    const series = seriesFilter?.value?.trim() || "";
+    const hasFilters = Boolean(collection || type || theme || series);
 
     if (syncUrl) syncUrlState();
 
     if (query.length === 1) {
       metaEl.textContent = "Enter at least two characters.";
-      showState("guidance", "Keep typing", "Search terms need at least two characters before the archive can be searched.");
+      showState("guidance", "Keep typing", "Search terms need at least two characters before the library can be searched.");
       return;
     }
 
     if (!query && !hasFilters) {
       metaEl.textContent = `${data.length} reflections available.`;
-      showState("guidance", "Begin with a thought", "Search by a word or phrase, or choose a category or tag to browse related reflections.");
+      showState("guidance", "Begin with a thought", "Search by a word or phrase, or choose a collection, type, theme, or series to browse related reflections.");
       return;
     }
 
@@ -321,8 +360,9 @@
     data = data.map((doc) => ({
       ...doc,
       categories: normalizeList(doc.categories),
+      collections: normalizeList(doc.collections),
       tags: normalizeList(doc.tags),
-      series: doc.series || "",
+      series: doc.series || ""
     }));
 
     index = lunr(function () {
@@ -332,6 +372,7 @@
       this.field("excerpt");
       this.field("content");
       this.field("tags");
+      this.field("collections");
       this.field("categories");
       this.field("series");
 
@@ -343,20 +384,27 @@
           excerpt: doc.excerpt || "",
           content: doc.content || "",
           tags: doc.tags.join(" "),
+          collections: doc.collections.join(" "),
           categories: doc.categories.join(" "),
-          series: doc.series || "",
+          series: doc.series || ""
         });
       });
     });
 
+    populateSelect(collectionFilter, uniqueSorted(data.flatMap((doc) => doc.collections)));
     populateSelect(categoryFilter, uniqueSorted(data.flatMap((doc) => doc.categories)));
-    populateSelect(tagFilter, uniqueSorted(data.flatMap((doc) => doc.tags)));
+    populateSelect(
+      tagFilter,
+      uniqueSorted(data.flatMap((doc) => doc.tags).filter((tag) => !lowSignalThemes.has(tag)))
+    );
+    populateSelect(seriesFilter, uniqueSorted(data.map((doc) => doc.series)), (value) => value);
+
     readUrlState();
     runSearch({ syncUrl: false });
   } catch (error) {
     console.error("Search index error:", error, "Tried:", indexPath);
     metaEl.textContent = "The search index could not be loaded.";
-    showState("error", "Search is temporarily unavailable", "Please use the Posts archive while the search index is unavailable.");
+    showState("error", "Search is temporarily unavailable", "Please use Explore or the Posts archive while the search index is unavailable.");
     return;
   }
 
@@ -371,14 +419,18 @@
     inputTimer = window.setTimeout(() => runSearch(), 140);
   });
 
+  collectionFilter?.addEventListener("change", () => runSearch());
   categoryFilter?.addEventListener("change", () => runSearch());
   tagFilter?.addEventListener("change", () => runSearch());
+  seriesFilter?.addEventListener("change", () => runSearch());
 
   clearBtn?.addEventListener("click", () => {
     window.clearTimeout(inputTimer);
     input.value = "";
+    if (collectionFilter) collectionFilter.value = "";
     if (categoryFilter) categoryFilter.value = "";
     if (tagFilter) tagFilter.value = "";
+    if (seriesFilter) seriesFilter.value = "";
     runSearch();
     input.focus();
   });
