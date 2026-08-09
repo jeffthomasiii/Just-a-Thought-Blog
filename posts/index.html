@@ -8,6 +8,7 @@ page_archetype: collection
 {% assign archive_posts = paginator.posts | default: site.posts %}
 {% assign archive_page = paginator.page | default: 1 %}
 {% assign featured_post = archive_posts | first %}
+{% assign hero_image = featured_post.image | default: featured_post.background %}
 
 <header class="jat-collection-hero jat-posts-hero jat-page-shell">
   <div class="jat-page-frame jat-posts-hero-inner">
@@ -17,9 +18,17 @@ page_archetype: collection
       <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
       <p>{{ page.description }}</p>
       {% if archive_page > 1 %}<p class="jat-posts-page-label">Archive page {{ archive_page }} of {{ paginator.total_pages }}</p>{% endif %}
+      <div class="jat-button-row jat-posts-hero-actions">
+        <a class="btn jat-btn jat-btn-primary" href="{{ '/explore/' | relative_url }}">Explore the Library</a>
+        <a class="btn jat-btn jat-btn-secondary" href="{{ '/search/' | relative_url }}">Search Reflections</a>
+      </div>
     </div>
-    <div class="jat-posts-hero-actions">
-      <a class="btn jat-btn jat-btn-secondary" href="{{ '/search/' | relative_url }}">Search Reflections</a>
+    <div class="jat-posts-hero-media" aria-hidden="true">
+      {% if hero_image %}
+        <img src="{{ hero_image | relative_url }}" alt="">
+      {% else %}
+        <div class="jat-posts-image-fallback"><span>Just A Thought</span></div>
+      {% endif %}
     </div>
   </div>
 </header>
