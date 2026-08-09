@@ -1,0 +1,59 @@
+/* =========================================================
+   Final anchor hero alignment
+   Visual corrections from side-by-side desktop review.
+   Home and Listen remain the visual reference.
+   ========================================================= */
+
+@media (min-width: 992px) {
+  /* Explore and About were rendering visibly shorter than Home/Listen. */
+  .jat-explore-hero .jat-explore-hero-frame,
+  .jat-about-page .jat-about-hero-grid {
+    height: 520px !important;
+    min-height: 520px !important;
+    max-height: 520px !important;
+  }
+
+  /* Keep the principal anchor headlines in one visual family. */
+  .jat-board-hero .jat-listen-hero-copy h1,
+  .jat-explore-hero h1,
+  .jat-about-page .jat-about-hero h1 {
+    font-size: clamp(3rem, 4vw, 3.85rem) !important;
+    line-height: 0.98 !important;
+  }
+
+  /* Resources has the longest headline. Give it the About-page scale
+     but reduce it enough to keep all copy and actions inside the frame. */
+  .jat-resources-document .jat-resources-hero .jat-board-hero-copy {
+    justify-content: center;
+    padding: 1.55rem 2.2rem !important;
+  }
+
+  .jat-resources-document .jat-resources-hero .jat-board-hero-copy h1 {
+    max-width: 590px;
+    margin: 0 !important;
+    font-size: clamp(2.35rem, 3vw, 2.9rem) !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.04em;
+  }
+
+  .jat-resources-document .jat-resources-hero .jat-board-hero-copy > p:not(.jat-kicker) {
+    max-width: 570px;
+    margin: 0 !important;
+    font-size: 0.92rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .jat-resources-document .jat-resources-hero .jat-simple-divider {
+    margin: 0.72rem 0 0.68rem !important;
+  }
+
+  .jat-resources-document .jat-resources-hero .jat-button-row {
+    display: flex !important;
+    margin-top: 0.72rem !important;
+  }
+
+  /* About gained height; center the content within the added breathing room. */
+  .jat-about-page .jat-about-hero-copy {
+    justify-content: center;
+  }
+}
