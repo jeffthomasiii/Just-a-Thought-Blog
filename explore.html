@@ -30,6 +30,13 @@ permalink: /explore/
           <a class="btn jat-btn jat-btn-secondary" href="{{ '/search/' | relative_url }}">Search the Library</a>
         </div>
       </div>
+      <div class="jat-explore-hero-media" aria-hidden="true">
+        {% for key in collection_keys %}
+          <div class="jat-explore-hero-tile jat-explore-hero-tile--{{ key }}">
+            <img src="{{ '/img/collections/' | append: key | append: '-hero.png' | relative_url }}" alt="">
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </header>
