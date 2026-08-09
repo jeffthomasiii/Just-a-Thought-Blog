@@ -1,0 +1,329 @@
+/* =========================================================
+   Listen-reference hero system
+   Uses the Listen page's rendered proportions as the canonical
+   desktop anchor-page hero: ~430px, two-part composition, compact
+   copy, and soft image-to-surface blending.
+   ========================================================= */
+
+:root {
+  --jat-listen-reference-hero-height: 430px;
+  --jat-listen-reference-copy-padding: clamp(2rem, 3.5vw, 3rem);
+}
+
+/* Home, Listen, Resources — same actual frame height. */
+.jat-board-hero .jat-board-hero-grid,
+.jat-resources-hero .jat-resources-hero-grid {
+  height: var(--jat-listen-reference-hero-height);
+  min-height: var(--jat-listen-reference-hero-height);
+  max-height: var(--jat-listen-reference-hero-height);
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+}
+
+.jat-board-hero .jat-board-hero-copy,
+.jat-resources-hero .jat-board-hero-copy {
+  min-height: 0;
+  padding: var(--jat-listen-reference-copy-padding);
+}
+
+.jat-board-hero .jat-board-hero-copy h1,
+.jat-resources-document .jat-board-hero-copy h1 {
+  max-width: 650px;
+  font-size: clamp(2.75rem, 4.1vw, 4rem);
+  line-height: 0.98;
+}
+
+.jat-board-hero .jat-board-hero-copy > p:not(.jat-kicker),
+.jat-resources-document .jat-board-hero-copy > p:not(.jat-kicker) {
+  max-width: 620px;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.jat-board-hero .jat-simple-divider,
+.jat-resources-hero .jat-simple-divider,
+.jat-about-hero .jat-simple-divider,
+.jat-explore-hero .jat-simple-divider,
+.jat-posts-hero .jat-simple-divider {
+  margin: 1rem 0 0.95rem;
+}
+
+.jat-board-hero .jat-board-hero-copy > .jat-button-row,
+.jat-resources-hero .jat-board-hero-copy > .jat-button-row {
+  margin-top: 1.25rem;
+}
+
+.jat-board-hero .jat-board-hero-image,
+.jat-resources-document .jat-resources-hero-media,
+.jat-resources-document .jat-resources-hero-media img {
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  aspect-ratio: auto;
+}
+
+.jat-resources-document .jat-resources-hero-media {
+  min-height: 0;
+  aspect-ratio: auto;
+}
+
+/* Home/Listen-style soft blend at the copy/image boundary. */
+.jat-resources-document .jat-resources-hero-media::before,
+.jat-about-page .jat-about-hero-image::before,
+.jat-posts-hero-media::before,
+.jat-explore-hero-media::before {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #fffdf8 0%,
+    rgba(255, 253, 248, 0.9) 8%,
+    rgba(255, 253, 248, 0.55) 19%,
+    rgba(255, 253, 248, 0.12) 34%,
+    rgba(255, 253, 248, 0) 52%
+  );
+  content: '';
+  pointer-events: none;
+}
+
+/* About — same 430px frame, with one concise hero paragraph. */
+.jat-about-page .jat-about-hero-grid {
+  height: var(--jat-listen-reference-hero-height);
+  min-height: var(--jat-listen-reference-hero-height);
+  max-height: var(--jat-listen-reference-hero-height);
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+}
+
+.jat-about-page .jat-about-hero-copy {
+  min-height: 0;
+  padding: var(--jat-listen-reference-copy-padding);
+}
+
+.jat-about-page .jat-about-hero h1 {
+  max-width: 650px;
+  font-size: clamp(2.75rem, 4.1vw, 4rem);
+  line-height: 0.98;
+}
+
+.jat-about-page .jat-about-hero-copy > p:not(.jat-kicker) {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.jat-about-page .jat-about-hero-image,
+.jat-about-page .jat-about-hero-image img {
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  aspect-ratio: auto;
+}
+
+/* Explore — now a true two-part card using the six collection images. */
+.jat-explore-hero {
+  padding: 6.4rem 0 0.85rem;
+  border-bottom: 0;
+  background: var(--jat-surface-page);
+}
+
+.jat-explore-hero .jat-explore-hero-frame {
+  display: grid;
+  height: var(--jat-listen-reference-hero-height);
+  min-height: var(--jat-listen-reference-hero-height);
+  max-height: var(--jat-listen-reference-hero-height);
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  overflow: hidden;
+  border: 1px solid var(--jat-border-strong);
+  background: var(--jat-surface-card);
+  box-shadow: var(--jat-shadow-panel);
+}
+
+.jat-explore-hero-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--jat-listen-reference-copy-padding);
+}
+
+.jat-explore-hero h1 {
+  max-width: 650px;
+  font-size: clamp(2.75rem, 4.1vw, 4rem);
+  line-height: 0.98;
+}
+
+.jat-explore-lede {
+  max-width: 620px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.jat-explore-hero-actions {
+  margin-top: 1.25rem;
+}
+
+.jat-explore-hero-media {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.jat-explore-hero-tile {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.jat-explore-hero-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Posts — visual archive hero using the newest reflection image. */
+.jat-posts-hero {
+  padding: 6.4rem 0 0.85rem;
+  border-bottom: 0;
+}
+
+.jat-posts-hero .jat-posts-hero-inner {
+  display: grid;
+  height: var(--jat-listen-reference-hero-height);
+  min-height: var(--jat-listen-reference-hero-height);
+  max-height: var(--jat-listen-reference-hero-height);
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  gap: 0;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid var(--jat-border-strong);
+  background: var(--jat-surface-card);
+  box-shadow: var(--jat-shadow-panel);
+}
+
+.jat-posts-hero-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--jat-listen-reference-copy-padding);
+}
+
+.jat-posts-hero h1 {
+  margin: 0;
+  font-size: clamp(2.75rem, 4.1vw, 4rem);
+  line-height: 0.98;
+}
+
+.jat-posts-hero-copy > p:not(.jat-kicker):not(.jat-posts-page-label) {
+  max-width: 620px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.jat-posts-hero-actions {
+  margin-top: 1.25rem;
+  padding: 0;
+}
+
+.jat-posts-hero-media {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--jat-surface-muted);
+}
+
+.jat-posts-hero-media img,
+.jat-posts-hero-media .jat-posts-image-fallback {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body.dark-mode .jat-resources-hero-media::before,
+body.dark-mode .jat-about-hero-image::before,
+body.dark-mode .jat-posts-hero-media::before,
+body.dark-mode .jat-explore-hero-media::before {
+  background: linear-gradient(
+    90deg,
+    #22251d 0%,
+    rgba(34, 37, 29, 0.92) 8%,
+    rgba(34, 37, 29, 0.58) 19%,
+    rgba(34, 37, 29, 0.14) 34%,
+    rgba(34, 37, 29, 0) 52%
+  );
+}
+
+@media (max-width: 991.98px) {
+  .jat-board-hero .jat-board-hero-grid,
+  .jat-resources-hero .jat-resources-hero-grid,
+  .jat-about-page .jat-about-hero-grid,
+  .jat-explore-hero .jat-explore-hero-frame,
+  .jat-posts-hero .jat-posts-hero-inner {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    grid-template-columns: 1fr;
+  }
+
+  .jat-board-hero .jat-board-hero-image,
+  .jat-resources-document .jat-resources-hero-media,
+  .jat-about-page .jat-about-hero-image,
+  .jat-explore-hero-media,
+  .jat-posts-hero-media {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .jat-resources-document .jat-resources-hero-media::before,
+  .jat-about-page .jat-about-hero-image::before,
+  .jat-posts-hero-media::before,
+  .jat-explore-hero-media::before {
+    background: linear-gradient(
+      180deg,
+      #fffdf8 0%,
+      rgba(255, 253, 248, 0.88) 8%,
+      rgba(255, 253, 248, 0.42) 20%,
+      rgba(255, 253, 248, 0) 38%
+    );
+  }
+
+  body.dark-mode .jat-resources-hero-media::before,
+  body.dark-mode .jat-about-hero-image::before,
+  body.dark-mode .jat-posts-hero-media::before,
+  body.dark-mode .jat-explore-hero-media::before {
+    background: linear-gradient(
+      180deg,
+      #22251d 0%,
+      rgba(34, 37, 29, 0.9) 8%,
+      rgba(34, 37, 29, 0.44) 20%,
+      rgba(34, 37, 29, 0) 38%
+    );
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-board-hero .jat-board-hero-copy,
+  .jat-resources-hero .jat-board-hero-copy,
+  .jat-about-page .jat-about-hero-copy,
+  .jat-explore-hero-copy,
+  .jat-posts-hero-copy {
+    padding: 1.75rem;
+  }
+
+  .jat-board-hero .jat-board-hero-copy h1,
+  .jat-resources-document .jat-board-hero-copy h1,
+  .jat-about-page .jat-about-hero h1,
+  .jat-explore-hero h1,
+  .jat-posts-hero h1 {
+    font-size: clamp(2.5rem, 12vw, 3.2rem);
+  }
+}
