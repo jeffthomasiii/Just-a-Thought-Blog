@@ -67,6 +67,16 @@ permalink: /listen/
       <p class="jat-listen-player__note">Browser narration may vary by device. Recorded companions use the author-provided audio and do not require voice selection.</p>
     </section>
 
+    <section class="jat-listen-podcast-link jat-panel jat-panel--parchment" aria-labelledby="listen-podcast-heading">
+      <img class="jat-listen-podcast-logo" src="{{ '/img/brand/logos/just-a-thought-podcast-logo.png' | relative_url }}" alt="Just A Thought — The Podcast logo" loading="lazy">
+      <div class="jat-listen-podcast-copy">
+        <p class="jat-kicker">The Podcast</p>
+        <h2 id="listen-podcast-heading">A more personal way to stay with the thought.</h2>
+        <p>The Audio Companion makes the written archive listenable today. The podcast will build on that experience with recorded episodes, expanded context, Scripture reflection, and thoughtful conversation.</p>
+      </div>
+      <a class="btn jat-btn jat-btn-secondary" href="{{ '/podcast/' | relative_url }}">Explore the Podcast</a>
+    </section>
+
     <section class="jat-listen-library" id="reflection-library" aria-labelledby="reflection-library-heading">
       <div class="jat-listen-library__heading">
         <div>
@@ -174,20 +184,15 @@ permalink: /listen/
         {% endfor %}
       </div>
 
+      <div class="jat-listen-library-toggle" id="jat-listen-library-toggle-wrap">
+        <button type="button" class="btn jat-btn jat-btn-secondary" id="jat-listen-library-toggle" aria-expanded="false" aria-controls="jat-listen-grid">Show More Reflections</button>
+      </div>
+
       <div class="jat-listen-empty jat-panel" id="jat-listen-empty" hidden>
         <p class="jat-kicker">No Matches</p>
         <h3>No reflections match those filters.</h3>
         <p>Try a broader search, choose another topic or format, or clear the filters to see the full library.</p>
       </div>
-    </section>
-
-    <section class="jat-listen-podcast-link jat-panel jat-panel--parchment" aria-labelledby="listen-podcast-heading">
-      <div>
-        <p class="jat-kicker">More Than Text to Speech</p>
-        <h2 id="listen-podcast-heading">The podcast will add a more personal voice.</h2>
-        <p>The Audio Companion makes the written archive listenable today and is now ready to include recorded readings as they become available.</p>
-      </div>
-      <a class="btn jat-btn jat-btn-secondary" href="{{ '/podcast/' | relative_url }}">Visit the Podcast Page</a>
     </section>
   </div>
 </main>
