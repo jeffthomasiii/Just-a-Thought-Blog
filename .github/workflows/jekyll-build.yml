@@ -12,6 +12,7 @@ on:
       - related-reflections-v1
       - series-reading-paths-v1
       - site-interface-consistency-v1
+      - update-jat-logo-assets
   workflow_dispatch:
 
 permissions:
@@ -83,6 +84,7 @@ jobs:
             _site/search.json
             _site/img/bg-about.jpg
             _site/img/jat-olive-branch.png
+            _site/img/brand/logos/**/*
             _site/img/pages/bg-podcast-coming-soon.jpg
             _site/img/pages/podcast-episode-preview.jpg
             _site/img/pages/resources-hero.jpg
