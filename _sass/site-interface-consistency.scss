@@ -71,11 +71,6 @@
   place-items: center;
 }
 
-/* Homepage — approved Podcast Spotlight mark */
-.jat-podcast-card .jat-podcast-logo-img {
-  content: url('/img/brand/logos/just-a-thought-podcast-logo.png');
-}
-
 /* Search — compact, architecture-aware control panel */
 .jat-search-main {
   gap: clamp(2.25rem, 5vw, 4rem);
