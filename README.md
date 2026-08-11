@@ -36,7 +36,7 @@ The writing should feel like a thoughtful conversation with someone who has been
 
 The voice should be reflective, warm, honest, conversational, biblically grounded, compassionate, clear, relatable, and convictional without becoming combative.
 
-For substantial drafting, revision, or AI-assisted collaboration, follow `docs/authentic-voice-ai-collaboration-standard.md`. The default JAT fingerprint is:
+For substantial drafting, revision, or archive work, follow `docs/authorship-authentic-voice-standard.md`. The default JAT fingerprint is:
 
 > event/catalyst → observation → question → processing → Scripture, experience, person, or source enters the conversation → thought develops → provisional reflection
 
@@ -148,7 +148,7 @@ The repository is the canonical home for current JAT brand and editorial standar
 ### Editorial identity
 
 - `docs/editorial-style-guide.md` — recurring editorial conventions, Scripture, prose, metadata, and quality review
-- `docs/authentic-voice-ai-collaboration-standard.md` — authoritative standard for preserving JAT authorship and voice during AI-assisted work
+- `docs/authorship-authentic-voice-standard.md` — authoritative standard for preserving JAT authorship, provenance, and reflective voice
 
 ### Content architecture
 
