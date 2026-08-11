@@ -1,6 +1,6 @@
 # Just A Thought Editorial Style Guide
 
-**Version:** 1.1  
+**Version:** 1.2  
 **Status:** Canonical  
 **Adopted:** 2026-08-04  
 **Updated:** 2026-08-11
@@ -150,11 +150,17 @@ scripture:
 
 Follow the canonical field responsibilities in `docs/content-architecture.md` and the current repository taxonomy.
 
-### Required fields
+JAT classifies front matter by **publication use**, not merely by what Jekyll or YAML technically requires. A field can be technically optional to the site generator while still being a **Core Field** because JAT uses it for every published article.
+
+### Core Fields
+
+Core Fields are part of the standard JAT publication record and should be present on every published article.
 
 ```yaml
 layout: post
 title: "Post Title"
+subtitle: "Post subtitle"
+description: "Meta description"
 date: YYYY-MM-DD
 author: Jeff Thomas III
 categories:
@@ -164,24 +170,33 @@ collections:
 tags:
   - specific-tag
 excerpt: "Short summary"
-```
-
-### Optional fields
-
-```yaml
-subtitle: "Optional subtitle"
-description: "Optional meta description"
-contributors:
-  - Contributor Name
 image: /img/posts/post-image.jpg
 background: /img/posts/bg-post-image.jpg
+```
+
+For JAT publication purposes, `subtitle`, `description`, `image`, and `background` are therefore **Core Fields**, even though Jekyll may render a post without them.
+
+### Conditional Fields
+
+Conditional Fields are required when the article's content, authorship, or publishing context calls for them. Omit them when they do not apply rather than leaving blank keys.
+
+```yaml
+contributors:
+  - Contributor Name
 scripture:
   - Scripture Reference
 series: "Series Title"
 series_order: 1
 ```
 
-Omit optional fields when unused. Do not leave blank keys.
+Examples:
+
+- Use `contributors` when someone other than the credited author materially contributed in a way JAT records in front matter.
+- Use `scripture` when Scripture is materially cited, examined, or central to the reflection.
+- Use `series` when the article belongs to a named series.
+- Use `series_order` with `series` when the series has an intentional reading or publication sequence. Do not use `series_order` without `series`.
+
+This **Core / Conditional** distinction is the JAT editorial standard. It should not be replaced by a generic “required / optional” distinction based only on what YAML, Jekyll, or a layout can technically tolerate.
 
 ### YAML conventions
 
@@ -199,6 +214,7 @@ Omit optional fields when unused. Do not leave blank keys.
 - Use descriptive lowercase kebab-case filenames.
 - `image` is the article/social-preview image.
 - `background` is the wide hero image.
+- Both `image` and `background` are Core Fields for standard JAT publications.
 - Do not store image files inside `_posts`.
 - Follow `docs/brand/brand-identity-standard.md` for visual direction.
 
@@ -232,7 +248,7 @@ Before publication:
 5. Check that theological certainty matches what the text supports.
 6. Check for conspicuous fragmentation, symmetry, genericity, excessive polish, template visibility, and overstatement.
 7. Confirm the closing phrase is present when appropriate.
-8. Validate YAML.
+8. Validate YAML and confirm all Core Fields are present.
 9. Check image paths and filenames.
 10. Review categories, collections, tags, series, and Scripture against the canonical taxonomy.
 
