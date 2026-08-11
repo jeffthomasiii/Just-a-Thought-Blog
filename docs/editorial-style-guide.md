@@ -3,11 +3,11 @@
 **Version:** 1.1  
 **Status:** Canonical  
 **Adopted:** 2026-08-04  
-**Updated:** 2026-08-10
+**Updated:** 2026-08-11
 
 This guide governs recurring article voice, structure, formatting, metadata, and editorial decisions for **Just A Thought**.
 
-For substantial drafting, revision, AI-assisted writing, or archive remediation, `docs/authentic-voice-ai-collaboration-standard.md` is the authoritative voice-preservation rubric and supplements this guide.
+For substantial drafting, revision, or archive remediation, `docs/authorship-authentic-voice-standard.md` is the authoritative voice-preservation rubric and supplements this guide.
 
 ## Voice
 
