@@ -1,34 +1,50 @@
 # Just A Thought Editorial Style Guide
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Status:** Canonical  
-**Adopted:** 2026-08-04
+**Adopted:** 2026-08-04  
+**Updated:** 2026-08-10
 
-This guide governs article voice, structure, formatting, metadata, and recurring editorial decisions for Just A Thought.
+This guide governs recurring article voice, structure, formatting, metadata, and editorial decisions for **Just A Thought**.
+
+For substantial drafting, revision, AI-assisted writing, or archive remediation, `docs/authentic-voice-ai-collaboration-standard.md` is the authoritative voice-preservation rubric and supplements this guide.
 
 ## Voice
 
 Writing should remain:
 
-- reflective and honest rather than preachy
-- biblically grounded without becoming heavy-handed
-- personal without becoming performative
-- compassionate when addressing complexity
-- clear and conversational rather than overly polished
+- reflective and honest rather than preachy;
+- biblically grounded without becoming heavy-handed;
+- personal without becoming performative;
+- compassionate when addressing complexity;
+- clear and conversational rather than overly polished;
+- convictional without becoming combative.
 
-Do not invent personal stories, experiences, conversations, or details. Clearly identify illustrative, composite, or hypothetical stories.
+Do not invent personal stories, experiences, conversations, feelings, motivations, spiritual experiences, or details.
 
-When Scripture does not make a conclusion explicit, use appropriately humble language such as “I believe,” “it seems,” or “one possible reason.” Definitive statements are appropriate when the biblical text is explicit.
+When Scripture or evidence does not make a conclusion explicit, use appropriately humble language such as “I believe,” “it seems,” or “one possible reason.” Definitive statements are appropriate when the source genuinely establishes them.
 
-## Standard Article Structure
+## JAT Fingerprint
 
-### Hook
+When it naturally fits the thought, preserve this movement:
 
-Open with one to three sentences that introduce a relatable story, question, tension, or observation.
+> event/catalyst → observation → question → processing → Scripture, experience, person, or source enters the conversation → thought develops → provisional reflection
+
+This is a fingerprint, not a mandatory template.
+
+Default toward **Reflection Mode**, allowing readers to see the thought develop. Use **Teaching Mode** when exegesis, theology, history, instruction, technical explanation, or argument genuinely requires it.
+
+## Flexible Article Structure
+
+The traditional structure remains a guide:
+
+### Hook / Catalyst
+
+Begin with the real story, question, tension, observation, Scripture, conversation, sermon, source, or experience when one exists. Never manufacture a personal hook.
 
 ### Context and Reflection
 
-Explain what prompted the thought. Draw from Scripture, personal experience, relationships, work, culture, technology, or creation as appropriate.
+Explain what prompted the thought and why it stayed with Jeff.
 
 ### Development
 
@@ -36,27 +52,29 @@ Unpack the idea carefully. Consider theological, relational, practical, cultural
 
 ### Resolution or Open-Ended Reflection
 
-Offer meaningful closure, a next step, or a question that remains open.
+Offer meaningful closure, a next step, a question that remains open, or an appropriately provisional conclusion.
 
 ### Closing
 
-Posts by Jeff Thomas III should end with:
+Most author-written reflections should end with:
 
 > …just a thought.
 
-Guest posts are exempt unless the contributor chooses to use it.
+Exceptions include guest posts, formal resources rather than reflections, and pieces where pastoral sensitivity calls for another ending.
 
 ### Reader Prompt
 
-An optional reflective question may follow the article. It is included in the published body word count.
+A reflective question is optional, not automatic. Include one only when it genuinely helps continue the thought.
+
+Do not force articles into three points, equally sized sections, perfectly resolved lessons, or a repeated visible template.
 
 ## Natural Prose
 
-Write in paragraphs that develop complete thoughts. Most paragraphs should contain three to six sentences unless a shorter paragraph serves the narrative.
+Write in paragraphs that develop complete thoughts. Most paragraphs should contain three to six sentences unless a shorter paragraph genuinely serves the narrative.
 
-Avoid stacking dramatic one-sentence paragraphs. Emphasis should come from progression and clarity rather than social-media-style fragmentation.
+Allow natural variation in paragraph and section length. Avoid stacking dramatic one-sentence paragraphs, rhetorical triples, repeated contrasts, and social-media-style fragmentation.
 
-Use short paragraphs for screen readability, but do not sacrifice natural essay flow.
+Emphasis should come primarily from progression and clarity.
 
 ## Word Count
 
@@ -67,14 +85,17 @@ Count the published body from the opening hook through the “…just a thought.
 - Series installments and deeper theological reflections: 1,600–2,200 words
 - Cornerstone resources and detailed guides: 2,200–3,500 words
 
-Most articles should land between 1,200 and 2,000 words. These are editorial ranges rather than quotas.
+Most articles should land between 1,200 and 2,000 words. These are editorial ranges rather than quotas. Never pad or compress a thought merely to meet a range.
 
 ## Scripture
 
 - Represent passages accurately and in context.
 - Identify the translation when directly quoting Scripture.
-- Avoid implying that an application is the passage's exclusive meaning when it is not.
-- Distinguish interpretation from personal reflection.
+- Distinguish exegesis from application and application from analogy.
+- Distinguish theological synthesis from explicit biblical statements.
+- Do not imply that an application is the passage's exclusive meaning when it is not.
+- Avoid proof-texting and unsupported claims about God's or a biblical character's motives.
+- Do not overstate Greek or Hebrew word meanings.
 - Use standard Bible-book names in front matter.
 - Store references as a YAML list.
 
@@ -88,20 +109,25 @@ scripture:
   - Ephesians 4:29
 ```
 
-## Quotations and Sources
+## Quotations, Sources, and Provenance
 
-- Attribute all quotations.
-- Link or cite research claims, statistics, books, and external frameworks where feasible.
+- Attribute quotations.
+- Link or cite research claims, statistics, books, sermons, podcasts, and external frameworks where feasible.
+- Preserve provenance when another person or source materially shaped the thought.
+- Distinguish what a source establishes from Jeff's application, interpretation, synthesis, or reflection.
 - Avoid lengthy quotations when a concise excerpt and paraphrase will serve the reader.
 - Verify wording and source details before publication.
-- Do not present an illustrative story as a factual event.
+- Do not present an illustrative or composite story as a factual event.
 
 ## Capitalization and Terminology
 
-- Capitalize Scripture, Bible, Gospel when referring to the Christian message, and Church when referring to the universal body of Christ. Use lowercase church for a local congregation or building unless part of a proper name.
-- Capitalize pronouns for God only when preserving a quoted translation or the established voice of a post. Maintain consistency within each article.
+- The formal brand name is **Just A Thought**, not “Just A Thought Blog.” The domain may retain “blog.”
+- Capitalize Scripture and Bible.
+- Capitalize Gospel when referring to the Christian message.
+- Use Church for the universal body of Christ when that distinction is intended; use lowercase church for a local congregation/building unless part of a proper name.
+- Capitalize pronouns for God only when preserving a quoted translation or the established voice of a post; maintain consistency within the article.
 - Prefer `biblical marriage` when discussing the scriptural vision of marriage.
-- Use `Christ-centered` and `God-given` with hyphens when used as compound modifiers.
+- Use `Christ-centered` and `God-given` as compound modifiers.
 - Use `Bible study` in prose and `bible-study` as the article-type slug.
 - Use `artificial intelligence` on first reference and `AI` thereafter when appropriate.
 
@@ -111,18 +137,18 @@ scripture:
 - Prefer commas, periods, or parentheses when they read more naturally.
 - Use typographic apostrophes and quotation marks in article prose.
 - Use a standard hyphen in YAML slugs and Scripture ranges.
-- Avoid ellipses as a substitute for clear transitions. The required closing phrase remains an intentional exception.
+- Avoid ellipses as a substitute for clear transitions. The signature closing remains an intentional exception.
 
 ## Headings
 
 - Use descriptive headings that help readers follow the thought.
 - Do not over-section short posts.
-- Posts longer than 2,200 words should have clear sectioning.
+- Longer pieces should have enough sectioning to support reading without turning the article into an outline.
 - Use sentence case for article section headings unless a title requires otherwise.
 
 ## Front Matter
 
-Follow the canonical field responsibilities in `docs/content-architecture.md`.
+Follow the canonical field responsibilities in `docs/content-architecture.md` and the current repository taxonomy.
 
 ### Required fields
 
@@ -170,10 +196,11 @@ Omit optional fields when unused. Do not leave blank keys.
 ## Images
 
 - Store post images under `/img/posts/`.
-- Use a descriptive lowercase kebab-case filename.
-- `image` is the article and social-preview image.
+- Use descriptive lowercase kebab-case filenames.
+- `image` is the article/social-preview image.
 - `background` is the wide hero image.
 - Do not store image files inside `_posts`.
+- Follow `docs/brand/brand-identity-standard.md` for visual direction.
 
 ## Filenames
 
@@ -198,11 +225,15 @@ Do not rename a published post without considering URL preservation and redirect
 
 Before publication:
 
-1. Read the article aloud for natural pacing.
-2. Confirm the central thought is clear.
-3. Verify Scripture, quotations, and factual claims.
-4. Check that theological certainty matches what the text supports.
-5. Confirm the closing phrase is present unless it is a guest post.
-6. Validate YAML.
-7. Check image paths and filenames.
-8. Review categories, collections, tags, series, and Scripture against the canonical taxonomy.
+1. Ask why the article exists and confirm the real catalyst is visible when appropriate.
+2. Read the article aloud for natural pacing.
+3. Confirm the central thought is clear without becoming artificially resolved.
+4. Verify Scripture, quotations, provenance, and factual claims.
+5. Check that theological certainty matches what the text supports.
+6. Check for conspicuous fragmentation, symmetry, genericity, excessive polish, template visibility, and overstatement.
+7. Confirm the closing phrase is present when appropriate.
+8. Validate YAML.
+9. Check image paths and filenames.
+10. Review categories, collections, tags, series, and Scripture against the canonical taxonomy.
+
+If the article passes these checks, do not keep polishing merely for the sake of polish.
