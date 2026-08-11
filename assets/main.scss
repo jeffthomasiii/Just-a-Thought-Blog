@@ -111,6 +111,23 @@ body blockquote > :last-child {
   }
 }
 
+/* =========================================================
+   Navbar logo mark theme variants
+   ========================================================= */
+.jat-nav-logo-dark {
+  display: none;
+}
+
+body.dark-mode .jat-nav-logo-light,
+html.dark-mode-pending .jat-nav-logo-light {
+  display: none;
+}
+
+body.dark-mode .jat-nav-logo-dark,
+html.dark-mode-pending .jat-nav-logo-dark {
+  display: block;
+}
+
 /* Release-candidate visual fixes */
 body.dark-mode .jat-search-tools select,
 body.dark-mode #category-filter,
