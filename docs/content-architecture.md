@@ -1,15 +1,15 @@
 # Just A Thought Content Architecture
 
-**Version:** 1.2  
-**Status:** Canonical  
+**Version:** 1.3  
+**Status:** Canonical implementation reference  
 **Adopted:** 2026-08-04  
-**Revised:** 2026-08-07
+**Revised:** 2026-08-11
 
 ## Purpose
 
 Just A Thought is a growing library of thoughtful, biblically grounded writing rather than a chronological blog alone. Readers should be able to discover content by editorial format, reader journey, specific theme, series, and Scripture.
 
-Published post front matter is the single source of truth. The site does not require a separate database of existing or future posts.
+Published post front matter is the single source of truth for site content architecture. The site does not require a separate database of existing or future posts.
 
 ## Metadata Responsibilities
 
@@ -25,7 +25,7 @@ Each field has one responsibility:
 
 Metadata should not duplicate the responsibility of another field.
 
-Throughout editorial documentation and planning, use the term **Article Type** rather than Category. Jekyll will continue storing article types in the `categories` field.
+Throughout documentation and planning, use the term **Article Type** rather than Category. Jekyll continues storing article types in the `categories` field.
 
 ## Canonical Taxonomy Registry
 
@@ -39,9 +39,7 @@ New Article Types or Reader Collections require an architecture revision. New ta
 
 ## Article Types
 
-Article Types describe editorial format. They are stored in Jekyll's `categories` field. Every standard post must have exactly one Article Type.
-
-Official values:
+Every standard post must have exactly one Article Type:
 
 - `reflection`
 - `devotional`
@@ -52,36 +50,27 @@ Official values:
 - `announcement`
 
 ### Reflection
-
-A thoughtful essay that connects Scripture, personal experience, relationships, work, culture, technology, creation, or ordinary life.
+A thoughtful essay connecting Scripture, experience, relationships, work, culture, technology, creation, or ordinary life.
 
 ### Devotional
-
 A focused, usually shorter piece centered on a biblical passage and its spiritual application.
 
 ### Bible Study
-
 A deeper exegetical, theological, historical, linguistic, or contextual exploration of Scripture.
 
 ### Resource
-
 A practical reference such as a guide, reading plan, workbook, study aid, or downloadable tool.
 
 ### Series Introduction
-
 The opening article that frames the purpose, scope, and direction of a series.
 
 ### Guest Post
-
-An article written primarily by a contributor other than Jeff Thomas III. Guest status is derived from the `author` field; do not add a separate `guest: true` flag. The `guest-post` Article Type remains the standard Article Type for a guest-authored reflection under the current architecture.
+An article written primarily by a contributor other than Jeff Thomas III. Guest status is derived from the `author` field; do not add a separate `guest: true` flag.
 
 ### Announcement
-
 Site, ministry, publication, or project news. Use sparingly.
 
 ## Reader Collections
-
-Collections are broad reader-facing pathways. A post may belong to multiple collections when the overlap is central and useful.
 
 Official values, in canonical order:
 
@@ -92,33 +81,9 @@ Official values, in canonical order:
 5. `culture`
 6. `creation`
 
-Collections drive homepage topic cards, collection landing pages, and related-content pathways.
+Collections drive homepage topic cards, collection landing pages, and related-content pathways. A post may belong to multiple collections when the overlap is central and useful.
 
-### Faith
-
-Scripture, discipleship, prayer, spiritual formation, Christian living, theology, and walking with Christ in ordinary life.
-
-### Marriage
-
-Biblical marriage, covenant, communication, unity, intimacy, conflict, sacrifice, and relational growth between spouses.
-
-### Leadership
-
-Character, influence, responsibility, mentoring, stewardship, workplace leadership, ministry leadership, and servant leadership.
-
-### Technology
-
-Artificial intelligence, architecture and design technology, digital tools, innovation, ethics, and navigating technological change.
-
-### Culture
-
-Books, ideas, media, politics, public life, discernment, social questions, and faithful cultural engagement.
-
-### Creation
-
-Camping, hiking, beaches, outdoor travel, nature, rest, quiet, adventure, and reflections shaped by the created world.
-
-Camping belongs within this broader collection rather than defining the whole collection. A post does not need to be about camping specifically, but creation, an outdoor setting, or time in nature should meaningfully shape the reflection.
+Detailed inclusion and exclusion guidance is maintained in `docs/collection-definitions.md`.
 
 ### Collection Assignment Principles
 
@@ -130,18 +95,11 @@ Camping belongs within this broader collection rather than defining the whole co
 6. Collection placement may change when an article is substantially revised.
 7. Homepage collection pages may feature or curate posts independently of chronology.
 
-Detailed inclusion and exclusion guidance is maintained in `docs/collection-definitions.md`.
-
 ## Tags
 
 Tags identify specific ideas, themes, practices, audiences, tensions, passages, or subjects.
 
-Tags are a **controlled but extensible vocabulary**. The registry is maintained in `docs/tag-taxonomy.md` and is organized into:
-
-- Preferred Core Tags
-- Approved Extended Tags
-- Scripture Tags
-- Approved Replacements / Aliases
+Tags are a **controlled but extensible vocabulary** maintained in `docs/tag-taxonomy.md`.
 
 Rules:
 
@@ -153,22 +111,8 @@ Rules:
 - Prefer stable concepts that can connect multiple posts.
 - Aim for 5–10 meaningful tags for a normal post.
 - Add a new tag only when it is reusable or provides meaningful discovery value.
-- Before broad use, add the new term to `docs/tag-taxonomy.md`.
-
-Examples:
-
-- `biblical-marriage`
-- `identity-in-christ`
-- `spiritual-growth`
-- `artificial-intelligence`
-- `servant-leadership`
-- `biblical-meditation`
-- `content-architecture`
-- `craftsmanship`
 
 ## Metadata Responsibility Rule
-
-Do not put information into one field simply because another field seems inconvenient.
 
 - broad editorial format → **Article Type** / `categories`
 - curated reader pathway → **Reader Collection** / `collections`
@@ -177,11 +121,7 @@ Do not put information into one field simply because another field seems inconve
 - primary writer → **Author** / `author`
 - material co-participant → **Contributor** / `contributors`
 
-Examples:
-
-- Do not use `faith` as a tag when the purpose is collection membership.
-- Do not use `reflection` as a tag when the purpose is Article Type.
-- Do not create `behind-the-scenes` as a Collection unless the architecture is intentionally revised; use an appropriate tag instead.
+Do not use one field merely because another field seems inconvenient.
 
 ## Series
 
@@ -205,7 +145,7 @@ scripture:
   - James 1:2-27
 ```
 
-Use standard English Bible-book names. Use an en dash in published prose when appropriate, but use a standard hyphen in YAML ranges for predictable processing.
+Use standard English Bible-book names and a standard hyphen in YAML ranges for predictable processing.
 
 ## Authorship and Contributors
 
@@ -217,30 +157,24 @@ author: Jeff Thomas III
 
 A guest author is any primary author other than Jeff Thomas III. Guest status is derived from `author`; do not introduce a redundant `guest` boolean.
 
-Use contributor metadata for people who made a material contribution to the content without being the primary author.
+Use `contributors` for people who made a material contribution without being the primary author.
 
-```yaml
-author: Jeff Thomas III
-contributors:
-  - Samatra Thomas
-```
+## Front Matter Field Classes
 
-Do not place contributor credits inside the `author` string.
+JAT classifies front matter by **publication use**, not merely by what Jekyll or YAML technically requires.
 
-Guest-contributor posts are not required to use the signature `…just a thought.` closing.
+### Core Fields
 
-## Standard Front Matter Order
+Core Fields are used on every standard JAT publication:
 
 ```yaml
 ---
 layout: post
 title: "Post Title"
-subtitle: "Optional subtitle"
-description: "Optional description"
+subtitle: "Post subtitle"
+description: "Meta description"
 date: YYYY-MM-DD
 author: Jeff Thomas III
-contributors:
-  - Contributor Name
 categories:
   - reflection
 collections:
@@ -250,18 +184,29 @@ tags:
 excerpt: "Short summary"
 image: /img/posts/post-image.jpg
 background: /img/posts/bg-post-image.jpg
-scripture:
-  - Scripture Reference
-series: "Optional Series Title"
-series_order: 1
 ---
 ```
 
-Omit optional fields when they do not apply. Do not leave empty keys solely to preserve the template.
+`subtitle`, `description`, `image`, and `background` are Core Fields for JAT even though Jekyll may technically render a post without them.
+
+### Conditional Fields
+
+Use these when the content or publishing context calls for them, and omit them when they do not apply:
+
+```yaml
+contributors:
+  - Contributor Name
+scripture:
+  - Scripture Reference
+series: "Series Title"
+series_order: 1
+audio_file: /audio/posts/example-reflection.mp3
+audio_duration: "8 min"
+```
+
+Do not leave blank keys solely to preserve a template. Do not use `series_order` without `series`.
 
 ## Classification Test
-
-Use these questions in order when classifying a post:
 
 1. **Article Type:** What editorial form best describes the finished piece?
 2. **Reader Collections:** Which homepage pathways would reasonably help a reader discover it?
@@ -282,7 +227,7 @@ Future related-content scoring should generally prioritize:
 5. Shared Scripture book or passage
 6. Editorial overrides
 
-The purpose is not to maximize clicks. It is to help readers continue thinking through naturally related ideas.
+The purpose is to help readers continue through naturally related ideas.
 
 ## Browse Paths
 
@@ -298,37 +243,33 @@ The site should eventually support browsing by:
 
 ## Governance
 
-Changes to official Article Types or Reader Collections require:
+Changes to official Article Types or Reader Collections require an intentional architecture revision and corresponding review of affected site logic and content. Tag additions and aliases are governed by `docs/tag-taxonomy.md`.
 
-1. An update to this document.
-2. An entry in the changelog.
-3. A corresponding validator update.
-4. A review of existing content affected by the change.
-
-Tag additions and aliases are governed by `docs/tag-taxonomy.md`.
+This repository document is an implementation reference. Broader JAT editorial and organizational standards are maintained outside the public repository.
 
 ### Changelog
+
+#### 1.3 — 2026-08-11
+
+- Reclassified front matter as Core Fields and Conditional Fields based on JAT publication use rather than Jekyll technical requirements.
+- Confirmed `subtitle`, `description`, `image`, and `background` as Core Fields.
+- Scoped this document to public website content architecture and implementation.
 
 #### 1.2 — 2026-08-07
 
 - Added the Canonical Taxonomy Registry and clarified closed versus extensible vocabularies.
-- Confirmed that `categories` stores exactly one Article Type rather than a topical category.
+- Confirmed that `categories` stores exactly one Article Type.
 - Confirmed the six official Reader Collections and canonical order.
 - Defined tag registry classes and governance.
-- Clarified metadata responsibility boundaries between Article Types, Collections, Tags, Series, Authors, and Contributors.
-- Clarified guest-author derivation from the `author` field without adding a redundant guest boolean.
+- Clarified guest-author derivation from the `author` field.
 - Confirmed Scripture as a YAML array of references.
 
 #### 1.1 — 2026-08-05
 
 - Adopted **Article Type** as the editorial term for values stored in `categories`.
-- Clarified the separate responsibilities of article types and reader collections.
-- Confirmed `creation` as the sixth reader collection, encompassing camping, hiking, beaches, outdoor travel, nature, and related reflections.
-- Added collection definitions and a classification test.
+- Confirmed `creation` as the sixth reader collection.
 
 #### 1.0 — 2026-08-04
 
 - Established front matter as the content database.
-- Defined article types through `categories`.
-- Defined six reader collections.
-- Established tag, Scripture, series, and contributor conventions.
+- Defined article types, reader collections, tags, Scripture, series, and contributor conventions.
