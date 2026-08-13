@@ -34,9 +34,13 @@ body.dark-mode .jat-footer-bottom {
   color: #181914 !important;
 }
 
-body.dark-mode .jat-footer-bottom p,
-body.dark-mode .jat-footer-bottom .jat-footer-signature {
+/* Explicitly target both footer text elements. The copyright has its own
+   class so broader dark-mode paragraph rules cannot wash it out. */
+body.dark-mode .jat-footer .jat-footer-bottom .jat-footer-copyright,
+body.dark-mode .jat-footer .jat-footer-bottom .jat-footer-signature {
   color: #181914 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #181914 !important;
 }
 
 body.dark-mode .jat-status-label {
