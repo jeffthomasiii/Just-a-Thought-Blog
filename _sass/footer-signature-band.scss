@@ -1,0 +1,38 @@
+/* =========================================================
+   Footer Signature Band
+   Moves the copyright and signature into the brand-color footer band
+   with contrast-safe light and dark mode treatments.
+   ========================================================= */
+
+.jat-footer-bottom {
+  position: relative;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  padding: 1rem max(calc((100vw - var(--jat-width-board)) / 2), calc(var(--jat-page-gutter) / 2));
+  border-top: 0;
+  background: var(--jat-color-olive-deep);
+  color: var(--jat-color-cream);
+}
+
+.jat-footer-bottom p,
+.jat-footer-bottom .jat-footer-signature {
+  color: inherit;
+}
+
+body.dark-mode .jat-footer-bottom {
+  border-color: transparent;
+  background: var(--jat-color-sage);
+  color: #181914 !important;
+}
+
+body.dark-mode .jat-footer-bottom p,
+body.dark-mode .jat-footer-bottom .jat-footer-signature {
+  color: inherit !important;
+}
+
+@media (max-width: 575.98px) {
+  .jat-footer-bottom {
+    padding-right: calc(var(--jat-page-gutter) / 2);
+    padding-left: calc(var(--jat-page-gutter) / 2);
+  }
+}
