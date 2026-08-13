@@ -19,15 +19,55 @@
   color: inherit;
 }
 
+/* =========================================================
+   Dark Mode — Light Green Surface Standard
+
+   Soft Sage is the light action/accent surface in dark mode. Any text
+   placed directly on it uses Dark Ink, matching the homepage hero's
+   Explore the Library button. This applies consistently to primary
+   actions, status labels, featured-project labels, and the closing
+   footer band.
+   ========================================================= */
 body.dark-mode .jat-footer-bottom {
   border-color: transparent;
-  background: var(--jat-color-sage);
+  background: #A8B68A !important;
   color: #181914 !important;
 }
 
 body.dark-mode .jat-footer-bottom p,
 body.dark-mode .jat-footer-bottom .jat-footer-signature {
-  color: inherit !important;
+  color: #181914 !important;
+}
+
+body.dark-mode .jat-status-label {
+  border-color: #A8B68A !important;
+  background: #A8B68A !important;
+  color: #181914 !important;
+}
+
+body.dark-mode .btn.jat-btn-primary,
+body.dark-mode .jat-btn-primary,
+body.dark-mode .btn-primary,
+body.dark-mode .jat-nav-button,
+body.dark-mode .jat-footer-form-placeholder button {
+  border-color: #A8B68A !important;
+  background: #A8B68A !important;
+  color: #181914 !important;
+}
+
+body.dark-mode .btn.jat-btn-primary:hover,
+body.dark-mode .btn.jat-btn-primary:focus,
+body.dark-mode .jat-btn-primary:hover,
+body.dark-mode .jat-btn-primary:focus,
+body.dark-mode .btn-primary:hover,
+body.dark-mode .btn-primary:focus,
+body.dark-mode .jat-nav-button:hover,
+body.dark-mode .jat-nav-button:focus,
+body.dark-mode .jat-footer-form-placeholder button:hover,
+body.dark-mode .jat-footer-form-placeholder button:focus {
+  border-color: #D6B36B !important;
+  background: #D6B36B !important;
+  color: #181914 !important;
 }
 
 @media (max-width: 575.98px) {
