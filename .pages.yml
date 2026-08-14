@@ -1,0 +1,215 @@
+media:
+  - name: post-images
+    label: Post Images
+    input: img/posts
+    output: /img/posts
+    extensions: [jpg, jpeg, png, webp]
+    rename: safe
+
+  - name: post-audio
+    label: Post Audio
+    input: audio/posts
+    output: /audio/posts
+    categories: [audio]
+    rename: safe
+
+settings:
+  content:
+    merge: true
+  commit:
+    identity: user
+    templates:
+      create: "content: create {path} via Pages CMS"
+      update: "content: update {path} via Pages CMS"
+      delete: "content: delete {path} via Pages CMS"
+      rename: "content: rename {oldPath} to {newPath} via Pages CMS"
+
+content:
+  - name: articles
+    label: Articles
+    type: collection
+    path: _posts
+    format: yaml-frontmatter
+    subfolders: false
+
+    filename:
+      template: "{fields.date}-{title}.md"
+      field: false
+
+    operations:
+      create: true
+      rename: false
+      delete: false
+
+    view:
+      fields: [title, date, categories, collections]
+      primary: title
+      sort: [date, title]
+      search: [title, description, excerpt, tags]
+      default:
+        sort: date
+        order: desc
+
+    fields:
+      - name: layout
+        type: string
+        default: post
+        hidden: true
+
+      - name: title
+        label: Title
+        type: string
+        required: true
+        options:
+          maxlength: 140
+
+      - name: subtitle
+        label: Subtitle
+        type: text
+        required: true
+        description: "A descriptive subtitle that adds meaningful context to the title."
+
+      - name: description
+        label: Description
+        type: text
+        required: true
+        description: "One concise sentence for search results, previews, and social cards."
+
+      - name: date
+        label: Publication Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+
+      - name: author
+        label: Author
+        type: string
+        required: true
+        default: Jeff Thomas III
+        description: "Use Jeff Thomas III for standard JAT articles. Enter another primary writer for a guest post."
+
+      - name: categories
+        label: Article Type
+        type: select
+        required: true
+        description: "Choose exactly one official JAT Article Type."
+        options:
+          multiple: true
+          min: 1
+          max: 1
+          values:
+            - name: reflection
+              label: Reflection
+            - name: devotional
+              label: Devotional
+            - name: bible-study
+              label: Bible Study
+            - name: resource
+              label: Resource
+            - name: series-introduction
+              label: Series Introduction
+            - name: guest-post
+              label: Guest Post
+            - name: announcement
+              label: Announcement
+
+      - name: collections
+        label: Reader Collections
+        type: select
+        required: true
+        description: "Choose the smallest useful set of reader pathways. One or two is typical; three should be uncommon."
+        options:
+          multiple: true
+          min: 1
+          max: 3
+          values:
+            - name: faith
+              label: Faith
+            - name: marriage
+              label: Marriage
+            - name: leadership
+              label: Leadership
+            - name: technology
+              label: Technology
+            - name: culture
+              label: Culture
+            - name: creation
+              label: Creation
+
+      - name: tags
+        label: Topic Tags
+        type: string
+        required: true
+        list:
+          min: 1
+          max: 15
+        pattern:
+          regex: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          message: "Use the approved lowercase kebab-case tag form, such as spiritual-growth."
+        description: "Use canonical JAT tags whenever possible. Normal posts usually use 5–10 meaningful tags."
+
+      - name: scripture
+        label: Scripture
+        type: string
+        list: true
+        description: "Add only passages that materially shape the article. Use standard English book names and hyphens in ranges."
+
+      - name: excerpt
+        label: Excerpt
+        type: text
+        required: true
+        description: "A short reader-facing teaser. It should serve a different purpose from the description."
+
+      - name: image
+        label: Card / Social Image
+        type: image
+        required: true
+        options:
+          media: post-images
+          extensions: [jpg, jpeg, png, webp]
+
+      - name: background
+        label: Hero / Background Image
+        type: image
+        required: true
+        options:
+          media: post-images
+          extensions: [jpg, jpeg, png, webp]
+
+      - name: contributors
+        label: Contributors
+        type: string
+        list: true
+        description: "Use for people who materially contributed without being the primary author."
+
+      - name: series
+        label: Series
+        type: string
+        description: "Use only when this article intentionally belongs to a named editorial series."
+
+      - name: series_order
+        label: Series Order
+        type: number
+        description: "Use only when Series is set. A prelude may use 0."
+
+      - name: audio_file
+        label: Audio File
+        type: file
+        options:
+          media: post-audio
+          categories: [audio]
+
+      - name: audio_duration
+        label: Audio Duration
+        type: string
+        description: "Reader-facing duration, for example: 8 min."
+
+      - name: body
+        label: Article
+        type: rich-text
+        required: true
+        options:
+          format: markdown
+          media: post-images
+          switcher: true
