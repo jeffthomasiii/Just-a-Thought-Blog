@@ -83,4 +83,3 @@ The next time Samatra says, _“Let me see what they did to Jesus today,”_ I'l
 And maybe that's worth paying attention to.
 
 …just a thought.
-```
