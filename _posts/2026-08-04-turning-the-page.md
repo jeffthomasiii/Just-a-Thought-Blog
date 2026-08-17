@@ -47,7 +47,7 @@ That message reaches one of its clearest expressions near the end of the book. A
 
 > _“Let us run with endurance the race that lies before us, keeping our eyes on Jesus, the pioneer and perfecter of our faith.”_
 >
-> - Hebrews 12:1–2 CSB
+> -- Hebrews 12:1–2 CSB
 
 The call is not simply to understand something about Jesus. It is to continue trusting Him. Hebrews acknowledges that the life of faith can be difficult, costly, and uncertain, but it continues to point the believer back to Christ as the reason to keep going.
 
@@ -63,7 +63,7 @@ James writes:
 
 > _“But be doers of the word and not hearers only, deceiving yourselves.”_
 >
-> - James 1:22 CSB
+> -- James 1:22 CSB
 
 Later, he asks what good it is for someone to claim faith while showing no evidence of mercy, obedience, or love. James is not dismissing faith or replacing it with human effort. He is examining the kind of faith that remains disconnected from the way a person lives.
 
