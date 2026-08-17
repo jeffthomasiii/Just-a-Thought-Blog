@@ -30,7 +30,14 @@
       "scripture": {{ page.scripture | default: '' | jsonify }}
     }
   </script>
+  {% endif %}
+
+  {% if page.layout == 'post' or page.layout == 'home' %}
   <script src="{{ '/assets/js/reader-profile.js' | relative_url }}"></script>
+  {% endif %}
+
+  {% if page.layout == 'home' %}
+  <script src="{{ '/assets/js/scripture-recommender.js' | relative_url }}"></script>
   {% endif %}
 
 </body>
