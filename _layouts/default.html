@@ -19,6 +19,20 @@
 
   {% include google-analytics.html %}
 
+  {% if page.layout == 'post' %}
+  <script id="jat-reader-page-data" type="application/json">
+    {
+      "url": {{ page.url | relative_url | jsonify }},
+      "title": {{ page.title | jsonify }},
+      "categories": {{ page.categories | jsonify }},
+      "tags": {{ page.tags | jsonify }},
+      "collections": {{ page.collections | jsonify }},
+      "scripture": {{ page.scripture | default: '' | jsonify }}
+    }
+  </script>
+  <script src="{{ '/assets/js/reader-profile.js' | relative_url }}"></script>
+  {% endif %}
+
 </body>
 
 </html>
