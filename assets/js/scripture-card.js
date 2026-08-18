@@ -62,11 +62,11 @@
   }
 
   function render(recommendation, passage) {
-    var card = document.querySelector('[data-jat-scripture-card]');
+    var card = document.querySelector('.jat-scripture-card');
     if (!card) return;
 
-    var text = card.querySelector('[data-jat-scripture-text]');
-    var cite = card.querySelector('[data-jat-scripture-reference]');
+    var text = card.querySelector('blockquote p');
+    var cite = card.querySelector('blockquote cite');
     if (!text || !cite) return;
 
     text.textContent = excerpt(passage.text);
@@ -78,7 +78,7 @@
   }
 
   function init() {
-    var card = document.querySelector('[data-jat-scripture-card]');
+    var card = document.querySelector('.jat-scripture-card');
     if (!card || !window.JATScriptureRecommender) return;
 
     window.JATScriptureRecommender.recommendFromSite()
