@@ -12,12 +12,37 @@
   {{ content }}
 
   <link rel="stylesheet" href="{{ '/assets/css/jat-dark-pages.css' | relative_url }}">
+  {% if page.layout == 'home' %}
+  <link rel="stylesheet" href="{{ '/assets/css/scripture-card-personalization.css' | relative_url }}">
+  {% endif %}
 
   {% include footer.html %}
 
   {% include scripts.html %}
 
   {% include google-analytics.html %}
+
+  {% if page.layout == 'post' %}
+  <script id="jat-reader-page-data" type="application/json">
+    {
+      "url": {{ page.url | relative_url | jsonify }},
+      "title": {{ page.title | jsonify }},
+      "categories": {{ page.categories | jsonify }},
+      "tags": {{ page.tags | jsonify }},
+      "collections": {{ page.collections | jsonify }},
+      "scripture": {{ page.scripture | default: '' | jsonify }}
+    }
+  </script>
+  {% endif %}
+
+  {% if page.layout == 'post' or page.layout == 'home' %}
+  <script src="{{ '/assets/js/reader-profile.js' | relative_url }}"></script>
+  {% endif %}
+
+  {% if page.layout == 'home' %}
+  <script src="{{ '/assets/js/scripture-recommender.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/scripture-card.js' | relative_url }}"></script>
+  {% endif %}
 
 </body>
 
