@@ -1,0 +1,16 @@
+.jat-scripture-card blockquote p {
+  font-size: clamp(1.4rem, 2.1vw, 1.8rem);
+  line-height: 1.28;
+}
+
+.jat-scripture-card cite {
+  margin-top: 0.85rem;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+@media (max-width: 767.98px) {
+  .jat-scripture-card blockquote p {
+    font-size: clamp(1.35rem, 5.2vw, 1.65rem);
+  }
+}
