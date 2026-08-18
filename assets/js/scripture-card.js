@@ -3,7 +3,8 @@
 
   var CACHE_KEY = 'jat-scriptureTextCacheV1';
   var API_BASE = 'https://bible-api.com/';
-  var TRANSLATION = 'web';
+  var TRANSLATION = 'kjv';
+  var TRANSLATION_LABEL = 'KJV';
   var MAX_WORDS = 34;
 
   function readCache() {
@@ -53,7 +54,7 @@
           reference: payload.reference || reference,
           text: cleanText(payload.text),
           translationId: payload.translation_id || TRANSLATION,
-          translationName: payload.translation_name || 'World English Bible'
+          translationName: payload.translation_name || 'King James Version'
         };
         cache[cacheId] = resolved;
         writeCache(cache);
@@ -70,11 +71,11 @@
     if (!text || !cite) return;
 
     text.textContent = excerpt(passage.text);
-    cite.textContent = passage.reference || recommendation.reference;
+    cite.textContent = (passage.reference || recommendation.reference) + ' · ' + TRANSLATION_LABEL;
 
     card.setAttribute('data-jat-scripture-article', recommendation.article.url || '');
     card.setAttribute('data-jat-scripture-article-title', recommendation.article.title || '');
-    card.setAttribute('data-jat-scripture-translation', passage.translationName || '');
+    card.setAttribute('data-jat-scripture-translation', passage.translationName || 'King James Version');
   }
 
   function init() {
