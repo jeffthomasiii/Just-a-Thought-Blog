@@ -4,7 +4,13 @@
   var INDEX_URL = '/assets/data/scripture-index.json';
 
   function list(value) {
-    return Array.isArray(value) ? value : [];
+    if (Array.isArray(value)) return value.filter(Boolean);
+    if (typeof value === 'string' && value.trim()) return [value.trim()];
+    return [];
+  }
+
+  function scriptureList(candidate) {
+    return list(candidate && candidate.scripture);
   }
 
   function scoreMapMatch(values, scoreMap, multiplier) {
@@ -39,7 +45,8 @@
       score *= 0.72;
     }
 
-    if (candidate.scripture && affinity.scriptures && affinity.scriptures[candidate.scripture]) {
+    var refs = scriptureList(candidate);
+    if (refs.some(function (ref) { return affinity.scriptures && affinity.scriptures[ref]; })) {
       score *= 0.82;
     }
 
@@ -65,6 +72,17 @@
     return top[0];
   }
 
+  function pickReference(candidate, affinity) {
+    var refs = scriptureList(candidate);
+    if (!refs.length) return null;
+
+    var unseen = refs.filter(function (ref) {
+      return !(affinity.scriptures && affinity.scriptures[ref]);
+    });
+    var pool = unseen.length ? unseen : refs;
+    return pool[Math.floor(Math.random() * pool.length)];
+  }
+
   function recommend(candidates) {
     if (!Array.isArray(candidates) || !candidates.length) return null;
 
@@ -74,7 +92,7 @@
       : { categories: {}, collections: {}, tags: {}, articles: {}, scriptures: {} };
 
     var scored = candidates
-      .filter(function (candidate) { return candidate && candidate.scripture && candidate.url; })
+      .filter(function (candidate) { return candidate && scriptureList(candidate).length && candidate.url; })
       .map(function (candidate) {
         return {
           candidate: candidate,
@@ -83,10 +101,13 @@
       });
 
     var picked = weightedPick(scored);
-    return picked ? {
+    if (!picked) return null;
+
+    return {
       article: picked.candidate,
+      reference: pickReference(picked.candidate, affinity),
       score: picked.score
-    } : null;
+    };
   }
 
   function loadCandidates() {
