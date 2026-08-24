@@ -7,6 +7,39 @@ body_class: jat-projects-page
 permalink: /projects/
 ---
 
+<style>
+  .jat-project-card--bluegreen {
+    grid-template-columns: minmax(360px, 0.92fr) minmax(0, 1.08fr);
+  }
+
+  .jat-project-visual--showcase {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .jat-project-visual--showcase .jat-project-showcase-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @media (max-width: 1099.98px) {
+    .jat-project-card--bluegreen {
+      grid-template-columns: minmax(300px, 0.88fr) minmax(0, 1.12fr);
+    }
+  }
+
+  @media (max-width: 899.98px) {
+    .jat-project-card--bluegreen {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
 <header class="jat-projects-hero jat-page-shell">
   <div class="jat-page-frame">
     <div class="jat-projects-hero-inner jat-panel">
