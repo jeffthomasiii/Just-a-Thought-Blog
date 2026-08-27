@@ -29,7 +29,7 @@ Approaching the same beach with equipment changed the questions almost immediate
 
 The parking was paid and extremely limited. There was virtually nowhere convenient to stage equipment. And despite all the times we had been there and all the paddleboarders and kayakers we had seen on the water, I still did not know where those people were actually getting in. None of that meant the beach was inaccessible, but it did make something clear to me: knowing that people paddle somewhere is not the same thing as knowing how to paddle there.
 
-> _"Knowing that people paddle somewhere is not the same thing as knowing how to paddle there."_
+> _Knowing that people paddle somewhere is not the same thing as knowing how to paddle there._
 
 That distinction stayed with me because there was no real shortage of information about the location. I could find the beach on a map, get directions, look through photos, read reviews, and find websites telling me what was there. If the question was simply, “Where is this place?” the internet had already answered it pretty well. The problem was that this was no longer the question we were actually asking.
 
