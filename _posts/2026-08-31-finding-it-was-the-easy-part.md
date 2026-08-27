@@ -59,7 +59,7 @@ That becomes even more important when the information touches safety. I do not w
 
 Thinking about usefulness, accuracy, and safety together has also shaped how I look at the current alpha test. The first version does not include every outdoor location in California, Arizona, and Nevada, and at this stage I do not think it needs to. I have been intentionally working with a curated set of locations because I am much more interested in whether the information actually helps someone than whether I can make the map look full.
 
-I could fill the map with locations, but at this stage that would not tell me whether the idea actually works. I would learn more from a smaller group of places if testers tell me the information helped them understand where to go, what to expect, avoid an unpleasant surprise, or decide whether a location fit what they wanted to do.
+I could fill the map with locations, but at this stage that would not tell me whether the idea actually works. I would learn more from a smaller group of places if testers tell me the information helped them understand where to go and what to expect, avoid an unpleasant surprise, or decide whether a location fit what they wanted to do.
 
 That brings me back to why I started building BlueGreen Guide in the first place. Samatra and I were simply trying to figure out where we could go paddleboarding and kayaking together. There was no business plan behind that moment, and I was not looking for an app idea or trying to identify some underserved market. We wanted to get outside, and I became frustrated by the gap between the amount of information available and the amount of information that actually helped us decide where to go.
 
