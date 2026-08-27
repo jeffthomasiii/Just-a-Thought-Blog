@@ -29,6 +29,8 @@ Approaching the same beach with equipment changed the questions almost immediate
 
 The parking was paid and extremely limited. There was virtually nowhere convenient to stage equipment. And despite all the times we had been there and all the paddleboarders and kayakers we had seen on the water, I still did not know where those people were actually getting in. None of that meant the beach was inaccessible, but it did make something clear to me: knowing that people paddle somewhere is not the same thing as knowing how to paddle there.
 
+<!-- PULL QUOTE: "Knowing that people paddle somewhere is not the same thing as knowing how to paddle there." -->
+
 That distinction stayed with me because there was no real shortage of information about the location. I could find the beach on a map, get directions, look through photos, read reviews, and find websites telling me what was there. If the question was simply, “Where is this place?” the internet had already answered it pretty well. The problem was that this was no longer the question we were actually asking.
 
 What we needed to know was whether the place would work for what we were trying to do. Where should we park? How much would it cost? Was there somewhere to unload and stage equipment? How far would we have to carry everything? Where was the actual launch point? Were there restrooms nearby? Was this somewhere we should drive an hour to visit, or would we arrive only to discover that it did not really work for us?
@@ -44,6 +46,8 @@ A map pin may tell you where a location is, but it may not tell you whether park
 That realization is part of why the project became BlueGreen Guide rather than something tied permanently to paddling. The original problem happened on the water, but the broader idea became about outdoor discovery across both blue spaces and green spaces. The more I thought about it, the more I realized that what I was really trying to solve was the information gap between discovering a place and feeling prepared enough to actually use it.
 
 A lot of my professional work already involves thinking about information, technology, systems, and how people actually use them, so in some ways BlueGreen Guide overlaps with the way I already think. But working on it has made the question feel much more practical and personal. I am not trying to organize information simply because it can be organized. I am trying to figure out which information actually helps somebody decide where to go and what they need to know before they get there.
+
+<!-- PULL QUOTE: "I am trying to figure out which information actually helps somebody decide where to go and what they need to know before they get there." -->
 
 That sounds simple until you start deciding what belongs in the guide. It would be easy to keep adding locations, fields, features, and data because all of that makes the guide look more comprehensive. While building it, though, I have had to keep asking whether adding more information actually makes it more useful.
 
