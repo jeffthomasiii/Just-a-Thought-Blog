@@ -9,6 +9,9 @@ on:
     # Rebuild shortly after midnight Pacific time so future-dated posts publish automatically.
     - cron: "17 0 * * *"
       timezone: "America/Los_Angeles"
+    # Fallback rebuild in case the first scheduled run is delayed or skipped.
+    - cron: "17 1 * * *"
+      timezone: "America/Los_Angeles"
 
 permissions:
   contents: read
