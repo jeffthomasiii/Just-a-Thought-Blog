@@ -20,18 +20,18 @@
   max-width: none;
   box-sizing: border-box;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-self: stretch;
-  padding: clamp(3rem, 5vw, 4.75rem) clamp(2.75rem, 4.5vw, 4rem);
+  padding: clamp(4.75rem, 7vw, 6.5rem) clamp(2.75rem, 4.5vw, 4rem) clamp(2.75rem, 4vw, 3.75rem);
 }
 
 .jat-working-page .jat-working-hero-copy h1 {
-  max-width: 560px;
+  max-width: 540px;
   margin: 0;
-  font-size: clamp(2.45rem, 3.8vw, 3.65rem);
+  font-size: clamp(2.25rem, 3.35vw, 3.25rem);
   font-weight: 600;
-  letter-spacing: -0.04em;
-  line-height: 1.02;
+  letter-spacing: -0.038em;
+  line-height: 1.03;
 }
 
 .jat-working-page .jat-working-hero-subtitle {
@@ -79,7 +79,7 @@
 
   .jat-working-page .jat-working-hero-copy {
     min-height: 470px;
-    padding: clamp(2.75rem, 5vw, 4rem) clamp(2.25rem, 4vw, 3.5rem);
+    padding: clamp(4rem, 6vw, 5rem) clamp(2.25rem, 4vw, 3.5rem) clamp(2.5rem, 4vw, 3.25rem);
   }
 
   .jat-working-page .jat-working-hero-image,
@@ -96,7 +96,7 @@
 
   .jat-working-page .jat-working-hero-copy {
     min-height: 0;
-    padding: clamp(2.75rem, 7vw, 4rem) clamp(2rem, 6vw, 3.25rem);
+    padding: clamp(3rem, 7vw, 4.25rem) clamp(2rem, 6vw, 3.25rem);
   }
 
   .jat-working-page .jat-working-hero-image {
@@ -112,7 +112,7 @@
 
 @media (max-width: 575.98px) {
   .jat-working-page .jat-working-hero-copy h1 {
-    font-size: clamp(2.35rem, 11vw, 3rem);
+    font-size: clamp(2.2rem, 10vw, 2.8rem);
   }
 
   .jat-working-page .jat-working-hero-image,
