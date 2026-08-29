@@ -108,10 +108,62 @@
     linear-gradient(145deg, #244d42 0%, #173f35 58%, #102f29 100%);
 }
 
+.jat-project-visual--epochlex {
+  background:
+    linear-gradient(rgba(22, 91, 89, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22, 91, 89, 0.055) 1px, transparent 1px),
+    radial-gradient(circle at 18% 18%, rgba(22, 91, 89, 0.12), transparent 34%),
+    #f6f3ec;
+  background-size: 28px 28px, 28px 28px, auto, auto;
+}
+
 .jat-project-visual img {
   width: min(100%, 390px);
   max-height: 235px;
   object-fit: contain;
+}
+
+.jat-epochlex-lockup {
+  display: grid;
+  place-items: center;
+  max-width: 330px;
+  color: #202b32;
+  text-align: center;
+}
+
+.jat-epochlex-mark {
+  display: grid;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 1rem;
+  place-items: center;
+}
+
+.jat-epochlex-mark svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #165b59;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.65;
+}
+
+.jat-epochlex-lockup strong {
+  font-family: var(--jat-font-display);
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.jat-epochlex-lockup small {
+  margin-top: 0.75rem;
+  color: #526068;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
 }
 
 .jat-project-copy {
@@ -221,52 +273,73 @@
 
 .jat-home-project-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.85rem;
 }
 
 .jat-home-project-card {
   display: grid;
-  grid-template-columns: minmax(190px, 0.72fr) minmax(0, 1.28fr);
-  min-height: 310px;
+  grid-template-columns: 1fr;
+  min-height: 390px;
   overflow: hidden;
 }
 
 .jat-home-project-visual {
   display: grid;
+  min-height: 155px;
   place-items: center;
-  padding: 1.5rem;
-  border-right: 1px solid var(--jat-border-subtle);
+  padding: 1.25rem;
+  border-right: 0;
+  border-bottom: 1px solid var(--jat-border-subtle);
 }
 
 .jat-home-project-visual img {
-  width: min(100%, 220px);
-  max-height: 120px;
+  width: min(100%, 195px);
+  max-height: 105px;
   object-fit: contain;
+}
+
+.jat-home-project-visual .jat-epochlex-lockup {
+  max-width: 210px;
+}
+
+.jat-home-project-visual .jat-epochlex-mark {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 0.55rem;
+}
+
+.jat-home-project-visual .jat-epochlex-lockup strong {
+  font-size: 1.9rem;
+}
+
+.jat-home-project-visual .jat-epochlex-lockup small {
+  margin-top: 0.4rem;
+  font-size: 0.56rem;
 }
 
 .jat-home-project-copy {
   display: flex;
   flex-direction: column;
-  padding: 1.75rem;
+  padding: 1.4rem;
 }
 
 .jat-home-project-copy .jat-status-label {
   align-self: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
 }
 
 .jat-home-project-copy h3 {
-  margin: 0 0 0.6rem;
-  font-size: 1.75rem;
+  margin: 0 0 0.55rem;
+  font-size: 1.6rem;
   line-height: 1.05;
 }
 
 .jat-home-project-copy p {
-  margin: 0 0 1.2rem;
+  margin: 0 0 1.1rem;
   color: var(--jat-text-secondary);
-  font-size: 0.94rem;
-  line-height: 1.55;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .jat-home-project-copy .jat-text-link {
@@ -293,6 +366,27 @@ body.dark-mode .jat-project-visual--pawpath {
   background: linear-gradient(145deg, #173f35, #0c2621 100%);
 }
 
+body.dark-mode .jat-project-visual--epochlex {
+  background:
+    linear-gradient(rgba(119, 188, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(119, 188, 184, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 18% 18%, rgba(72, 146, 142, 0.14), transparent 34%),
+    #1d2428;
+  background-size: 28px 28px, 28px 28px, auto, auto;
+}
+
+body.dark-mode .jat-epochlex-lockup {
+  color: #f3efe5;
+}
+
+body.dark-mode .jat-epochlex-mark svg {
+  stroke: #77bcb8;
+}
+
+body.dark-mode .jat-epochlex-lockup small {
+  color: #b5c1c5;
+}
+
 @media (max-width: 1099.98px) {
   .jat-project-card,
   .jat-project-card--reverse {
@@ -301,12 +395,6 @@ body.dark-mode .jat-project-visual--pawpath {
 
   .jat-home-project-card {
     grid-template-columns: 1fr;
-  }
-
-  .jat-home-project-visual {
-    min-height: 185px;
-    border-right: 0;
-    border-bottom: 1px solid var(--jat-border-subtle);
   }
 }
 
@@ -352,6 +440,7 @@ body.dark-mode .jat-project-visual--pawpath {
 
   .jat-home-project-card {
     grid-template-columns: minmax(210px, 0.72fr) minmax(0, 1.28fr);
+    min-height: 310px;
   }
 
   .jat-home-project-visual {
