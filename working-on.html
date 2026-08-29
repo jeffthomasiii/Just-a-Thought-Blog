@@ -15,57 +15,67 @@ permalink: /working-on/
   }
 
   .jat-working-hero {
-    padding: clamp(3.5rem, 7vw, 6rem) 0 clamp(2.75rem, 6vw, 4.5rem);
+    padding: clamp(3rem, 6vw, 5rem) 0 clamp(3rem, 6vw, 4.75rem);
   }
 
-  .jat-working-hero-inner {
-    max-width: 820px;
-    margin: 0 auto;
-    text-align: center;
+  .jat-working-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: center;
   }
 
-  .jat-working-hero h1 {
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
+  .jat-working-hero-copy h1 {
+    max-width: 680px;
   }
 
   .jat-working-hero-lead {
-    max-width: 760px;
-    margin: 1.25rem auto 0;
-    font-size: clamp(1.05rem, 1.7vw, 1.18rem);
+    max-width: 650px;
+    margin-top: 1.25rem;
+    font-size: clamp(1.04rem, 1.55vw, 1.16rem);
     line-height: 1.75;
   }
 
-  .jat-working-updated {
+  .jat-working-meta-line {
     margin-top: 1rem;
+    max-width: 650px;
     color: var(--jat-muted, #7a7468);
-    font-size: 0.88rem;
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+  .jat-working-hero-image {
+    overflow: hidden;
+    border-radius: 18px;
+    min-height: 360px;
+    box-shadow: var(--jat-shadow-soft, 0 14px 38px rgba(37, 40, 34, 0.10));
+  }
+
+  .jat-working-hero-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+    object-position: center;
   }
 
   .jat-working-main {
     padding-bottom: clamp(4rem, 8vw, 7rem);
   }
 
-  .jat-working-intro {
-    max-width: 860px;
-    margin: 0 auto clamp(3rem, 6vw, 4.5rem);
-    padding: clamp(1.5rem, 3vw, 2rem);
-  }
-
-  .jat-working-intro p:last-child {
-    margin-bottom: 0;
-  }
-
   .jat-working-sections {
     display: grid;
-    gap: 1rem;
-    max-width: 1040px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    max-width: 1120px;
     margin: 0 auto;
+    align-items: start;
   }
 
   .jat-working-section {
     overflow: hidden;
+    align-self: start;
   }
 
   .jat-working-section > summary,
@@ -82,33 +92,32 @@ permalink: /working-on/
   .jat-working-section-summary {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: 1.5rem;
-    align-items: center;
-    padding: clamp(1.6rem, 3vw, 2.25rem);
-  }
-
-  .jat-working-section-summary-copy {
-    max-width: 760px;
+    gap: 1.1rem;
+    align-items: start;
+    min-height: 220px;
+    padding: clamp(1.5rem, 2.5vw, 2rem);
   }
 
   .jat-working-section-summary h2 {
-    margin: 0.2rem 0 0.55rem;
+    margin: 0.18rem 0 0.5rem;
+    font-size: clamp(1.55rem, 2.4vw, 2rem);
   }
 
   .jat-working-section-summary p:last-child {
     margin-bottom: 0;
     color: var(--jat-muted, #7a7468);
-    line-height: 1.68;
+    line-height: 1.65;
+    font-size: 0.96rem;
   }
 
   .jat-working-toggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border: 1px solid var(--working-line);
-    font-size: 1.45rem;
+    font-size: 1.3rem;
     line-height: 1;
     color: var(--jat-olive, #4f5d3a);
     transition: transform 180ms ease;
@@ -120,47 +129,46 @@ permalink: /working-on/
   }
 
   .jat-working-section-body {
-    padding: 0 clamp(1.6rem, 3vw, 2.25rem) clamp(1.8rem, 3vw, 2.4rem);
+    padding: 0 clamp(1.5rem, 2.5vw, 2rem) clamp(1.7rem, 2.7vw, 2.15rem);
     border-top: 1px solid var(--working-line);
   }
 
   .jat-working-group-heading {
-    max-width: 760px;
-    padding: 1.8rem 0 1.1rem;
+    padding: 1.55rem 0 1rem;
   }
 
   .jat-working-group-heading h3 {
-    margin: 0.2rem 0 0.45rem;
+    margin: 0.18rem 0 0.4rem;
     font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.35rem;
   }
 
   .jat-working-group-heading p:last-child {
     margin-bottom: 0;
     color: var(--jat-muted, #7a7468);
+    line-height: 1.6;
+    font-size: 0.92rem;
   }
 
   .jat-working-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
   }
 
   .jat-working-card {
-    padding: clamp(1.35rem, 2.4vw, 1.8rem);
-  }
-
-  .jat-working-card--wide {
-    grid-column: 1 / -1;
+    padding: 1.2rem 1.25rem;
   }
 
   .jat-working-card h3,
   .jat-working-card h4 {
-    margin: 0.25rem 0 0.6rem;
+    margin: 0.22rem 0 0.5rem;
     font-family: "Playfair Display", Georgia, serif;
   }
 
   .jat-working-card p {
-    line-height: 1.68;
+    line-height: 1.63;
+    font-size: 0.92rem;
   }
 
   .jat-working-card p:last-child {
@@ -170,27 +178,28 @@ permalink: /working-on/
   .jat-working-state {
     margin: 0;
     color: var(--jat-olive, #4f5d3a);
-    font-size: 0.76rem;
+    font-size: 0.7rem;
     font-weight: 700;
-    letter-spacing: 0.065em;
+    letter-spacing: 0.055em;
     text-transform: uppercase;
   }
 
   .jat-working-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.65rem 1.15rem;
-    margin-top: 1rem;
+    gap: 0.55rem 1rem;
+    margin-top: 0.8rem;
   }
 
   .jat-working-links a {
+    font-size: 0.88rem;
     font-weight: 700;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.2em;
   }
 
   .jat-working-subsection {
-    margin-top: 1.4rem;
+    margin-top: 1.2rem;
     border-top: 1px solid var(--working-line);
     border-bottom: 1px solid var(--working-line);
   }
@@ -198,48 +207,52 @@ permalink: /working-on/
   .jat-working-subsection-summary {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: 1.25rem;
+    gap: 1rem;
     align-items: center;
-    padding: 1.4rem 0;
+    padding: 1.2rem 0;
   }
 
   .jat-working-subsection-summary h3 {
-    margin: 0.2rem 0 0.4rem;
+    margin: 0.18rem 0 0.35rem;
     font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.28rem;
   }
 
   .jat-working-subsection-summary p:last-child {
     margin-bottom: 0;
     color: var(--jat-muted, #7a7468);
+    font-size: 0.9rem;
+    line-height: 1.55;
   }
 
   .jat-working-concept-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0 2rem;
-    padding-bottom: 1rem;
+    grid-template-columns: 1fr;
+    padding-bottom: 0.5rem;
   }
 
   .jat-working-concept {
-    padding: 1.25rem 0 1.4rem;
+    padding: 1rem 0 1.1rem;
     border-top: 1px solid var(--working-line);
   }
 
   .jat-working-concept h4 {
-    margin: 0.2rem 0 0.55rem;
+    margin: 0.18rem 0 0.45rem;
     font-family: "Playfair Display", Georgia, serif;
   }
 
   .jat-working-concept p:last-child {
     margin-bottom: 0;
-    line-height: 1.66;
+    line-height: 1.6;
+    font-size: 0.9rem;
   }
 
   .jat-working-note {
-    margin-top: 1.4rem;
-    padding: 1.35rem 1.5rem;
+    margin-top: 1.2rem;
+    padding: 1.15rem 1.25rem;
     border-left: 3px solid var(--jat-olive, #4f5d3a);
     background: var(--working-soft);
+    font-size: 0.9rem;
   }
 
   .jat-working-note p:last-child {
@@ -257,51 +270,55 @@ permalink: /working-on/
     max-width: 680px;
   }
 
-  @media (max-width: 760px) {
-    .jat-working-section-summary,
-    .jat-working-subsection-summary {
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 0.9rem;
-    }
-
-    .jat-working-grid,
-    .jat-working-concept-list {
+  @media (max-width: 900px) {
+    .jat-working-hero-grid {
       grid-template-columns: 1fr;
     }
 
-    .jat-working-card--wide {
-      grid-column: auto;
+    .jat-working-hero-image,
+    .jat-working-hero-image img {
+      min-height: 320px;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .jat-working-sections {
+      grid-template-columns: 1fr;
+    }
+
+    .jat-working-section-summary {
+      min-height: 0;
     }
 
     .jat-working-toggle {
-      width: 2.2rem;
-      height: 2.2rem;
+      width: 2.05rem;
+      height: 2.05rem;
     }
   }
 </style>
 
 <header class="jat-working-hero jat-page-shell">
-  <div class="jat-page-frame">
-    <div class="jat-working-hero-inner">
+  <div class="jat-page-frame jat-working-hero-grid">
+    <div class="jat-working-hero-copy">
       <p class="jat-kicker">What I’m Working On</p>
       <h1>A running look at what has my attention right now.</h1>
       <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
-      <p class="jat-working-hero-lead">I tend to have several things going at once. Some are far enough along that other people can use them, some are manuscripts slowly moving toward publication, and others are still questions, experiments, or ideas I’m trying to understand well enough to know what they should become.</p>
-      <p class="jat-working-updated">Last updated August 2026</p>
+      <p class="jat-working-hero-lead">I tend to have several things going at once. Some are far enough along that other people can use them, some are manuscripts moving toward publication, and others are still questions, experiments, or ideas I’m trying to understand well enough to know what they should become.</p>
+      <p class="jat-working-meta-line">Last updated August 2026 · This is a selective look at what has my attention right now, not a complete archive of everything I’ve ever started.</p>
+    </div>
+
+    <div class="jat-working-hero-image jat-card-surface">
+      <img src="{{ '/img/pages/what-im-working-on/what-im-working-on-hero.jpg' | relative_url }}" alt="A quiet workspace with a notebook, manuscript pages, Bible, laptop, camera, and soft natural light" loading="eager">
     </div>
   </div>
 </header>
 
 <main class="jat-working-main jat-page-shell">
   <div class="jat-page-frame">
-    <section class="jat-working-intro jat-panel jat-panel--padded jat-panel--parchment" aria-label="About this page">
-      <p>This isn’t a complete archive of everything I’ve ever started, and it isn’t meant to make every idea look like a finished project. It is simply a running look at the things I’m actively writing, building, revising, learning, or trying to understand well enough to know what they should become.</p>
-    </section>
-
     <div class="jat-working-sections">
       <details class="jat-working-section jat-panel" id="writing">
         <summary class="jat-working-section-summary">
-          <div class="jat-working-section-summary-copy">
+          <div>
             <p class="jat-kicker">Writing &amp; Publishing</p>
             <h2>Books, resources, and stories taking shape</h2>
             <p>Some of these have full manuscripts behind them. Others are still early enough that I’m trying to understand the idea before deciding exactly what the finished work should be.</p>
@@ -327,7 +344,7 @@ permalink: /working-on/
               <p><em>Beneath the Silence</em> is a marriage-centered Christian fiction project that uses story to explore some of what can happen between two people when the things underneath a marriage are harder to say than they are to feel. I’m currently rewriting portions of the manuscript while also working through the book design, cover, formatting, and preparation for publication.</p>
             </article>
 
-            <article class="jat-working-card jat-card-surface jat-working-card--wide">
+            <article class="jat-working-card jat-card-surface">
               <p class="jat-working-state">Designing &amp; developing</p>
               <h3>Just A Thought Bible Study Framework</h3>
               <p>The Just A Thought Bible Study Framework is something I’m developing to help people move through Scripture thoughtfully rather than simply collect information from it. The framework is currently being designed around a process of observing what is there, understanding it, interpreting it carefully, and then considering what it means for how we live.</p>
@@ -345,47 +362,13 @@ permalink: /working-on/
             </summary>
 
             <div class="jat-working-concept-list">
-              <article class="jat-working-concept">
-                <p class="jat-working-state">Concept &amp; lived exploration</p>
-                <h4>A Husband Who Prays</h4>
-                <p>This idea is growing out of my own effort to learn how to pray more consistently and meaningfully for my wife and family. I’m less interested in writing a formula for husbands than in documenting what I’m learning as I try to become a husband who actually does this faithfully.</p>
-              </article>
-
-              <article class="jat-working-concept">
-                <p class="jat-working-state">Concept</p>
-                <h4>Lead Like a Husband</h4>
-                <p>A leadership idea focused on what happens when principles of responsibility, service, character, communication, and leadership are brought home into the role of a husband. I’m still working through where leadership principles are genuinely useful in marriage and where marriage requires something different from simply leading an organization or team.</p>
-              </article>
-
-              <article class="jat-working-concept">
-                <p class="jat-working-state">Story &amp; character development</p>
-                <h4>The Distance Between Us</h4>
-                <p>A Christian fiction concept centered on marriage and the distance that can develop between two people who are still sharing a life together. I’m currently developing the characters and the story itself before deciding exactly where it needs to go.</p>
-              </article>
-
-              <article class="jat-working-concept">
-                <p class="jat-working-state">Concept</p>
-                <h4>The Quiet Line: Expression Denied</h4>
-                <p>A speculative fiction project imagining an America where freedom of expression remains constitutionally recognized but is steadily restricted in everyday life by layers of federal, state, and local law. The story would explore what that contradiction does to ordinary people and to a country that still says it protects a right it increasingly prevents people from exercising.</p>
-              </article>
-
-              <article class="jat-working-concept">
-                <p class="jat-working-state">Series concept</p>
-                <h4>A Nation for All: Rebuilding America</h4>
-                <p>A post-war fiction series built around a fractured United States trying to become a nation again after a devastating global conflict. The idea centers less on the war itself than on what happens afterward, as regional and civilian leaders have to decide what should be rebuilt, what should change, and what governing together might look like now.</p>
-              </article>
-
-              <article class="jat-working-concept">
-                <p class="jat-working-state">Short story / novel exploration</p>
-                <h4>The Tesla Paradox</h4>
-                <p><em>The Tesla Paradox</em> began as a human-created story concept developed through AI-generated fiction, and I’m considering whether the short story should become a full novel. Part of the experiment is the creative process itself: what happens when a person brings the idea, direction, judgment, and revision while AI participates materially in creating the story?</p>
-              </article>
-
-              <article class="jat-working-concept">
-                <p class="jat-working-state">Concept &amp; story development</p>
-                <h4>The Last Human Architect</h4>
-                <p>A dystopian fiction concept set in a future where architecture has become entirely AI-generated and the profession of human architect has disappeared. The story follows the daughter of the last human architect as she investigates how that happened and discovers that the apparently better, more efficient built world may contain a problem no one has noticed.</p>
-              </article>
+              <article class="jat-working-concept"><p class="jat-working-state">Concept &amp; lived exploration</p><h4>A Husband Who Prays</h4><p>This idea is growing out of my own effort to learn how to pray more consistently and meaningfully for my wife and family. I’m less interested in writing a formula for husbands than in documenting what I’m learning as I try to become a husband who actually does this faithfully.</p></article>
+              <article class="jat-working-concept"><p class="jat-working-state">Concept</p><h4>Lead Like a Husband</h4><p>A leadership idea focused on what happens when principles of responsibility, service, character, communication, and leadership are brought home into the role of a husband. I’m still working through where leadership principles are genuinely useful in marriage and where marriage requires something different from simply leading an organization or team.</p></article>
+              <article class="jat-working-concept"><p class="jat-working-state">Story &amp; character development</p><h4>The Distance Between Us</h4><p>A Christian fiction concept centered on marriage and the distance that can develop between two people who are still sharing a life together. I’m currently developing the characters and the story itself before deciding exactly where it needs to go.</p></article>
+              <article class="jat-working-concept"><p class="jat-working-state">Concept</p><h4>The Quiet Line: Expression Denied</h4><p>A speculative fiction project imagining an America where freedom of expression remains constitutionally recognized but is steadily restricted in everyday life by layers of federal, state, and local law. The story would explore what that contradiction does to ordinary people and to a country that still says it protects a right it increasingly prevents people from exercising.</p></article>
+              <article class="jat-working-concept"><p class="jat-working-state">Series concept</p><h4>A Nation for All: Rebuilding America</h4><p>A post-war fiction series built around a fractured United States trying to become a nation again after a devastating global conflict. The idea centers less on the war itself than on what happens afterward, as regional and civilian leaders have to decide what should be rebuilt, what should change, and what governing together might look like now.</p></article>
+              <article class="jat-working-concept"><p class="jat-working-state">Short story / novel exploration</p><h4>The Tesla Paradox</h4><p><em>The Tesla Paradox</em> began as a human-created story concept developed through AI-generated fiction, and I’m considering whether the short story should become a full novel. Part of the experiment is the creative process itself: what happens when a person brings the idea, direction, judgment, and revision while AI participates materially in creating the story?</p></article>
+              <article class="jat-working-concept"><p class="jat-working-state">Concept &amp; story development</p><h4>The Last Human Architect</h4><p>A dystopian fiction concept set in a future where architecture has become entirely AI-generated and the profession of human architect has disappeared. The story follows the daughter of the last human architect as she investigates how that happened and discovers that the apparently better, more efficient built world may contain a problem no one has noticed.</p></article>
             </div>
           </details>
         </div>
@@ -393,17 +376,17 @@ permalink: /working-on/
 
       <details class="jat-working-section jat-panel" id="building">
         <summary class="jat-working-section-summary">
-          <div class="jat-working-section-summary-copy">
+          <div>
             <p class="jat-kicker">Building &amp; Experimenting</p>
             <h2>Sometimes the thought becomes a tool.</h2>
-            <p>These projects are at different stages, from things people can use today to private experiments where I’m still trying to understand whether an idea actually solves the problem I think it does.</p>
+            <p>These projects are at different stages, but each started with a problem, a question, or a workflow that made me wonder whether something more useful could be built.</p>
           </div>
           <span class="jat-working-toggle" aria-hidden="true">+</span>
         </summary>
         <div class="jat-working-section-body">
           <div class="jat-working-group-heading">
             <p class="jat-kicker">Public Projects</p>
-            <h3>Things other people can already use or explore</h3>
+            <h3>Things other people can already explore</h3>
           </div>
 
           <div class="jat-working-grid">
@@ -421,11 +404,11 @@ permalink: /working-on/
               <div class="jat-working-links"><a href="https://epochlex.justathoughtblog.org/">Use EpochLex →</a><a href="https://epochlex.justathoughtblog.org/contribute.html">Contribute →</a></div>
             </article>
 
-            <article class="jat-working-card jat-card-surface jat-working-card--wide">
+            <article class="jat-working-card jat-card-surface">
               <p class="jat-working-state">Active proof of concept</p>
               <h3>PawPath</h3>
               <p>PawPath is a pet-care preparedness tool for people traveling with animals, built around a simple question: if something goes wrong away from home, have I already figured out where I would go? The current proof of concept lets someone plan primary and backup veterinary care before a trip and quickly get back to that information if it is actually needed.</p>
-              <div class="jat-working-links"><a href="https://jeffthomasiii.github.io/pawpath/">Open PawPath →</a></div>
+              <div class="jat-working-links"><a href="https://jeffthomasiii.github.io/pawpath/">Open PawPath →</a><a href="{{ '/projects/' | relative_url }}">Featured project →</a></div>
             </article>
           </div>
 
@@ -433,36 +416,17 @@ permalink: /working-on/
             <summary class="jat-working-subsection-summary">
               <div>
                 <p class="jat-kicker">Private Experiments</p>
-                <h3>Professional and creative tools I’m still testing</h3>
-                <p>These are further along than ideas, but I’m keeping the repositories private while I work through the product direction, usefulness, and what each one should eventually become.</p>
+                <h3>Ideas I’m testing before deciding what they should become</h3>
+                <p>These are working prototypes and professional experiments rather than public products, so the code stays private while the underlying ideas continue to develop.</p>
               </div>
               <span class="jat-working-toggle" aria-hidden="true">+</span>
             </summary>
 
-            <div class="jat-working-grid">
-              <article class="jat-working-card jat-card-surface">
-                <p class="jat-working-state">Private alpha proof of concept</p>
-                <h4>Authorium</h4>
-                <p>Authorium is an experiment in what a writing environment might look like if it remembered the book alongside the writer: characters, scenes, chronology, relationships, themes, plot threads, and the other things that become difficult to hold together across a long manuscript. The current private alpha is focused on proving the writing experience before deciding what a production version should become.</p>
-              </article>
-
-              <article class="jat-working-card jat-card-surface">
-                <p class="jat-working-state">Early architecture &amp; proof of concept</p>
-                <h4>Model Pulse</h4>
-                <p>Model Pulse is an experiment in making Revit model-health information understandable to the people who actually need to act on it, rather than simply producing another technical report. The idea is to translate model-checking results into different views of the same problem depending on who is looking at them.</p>
-              </article>
-
-              <article class="jat-working-card jat-card-surface">
-                <p class="jat-working-state">Working proof of concept</p>
-                <h4>Revit Checkset Builder</h4>
-                <p>Revit Checkset Builder grew out of trying to make a very technical BIM quality-control process start with the information a client actually has rather than asking them to understand the machinery behind it. The current proof of concept takes familiar Excel-based requirements and turns them into a Model Checker checkset that can then be reviewed and tested in Revit.</p>
-              </article>
-
-              <article class="jat-working-card jat-card-surface">
-                <p class="jat-working-state">MVP prototype</p>
-                <h4>AECO Organizational Intelligence Platform</h4>
-                <p>This is an exploration of a problem I keep seeing in architecture, engineering, and construction firms: organizations often have a tremendous amount of knowledge, but it is scattered across standards, project files, training material, workflows, meeting notes, and individual experience. I’m experimenting with whether AI can help make that knowledge easier to find, understand, reuse, and turn into practical guidance without losing where the information came from.</p>
-              </article>
+            <div class="jat-working-concept-list">
+              <article class="jat-working-concept"><p class="jat-working-state">Private alpha proof of concept</p><h4>Authorium</h4><p>Authorium is an experiment in what a writing environment might look like if it remembered the book alongside the writer: characters, scenes, chronology, relationships, themes, plot threads, and the other things that become difficult to hold together across a long manuscript. The current private alpha is focused on proving the writing experience before deciding what a production version should become.</p></article>
+              <article class="jat-working-concept"><p class="jat-working-state">Early architecture &amp; proof of concept</p><h4>Model Pulse</h4><p>Model Pulse is an experiment in making Revit model-health information understandable to the people who actually need to act on it, rather than simply producing another technical report. The idea is to translate model-checking results into different views of the same problem depending on who is looking at them and what decision they need to make.</p></article>
+              <article class="jat-working-concept"><p class="jat-working-state">Working proof of concept</p><h4>Revit Checkset Builder</h4><p>Revit Checkset Builder grew out of trying to make a very technical BIM quality-control process start with the information a client actually has rather than asking them to understand the machinery behind it. The current proof of concept takes familiar Excel-based asset and parameter requirements and turns them into a Model Checker checkset that can then be reviewed and tested in Revit.</p></article>
+              <article class="jat-working-concept"><p class="jat-working-state">MVP prototype</p><h4>AECO Organizational Intelligence Platform</h4><p>This is an exploration of a problem I keep seeing in architecture, engineering, and construction firms: organizations often have a tremendous amount of knowledge, but it is scattered across standards, project files, training material, workflows, meeting notes, and individual experience. I’m experimenting with whether AI can make that knowledge easier to find, understand, reuse, and turn into practical guidance without losing where the information came from.</p></article>
             </div>
           </details>
         </div>
@@ -470,7 +434,7 @@ permalink: /working-on/
 
       <details class="jat-working-section jat-panel" id="learning">
         <summary class="jat-working-section-summary">
-          <div class="jat-working-section-summary-copy">
+          <div>
             <p class="jat-kicker">Learning &amp; Exploring</p>
             <h2>Not everything I’m working on needs to become a product.</h2>
             <p>Some things are worth doing simply because I want to learn them, return to them, or pay closer attention to something I have let sit for too long.</p>
@@ -478,8 +442,8 @@ permalink: /working-on/
           <span class="jat-working-toggle" aria-hidden="true">+</span>
         </summary>
         <div class="jat-working-section-body">
-          <div class="jat-working-grid" style="margin-top: 1.8rem;">
-            <article class="jat-working-card jat-card-surface jat-working-card--wide">
+          <div class="jat-working-grid" style="padding-top:1.5rem;">
+            <article class="jat-working-card jat-card-surface">
               <p class="jat-working-state">Learning again</p>
               <h3>Photography</h3>
               <p>I took a photography class more than thirty years ago and always thought I would eventually find my way back to it. I recently picked up a used Canon Rebel T7i and started relearning photography, not because I’m trying to become a professional photographer, but because I want to learn how to see and capture things well again.</p>
@@ -490,16 +454,16 @@ permalink: /working-on/
 
       <details class="jat-working-section jat-panel" id="ongoing">
         <summary class="jat-working-section-summary">
-          <div class="jat-working-section-summary-copy">
+          <div>
             <p class="jat-kicker">Ongoing</p>
             <h2>And then there is this place.</h2>
-            <p>Just A Thought is not really a project with a finish line. It is where much of the writing, questioning, building, and processing eventually finds a home.</p>
+            <p>Just A Thought is where many of these questions, experiments, writing projects, and ordinary observations eventually meet.</p>
           </div>
           <span class="jat-working-toggle" aria-hidden="true">+</span>
         </summary>
         <div class="jat-working-section-body">
-          <div class="jat-working-grid" style="margin-top: 1.8rem;">
-            <article class="jat-working-card jat-card-surface jat-working-card--wide">
+          <div class="jat-working-grid" style="padding-top:1.5rem;">
+            <article class="jat-working-card jat-card-surface">
               <p class="jat-working-state">Ongoing</p>
               <h3>Just A Thought</h3>
               <p>This site is probably the clearest picture of what I’m working on because it is where a lot of these questions, experiments, writing projects, and ordinary observations eventually meet. I’m continuing to develop it as a place to think publicly about faith, marriage, technology, work, culture, creation, and the things I’m still trying to understand.</p>
