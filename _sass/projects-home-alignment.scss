@@ -1,0 +1,23 @@
+/* =========================================================
+   Homepage project-card alignment refinements
+   ========================================================= */
+
+/* The three-column desktop layout should read as one balanced row.
+   Lock only the visual band so logo proportions cannot change where
+   the copy begins. Tablet and mobile keep their existing adaptive flow. */
+@media (min-width: 900px) {
+  .jat-home-project-grid .jat-home-project-card {
+    grid-template-rows: 155px minmax(0, 1fr);
+  }
+
+  .jat-home-project-grid .jat-home-project-visual {
+    height: 155px;
+    min-height: 155px;
+  }
+}
+
+/* Each project already links to the selected-projects section, so the
+   separate footer action is intentionally removed from the visual flow. */
+.jat-home-projects-footer {
+  display: none;
+}
