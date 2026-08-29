@@ -21,3 +21,46 @@
 .jat-home-projects-footer {
   display: none;
 }
+
+/* EpochLex brand refresh -------------------------------------------------- */
+/* Use the refreshed horizontal logo in the homepage card while preserving
+   the technical grid treatment. The grid now uses EpochLex deep navy rather
+   than the earlier teal treatment. */
+.jat-home-project-visual.jat-project-visual--epochlex {
+  background:
+    url('https://epochlex.justathoughtblog.org/assets/brand/epochlex/epochlex-logo-horizontal-light.png') center / min(78%, 260px) auto no-repeat,
+    linear-gradient(rgba(5, 35, 60, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(5, 35, 60, 0.055) 1px, transparent 1px),
+    radial-gradient(circle at 18% 18%, rgba(5, 35, 60, 0.10), transparent 34%),
+    #f6f3ec;
+  background-size: min(78%, 260px) auto, 28px 28px, 28px 28px, auto, auto;
+}
+
+.jat-home-project-visual.jat-project-visual--epochlex .jat-epochlex-lockup {
+  display: none;
+}
+
+/* On the Featured Projects page, the EpochLex visual uses the supplied
+   device showcase image, matching the showcase treatment used for
+   BlueGreen Guide. */
+.jat-project-card--epochlex .jat-project-visual--epochlex {
+  padding: 0;
+  overflow: hidden;
+  background:
+    url('/img/projects/epochlex/epochlex-dictionary-device-showcase.png') center / cover no-repeat,
+    #f6f3ec;
+}
+
+.jat-project-card--epochlex .jat-project-visual--epochlex .jat-epochlex-lockup {
+  display: none;
+}
+
+body.dark-mode .jat-home-project-visual.jat-project-visual--epochlex {
+  background:
+    url('https://epochlex.justathoughtblog.org/assets/brand/epochlex/epochlex-logo-horizontal-dark.png') center / min(78%, 260px) auto no-repeat,
+    linear-gradient(rgba(119, 153, 185, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(119, 153, 185, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 18% 18%, rgba(119, 153, 185, 0.10), transparent 34%),
+    #1d2428;
+  background-size: min(78%, 260px) auto, 28px 28px, 28px 28px, auto, auto;
+}
