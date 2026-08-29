@@ -9,73 +9,105 @@ permalink: /working-on/
 
 <style>
   .jat-working-page {
-    --working-line: rgba(79, 93, 58, 0.20);
+    --working-line: var(--jat-border-subtle, rgba(79, 93, 58, 0.20));
+    --working-strong: var(--jat-border-strong, rgba(79, 93, 58, 0.34));
     --working-soft: rgba(168, 182, 138, 0.11);
-    --working-parchment: rgba(239, 228, 211, 0.46);
   }
 
   .jat-working-hero {
-    padding: clamp(3rem, 6vw, 5rem) 0 clamp(3rem, 6vw, 4.75rem);
+    padding-bottom: clamp(3rem, 6vw, 5rem);
+    border-bottom: 1px solid var(--working-line);
   }
 
   .jat-working-hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
-    gap: clamp(2rem, 5vw, 4.5rem);
-    align-items: center;
+    grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+    gap: clamp(2rem, 6vw, 5rem);
+    align-items: stretch;
+  }
+
+  .jat-working-hero-copy {
+    align-self: center;
+    max-width: 760px;
+    padding-block: clamp(1rem, 4vw, 3rem);
   }
 
   .jat-working-hero-copy h1 {
     max-width: 680px;
+    margin: 0;
+    font-size: clamp(3.25rem, 7vw, 6rem);
+    font-weight: 600;
+    letter-spacing: -0.055em;
+    line-height: 0.98;
+  }
+
+  .jat-working-hero-subtitle {
+    max-width: 650px;
+    margin: 0 0 0.85rem;
+    color: var(--jat-text-primary);
+    font-family: var(--jat-font-reflective);
+    font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+    line-height: 1.5;
   }
 
   .jat-working-hero-lead {
     max-width: 650px;
-    margin-top: 1.25rem;
-    font-size: clamp(1.04rem, 1.55vw, 1.16rem);
+    margin: 0;
+    color: var(--jat-text-secondary);
+    font-size: 1.04rem;
     line-height: 1.75;
   }
 
   .jat-working-meta-line {
-    margin-top: 1rem;
     max-width: 650px;
-    color: var(--jat-muted, #7a7468);
-    font-size: 0.82rem;
-    line-height: 1.55;
+    margin-top: 1rem;
+    color: var(--jat-text-muted, #7a7468);
+    font-size: 0.78rem;
+    line-height: 1.5;
   }
 
   .jat-working-hero-image {
+    min-height: 520px;
     overflow: hidden;
-    border-radius: 18px;
-    min-height: 360px;
-    box-shadow: var(--jat-shadow-soft, 0 14px 38px rgba(37, 40, 34, 0.10));
+    border: 1px solid var(--working-line);
+    background: var(--jat-surface-emphasis);
   }
 
   .jat-working-hero-image img {
     display: block;
     width: 100%;
     height: 100%;
-    min-height: 360px;
+    min-height: 520px;
     object-fit: cover;
     object-position: center;
+    filter: saturate(0.86) contrast(0.97);
   }
 
   .jat-working-main {
-    padding-bottom: clamp(4rem, 8vw, 7rem);
+    padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(4rem, 8vw, 7rem);
   }
 
   .jat-working-sections {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.25rem;
+    gap: 1rem;
     max-width: 1120px;
     margin: 0 auto;
     align-items: start;
   }
 
   .jat-working-section {
-    overflow: hidden;
+    min-width: 0;
     align-self: start;
+    overflow: hidden;
+    border: 1px solid var(--working-line);
+    background: var(--jat-surface-card);
+    box-shadow: var(--jat-shadow-subtle);
+  }
+
+  .jat-working-section[open] {
+    border-color: var(--working-strong);
+    box-shadow: var(--jat-shadow-card);
   }
 
   .jat-working-section > summary,
@@ -92,116 +124,153 @@ permalink: /working-on/
   .jat-working-section-summary {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: 1.1rem;
-    align-items: start;
-    min-height: 220px;
-    padding: clamp(1.5rem, 2.5vw, 2rem);
+    gap: 1.25rem;
+    align-items: center;
+    min-height: 190px;
+    padding: clamp(1.3rem, 2.5vw, 1.85rem);
   }
 
   .jat-working-section-summary h2 {
-    margin: 0.18rem 0 0.5rem;
-    font-size: clamp(1.55rem, 2.4vw, 2rem);
+    margin: 0.55rem 0 0.45rem;
+    overflow-wrap: anywhere;
+    font-size: clamp(1.55rem, 2.7vw, 2.15rem);
+    font-weight: 600;
+    line-height: 1.12;
   }
 
   .jat-working-section-summary p:last-child {
-    margin-bottom: 0;
-    color: var(--jat-muted, #7a7468);
-    line-height: 1.65;
-    font-size: 0.96rem;
+    margin: 0;
+    color: var(--jat-text-secondary);
+    font-size: 0.93rem;
+    line-height: 1.55;
   }
 
-  .jat-working-toggle {
+  .jat-working-action {
     display: inline-flex;
+    gap: 0.55rem;
     align-items: center;
-    justify-content: center;
-    width: 2.2rem;
-    height: 2.2rem;
-    border: 1px solid var(--working-line);
-    font-size: 1.3rem;
-    line-height: 1;
-    color: var(--jat-olive, #4f5d3a);
-    transition: transform 180ms ease;
+    color: var(--jat-action-primary);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
-  .jat-working-section[open] > summary .jat-working-toggle,
-  .jat-working-subsection[open] > summary .jat-working-toggle {
-    transform: rotate(45deg);
+  .jat-working-action i {
+    position: relative;
+    width: 1.8rem;
+    height: 1.8rem;
+    flex: 0 0 1.8rem;
+    border: 1px solid var(--working-strong);
+    border-radius: 50%;
+  }
+
+  .jat-working-action i::before,
+  .jat-working-action i::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.65rem;
+    height: 1px;
+    background: currentColor;
+    content: '';
+    transform: translate(-50%, -50%);
+  }
+
+  .jat-working-action i::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition: transform 160ms ease;
+  }
+
+  .jat-working-close-label,
+  .jat-working-section[open] > summary .jat-working-open-label,
+  .jat-working-subsection[open] > summary .jat-working-open-label {
+    display: none;
+  }
+
+  .jat-working-section[open] > summary .jat-working-close-label,
+  .jat-working-subsection[open] > summary .jat-working-close-label {
+    display: inline;
+  }
+
+  .jat-working-section[open] > summary .jat-working-action i::after,
+  .jat-working-subsection[open] > summary .jat-working-action i::after {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
 
   .jat-working-section-body {
-    padding: 0 clamp(1.5rem, 2.5vw, 2rem) clamp(1.7rem, 2.7vw, 2.15rem);
+    padding: 0 clamp(1.3rem, 2.5vw, 1.85rem) clamp(1rem, 2vw, 1.5rem);
     border-top: 1px solid var(--working-line);
   }
 
   .jat-working-group-heading {
-    padding: 1.55rem 0 1rem;
+    padding: 1.5rem 0 1rem;
   }
 
   .jat-working-group-heading h3 {
-    margin: 0.18rem 0 0.4rem;
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 1.35rem;
+    margin: 0.25rem 0 0.35rem;
+    font-family: var(--jat-font-display);
+    font-size: 1.28rem;
+    font-weight: 600;
   }
 
   .jat-working-group-heading p:last-child {
-    margin-bottom: 0;
-    color: var(--jat-muted, #7a7468);
-    line-height: 1.6;
-    font-size: 0.92rem;
+    margin: 0;
+    color: var(--jat-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.55;
   }
 
   .jat-working-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.85rem;
+    gap: 0.75rem;
   }
 
   .jat-working-card {
-    padding: 1.2rem 1.25rem;
+    padding: 1.15rem 1.2rem;
   }
 
   .jat-working-card h3,
   .jat-working-card h4 {
-    margin: 0.22rem 0 0.5rem;
-    font-family: "Playfair Display", Georgia, serif;
+    margin: 0.2rem 0 0.45rem;
+    font-family: var(--jat-font-display);
+    font-size: 1.22rem;
+    font-weight: 600;
   }
 
   .jat-working-card p {
-    line-height: 1.63;
-    font-size: 0.92rem;
-  }
-
-  .jat-working-card p:last-child {
     margin-bottom: 0;
+    font-size: 0.9rem;
+    line-height: 1.62;
   }
 
   .jat-working-state {
     margin: 0;
-    color: var(--jat-olive, #4f5d3a);
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.055em;
+    color: var(--jat-action-primary);
+    font-size: 0.68rem;
+    font-weight: 750;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
   }
 
   .jat-working-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.55rem 1rem;
-    margin-top: 0.8rem;
+    gap: 0.5rem 1rem;
+    margin-top: 0.75rem;
   }
 
   .jat-working-links a {
-    font-size: 0.88rem;
-    font-weight: 700;
+    font-size: 0.84rem;
+    font-weight: 750;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.2em;
   }
 
   .jat-working-subsection {
-    margin-top: 1.2rem;
+    margin-top: 1rem;
     border-top: 1px solid var(--working-line);
-    border-bottom: 1px solid var(--working-line);
   }
 
   .jat-working-subsection-summary {
@@ -209,50 +278,59 @@ permalink: /working-on/
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 1rem;
     align-items: center;
-    padding: 1.2rem 0;
+    min-height: 135px;
+    padding: 1.15rem 0;
   }
 
   .jat-working-subsection-summary h3 {
-    margin: 0.18rem 0 0.35rem;
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 1.28rem;
+    margin: 0.35rem 0 0.3rem;
+    font-family: var(--jat-font-display);
+    font-size: 1.22rem;
+    font-weight: 600;
   }
 
   .jat-working-subsection-summary p:last-child {
-    margin-bottom: 0;
-    color: var(--jat-muted, #7a7468);
-    font-size: 0.9rem;
-    line-height: 1.55;
+    margin: 0;
+    color: var(--jat-text-secondary);
+    font-size: 0.86rem;
+    line-height: 1.5;
   }
 
   .jat-working-concept-list {
     display: grid;
     grid-template-columns: 1fr;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
+    border-top: 1px solid var(--working-line);
   }
 
   .jat-working-concept {
     padding: 1rem 0 1.1rem;
-    border-top: 1px solid var(--working-line);
+    border-bottom: 1px solid var(--working-line);
+  }
+
+  .jat-working-concept:last-child {
+    border-bottom: 0;
   }
 
   .jat-working-concept h4 {
-    margin: 0.18rem 0 0.45rem;
-    font-family: "Playfair Display", Georgia, serif;
+    margin: 0.2rem 0 0.4rem;
+    font-family: var(--jat-font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
   }
 
   .jat-working-concept p:last-child {
-    margin-bottom: 0;
-    line-height: 1.6;
-    font-size: 0.9rem;
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.58;
   }
 
   .jat-working-note {
-    margin-top: 1.2rem;
-    padding: 1.15rem 1.25rem;
-    border-left: 3px solid var(--jat-olive, #4f5d3a);
+    margin-top: 1rem;
+    padding: 1.05rem 1.15rem;
+    border-left: 3px solid var(--jat-action-primary);
     background: var(--working-soft);
-    font-size: 0.9rem;
+    font-size: 0.88rem;
   }
 
   .jat-working-note p:last-child {
@@ -267,17 +345,42 @@ permalink: /working-on/
   }
 
   .jat-working-closing h2 {
-    max-width: 680px;
+    margin: 0 0 0.8rem;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
   }
 
-  @media (max-width: 900px) {
+  .jat-working-closing p:last-child {
+    color: var(--jat-text-secondary);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 1099.98px) {
     .jat-working-hero-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
+      gap: 2rem;
     }
 
     .jat-working-hero-image,
     .jat-working-hero-image img {
-      min-height: 320px;
+      min-height: 470px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .jat-working-hero-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .jat-working-hero-copy {
+      max-width: none;
+      padding-bottom: 0;
+    }
+
+    .jat-working-hero-image,
+    .jat-working-hero-image img {
+      min-height: 430px;
     }
   }
 
@@ -289,10 +392,22 @@ permalink: /working-on/
     .jat-working-section-summary {
       min-height: 0;
     }
+  }
 
-    .jat-working-toggle {
-      width: 2.05rem;
-      height: 2.05rem;
+  @media (max-width: 575.98px) {
+    .jat-working-hero-image,
+    .jat-working-hero-image img {
+      min-height: 330px;
+    }
+
+    .jat-working-section-summary,
+    .jat-working-subsection-summary {
+      gap: 0.8rem;
+    }
+
+    .jat-working-action .jat-working-open-label,
+    .jat-working-action .jat-working-close-label {
+      display: none !important;
     }
   }
 </style>
@@ -300,14 +415,15 @@ permalink: /working-on/
 <header class="jat-working-hero jat-page-shell">
   <div class="jat-page-frame jat-working-hero-grid">
     <div class="jat-working-hero-copy">
-      <p class="jat-kicker">What I’m Working On</p>
-      <h1>A running look at what has my attention right now.</h1>
+      <p class="jat-kicker">In Progress</p>
+      <h1>What I’m Working On</h1>
       <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❦</span><span></span></div>
+      <p class="jat-working-hero-subtitle">A running look at what has my attention right now.</p>
       <p class="jat-working-hero-lead">I tend to have several things going at once. Some are far enough along that other people can use them, some are manuscripts moving toward publication, and others are still questions, experiments, or ideas I’m trying to understand well enough to know what they should become.</p>
-      <p class="jat-working-meta-line">Last updated August 2026 · This is a selective look at what has my attention right now, not a complete archive of everything I’ve ever started.</p>
+      <p class="jat-working-meta-line">Last updated August 2026 · A selective look, not a complete archive of everything I’ve ever started.</p>
     </div>
 
-    <div class="jat-working-hero-image jat-card-surface">
+    <div class="jat-working-hero-image">
       <img src="{{ '/img/pages/what-im-working-on/what-im-working-on-hero.jpg' | relative_url }}" alt="A quiet workspace with a notebook, manuscript pages, Bible, laptop, camera, and soft natural light" loading="eager">
     </div>
   </div>
@@ -316,19 +432,20 @@ permalink: /working-on/
 <main class="jat-working-main jat-page-shell">
   <div class="jat-page-frame">
     <div class="jat-working-sections">
-      <details class="jat-working-section jat-panel" id="writing">
+      <details class="jat-working-section" id="writing">
         <summary class="jat-working-section-summary">
           <div>
-            <p class="jat-kicker">Writing &amp; Publishing</p>
-            <h2>Books, resources, and stories taking shape</h2>
-            <p>Some of these have full manuscripts behind them. Others are still early enough that I’m trying to understand the idea before deciding exactly what the finished work should be.</p>
+            <p class="jat-kicker">Books &amp; Resources</p>
+            <h2>Writing &amp; Publishing</h2>
+            <p>Books, resources, and stories taking shape at different stages, from full manuscripts to ideas I’m still working through.</p>
           </div>
-          <span class="jat-working-toggle" aria-hidden="true">+</span>
+          <span class="jat-working-action" aria-hidden="true"><span class="jat-working-open-label">Open</span><span class="jat-working-close-label">Close</span><i></i></span>
         </summary>
         <div class="jat-working-section-body">
           <div class="jat-working-group-heading">
             <p class="jat-kicker">Moving Toward Publication</p>
-            <h3>Work that already has something substantial behind it</h3>
+            <h3>Active writing projects</h3>
+            <p>These already have something substantial behind them and are moving through revision, design, or publication preparation.</p>
           </div>
 
           <div class="jat-working-grid">
@@ -354,11 +471,11 @@ permalink: /working-on/
           <details class="jat-working-subsection">
             <summary class="jat-working-subsection-summary">
               <div>
-                <p class="jat-kicker">Ideas I’m Developing</p>
-                <h3>Not every book starts as a book.</h3>
-                <p>These are still questions, story ideas, or experiences I’m actively working through. I’m including them because they have my attention, not because they are promised forthcoming titles.</p>
+                <p class="jat-kicker">Early Stage</p>
+                <h3>Ideas I’m Developing</h3>
+                <p>Not every book starts as a book. These are questions, story ideas, or experiences that have my attention without being promised forthcoming titles.</p>
               </div>
-              <span class="jat-working-toggle" aria-hidden="true">+</span>
+              <span class="jat-working-action" aria-hidden="true"><span class="jat-working-open-label">Open</span><span class="jat-working-close-label">Close</span><i></i></span>
             </summary>
 
             <div class="jat-working-concept-list">
@@ -374,19 +491,20 @@ permalink: /working-on/
         </div>
       </details>
 
-      <details class="jat-working-section jat-panel" id="building">
+      <details class="jat-working-section" id="building">
         <summary class="jat-working-section-summary">
           <div>
-            <p class="jat-kicker">Building &amp; Experimenting</p>
-            <h2>Sometimes the thought becomes a tool.</h2>
-            <p>These projects are at different stages, but each started with a problem, a question, or a workflow that made me wonder whether something more useful could be built.</p>
+            <p class="jat-kicker">Tools &amp; Experiments</p>
+            <h2>Building &amp; Experimenting</h2>
+            <p>Sometimes the thought becomes a tool. These projects started with a problem, question, or workflow that made me wonder whether something more useful could be built.</p>
           </div>
-          <span class="jat-working-toggle" aria-hidden="true">+</span>
+          <span class="jat-working-action" aria-hidden="true"><span class="jat-working-open-label">Open</span><span class="jat-working-close-label">Close</span><i></i></span>
         </summary>
         <div class="jat-working-section-body">
           <div class="jat-working-group-heading">
             <p class="jat-kicker">Public Projects</p>
-            <h3>Things other people can already explore</h3>
+            <h3>Available to explore</h3>
+            <p>These are far enough along that other people can already use, test, or explore them while I continue refining the work.</p>
           </div>
 
           <div class="jat-working-grid">
@@ -415,11 +533,11 @@ permalink: /working-on/
           <details class="jat-working-subsection">
             <summary class="jat-working-subsection-summary">
               <div>
-                <p class="jat-kicker">Private Experiments</p>
-                <h3>Ideas I’m testing before deciding what they should become</h3>
-                <p>These are working prototypes and professional experiments rather than public products, so the code stays private while the underlying ideas continue to develop.</p>
+                <p class="jat-kicker">Behind the Scenes</p>
+                <h3>Private Experiments</h3>
+                <p>Working prototypes and professional experiments I’m testing before deciding what they should become. The code stays private while the ideas continue to develop.</p>
               </div>
-              <span class="jat-working-toggle" aria-hidden="true">+</span>
+              <span class="jat-working-action" aria-hidden="true"><span class="jat-working-open-label">Open</span><span class="jat-working-close-label">Close</span><i></i></span>
             </summary>
 
             <div class="jat-working-concept-list">
@@ -432,17 +550,17 @@ permalink: /working-on/
         </div>
       </details>
 
-      <details class="jat-working-section jat-panel" id="learning">
+      <details class="jat-working-section" id="learning">
         <summary class="jat-working-section-summary">
           <div>
-            <p class="jat-kicker">Learning &amp; Exploring</p>
-            <h2>Not everything I’m working on needs to become a product.</h2>
+            <p class="jat-kicker">Learning Again</p>
+            <h2>Learning &amp; Exploring</h2>
             <p>Some things are worth doing simply because I want to learn them, return to them, or pay closer attention to something I have let sit for too long.</p>
           </div>
-          <span class="jat-working-toggle" aria-hidden="true">+</span>
+          <span class="jat-working-action" aria-hidden="true"><span class="jat-working-open-label">Open</span><span class="jat-working-close-label">Close</span><i></i></span>
         </summary>
         <div class="jat-working-section-body">
-          <div class="jat-working-grid" style="padding-top:1.5rem;">
+          <div class="jat-working-grid" style="padding-top:1.3rem;">
             <article class="jat-working-card jat-card-surface">
               <p class="jat-working-state">Learning again</p>
               <h3>Photography</h3>
@@ -452,17 +570,17 @@ permalink: /working-on/
         </div>
       </details>
 
-      <details class="jat-working-section jat-panel" id="ongoing">
+      <details class="jat-working-section" id="ongoing">
         <summary class="jat-working-section-summary">
           <div>
-            <p class="jat-kicker">Ongoing</p>
-            <h2>And then there is this place.</h2>
+            <p class="jat-kicker">This Place</p>
+            <h2>Ongoing</h2>
             <p>Just A Thought is where many of these questions, experiments, writing projects, and ordinary observations eventually meet.</p>
           </div>
-          <span class="jat-working-toggle" aria-hidden="true">+</span>
+          <span class="jat-working-action" aria-hidden="true"><span class="jat-working-open-label">Open</span><span class="jat-working-close-label">Close</span><i></i></span>
         </summary>
         <div class="jat-working-section-body">
-          <div class="jat-working-grid" style="padding-top:1.5rem;">
+          <div class="jat-working-grid" style="padding-top:1.3rem;">
             <article class="jat-working-card jat-card-surface">
               <p class="jat-working-state">Ongoing</p>
               <h3>Just A Thought</h3>
@@ -476,8 +594,8 @@ permalink: /working-on/
 
     <section class="jat-working-closing">
       <p class="jat-kicker">A Living List</p>
-      <h2>Some of these will grow. Some may change direction.</h2>
-      <p>I expect this page to change because that is part of the point. A concept may become a manuscript, a prototype may become something other people can use, and something I thought I was building may teach me that the better idea is somewhere else. This page is less about keeping score than it is about keeping an honest record of what has my attention.</p>
+      <h2>Still taking shape</h2>
+      <p>I expect this page to change because that is part of the point. A concept may become a manuscript, a prototype may become something other people can use, and something I thought I was building may teach me that the better idea is somewhere else. Some of these will grow, and some may change direction. This page is less about keeping score than it is about keeping an honest record of what has my attention.</p>
     </section>
   </div>
 </main>
