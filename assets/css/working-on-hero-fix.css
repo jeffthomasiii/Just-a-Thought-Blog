@@ -1,0 +1,109 @@
+.jat-working-page .jat-working-hero {
+  padding: clamp(1.25rem, 3vw, 2.5rem) 0 clamp(2.5rem, 5vw, 4rem);
+  border-bottom: 0;
+}
+
+.jat-working-page .jat-working-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(360px, 0.98fr);
+  gap: 0;
+  min-height: 520px;
+  align-items: stretch;
+  overflow: hidden;
+  border: 1px solid var(--jat-border-strong);
+  background: var(--jat-surface-card);
+}
+
+.jat-working-page .jat-working-hero-copy {
+  align-self: center;
+  max-width: none;
+  padding: clamp(2rem, 4.5vw, 4rem);
+}
+
+.jat-working-page .jat-working-hero-copy h1 {
+  max-width: 620px;
+  margin: 0;
+  font-size: clamp(2.8rem, 5vw, 4.45rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.jat-working-page .jat-working-hero-subtitle {
+  max-width: 600px;
+  font-size: clamp(1.18rem, 1.8vw, 1.5rem);
+  line-height: 1.45;
+}
+
+.jat-working-page .jat-working-hero-lead {
+  max-width: 600px;
+  font-size: 0.98rem;
+  line-height: 1.68;
+}
+
+.jat-working-page .jat-working-meta-line {
+  max-width: 600px;
+  font-size: 0.74rem;
+}
+
+.jat-working-page .jat-working-hero-image {
+  min-height: 520px;
+  height: 100%;
+  overflow: hidden;
+  border: 0;
+  border-left: 1px solid var(--jat-border-subtle);
+  background: var(--jat-surface-emphasis);
+}
+
+.jat-working-page .jat-working-hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 1099.98px) {
+  .jat-working-page .jat-working-hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+    min-height: 470px;
+  }
+
+  .jat-working-page .jat-working-hero-image,
+  .jat-working-page .jat-working-hero-image img {
+    min-height: 470px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .jat-working-page .jat-working-hero-grid {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .jat-working-page .jat-working-hero-copy {
+    padding: clamp(2rem, 6vw, 3.25rem);
+  }
+
+  .jat-working-page .jat-working-hero-image {
+    min-height: 390px;
+    border-left: 0;
+    border-top: 1px solid var(--jat-border-subtle);
+  }
+
+  .jat-working-page .jat-working-hero-image img {
+    min-height: 390px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-working-page .jat-working-hero-copy h1 {
+    font-size: clamp(2.55rem, 13vw, 3.5rem);
+  }
+
+  .jat-working-page .jat-working-hero-image,
+  .jat-working-page .jat-working-hero-image img {
+    min-height: 300px;
+  }
+}
