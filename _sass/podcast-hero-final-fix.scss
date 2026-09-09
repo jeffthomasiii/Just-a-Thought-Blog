@@ -34,6 +34,10 @@
     line-height: 0.98 !important;
   }
 
+  .jat-podcast-page .jat-podcast-title-line {
+    display: block;
+  }
+
   .jat-podcast-page .jat-podcast-hero-copy .jat-simple-divider {
     margin: 0.85rem 0 0.75rem !important;
   }
@@ -57,7 +61,7 @@
   }
 
   .jat-podcast-page .jat-podcast-hero-copy .jat-button-row {
-    margin-top: 0.9rem !important;
+    margin-top: auto !important;
   }
 
   .jat-podcast-page .jat-podcast-hero-image {
@@ -79,6 +83,10 @@
   .jat-podcast-page .jat-podcast-hero-copy {
     justify-content: flex-start !important;
     padding: clamp(2.25rem, 6vw, 3.5rem) !important;
+  }
+
+  .jat-podcast-page .jat-podcast-title-line {
+    display: block;
   }
 
   .jat-podcast-page .jat-podcast-hero-copy h1 {
