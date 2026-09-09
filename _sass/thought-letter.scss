@@ -1,31 +1,30 @@
 /* =========================================================
    The Thought Letter — Brevo subscription form
-   Keeps Brevo behavior while aligning the embedded form with
-   the Just A Thought design system and dark mode.
+   Compact footer treatment aligned with the Just A Thought
+   design system while preserving Brevo behavior.
    ========================================================= */
 
-/* Give the newsletter enough room for reCAPTCHA without making
-   the engagement row taller than the surrounding homepage cards. */
-.jat-engagement-row {
-  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.03fr) minmax(340px, 0.75fr);
+/* The homepage engagement row returns to two balanced cards now
+   that the subscription form lives in the global footer. */
+.jat-engagement-row--two {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
 }
 
-.jat-newsletter-card .sib-form {
+.jat-footer-letter .jat-thought-letter-form,
+.jat-footer-letter .sib-form {
   padding: 0 !important;
+  margin: 0 !important;
   background: transparent !important;
   font-family: var(--jat-font-body) !important;
   text-align: left !important;
 }
 
-.jat-newsletter-card .sib-form-container,
-.jat-newsletter-card #sib-form-container,
-.jat-newsletter-card #sib-container {
+.jat-footer-letter .sib-form-container,
+.jat-footer-letter #sib-form-container,
+.jat-footer-letter #sib-container {
   width: 100% !important;
   max-width: none !important;
   margin: 0 !important;
-}
-
-.jat-newsletter-card #sib-container {
   padding: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
@@ -33,149 +32,153 @@
   text-align: left !important;
 }
 
-/* Brevo inserts 8px wrappers around every form block. Remove that
-   spacing here so the compact homepage card remains close to the
-   height of the original placeholder card. */
-.jat-newsletter-card #sib-form > div[style*="padding"] {
-  padding: 0 !important;
-}
-
-.jat-newsletter-card .sib-form-block {
-  padding: 0 !important;
-  color: var(--jat-text-primary) !important;
-  font-family: var(--jat-font-body) !important;
-}
-
-.jat-newsletter-card .sib-form-block p {
+.jat-footer-letter > p {
   margin: 0 0 0.7rem;
-  color: var(--jat-text-secondary) !important;
-  font-family: var(--jat-font-body) !important;
-  font-size: 0.94rem !important;
+  color: var(--jat-text-secondary);
+  font-size: 0.84rem;
   line-height: 1.45;
 }
 
-/* Match the visual scale of the former “A Future Email Edition”
-   heading instead of using Brevo's larger default title size. */
-.jat-newsletter-card #sib-container > form > div:first-child .sib-form-block p {
-  margin: 0 0 0.55rem;
+.jat-footer-letter .sib-form-block {
+  padding: 0 !important;
   color: var(--jat-text-primary) !important;
-  font-family: var(--jat-font-display) !important;
-  font-size: 1.65rem !important;
-  font-weight: 700 !important;
-  line-height: 1.08;
-}
-
-.jat-newsletter-card .entry__label,
-.jat-newsletter-card .entry__specification {
-  color: var(--jat-text-secondary) !important;
   font-family: var(--jat-font-body) !important;
 }
 
-.jat-newsletter-card .entry__label {
-  margin: 0 0 0.3rem;
-  font-size: 0.78rem !important;
+.jat-footer-letter .entry__label {
+  display: block;
+  margin: 0 0 0.28rem;
+  color: var(--jat-text-secondary) !important;
+  font-family: var(--jat-font-body) !important;
+  font-size: 0.72rem !important;
   font-weight: 700 !important;
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
-/* The label already explains the field; Brevo's example-address
-   helper adds height and visual noise in this compact card. */
-.jat-newsletter-card .entry__specification {
-  display: none !important;
-}
-
-.jat-newsletter-card .entry__field,
-.jat-newsletter-card .entry__field input {
+.jat-footer-letter .entry__field,
+.jat-footer-letter .entry__field input {
   width: 100% !important;
+  box-sizing: border-box !important;
 }
 
-.jat-newsletter-card .entry__field input {
-  height: 42px !important;
-  min-height: 42px !important;
-  padding: 0 0.7rem !important;
+.jat-footer-letter .entry__field input {
+  height: 38px !important;
+  min-height: 38px !important;
+  padding: 0 0.65rem !important;
   border: 1px solid var(--jat-border-strong) !important;
   border-radius: var(--jat-radius-control) !important;
   background: var(--jat-surface-card) !important;
   color: var(--jat-text-primary) !important;
   font-family: var(--jat-font-body) !important;
-  font-size: 0.9rem !important;
-  line-height: 42px !important;
-  box-sizing: border-box !important;
+  font-size: 0.82rem !important;
+  line-height: 38px !important;
 }
 
-.jat-newsletter-card .entry__field input::placeholder {
+.jat-footer-letter .entry__field input::placeholder {
   color: var(--jat-text-muted) !important;
   font-family: var(--jat-font-body) !important;
 }
 
-.jat-newsletter-card .sib-input {
-  margin-bottom: 0.7rem;
+.jat-footer-letter .sib-input {
+  margin: 0 0 0.5rem !important;
 }
 
-.jat-newsletter-card .sib-captcha {
-  margin-bottom: 0.65rem;
-  overflow: visible;
+.jat-footer-letter .entry__error {
+  margin: 0.25rem 0 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  font-family: var(--jat-font-body) !important;
+  font-size: 0.7rem !important;
+  line-height: 1.25;
 }
 
-.jat-newsletter-card .g-recaptcha {
-  min-height: 78px;
+.jat-footer-letter .jat-letter-captcha {
+  width: 100%;
+  height: 64px;
+  margin: 0 0 0.45rem !important;
+  overflow: hidden;
 }
 
-.jat-newsletter-card .sib-form-block__button {
-  min-height: 44px !important;
-  height: 44px !important;
-  padding: 0.62rem 1.1rem !important;
+.jat-footer-letter .g-recaptcha {
+  width: 304px;
+  transform: scale(0.78);
+  transform-origin: left top;
+}
+
+.jat-footer-letter .jat-letter-submit {
+  margin: 0 !important;
+}
+
+.jat-footer-letter .sib-form-block__button {
+  min-height: 38px !important;
+  height: 38px !important;
+  padding: 0.58rem 0.9rem !important;
   border: 1px solid var(--jat-action-primary) !important;
   border-radius: var(--jat-radius-control) !important;
   background: var(--jat-action-primary) !important;
   color: #fff !important;
   font-family: var(--jat-font-body) !important;
-  font-size: 0.72rem !important;
+  font-size: 0.68rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.09em;
   line-height: 1 !important;
   text-transform: uppercase;
 }
 
-.jat-newsletter-card .sib-form-block__button:hover,
-.jat-newsletter-card .sib-form-block__button:focus {
+.jat-footer-letter .sib-form-block__button:hover,
+.jat-footer-letter .sib-form-block__button:focus {
   border-color: var(--jat-action-hover) !important;
   background: var(--jat-action-hover) !important;
 }
 
-.jat-newsletter-card .sib-form-message-panel {
-  margin: 0 0 0.65rem !important;
+.jat-footer-letter .jat-letter-message {
+  max-width: none !important;
+  margin: 0 0 0.55rem !important;
+  padding: 0.55rem !important;
   border-radius: var(--jat-radius-control) !important;
   font-family: var(--jat-font-body) !important;
+  font-size: 0.72rem !important;
+  line-height: 1.3;
 }
 
-.jat-newsletter-card .sib-form-message-panel__inner-text {
+.jat-footer-letter .jat-letter-message--error {
+  border: 1px solid #ff4949 !important;
+  background: #ffeded !important;
+  color: #661d1d !important;
+}
+
+.jat-footer-letter .jat-letter-message--success {
+  border: 1px solid #13ce66 !important;
+  background: #e7faf0 !important;
+  color: #085229 !important;
+}
+
+.jat-footer-letter .sib-form-message-panel__inner-text {
   font-family: var(--jat-font-body) !important;
 }
 
-body.dark-mode .jat-newsletter-card .entry__field input {
+body.dark-mode .jat-footer-letter .entry__field input {
   background: var(--jat-surface-card) !important;
   color: var(--jat-text-primary) !important;
 }
 
-body.dark-mode .jat-newsletter-card .entry__field input::placeholder {
+body.dark-mode .jat-footer-letter .entry__field input::placeholder {
   color: var(--jat-text-muted) !important;
 }
 
 @media (max-width: 991.98px) {
-  .jat-engagement-row {
+  .jat-engagement-row--two {
     grid-template-columns: 1fr;
-  }
-
-  .jat-newsletter-card {
-    max-width: none;
   }
 }
 
 @media (max-width: 575.98px) {
-  .jat-newsletter-card .g-recaptcha {
-    transform: scale(0.9);
-    transform-origin: left top;
-    margin-bottom: -8px;
+  .jat-footer-letter .jat-letter-captcha {
+    height: 69px;
+  }
+
+  .jat-footer-letter .g-recaptcha {
+    transform: scale(0.84);
   }
 }
