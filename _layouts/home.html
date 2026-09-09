@@ -106,10 +106,9 @@ layout: default
       <div class="jat-home-projects-footer"><a class="btn jat-btn jat-btn-secondary" href="{{ '/projects/' | relative_url }}">View All Projects</a></div>
     </section>
 
-    <section class="jat-engagement-row">
+    <section class="jat-engagement-row jat-engagement-row--two">
       <aside class="jat-memory-card jat-panel"><p class="jat-kicker">Thought Worth Remembering</p><p>“Sometimes strength isn't standing over someone. Sometimes it's walking faithfully beside them.”</p><div class="jat-signature">...just a thought.</div></aside>
       <aside class="jat-podcast-card jat-panel"><p class="jat-kicker">Podcast Spotlight</p><div class="jat-podcast-grid"><img class="jat-podcast-logo-img" src="{{ '/img/brand/logos/JAT_Podcast_Logo.png' | relative_url }}" alt="Just A Thought — The Podcast logo"><div><h3>Just A Thought — The Podcast</h3><p>Thoughtful conversations are being prepared. Visit the podcast page for the vision behind the show and future updates.</p><a class="btn jat-btn jat-btn-primary" href="{{ '/podcast/' | relative_url }}">Explore the Podcast</a></div></div></aside>
-      <aside class="jat-newsletter-card jat-panel"><p class="jat-kicker">Thought Letter</p><h3>A Future Email Edition</h3><p>The Thought Letter is planned as an occasional reflection delivered by email. No signup is open yet.</p></aside>
     </section>
 
     <section class="jat-recent-section jat-panel"><p class="jat-kicker">Recent Reflections</p><div class="jat-recent-grid">{% for post in recent_posts %}<article class="jat-recent-card jat-card-surface"><h3><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h3>{% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>{% endif %}<a class="jat-text-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">Read More →</a></article>{% endfor %}</div><div class="jat-view-all"><a class="btn jat-btn jat-btn-primary" href="{{ '/posts' | relative_url }}">View All Reflections →</a></div></section>

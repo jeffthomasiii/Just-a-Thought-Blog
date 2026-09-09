@@ -1,0 +1,184 @@
+/* =========================================================
+   The Thought Letter — Brevo subscription form
+   Compact footer treatment aligned with the Just A Thought
+   design system while preserving Brevo behavior.
+   ========================================================= */
+
+/* The homepage engagement row returns to two balanced cards now
+   that the subscription form lives in the global footer. */
+.jat-engagement-row--two {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+}
+
+.jat-footer-letter .jat-thought-letter-form,
+.jat-footer-letter .sib-form {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  font-family: var(--jat-font-body) !important;
+  text-align: left !important;
+}
+
+.jat-footer-letter .sib-form-container,
+.jat-footer-letter #sib-form-container,
+.jat-footer-letter #sib-container {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  text-align: left !important;
+}
+
+.jat-footer-letter > p {
+  margin: 0 0 0.7rem;
+  color: var(--jat-text-secondary);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.jat-footer-letter .sib-form-block {
+  padding: 0 !important;
+  color: var(--jat-text-primary) !important;
+  font-family: var(--jat-font-body) !important;
+}
+
+.jat-footer-letter .entry__label {
+  display: block;
+  margin: 0 0 0.28rem;
+  color: var(--jat-text-secondary) !important;
+  font-family: var(--jat-font-body) !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3;
+}
+
+.jat-footer-letter .entry__field,
+.jat-footer-letter .entry__field input {
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.jat-footer-letter .entry__field input {
+  height: 38px !important;
+  min-height: 38px !important;
+  padding: 0 0.65rem !important;
+  border: 1px solid var(--jat-border-strong) !important;
+  border-radius: var(--jat-radius-control) !important;
+  background: var(--jat-surface-card) !important;
+  color: var(--jat-text-primary) !important;
+  font-family: var(--jat-font-body) !important;
+  font-size: 0.82rem !important;
+  line-height: 38px !important;
+}
+
+.jat-footer-letter .entry__field input::placeholder {
+  color: var(--jat-text-muted) !important;
+  font-family: var(--jat-font-body) !important;
+}
+
+.jat-footer-letter .sib-input {
+  margin: 0 0 0.5rem !important;
+}
+
+.jat-footer-letter .entry__error {
+  margin: 0.25rem 0 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  font-family: var(--jat-font-body) !important;
+  font-size: 0.7rem !important;
+  line-height: 1.25;
+}
+
+.jat-footer-letter .jat-letter-captcha {
+  width: 100%;
+  height: 64px;
+  margin: 0 0 0.2rem !important;
+  overflow: hidden;
+}
+
+.jat-footer-letter .g-recaptcha {
+  width: 304px;
+  transform: scale(0.78);
+  transform-origin: left top;
+}
+
+.jat-footer-letter .jat-letter-submit {
+  margin: 0 !important;
+}
+
+.jat-footer-letter .sib-form-block__button {
+  min-height: 38px !important;
+  height: 38px !important;
+  padding: 0.58rem 0.9rem !important;
+  border: 1px solid var(--jat-action-primary) !important;
+  border-radius: var(--jat-radius-control) !important;
+  background: var(--jat-action-primary) !important;
+  color: #fff !important;
+  font-family: var(--jat-font-body) !important;
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.09em;
+  line-height: 1 !important;
+  text-transform: uppercase;
+}
+
+.jat-footer-letter .sib-form-block__button:hover,
+.jat-footer-letter .sib-form-block__button:focus {
+  border-color: var(--jat-action-hover) !important;
+  background: var(--jat-action-hover) !important;
+}
+
+.jat-footer-letter .jat-letter-message {
+  max-width: none !important;
+  margin: 0 0 0.55rem !important;
+  padding: 0.55rem !important;
+  border-radius: var(--jat-radius-control) !important;
+  font-family: var(--jat-font-body) !important;
+  font-size: 0.72rem !important;
+  line-height: 1.3;
+}
+
+.jat-footer-letter .jat-letter-message--error {
+  border: 1px solid #ff4949 !important;
+  background: #ffeded !important;
+  color: #661d1d !important;
+}
+
+.jat-footer-letter .jat-letter-message--success {
+  border: 1px solid #13ce66 !important;
+  background: #e7faf0 !important;
+  color: #085229 !important;
+}
+
+.jat-footer-letter .sib-form-message-panel__inner-text {
+  font-family: var(--jat-font-body) !important;
+}
+
+body.dark-mode .jat-footer-letter .entry__field input {
+  background: var(--jat-surface-card) !important;
+  color: var(--jat-text-primary) !important;
+}
+
+body.dark-mode .jat-footer-letter .entry__field input::placeholder {
+  color: var(--jat-text-muted) !important;
+}
+
+@media (max-width: 991.98px) {
+  .jat-engagement-row--two {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .jat-footer-letter .jat-letter-captcha {
+    height: 69px;
+  }
+
+  .jat-footer-letter .g-recaptcha {
+    transform: scale(0.84);
+  }
+}
