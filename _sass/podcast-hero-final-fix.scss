@@ -1,0 +1,63 @@
+/* =========================================================
+   Podcast hero final override
+   Loads after shared hero alignment so the podcast hero can grow
+   to fit its longer title and supporting content without clipping.
+   ========================================================= */
+
+@media (min-width: 992px) {
+  .jat-podcast-page .jat-podcast-hero-grid {
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    align-items: stretch !important;
+    overflow: hidden;
+  }
+
+  .jat-podcast-page .jat-podcast-hero-copy {
+    min-height: 0 !important;
+    justify-content: flex-start !important;
+    box-sizing: border-box;
+    padding: 3rem clamp(2.75rem, 4vw, 3.5rem) !important;
+  }
+
+  .jat-podcast-page .jat-podcast-hero-copy .jat-kicker {
+    margin: 0 0 1rem !important;
+  }
+
+  .jat-podcast-page .jat-podcast-hero-copy h1 {
+    max-width: 650px !important;
+    margin: 0 !important;
+    font-size: clamp(3rem, 4vw, 4.15rem) !important;
+    letter-spacing: -0.045em !important;
+    line-height: 1 !important;
+  }
+
+  .jat-podcast-page .jat-podcast-hero-copy .jat-simple-divider {
+    margin: 1.2rem 0 1rem !important;
+  }
+
+  .jat-podcast-page .jat-podcast-hero-image {
+    min-height: 100% !important;
+    height: auto !important;
+    align-self: stretch !important;
+    aspect-ratio: auto !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .jat-podcast-page .jat-podcast-hero-grid {
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  .jat-podcast-page .jat-podcast-hero-copy {
+    justify-content: flex-start !important;
+    padding: clamp(2.25rem, 6vw, 3.5rem) !important;
+  }
+
+  .jat-podcast-page .jat-podcast-hero-copy h1 {
+    font-size: clamp(2.75rem, 9vw, 4rem) !important;
+    line-height: 1.02 !important;
+  }
+}
