@@ -42,10 +42,10 @@
         <a href="{{ '/contact' | relative_url }}">Contact</a>
       </nav>
 
-      <div class="jat-footer-letter">
-        <h4>Thought Letter</h4>
-        <span class="jat-status-label">Planned</span>
-        <p>The Thought Letter is planned as an occasional reflection by email. No signup is open yet.</p>
+      <div class="jat-footer-letter" aria-labelledby="footer-thought-letter-heading">
+        <h4 id="footer-thought-letter-heading">Thought Letter</h4>
+        <p>Occasional reflections on faith, life, relationships, and the things that make me stop and think.</p>
+        {% include thought-letter-form.html %}
       </div>
     </div>
 
