@@ -1,0 +1,138 @@
+/* =========================================================
+   The Thought Letter — Brevo subscription form
+   Keeps Brevo behavior while aligning the embedded form with
+   the Just A Thought design system and dark mode.
+   ========================================================= */
+
+.jat-newsletter-card .sib-form {
+  padding: 0 !important;
+  background: transparent !important;
+  font-family: var(--jat-font-body) !important;
+  text-align: left !important;
+}
+
+.jat-newsletter-card .sib-form-container,
+.jat-newsletter-card #sib-form-container,
+.jat-newsletter-card #sib-container {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.jat-newsletter-card #sib-container {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  text-align: left !important;
+}
+
+.jat-newsletter-card .sib-form-block {
+  padding: 0 !important;
+  color: var(--jat-text-primary) !important;
+  font-family: var(--jat-font-body) !important;
+}
+
+.jat-newsletter-card .sib-form-block p {
+  margin-bottom: 0.9rem;
+  color: var(--jat-text-secondary) !important;
+  font-family: var(--jat-font-body) !important;
+  font-size: 1rem !important;
+  line-height: 1.65;
+}
+
+.jat-newsletter-card #sib-container > form > div:first-child .sib-form-block p {
+  margin-bottom: 0.35rem;
+  color: var(--jat-text-primary) !important;
+  font-family: var(--jat-font-display) !important;
+  font-size: clamp(1.55rem, 2.8vw, 2rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.2;
+}
+
+.jat-newsletter-card .entry__label,
+.jat-newsletter-card .entry__specification {
+  color: var(--jat-text-secondary) !important;
+  font-family: var(--jat-font-body) !important;
+}
+
+.jat-newsletter-card .entry__label {
+  margin-bottom: 0.45rem;
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+}
+
+.jat-newsletter-card .entry__specification {
+  margin-top: 0.35rem;
+  font-size: 0.75rem !important;
+}
+
+.jat-newsletter-card .entry__field,
+.jat-newsletter-card .entry__field input {
+  width: 100% !important;
+}
+
+.jat-newsletter-card .entry__field input {
+  min-height: 46px;
+  padding: 0.7rem 0.8rem !important;
+  border: 1px solid var(--jat-border-strong) !important;
+  border-radius: var(--jat-radius-control) !important;
+  background: var(--jat-surface-card) !important;
+  color: var(--jat-text-primary) !important;
+  font-family: var(--jat-font-body) !important;
+}
+
+.jat-newsletter-card .entry__field input::placeholder {
+  color: var(--jat-text-muted) !important;
+  font-family: var(--jat-font-body) !important;
+}
+
+.jat-newsletter-card .sib-captcha {
+  overflow-x: auto;
+}
+
+.jat-newsletter-card .sib-form-block__button {
+  min-height: 44px !important;
+  padding: 0.78rem 1.4rem !important;
+  border: 1px solid var(--jat-action-primary) !important;
+  border-radius: var(--jat-radius-control) !important;
+  background: var(--jat-action-primary) !important;
+  color: #fff !important;
+  font-family: var(--jat-font-body) !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.jat-newsletter-card .sib-form-block__button:hover,
+.jat-newsletter-card .sib-form-block__button:focus {
+  border-color: var(--jat-action-hover) !important;
+  background: var(--jat-action-hover) !important;
+}
+
+.jat-newsletter-card .sib-form-message-panel {
+  margin: 0 0 1rem !important;
+  border-radius: var(--jat-radius-control) !important;
+  font-family: var(--jat-font-body) !important;
+}
+
+.jat-newsletter-card .sib-form-message-panel__inner-text {
+  font-family: var(--jat-font-body) !important;
+}
+
+body.dark-mode .jat-newsletter-card .entry__field input {
+  background: var(--jat-surface-card) !important;
+  color: var(--jat-text-primary) !important;
+}
+
+body.dark-mode .jat-newsletter-card .entry__field input::placeholder {
+  color: var(--jat-text-muted) !important;
+}
+
+@media (max-width: 575.98px) {
+  .jat-newsletter-card .g-recaptcha {
+    transform: scale(0.9);
+    transform-origin: left top;
+  }
+}
