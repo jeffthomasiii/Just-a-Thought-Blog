@@ -45,6 +45,8 @@
   {% assign website_id = site.url | append: '/#website' %}
   {% assign author_url = site.url | append: '/about/' %}
   {% assign author_id = author_url | append: '#person' %}
+  {% assign article_author_url = page.author_url | default: nil %}
+  {% if article_author == site.author %}{% assign article_author_url = author_url %}{% endif %}
 
   <meta name="description" content="{{ social_description | truncate: 160 | escape }}">
 
@@ -59,7 +61,7 @@
   {% if page.layout == 'post' %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   {% if page.last_modified_at %}<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
-  {% if article_author == site.author %}<meta property="article:author" content="{{ author_url }}">{% endif %}
+  {% if article_author_url %}<meta property="article:author" content="{{ article_author_url | absolute_url }}">{% endif %}
   {% endif %}
 
   <!-- X / Twitter Card -->
@@ -89,8 +91,8 @@
     "author": {
       "@type": "Person",
       "name": {{ article_author | jsonify }}{% if article_author == site.author %},
-      "@id": {{ author_id | jsonify }},
-      "url": {{ author_url | jsonify }}{% endif %}
+      "@id": {{ author_id | jsonify }}{% endif %}{% if article_author_url %},
+      "url": {{ article_author_url | absolute_url | jsonify }}{% endif %}
     },
     "publisher": {
       "@type": "Person",
