@@ -40,14 +40,20 @@
   display: none;
 }
 
-/* On the Featured Projects page, the EpochLex visual uses the supplied
-   device showcase image, matching the showcase treatment used for
-   BlueGreen Guide. */
+/* Featured-project showcase artwork should be treated as complete
+   compositions, not full-bleed photography. Preserve the entire artwork
+   and its device proportions instead of cropping it to fill the column. */
+.jat-project-card--bluegreen .jat-project-showcase-image {
+  object-fit: contain;
+  object-position: center;
+  background: #eef4f4;
+}
+
 .jat-project-card--epochlex .jat-project-visual--epochlex {
   padding: 0;
   overflow: hidden;
   background:
-    url('/img/projects/epochlex/EpochLex Dictionary Device Showcase.png') center / cover no-repeat,
+    url('/img/projects/epochlex/EpochLex Dictionary Device Showcase.png') center / contain no-repeat,
     #f6f3ec;
 }
 
