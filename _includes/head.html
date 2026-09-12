@@ -25,12 +25,19 @@
     }
   </style>
 
-  <title>
-    {% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}
-    {% else %}{{ site.title | escape }}{% endif %}
-  </title>
+  {% assign page_title = page.title | default: nil %}
+  {% assign document_title = site.seo_title | default: site.title %}
+  {% if page_title %}
+    {% assign document_title = page_title | append: ' | ' | append: site.title %}
+  {% endif %}
 
-  {% assign social_title = page.title | default: site.title %}
+  <title>{{ document_title | escape }}</title>
+
+  {% if page_title %}
+    {% assign social_title = page_title %}
+  {% else %}
+    {% assign social_title = site.seo_title | default: site.title %}
+  {% endif %}
   {% assign social_description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 200 %}
   {% assign social_image = page.image | default: '/img/jat-olive-branch.png' %}
   {% assign social_url = page.url | replace:'index.html','' | absolute_url %}
@@ -53,6 +60,43 @@
   <meta name="twitter:image" content="{{ social_image | absolute_url }}">
   <meta name="twitter:image:alt" content="{{ social_title | escape }}">
   {% if site.twitter_username %}<meta name="twitter:creator" content="@{{ site.twitter_username }}">{% endif %}
+
+  <!-- Structured data -->
+  {% if page.layout == 'post' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | jsonify }},
+    "description": {{ social_description | jsonify }},
+    "url": {{ social_url | jsonify }},
+    "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": {{ site.author | jsonify }}
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.url | jsonify }}
+    }
+  }
+  </script>
+  {% else %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "description": {{ site.description | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "publisher": {
+      "@type": "Person",
+      "name": {{ site.author | jsonify }}
+    }
+  }
+  </script>
+  {% endif %}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
