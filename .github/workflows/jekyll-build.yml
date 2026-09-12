@@ -73,6 +73,13 @@ jobs:
           JEKYLL_ENV: production
         run: bundle exec jekyll build --trace
 
+      - name: Verify indexing files
+        run: |
+          test -f _site/sitemap.xml
+          test -f _site/robots.txt
+          grep -Fq "https://justathoughtblog.org/sitemap.xml" _site/robots.txt
+          grep -Fq "https://justathoughtblog.org" _site/sitemap.xml
+
       - name: Upload rendered site files
         uses: actions/upload-artifact@v4
         with:
