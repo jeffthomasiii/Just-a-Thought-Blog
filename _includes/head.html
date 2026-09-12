@@ -39,7 +39,7 @@
     {% assign social_title = site.seo_title | default: site.title %}
   {% endif %}
   {% assign social_description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 200 %}
-  {% assign social_image = page.image | default: '/img/jat-olive-branch.png' %}
+  {% assign social_image = page.image | default: page.background | default: '/img/jat-olive-branch.png' %}
   {% assign social_url = page.url | replace:'index.html','' | absolute_url %}
   {% assign article_author = page.author | default: site.author %}
   {% assign website_id = site.url | append: '/#website' %}
@@ -47,6 +47,8 @@
   {% assign author_id = author_url | append: '#person' %}
   {% assign article_author_url = page.author_url | default: nil %}
   {% if article_author == site.author %}{% assign article_author_url = author_url %}{% endif %}
+  {% assign is_collection_page = false %}
+  {% if page.layout == 'collection' or page.schema_type == 'CollectionPage' %}{% assign is_collection_page = true %}{% endif %}
 
   <meta name="description" content="{{ social_description | truncate: 160 | escape }}">
 
@@ -105,6 +107,54 @@
       "@id": {{ website_id | jsonify }},
       "name": {{ site.title | jsonify }},
       "url": {{ site.url | jsonify }}
+    }
+  }
+  </script>
+  {% elsif is_collection_page %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": {{ social_url | append: '#collectionpage' | jsonify }},
+    "name": {{ social_title | jsonify }},
+    "description": {{ social_description | jsonify }},
+    "url": {{ social_url | jsonify }},
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": {{ website_id | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.url | jsonify }}
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {% if page.layout == 'collection' %}
+          {% assign schema_collection_posts = site.posts | where_exp: "post", "post.collections contains page.collection_key" %}
+          {% for post in schema_collection_posts %}{% unless forloop.first %},{% endunless %}
+          {
+            "@type": "ListItem",
+            "position": {{ forloop.index }},
+            "name": {{ post.title | jsonify }},
+            "url": {{ post.url | absolute_url | jsonify }}
+          }{% endfor %}
+        {% else %}
+          {% assign schema_series_groups = site.posts | group_by: "series" %}
+          {% assign schema_series_position = 0 %}
+          {% for group in schema_series_groups %}
+            {% if group.name and group.name != '' %}
+              {% assign schema_series_position = schema_series_position | plus: 1 %}
+              {% capture schema_series_url %}{{ social_url }}#{{ group.name | slugify }}{% endcapture %}
+              {% if schema_series_position > 1 %},{% endif %}
+          {
+            "@type": "ListItem",
+            "position": {{ schema_series_position }},
+            "name": {{ group.name | jsonify }},
+            "url": {{ schema_series_url | strip | jsonify }}
+          }
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      ]
     }
   }
   </script>
