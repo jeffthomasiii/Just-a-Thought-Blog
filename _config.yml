@@ -1,7 +1,9 @@
-title:              Just A Thought Blog
-email:              jeff.thomas.iii@gmail.com
+title:              Just A Thought
+seo_title:          Just A Thought | Faith, Life, Technology & the Thoughts That Shape Us
 description:        Reflecting on faith, life, and the thoughts that shape us.
 author:             Jeff Thomas III
+lang:               en
+email:              jeff.thomas.iii@gmail.com
 timezone:           America/Los_Angeles
 baseurl:            ""
 url:                "https://justathoughtblog.org"
@@ -10,8 +12,8 @@ url:                "https://justathoughtblog.org"
 twitter_username:   jeffthomasiii
 github_username:    jeffthomasiii
 facebook_username:  
-instagram_username:  jeffthomasiii
-linkedin_username:   jeffthomasiii
+instagram_username: jeffthomasiii
+linkedin_username:  jeffthomasiii
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   G-RC46R5NC79 # out your google-analytics code
