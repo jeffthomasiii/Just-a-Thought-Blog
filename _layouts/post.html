@@ -52,7 +52,7 @@ layout: default
         <span class="subheading">{{ page.subtitle }}</span>
         {% endif %}
         <span class="meta">Posted by
-          <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
+          <a href="{{ '/about/' | relative_url }}">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
           on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=page.content %}
         </span>
       </div>
