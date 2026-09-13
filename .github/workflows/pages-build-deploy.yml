@@ -45,6 +45,10 @@ jobs:
           test -f _site/robots.txt
           grep -Fq "https://justathoughtblog.org/sitemap.xml" _site/robots.txt
           grep -Fq "https://justathoughtblog.org" _site/sitemap.xml
+          ! grep -Fq "https://justathoughtblog.org/docs/" _site/sitemap.xml
+          ! grep -Fq "https://justathoughtblog.org/reference/" _site/sitemap.xml
+          ! grep -Fq "https://justathoughtblog.org/thank-you.html" _site/sitemap.xml
+          grep -Fq '<meta name="robots" content="noindex, follow">' _site/thank-you.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
