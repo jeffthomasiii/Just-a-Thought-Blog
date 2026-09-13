@@ -43,7 +43,7 @@
   {% assign social_url = page.url | replace:'index.html','' | absolute_url %}
   {% assign article_author = page.author | default: site.author %}
   {% assign website_id = site.url | append: '/#website' %}
-  {% assign author_url = site.url | append: '/about/' %}
+  {% assign author_url = site.url | append: '/about.html' %}
   {% assign author_id = author_url | append: '#person' %}
   {% assign article_author_url = page.author_url | default: nil %}
   {% if article_author == site.author %}{% assign article_author_url = author_url %}{% endif %}
