@@ -51,6 +51,7 @@
   {% if page.layout == 'collection' or page.schema_type == 'CollectionPage' %}{% assign is_collection_page = true %}{% endif %}
 
   <meta name="description" content="{{ social_description | truncate: 160 | escape }}">
+  {% if page.robots %}<meta name="robots" content="{{ page.robots | escape }}">{% endif %}
 
   <!-- Open Graph -->
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">

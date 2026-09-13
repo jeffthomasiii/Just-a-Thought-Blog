@@ -18,6 +18,20 @@ linkedin_username:  jeffthomasiii
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   G-RC46R5NC79 # out your google-analytics code
 
+# Keep internal/project documentation publicly reachable without presenting it
+# to search engines as part of the site's indexable content library.
+defaults:
+  - scope:
+      path: "docs"
+    values:
+      sitemap: false
+      robots: "noindex, follow"
+  - scope:
+      path: "reference"
+    values:
+      sitemap: false
+      robots: "noindex, follow"
+
 # Build settings
 markdown:           kramdown
 paginate:           5
