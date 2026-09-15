@@ -1,0 +1,34 @@
+/* Compact Search presentation for the installed app. Desktop/browser search remains unchanged. */
+@media (display-mode: standalone) {
+  .jat-search-hero { margin:0; padding:22px 18px 14px; background:var(--jat-surface-page); }
+  .jat-search-hero-inner { display:block; max-width:720px; margin:0 auto; padding:0; }
+  .jat-search-hero-copy { max-width:none; text-align:left; }
+  .jat-search-hero-copy h1 { margin:3px 0 5px; font-family:var(--jat-font-display); font-size:2rem; line-height:1.05; }
+  .jat-search-hero-copy .jat-simple-divider, .jat-search-hero-actions { display:none; }
+  .jat-search-hero-copy > p:last-child { max-width:34rem; margin:0; color:var(--jat-text-secondary); font-size:.82rem; line-height:1.4; }
+
+  .jat-search-main { max-width:720px; margin:0 auto; padding:0 18px 42px; }
+  .jat-search-panel { margin:0 0 24px; padding:14px; border-radius:8px; }
+  .jat-search-panel-heading { display:block; margin-bottom:10px; }
+  .jat-search-panel-heading h2 { margin:2px 0 0; font-family:var(--jat-font-display); font-size:1.25rem; }
+  .jat-search-panel-heading > p { display:none; }
+  .jat-search-query-field label, .jat-search-field label { font-size:.68rem; }
+  .jat-search-input-wrap input { min-height:44px; font-size:.82rem; }
+  .jat-search-filters { display:grid; grid-template-columns:1fr 1fr; gap:9px; margin-top:10px; }
+  .jat-search-field select { width:100%; min-height:40px; padding:6px 8px; font-size:.74rem; }
+  .jat-search-clear-wrap { grid-column:1 / -1; }
+  .jat-search-clear-wrap .jat-btn { min-height:34px; padding:6px 11px; font-size:.7rem; }
+  .jat-search-guidance { margin:9px 0 0; font-size:.68rem; line-height:1.35; }
+
+  .jat-search-results-section { padding:0; }
+  .jat-search-results-heading { display:flex; align-items:end; justify-content:space-between; gap:12px; margin-bottom:10px; }
+  .jat-search-results-heading h2 { margin:2px 0 0; font-family:var(--jat-font-display); font-size:1.35rem; }
+  .jat-search-meta { margin:0; font-size:.68rem; text-align:right; }
+  .jat-search-state { padding:18px; border-radius:8px; }
+  .jat-search-state h3 { font-size:1.08rem; }
+  .jat-search-state p { font-size:.78rem; }
+  .jat-search-results { padding:0; }
+}
+@media (display-mode: standalone) and (max-width:390px) {
+  .jat-search-hero, .jat-search-main { padding-left:15px; padding-right:15px; }
+}
