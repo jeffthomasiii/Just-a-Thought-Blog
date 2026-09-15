@@ -9,26 +9,29 @@
   .jat-app-explore__hero-image { top: 0; right: 0; bottom: 72px; left: 0; width: 100%; }
   .jat-app-explore__hero-image::before { background: linear-gradient(90deg, rgba(246,241,231,.98) 0%, rgba(246,241,231,.90) 42%, rgba(246,241,231,.24) 78%, rgba(246,241,231,.08) 100%); }
   .jat-app-explore .jat-app-search-card { margin-top: 0; }
-  .jat-listen-page .jat-listen-hero { position: relative; min-height: 245px; margin: 0 !important; padding: 0 !important; overflow: hidden; }
-  .jat-listen-page .jat-listen-hero .jat-board-container { max-width: 720px; min-height: 245px; padding: 0; }
-  .jat-listen-page .jat-listen-hero-grid { position: relative; min-height: 245px; margin: 0; }
-  .jat-listen-page .jat-listen-hero-copy { position: relative; z-index: 2; display: flex; min-height: 245px; max-width: 72%; flex-direction: column; justify-content: flex-end; padding: 30px 18px; }
-  .jat-listen-page .jat-listen-hero-copy h1 { max-width: 290px; margin: 4px 0 8px; font-size: clamp(2rem, 9vw, 3rem); line-height: 1.05; }
-  .jat-listen-page .jat-listen-hero-copy > p:not(.jat-kicker) { max-width: 330px; font-size: .9rem; line-height: 1.45; }
-  .jat-listen-page .jat-listen-hero-image { position: absolute; z-index: 0; inset: 0; min-height: 245px; margin: 0; border-radius: 0; box-shadow: none; }
-  .jat-listen-page .jat-listen-hero-image::after { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(246,241,231,.98) 0%, rgba(246,241,231,.90) 42%, rgba(246,241,231,.24) 78%, rgba(246,241,231,.08) 100%); content: ''; }
+
+  /* Listen has legacy board-hero styles plus an inline light image gradient.
+     These deliberately win the installed-app cascade so Listen matches Home/Explore. */
+  body.jat-listen-page .jat-listen-hero { position: relative; min-height: 245px !important; margin: 0 !important; padding: 0 !important; overflow: hidden; }
+  body.jat-listen-page .jat-listen-hero .jat-board-container { max-width: 720px; min-height: 245px !important; padding: 0 !important; }
+  body.jat-listen-page .jat-listen-hero-grid { position: relative; min-height: 245px !important; margin: 0 !important; }
+  body.jat-listen-page .jat-listen-hero-copy { position: relative; z-index: 2; display: flex; min-height: 245px !important; max-width: 72% !important; flex-direction: column; justify-content: flex-end; padding: 30px 18px !important; }
+  body.jat-listen-page .jat-listen-hero-copy h1 { max-width: 290px !important; margin: 4px 0 8px !important; font-size: clamp(2rem, 9vw, 3rem) !important; line-height: 1.05 !important; }
+  body.jat-listen-page .jat-listen-hero-copy > p:not(.jat-kicker) { max-width: 330px !important; font-size: .9rem !important; line-height: 1.45 !important; }
+  body.jat-listen-page .jat-listen-hero-image { position: absolute !important; z-index: 0; inset: 0 !important; min-height: 245px !important; margin: 0 !important; border-radius: 0 !important; background-image: url('/img/pages/podcast-episode-preview.jpg') !important; background-position: center !important; background-size: cover !important; box-shadow: none !important; }
+  body.jat-listen-page .jat-listen-hero-image::after { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(246,241,231,.98) 0%, rgba(246,241,231,.90) 42%, rgba(246,241,231,.24) 78%, rgba(246,241,231,.08) 100%); content: ''; }
 
   body.dark-mode .jat-app-home__intro::before { background: linear-gradient(90deg, rgba(24,25,20,.97) 0%, rgba(24,25,20,.86) 42%, rgba(24,25,20,.30) 78%, rgba(24,25,20,.12) 100%), url('/img/pages/what-im-working-on-hero.jpg') center/cover no-repeat; }
   body.dark-mode .jat-app-explore__hero-image::before,
-  body.dark-mode .jat-listen-page .jat-listen-hero-image::after { background: linear-gradient(90deg, rgba(24,25,20,.97) 0%, rgba(24,25,20,.86) 42%, rgba(24,25,20,.30) 78%, rgba(24,25,20,.12) 100%); }
+  body.dark-mode.jat-listen-page .jat-listen-hero-image::after { background: linear-gradient(90deg, rgba(24,25,20,.97) 0%, rgba(24,25,20,.86) 42%, rgba(24,25,20,.30) 78%, rgba(24,25,20,.12) 100%) !important; }
   body.dark-mode .jat-app-home__intro h1,
   body.dark-mode .jat-app-explore__hero-copy h1,
-  body.dark-mode .jat-listen-page .jat-listen-hero-copy h1 { color: var(--jat-text-primary); }
+  body.dark-mode.jat-listen-page .jat-listen-hero-copy h1 { color: var(--jat-text-primary) !important; }
   body.dark-mode .jat-app-home__intro > p:last-child,
   body.dark-mode .jat-app-explore__hero-copy > p:last-child,
-  body.dark-mode .jat-listen-page .jat-listen-hero-copy > p:not(.jat-kicker) { color: var(--jat-text-secondary); }
+  body.dark-mode.jat-listen-page .jat-listen-hero-copy > p:not(.jat-kicker) { color: var(--jat-text-secondary) !important; }
 }
 @media (display-mode: standalone) and (max-width:390px) {
   .jat-app-home__intro { margin-inline:-15px; padding-inline:15px; }
-  .jat-listen-page .jat-listen-hero-copy { padding-inline:15px; }
+  body.jat-listen-page .jat-listen-hero-copy { padding-inline:15px !important; }
 }
