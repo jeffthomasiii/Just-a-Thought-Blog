@@ -2,7 +2,7 @@
 layout: null
 permalink: /service-worker.js
 ---
-const CACHE_VERSION = 'jat-pwa-v2';
+const CACHE_VERSION = 'jat-pwa-v3';
 const OFFLINE_URL = '{{ "/offline.html" | relative_url }}';
 const APP_SHELL = [
   '{{ "/" | relative_url }}',
@@ -32,7 +32,6 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
-
   const requestUrl = new URL(event.request.url);
   if (requestUrl.origin !== self.location.origin) return;
 
@@ -52,13 +51,10 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  const isFreshAsset = requestUrl.pathname.endsWith('.css') ||
-    requestUrl.pathname.endsWith('.js') ||
-    requestUrl.pathname.endsWith('.webmanifest');
-
+  const isFreshAsset = requestUrl.pathname.endsWith('.css') || requestUrl.pathname.endsWith('.js') || requestUrl.pathname.endsWith('.webmanifest');
   if (isFreshAsset) {
     event.respondWith(
-      fetch(event.request)
+      fetch(event.request, { cache: 'reload' })
         .then(response => {
           if (response && response.status === 200 && response.type === 'basic') {
             const copy = response.clone();
