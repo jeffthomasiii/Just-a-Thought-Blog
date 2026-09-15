@@ -1,0 +1,64 @@
+/* Shared component rules for iOS home-screen standalone mode. */
+html.jat-ios-standalone .jat-app-header__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--jat-text-primary);
+  font-family: var(--jat-font-display);
+  font-size: 1.08rem;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+html.jat-ios-standalone .jat-app-header__brand img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+html.jat-ios-standalone .jat-app-header__search {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  color: var(--jat-action-primary);
+  text-decoration: none !important;
+}
+
+html.jat-ios-standalone .jat-app-nav__item {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  color: var(--jat-text-muted);
+  font-family: var(--jat-font-body);
+  font-size: 0.66rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none !important;
+}
+
+html.jat-ios-standalone .jat-app-nav__item.is-active {
+  color: var(--jat-action-primary);
+  font-weight: 800;
+}
+
+html.jat-ios-standalone .jat-app-nav__item.is-active::before {
+  position: absolute;
+  top: -6px;
+  width: 24px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--jat-accent-highlight);
+  content: '';
+}
+
+html.jat-ios-standalone body.dark-mode .jat-app-header,
+html.jat-ios-standalone body.dark-mode .jat-app-nav {
+  background: rgba(24, 25, 20, 0.97);
+}

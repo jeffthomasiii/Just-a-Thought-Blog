@@ -1,0 +1,9 @@
+<script>
+  (function () {
+    var standalone = window.matchMedia && window.matchMedia('(display-mode: standalone)').matches;
+    var iosStandalone = window.navigator.standalone === true;
+    if (standalone || iosStandalone) {
+      document.documentElement.classList.add('jat-app-mode');
+    }
+  })();
+</script>

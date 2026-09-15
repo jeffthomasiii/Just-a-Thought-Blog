@@ -1,0 +1,178 @@
+/* Just A Thought — installed PWA shell
+   These rules activate only when the site is running as an installed app. */
+
+.jat-app-header,
+.jat-app-nav {
+  display: none;
+}
+
+@media (display-mode: standalone) {
+  body {
+    padding-top: calc(58px + env(safe-area-inset-top));
+    padding-bottom: calc(72px + env(safe-area-inset-bottom));
+  }
+
+  .jat-site-nav {
+    display: none !important;
+  }
+
+  .jat-app-header {
+    position: fixed;
+    z-index: 1090;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    min-height: calc(58px + env(safe-area-inset-top));
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: calc(8px + env(safe-area-inset-top)) 18px 8px;
+    border-bottom: 1px solid var(--jat-border-subtle);
+    background: rgba(246, 241, 231, 0.97);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .jat-app-header__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--jat-text-primary);
+    font-family: var(--jat-font-display);
+    font-size: 1.08rem;
+    font-weight: 600;
+    text-decoration: none !important;
+  }
+
+  .jat-app-header__brand img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+
+  .jat-app-header__search {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color: var(--jat-action-primary);
+    text-decoration: none !important;
+  }
+
+  .jat-footer {
+    margin-bottom: 0;
+  }
+
+  .jat-app-nav {
+    position: fixed;
+    z-index: 1100;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    min-height: calc(64px + env(safe-area-inset-bottom));
+    padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--jat-border-subtle);
+    background: rgba(246, 241, 231, 0.97);
+    box-shadow: 0 -8px 24px rgba(37, 40, 34, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .jat-app-nav__item {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    min-height: 52px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    border-radius: var(--jat-radius-control);
+    color: var(--jat-text-muted);
+    font-family: var(--jat-font-body);
+    font-size: 0.66rem;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none !important;
+  }
+
+  .jat-app-nav__item i,
+  .jat-app-nav__item svg {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+  }
+
+  .jat-app-nav__item.is-active {
+    color: var(--jat-action-primary);
+    font-weight: 800;
+  }
+
+  .jat-app-nav__item.is-active::before {
+    position: absolute;
+    top: -6px;
+    width: 24px;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--jat-accent-highlight);
+    content: '';
+  }
+
+  .jat-app-nav__item:focus-visible {
+    outline-offset: -2px;
+  }
+
+  body.dark-mode .jat-app-header,
+  body.dark-mode .jat-app-nav {
+    background: rgba(24, 25, 20, 0.97);
+  }
+
+  body.dark-mode .jat-app-nav {
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.24);
+  }
+}
+
+/* iOS home-screen mode does not consistently expose display-mode. */
+@media (max-width: 991.98px) {
+  html.jat-ios-standalone body {
+    padding-top: calc(58px + env(safe-area-inset-top));
+    padding-bottom: calc(72px + env(safe-area-inset-bottom));
+  }
+
+  html.jat-ios-standalone .jat-site-nav {
+    display: none !important;
+  }
+
+  html.jat-ios-standalone .jat-app-header {
+    position: fixed;
+    z-index: 1090;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    min-height: calc(58px + env(safe-area-inset-top));
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: calc(8px + env(safe-area-inset-top)) 18px 8px;
+    border-bottom: 1px solid var(--jat-border-subtle);
+    background: rgba(246, 241, 231, 0.97);
+  }
+
+  html.jat-ios-standalone .jat-app-nav {
+    position: fixed;
+    z-index: 1100;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    min-height: calc(64px + env(safe-area-inset-bottom));
+    padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--jat-border-subtle);
+    background: rgba(246, 241, 231, 0.97);
+    box-shadow: 0 -8px 24px rgba(37, 40, 34, 0.08);
+  }
+}

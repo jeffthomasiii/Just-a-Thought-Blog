@@ -8,12 +8,16 @@
 <body{% if page.page_archetype or page_body_class %} class="{% if page.page_archetype %}jat-archetype-{{ page.page_archetype | escape }}{% endif %}{% if page_body_class %} {{ page_body_class | escape }}{% endif %}"{% endif %}{% if page.page_archetype %} data-page-archetype="{{ page.page_archetype | escape }}"{% endif %}>
 
   {% include navbar.html %}
+  {% include pwa-app-header.html %}
 
   {{ content }}
 
   <link rel="stylesheet" href="{{ '/assets/css/jat-dark-pages.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/pwa-app.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/pwa-app-ios.css' | relative_url }}">
 
   {% include footer.html %}
+  {% include pwa-app-nav.html %}
 
   {% include scripts.html %}
   {% include thought-letter-scripts.html %}
