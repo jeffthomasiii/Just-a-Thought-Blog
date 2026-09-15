@@ -39,7 +39,6 @@ html.jat-app-mode .jat-app-footer { display: block; }
 .jat-app-feature-card__meta span { color: var(--jat-text-muted); }
 .jat-app-feature-card__meta a { color: var(--jat-action-primary); font-weight: 700; text-decoration: none; }
 
-/* Compact installed-app topic grid: all six choices are visible without a horizontal gesture. */
 .jat-app-topic-scroll { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; overflow: visible; padding: 0; }
 .jat-app-topic { display: grid; min-height: 54px; grid-template-columns: 28px minmax(0, 1fr) auto; grid-template-rows: auto auto; column-gap: 8px; align-items: center; padding: 9px 10px; border: 1px solid var(--jat-border-subtle); border-radius: var(--jat-radius-control); background: var(--jat-surface-emphasis); color: var(--jat-text-primary); text-decoration: none !important; }
 .jat-app-topic__icon { display: flex; width: 28px; height: 28px; grid-row: 1 / span 2; align-items: center; justify-content: center; margin: 0; color: var(--jat-action-primary); }
@@ -66,7 +65,6 @@ html.jat-app-mode .jat-app-footer { display: block; }
 .jat-app-home__listen p:not(.jat-kicker) { margin: 0 0 6px; color: var(--jat-text-secondary); font-size: .8rem; line-height: 1.4; }
 .jat-app-home__listen a { color: var(--jat-action-primary); font-size: .78rem; font-weight: 700; text-decoration: none; }
 
-/* Persistent app navigation makes the full website sitemap footer unnecessary in standalone mode. */
 .jat-app-footer { max-width: 720px; margin: 8px auto 0; padding: 0 18px 28px; color: var(--jat-text-primary); }
 .jat-app-footer__letter { padding: 20px 0 22px; border-top: 1px solid var(--jat-border-subtle); border-bottom: 1px solid var(--jat-border-subtle); }
 .jat-app-footer__letter h2 { margin: 3px 0 5px; font-family: var(--jat-font-display); font-size: 1.28rem; }
@@ -78,6 +76,8 @@ html.jat-app-mode .jat-app-footer { display: block; }
 .jat-app-footer__brand > p { margin: 7px 0 12px; color: var(--jat-text-muted); font-size: .74rem; }
 .jat-app-footer__socials { display: flex; justify-content: center; gap: 9px; margin: 0 0 14px; padding: 0; list-style: none; }
 .jat-app-footer__socials a { display: inline-flex; width: 30px; height: 30px; align-items: center; justify-content: center; border-radius: 50%; background: var(--jat-action-primary); color: var(--jat-surface-page); font-size: .75rem; }
+body.dark-mode .jat-app-footer__socials a { border: 1px solid rgba(246,241,231,.28); background: var(--jat-action-primary); color: #181914; }
+body.dark-mode .jat-app-footer__socials a i { color: #181914; }
 .jat-app-footer__links { display: flex; justify-content: center; gap: 7px; align-items: center; font-size: .72rem; }
 .jat-app-footer__links a { color: var(--jat-text-secondary); text-decoration: none; }
 .jat-app-footer__links span { color: var(--jat-text-muted); }
