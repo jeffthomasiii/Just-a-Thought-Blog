@@ -2,7 +2,7 @@
 layout: null
 permalink: /service-worker.js
 ---
-const CACHE_VERSION = 'jat-pwa-v1';
+const CACHE_VERSION = 'jat-pwa-v2';
 const OFFLINE_URL = '{{ "/offline.html" | relative_url }}';
 const APP_SHELL = [
   '{{ "/" | relative_url }}',
@@ -48,6 +48,25 @@ self.addEventListener('fetch', event => {
           const cachedPage = await caches.match(event.request);
           return cachedPage || caches.match(OFFLINE_URL);
         })
+    );
+    return;
+  }
+
+  const isFreshAsset = requestUrl.pathname.endsWith('.css') ||
+    requestUrl.pathname.endsWith('.js') ||
+    requestUrl.pathname.endsWith('.webmanifest');
+
+  if (isFreshAsset) {
+    event.respondWith(
+      fetch(event.request)
+        .then(response => {
+          if (response && response.status === 200 && response.type === 'basic') {
+            const copy = response.clone();
+            caches.open(CACHE_VERSION).then(cache => cache.put(event.request, copy));
+          }
+          return response;
+        })
+        .catch(() => caches.match(event.request))
     );
     return;
   }
