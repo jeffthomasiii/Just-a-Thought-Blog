@@ -6,20 +6,17 @@ permalink: /saved/
 robots: noindex
 ---
 
-<main class="jat-page-shell" id="main-content">
-  <section class="jat-page-section">
-    <div class="jat-container-reading">
-      <div class="jat-panel jat-panel--padded jat-panel--parchment" style="margin: 4rem auto; text-align: center;">
-        <p class="jat-kicker">Saved Thoughts</p>
-        <h1>Your saved reflections will live here.</h1>
-        <div class="jat-simple-divider" style="margin-inline: auto;" aria-hidden="true">
-          <span></span><span class="jat-leaf">❧</span><span></span>
-        </div>
-        <p>Saving reflections is coming in the next stage. This space is now part of the installed app so we can build bookmarking and offline reading into it without creating an account system.</p>
-        <div class="jat-button-row" style="justify-content: center; margin-top: 1.5rem;">
-          <a class="jat-btn jat-btn-primary" href="{{ '/explore/' | relative_url }}">Explore Reflections</a>
-        </div>
-      </div>
-    </div>
+<main class="jat-saved-app" id="main-content">
+  <header class="jat-saved-app__intro">
+    <p class="jat-kicker">Saved Thoughts</p>
+    <h1>Keep a thought close.</h1>
+    <p>Reflections you save stay on this device, so you can return to them without creating an account.</p>
+  </header>
+  <section class="jat-saved-empty" data-jat-saved-empty>
+    <i class="far fa-bookmark" aria-hidden="true"></i>
+    <h2>Nothing saved yet.</h2>
+    <p>When a reflection is worth returning to, tap Save while you are reading it. It will appear here.</p>
+    <a class="jat-btn jat-btn-primary" href="{{ '/explore/' | relative_url }}">Explore Reflections</a>
   </section>
+  <section class="jat-saved-list" data-jat-saved-list aria-live="polite" aria-label="Saved reflections"></section>
 </main>
