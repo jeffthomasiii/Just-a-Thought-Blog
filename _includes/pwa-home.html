@@ -1,0 +1,60 @@
+{% assign app_latest_post = site.posts | first %}
+{% assign app_recent_posts = site.posts | slice: 1, 4 %}
+{% assign app_faith_posts = site.posts | where_exp: "post", "post.collections contains 'faith'" %}
+{% assign app_marriage_posts = site.posts | where_exp: "post", "post.collections contains 'marriage'" %}
+{% assign app_leadership_posts = site.posts | where_exp: "post", "post.collections contains 'leadership'" %}
+{% assign app_technology_posts = site.posts | where_exp: "post", "post.collections contains 'technology'" %}
+{% assign app_culture_posts = site.posts | where_exp: "post", "post.collections contains 'culture'" %}
+{% assign app_creation_posts = site.posts | where_exp: "post", "post.collections contains 'creation'" %}
+
+<main class="jat-app-home" id="app-home-content">
+  <section class="jat-app-home__intro">
+    <p class="jat-kicker">A Reflective Christian Journal</p>
+    <h1>Thoughts worth sitting with.</h1>
+    <p>Faith, relationships, culture, technology, creation, and the ordinary moments that make us stop and think.</p>
+  </section>
+
+  {% if app_latest_post %}
+  {% assign app_latest_image = app_latest_post.image | default: app_latest_post.background %}
+  <section class="jat-app-home__section" aria-labelledby="app-latest-heading">
+    <div class="jat-app-home__section-heading"><p class="jat-kicker">Latest Reflection</p></div>
+    <article class="jat-app-feature-card">
+      {% if app_latest_image %}<a class="jat-app-feature-card__image" href="{{ app_latest_post.url | relative_url }}" style="background-image: url('{{ app_latest_image | relative_url }}');" aria-label="Read {{ app_latest_post.title | escape }}"></a>{% endif %}
+      <div class="jat-app-feature-card__body">
+        {% if app_latest_post.collections and app_latest_post.collections.size > 0 %}<span class="jat-app-eyebrow">{{ app_latest_post.collections | first }}</span>{% endif %}
+        <h2 id="app-latest-heading"><a href="{{ app_latest_post.url | relative_url }}">{{ app_latest_post.title }}</a></h2>
+        {% if app_latest_post.excerpt %}<p>{{ app_latest_post.excerpt | strip_html | truncatewords: 24 }}</p>{% endif %}
+        <div class="jat-app-feature-card__meta"><span>{{ app_latest_post.date | date: "%b %-d, %Y" }}</span><a href="{{ app_latest_post.url | relative_url }}">Read Reflection <span aria-hidden="true">→</span></a></div>
+      </div>
+    </article>
+  </section>
+  {% endif %}
+
+  <section class="jat-app-home__section" aria-labelledby="app-explore-heading">
+    <div class="jat-app-home__section-heading jat-app-home__section-heading--row"><div><p class="jat-kicker">Explore By Topic</p><h2 id="app-explore-heading">Where would you like to begin?</h2></div><a href="{{ '/explore/' | relative_url }}">View all</a></div>
+    <div class="jat-app-topic-scroll" role="list">
+      <a class="jat-app-topic" role="listitem" href="{{ '/collections/faith/' | relative_url }}"><span class="jat-app-topic__icon">{% include collection-icon.html key='faith' %}</span><strong>Faith</strong><small>{{ app_faith_posts | size }} reflections</small></a>
+      <a class="jat-app-topic" role="listitem" href="{{ '/collections/marriage/' | relative_url }}"><span class="jat-app-topic__icon">{% include collection-icon.html key='marriage' %}</span><strong>Marriage</strong><small>{{ app_marriage_posts | size }} reflections</small></a>
+      <a class="jat-app-topic" role="listitem" href="{{ '/collections/leadership/' | relative_url }}"><span class="jat-app-topic__icon">{% include collection-icon.html key='leadership' %}</span><strong>Leadership</strong><small>{{ app_leadership_posts | size }} reflections</small></a>
+      <a class="jat-app-topic" role="listitem" href="{{ '/collections/technology/' | relative_url }}"><span class="jat-app-topic__icon">{% include collection-icon.html key='technology' %}</span><strong>Technology</strong><small>{{ app_technology_posts | size }} reflections</small></a>
+      <a class="jat-app-topic" role="listitem" href="{{ '/collections/culture/' | relative_url }}"><span class="jat-app-topic__icon">{% include collection-icon.html key='culture' %}</span><strong>Culture</strong><small>{{ app_culture_posts | size }} reflections</small></a>
+      <a class="jat-app-topic" role="listitem" href="{{ '/collections/creation/' | relative_url }}"><span class="jat-app-topic__icon">{% include collection-icon.html key='creation' %}</span><strong>Creation</strong><small>{{ app_creation_posts | size }} reflections</small></a>
+    </div>
+  </section>
+
+  {% if app_recent_posts.size > 0 %}
+  <section class="jat-app-home__section" aria-labelledby="app-recent-heading">
+    <div class="jat-app-home__section-heading jat-app-home__section-heading--row"><div><p class="jat-kicker">Recent Reflections</p><h2 id="app-recent-heading">Keep reading.</h2></div><a href="{{ '/posts' | relative_url }}">View all</a></div>
+    <div class="jat-app-recent-list">
+      {% for post in app_recent_posts %}
+      {% assign app_post_image = post.image | default: post.background %}
+      <article class="jat-app-recent-item"><a class="jat-app-recent-item__main" href="{{ post.url | relative_url }}"><div class="jat-app-recent-item__copy">{% if post.collections and post.collections.size > 0 %}<span class="jat-app-eyebrow">{{ post.collections | first }}</span>{% endif %}<h3>{{ post.title }}</h3><span class="jat-app-recent-item__date">{{ post.date | date: "%b %-d, %Y" }}</span></div>{% if app_post_image %}<span class="jat-app-recent-item__image" style="background-image: url('{{ app_post_image | relative_url }}');" aria-hidden="true"></span>{% endif %}</a></article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="jat-app-home__reflection" aria-label="Scripture to sit with"><p class="jat-kicker">Scripture To Sit With</p><blockquote>“Be transformed by the renewing of your mind.”</blockquote><cite>Romans 12:2</cite></section>
+
+  <section class="jat-app-home__listen" aria-labelledby="app-listen-heading"><img src="{{ '/img/brand/logos/JAT_Podcast_Logo.png' | relative_url }}" alt="Just A Thought — The Podcast logo"><div><p class="jat-kicker">Listen</p><h2 id="app-listen-heading">Just A Thought — The Podcast</h2><p>Audio reflections are available now, with thoughtful conversations being prepared for the podcast.</p><a href="{{ '/listen/' | relative_url }}">Listen now <span aria-hidden="true">→</span></a></div></section>
+</main>
