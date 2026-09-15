@@ -9,11 +9,16 @@
   .jat-app-explore__hero-image { top: 0; right: 0; bottom: 72px; left: 0; width: 100%; }
   .jat-app-explore__hero-image::before { background: linear-gradient(90deg, rgba(246,241,231,.98) 0%, rgba(246,241,231,.90) 42%, rgba(246,241,231,.24) 78%, rgba(246,241,231,.08) 100%); }
   .jat-app-explore .jat-app-search-card { margin-top: 0; }
-  .jat-listen-page .jat-listen-hero { position: relative; min-height: 245px; overflow: hidden; }
-  .jat-listen-page .jat-listen-hero .jat-board-container { max-width: 720px; min-height: 245px; }
-  .jat-listen-page .jat-listen-hero-grid { position: relative; min-height: 245px; }
+  .jat-listen-page .jat-listen-hero { position: relative; min-height: 245px; margin: 0 !important; padding: 0 !important; overflow: hidden; }
+  .jat-listen-page .jat-listen-hero .jat-board-container { max-width: 720px; min-height: 245px; padding: 0; }
+  .jat-listen-page .jat-listen-hero-grid { position: relative; min-height: 245px; margin: 0; }
   .jat-listen-page .jat-listen-hero-copy { position: relative; z-index: 2; display: flex; min-height: 245px; max-width: 72%; flex-direction: column; justify-content: flex-end; padding: 30px 18px; }
+  .jat-listen-page .jat-listen-hero-copy h1 { max-width: 290px; margin: 4px 0 8px; font-size: clamp(2rem, 9vw, 3rem); line-height: 1.05; }
+  .jat-listen-page .jat-listen-hero-copy > p:not(.jat-kicker) { max-width: 330px; font-size: .9rem; line-height: 1.45; }
   .jat-listen-page .jat-listen-hero-image { position: absolute; z-index: 0; inset: 0; min-height: 245px; margin: 0; border-radius: 0; box-shadow: none; }
   .jat-listen-page .jat-listen-hero-image::after { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(246,241,231,.98) 0%, rgba(246,241,231,.90) 42%, rgba(246,241,231,.24) 78%, rgba(246,241,231,.08) 100%); content: ''; }
 }
-@media (display-mode: standalone) and (max-width:390px) { .jat-app-home__intro { margin-inline:-15px; padding-inline:15px; } .jat-listen-page .jat-listen-hero-copy { padding-inline:15px; } }
+@media (display-mode: standalone) and (max-width:390px) {
+  .jat-app-home__intro { margin-inline:-15px; padding-inline:15px; }
+  .jat-listen-page .jat-listen-hero-copy { padding-inline:15px; }
+}
