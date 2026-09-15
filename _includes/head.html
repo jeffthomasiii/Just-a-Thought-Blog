@@ -1,7 +1,7 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
   <meta name="baseurl" content="{{ site.baseurl }}">
 
   <script>
@@ -192,6 +192,9 @@
   <link rel="canonical" href="{{ social_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
+  <!-- PWA -->
+  <link rel="manifest" href="{{ '/manifest.webmanifest' | relative_url }}">
+
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/img/favicon-lightbulb-dove.png">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/img/favicon-lightbulb-dove.png">
@@ -199,7 +202,10 @@
   <meta name="theme-color" content="#F6F1E7">
 
   <!-- Social and Mobile Branding -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Just A Thought">
   <meta name="application-name" content="Just A Thought">
+  <meta name="mobile-web-app-capable" content="yes">
 
 </head>
