@@ -61,10 +61,21 @@
     if (!items.length) { root.innerHTML = ''; if (empty) empty.hidden = false; return; } if (empty) empty.hidden = true;
     root.innerHTML = items.map(function (item) {
       var image = item.image ? '<span class="jat-saved-card__image" style="background-image:url(\'' + item.image.replace(/'/g, '%27') + '\')" aria-hidden="true"></span>' : '';
-      var status = item.offline === false ? 'Saved' : 'Available offline';
-      return '<article class="jat-saved-card"><a class="jat-saved-card__link" href="' + item.url + '">' + image + '<span class="jat-saved-card__copy"><small>' + (item.date || 'Saved reflection') + '</small><strong>' + item.title + '</strong>' + (item.subtitle ? '<span>' + item.subtitle + '</span>' : '') + '<em class="jat-saved-card__offline"><i class="fas fa-check-circle" aria-hidden="true"></i> ' + status + '</em></span></a><button class="jat-saved-card__remove" type="button" data-remove-url="' + item.url + '" aria-label="Remove ' + item.title.replace(/"/g, '&quot;') + ' from Saved Thoughts"><i class="fas fa-bookmark" aria-hidden="true"></i></button></article>';
+      var status = item.offline === true ? 'Available offline' : 'Saved';
+      var icon = item.offline === true ? 'fa-check-circle' : 'fa-bookmark';
+      return '<article class="jat-saved-card"><a class="jat-saved-card__link" href="' + item.url + '">' + image + '<span class="jat-saved-card__copy"><small>' + (item.date || 'Saved reflection') + '</small><strong>' + item.title + '</strong>' + (item.subtitle ? '<span>' + item.subtitle + '</span>' : '') + '<em class="jat-saved-card__offline"><i class="fas ' + icon + '" aria-hidden="true"></i> ' + status + '</em></span></a><button class="jat-saved-card__remove" type="button" data-remove-url="' + item.url + '" aria-label="Remove ' + item.title.replace(/"/g, '&quot;') + ' from Saved Thoughts"><i class="fas fa-bookmark" aria-hidden="true"></i></button></article>';
     }).join('');
     root.querySelectorAll('[data-remove-url]').forEach(function (button) { button.addEventListener('click', function () { var url = button.dataset.removeUrl; write(read().filter(function (item) { return item.url !== url; })); uncacheArticle(url); renderSaved(); }); });
   }
-  installPostSave(); renderSaved(); window.addEventListener('jat:saved-changed', renderSaved);
+  async function migrateSaved() {
+    if (!navigator.onLine) return;
+    var items = read(); var changed = false;
+    for (var i = 0; i < items.length; i += 1) {
+      if (items[i].offline === true) continue;
+      items[i].offline = await cacheArticle(items[i].url);
+      changed = true;
+    }
+    if (changed) { write(items); renderSaved(); }
+  }
+  installPostSave(); renderSaved(); migrateSaved(); window.addEventListener('online', migrateSaved); window.addEventListener('jat:saved-changed', renderSaved);
 })();
