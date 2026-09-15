@@ -1,5 +1,7 @@
 /* Mobile fallback for browser narration in the installed PWA.
-   Android speech engines are more reliable with short queued utterances than one article-length utterance. */
+   Android speech engines are more reliable with short queued utterances than one article-length utterance.
+   Pause/resume is implemented by canceling and restarting the retained chunk because some Android engines
+   do not reliably recover a paused SpeechSynthesisUtterance. */
 (function () {
   const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
   const isAndroid = /Android/i.test(navigator.userAgent || '');
@@ -61,7 +63,7 @@
       return voices.find(function (item) { return item.lang === 'en-US'; }) || voices[0];
     }
     function speakChunk(mySession) {
-      if (mySession !== session || isPaused) return;
+      if (mySession !== session || isPaused || !ready) return;
       if (chunkIndex >= chunks.length) {
         if (chunks.length) sayStatus('Finished “' + currentTitle + '.”');
         setPaused(false);
@@ -73,7 +75,7 @@
       utterance.rate = rate ? (parseFloat(rate.value) || 1) : 1;
       utterance.pitch = 0.9;
       utterance.volume = 1;
-      utterance.onstart = function () { if (!isPaused) sayStatus('Playing “' + currentTitle + '.”'); };
+      utterance.onstart = function () { if (mySession === session && !isPaused) sayStatus('Playing “' + currentTitle + '.”'); };
       utterance.onend = function () {
         if (mySession === session && !isPaused) { chunkIndex += 1; speakChunk(mySession); }
       };
@@ -82,6 +84,21 @@
         sayStatus('Narration stopped on this device. Press Play to try again.');
       };
       synth.speak(utterance);
+    }
+    function resumeFromRetainedChunk() {
+      if (!ready) return;
+      session += 1;
+      synth.cancel();
+      setPaused(false);
+      sayStatus('Playing “' + currentTitle + '.”');
+      window.setTimeout(function () { speakChunk(session); }, 80);
+    }
+    function pauseAtCurrentChunk() {
+      if (!ready || isPaused) return;
+      session += 1;
+      setPaused(true);
+      synth.cancel();
+      sayStatus('Paused “' + currentTitle + '.”');
     }
     function startText(text, title) {
       session += 1;
@@ -92,7 +109,8 @@
       ready = chunks.length > 0;
       setPaused(false);
       if (!ready) { sayStatus('This reflection could not be prepared for narration.'); return; }
-      speakChunk(session);
+      const mySession = session;
+      window.setTimeout(function () { speakChunk(mySession); }, 80);
     }
     async function chooseReflection(button) {
       if (button.dataset.audioFile) return false;
@@ -124,29 +142,20 @@
       }
       if (event.target.closest('#jat-audio-play') && ready) {
         event.preventDefault(); event.stopImmediatePropagation();
-        if (isPaused) {
-          synth.resume();
-          setPaused(false);
-          sayStatus('Playing “' + currentTitle + '.”');
-        } else {
+        if (isPaused) resumeFromRetainedChunk();
+        else {
           session += 1;
           synth.cancel();
           setPaused(false);
-          speakChunk(session);
+          const mySession = session;
+          window.setTimeout(function () { speakChunk(mySession); }, 80);
         }
         return;
       }
       if (event.target.closest('#jat-audio-pause') && ready) {
         event.preventDefault(); event.stopImmediatePropagation();
-        if (isPaused) {
-          synth.resume();
-          setPaused(false);
-          sayStatus('Playing “' + currentTitle + '.”');
-        } else {
-          synth.pause();
-          setPaused(true);
-          sayStatus('Paused “' + currentTitle + '.”');
-        }
+        if (isPaused) resumeFromRetainedChunk();
+        else pauseAtCurrentChunk();
         return;
       }
       if (event.target.closest('#jat-audio-stop') && ready) {

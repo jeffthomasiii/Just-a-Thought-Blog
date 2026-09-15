@@ -17,6 +17,16 @@
   .jat-listen-page .jat-listen-hero-copy > p:not(.jat-kicker) { max-width: 330px; font-size: .9rem; line-height: 1.45; }
   .jat-listen-page .jat-listen-hero-image { position: absolute; z-index: 0; inset: 0; min-height: 245px; margin: 0; border-radius: 0; box-shadow: none; }
   .jat-listen-page .jat-listen-hero-image::after { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(246,241,231,.98) 0%, rgba(246,241,231,.90) 42%, rgba(246,241,231,.24) 78%, rgba(246,241,231,.08) 100%); content: ''; }
+
+  body.dark-mode .jat-app-home__intro::before { background: linear-gradient(90deg, rgba(24,25,20,.97) 0%, rgba(24,25,20,.86) 42%, rgba(24,25,20,.30) 78%, rgba(24,25,20,.12) 100%), url('/img/pages/what-im-working-on-hero.jpg') center/cover no-repeat; }
+  body.dark-mode .jat-app-explore__hero-image::before,
+  body.dark-mode .jat-listen-page .jat-listen-hero-image::after { background: linear-gradient(90deg, rgba(24,25,20,.97) 0%, rgba(24,25,20,.86) 42%, rgba(24,25,20,.30) 78%, rgba(24,25,20,.12) 100%); }
+  body.dark-mode .jat-app-home__intro h1,
+  body.dark-mode .jat-app-explore__hero-copy h1,
+  body.dark-mode .jat-listen-page .jat-listen-hero-copy h1 { color: var(--jat-text-primary); }
+  body.dark-mode .jat-app-home__intro > p:last-child,
+  body.dark-mode .jat-app-explore__hero-copy > p:last-child,
+  body.dark-mode .jat-listen-page .jat-listen-hero-copy > p:not(.jat-kicker) { color: var(--jat-text-secondary); }
 }
 @media (display-mode: standalone) and (max-width:390px) {
   .jat-app-home__intro { margin-inline:-15px; padding-inline:15px; }

@@ -13,15 +13,17 @@
   .jat-listen-page .jat-listen-main { padding: 18px 0 42px; }
   .jat-listen-page .jat-listen-main > .jat-board-container { max-width: 720px; padding: 0 18px; }
 
-  .jat-listen-page .jat-listen-player { position: sticky; z-index: 20; top: calc(var(--jat-app-header-height, 72px) + env(safe-area-inset-top, 0px)); margin: 0 0 26px; padding: 16px; border: 1px solid var(--jat-border-subtle); border-left: 3px solid var(--jat-accent-highlight); border-radius: 8px; background: var(--jat-surface-emphasis); box-shadow: 0 7px 20px rgba(37,40,34,.10); }
-  .jat-listen-page .jat-listen-player__copy { margin-bottom: 10px; }
-  .jat-listen-page .jat-listen-player__copy .jat-kicker { margin-bottom: 3px; }
-  .jat-listen-page .jat-listen-player__copy h2 { margin: 0; font-family: var(--jat-font-display); font-size: 1.22rem; line-height: 1.2; }
-  .jat-listen-page .jat-listen-player__status { margin: 4px 0 0; color: var(--jat-text-muted); font-size: .74rem; }
+  .jat-listen-page .jat-listen-player { position: sticky; z-index: 20; top: calc(var(--jat-app-header-height, 72px) + env(safe-area-inset-top, 0px)); margin: 0 0 20px; padding: 12px 13px; border: 1px solid var(--jat-border-subtle); border-left: 3px solid var(--jat-accent-highlight); border-radius: 8px; background: var(--jat-surface-emphasis); box-shadow: 0 7px 20px rgba(37,40,34,.10); }
+  .jat-listen-page .jat-listen-player__copy { margin-bottom: 7px; }
+  .jat-listen-page .jat-listen-player__copy .jat-kicker { margin-bottom: 2px; font-size: .64rem; }
+  .jat-listen-page .jat-listen-player__copy h2 { margin: 0; overflow: hidden; font-family: var(--jat-font-display); font-size: 1.05rem; line-height: 1.18; text-overflow: ellipsis; white-space: nowrap; }
+  .jat-listen-page .jat-listen-player__status { margin: 3px 0 0; overflow: hidden; color: var(--jat-text-muted); font-size: .68rem; text-overflow: ellipsis; white-space: nowrap; }
   .jat-listen-page .jat-listen-player__controls { margin: 0; padding: 0; border: 0; background: transparent; }
-  .jat-listen-page .jat-listen-player__controls .jat-audio-companion__controls { gap: 6px; }
-  .jat-listen-page .jat-listen-player__controls button { min-height: 36px; padding: 7px 11px; }
-  .jat-listen-page .jat-listen-player__note { margin: 8px 0 0; color: var(--jat-text-muted); font-size: .68rem; line-height: 1.35; }
+  .jat-listen-page .jat-listen-player__controls .jat-audio-companion__controls { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 5px; align-items: center; }
+  .jat-listen-page .jat-listen-player__controls button { min-height: 34px; padding: 6px 8px; }
+  .jat-listen-page .jat-listen-player__controls .jat-audio-companion__speed { grid-column: 1 / -1; margin: 2px 0 0; }
+  .jat-listen-page .jat-listen-player__controls .jat-audio-companion__speed select { min-height: 32px; padding-block: 4px; }
+  .jat-listen-page .jat-listen-player__note { display: none; }
 
   .jat-listen-page .jat-listen-podcast-link { display: grid; grid-template-columns: 68px minmax(0,1fr); gap: 13px; align-items: center; margin: 0 0 30px; padding: 16px; border-radius: 8px; }
   .jat-listen-page .jat-listen-podcast-logo { width: 68px; height: 68px; object-fit: contain; }
