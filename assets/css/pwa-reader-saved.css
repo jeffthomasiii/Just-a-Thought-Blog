@@ -11,10 +11,10 @@
   body:has(.jat-post-body) #giscus_thread, body:has(.jat-post-body) .clearfix { margin-bottom: 1.5rem; }
 }
 .jat-app-save-row { display: none; }
-@media (display-mode: standalone) { .jat-app-save-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0 0 1.35rem; padding: 10px 0 13px; border-bottom: 1px solid var(--jat-border-subtle); } }
+@media (display-mode: standalone) { .jat-app-save-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 1rem 0 0; padding: .9rem 0 0; border-top: 1px solid var(--jat-border-subtle); } }
 html.jat-app-mode .jat-app-save-row, html.jat-ios-standalone .jat-app-save-row { display: flex; }
-.jat-app-save-row__label { color: var(--jat-text-muted); font-size: .78rem; }
-.jat-app-save-button { display: inline-flex; align-items: center; gap: 7px; min-height: 38px; padding: 7px 13px; border: 1px solid var(--jat-action-primary); border-radius: 4px; background: transparent; color: var(--jat-action-primary); font: 700 .8rem var(--jat-font-body); cursor: pointer; }
+.jat-app-save-row__label { max-width: 210px; color: var(--jat-text-muted); font-size: .76rem; line-height: 1.35; }
+.jat-app-save-button { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 7px; min-height: 38px; padding: 7px 13px; border: 1px solid var(--jat-action-primary); border-radius: 4px; background: transparent; color: var(--jat-action-primary); font: 700 .8rem var(--jat-font-body); cursor: pointer; }
 .jat-app-save-button.is-saved { background: var(--jat-action-primary); color: var(--jat-surface-page); }
 
 .jat-saved-app { max-width: 720px; margin: 0 auto; padding: 32px 18px 44px; }
@@ -33,4 +33,4 @@ html.jat-app-mode .jat-app-save-row, html.jat-ios-standalone .jat-app-save-row {
 .jat-saved-card__copy strong { font-family: var(--jat-font-display); font-size: 1.08rem; line-height: 1.2; }
 .jat-saved-card__copy > span { margin-top: 4px; overflow: hidden; color: var(--jat-text-secondary); font-size: .75rem; text-overflow: ellipsis; white-space: nowrap; }
 .jat-saved-card__remove { position: absolute; top: 50%; right: 11px; padding: 8px; border: 0; background: transparent; color: var(--jat-action-primary); cursor: pointer; transform: translateY(-50%); }
-@media (max-width:390px) { .jat-saved-app { padding-inline: 15px; } .jat-saved-card__link { grid-template-columns: 78px minmax(0,1fr); } }
+@media (max-width:390px) { .jat-saved-app { padding-inline: 15px; } .jat-saved-card__link { grid-template-columns: 78px minmax(0,1fr); } .jat-app-save-row__label { max-width: 185px; } }

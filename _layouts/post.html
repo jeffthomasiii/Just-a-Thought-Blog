@@ -55,6 +55,10 @@ layout: default
           <a href="{{ '/about.html' | relative_url }}">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
           on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=page.content %}
         </span>
+        <div class="jat-app-save-row" aria-label="Save this reflection">
+          <span class="jat-app-save-row__label">Keep this reflection for later — and offline.</span>
+          <button class="jat-app-save-button" type="button" data-jat-save data-url="{{ page.url | relative_url }}" data-title="{{ page.title | escape }}" data-subtitle="{{ page.subtitle | default: page.description | escape }}" data-image="{{ hero | relative_url }}" data-date="{{ page.date | date: '%B %-d, %Y' }}" aria-pressed="false"><i class="far fa-bookmark" aria-hidden="true"></i><span>Save</span></button>
+        </div>
       </div>
     </div>
   </div>
