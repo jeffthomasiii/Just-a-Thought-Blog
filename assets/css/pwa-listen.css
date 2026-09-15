@@ -1,0 +1,74 @@
+/* Installed-app treatment for the existing Listen library. Browser/desktop presentation is unchanged. */
+@media (display-mode: standalone) {
+  .jat-listen-page .jat-listen-hero { margin: 0; min-height: 0; padding: 0; background: var(--jat-surface-page); }
+  .jat-listen-page .jat-listen-hero .jat-board-container { max-width: 720px; padding: 0; }
+  .jat-listen-page .jat-listen-hero-grid { display: block; min-height: 0; }
+  .jat-listen-page .jat-listen-hero-copy { position: relative; z-index: 2; padding: 30px 18px 28px; }
+  .jat-listen-page .jat-listen-hero-copy h1 { max-width: 330px; margin: 5px 0 10px; font-family: var(--jat-font-display); font-size: clamp(2.2rem, 10vw, 3rem); line-height: 1.04; }
+  .jat-listen-page .jat-listen-hero-copy > p:not(.jat-kicker) { max-width: 360px; margin: 0; color: var(--jat-text-secondary); font-size: .96rem; line-height: 1.5; }
+  .jat-listen-page .jat-listen-hero-copy .jat-simple-divider,
+  .jat-listen-page .jat-listen-hero-copy .jat-button-row { display: none; }
+  .jat-listen-page .jat-listen-hero-image { min-height: 190px; margin: 0 18px; border-radius: 8px; background-position: center; box-shadow: var(--jat-shadow-low); }
+
+  .jat-listen-page .jat-listen-main { padding: 18px 0 42px; }
+  .jat-listen-page .jat-listen-main > .jat-board-container { max-width: 720px; padding: 0 18px; }
+
+  .jat-listen-page .jat-listen-player { position: sticky; z-index: 20; top: calc(var(--jat-app-header-height, 72px) + env(safe-area-inset-top, 0px)); margin: 0 0 26px; padding: 16px; border: 1px solid var(--jat-border-subtle); border-left: 3px solid var(--jat-accent-highlight); border-radius: 8px; background: var(--jat-surface-emphasis); box-shadow: 0 7px 20px rgba(37,40,34,.10); }
+  .jat-listen-page .jat-listen-player__copy { margin-bottom: 10px; }
+  .jat-listen-page .jat-listen-player__copy .jat-kicker { margin-bottom: 3px; }
+  .jat-listen-page .jat-listen-player__copy h2 { margin: 0; font-family: var(--jat-font-display); font-size: 1.22rem; line-height: 1.2; }
+  .jat-listen-page .jat-listen-player__status { margin: 4px 0 0; color: var(--jat-text-muted); font-size: .74rem; }
+  .jat-listen-page .jat-listen-player__controls { margin: 0; padding: 0; border: 0; background: transparent; }
+  .jat-listen-page .jat-listen-player__controls .jat-audio-companion__controls { gap: 6px; }
+  .jat-listen-page .jat-listen-player__controls button { min-height: 36px; padding: 7px 11px; }
+  .jat-listen-page .jat-listen-player__note { margin: 8px 0 0; color: var(--jat-text-muted); font-size: .68rem; line-height: 1.35; }
+
+  .jat-listen-page .jat-listen-podcast-link { display: grid; grid-template-columns: 68px minmax(0,1fr); gap: 13px; align-items: center; margin: 0 0 30px; padding: 16px; border-radius: 8px; }
+  .jat-listen-page .jat-listen-podcast-logo { width: 68px; height: 68px; object-fit: contain; }
+  .jat-listen-page .jat-listen-podcast-copy .jat-kicker { margin-bottom: 2px; }
+  .jat-listen-page .jat-listen-podcast-copy h2 { margin: 0 0 4px; font-family: var(--jat-font-display); font-size: 1.08rem; line-height: 1.2; }
+  .jat-listen-page .jat-listen-podcast-copy p:last-child { display: none; }
+  .jat-listen-page .jat-listen-podcast-link > .jat-btn { grid-column: 2; justify-self: start; margin-top: -4px; padding: 7px 11px; font-size: .7rem; }
+
+  .jat-listen-page .jat-listen-library__heading { display: block; margin-bottom: 14px; }
+  .jat-listen-page .jat-listen-library__heading h2 { margin: 3px 0 5px; font-family: var(--jat-font-display); font-size: 1.55rem; line-height: 1.16; }
+  .jat-listen-page .jat-listen-library__heading > p { margin: 0; color: var(--jat-text-secondary); font-size: .82rem; line-height: 1.45; }
+
+  .jat-listen-page .jat-listen-filters { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 18px; padding: 13px; border-radius: 8px; }
+  .jat-listen-page .jat-listen-filter-field--search { grid-column: 1 / -1; }
+  .jat-listen-page .jat-listen-filter-field label { font-size: .68rem; }
+  .jat-listen-page .jat-listen-filter-field input,
+  .jat-listen-page .jat-listen-filter-field select { min-height: 40px; padding: 7px 9px; font-size: .78rem; }
+  .jat-listen-page .jat-listen-filter-field:nth-of-type(4) { display: none; }
+  .jat-listen-page .jat-listen-filter-reset { align-self: center; justify-self: start; border: 0; background: transparent; color: var(--jat-action-primary); font-size: .72rem; font-weight: 700; }
+  .jat-listen-page .jat-listen-filter-count { align-self: center; justify-self: end; margin: 0; color: var(--jat-text-muted); font-size: .68rem; }
+
+  .jat-listen-page .jat-listen-grid { display: grid; grid-template-columns: 1fr; gap: 11px; }
+  .jat-listen-page .jat-listen-card { display: grid; grid-template-columns: 104px minmax(0,1fr); overflow: hidden; min-height: 132px; border-radius: 8px; }
+  .jat-listen-page .jat-listen-card__image { height: 100%; min-height: 132px; }
+  .jat-listen-page .jat-listen-card__image img { width: 100%; height: 100%; object-fit: cover; }
+  .jat-listen-page .jat-listen-card__body { min-width: 0; padding: 12px 12px 11px; }
+  .jat-listen-page .jat-listen-card__meta { margin: 0 0 3px; color: var(--jat-text-muted); font-size: .62rem; }
+  .jat-listen-page .jat-listen-card__audio-meta { display: flex; gap: 6px; align-items: center; margin-bottom: 5px; color: var(--jat-text-muted); font-size: .62rem; }
+  .jat-listen-page .jat-listen-card__audio-badge { padding: 2px 5px; border-radius: 3px; background: var(--jat-surface-emphasis); color: var(--jat-action-primary); font-weight: 700; }
+  .jat-listen-page .jat-listen-card h3 { margin: 0; font-family: var(--jat-font-display); font-size: 1.08rem; line-height: 1.15; }
+  .jat-listen-page .jat-listen-card__subtitle { margin: 4px 0 7px; overflow: hidden; color: var(--jat-text-secondary); font-size: .72rem; line-height: 1.3; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+  .jat-listen-page .jat-listen-card__excerpt { display: none; }
+  .jat-listen-page .jat-listen-card__actions { display: flex; gap: 6px; margin-top: 7px; }
+  .jat-listen-page .jat-listen-card__actions .jat-btn { min-height: 34px; padding: 6px 10px; font-size: .67rem; }
+  .jat-listen-page .jat-listen-library-toggle { margin-top: 16px; }
+}
+
+html.jat-app-mode .jat-listen-page .jat-listen-hero-copy .jat-simple-divider,
+html.jat-app-mode .jat-listen-page .jat-listen-hero-copy .jat-button-row,
+html.jat-ios-standalone .jat-listen-page .jat-listen-hero-copy .jat-simple-divider,
+html.jat-ios-standalone .jat-listen-page .jat-listen-hero-copy .jat-button-row { display: none; }
+
+@media (display-mode: standalone) and (max-width: 390px) {
+  .jat-listen-page .jat-listen-hero-copy,
+  .jat-listen-page .jat-listen-main > .jat-board-container { padding-left: 15px; padding-right: 15px; }
+  .jat-listen-page .jat-listen-hero-image { margin-left: 15px; margin-right: 15px; }
+  .jat-listen-page .jat-listen-card { grid-template-columns: 90px minmax(0,1fr); }
+  .jat-listen-page .jat-listen-podcast-link { grid-template-columns: 58px minmax(0,1fr); }
+  .jat-listen-page .jat-listen-podcast-logo { width: 58px; height: 58px; }
+}
