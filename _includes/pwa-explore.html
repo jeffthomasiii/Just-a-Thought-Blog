@@ -1,12 +1,16 @@
 {% assign collection_keys = "faith,marriage,leadership,technology,culture,creation" | split: "," %}
 {% assign featured_series = nil %}
-{% for post in site.posts %}{% if featured_series == nil and post.series and post.series != "" %}{% assign featured_series = post.series %}{% endif %}{% endfor %}
+{% assign featured_series_image = nil %}
+{% for post in site.posts %}{% if featured_series == nil and post.series and post.series != "" %}{% assign featured_series = post.series %}{% assign featured_series_image = post.image | default: post.background %}{% endif %}{% endfor %}
 
 <main class="jat-app-explore" id="app-explore-content">
   <header class="jat-app-explore__intro">
-    <p class="jat-kicker">Explore Just A Thought</p>
-    <h1>What are you thinking about?</h1>
-    <p>Begin with a part of life, follow a connected series, or search for a specific idea or Scripture passage.</p>
+    <div class="jat-app-explore__hero-copy">
+      <p class="jat-kicker">Explore Just A Thought</p>
+      <h1>What are you thinking about?</h1>
+      <p>Begin with a part of life, follow a connected series, or search for a specific idea or Scripture passage.</p>
+    </div>
+    <div class="jat-app-explore__hero-image" style="background-image: url('{{ '/img/collections/creation-hero.png' | relative_url }}');" aria-hidden="true"></div>
     <a class="jat-app-search-card" href="{{ '/search/' | relative_url }}"><i class="fas fa-search" aria-hidden="true"></i><span><strong>Search the Library</strong><small>Titles, topics, Scripture, or ideas</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
   </header>
 
@@ -18,7 +22,7 @@
         {% assign reflection_count = 0 %}
         {% for post in site.posts %}{% if post.collections contains key %}{% assign reflection_count = reflection_count | plus: 1 %}{% endif %}{% endfor %}
         {% if collection_page %}
-        <a class="jat-app-collection-card" href="{{ collection_page.url | relative_url }}">
+        <a class="jat-app-collection-card" href="{{ collection_page.url | relative_url }}"{% if collection_page.background %} style="background-image: linear-gradient(180deg, rgba(20,22,18,.08), rgba(20,22,18,.78)), url('{{ collection_page.background | relative_url }}');"{% endif %}>
           <span class="jat-app-collection-card__icon" aria-hidden="true">{% include collection-icon.html key=key %}</span>
           <span class="jat-app-collection-card__copy"><strong>{{ collection_page.title }}</strong><small>{{ reflection_count }} reflection{% if reflection_count != 1 %}s{% endif %}</small></span>
           <i class="fas fa-chevron-right" aria-hidden="true"></i>
@@ -28,17 +32,17 @@
     </div>
   </section>
 
-  <section class="jat-app-explore__section jat-app-explore__series" aria-labelledby="app-series-heading">
+  <section class="jat-app-explore__section jat-app-explore__series" aria-labelledby="app-series-heading"{% if featured_series_image %} style="background-image: linear-gradient(90deg, rgba(239,228,211,.98) 0%, rgba(239,228,211,.92) 52%, rgba(239,228,211,.28) 100%), url('{{ featured_series_image | relative_url }}');"{% endif %}>
     <div><p class="jat-kicker">Go Deeper</p><h2 id="app-series-heading">Follow a thought over time.</h2><p>Series gather connected reflections into reading paths where one idea can build on another.</p></div>
-    <a class="jat-btn jat-btn-primary" href="{{ '/series/' | relative_url }}">Explore Series</a>
-    {% if featured_series %}<p class="jat-app-explore__featured-series">Currently in the library: <a href="{{ '/series/' | relative_url }}#{{ featured_series | slugify }}">{{ featured_series }}</a></p>{% endif %}
+    <a class="jat-btn jat-btn-primary" href="{{ '/series/' | relative_url }}">Explore Series <span aria-hidden="true">→</span></a>
+    {% if featured_series %}<p class="jat-app-explore__featured-series"><i class="far fa-bookmark" aria-hidden="true"></i> Currently in the library: <a href="{{ '/series/' | relative_url }}#{{ featured_series | slugify }}">{{ featured_series }}</a></p>{% endif %}
   </section>
 
   <section class="jat-app-explore__section" aria-labelledby="app-browse-heading">
     <div class="jat-app-explore__heading"><p class="jat-kicker">More Ways In</p><h2 id="app-browse-heading">Browse the library your way.</h2></div>
     <div class="jat-app-explore__utilities">
-      <a href="{{ '/posts/' | relative_url }}"><i class="far fa-clock" aria-hidden="true"></i><span><strong>All Reflections</strong><small>Browse the archive by date</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
-      <a href="{{ '/series/' | relative_url }}"><i class="fas fa-layer-group" aria-hidden="true"></i><span><strong>Series</strong><small>Read connected reflections together</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="{{ '/posts/' | relative_url }}"><i class="far fa-clock" aria-hidden="true"></i><span><strong>All Reflections</strong><small>Browse by date</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="{{ '/series/' | relative_url }}"><i class="fas fa-layer-group" aria-hidden="true"></i><span><strong>Series</strong><small>Read connected reflections</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
       <a href="{{ '/search/' | relative_url }}"><i class="fas fa-search" aria-hidden="true"></i><span><strong>Search</strong><small>Find a specific thought</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
     </div>
   </section>
