@@ -1,0 +1,30 @@
+{% assign current_url = page.url | default: '/' %}
+{% assign app_home_active = false %}
+{% assign app_explore_active = false %}
+{% assign app_listen_active = false %}
+{% assign app_saved_active = false %}
+{% assign app_more_active = false %}
+
+{% if current_url == '/' %}{% assign app_home_active = true %}{% endif %}
+{% if current_url contains '/explore' or current_url contains '/collections/' or current_url contains '/series/' or current_url contains '/posts' or page.layout == 'post' %}{% assign app_explore_active = true %}{% endif %}
+{% if current_url contains '/listen' or current_url contains '/podcast' %}{% assign app_listen_active = true %}{% endif %}
+{% if current_url contains '/saved' %}{% assign app_saved_active = true %}{% endif %}
+{% if current_url contains '/more' or current_url contains '/about' or current_url contains '/resources' or current_url contains '/projects' or current_url contains '/contact' or current_url contains '/cv' %}{% assign app_more_active = true %}{% endif %}
+
+<nav class="jat-app-nav" aria-label="App navigation">
+  <a class="jat-app-nav__item{% if app_home_active %} is-active{% endif %}" href="{{ '/' | relative_url }}"{% if app_home_active %} aria-current="page"{% endif %}>
+    <i class="fas fa-home" aria-hidden="true"></i><span>Home</span>
+  </a>
+  <a class="jat-app-nav__item{% if app_explore_active %} is-active{% endif %}" href="{{ '/explore/' | relative_url }}"{% if app_explore_active %} aria-current="page"{% endif %}>
+    <i class="fas fa-compass" aria-hidden="true"></i><span>Explore</span>
+  </a>
+  <a class="jat-app-nav__item{% if app_listen_active %} is-active{% endif %}" href="{{ '/listen/' | relative_url }}"{% if app_listen_active %} aria-current="page"{% endif %}>
+    <i class="fas fa-headphones-alt" aria-hidden="true"></i><span>Listen</span>
+  </a>
+  <a class="jat-app-nav__item{% if app_saved_active %} is-active{% endif %}" href="{{ '/saved/' | relative_url }}"{% if app_saved_active %} aria-current="page"{% endif %}>
+    <i class="far fa-bookmark" aria-hidden="true"></i><span>Saved</span>
+  </a>
+  <a class="jat-app-nav__item{% if app_more_active %} is-active{% endif %}" href="{{ '/more/' | relative_url }}"{% if app_more_active %} aria-current="page"{% endif %}>
+    <i class="fas fa-ellipsis-h" aria-hidden="true"></i><span>More</span>
+  </a>
+</nav>
