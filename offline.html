@@ -5,20 +5,17 @@ description: Just A Thought is temporarily offline.
 robots: noindex
 ---
 
-<main class="jat-page-shell" id="main-content">
-  <section class="jat-page-section">
-    <div class="jat-container-reading">
-      <div class="jat-panel jat-panel--padded jat-panel--parchment" style="margin: 4rem auto; text-align: center;">
-        <p class="jat-kicker">Just A Thought</p>
-        <h1>You’re offline right now.</h1>
-        <div class="jat-simple-divider" style="margin-inline: auto;" aria-hidden="true">
-          <span></span><span class="jat-leaf">❧</span><span></span>
-        </div>
-        <p>Some previously visited pages may still be available. When your connection returns, Just A Thought will reconnect automatically.</p>
-        <div class="jat-button-row" style="justify-content: center; margin-top: 1.5rem;">
-          <a class="jat-btn jat-btn-primary" href="{{ '/' | relative_url }}">Try Home Again</a>
-        </div>
-      </div>
+<main class="jat-offline-page jat-page-shell" id="main-content">
+  <section class="jat-offline-card" aria-labelledby="offline-title">
+    <div class="jat-offline-icon" aria-hidden="true"><i class="fas fa-wifi"></i></div>
+    <p class="jat-kicker">Just A Thought</p>
+    <h1 id="offline-title">You’re offline right now.</h1>
+    <div class="jat-simple-divider" aria-hidden="true"><span></span><span class="jat-leaf">❧</span><span></span></div>
+    <p>Your saved reflections are still available. Other pages you recently visited may also open while you’re offline.</p>
+    <div class="jat-offline-actions">
+      <a class="jat-btn jat-btn-primary" href="{{ '/saved/' | relative_url }}">Open Saved Thoughts</a>
+      <button class="jat-btn jat-btn-secondary" type="button" onclick="window.location.reload()">Try Again</button>
     </div>
+    <p class="jat-offline-status" role="status">Just A Thought will reconnect when your connection returns.</p>
   </section>
 </main>

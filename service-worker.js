@@ -2,13 +2,20 @@
 layout: null
 permalink: /service-worker.js
 ---
-const CACHE_VERSION = 'jat-pwa-v3';
+const CACHE_VERSION = 'jat-pwa-v4';
+const SAVED_CACHE = 'jat-saved-articles-v2';
 const OFFLINE_URL = '{{ "/offline.html" | relative_url }}';
 const APP_SHELL = [
   '{{ "/" | relative_url }}',
+  '{{ "/saved/" | relative_url }}',
   OFFLINE_URL,
   '{{ "/assets/main.css" | relative_url }}',
   '{{ "/assets/scripts.js" | relative_url }}',
+  '{{ "/assets/css/pwa-app.css" | relative_url }}',
+  '{{ "/assets/css/pwa-reader-saved.css" | relative_url }}',
+  '{{ "/assets/css/pwa-resilience.css" | relative_url }}',
+  '{{ "/assets/js/pwa-saved.js" | relative_url }}',
+  '{{ "/assets/js/pwa-resilience.js" | relative_url }}',
   '{{ "/img/favicon-lightbulb-dove.png" | relative_url }}'
 ];
 
@@ -24,7 +31,7 @@ self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys()
       .then(keys => Promise.all(
-        keys.filter(key => key !== CACHE_VERSION).map(key => caches.delete(key))
+        keys.filter(key => key.startsWith('jat-pwa-') && key !== CACHE_VERSION).map(key => caches.delete(key))
       ))
       .then(() => self.clients.claim())
   );
@@ -39,12 +46,17 @@ self.addEventListener('fetch', event => {
     event.respondWith(
       fetch(event.request)
         .then(response => {
-          const copy = response.clone();
-          caches.open(CACHE_VERSION).then(cache => cache.put(event.request, copy));
+          if (response && response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE_VERSION).then(cache => cache.put(event.request, copy));
+          }
           return response;
         })
         .catch(async () => {
-          const cachedPage = await caches.match(event.request);
+          const savedCache = await caches.open(SAVED_CACHE);
+          const savedPage = await savedCache.match(event.request, { ignoreSearch: true });
+          if (savedPage) return savedPage;
+          const cachedPage = await caches.match(event.request, { ignoreSearch: true });
           return cachedPage || caches.match(OFFLINE_URL);
         })
     );
