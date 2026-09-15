@@ -6,28 +6,32 @@ permalink: /more/
 robots: noindex
 ---
 
-<main class="jat-page-shell" id="main-content">
-  <section class="jat-page-section">
-    <div class="jat-container-reading" style="padding-block: 3rem;">
+<main class="jat-more-page" id="main-content">
+  <header class="jat-more-hero">
+    <div class="jat-more-hero__image" style="background-image:url('{{ '/img/pages/resources-hero.jpg' | relative_url }}');" aria-hidden="true"></div>
+    <div class="jat-more-hero__copy">
       <p class="jat-kicker">Just A Thought</p>
-      <h1>More</h1>
-      <p>Explore the rest of Just A Thought, adjust your reading experience, or find a way to connect.</p>
+      <h1>More ways to stay with the thought.</h1>
+      <p>Resources, projects, information, and a few practical ways to connect.</p>
+    </div>
+  </header>
 
-      <div class="jat-panel jat-panel--padded" style="margin-top: 2rem;">
-        <nav aria-label="More from Just A Thought" style="display: grid; gap: 1rem;">
-          <a class="jat-text-link" href="{{ '/about' | relative_url }}">About Just A Thought</a>
-          <a class="jat-text-link" href="{{ '/resources/' | relative_url }}">Resources</a>
-          <a class="jat-text-link" href="{{ '/projects/' | relative_url }}">Featured Projects</a>
-          <a class="jat-text-link" href="{{ '/search/' | relative_url }}">Search</a>
-          <a class="jat-text-link" href="{{ '/contact' | relative_url }}">Contact</a>
-        </nav>
-      </div>
+  <section class="jat-more-section" aria-labelledby="more-discover-heading">
+    <div class="jat-more-section__heading"><p class="jat-kicker">Discover</p><h2 id="more-discover-heading">Beyond the reflections.</h2></div>
+    <nav class="jat-more-links" aria-label="More from Just A Thought">
+      <a href="{{ '/about' | relative_url }}"><i class="far fa-lightbulb" aria-hidden="true"></i><span><strong>About Just A Thought</strong><small>The story and purpose behind the project</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="{{ '/resources/' | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i><span><strong>Resources</strong><small>Guides and tools made for thoughtful use</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="{{ '/projects/' | relative_url }}"><i class="fas fa-layer-group" aria-hidden="true"></i><span><strong>Featured Projects</strong><small>Things being built beyond the journal</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="{{ '/search/' | relative_url }}"><i class="fas fa-search" aria-hidden="true"></i><span><strong>Search</strong><small>Find a specific reflection, idea, or Scripture</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="{{ '/contact' | relative_url }}"><i class="far fa-envelope" aria-hidden="true"></i><span><strong>Contact</strong><small>Reach out or continue the conversation</small></span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+    </nav>
+  </section>
 
-      <div class="jat-panel jat-panel--padded jat-panel--parchment" style="margin-top: 1rem;">
-        <p class="jat-kicker">Reading</p>
-        <h2 style="font-size: 1.6rem;">Appearance</h2>
-        <p>The existing light and dark reading modes remain available from the Just A Thought header. Additional app reading preferences will be added with the reader experience.</p>
-      </div>
+  <section class="jat-more-section" aria-labelledby="more-reading-heading">
+    <div class="jat-more-section__heading"><p class="jat-kicker">Reading</p><h2 id="more-reading-heading">Your reading experience.</h2></div>
+    <div class="jat-more-appearance">
+      <span class="jat-more-appearance__icon"><i class="fas fa-adjust" aria-hidden="true"></i></span>
+      <div><h2>Light & dark modes</h2><p>Use the appearance control in the Just A Thought header to choose the reading mode that works best for you.</p></div>
     </div>
   </section>
 </main>
