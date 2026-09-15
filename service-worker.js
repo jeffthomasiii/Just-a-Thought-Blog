@@ -2,7 +2,7 @@
 layout: null
 permalink: /service-worker.js
 ---
-const CACHE_VERSION = 'jat-pwa-v2';
+const CACHE_VERSION = 'jat-pwa-v3';
 const OFFLINE_URL = '{{ "/offline.html" | relative_url }}';
 const APP_SHELL = [
   '{{ "/" | relative_url }}',
