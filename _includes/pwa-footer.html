@@ -1,0 +1,30 @@
+<footer class="jat-app-footer">
+  <div class="jat-app-footer__letter">
+    <p class="jat-kicker">Stay Connected</p>
+    <h2>The Thought Letter</h2>
+    <p>Receive new reflections, podcast updates, and occasional notes.</p>
+    {% include thought-letter-form.html %}
+  </div>
+
+  <div class="jat-app-footer__brand">
+    <a href="{{ '/' | relative_url }}" class="jat-app-footer__logo" aria-label="Just A Thought home">
+      <span class="jat-nav-logo-wrap" aria-hidden="true">
+        <img src="{{ '/img/brand/logos/logo-mark/light/just-a-thought-mark-256px.webp' | relative_url }}" alt="" class="jat-nav-logo-light">
+        <img src="{{ '/img/brand/logos/logo-mark/dark/just-a-thought-mark-dark-256px.webp' | relative_url }}" alt="" class="jat-nav-logo-dark">
+      </span>
+      <strong>Just A Thought</strong>
+    </a>
+    <p>Faith. Questions. Everyday life.</p>
+    <ul class="jat-app-footer__socials" aria-label="Connect with Jeff Thomas III">
+      <li><a href="{{ '/contact' | relative_url }}" aria-label="Contact Jeff Thomas III"><i class="far fa-envelope" aria-hidden="true"></i></a></li>
+      {% if site.twitter_username %}<li><a href="https://twitter.com/{{ site.twitter_username }}" aria-label="Follow Jeff Thomas III on X" rel="me"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>{% endif %}
+      {% if site.linkedin_username %}<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" aria-label="Connect with Jeff Thomas III on LinkedIn" rel="me"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>{% endif %}
+      {% if site.github_username %}<li><a href="https://github.com/{{ site.github_username }}" aria-label="View Jeff Thomas III on GitHub" rel="me"><i class="fab fa-github" aria-hidden="true"></i></a></li>{% endif %}
+      {% if site.instagram_username %}<li><a href="https://instagram.com/{{ site.instagram_username }}" aria-label="Follow Jeff Thomas III on Instagram" rel="me"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>{% endif %}
+    </ul>
+    <nav class="jat-app-footer__links" aria-label="App footer links">
+      <a href="{{ '/about' | relative_url }}">About</a><span aria-hidden="true">·</span><a href="{{ '/contact' | relative_url }}">Contact</a><span aria-hidden="true">·</span><a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+    </nav>
+    <p class="jat-app-footer__copyright">© {{ 'now' | date: "%Y" }} Just A Thought</p>
+  </div>
+</footer>
