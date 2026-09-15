@@ -1,0 +1,26 @@
+---
+layout: null
+permalink: /manifest.webmanifest
+---
+{
+  "name": "Just A Thought",
+  "short_name": "Just A Thought",
+  "description": "Reflecting on faith, life, and the thoughts that shape us.",
+  "start_url": "{{ '/' | relative_url }}",
+  "scope": "{{ '/' | relative_url }}",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#F6F1E7",
+  "theme_color": "#F6F1E7",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "{{ '/img/favicon-lightbulb-dove.png' | relative_url }}",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["books", "lifestyle", "education"],
+  "lang": "en-US"
+}
