@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="{{ site.lang | default: 'en' }}">
-
 {% include head.html %}
-
 {% assign page_body_class = page.body_class %}
 <body{% if page.page_archetype or page_body_class %} class="{% if page.page_archetype %}jat-archetype-{{ page.page_archetype | escape }}{% endif %}{% if page_body_class %} {{ page_body_class | escape }}{% endif %}"{% endif %}{% if page.page_archetype %} data-page-archetype="{{ page.page_archetype | escape }}"{% endif %}>
-
   {% include navbar.html %}
   {% include pwa-app-header.html %}
-
   {{ content }}
-
   <link rel="stylesheet" href="{{ '/assets/css/jat-dark-pages.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/pwa-app.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/pwa-app-ios.css' | relative_url }}">
@@ -20,17 +14,15 @@
   <link rel="stylesheet" href="{{ '/assets/css/pwa-thought-letter.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/pwa-reader-saved.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/pwa-listen.css' | relative_url }}">
-
+  <link rel="stylesheet" href="{{ '/assets/css/pwa-unified-heroes.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/pwa-more.css' | relative_url }}">
   {% include footer.html %}
   {% include pwa-footer.html %}
   {% include pwa-app-nav.html %}
-
   {% include scripts.html %}
   {% include thought-letter-scripts.html %}
   <script src="{{ '/assets/js/pwa-saved.js' | relative_url }}" defer></script>
-
+  <script src="{{ '/assets/js/pwa-mobile-narration.js' | relative_url }}" defer></script>
   {% include google-analytics.html %}
-
 </body>
-
 </html>
