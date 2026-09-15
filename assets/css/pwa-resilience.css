@@ -1,0 +1,16 @@
+.jat-connection-banner { position: fixed; z-index: 1200; right: 12px; bottom: calc(76px + env(safe-area-inset-bottom)); left: 12px; max-width: 520px; margin-inline: auto; padding: 10px 14px; border: 1px solid var(--jat-border-subtle); border-radius: 6px; background: var(--jat-surface-card); color: var(--jat-text-primary); box-shadow: var(--jat-shadow-low); font: 700 .78rem/1.35 var(--jat-font-body); text-align: center; }
+.jat-connection-banner.is-offline { border-left: 3px solid var(--jat-accent-highlight); }
+.jat-connection-banner.is-online { border-left: 3px solid var(--jat-action-primary); }
+.jat-offline-page { min-height: calc(100vh - 150px); padding: 48px 18px 110px; display: flex; align-items: center; justify-content: center; }
+.jat-offline-card { width: min(100%, 620px); padding: 34px 24px; border: 1px solid var(--jat-border-subtle); border-radius: 8px; background: var(--jat-surface-emphasis); color: var(--jat-text-primary); text-align: center; box-shadow: var(--jat-shadow-low); }
+.jat-offline-icon { display: inline-flex; width: 48px; height: 48px; margin-bottom: 12px; align-items: center; justify-content: center; border-radius: 50%; background: var(--jat-surface-card); color: var(--jat-action-primary); font-size: 1.15rem; }
+.jat-offline-card h1 { margin: 5px 0 10px; font-family: var(--jat-font-display); font-size: clamp(2rem, 9vw, 2.8rem); line-height: 1.05; }
+.jat-offline-card > p:not(.jat-kicker):not(.jat-offline-status) { max-width: 470px; margin: 16px auto 0; color: var(--jat-text-secondary); line-height: 1.55; }
+.jat-offline-card .jat-simple-divider { max-width: 180px; margin: 14px auto; }
+.jat-offline-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 22px; }
+.jat-offline-actions .jat-btn { min-height: 44px; }
+.jat-offline-status { margin: 18px 0 0; color: var(--jat-text-muted); font-size: .76rem; }
+.jat-saved-card__offline { margin-top: 7px; color: var(--jat-action-primary); font: 700 .68rem/1.2 var(--jat-font-body); font-style: normal; }
+.jat-app-save-button:disabled { opacity: .65; cursor: wait; }
+@media (prefers-reduced-motion: reduce) { .jat-connection-banner, .jat-app-save-button { transition: none !important; } }
+@media (max-width:390px) { .jat-offline-page { padding-inline: 15px; }.jat-offline-card { padding: 30px 18px; }.jat-offline-actions { flex-direction: column; }.jat-offline-actions .jat-btn { width: 100%; } }
