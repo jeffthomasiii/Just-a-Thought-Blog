@@ -16,6 +16,9 @@ html.jat-app-mode body.jat-search-page .jat-search-hero-inner {
   max-width: 720px;
   margin: 0 auto;
   padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 html.jat-app-mode body.jat-search-page .jat-search-hero-copy {
