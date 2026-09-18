@@ -6,7 +6,7 @@
 {% assign app_more_active = false %}
 
 {% if current_url == '/' %}{% assign app_home_active = true %}{% endif %}
-{% if current_url contains '/explore' or current_url contains '/collections/' or current_url contains '/series/' or current_url contains '/posts' or page.layout == 'post' %}{% assign app_explore_active = true %}{% endif %}
+{% if current_url contains '/explore' or current_url contains '/search' or current_url contains '/collections/' or current_url contains '/series/' or current_url contains '/posts' or page.layout == 'post' %}{% assign app_explore_active = true %}{% endif %}
 {% if current_url contains '/listen' or current_url contains '/podcast' %}{% assign app_listen_active = true %}{% endif %}
 {% if current_url contains '/saved' %}{% assign app_saved_active = true %}{% endif %}
 {% if current_url contains '/more' or current_url contains '/about' or current_url contains '/resources' or current_url contains '/projects' or current_url contains '/contact' or current_url contains '/cv' %}{% assign app_more_active = true %}{% endif %}

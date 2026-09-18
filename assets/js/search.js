@@ -13,6 +13,7 @@
   const tagFilter = document.getElementById("tag-filter");
   const seriesFilter = document.getElementById("series-filter");
   const clearBtn = document.getElementById("clear-filters");
+  const suggestionsEl = document.getElementById("search-suggestions");
 
   if (!input || !resultsEl || !metaEl || !stateEl || !stateTitleEl || !stateCopyEl) return;
 
@@ -62,6 +63,7 @@
 
   function showState(kind, title, copy) {
     clearResults();
+    if (suggestionsEl) suggestionsEl.hidden = true;
     stateEl.hidden = false;
     stateEl.dataset.state = kind;
     stateTitleEl.textContent = title;
@@ -335,6 +337,7 @@
     if (!query && !hasFilters) {
       metaEl.textContent = `${data.length} reflections available.`;
       showState("guidance", "Begin with a thought", "Search by a word or phrase, or choose a collection, type, theme, or series to browse related reflections.");
+      if (suggestionsEl) suggestionsEl.hidden = false;
       return;
     }
 
@@ -433,6 +436,15 @@
     if (seriesFilter) seriesFilter.value = "";
     runSearch();
     input.focus();
+  });
+
+  suggestionsEl?.querySelectorAll("[data-search-suggestion]").forEach((button) => {
+    button.addEventListener("click", () => {
+      window.clearTimeout(inputTimer);
+      input.value = button.dataset.searchSuggestion || "";
+      runSearch();
+      input.focus();
+    });
   });
 
   window.addEventListener("popstate", () => {

@@ -4,6 +4,7 @@ title: Search
 description: Find reflections by word, phrase, collection, type, theme, or series across the Just A Thought library.
 permalink: /search/
 page_archetype: collection
+body_class: jat-search-page
 ---
 
 <header class="jat-collection-hero jat-search-hero jat-page-shell">
@@ -69,7 +70,7 @@ page_archetype: collection
         </div>
 
         <div class="jat-search-clear-wrap">
-          <button class="btn jat-btn jat-btn-secondary" id="clear-filters" type="button">Clear</button>
+          <button class="btn jat-btn jat-btn-secondary" id="clear-filters" type="button">Clear filters</button>
         </div>
       </div>
     </form>
@@ -90,6 +91,11 @@ page_archetype: collection
       <span class="jat-search-state-mark" aria-hidden="true">❦</span>
       <h3 id="search-state-title">Preparing Search</h3>
       <p id="search-state-copy">The reflection library is loading.</p>
+      <div id="search-suggestions" class="jat-search-suggestions" aria-label="Suggested searches" hidden>
+        <button type="button" data-search-suggestion="marriage">Marriage</button>
+        <button type="button" data-search-suggestion="faith">Faith</button>
+        <button type="button" data-search-suggestion="technology">Technology</button>
+      </div>
     </div>
 
     <ol id="search-results" class="jat-search-results" aria-label="Search results"></ol>
