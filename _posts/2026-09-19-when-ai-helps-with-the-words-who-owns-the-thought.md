@@ -8,18 +8,18 @@ author: Jeff Thomas III
 
 categories:
 
-* reflection
+- reflection
 
 collections:
 
-* technology
+- technology
 
 tags:
 
-* artificial-intelligence
-* content-creation
-* technology-ethics
-* thoughtful-work
+- artificial-intelligence
+- content-creation
+- technology-ethics
+- thoughtful-work
 
 excerpt: "As AI becomes embedded in the tools around us, the question of authorship may have less to do with whether AI was involved and more to do with what we chose to hand over."
 
